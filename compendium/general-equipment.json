@@ -1,0 +1,1856 @@
+[
+  {
+    "id": "abacus",
+    "name": "Abacus",
+    "url": "/equipment/general/abacus",
+    "source": "PHB",
+    "description": "",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "STANDARD_GEAR",
+    "cost": "2GP",
+    "weight": 2,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "acid-vial",
+    "name": "Acid (vial)",
+    "url": "/equipment/general/acid-vial",
+    "source": "PHB",
+    "description": "As an action, you can splash the contents of this vial onto a creature within 5 feet of you or throw the vial up to 20 feet, shattering it on impact. In either case, make a ranged attack against a creature or object, treating the acid as an improvised weapon.\\nOn a hit, the target takes 2d6 acid damage.",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "STANDARD_GEAR",
+    "cost": "25GP",
+    "weight": 1,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "alchemists-fire-flask",
+    "name": "Alchemist's fire (flask)",
+    "url": "/equipment/general/alchemists-fire-flask",
+    "source": "PHB",
+    "description": "This sticky, adhesive fluid ignites when exposed to air.\\nAs an action, you can throw this flask up to 20 feet, shattering it on impact. Make a ranged attack against a creature or object, treating the alchemist's fire as an improvised weapon.\\nOn a hit, the target takes 1d4 fire damage at the start of each of its turns. A creature can end this damage by using its action to make a DC 10 Dexterity check to extinguish the flames.",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "STANDARD_GEAR",
+    "cost": "50GP",
+    "weight": 1,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "arrow",
+    "name": "Arrow",
+    "url": "/equipment/general/arrow",
+    "source": "PHB",
+    "description": "",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "AMMUNITION",
+    "cost": "1GP",
+    "weight": 1,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "blowgun-needle",
+    "name": "Blowgun needle",
+    "url": "/equipment/general/blowgun-needle",
+    "source": "PHB",
+    "description": "",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "AMMUNITION",
+    "cost": "1GP",
+    "weight": 1,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "crossbow-bolt",
+    "name": "Crossbow bolt",
+    "url": "/equipment/general/crossbow-bolt",
+    "source": "PHB",
+    "description": "",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "AMMUNITION",
+    "cost": "1GP",
+    "weight": 1,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "sling-bullet",
+    "name": "Sling bullet",
+    "url": "/equipment/general/sling-bullet",
+    "source": "PHB",
+    "description": "",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "AMMUNITION",
+    "cost": "4CP",
+    "weight": 1,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "amulet",
+    "name": "Amulet",
+    "url": "/equipment/general/amulet",
+    "source": "PHB",
+    "description": "A holy symbol is a representation of a god or pantheon. It might be an amulet depicting a symbol representing a deity, the same symbol carefully engraved or inlaid as an emblem on a shield, or a tiny box holding a fragment of a sacred relic.\\nAppendix B lists the symbols commonly associated with many gods in the multiverse. A cleric or paladin can use a holy symbol as a spellcasting focus. To use the symbol in this way, the caster must hold it in hand, wear it visibly, or bear it on a shield.",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "HOLY_SYMBOLS",
+    "cost": "5GP",
+    "weight": 1,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "antitoxin-vial",
+    "name": "Antitoxin (vial)",
+    "url": "/equipment/general/antitoxin-vial",
+    "source": "PHB",
+    "description": "A creature that drinks this vial of liquid gains advantage on saving throws against poison for 1 hour. It confers no benefit to undead or constructs.",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "STANDARD_GEAR",
+    "cost": "50GP",
+    "weight": 0,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "crystal",
+    "name": "Crystal",
+    "url": "/equipment/general/crystal",
+    "source": "PHB",
+    "description": "An arcane focus is a special item--an orb, a crystal, a rod, a specially constructed staff, a wand-like length of wood, or some similar item--designed to channel the power of arcane spells. A sorcerer, warlock, or wizard can use such an item as a spellcasting focus.",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "ARCANE_FOCI",
+    "cost": "10GP",
+    "weight": 1,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "orb",
+    "name": "Orb",
+    "url": "/equipment/general/orb",
+    "source": "PHB",
+    "description": "An arcane focus is a special item--an orb, a crystal, a rod, a specially constructed staff, a wand-like length of wood, or some similar item--designed to channel the power of arcane spells. A sorcerer, warlock, or wizard can use such an item as a spellcasting focus.",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "ARCANE_FOCI",
+    "cost": "20GP",
+    "weight": 3,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "rod",
+    "name": "Rod",
+    "url": "/equipment/general/rod",
+    "source": "PHB",
+    "description": "An arcane focus is a special item--an orb, a crystal, a rod, a specially constructed staff, a wand-like length of wood, or some similar item--designed to channel the power of arcane spells. A sorcerer, warlock, or wizard can use such an item as a spellcasting focus.",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "ARCANE_FOCI",
+    "cost": "10GP",
+    "weight": 2,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "staff",
+    "name": "Staff",
+    "url": "/equipment/general/staff",
+    "source": "PHB",
+    "description": "An arcane focus is a special item--an orb, a crystal, a rod, a specially constructed staff, a wand-like length of wood, or some similar item--designed to channel the power of arcane spells. A sorcerer, warlock, or wizard can use such an item as a spellcasting focus.",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "ARCANE_FOCI",
+    "cost": "5GP",
+    "weight": 4,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "wand",
+    "name": "Wand",
+    "url": "/equipment/general/wand",
+    "source": "PHB",
+    "description": "An arcane focus is a special item--an orb, a crystal, a rod, a specially constructed staff, a wand-like length of wood, or some similar item--designed to channel the power of arcane spells. A sorcerer, warlock, or wizard can use such an item as a spellcasting focus.",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "ARCANE_FOCI",
+    "cost": "10GP",
+    "weight": 1,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "backpack",
+    "name": "Backpack",
+    "url": "/equipment/general/backpack",
+    "source": "PHB",
+    "description": "",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "STANDARD_GEAR",
+    "cost": "2GP",
+    "weight": 5,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "ball-bearings-bag-of-1000",
+    "name": "Ball bearings (bag of 1,000)",
+    "url": "/equipment/general/ball-bearings-bag-of-1000",
+    "source": "PHB",
+    "description": "As an action, you can spill these tiny metal balls from their pouch to cover a level, square area that is 10 feet on a side.\\nA creature moving across the covered area must succeed on a DC 10 Dexterity saving throw or fall prone.\\nA creature moving through the area at half speed doesn't need to make the save.",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "STANDARD_GEAR",
+    "cost": "1GP",
+    "weight": 2,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "barrel",
+    "name": "Barrel",
+    "url": "/equipment/general/barrel",
+    "source": "PHB",
+    "description": "",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "STANDARD_GEAR",
+    "cost": "2GP",
+    "weight": 70,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "basket",
+    "name": "Basket",
+    "url": "/equipment/general/basket",
+    "source": "PHB",
+    "description": "",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "STANDARD_GEAR",
+    "cost": "4SP",
+    "weight": 2,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "bedroll",
+    "name": "Bedroll",
+    "url": "/equipment/general/bedroll",
+    "source": "PHB",
+    "description": "",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "STANDARD_GEAR",
+    "cost": "1GP",
+    "weight": 7,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "bell",
+    "name": "Bell",
+    "url": "/equipment/general/bell",
+    "source": "PHB",
+    "description": "",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "STANDARD_GEAR",
+    "cost": "1GP",
+    "weight": 0,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "blanket",
+    "name": "Blanket",
+    "url": "/equipment/general/blanket",
+    "source": "PHB",
+    "description": "",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "STANDARD_GEAR",
+    "cost": "5SP",
+    "weight": 3,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "block-and-tackle",
+    "name": "Block and tackle",
+    "url": "/equipment/general/block-and-tackle",
+    "source": "PHB",
+    "description": "A set of pulleys with a cable threaded through them and a hook to attach to objects, a block and tackle allows you to hoist up to four times the weight you can normally lift.",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "STANDARD_GEAR",
+    "cost": "1GP",
+    "weight": 5,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "book",
+    "name": "Book",
+    "url": "/equipment/general/book",
+    "source": "PHB",
+    "description": "A book might contain poetry, historical accounts, information pertaining to a particular field of lore, diagrams and notes on gnomish contraptions, or just about anything else that can be represented using text or pictures. A book of spells is a spellbook (described later in this section).",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "STANDARD_GEAR",
+    "cost": "25GP",
+    "weight": 5,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "bottle-glass",
+    "name": "Bottle, glass",
+    "url": "/equipment/general/bottle-glass",
+    "source": "PHB",
+    "description": "",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "STANDARD_GEAR",
+    "cost": "2GP",
+    "weight": 2,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "bucket",
+    "name": "Bucket",
+    "url": "/equipment/general/bucket",
+    "source": "PHB",
+    "description": "",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "STANDARD_GEAR",
+    "cost": "5CP",
+    "weight": 2,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "caltrops",
+    "name": "Caltrops",
+    "url": "/equipment/general/caltrops",
+    "source": "PHB",
+    "description": "As an action, you can spread a bag of caltrops to cover a square area that is 5 feet on a side.\\nAny creature that enters the area must succeed on a DC 15 Dexterity saving throw or stop moving this turn and take 1 piercing damage.\\nTaking this damage reduces the creature's walking speed by 10 feet until the creature regains at least 1 hit point.\\nA creature moving through the area at half speed doesn't need to make the save.",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "STANDARD_GEAR",
+    "cost": "5CP",
+    "weight": 2,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "candle",
+    "name": "Candle",
+    "url": "/equipment/general/candle",
+    "source": "PHB",
+    "description": "For 1 hour, a candle sheds bright light in a 5-foot radius and dim light for an additional 5 feet.",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "STANDARD_GEAR",
+    "cost": "1CP",
+    "weight": 0,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "case-crossbow-bolt",
+    "name": "Case, crossbow bolt",
+    "url": "/equipment/general/case-crossbow-bolt",
+    "source": "PHB",
+    "description": "This wooden case can hold up to twenty crossbow bolts.",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "STANDARD_GEAR",
+    "cost": "1GP",
+    "weight": 1,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "case-map-or-scroll",
+    "name": "Case, map or scroll",
+    "url": "/equipment/general/case-map-or-scroll",
+    "source": "PHB",
+    "description": "This cylindrical leather case can hold up to ten rolled-up sheets of paper or five rolled-up sheets of parchment.",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "STANDARD_GEAR",
+    "cost": "1GP",
+    "weight": 1,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "chain-10-feet",
+    "name": "Chain (10 feet)",
+    "url": "/equipment/general/chain-10-feet",
+    "source": "PHB",
+    "description": "A chain has 10 hit points. It can be burst with a successful DC 20 Strength check.",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "STANDARD_GEAR",
+    "cost": "5GP",
+    "weight": 10,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "chalk-1-piece",
+    "name": "Chalk (1 piece)",
+    "url": "/equipment/general/chalk-1-piece",
+    "source": "PHB",
+    "description": "",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "STANDARD_GEAR",
+    "cost": "1CP",
+    "weight": 0,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "chest",
+    "name": "Chest",
+    "url": "/equipment/general/chest",
+    "source": "PHB",
+    "description": "",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "STANDARD_GEAR",
+    "cost": "5GP",
+    "weight": 25,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "clothes-common",
+    "name": "Clothes, common",
+    "url": "/equipment/general/clothes-common",
+    "source": "PHB",
+    "description": "",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "STANDARD_GEAR",
+    "cost": "5SP",
+    "weight": 3,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "clothes-costume",
+    "name": "Clothes, costume",
+    "url": "/equipment/general/clothes-costume",
+    "source": "PHB",
+    "description": "",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "STANDARD_GEAR",
+    "cost": "5GP",
+    "weight": 4,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "clothes-fine",
+    "name": "Clothes, fine",
+    "url": "/equipment/general/clothes-fine",
+    "source": "PHB",
+    "description": "",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "STANDARD_GEAR",
+    "cost": "15GP",
+    "weight": 6,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "clothes-travelers",
+    "name": "Clothes, traveler's",
+    "url": "/equipment/general/clothes-travelers",
+    "source": "PHB",
+    "description": "",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "STANDARD_GEAR",
+    "cost": "2GP",
+    "weight": 4,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "component-pouch",
+    "name": "Component pouch",
+    "url": "/equipment/general/component-pouch",
+    "source": "PHB",
+    "description": " A component pouch is a small, watertight leather belt pouch that has compartments to hold all the material components and other special items you need to cast your spells, except for those components that have a specific cost (as indicated in a spell's description).",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "STANDARD_GEAR",
+    "cost": "25GP",
+    "weight": 2,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "crowbar",
+    "name": "Crowbar",
+    "url": "/equipment/general/crowbar",
+    "source": "PHB",
+    "description": "Using a crowbar grants advantage to Strength checks where the crowbar's leverage can be applied.",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "STANDARD_GEAR",
+    "cost": "2GP",
+    "weight": 5,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "sprig-of-mistletoe",
+    "name": "Sprig of mistletoe",
+    "url": "/equipment/general/sprig-of-mistletoe",
+    "source": "PHB",
+    "description": "A druidic focus might be a sprig of mistletoe or holly, a wand or scepter made of yew or another special wood, a staff drawn whole out of a living tree, or a totem object incorporating feathers, fur, bones, and teeth from sacred animals. A druid can use such an object as a spellcasting focus.",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "DRUIDIC_FOCI",
+    "cost": "1GP",
+    "weight": 0,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "totem",
+    "name": "Totem",
+    "url": "/equipment/general/totem",
+    "source": "PHB",
+    "description": "A druidic focus might be a sprig of mistletoe or holly, a wand or scepter made of yew or another special wood, a staff drawn whole out of a living tree, or a totem object incorporating feathers, fur, bones, and teeth from sacred animals. A druid can use such an object as a spellcasting focus.",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "DRUIDIC_FOCI",
+    "cost": "1GP",
+    "weight": 0,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "wooden-staff",
+    "name": "Wooden staff",
+    "url": "/equipment/general/wooden-staff",
+    "source": "PHB",
+    "description": "A druidic focus might be a sprig of mistletoe or holly, a wand or scepter made of yew or another special wood, a staff drawn whole out of a living tree, or a totem object incorporating feathers, fur, bones, and teeth from sacred animals. A druid can use such an object as a spellcasting focus.",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "DRUIDIC_FOCI",
+    "cost": "5GP",
+    "weight": 4,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "yew-wand",
+    "name": "Yew wand",
+    "url": "/equipment/general/yew-wand",
+    "source": "PHB",
+    "description": "A druidic focus might be a sprig of mistletoe or holly, a wand or scepter made of yew or another special wood, a staff drawn whole out of a living tree, or a totem object incorporating feathers, fur, bones, and teeth from sacred animals. A druid can use such an object as a spellcasting focus.",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "DRUIDIC_FOCI",
+    "cost": "10GP",
+    "weight": 1,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "emblem",
+    "name": "Emblem",
+    "url": "/equipment/general/emblem",
+    "source": "PHB",
+    "description": "A holy symbol is a representation of a god or pantheon. It might be an amulet depicting a symbol representing a deity, the same symbol carefully engraved or inlaid as an emblem on a shield, or a tiny box holding a fragment of a sacred relic.\\nAppendix B lists the symbols commonly associated with many gods in the multiverse. A cleric or paladin can use a holy symbol as a spellcasting focus. To use the symbol in this way, the caster must hold it in hand, wear it visibly, or bear it on a shield.",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "HOLY_SYMBOLS",
+    "cost": "5GP",
+    "weight": 0,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "fishing-tackle",
+    "name": "Fishing tackle",
+    "url": "/equipment/general/fishing-tackle",
+    "source": "PHB",
+    "description": "This kit includes a wooden rod, silken line, corkwood bobbers, steel hooks, lead sinkers, velvet lures, and narrow netting.",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "STANDARD_GEAR",
+    "cost": "1GP",
+    "weight": 4,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "flask-or-tankard",
+    "name": "Flask or tankard",
+    "url": "/equipment/general/flask-or-tankard",
+    "source": "PHB",
+    "description": "",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "STANDARD_GEAR",
+    "cost": "2CP",
+    "weight": 1,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "grappling-hook",
+    "name": "Grappling hook",
+    "url": "/equipment/general/grappling-hook",
+    "source": "PHB",
+    "description": "",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "STANDARD_GEAR",
+    "cost": "2GP",
+    "weight": 4,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "hammer",
+    "name": "Hammer",
+    "url": "/equipment/general/hammer",
+    "source": "PHB",
+    "description": "",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "STANDARD_GEAR",
+    "cost": "1GP",
+    "weight": 3,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "hammer-sledge",
+    "name": "Hammer, sledge",
+    "url": "/equipment/general/hammer-sledge",
+    "source": "PHB",
+    "description": "",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "STANDARD_GEAR",
+    "cost": "2GP",
+    "weight": 10,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "holy-water-flask",
+    "name": "Holy water (flask)",
+    "url": "/equipment/general/holy-water-flask",
+    "source": "PHB",
+    "description": "As an action, you can splash the contents of this flask onto a creature within 5 feet of you or throw it up to 20 feet, shattering it on impact. In either case, make a ranged attack against a target creature, treating the holy water as an improvised weapon.\\nIf the target is a fiend or undead, it takes 2d6 radiant damage.\\nA cleric or paladin may create holy water by performing a special ritual.\\nThe ritual takes 1 hour to perform, uses 25 gp worth of powdered silver, and requires the caster to expend a 1st-level spell slot.",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "STANDARD_GEAR",
+    "cost": "25GP",
+    "weight": 1,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "hourglass",
+    "name": "Hourglass",
+    "url": "/equipment/general/hourglass",
+    "source": "PHB",
+    "description": "",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "STANDARD_GEAR",
+    "cost": "25GP",
+    "weight": 1,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "hunting-trap",
+    "name": "Hunting trap",
+    "url": "/equipment/general/hunting-trap",
+    "source": "PHB",
+    "description": "When you use your action to set it, this trap forms a saw-toothed steel ring that snaps shut when a creature steps on a pressure plate in the center. The trap is affixed by a heavy chain to an immobile object, such as a tree or a spike driven into the ground.\\nA creature that steps on the plate must succeed on a DC 13 Dexterity saving throw or take 1d4 piercing damage and stop moving. Thereafter, until the creature breaks free of the trap, its movement is limited by the length of the chain (typically 3 feet long).\\nA creature can use its action to make a DC 13 Strength check, freeing itself or another creature within its reach on a success. Each failed check deals 1 piercing damage to the trapped creature.",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "STANDARD_GEAR",
+    "cost": "5GP",
+    "weight": 25,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "ink-1-ounce-bottle",
+    "name": "Ink (1 ounce bottle)",
+    "url": "/equipment/general/ink-1-ounce-bottle",
+    "source": "PHB",
+    "description": "",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "STANDARD_GEAR",
+    "cost": "10GP",
+    "weight": 0,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "ink-pen",
+    "name": "Ink pen",
+    "url": "/equipment/general/ink-pen",
+    "source": "PHB",
+    "description": "",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "STANDARD_GEAR",
+    "cost": "2CP",
+    "weight": 0,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "jug-or-pitcher",
+    "name": "Jug or pitcher",
+    "url": "/equipment/general/jug-or-pitcher",
+    "source": "PHB",
+    "description": "",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "STANDARD_GEAR",
+    "cost": "2CP",
+    "weight": 4,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "climbers-kit",
+    "name": "Climber's Kit",
+    "url": "/equipment/general/climbers-kit",
+    "source": "PHB",
+    "description": "A climber's kit includes special pitons, boot tips, gloves, and a harness. You can use the climber's kit as an action to anchor yourself; when you do, you can't fall more than 25 feet from the point where you anchored yourself, and you can't climb more than 25 feet away from that point without undoing the anchor.",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "KIT",
+    "cost": "25GP",
+    "weight": 12,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "disguise-kit",
+    "name": "Disguise Kit",
+    "url": "/equipment/general/disguise-kit",
+    "source": "PHB",
+    "description": "This pouch of cosmetics, hair dye, and small props lets you create disguises that change your physical appearance. Proficiency with this kit lets you add your proficiency bonus to any ability checks you make to create a visual disguise.",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "KIT",
+    "cost": "25GP",
+    "weight": 3,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "forgery-kit",
+    "name": "Forgery Kit",
+    "url": "/equipment/general/forgery-kit",
+    "source": "PHB",
+    "description": "This small box contains a variety of papers and parchments, pens and inks, seals and sealing wax, gold and silver leaf, and other supplies necessary to create convincing forgeries of physical documents. Proficiency with this kit lets you add your proficiency bonus to any ability checks you make to create a physical forgery of a document.",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "KIT",
+    "cost": "15GP",
+    "weight": 5,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "herbalism-kit",
+    "name": "Herbalism Kit",
+    "url": "/equipment/general/herbalism-kit",
+    "source": "PHB",
+    "description": "This kit contains a variety of instruments such as clippers, mortar and pestle, and pouches and vials used by herbalists to create remedies and potions. Proficiency with this kit lets you add your proficiency bonus to any ability checks you make to identify or apply herbs. Also, proficiency with this kit is required to create antitoxin and potions of healing.",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "KIT",
+    "cost": "5GP",
+    "weight": 3,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "healers-kit",
+    "name": "Healer's Kit",
+    "url": "/equipment/general/healers-kit",
+    "source": "PHB",
+    "description": "This kit is a leather pouch containing bandages, salves, and splints. The kit has ten uses. As an action, you can expend one use of the kit to stabilize a creature that has 0 hit points, without needing to make a Wisdom (Medicine) check.",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "KIT",
+    "cost": "5GP",
+    "weight": 3,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "mess-kit",
+    "name": "Mess Kit",
+    "url": "/equipment/general/mess-kit",
+    "source": "PHB",
+    "description": "This tin box contains a cup and simple cutlery. The box clamps together, and one side can be used as a cooking pan and the other as a plate or shallow bowl.",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "KIT",
+    "cost": "2SP",
+    "weight": 1,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "poisoners-kit",
+    "name": "Poisoner's Kit",
+    "url": "/equipment/general/poisoners-kit",
+    "source": "PHB",
+    "description": "A poisoner's kit includes the vials, chemicals, and other equipment necessary for the creation of poisons. Proficiency with this kit lets you add your proficiency bonus to any ability checks you make to craft or use poisons.",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "KIT",
+    "cost": "50GP",
+    "weight": 2,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "ladder-10-foot",
+    "name": "Ladder (10-foot)",
+    "url": "/equipment/general/ladder-10-foot",
+    "source": "PHB",
+    "description": "",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "STANDARD_GEAR",
+    "cost": "1SP",
+    "weight": 25,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "lamp",
+    "name": "Lamp",
+    "url": "/equipment/general/lamp",
+    "source": "PHB",
+    "description": "A lamp casts bright light in a 15-foot radius and dim light for an additional 30 feet. Once lit, it burns for 6 hours on a flask (1 pint) of oil.",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "STANDARD_GEAR",
+    "cost": "5SP",
+    "weight": 1,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "lantern-bullseye",
+    "name": "Lantern, bullseye",
+    "url": "/equipment/general/lantern-bullseye",
+    "source": "PHB",
+    "description": "A bullseye lantern casts bright light in a 60-foot cone and dim light for an additional 60 feet. Once lit, it burns for 6 hours on a flask (1 pint) of oil.",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "STANDARD_GEAR",
+    "cost": "10GP",
+    "weight": 2,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "lantern-hooded",
+    "name": "Lantern, hooded",
+    "url": "/equipment/general/lantern-hooded",
+    "source": "PHB",
+    "description": "A hooded lantern casts bright light in a 30-foot radius and dim light for an additional 30 feet. Once lit, it burns for 6 hours on a flask (1 pint) of oil. As an action, you can lower the hood, reducing the light to dim light in a 5-foot radius.",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "STANDARD_GEAR",
+    "cost": "5GP",
+    "weight": 2,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "lock",
+    "name": "Lock",
+    "url": "/equipment/general/lock",
+    "source": "PHB",
+    "description": "A key is provided with the lock. Without the key, a creature proficient with thieves' tools can pick this lock with a successful DC 15 Dexterity check. Your GM may decide that better locks are available for higher prices.",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "STANDARD_GEAR",
+    "cost": "10GP",
+    "weight": 1,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "magnifying-glass",
+    "name": "Magnifying glass",
+    "url": "/equipment/general/magnifying-glass",
+    "source": "PHB",
+    "description": "This lens allows a closer look at small objects. It is also useful as a substitute for flint and steel when starting fires. Lighting a fire with a magnifying glass requires light as bright as sunlight to focus, tinder to ignite, and about 5 minutes for the fire to ignite.\\nA magnifying glass grants advantage on any ability check made to appraise or inspect an item that is small or highly detailed.",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "STANDARD_GEAR",
+    "cost": "100GP",
+    "weight": 0,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "manacles",
+    "name": "Manacles",
+    "url": "/equipment/general/manacles",
+    "source": "PHB",
+    "description": "These metal restraints can bind a Small or Medium creature. Escaping the manacles requires a successful DC 20 Dexterity check. Breaking them requires a successful DC 20 Strength check.\\nEach set of manacles comes with one key. Without the key, a creature proficient with thieves' tools can pick the manacles' lock with a successful DC 15 Dexterity check. Manacles have 15 hit points.",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "STANDARD_GEAR",
+    "cost": "2GP",
+    "weight": 6,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "mirror-steel",
+    "name": "Mirror, steel",
+    "url": "/equipment/general/mirror-steel",
+    "source": "PHB",
+    "description": "",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "STANDARD_GEAR",
+    "cost": "5GP",
+    "weight": 0,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "oil-flask",
+    "name": "Oil (flask)",
+    "url": "/equipment/general/oil-flask",
+    "source": "PHB",
+    "description": "Oil usually comes in a clay flask that holds 1 pint.\\nAs an action, you can splash the oil in this flask onto a creature within 5 feet of you or throw it up to 20 feet, shattering it on impact. Make a ranged attack against a target creature or object, treating the oil as an improvised weapon.\\nOn a hit, the target is covered in oil. If the target takes any fire damage before the oil dries (after 1 minute), the target takes an additional 5 fire damage from the burning oil.\\nYou can also pour a flask of oil on the ground to cover a 5-foot-square area, provided that the surface is level.\\nIf lit, the oil burns for 2 rounds and deals 5 fire damage to any creature that enters the area or ends its turn in the area. A creature can take this damage only once per turn.",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "STANDARD_GEAR",
+    "cost": "1SP",
+    "weight": 1,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "paper-one-sheet",
+    "name": "Paper (one sheet)",
+    "url": "/equipment/general/paper-one-sheet",
+    "source": "PHB",
+    "description": "",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "STANDARD_GEAR",
+    "cost": "2SP",
+    "weight": 0,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "parchment-one-sheet",
+    "name": "Parchment (one sheet)",
+    "url": "/equipment/general/parchment-one-sheet",
+    "source": "PHB",
+    "description": "",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "STANDARD_GEAR",
+    "cost": "1SP",
+    "weight": 0,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "perfume-vial",
+    "name": "Perfume (vial)",
+    "url": "/equipment/general/perfume-vial",
+    "source": "PHB",
+    "description": "",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "STANDARD_GEAR",
+    "cost": "5GP",
+    "weight": 0,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "pick-miners",
+    "name": "Pick, miner's",
+    "url": "/equipment/general/pick-miners",
+    "source": "PHB",
+    "description": "",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "STANDARD_GEAR",
+    "cost": "2GP",
+    "weight": 10,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "piton",
+    "name": "Piton",
+    "url": "/equipment/general/piton",
+    "source": "PHB",
+    "description": "",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "STANDARD_GEAR",
+    "cost": "5CP",
+    "weight": 0,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "poison-basic-vial",
+    "name": "Poison, basic (vial)",
+    "url": "/equipment/general/poison-basic-vial",
+    "source": "PHB",
+    "description": "You can use the poison in this vial to coat one slashing or piercing weapon or up to three pieces of ammunition. Applying the poison takes an action. A creature hit by the poisoned weapon or ammunition must make a DC 10 Constitution saving throw or take 1d4 poison damage. Once applied, the poison retains potency for 1 minute before drying.",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "STANDARD_GEAR",
+    "cost": "100GP",
+    "weight": 0,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "pole-10-foot",
+    "name": "Pole (10-foot)",
+    "url": "/equipment/general/pole-10-foot",
+    "source": "PHB",
+    "description": "",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "STANDARD_GEAR",
+    "cost": "5CP",
+    "weight": 7,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "pot-iron",
+    "name": "Pot, iron",
+    "url": "/equipment/general/pot-iron",
+    "source": "PHB",
+    "description": "",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "STANDARD_GEAR",
+    "cost": "2GP",
+    "weight": 10,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "potion-of-healing",
+    "name": "Potion of healing",
+    "url": "/equipment/general/potion-of-healing",
+    "source": "PHB",
+    "description": "A character who drinks the magical red fluid in this vial regains 2d4 + 2 hit points. Drinking or administering a potion takes an action.",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "STANDARD_GEAR",
+    "cost": "50GP",
+    "weight": 0,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "pouch",
+    "name": "Pouch",
+    "url": "/equipment/general/pouch",
+    "source": "PHB",
+    "description": "A cloth or leather pouch can hold up to 20 sling bullets or 50 blowgun needles, among other things. A compartmentalized pouch for holding spell components is called a component pouch (described earlier in this section).",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "STANDARD_GEAR",
+    "cost": "5SP",
+    "weight": 1,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "quiver",
+    "name": "Quiver",
+    "url": "/equipment/general/quiver",
+    "source": "PHB",
+    "description": "A quiver can hold up to 20 arrows.",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "STANDARD_GEAR",
+    "cost": "1GP",
+    "weight": 1,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "ram-portable",
+    "name": "Ram, portable",
+    "url": "/equipment/general/ram-portable",
+    "source": "PHB",
+    "description": "You can use a portable ram to break down doors. When doing so, you gain a +4 bonus on the Strength check. One other character can help you use the ram, giving you advantage on this check.",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "STANDARD_GEAR",
+    "cost": "4GP",
+    "weight": 35,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "rations-1-day",
+    "name": "Rations (1 day)",
+    "url": "/equipment/general/rations-1-day",
+    "source": "PHB",
+    "description": "Rations consist of dry foods suitable for extended travel, including jerky, dried fruit, hardtack, and nuts.",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "STANDARD_GEAR",
+    "cost": "5SP",
+    "weight": 2,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "reliquary",
+    "name": "Reliquary",
+    "url": "/equipment/general/reliquary",
+    "source": "PHB",
+    "description": "A holy symbol is a representation of a god or pantheon. It might be an amulet depicting a symbol representing a deity, the same symbol carefully engraved or inlaid as an emblem on a shield, or a tiny box holding a fragment of a sacred relic.\\nAppendix B lists the symbols commonly associated with many gods in the multiverse. A cleric or paladin can use a holy symbol as a spellcasting focus. To use the symbol in this way, the caster must hold it in hand, wear it visibly, or bear it on a shield.",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "HOLY_SYMBOLS",
+    "cost": "5GP",
+    "weight": 2,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "robes",
+    "name": "Robes",
+    "url": "/equipment/general/robes",
+    "source": "PHB",
+    "description": "",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "STANDARD_GEAR",
+    "cost": "1GP",
+    "weight": 4,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "rope-hempen-50-feet",
+    "name": "Rope, hempen (50 feet)",
+    "url": "/equipment/general/rope-hempen-50-feet",
+    "source": "PHB",
+    "description": "Rope, whether made of hemp or silk, has 2 hit points and can be burst with a DC 17 Strength check.",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "STANDARD_GEAR",
+    "cost": "1GP",
+    "weight": 10,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "rope-silk-50-feet",
+    "name": "Rope, silk (50 feet)",
+    "url": "/equipment/general/rope-silk-50-feet",
+    "source": "PHB",
+    "description": "Rope, whether made of hemp or silk, has 2 hit points and can be burst with a DC 17 Strength check.",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "STANDARD_GEAR",
+    "cost": "10GP",
+    "weight": 5,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "sack",
+    "name": "Sack",
+    "url": "/equipment/general/sack",
+    "source": "PHB",
+    "description": "",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "STANDARD_GEAR",
+    "cost": "1CP",
+    "weight": 0,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "scale-merchants",
+    "name": "Scale, merchant's",
+    "url": "/equipment/general/scale-merchants",
+    "source": "PHB",
+    "description": "A scale includes a small balance, pans, and a suitable assortment of weights up to 2 pounds. With it, you can measure the exact weight of small objects, such as raw precious metals or trade goods, to help determine their worth.",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "STANDARD_GEAR",
+    "cost": "5GP",
+    "weight": 3,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "sealing-wax",
+    "name": "Sealing wax",
+    "url": "/equipment/general/sealing-wax",
+    "source": "PHB",
+    "description": "",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "STANDARD_GEAR",
+    "cost": "5SP",
+    "weight": 0,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "shovel",
+    "name": "Shovel",
+    "url": "/equipment/general/shovel",
+    "source": "PHB",
+    "description": "",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "STANDARD_GEAR",
+    "cost": "2GP",
+    "weight": 5,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "signal-whistle",
+    "name": "Signal whistle",
+    "url": "/equipment/general/signal-whistle",
+    "source": "PHB",
+    "description": "",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "STANDARD_GEAR",
+    "cost": "5CP",
+    "weight": 0,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "signet-ring",
+    "name": "Signet ring",
+    "url": "/equipment/general/signet-ring",
+    "source": "PHB",
+    "description": "",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "STANDARD_GEAR",
+    "cost": "5GP",
+    "weight": 0,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "soap",
+    "name": "Soap",
+    "url": "/equipment/general/soap",
+    "source": "PHB",
+    "description": "",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "STANDARD_GEAR",
+    "cost": "2CP",
+    "weight": 0,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "spellbook",
+    "name": "Spellbook",
+    "url": "/equipment/general/spellbook",
+    "source": "PHB",
+    "description": "Essential for wizards, a spellbook is a leather-bound tome with 100 blank vellum pages suitable for recording spells.",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "STANDARD_GEAR",
+    "cost": "50GP",
+    "weight": 3,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "spike-iron",
+    "name": "Spike, iron",
+    "url": "/equipment/general/spike-iron",
+    "source": "PHB",
+    "description": "",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "STANDARD_GEAR",
+    "cost": "1SP",
+    "weight": 5,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "spyglass",
+    "name": "Spyglass",
+    "url": "/equipment/general/spyglass",
+    "source": "PHB",
+    "description": "Objects viewed through a spyglass are magnified to twice their size.",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "STANDARD_GEAR",
+    "cost": "1000GP",
+    "weight": 1,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "tent-two-person",
+    "name": "Tent, two-person",
+    "url": "/equipment/general/tent-two-person",
+    "source": "PHB",
+    "description": "A simple and portable canvas shelter, a tent sleeps two.",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "STANDARD_GEAR",
+    "cost": "2GP",
+    "weight": 20,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "tinderbox",
+    "name": "Tinderbox",
+    "url": "/equipment/general/tinderbox",
+    "source": "PHB",
+    "description": "This small container holds flint, fire steel, and tinder (usually dry cloth soaked in light oil) used to kindle a fire. Using it to light a torch--or anything else with abundant, exposed fuel--takes an action.\\nLighting any other fire takes 1 minute.",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "STANDARD_GEAR",
+    "cost": "5SP",
+    "weight": 1,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "torch",
+    "name": "Torch",
+    "url": "/equipment/general/torch",
+    "source": "PHB",
+    "description": "A torch burns for 1 hour, providing bright light in a 20-foot radius and dim light for an additional 20 feet. If you make a melee attack with a burning torch and hit, it deals 1 fire damage.",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "STANDARD_GEAR",
+    "cost": "1CP",
+    "weight": 1,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "vial",
+    "name": "Vial",
+    "url": "/equipment/general/vial",
+    "source": "PHB",
+    "description": "",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "STANDARD_GEAR",
+    "cost": "1GP",
+    "weight": 0,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "waterskin",
+    "name": "Waterskin",
+    "url": "/equipment/general/waterskin",
+    "source": "PHB",
+    "description": "",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "STANDARD_GEAR",
+    "cost": "2SP",
+    "weight": 5,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "whetstone",
+    "name": "Whetstone",
+    "url": "/equipment/general/whetstone",
+    "source": "PHB",
+    "description": "",
+    "category": {
+      "id": "general",
+      "name": "general",
+      "url": "/equipment/general/"
+    },
+    "subCategory": "STANDARD_GEAR",
+    "cost": "1CP",
+    "weight": 1,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  }
+]

@@ -1,0 +1,31 @@
+{
+  "name": "dndatabase",
+  "version": "1.0.0",
+  "description": "Dungeons and Dragons 5th Edition Compendium and tool set",
+  "main": "index.js",
+  "scripts": {
+    "normalize": "cd compendium/scripts && node normalize all",
+    "index": "cd compendium/scripts && node indexing all"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chris-pikul/DnDatabase.git"
+  },
+  "keywords": [
+    "d&d",
+    "dungeons",
+    "dragons",
+    "fifth",
+    "edition",
+    "5th",
+    "compendium",
+    "ttrpg",
+    "rpg"
+  ],
+  "author": "Chris Pikul <ChrisPikul510@gmail.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/chris-pikul/DnDatabase/issues"
+  },
+  "homepage": "https://github.com/chris-pikul/DnDatabase#readme"
+}

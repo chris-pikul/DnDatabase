@@ -1,0 +1,390 @@
+{
+  "id": "ranger",
+  "url": "/classes/ranger",
+  "name": "Ranger",
+  "source": "PHB",
+  "hitDie": 10,
+  "levels": [
+    {
+      "level": 1,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 2,
+      "spellcasting": null,
+      "features": [
+        "FAVORED_ENEMY_1_TYPE",
+        "NATURAL_EXPLORER_1_TERRAIN_TYPE"
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "favoredEnemies": 1,
+        "favoredTerrain": 1
+      }
+    },
+    {
+      "level": 2,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 2,
+      "spellcasting": null,
+      "features": [
+        "SPELLCASTING"
+      ],
+      "featureChoices": [
+        "FIGHTING_STYLE"
+      ],
+      "classSpecific": {
+        "favoredEnemies": 1,
+        "favoredTerrain": 1
+      }
+    },
+    {
+      "level": 3,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 2,
+      "spellcasting": null,
+      "features": [
+        "RANGER_ARCHETYPE",
+        "PRIMEVAL_AWARENESS"
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "favoredEnemies": 1,
+        "favoredTerrain": 1
+      }
+    },
+    {
+      "level": 4,
+      "abilityScoreIncrease": true,
+      "proficiencyBonus": 2,
+      "spellcasting": null,
+      "features": [],
+      "featureChoices": [],
+      "classSpecific": {
+        "favoredEnemies": 1,
+        "favoredTerrain": 1
+      }
+    },
+    {
+      "level": 5,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 3,
+      "spellcasting": null,
+      "features": [
+        "EXTRA_ATTACK"
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "favoredEnemies": 1,
+        "favoredTerrain": 1
+      }
+    },
+    {
+      "level": 6,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 3,
+      "spellcasting": null,
+      "features": [
+        "FAVORED_ENEMY_2_TYPES",
+        "NATURAL_EXPLORER_2_TERRAIN_TYPES"
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "favoredEnemies": 2,
+        "favoredTerrain": 2
+      }
+    },
+    {
+      "level": 7,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 3,
+      "spellcasting": null,
+      "features": [],
+      "featureChoices": [],
+      "classSpecific": {
+        "favoredEnemies": 2,
+        "favoredTerrain": 2
+      }
+    },
+    {
+      "level": 8,
+      "abilityScoreIncrease": true,
+      "proficiencyBonus": 3,
+      "spellcasting": null,
+      "features": [
+        "LANDS_STRIDE"
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "favoredEnemies": 2,
+        "favoredTerrain": 2
+      }
+    },
+    {
+      "level": 9,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 4,
+      "spellcasting": null,
+      "features": [],
+      "featureChoices": [],
+      "classSpecific": {
+        "favoredEnemies": 2,
+        "favoredTerrain": 2
+      }
+    },
+    {
+      "level": 10,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 4,
+      "spellcasting": null,
+      "features": [
+        "NATURAL_EXPLORER_3_TERRAIN_TYPES",
+        "HIDE_IN_PLAIN_SIGHT"
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "favoredEnemies": 2,
+        "favoredTerrain": 3
+      }
+    },
+    {
+      "level": 11,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 4,
+      "spellcasting": null,
+      "features": [],
+      "featureChoices": [],
+      "classSpecific": {
+        "favoredEnemies": 2,
+        "favoredTerrain": 3
+      }
+    },
+    {
+      "level": 12,
+      "abilityScoreIncrease": true,
+      "proficiencyBonus": 4,
+      "spellcasting": null,
+      "features": [],
+      "featureChoices": [],
+      "classSpecific": {
+        "favoredEnemies": 2,
+        "favoredTerrain": 3
+      }
+    },
+    {
+      "level": 13,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 5,
+      "spellcasting": null,
+      "features": [],
+      "featureChoices": [],
+      "classSpecific": {
+        "favoredEnemies": 2,
+        "favoredTerrain": 3
+      }
+    },
+    {
+      "level": 14,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 5,
+      "spellcasting": null,
+      "features": [
+        "FAVORED_ENEMY_3_ENEMIES",
+        "VANISH"
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "favoredEnemies": 3,
+        "favoredTerrain": 3
+      }
+    },
+    {
+      "level": 15,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 5,
+      "spellcasting": null,
+      "features": [],
+      "featureChoices": [],
+      "classSpecific": {
+        "favoredEnemies": 3,
+        "favoredTerrain": 3
+      }
+    },
+    {
+      "level": 16,
+      "abilityScoreIncrease": true,
+      "proficiencyBonus": 5,
+      "spellcasting": null,
+      "features": [],
+      "featureChoices": [],
+      "classSpecific": {
+        "favoredEnemies": 3,
+        "favoredTerrain": 3
+      }
+    },
+    {
+      "level": 17,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 6,
+      "spellcasting": null,
+      "features": [],
+      "featureChoices": [],
+      "classSpecific": {
+        "favoredEnemies": 3,
+        "favoredTerrain": 3
+      }
+    },
+    {
+      "level": 18,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 6,
+      "spellcasting": null,
+      "features": [
+        "FERAL_SENSES"
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "favoredEnemies": 3,
+        "favoredTerrain": 3
+      }
+    },
+    {
+      "level": 19,
+      "abilityScoreIncrease": true,
+      "proficiencyBonus": 6,
+      "spellcasting": null,
+      "features": [],
+      "featureChoices": [],
+      "classSpecific": {
+        "favoredEnemies": 3,
+        "favoredTerrain": 3
+      }
+    },
+    {
+      "level": 20,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 6,
+      "spellcasting": null,
+      "features": [
+        "FOE_SLAYER"
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "favoredEnemies": 3,
+        "favoredTerrain": 3
+      }
+    }
+  ],
+  "proficiencies": {
+    "savingThrows": [
+      "STR",
+      "DEX"
+    ],
+    "equipment": [
+      "LIGHT_ARMOR",
+      "MEDIUM_ARMOR",
+      "SHIELDS",
+      "SIMPLE_WEAPONS",
+      "MARTIAL_WEAPONS"
+    ],
+    "choices": [
+      {
+        "type": "SKILL",
+        "amount": 3,
+        "options": [
+          "ANIMAL_HANDLING",
+          "ATHLETICS",
+          "INSIGHT",
+          "INVESTIGATION",
+          "NATURE",
+          "PERCEPTION",
+          "STEALTH",
+          "SURVIVAL"
+        ]
+      }
+    ]
+  },
+  "spellcasting": {
+    "ability": "WIS",
+    "unlockLevel": 2,
+    "features": [
+      {
+        "title": "Spell Slots",
+        "description": "The Ranger table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.\\nFor example, if you know the 1st-level spell animal friendship and have a 1st-level and a 2nd-level spell slot available, you can cast animal friendship using either slot."
+      },
+      {
+        "title": "Spells Known of 1st Level and Higher",
+        "description": "You know two 1st-level spells of your choice from the ranger spell list.\\nThe Spells Known column of the Ranger table shows when you learn more ranger spells of your choice. Each of these spells must be of a level for which you have spell slots. For instance, when you reach 5th level in this class, you can learn one new spell of 1st or 2nd level.\\nAdditionally, when you gain a level in this class, you can choose one of the ranger spells you know and replace it with another spell from the ranger spell list, which also must be of a level for which you have spell slots."
+      },
+      {
+        "title": "Spellcasting Ability",
+        "description": "Wisdom is your spellcasting ability for your ranger spells, since your magic draws on your attunement to nature. You use your Wisdom whenever a spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a ranger spell you cast and when making an attack roll with one."
+      }
+    ]
+  },
+  "equipment": {
+    "starting": [
+      {
+        "item": "LONGBOW",
+        "amount": 1
+      },
+      {
+        "item": "ARROW",
+        "amount": 20
+      }
+    ],
+    "options": [
+      {
+        "choose": 1,
+        "from": [
+          {
+            "type": "ITEM",
+            "item": "SCALE_MAIL",
+            "amount": 1
+          },
+          {
+            "type": "ITEM",
+            "item": "LEATHER",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "type": "ITEM",
+            "item": "SHORTSWORD",
+            "amount": 2
+          },
+          {
+            "type": "CATEGORY",
+            "item": "SIMPLE_MELEE_WEAPONS",
+            "amount": 2
+          }
+        ]
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "type": "ITEM",
+            "item": "DUNGEONEERS_PACK",
+            "amount": 1
+          },
+          {
+            "type": "ITEM",
+            "item": "EXPLORERS_PACK",
+            "amount": 1
+          }
+        ]
+      }
+    ]
+  },
+  "subClasses": [
+    {
+      "id": "hunter",
+      "name": "Hunter",
+      "kind": "Ranger Archetype",
+      "description": "Emulating the Hunter archetype means accepting your place as a bulwark between civilization and the terrors of the wilderness. As you walk the Hunter's path, you learn specialized techniques for fighting the threats you face, from rampaging ogres and hordes of orcs to towering giants and terrifying dragons."
+    }
+  ]
+}

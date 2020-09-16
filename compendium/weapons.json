@@ -1,0 +1,1800 @@
+[
+  {
+    "id": "club",
+    "name": "Club",
+    "url": "/equipment/weapon/club",
+    "source": "PHB",
+    "description": "",
+    "category": {
+      "id": "weapon",
+      "name": "Weapon",
+      "url": "/equipment/weapon/"
+    },
+    "subCategory": null,
+    "cost": "1SP",
+    "weight": 2,
+    "weaponDetails": {
+      "type": "SIMPLE",
+      "properties": [
+        {
+          "id": "light",
+          "name": "Light",
+          "url": "/weapon-properties/light"
+        },
+        {
+          "id": "monk",
+          "name": "Monk",
+          "url": "/weapon-properties/monk"
+        }
+      ],
+      "range": {
+        "type": "MELEE",
+        "normal": 5,
+        "long": 0
+      },
+      "damage": {
+        "amount": "1d4",
+        "twoHanded": null,
+        "type": {
+          "id": "bludgeoning",
+          "name": "Bludgeoning",
+          "url": "/damage-types/bludgeoning"
+        }
+      },
+      "throw": null,
+      "extra": null
+    },
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "dagger",
+    "name": "Dagger",
+    "url": "/equipment/weapon/dagger",
+    "source": "PHB",
+    "description": "",
+    "category": {
+      "id": "weapon",
+      "name": "Weapon",
+      "url": "/equipment/weapon/"
+    },
+    "subCategory": null,
+    "cost": "2GP",
+    "weight": 1,
+    "weaponDetails": {
+      "type": "SIMPLE",
+      "properties": [
+        {
+          "id": "finesse",
+          "name": "Finesse",
+          "url": "/weapon-properties/finesse"
+        },
+        {
+          "id": "light",
+          "name": "Light",
+          "url": "/weapon-properties/light"
+        },
+        {
+          "id": "thrown",
+          "name": "Thrown",
+          "url": "/weapon-properties/thrown"
+        },
+        {
+          "id": "monk",
+          "name": "Monk",
+          "url": "/weapon-properties/monk"
+        }
+      ],
+      "range": {
+        "type": "MELEE",
+        "normal": 5,
+        "long": 0
+      },
+      "damage": {
+        "amount": "1d4",
+        "twoHanded": null,
+        "type": {
+          "id": "piercing",
+          "name": "Piercing",
+          "url": "/damage-types/piercing"
+        }
+      },
+      "throw": {
+        "normal": 20,
+        "long": 60
+      },
+      "extra": null
+    },
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "greatclub",
+    "name": "Greatclub",
+    "url": "/equipment/weapon/greatclub",
+    "source": "PHB",
+    "description": "",
+    "category": {
+      "id": "weapon",
+      "name": "Weapon",
+      "url": "/equipment/weapon/"
+    },
+    "subCategory": null,
+    "cost": "2SP",
+    "weight": 10,
+    "weaponDetails": {
+      "type": "SIMPLE",
+      "properties": [
+        {
+          "id": "two-handed",
+          "name": "Two-handed",
+          "url": "/weapon-properties/two-handed"
+        }
+      ],
+      "range": {
+        "type": "MELEE",
+        "normal": 5,
+        "long": 0
+      },
+      "damage": {
+        "amount": "1d8",
+        "twoHanded": null,
+        "type": {
+          "id": "bludgeoning",
+          "name": "Bludgeoning",
+          "url": "/damage-types/bludgeoning"
+        }
+      },
+      "throw": null,
+      "extra": null
+    },
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "handaxe",
+    "name": "Handaxe",
+    "url": "/equipment/weapon/handaxe",
+    "source": "PHB",
+    "description": "",
+    "category": {
+      "id": "weapon",
+      "name": "Weapon",
+      "url": "/equipment/weapon/"
+    },
+    "subCategory": null,
+    "cost": "5GP",
+    "weight": 2,
+    "weaponDetails": {
+      "type": "SIMPLE",
+      "properties": [
+        {
+          "id": "light",
+          "name": "Light",
+          "url": "/weapon-properties/light"
+        },
+        {
+          "id": "thrown",
+          "name": "Thrown",
+          "url": "/weapon-properties/thrown"
+        },
+        {
+          "id": "monk",
+          "name": "Monk",
+          "url": "/weapon-properties/monk"
+        }
+      ],
+      "range": {
+        "type": "MELEE",
+        "normal": 5,
+        "long": 0
+      },
+      "damage": {
+        "amount": "1d6",
+        "twoHanded": null,
+        "type": {
+          "id": "slashing",
+          "name": "Slashing",
+          "url": "/damage-types/slashing"
+        }
+      },
+      "throw": {
+        "normal": 20,
+        "long": 60
+      },
+      "extra": null
+    },
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "javelin",
+    "name": "Javelin",
+    "url": "/equipment/weapon/javelin",
+    "source": "PHB",
+    "description": "",
+    "category": {
+      "id": "weapon",
+      "name": "Weapon",
+      "url": "/equipment/weapon/"
+    },
+    "subCategory": null,
+    "cost": "5SP",
+    "weight": 2,
+    "weaponDetails": {
+      "type": "SIMPLE",
+      "properties": [
+        {
+          "id": "thrown",
+          "name": "Thrown",
+          "url": "/weapon-properties/thrown"
+        },
+        {
+          "id": "monk",
+          "name": "Monk",
+          "url": "/weapon-properties/monk"
+        }
+      ],
+      "range": {
+        "type": "MELEE",
+        "normal": 5,
+        "long": 0
+      },
+      "damage": {
+        "amount": "1d6",
+        "twoHanded": null,
+        "type": {
+          "id": "piercing",
+          "name": "Piercing",
+          "url": "/damage-types/piercing"
+        }
+      },
+      "throw": {
+        "normal": 30,
+        "long": 120
+      },
+      "extra": null
+    },
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "light-hammer",
+    "name": "Light hammer",
+    "url": "/equipment/weapon/light-hammer",
+    "source": "PHB",
+    "description": "",
+    "category": {
+      "id": "weapon",
+      "name": "Weapon",
+      "url": "/equipment/weapon/"
+    },
+    "subCategory": null,
+    "cost": "2GP",
+    "weight": 2,
+    "weaponDetails": {
+      "type": "SIMPLE",
+      "properties": [
+        {
+          "id": "light",
+          "name": "Light",
+          "url": "/weapon-properties/light"
+        },
+        {
+          "id": "thrown",
+          "name": "Thrown",
+          "url": "/weapon-properties/thrown"
+        },
+        {
+          "id": "monk",
+          "name": "Monk",
+          "url": "/weapon-properties/monk"
+        }
+      ],
+      "range": {
+        "type": "MELEE",
+        "normal": 5,
+        "long": 0
+      },
+      "damage": {
+        "amount": "1d4",
+        "twoHanded": null,
+        "type": {
+          "id": "bludgeoning",
+          "name": "Bludgeoning",
+          "url": "/damage-types/bludgeoning"
+        }
+      },
+      "throw": {
+        "normal": 20,
+        "long": 60
+      },
+      "extra": null
+    },
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "mace",
+    "name": "Mace",
+    "url": "/equipment/weapon/mace",
+    "source": "PHB",
+    "description": "",
+    "category": {
+      "id": "weapon",
+      "name": "Weapon",
+      "url": "/equipment/weapon/"
+    },
+    "subCategory": null,
+    "cost": "5GP",
+    "weight": 4,
+    "weaponDetails": {
+      "type": "SIMPLE",
+      "properties": [
+        {
+          "id": "monk",
+          "name": "Monk",
+          "url": "/weapon-properties/monk"
+        }
+      ],
+      "range": {
+        "type": "MELEE",
+        "normal": 5,
+        "long": 0
+      },
+      "damage": {
+        "amount": "1d6",
+        "twoHanded": null,
+        "type": {
+          "id": "bludgeoning",
+          "name": "Bludgeoning",
+          "url": "/damage-types/bludgeoning"
+        }
+      },
+      "throw": null,
+      "extra": null
+    },
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "quarterstaff",
+    "name": "Quarterstaff",
+    "url": "/equipment/weapon/quarterstaff",
+    "source": "PHB",
+    "description": "",
+    "category": {
+      "id": "weapon",
+      "name": "Weapon",
+      "url": "/equipment/weapon/"
+    },
+    "subCategory": null,
+    "cost": "2SP",
+    "weight": 4,
+    "weaponDetails": {
+      "type": "SIMPLE",
+      "properties": [
+        {
+          "id": "versatile",
+          "name": "Versatile",
+          "url": "/weapon-properties/versatile"
+        },
+        {
+          "id": "monk",
+          "name": "Monk",
+          "url": "/weapon-properties/monk"
+        }
+      ],
+      "range": {
+        "type": "MELEE",
+        "normal": 5,
+        "long": 0
+      },
+      "damage": {
+        "amount": "1d6",
+        "twoHanded": "1d8",
+        "type": {
+          "id": "bludgeoning",
+          "name": "Bludgeoning",
+          "url": "/damage-types/bludgeoning"
+        }
+      },
+      "throw": null,
+      "extra": null
+    },
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "sickle",
+    "name": "Sickle",
+    "url": "/equipment/weapon/sickle",
+    "source": "PHB",
+    "description": "",
+    "category": {
+      "id": "weapon",
+      "name": "Weapon",
+      "url": "/equipment/weapon/"
+    },
+    "subCategory": null,
+    "cost": "1GP",
+    "weight": 2,
+    "weaponDetails": {
+      "type": "SIMPLE",
+      "properties": [
+        {
+          "id": "light",
+          "name": "Light",
+          "url": "/weapon-properties/light"
+        },
+        {
+          "id": "monk",
+          "name": "Monk",
+          "url": "/weapon-properties/monk"
+        }
+      ],
+      "range": {
+        "type": "MELEE",
+        "normal": 5,
+        "long": 0
+      },
+      "damage": {
+        "amount": "1d4",
+        "twoHanded": null,
+        "type": {
+          "id": "slashing",
+          "name": "Slashing",
+          "url": "/damage-types/slashing"
+        }
+      },
+      "throw": null,
+      "extra": null
+    },
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "spear",
+    "name": "Spear",
+    "url": "/equipment/weapon/spear",
+    "source": "PHB",
+    "description": "",
+    "category": {
+      "id": "weapon",
+      "name": "Weapon",
+      "url": "/equipment/weapon/"
+    },
+    "subCategory": null,
+    "cost": "1GP",
+    "weight": 3,
+    "weaponDetails": {
+      "type": "SIMPLE",
+      "properties": [
+        {
+          "id": "thrown",
+          "name": "Thrown",
+          "url": "/weapon-properties/thrown"
+        },
+        {
+          "id": "versatile",
+          "name": "Versatile",
+          "url": "/weapon-properties/versatile"
+        },
+        {
+          "id": "monk",
+          "name": "Monk",
+          "url": "/weapon-properties/monk"
+        }
+      ],
+      "range": {
+        "type": "MELEE",
+        "normal": 5,
+        "long": 0
+      },
+      "damage": {
+        "amount": "1d6",
+        "twoHanded": "1d8",
+        "type": {
+          "id": "piercing",
+          "name": "Piercing",
+          "url": "/damage-types/piercing"
+        }
+      },
+      "throw": {
+        "normal": 20,
+        "long": 60
+      },
+      "extra": null
+    },
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "crossbow-light",
+    "name": "Crossbow, light",
+    "url": "/equipment/weapon/crossbow-light",
+    "source": "PHB",
+    "description": "",
+    "category": {
+      "id": "weapon",
+      "name": "Weapon",
+      "url": "/equipment/weapon/"
+    },
+    "subCategory": null,
+    "cost": "25GP",
+    "weight": 5,
+    "weaponDetails": {
+      "type": "SIMPLE",
+      "properties": [
+        {
+          "id": "ammunition",
+          "name": "Ammunition",
+          "url": "/weapon-properties/ammunition"
+        },
+        {
+          "id": "loading",
+          "name": "Loading",
+          "url": "/weapon-properties/loading"
+        },
+        {
+          "id": "two-handed",
+          "name": "Two-handed",
+          "url": "/weapon-properties/two-handed"
+        }
+      ],
+      "range": {
+        "type": "RANGED",
+        "normal": 80,
+        "long": 320
+      },
+      "damage": {
+        "amount": "1d8",
+        "twoHanded": null,
+        "type": {
+          "id": "piercing",
+          "name": "Piercing",
+          "url": "/damage-types/piercing"
+        }
+      },
+      "throw": null,
+      "extra": null
+    },
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "dart",
+    "name": "Dart",
+    "url": "/equipment/weapon/dart",
+    "source": "PHB",
+    "description": "",
+    "category": {
+      "id": "weapon",
+      "name": "Weapon",
+      "url": "/equipment/weapon/"
+    },
+    "subCategory": null,
+    "cost": "5CP",
+    "weight": 0,
+    "weaponDetails": {
+      "type": "SIMPLE",
+      "properties": [
+        {
+          "id": "finesse",
+          "name": "Finesse",
+          "url": "/weapon-properties/finesse"
+        },
+        {
+          "id": "thrown",
+          "name": "Thrown",
+          "url": "/weapon-properties/thrown"
+        }
+      ],
+      "range": {
+        "type": "RANGED",
+        "normal": 20,
+        "long": 60
+      },
+      "damage": {
+        "amount": "1d4",
+        "twoHanded": null,
+        "type": {
+          "id": "piercing",
+          "name": "Piercing",
+          "url": "/damage-types/piercing"
+        }
+      },
+      "throw": {
+        "normal": 20,
+        "long": 60
+      },
+      "extra": null
+    },
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "shortbow",
+    "name": "Shortbow",
+    "url": "/equipment/weapon/shortbow",
+    "source": "PHB",
+    "description": "",
+    "category": {
+      "id": "weapon",
+      "name": "Weapon",
+      "url": "/equipment/weapon/"
+    },
+    "subCategory": null,
+    "cost": "25GP",
+    "weight": 2,
+    "weaponDetails": {
+      "type": "SIMPLE",
+      "properties": [
+        {
+          "id": "ammunition",
+          "name": "Ammunition",
+          "url": "/weapon-properties/ammunition"
+        },
+        {
+          "id": "two-handed",
+          "name": "Two-handed",
+          "url": "/weapon-properties/two-handed"
+        }
+      ],
+      "range": {
+        "type": "RANGED",
+        "normal": 80,
+        "long": 320
+      },
+      "damage": {
+        "amount": "1d6",
+        "twoHanded": null,
+        "type": {
+          "id": "piercing",
+          "name": "Piercing",
+          "url": "/damage-types/piercing"
+        }
+      },
+      "throw": null,
+      "extra": null
+    },
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "sling",
+    "name": "Sling",
+    "url": "/equipment/weapon/sling",
+    "source": "PHB",
+    "description": "",
+    "category": {
+      "id": "weapon",
+      "name": "Weapon",
+      "url": "/equipment/weapon/"
+    },
+    "subCategory": null,
+    "cost": "1SP",
+    "weight": 0,
+    "weaponDetails": {
+      "type": "SIMPLE",
+      "properties": [
+        {
+          "id": "ammunition",
+          "name": "Ammunition",
+          "url": "/weapon-properties/ammunition"
+        }
+      ],
+      "range": {
+        "type": "RANGED",
+        "normal": 30,
+        "long": 120
+      },
+      "damage": {
+        "amount": "1d4",
+        "twoHanded": null,
+        "type": {
+          "id": "bludgeoning",
+          "name": "Bludgeoning",
+          "url": "/damage-types/bludgeoning"
+        }
+      },
+      "throw": null,
+      "extra": null
+    },
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "battleaxe",
+    "name": "Battleaxe",
+    "url": "/equipment/weapon/battleaxe",
+    "source": "PHB",
+    "description": "",
+    "category": {
+      "id": "weapon",
+      "name": "Weapon",
+      "url": "/equipment/weapon/"
+    },
+    "subCategory": null,
+    "cost": "10GP",
+    "weight": 4,
+    "weaponDetails": {
+      "type": "MARTIAL",
+      "properties": [
+        {
+          "id": "versatile",
+          "name": "Versatile",
+          "url": "/weapon-properties/versatile"
+        }
+      ],
+      "range": {
+        "type": "MELEE",
+        "normal": 5,
+        "long": 0
+      },
+      "damage": {
+        "amount": "1d8",
+        "twoHanded": "1d10",
+        "type": {
+          "id": "slashing",
+          "name": "Slashing",
+          "url": "/damage-types/slashing"
+        }
+      },
+      "throw": null,
+      "extra": null
+    },
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "flail",
+    "name": "Flail",
+    "url": "/equipment/weapon/flail",
+    "source": "PHB",
+    "description": "",
+    "category": {
+      "id": "weapon",
+      "name": "Weapon",
+      "url": "/equipment/weapon/"
+    },
+    "subCategory": null,
+    "cost": "10GP",
+    "weight": 2,
+    "weaponDetails": {
+      "type": "MARTIAL",
+      "properties": [],
+      "range": {
+        "type": "MELEE",
+        "normal": 5,
+        "long": 0
+      },
+      "damage": {
+        "amount": "1d8",
+        "twoHanded": null,
+        "type": {
+          "id": "bludgeoning",
+          "name": "Bludgeoning",
+          "url": "/damage-types/bludgeoning"
+        }
+      },
+      "throw": null,
+      "extra": null
+    },
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "glaive",
+    "name": "Glaive",
+    "url": "/equipment/weapon/glaive",
+    "source": "PHB",
+    "description": "",
+    "category": {
+      "id": "weapon",
+      "name": "Weapon",
+      "url": "/equipment/weapon/"
+    },
+    "subCategory": null,
+    "cost": "20GP",
+    "weight": 6,
+    "weaponDetails": {
+      "type": "MARTIAL",
+      "properties": [
+        {
+          "id": "heavy",
+          "name": "Heavy",
+          "url": "/weapon-properties/heavy"
+        },
+        {
+          "id": "reach",
+          "name": "Reach",
+          "url": "/weapon-properties/reach"
+        },
+        {
+          "id": "two-handed",
+          "name": "Two-handed",
+          "url": "/weapon-properties/two-handed"
+        }
+      ],
+      "range": {
+        "type": "MELEE",
+        "normal": 5,
+        "long": 0
+      },
+      "damage": {
+        "amount": "1d10",
+        "twoHanded": null,
+        "type": {
+          "id": "slashing",
+          "name": "Slashing",
+          "url": "/damage-types/slashing"
+        }
+      },
+      "throw": null,
+      "extra": null
+    },
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "greataxe",
+    "name": "Greataxe",
+    "url": "/equipment/weapon/greataxe",
+    "source": "PHB",
+    "description": "",
+    "category": {
+      "id": "weapon",
+      "name": "Weapon",
+      "url": "/equipment/weapon/"
+    },
+    "subCategory": null,
+    "cost": "30GP",
+    "weight": 7,
+    "weaponDetails": {
+      "type": "MARTIAL",
+      "properties": [
+        {
+          "id": "heavy",
+          "name": "Heavy",
+          "url": "/weapon-properties/heavy"
+        },
+        {
+          "id": "two-handed",
+          "name": "Two-handed",
+          "url": "/weapon-properties/two-handed"
+        }
+      ],
+      "range": {
+        "type": "MELEE",
+        "normal": 5,
+        "long": 0
+      },
+      "damage": {
+        "amount": "1d12",
+        "twoHanded": null,
+        "type": {
+          "id": "slashing",
+          "name": "Slashing",
+          "url": "/damage-types/slashing"
+        }
+      },
+      "throw": null,
+      "extra": null
+    },
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "greatsword",
+    "name": "Greatsword",
+    "url": "/equipment/weapon/greatsword",
+    "source": "PHB",
+    "description": "",
+    "category": {
+      "id": "weapon",
+      "name": "Weapon",
+      "url": "/equipment/weapon/"
+    },
+    "subCategory": null,
+    "cost": "50GP",
+    "weight": 6,
+    "weaponDetails": {
+      "type": "MARTIAL",
+      "properties": [
+        {
+          "id": "heavy",
+          "name": "Heavy",
+          "url": "/weapon-properties/heavy"
+        },
+        {
+          "id": "two-handed",
+          "name": "Two-handed",
+          "url": "/weapon-properties/two-handed"
+        }
+      ],
+      "range": {
+        "type": "MELEE",
+        "normal": 5,
+        "long": 0
+      },
+      "damage": {
+        "amount": "2d6",
+        "twoHanded": null,
+        "type": {
+          "id": "slashing",
+          "name": "Slashing",
+          "url": "/damage-types/slashing"
+        }
+      },
+      "throw": null,
+      "extra": null
+    },
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "halberd",
+    "name": "Halberd",
+    "url": "/equipment/weapon/halberd",
+    "source": "PHB",
+    "description": "",
+    "category": {
+      "id": "weapon",
+      "name": "Weapon",
+      "url": "/equipment/weapon/"
+    },
+    "subCategory": null,
+    "cost": "20GP",
+    "weight": 6,
+    "weaponDetails": {
+      "type": "MARTIAL",
+      "properties": [
+        {
+          "id": "heavy",
+          "name": "Heavy",
+          "url": "/weapon-properties/heavy"
+        },
+        {
+          "id": "reach",
+          "name": "Reach",
+          "url": "/weapon-properties/reach"
+        },
+        {
+          "id": "two-handed",
+          "name": "Two-handed",
+          "url": "/weapon-properties/two-handed"
+        }
+      ],
+      "range": {
+        "type": "MELEE",
+        "normal": 5,
+        "long": 0
+      },
+      "damage": {
+        "amount": "1d10",
+        "twoHanded": null,
+        "type": {
+          "id": "slashing",
+          "name": "Slashing",
+          "url": "/damage-types/slashing"
+        }
+      },
+      "throw": null,
+      "extra": null
+    },
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "lance",
+    "name": "Lance",
+    "url": "/equipment/weapon/lance",
+    "source": "PHB",
+    "description": "",
+    "category": {
+      "id": "weapon",
+      "name": "Weapon",
+      "url": "/equipment/weapon/"
+    },
+    "subCategory": null,
+    "cost": "10GP",
+    "weight": 6,
+    "weaponDetails": {
+      "type": "MARTIAL",
+      "properties": [
+        {
+          "id": "reach",
+          "name": "Reach",
+          "url": "/weapon-properties/reach"
+        },
+        {
+          "id": "special",
+          "name": "Special",
+          "url": "/weapon-properties/special"
+        }
+      ],
+      "range": {
+        "type": "MELEE",
+        "normal": 5,
+        "long": 0
+      },
+      "damage": {
+        "amount": "1d12",
+        "twoHanded": null,
+        "type": {
+          "id": "piercing",
+          "name": "Piercing",
+          "url": "/damage-types/piercing"
+        }
+      },
+      "throw": null,
+      "extra": "You have disadvantage when you use a lance to attack a target within 5 feet of you. Also, a lance requires two hands to wield when you aren't mounted."
+    },
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "longsword",
+    "name": "Longsword",
+    "url": "/equipment/weapon/longsword",
+    "source": "PHB",
+    "description": "",
+    "category": {
+      "id": "weapon",
+      "name": "Weapon",
+      "url": "/equipment/weapon/"
+    },
+    "subCategory": null,
+    "cost": "15GP",
+    "weight": 3,
+    "weaponDetails": {
+      "type": "MARTIAL",
+      "properties": [
+        {
+          "id": "versatile",
+          "name": "Versatile",
+          "url": "/weapon-properties/versatile"
+        }
+      ],
+      "range": {
+        "type": "MELEE",
+        "normal": 5,
+        "long": 0
+      },
+      "damage": {
+        "amount": "1d8",
+        "twoHanded": "1d10",
+        "type": {
+          "id": "slashing",
+          "name": "Slashing",
+          "url": "/damage-types/slashing"
+        }
+      },
+      "throw": null,
+      "extra": null
+    },
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "maul",
+    "name": "Maul",
+    "url": "/equipment/weapon/maul",
+    "source": "PHB",
+    "description": "",
+    "category": {
+      "id": "weapon",
+      "name": "Weapon",
+      "url": "/equipment/weapon/"
+    },
+    "subCategory": null,
+    "cost": "10GP",
+    "weight": 10,
+    "weaponDetails": {
+      "type": "MARTIAL",
+      "properties": [
+        {
+          "id": "heavy",
+          "name": "Heavy",
+          "url": "/weapon-properties/heavy"
+        },
+        {
+          "id": "two-handed",
+          "name": "Two-handed",
+          "url": "/weapon-properties/two-handed"
+        }
+      ],
+      "range": {
+        "type": "MELEE",
+        "normal": 5,
+        "long": 0
+      },
+      "damage": {
+        "amount": "2d6",
+        "twoHanded": null,
+        "type": {
+          "id": "bludgeoning",
+          "name": "Bludgeoning",
+          "url": "/damage-types/bludgeoning"
+        }
+      },
+      "throw": null,
+      "extra": null
+    },
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "morningstar",
+    "name": "Morningstar",
+    "url": "/equipment/weapon/morningstar",
+    "source": "PHB",
+    "description": "",
+    "category": {
+      "id": "weapon",
+      "name": "Weapon",
+      "url": "/equipment/weapon/"
+    },
+    "subCategory": null,
+    "cost": "15GP",
+    "weight": 4,
+    "weaponDetails": {
+      "type": "MARTIAL",
+      "properties": [],
+      "range": {
+        "type": "MELEE",
+        "normal": 5,
+        "long": 0
+      },
+      "damage": {
+        "amount": "1d8",
+        "twoHanded": null,
+        "type": {
+          "id": "piercing",
+          "name": "Piercing",
+          "url": "/damage-types/piercing"
+        }
+      },
+      "throw": null,
+      "extra": null
+    },
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "pike",
+    "name": "Pike",
+    "url": "/equipment/weapon/pike",
+    "source": "PHB",
+    "description": "",
+    "category": {
+      "id": "weapon",
+      "name": "Weapon",
+      "url": "/equipment/weapon/"
+    },
+    "subCategory": null,
+    "cost": "5GP",
+    "weight": 18,
+    "weaponDetails": {
+      "type": "MARTIAL",
+      "properties": [
+        {
+          "id": "heavy",
+          "name": "Heavy",
+          "url": "/weapon-properties/heavy"
+        },
+        {
+          "id": "reach",
+          "name": "Reach",
+          "url": "/weapon-properties/reach"
+        },
+        {
+          "id": "two-handed",
+          "name": "Two-handed",
+          "url": "/weapon-properties/two-handed"
+        }
+      ],
+      "range": {
+        "type": "MELEE",
+        "normal": 5,
+        "long": 0
+      },
+      "damage": {
+        "amount": "1d10",
+        "twoHanded": null,
+        "type": {
+          "id": "piercing",
+          "name": "Piercing",
+          "url": "/damage-types/piercing"
+        }
+      },
+      "throw": null,
+      "extra": null
+    },
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "rapier",
+    "name": "Rapier",
+    "url": "/equipment/weapon/rapier",
+    "source": "PHB",
+    "description": "",
+    "category": {
+      "id": "weapon",
+      "name": "Weapon",
+      "url": "/equipment/weapon/"
+    },
+    "subCategory": null,
+    "cost": "25GP",
+    "weight": 2,
+    "weaponDetails": {
+      "type": "MARTIAL",
+      "properties": [
+        {
+          "id": "finesse",
+          "name": "Finesse",
+          "url": "/weapon-properties/finesse"
+        }
+      ],
+      "range": {
+        "type": "MELEE",
+        "normal": 5,
+        "long": 0
+      },
+      "damage": {
+        "amount": "1d8",
+        "twoHanded": null,
+        "type": {
+          "id": "piercing",
+          "name": "Piercing",
+          "url": "/damage-types/piercing"
+        }
+      },
+      "throw": null,
+      "extra": null
+    },
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "scimitar",
+    "name": "Scimitar",
+    "url": "/equipment/weapon/scimitar",
+    "source": "PHB",
+    "description": "",
+    "category": {
+      "id": "weapon",
+      "name": "Weapon",
+      "url": "/equipment/weapon/"
+    },
+    "subCategory": null,
+    "cost": "25GP",
+    "weight": 3,
+    "weaponDetails": {
+      "type": "MARTIAL",
+      "properties": [
+        {
+          "id": "finesse",
+          "name": "Finesse",
+          "url": "/weapon-properties/finesse"
+        },
+        {
+          "id": "light",
+          "name": "Light",
+          "url": "/weapon-properties/light"
+        }
+      ],
+      "range": {
+        "type": "MELEE",
+        "normal": 5,
+        "long": 0
+      },
+      "damage": {
+        "amount": "1d6",
+        "twoHanded": null,
+        "type": {
+          "id": "slashing",
+          "name": "Slashing",
+          "url": "/damage-types/slashing"
+        }
+      },
+      "throw": null,
+      "extra": null
+    },
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "shortsword",
+    "name": "Shortsword",
+    "url": "/equipment/weapon/shortsword",
+    "source": "PHB",
+    "description": "",
+    "category": {
+      "id": "weapon",
+      "name": "Weapon",
+      "url": "/equipment/weapon/"
+    },
+    "subCategory": null,
+    "cost": "10GP",
+    "weight": 2,
+    "weaponDetails": {
+      "type": "MARTIAL",
+      "properties": [
+        {
+          "id": "finesse",
+          "name": "Finesse",
+          "url": "/weapon-properties/finesse"
+        },
+        {
+          "id": "light",
+          "name": "Light",
+          "url": "/weapon-properties/light"
+        },
+        {
+          "id": "monk",
+          "name": "Monk",
+          "url": "/weapon-properties/monk"
+        }
+      ],
+      "range": {
+        "type": "MELEE",
+        "normal": 5,
+        "long": 0
+      },
+      "damage": {
+        "amount": "1d6",
+        "twoHanded": null,
+        "type": {
+          "id": "piercing",
+          "name": "Piercing",
+          "url": "/damage-types/piercing"
+        }
+      },
+      "throw": null,
+      "extra": null
+    },
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "trident",
+    "name": "Trident",
+    "url": "/equipment/weapon/trident",
+    "source": "PHB",
+    "description": "",
+    "category": {
+      "id": "weapon",
+      "name": "Weapon",
+      "url": "/equipment/weapon/"
+    },
+    "subCategory": null,
+    "cost": "5GP",
+    "weight": 4,
+    "weaponDetails": {
+      "type": "MARTIAL",
+      "properties": [
+        {
+          "id": "thrown",
+          "name": "Thrown",
+          "url": "/weapon-properties/thrown"
+        },
+        {
+          "id": "versatile",
+          "name": "Versatile",
+          "url": "/weapon-properties/versatile"
+        }
+      ],
+      "range": {
+        "type": "MELEE",
+        "normal": 5,
+        "long": 0
+      },
+      "damage": {
+        "amount": "1d6",
+        "twoHanded": "1d8",
+        "type": {
+          "id": "slashing",
+          "name": "Slashing",
+          "url": "/damage-types/slashing"
+        }
+      },
+      "throw": {
+        "normal": 20,
+        "long": 60
+      },
+      "extra": null
+    },
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "war-pick",
+    "name": "War pick",
+    "url": "/equipment/weapon/war-pick",
+    "source": "PHB",
+    "description": "",
+    "category": {
+      "id": "weapon",
+      "name": "Weapon",
+      "url": "/equipment/weapon/"
+    },
+    "subCategory": null,
+    "cost": "5GP",
+    "weight": 2,
+    "weaponDetails": {
+      "type": "MARTIAL",
+      "properties": [],
+      "range": {
+        "type": "MELEE",
+        "normal": 5,
+        "long": 0
+      },
+      "damage": {
+        "amount": "1d8",
+        "twoHanded": null,
+        "type": {
+          "id": "piercing",
+          "name": "Piercing",
+          "url": "/damage-types/piercing"
+        }
+      },
+      "throw": null,
+      "extra": null
+    },
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "warhammer",
+    "name": "Warhammer",
+    "url": "/equipment/weapon/warhammer",
+    "source": "PHB",
+    "description": "",
+    "category": {
+      "id": "weapon",
+      "name": "Weapon",
+      "url": "/equipment/weapon/"
+    },
+    "subCategory": null,
+    "cost": "15GP",
+    "weight": 2,
+    "weaponDetails": {
+      "type": "MARTIAL",
+      "properties": [
+        {
+          "id": "versatile",
+          "name": "Versatile",
+          "url": "/weapon-properties/versatile"
+        }
+      ],
+      "range": {
+        "type": "MELEE",
+        "normal": 5,
+        "long": 0
+      },
+      "damage": {
+        "amount": "1d8",
+        "twoHanded": "1d10",
+        "type": {
+          "id": "bludgeoning",
+          "name": "Bludgeoning",
+          "url": "/damage-types/bludgeoning"
+        }
+      },
+      "throw": null,
+      "extra": null
+    },
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "whip",
+    "name": "Whip",
+    "url": "/equipment/weapon/whip",
+    "source": "PHB",
+    "description": "",
+    "category": {
+      "id": "weapon",
+      "name": "Weapon",
+      "url": "/equipment/weapon/"
+    },
+    "subCategory": null,
+    "cost": "2GP",
+    "weight": 3,
+    "weaponDetails": {
+      "type": "MARTIAL",
+      "properties": [
+        {
+          "id": "finesse",
+          "name": "Finesse",
+          "url": "/weapon-properties/finesse"
+        },
+        {
+          "id": "reach",
+          "name": "Reach",
+          "url": "/weapon-properties/reach"
+        }
+      ],
+      "range": {
+        "type": "MELEE",
+        "normal": 5,
+        "long": 0
+      },
+      "damage": {
+        "amount": "1d4",
+        "twoHanded": null,
+        "type": {
+          "id": "slashing",
+          "name": "Slashing",
+          "url": "/damage-types/slashing"
+        }
+      },
+      "throw": null,
+      "extra": null
+    },
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "blowgun",
+    "name": "Blowgun",
+    "url": "/equipment/weapon/blowgun",
+    "source": "PHB",
+    "description": "",
+    "category": {
+      "id": "weapon",
+      "name": "Weapon",
+      "url": "/equipment/weapon/"
+    },
+    "subCategory": null,
+    "cost": "10GP",
+    "weight": 1,
+    "weaponDetails": {
+      "type": "MARTIAL",
+      "properties": [
+        {
+          "id": "ammunition",
+          "name": "Ammunition",
+          "url": "/weapon-properties/ammunition"
+        },
+        {
+          "id": "loading",
+          "name": "Loading",
+          "url": "/weapon-properties/loading"
+        }
+      ],
+      "range": {
+        "type": "RANGED",
+        "normal": 25,
+        "long": 100
+      },
+      "damage": {
+        "amount": "1d1",
+        "twoHanded": null,
+        "type": {
+          "id": "piercing",
+          "name": "Piercing",
+          "url": "/damage-types/piercing"
+        }
+      },
+      "throw": null,
+      "extra": null
+    },
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "crossbow-hand",
+    "name": "Crossbow, hand",
+    "url": "/equipment/weapon/crossbow-hand",
+    "source": "PHB",
+    "description": "",
+    "category": {
+      "id": "weapon",
+      "name": "Weapon",
+      "url": "/equipment/weapon/"
+    },
+    "subCategory": null,
+    "cost": "75GP",
+    "weight": 3,
+    "weaponDetails": {
+      "type": "MARTIAL",
+      "properties": [
+        {
+          "id": "ammunition",
+          "name": "Ammunition",
+          "url": "/weapon-properties/ammunition"
+        },
+        {
+          "id": "light",
+          "name": "Light",
+          "url": "/weapon-properties/light"
+        },
+        {
+          "id": "loading",
+          "name": "Loading",
+          "url": "/weapon-properties/loading"
+        }
+      ],
+      "range": {
+        "type": "RANGED",
+        "normal": 30,
+        "long": 120
+      },
+      "damage": {
+        "amount": "1d6",
+        "twoHanded": null,
+        "type": {
+          "id": "piercing",
+          "name": "Piercing",
+          "url": "/damage-types/piercing"
+        }
+      },
+      "throw": null,
+      "extra": null
+    },
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "crossbow-heavy",
+    "name": "Crossbow, heavy",
+    "url": "/equipment/weapon/crossbow-heavy",
+    "source": "PHB",
+    "description": "",
+    "category": {
+      "id": "weapon",
+      "name": "Weapon",
+      "url": "/equipment/weapon/"
+    },
+    "subCategory": null,
+    "cost": "50GP",
+    "weight": 18,
+    "weaponDetails": {
+      "type": "MARTIAL",
+      "properties": [
+        {
+          "id": "ammunition",
+          "name": "Ammunition",
+          "url": "/weapon-properties/ammunition"
+        },
+        {
+          "id": "light",
+          "name": "Light",
+          "url": "/weapon-properties/light"
+        },
+        {
+          "id": "loading",
+          "name": "Loading",
+          "url": "/weapon-properties/loading"
+        },
+        {
+          "id": "two-handed",
+          "name": "Two-handed",
+          "url": "/weapon-properties/two-handed"
+        }
+      ],
+      "range": {
+        "type": "RANGED",
+        "normal": 100,
+        "long": 400
+      },
+      "damage": {
+        "amount": "1d10",
+        "twoHanded": null,
+        "type": {
+          "id": "piercing",
+          "name": "Piercing",
+          "url": "/damage-types/piercing"
+        }
+      },
+      "throw": null,
+      "extra": null
+    },
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "longbow",
+    "name": "Longbow",
+    "url": "/equipment/weapon/longbow",
+    "source": "PHB",
+    "description": "",
+    "category": {
+      "id": "weapon",
+      "name": "Weapon",
+      "url": "/equipment/weapon/"
+    },
+    "subCategory": null,
+    "cost": "50GP",
+    "weight": 2,
+    "weaponDetails": {
+      "type": "MARTIAL",
+      "properties": [
+        {
+          "id": "ammunition",
+          "name": "Ammunition",
+          "url": "/weapon-properties/ammunition"
+        },
+        {
+          "id": "heavy",
+          "name": "Heavy",
+          "url": "/weapon-properties/heavy"
+        },
+        {
+          "id": "two-handed",
+          "name": "Two-handed",
+          "url": "/weapon-properties/two-handed"
+        }
+      ],
+      "range": {
+        "type": "RANGED",
+        "normal": 150,
+        "long": 600
+      },
+      "damage": {
+        "amount": "1d8",
+        "twoHanded": null,
+        "type": {
+          "id": "piercing",
+          "name": "Piercing",
+          "url": "/damage-types/piercing"
+        }
+      },
+      "throw": null,
+      "extra": null
+    },
+    "armorDetails": null,
+    "vehicleDetails": null
+  },
+  {
+    "id": "net",
+    "name": "Net",
+    "url": "/equipment/weapon/net",
+    "source": "PHB",
+    "description": "",
+    "category": {
+      "id": "weapon",
+      "name": "Weapon",
+      "url": "/equipment/weapon/"
+    },
+    "subCategory": null,
+    "cost": "1GP",
+    "weight": 3,
+    "weaponDetails": {
+      "type": "MARTIAL",
+      "properties": [
+        {
+          "id": "thrown",
+          "name": "Thrown",
+          "url": "/weapon-properties/thrown"
+        },
+        {
+          "id": "special",
+          "name": "Special",
+          "url": "/weapon-properties/special"
+        }
+      ],
+      "range": {
+        "type": "RANGED",
+        "normal": 5,
+        "long": 15
+      },
+      "damage": {
+        "amount": "1d4",
+        "twoHanded": null,
+        "type": null
+      },
+      "throw": {
+        "normal": 5,
+        "long": 15
+      },
+      "extra": "A Large or smaller creature hit by a net is restrained until it is freed. A net has no effect on creatures that are formless, or creatures that are Huge or larger. A creature can use its action to make a DC 10 Strength check, freeing itself or another creature within its reach on a success. Dealing 5 slashing damage to the net (AC 10) also frees the creature without harming it, ending the effect and destroying the net. When you use an action, bonus action, or reaction to attack with a net, you can make only one attack regardless of the number of attacks you can normally make."
+    },
+    "armorDetails": null,
+    "vehicleDetails": null
+  }
+]

@@ -1,0 +1,674 @@
+{
+  "id": "cleric",
+  "url": "/classes/cleric",
+  "name": "Cleric",
+  "source": "PHB",
+  "hitDie": 8,
+  "levels": [
+    {
+      "level": 1,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 2,
+      "spellcasting": {
+        "cantrips": 3,
+        "slots": [
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "features": [
+        "SPELLCASTING",
+        "DIVINE_DOMAIN",
+        "DOMAIN_SPELLS_1"
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "channelDivinityCharges": 0,
+        "destroyUndeadCr": 0
+      }
+    },
+    {
+      "level": 2,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 2,
+      "spellcasting": {
+        "cantrips": 3,
+        "slots": [
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "features": [
+        "CHANNEL_DIVINITY_1REST",
+        "CHANNEL_DIVINITY_TURN_UNDEAD"
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "channelDivinityCharges": 1,
+        "destroyUndeadCr": 0
+      }
+    },
+    {
+      "level": 3,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 2,
+      "spellcasting": {
+        "cantrips": 3,
+        "slots": [
+          4,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "features": [
+        "DOMAIN_SPELLS_2"
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "channelDivinityCharges": 1,
+        "destroyUndeadCr": 0
+      }
+    },
+    {
+      "level": 4,
+      "abilityScoreIncrease": true,
+      "proficiencyBonus": 2,
+      "spellcasting": {
+        "cantrips": 4,
+        "slots": [
+          4,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "features": [],
+      "featureChoices": [],
+      "classSpecific": {
+        "channelDivinityCharges": 1,
+        "destroyUndeadCr": 0
+      }
+    },
+    {
+      "level": 5,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 3,
+      "spellcasting": {
+        "cantrips": 4,
+        "slots": [
+          4,
+          3,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "features": [
+        "DOMAIN_SPELLS_3",
+        "DESTROY_UNDEAD_CR_12_OR_BELOW"
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "channelDivinityCharges": 1,
+        "destroyUndeadCr": 0.5
+      }
+    },
+    {
+      "level": 6,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 3,
+      "spellcasting": {
+        "cantrips": 4,
+        "slots": [
+          4,
+          3,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "features": [
+        "CHANNEL_DIVINITY_2REST"
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "channelDivinityCharges": 2,
+        "destroyUndeadCr": 0.5
+      }
+    },
+    {
+      "level": 7,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 3,
+      "spellcasting": {
+        "cantrips": 4,
+        "slots": [
+          4,
+          3,
+          3,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "features": [
+        "DOMAIN_SPELLS_4"
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "channelDivinityCharges": 2,
+        "destroyUndeadCr": 0.5
+      }
+    },
+    {
+      "level": 8,
+      "abilityScoreIncrease": true,
+      "proficiencyBonus": 3,
+      "spellcasting": {
+        "cantrips": 4,
+        "slots": [
+          4,
+          3,
+          3,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "features": [
+        "DESTROY_UNDEAD_CR_1_OR_BELOW"
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "channelDivinityCharges": 2,
+        "destroyUndeadCr": 1
+      }
+    },
+    {
+      "level": 9,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 4,
+      "spellcasting": {
+        "cantrips": 4,
+        "slots": [
+          4,
+          3,
+          3,
+          3,
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "features": [
+        "DOMAIN_SPELLS_5"
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "channelDivinityCharges": 2,
+        "destroyUndeadCr": 1
+      }
+    },
+    {
+      "level": 10,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 4,
+      "spellcasting": {
+        "cantrips": 5,
+        "slots": [
+          4,
+          3,
+          3,
+          3,
+          2,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "features": [
+        "DIVINE_INTERVENTION"
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "channelDivinityCharges": 2,
+        "destroyUndeadCr": 1
+      }
+    },
+    {
+      "level": 11,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 4,
+      "spellcasting": {
+        "cantrips": 5,
+        "slots": [
+          4,
+          3,
+          3,
+          3,
+          2,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "features": [
+        "DESTROY_UNDEAD_CR_2_OR_BELOW"
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "channelDivinityCharges": 2,
+        "destroyUndeadCr": 2
+      }
+    },
+    {
+      "level": 12,
+      "abilityScoreIncrease": true,
+      "proficiencyBonus": 4,
+      "spellcasting": {
+        "cantrips": 5,
+        "slots": [
+          4,
+          3,
+          3,
+          3,
+          2,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "features": [],
+      "featureChoices": [],
+      "classSpecific": {
+        "channelDivinityCharges": 2,
+        "destroyUndeadCr": 2
+      }
+    },
+    {
+      "level": 13,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 5,
+      "spellcasting": {
+        "cantrips": 5,
+        "slots": [
+          4,
+          3,
+          3,
+          3,
+          2,
+          1,
+          1,
+          0,
+          0
+        ]
+      },
+      "features": [],
+      "featureChoices": [],
+      "classSpecific": {
+        "channelDivinityCharges": 2,
+        "destroyUndeadCr": 2
+      }
+    },
+    {
+      "level": 14,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 5,
+      "spellcasting": {
+        "cantrips": 5,
+        "slots": [
+          4,
+          3,
+          3,
+          3,
+          2,
+          1,
+          1,
+          0,
+          0
+        ]
+      },
+      "features": [
+        "DESTROY_UNDEAD_CR_3_OR_BELOW"
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "channelDivinityCharges": 2,
+        "destroyUndeadCr": 3
+      }
+    },
+    {
+      "level": 15,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 5,
+      "spellcasting": {
+        "cantrips": 5,
+        "slots": [
+          4,
+          3,
+          3,
+          3,
+          2,
+          1,
+          1,
+          1,
+          0
+        ]
+      },
+      "features": [],
+      "featureChoices": [],
+      "classSpecific": {
+        "channelDivinityCharges": 2,
+        "destroyUndeadCr": 3
+      }
+    },
+    {
+      "level": 16,
+      "abilityScoreIncrease": true,
+      "proficiencyBonus": 5,
+      "spellcasting": {
+        "cantrips": 5,
+        "slots": [
+          4,
+          3,
+          3,
+          3,
+          2,
+          1,
+          1,
+          1,
+          0
+        ]
+      },
+      "features": [],
+      "featureChoices": [],
+      "classSpecific": {
+        "channelDivinityCharges": 2,
+        "destroyUndeadCr": 3
+      }
+    },
+    {
+      "level": 17,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 6,
+      "spellcasting": {
+        "cantrips": 5,
+        "slots": [
+          4,
+          3,
+          3,
+          3,
+          2,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "features": [
+        "DESTROY_UNDEAD_CR_4_OR_BELOW"
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "channelDivinityCharges": 2,
+        "destroyUndeadCr": 4
+      }
+    },
+    {
+      "level": 18,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 6,
+      "spellcasting": {
+        "cantrips": 5,
+        "slots": [
+          4,
+          3,
+          3,
+          3,
+          3,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "features": [
+        "CHANNEL_DIVINITY_3REST"
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "channelDivinityCharges": 3,
+        "destroyUndeadCr": 4
+      }
+    },
+    {
+      "level": 19,
+      "abilityScoreIncrease": true,
+      "proficiencyBonus": 6,
+      "spellcasting": {
+        "cantrips": 5,
+        "slots": [
+          4,
+          3,
+          3,
+          3,
+          3,
+          2,
+          1,
+          1,
+          1
+        ]
+      },
+      "features": [],
+      "featureChoices": [],
+      "classSpecific": {
+        "channelDivinityCharges": 3,
+        "destroyUndeadCr": 4
+      }
+    },
+    {
+      "level": 20,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 6,
+      "spellcasting": {
+        "cantrips": 5,
+        "slots": [
+          4,
+          3,
+          3,
+          3,
+          3,
+          2,
+          2,
+          1,
+          1
+        ]
+      },
+      "features": [
+        "DIVINE_INTERVENTION_IMPROVEMENT"
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "channelDivinityCharges": 3,
+        "destroyUndeadCr": 4
+      }
+    }
+  ],
+  "proficiencies": {
+    "savingThrows": [
+      "WIS",
+      "CHA"
+    ],
+    "equipment": [
+      "LIGHT_ARMOR",
+      "MEDIUM_ARMOR",
+      "SHIELDS",
+      "SIMPLE_WEAPONS"
+    ],
+    "choices": [
+      {
+        "type": "SKILL",
+        "amount": 2,
+        "options": [
+          "HISTORY",
+          "INSIGHT",
+          "MEDICINE",
+          "PERSUASION",
+          "RELIGION"
+        ]
+      }
+    ]
+  },
+  "spellcasting": {
+    "ability": "WIS",
+    "unlockLevel": 1,
+    "features": [
+      {
+        "title": "Cantrips",
+        "description": "At 1st level, you know three cantrips of your choice from the cleric spell list. You learn additional cleric cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Cleric table."
+      },
+      {
+        "title": "Preparing and Casting Spells",
+        "description": "The Cleric table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.\\nYou prepare the list of cleric spells that are available for you to cast, choosing from the cleric spell list. When you do so, choose a number of cleric spells equal to your Wisdom modifier + your cleric level (minimum of one spell). The spells must be of a level for which you have spell slots.\\nFor example, if you are a 3rd-level cleric, you have four 1st-level and two 2nd-level spell slots. With a Wisdom of 16, your list of prepared spells can include six spells of 1st or 2nd level, in any combination. If you prepare the 1st-level spell cure wounds, you can cast it using a 1st-level or 2nd-level slot. Casting the spell doesn't remove it from your list of prepared spells.\\nYou can change your list of prepared spells when you finish a long rest. Preparing a new list of cleric spells requires time spent in prayer and meditation: at least 1 minute per spell level for each spell on your list."
+      },
+      {
+        "title": "Spellcasting Ability",
+        "description": "Wisdom is your spellcasting ability for your cleric spells. The power of your spells comes from your devotion to your deity. You use your Wisdom whenever a cleric spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a cleric spell you cast and when making an attack roll with one.\\nSpell save DC = 8 + your proficiency bonus + your Wisdom modifier\\nSpell attack modifier = your proficiency bonus + your Wisdom modifier"
+      },
+      {
+        "title": "Ritual Casting",
+        "description": "You can cast a cleric spell as a ritual if that spell has the ritual tag and you have the spell prepared."
+      },
+      {
+        "title": "Spellcasting Focus",
+        "description": "You can use a holy symbol (see Equipment) as a spellcasting focus for your cleric spells."
+      }
+    ]
+  },
+  "equipment": {
+    "starting": [
+      {
+        "item": "SHIELD",
+        "amount": 1
+      }
+    ],
+    "options": [
+      {
+        "choose": 1,
+        "from": [
+          {
+            "type": "ITEM",
+            "item": "MACE",
+            "amount": 1
+          },
+          {
+            "type": "ITEM",
+            "item": "WARHAMMER",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "type": "ITEM",
+            "item": "SCALE_MAIL",
+            "amount": 1
+          },
+          {
+            "type": "ITEM",
+            "item": "LEATHER",
+            "amount": 1
+          },
+          {
+            "type": "ITEM",
+            "item": "CHAIN_MAIL",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "type": "CATEGORY",
+            "item": "SIMPLE_WEAPONS",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "type": "ITEM",
+            "item": "PRIESTS_PACK",
+            "amount": 1
+          },
+          {
+            "type": "ITEM",
+            "item": "EXPLORERS_PACK",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "choose": 1,
+        "from": []
+      }
+    ]
+  },
+  "subClasses": [
+    {
+      "id": "life",
+      "name": "Life",
+      "kind": "Divine Domain",
+      "description": "The Life domain focuses on the vibrant positive energy--one of the fundamental forces of the universe--that sustains all life. The gods of life promote vitality and health through healing the sick and wounded, caring for those in need, and driving away the forces of death and undeath. Almost any non-evil deity can claim influence over this domain, particularly agricultural deities, sun gods, gods of healing or endurance, and gods of home and community."
+    }
+  ]
+}

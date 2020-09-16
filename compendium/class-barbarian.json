@@ -1,0 +1,376 @@
+{
+  "id": "barbarian",
+  "url": "/classes/barbarian",
+  "name": "Barbarian",
+  "source": "PHB",
+  "hitDie": 12,
+  "levels": [
+    {
+      "level": 1,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 2,
+      "spellcasting": null,
+      "features": [
+        "RAGE",
+        "UNARMORED_DEFENSE"
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "rageCount": 2,
+        "rageDamageBonus": 2,
+        "brutalCriticalDice": 0
+      }
+    },
+    {
+      "level": 2,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 2,
+      "spellcasting": null,
+      "features": [
+        "RECKLESS_ATTACK",
+        "DANGER_SENSE"
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "rageCount": 2,
+        "rageDamageBonus": 2,
+        "brutalCriticalDice": 0
+      }
+    },
+    {
+      "level": 3,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 2,
+      "spellcasting": null,
+      "features": [
+        "PRIMAL_PATH"
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "rageCount": 3,
+        "rageDamageBonus": 2,
+        "brutalCriticalDice": 0
+      }
+    },
+    {
+      "level": 4,
+      "abilityScoreIncrease": true,
+      "proficiencyBonus": 2,
+      "spellcasting": null,
+      "features": [],
+      "featureChoices": [],
+      "classSpecific": {
+        "rageCount": 3,
+        "rageDamageBonus": 2,
+        "brutalCriticalDice": 0
+      }
+    },
+    {
+      "level": 5,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 3,
+      "spellcasting": null,
+      "features": [
+        "EXTRA_ATTACK",
+        "FAST_MOVEMENT"
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "rageCount": 3,
+        "rageDamageBonus": 2,
+        "brutalCriticalDice": 0
+      }
+    },
+    {
+      "level": 6,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 3,
+      "spellcasting": null,
+      "features": [],
+      "featureChoices": [],
+      "classSpecific": {
+        "rageCount": 4,
+        "rageDamageBonus": 2,
+        "brutalCriticalDice": 0
+      }
+    },
+    {
+      "level": 7,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 3,
+      "spellcasting": null,
+      "features": [
+        "FERAL_INSTINCT"
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "rageCount": 4,
+        "rageDamageBonus": 2,
+        "brutalCriticalDice": 0
+      }
+    },
+    {
+      "level": 8,
+      "abilityScoreIncrease": true,
+      "proficiencyBonus": 3,
+      "spellcasting": null,
+      "features": [],
+      "featureChoices": [],
+      "classSpecific": {
+        "rageCount": 4,
+        "rageDamageBonus": 2,
+        "brutalCriticalDice": 0
+      }
+    },
+    {
+      "level": 9,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 4,
+      "spellcasting": null,
+      "features": [
+        "BRUTAL_CRITICAL_1_DIE"
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "rageCount": 4,
+        "rageDamageBonus": 3,
+        "brutalCriticalDice": 1
+      }
+    },
+    {
+      "level": 10,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 4,
+      "spellcasting": null,
+      "features": [],
+      "featureChoices": [],
+      "classSpecific": {
+        "rageCount": 4,
+        "rageDamageBonus": 3,
+        "brutalCriticalDice": 1
+      }
+    },
+    {
+      "level": 11,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 4,
+      "spellcasting": null,
+      "features": [
+        "RELENTLESS_RAGE"
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "rageCount": 4,
+        "rageDamageBonus": 3,
+        "brutalCriticalDice": 1
+      }
+    },
+    {
+      "level": 12,
+      "abilityScoreIncrease": true,
+      "proficiencyBonus": 4,
+      "spellcasting": null,
+      "features": [],
+      "featureChoices": [],
+      "classSpecific": {
+        "rageCount": 5,
+        "rageDamageBonus": 3,
+        "brutalCriticalDice": 1
+      }
+    },
+    {
+      "level": 13,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 5,
+      "spellcasting": null,
+      "features": [
+        "BRUTAL_CRITICAL_2_DICE"
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "rageCount": 5,
+        "rageDamageBonus": 3,
+        "brutalCriticalDice": 2
+      }
+    },
+    {
+      "level": 14,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 5,
+      "spellcasting": null,
+      "features": [],
+      "featureChoices": [],
+      "classSpecific": {
+        "rageCount": 5,
+        "rageDamageBonus": 3,
+        "brutalCriticalDice": 2
+      }
+    },
+    {
+      "level": 15,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 5,
+      "spellcasting": null,
+      "features": [
+        "PERSISTENT_RAGE"
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "rageCount": 5,
+        "rageDamageBonus": 3,
+        "brutalCriticalDice": 2
+      }
+    },
+    {
+      "level": 16,
+      "abilityScoreIncrease": true,
+      "proficiencyBonus": 5,
+      "spellcasting": null,
+      "features": [],
+      "featureChoices": [],
+      "classSpecific": {
+        "rageCount": 5,
+        "rageDamageBonus": 4,
+        "brutalCriticalDice": 2
+      }
+    },
+    {
+      "level": 17,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 6,
+      "spellcasting": null,
+      "features": [
+        "BRUTAL_CRITICAL_3_DICE"
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "rageCount": 6,
+        "rageDamageBonus": 4,
+        "brutalCriticalDice": 3
+      }
+    },
+    {
+      "level": 18,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 6,
+      "spellcasting": null,
+      "features": [
+        "INDOMITABLE_MIGHT"
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "rageCount": 6,
+        "rageDamageBonus": 4,
+        "brutalCriticalDice": 3
+      }
+    },
+    {
+      "level": 19,
+      "abilityScoreIncrease": true,
+      "proficiencyBonus": 6,
+      "spellcasting": null,
+      "features": [],
+      "featureChoices": [],
+      "classSpecific": {
+        "rageCount": 6,
+        "rageDamageBonus": 4,
+        "brutalCriticalDice": 3
+      }
+    },
+    {
+      "level": 20,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 6,
+      "spellcasting": null,
+      "features": [
+        "PRIMAL_CHAMPION"
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "rageCount": 9999,
+        "rageDamageBonus": 4,
+        "brutalCriticalDice": 3
+      }
+    }
+  ],
+  "proficiencies": {
+    "savingThrows": [
+      "STR",
+      "CON"
+    ],
+    "equipment": [
+      "LIGHT_ARMOR",
+      "MEDIUM_ARMOR",
+      "SHIELDS",
+      "SIMPLE_WEAPONS",
+      "MARTIAL_WEAPONS"
+    ],
+    "choices": [
+      {
+        "type": "SKILL",
+        "amount": 2,
+        "options": [
+          "ANIMAL_HANDLING",
+          "ATHLETICS",
+          "INTIMIDATION",
+          "NATURE",
+          "PERCEPTION",
+          "SURVIVAL"
+        ]
+      }
+    ]
+  },
+  "spellcasting": null,
+  "equipment": {
+    "starting": [
+      {
+        "item": "EXPLORERS_PACK",
+        "amount": 1
+      },
+      {
+        "item": "JAVELIN",
+        "amount": 4
+      }
+    ],
+    "options": [
+      {
+        "choose": 1,
+        "from": [
+          {
+            "type": "ITEM",
+            "item": "GREATAXE",
+            "amount": 1
+          },
+          {
+            "type": "CATEGORY",
+            "item": "MARTIAL_MELEE_WEAPONS",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "type": "ITEM",
+            "item": "HANDAXE",
+            "amount": 2
+          },
+          {
+            "type": "CATEGORY",
+            "item": "SIMPLE_WEAPONS",
+            "amount": 1
+          }
+        ]
+      }
+    ]
+  },
+  "subClasses": [
+    {
+      "id": "berserker",
+      "name": "Berserker",
+      "kind": "Primal Path",
+      "description": "For some barbarians, rage is a means to an end--that end being violence. The Path of the Berserker is a path of untrammeled fury, slick with blood. As you enter the berserker's rage, you thrill in the chaos of battle, heedless of your own health or well-being."
+    }
+  ]
+}
