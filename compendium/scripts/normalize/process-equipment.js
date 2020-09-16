@@ -207,22 +207,22 @@ module.exports = data => {
     var outPath;
 
     //Write out the weapons
-    outPath = Path.resolve(__dirname, '..', 'weapons.json');
+    outPath = Path.resolve('..', 'weapons.json');
     console.log(`Writing weapon data to "${outPath}"`);
     FS.writeFileSync(outPath, JSON.stringify(weapons, null, 2), 'utf8');
 
     //Write out the armor
-    outPath = Path.resolve(__dirname, '..', 'armor.json');
+    outPath = Path.resolve('..', 'armor.json');
     console.log(`Writing armor data to "${outPath}"`);
     FS.writeFileSync(outPath, JSON.stringify(armor, null, 2), 'utf8');
 
     //Write out the general
-    outPath = Path.resolve(__dirname, '..', 'general-equipment.json');
+    outPath = Path.resolve('..', 'general-equipment.json');
     console.log(`Writing general data to "${outPath}"`);
     FS.writeFileSync(outPath, JSON.stringify(misc, null, 2), 'utf8');
 
     //Write out the tools
-    outPath = Path.resolve(__dirname, '..', 'tools.json');
+    outPath = Path.resolve('..', 'tools.json');
     console.log(`Writing tools data to "${outPath}"`);
     FS.writeFileSync(outPath, JSON.stringify(tools, null, 2), 'utf8');
 
@@ -240,7 +240,7 @@ module.exports = data => {
             return ent;
         }),
     }));
-    outPath = Path.resolve(__dirname, '..', 'packs.json');
+    outPath = Path.resolve('..', 'packs.json');
     console.log(`Writing packs data to "${outPath}"`);
     FS.writeFileSync(outPath, JSON.stringify(packs, null, 2), 'utf8');
 

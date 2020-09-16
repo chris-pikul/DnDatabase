@@ -16,7 +16,7 @@ const instruments = [
 
 module.exports = data => {
     console.log('Reading levels file for cross-reference');
-    const rawLevels = FS.readFileSync(Path.resolve(__dirname, '..', 'raw', '5e-SRD-Levels.json'));
+    const rawLevels = FS.readFileSync(Path.resolve( '..', 'raw', '5e-SRD-Levels.json'));
     const levels = JSON.parse(rawLevels);
 
     const levelDict = {};
@@ -100,7 +100,7 @@ module.exports = data => {
     });
 
     console.log('Reading spellcasting file for corss-reference');
-    const rawSpell = FS.readFileSync(Path.resolve(__dirname, '..', 'raw', '5e-SRD-Spellcasting.json'));
+    const rawSpell = FS.readFileSync(Path.resolve('..', 'raw', '5e-SRD-Spellcasting.json'));
     const spell = JSON.parse(rawSpell);
 
     const spellDict = {};
@@ -119,7 +119,7 @@ module.exports = data => {
     });
 
     console.log('Reading starting equipment file for cross-reference');
-    const rawEquip = FS.readFileSync(Path.resolve(__dirname, '..', 'raw', '5e-SRD-StartingEquipment.json'));
+    const rawEquip = FS.readFileSync(Path.resolve('..', 'raw', '5e-SRD-StartingEquipment.json'));
     const equip = JSON.parse(rawEquip);
 
     const equipDict = {};
@@ -178,7 +178,7 @@ module.exports = data => {
     });
 
     console.log('Reading sub-classes file for cross-reference');
-    const rawSubs = FS.readFileSync(Path.resolve(__dirname, '..', 'raw', '5e-SRD-Subclasses.json'));
+    const rawSubs = FS.readFileSync(Path.resolve('..', 'raw', '5e-SRD-Subclasses.json'));
     const subs = JSON.parse(rawSubs);
 
     const subDict = {};
@@ -286,7 +286,7 @@ module.exports = data => {
             out.subClasses = subDict[out.id];
 
         //Write the data out
-        const path = Path.resolve(__dirname, '..', `class-${out.id}.json`);
+        const path = Path.resolve('..', `class-${out.id}.json`);
         const json = JSON.stringify(out, null, 2);
         FS.writeFileSync(path, json, 'utf8', 777);
         console.log(`Wrote class ${out.name} to file "${path}"`);

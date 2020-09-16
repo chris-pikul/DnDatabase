@@ -10,7 +10,7 @@ const {
 } = require('./utils');
 
 module.exports = data => {
-    const rawAbl = FS.readFileSync(Path.resolve(__dirname, '..', 'raw', '5e-SRD-Ability-Scores.json'));
+    const rawAbl = FS.readFileSync(Path.resolve('..', 'raw', '5e-SRD-Ability-Scores.json'));
     const ablData = JSON.parse(rawAbl);
     const abilities = {};
     ablData.forEach(abl => { abilities[abl.index] = abl.full_name });

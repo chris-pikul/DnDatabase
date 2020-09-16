@@ -14,7 +14,7 @@ const processWeaponProperties = require('./process-weapon-properties');
 const processTraits = require('./process-traits');
 
 function normalize(inFile, outFile, procFunc) {
-    const pathIn = path.resolve(__dirname, '..', 'raw', inFile);
+    const pathIn = path.resolve( '..', 'raw', inFile);
     console.log(`Reading data from path "${pathIn}"`);
     const rawData = fs.readFileSync(pathIn);
     const data = JSON.parse(rawData);
@@ -23,7 +23,7 @@ function normalize(inFile, outFile, procFunc) {
     const output = procFunc(data);
 
     if(output) {
-        const pathOut = path.resolve(__dirname, '..', outFile);
+        const pathOut = path.resolve( '..', outFile);
         console.log(`Writing data to path "${pathOut}"`);
         const outData = JSON.stringify(output, null, 2);
         fs.writeFileSync(pathOut, outData, 'utf8', 777);
