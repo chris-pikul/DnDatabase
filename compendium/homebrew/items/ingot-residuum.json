@@ -1,0 +1,19 @@
+{
+    "type": "ITEM",
+    "id": "ingot-residuum",
+    "name": "Residuum Ingot (Bar)",
+    "url": "/items/ingot-residuum",
+    "source": "HB",
+    "description": "A 5lbs. cold-casted bar of residuum. Appears as a semi-transparent purplish glass featuring a green-blue gleam on it's surface. Can be used to replace any gold valued component in spellcasting or enchanting by value.",
+    "category": {
+      "id": "general",
+      "name": "General",
+      "url": "/items/"
+    },
+    "subCategory": "RESOURCE",
+    "cost": "5000GP",
+    "weight": 5,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  }

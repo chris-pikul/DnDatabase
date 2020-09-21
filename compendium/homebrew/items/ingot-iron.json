@@ -1,0 +1,19 @@
+{
+    "type": "ITEM",
+    "id": "ingot-iron",
+    "name": "Iron Ingot (Bar)",
+    "url": "/items/ingot-iron",
+    "source": "HB",
+    "description": "A 25lbs. casted bar of pure iron",
+    "category": {
+      "id": "general",
+      "name": "General",
+      "url": "/items/"
+    },
+    "subCategory": "TRADE_GOOD",
+    "cost": "12SP",
+    "weight": 25,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  }

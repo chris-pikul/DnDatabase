@@ -1,0 +1,19 @@
+{
+    "type": "ITEM",
+    "id": "ingot-silver",
+    "name": "Silver Ingot (Bar)",
+    "url": "/items/ingot-silver",
+    "source": "HB",
+    "description": "A 25lbs. casted bar of pure silver",
+    "category": {
+      "id": "general",
+      "name": "General",
+      "url": "/items/"
+    },
+    "subCategory": "TREASURE",
+    "cost": "125GP",
+    "weight": 25,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  }

@@ -1,0 +1,19 @@
+{
+    "type": "ITEM",
+    "id": "ingot-platinum",
+    "name": "Platinum Ingot (Bar)",
+    "url": "/items/ingot-platinum",
+    "source": "HB",
+    "description": "A 10lbs. casted bar of pure platinum",
+    "category": {
+      "id": "general",
+      "name": "General",
+      "url": "/items/"
+    },
+    "subCategory": "TREASURE",
+    "cost": "5000GP",
+    "weight": 10,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  }

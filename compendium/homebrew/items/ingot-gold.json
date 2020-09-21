@@ -1,0 +1,19 @@
+{
+    "type": "ITEM",
+    "id": "ingot-gold",
+    "name": "Gold Ingot (Bar)",
+    "url": "/items/ingot-gold",
+    "source": "HB",
+    "description": "A 25lbs. casted bar of pure gold",
+    "category": {
+      "id": "general",
+      "name": "General",
+      "url": "/items/"
+    },
+    "subCategory": "TREASURE",
+    "cost": "1250GP",
+    "weight": 25,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  }

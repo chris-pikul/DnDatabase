@@ -1,0 +1,19 @@
+{
+    "type": "ITEM",
+    "id": "ingot-copper",
+    "name": "Copper Ingot (Bar)",
+    "url": "/items/ingot-copper",
+    "source": "HB",
+    "description": "A 25lbs. casted bar of pure copper",
+    "category": {
+      "id": "general",
+      "name": "General",
+      "url": "/items/"
+    },
+    "subCategory": "TREASURE",
+    "cost": "125SP",
+    "weight": 25,
+    "weaponDetails": null,
+    "armorDetails": null,
+    "vehicleDetails": null
+  }
