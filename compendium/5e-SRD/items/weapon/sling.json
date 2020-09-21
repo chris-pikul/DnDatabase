@@ -1,0 +1,44 @@
+{
+  "type": "ITEM",
+  "id": "sling",
+  "name": "Sling",
+  "url": "/items/weapon/sling",
+  "source": "PHB",
+  "description": "",
+  "category": {
+    "id": "weapon",
+    "name": "Weapon",
+    "url": "/items/weapon/"
+  },
+  "subCategory": null,
+  "cost": "1SP",
+  "weight": 0,
+  "weaponDetails": {
+    "type": "SIMPLE",
+    "properties": [
+      {
+        "id": "ammunition",
+        "name": "Ammunition",
+        "url": "/weapon-properties/ammunition"
+      }
+    ],
+    "range": {
+      "type": "RANGED",
+      "normal": 30,
+      "long": 120
+    },
+    "damage": {
+      "amount": "1d4",
+      "twoHanded": null,
+      "type": {
+        "id": "bludgeoning",
+        "name": "Bludgeoning",
+        "url": "/damage-types/bludgeoning"
+      }
+    },
+    "throw": null,
+    "extra": null
+  },
+  "armorDetails": null,
+  "vehicleDetails": null
+}

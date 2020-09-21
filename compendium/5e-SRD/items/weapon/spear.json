@@ -1,0 +1,57 @@
+{
+  "type": "ITEM",
+  "id": "spear",
+  "name": "Spear",
+  "url": "/items/weapon/spear",
+  "source": "PHB",
+  "description": "",
+  "category": {
+    "id": "weapon",
+    "name": "Weapon",
+    "url": "/items/weapon/"
+  },
+  "subCategory": null,
+  "cost": "1GP",
+  "weight": 3,
+  "weaponDetails": {
+    "type": "SIMPLE",
+    "properties": [
+      {
+        "id": "thrown",
+        "name": "Thrown",
+        "url": "/weapon-properties/thrown"
+      },
+      {
+        "id": "versatile",
+        "name": "Versatile",
+        "url": "/weapon-properties/versatile"
+      },
+      {
+        "id": "monk",
+        "name": "Monk",
+        "url": "/weapon-properties/monk"
+      }
+    ],
+    "range": {
+      "type": "MELEE",
+      "normal": 5,
+      "long": 0
+    },
+    "damage": {
+      "amount": "1d6",
+      "twoHanded": "1d8",
+      "type": {
+        "id": "piercing",
+        "name": "Piercing",
+        "url": "/damage-types/piercing"
+      }
+    },
+    "throw": {
+      "normal": 20,
+      "long": 60
+    },
+    "extra": null
+  },
+  "armorDetails": null,
+  "vehicleDetails": null
+}

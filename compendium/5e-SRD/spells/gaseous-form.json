@@ -1,0 +1,61 @@
+{
+  "type": "SPELL",
+  "id": "gaseous-form",
+  "name": "Gaseous Form",
+  "url": "/spells/gaseous-form",
+  "source": "PHB",
+  "level": 3,
+  "rarity": "UNCOMMON",
+  "description": "You transform a willing creature you touch, along with everything it's wearing and carrying, into a misty cloud for the duration. The spell ends if the creature drops to 0 hit points. An incorporeal creature isn't affected.\\nWhile in this form, the target's only method of movement is a flying speed of 10 feet. The target can enter and occupy the space of another creature. The target has resistance to nonmagical damage, and it has advantage on Strength, Dexterity, and constitution saving throws. The target can pass through small holes, narrow openings, and even mere cracks, though it treats liquids as though they were solid surfaces. The target can't fall and remains hovering in the air even when stunned or otherwise incapacitated.\\nWhile in the form of a misty cloud, the target can't talk or manipulate objects, and any objects it was carrying or holding can't be dropped, used, or otherwise interacted with. The target can't attack or cast spells.",
+  "range": {
+    "type": "TOUCH",
+    "distance": 0
+  },
+  "components": {
+    "verbal": true,
+    "semantic": true,
+    "material": true,
+    "cost": "A bit of gauze and a wisp of smoke.",
+    "goldValue": 0
+  },
+  "castingTime": "1 action",
+  "duration": "Up to 1 hour",
+  "ritual": false,
+  "concentration": true,
+  "damage": null,
+  "save": null,
+  "healing": null,
+  "areaOfEffect": null,
+  "school": {
+    "id": "transmutation",
+    "name": "Transmutation",
+    "url": "/magic-schools/transmutation"
+  },
+  "classes": [
+    {
+      "id": "sorcerer",
+      "name": "Sorcerer",
+      "url": "/classes/sorcerer"
+    },
+    {
+      "id": "warlock",
+      "name": "Warlock",
+      "url": "/classes/warlock"
+    },
+    {
+      "id": "wizard",
+      "name": "Wizard",
+      "url": "/classes/wizard"
+    }
+  ],
+  "scroll": {
+    "value": 500,
+    "saveDC": 15,
+    "attackBonus": 7
+  },
+  "enchanting": {
+    "minLevel": 3,
+    "cost": 500,
+    "days": 20
+  }
+}

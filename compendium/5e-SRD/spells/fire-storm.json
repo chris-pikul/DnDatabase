@@ -1,0 +1,88 @@
+{
+  "type": "SPELL",
+  "id": "fire-storm",
+  "name": "Fire Storm",
+  "url": "/spells/fire-storm",
+  "source": "PHB",
+  "level": 7,
+  "rarity": "VERY_RARE",
+  "description": "A storm made up of sheets of roaring flame appears in a location you choose within range. The area of the storm consists of up to ten 10-foot cubes, which you can arrange as you wish. Each cube must have at least one face adjacent to the face of another cube. Each creature in the area must make a dexterity saving throw. It takes 7d10 fire damage on a failed save, or half as much damage on a successful one.\\nThe fire damages objects in the area and ignites flammable objects that aren't being worn or carried. If you choose, plant life in the area is unaffected by this spell.",
+  "range": {
+    "type": "RANGED",
+    "distance": 150
+  },
+  "components": {
+    "verbal": true,
+    "semantic": true,
+    "material": false,
+    "cost": null,
+    "goldValue": 0
+  },
+  "castingTime": "1 action",
+  "duration": "Instantaneous",
+  "ritual": false,
+  "concentration": false,
+  "damage": {
+    "type": {
+      "id": "fire",
+      "name": "Fire",
+      "url": "/damage-types/fire"
+    },
+    "slotLevels": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "7d10",
+      "",
+      ""
+    ],
+    "characterLevels": null
+  },
+  "save": {
+    "type": "DEX",
+    "onSuccess": "half",
+    "onFailure": null,
+    "extra": null
+  },
+  "healing": null,
+  "areaOfEffect": {
+    "shape": "CUBE",
+    "size": 100
+  },
+  "school": {
+    "id": "evocation",
+    "name": "Evocation",
+    "url": "/magic-schools/evocation"
+  },
+  "classes": [
+    {
+      "id": "cleric",
+      "name": "Cleric",
+      "url": "/classes/cleric"
+    },
+    {
+      "id": "druid",
+      "name": "Druid",
+      "url": "/classes/druid"
+    },
+    {
+      "id": "sorcerer",
+      "name": "Sorcerer",
+      "url": "/classes/sorcerer"
+    }
+  ],
+  "scroll": {
+    "value": 25000,
+    "saveDC": 18,
+    "attackBonus": 10
+  },
+  "enchanting": {
+    "minLevel": 11,
+    "cost": 25000,
+    "days": 1000
+  }
+}

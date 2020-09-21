@@ -1,0 +1,19 @@
+{
+  "type": "ITEM",
+  "id": "caltrops",
+  "name": "Caltrops",
+  "url": "/items/caltrops",
+  "source": "PHB",
+  "description": "As an action, you can spread a bag of caltrops to cover a square area that is 5 feet on a side.\\nAny creature that enters the area must succeed on a DC 15 Dexterity saving throw or stop moving this turn and take 1 piercing damage.\\nTaking this damage reduces the creature's walking speed by 10 feet until the creature regains at least 1 hit point.\\nA creature moving through the area at half speed doesn't need to make the save.",
+  "category": {
+    "id": "general",
+    "name": "General",
+    "url": "/items/"
+  },
+  "subCategory": "STANDARD_GEAR",
+  "cost": "5CP",
+  "weight": 2,
+  "weaponDetails": null,
+  "armorDetails": null,
+  "vehicleDetails": null
+}

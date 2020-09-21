@@ -1,0 +1,94 @@
+{
+  "type": "SPELL",
+  "id": "shatter",
+  "name": "Shatter",
+  "url": "/spells/shatter",
+  "source": "PHB",
+  "level": 2,
+  "rarity": "UNCOMMON",
+  "description": "A strong resonant sound painfully intense sounds of a desired point in the range of the spell. Each creature has a sphere with a 10-foot-radius sphere centered on that point must make a constitution saving throw or it suffers 3d8 thunder damage. If successful, the damage is halved. A creature made of inorganic materials such as stone, crystal or metal, makes its saving throw with a disadvantage.\\nA non-magical item that is not worn or carried also suffers damage if it is in the area of the spell.",
+  "higherLevels": "When you cast this spell using a 3 or higher level spell slot, the damage of the spell increases by 1d8 for each level of higher spell slot 2.",
+  "range": {
+    "type": "RANGED",
+    "distance": 60
+  },
+  "components": {
+    "verbal": true,
+    "semantic": true,
+    "material": true,
+    "cost": "A burst of mica.",
+    "goldValue": 0
+  },
+  "castingTime": "1 action",
+  "duration": "Instantaneous",
+  "ritual": false,
+  "concentration": false,
+  "damage": {
+    "type": {
+      "id": "thunder",
+      "name": "Thunder",
+      "url": "/damage-types/thunder"
+    },
+    "slotLevels": [
+      "",
+      "",
+      "3d8",
+      "4d8",
+      "5d8",
+      "6d8",
+      "7d8",
+      "8d8",
+      "9d8",
+      "10d8"
+    ],
+    "characterLevels": null
+  },
+  "save": {
+    "type": "CON",
+    "onSuccess": "half",
+    "onFailure": null,
+    "extra": null
+  },
+  "healing": null,
+  "areaOfEffect": {
+    "shape": "SPHERE",
+    "size": 10
+  },
+  "school": {
+    "id": "evocation",
+    "name": "Evocation",
+    "url": "/magic-schools/evocation"
+  },
+  "classes": [
+    {
+      "id": "bard",
+      "name": "Bard",
+      "url": "/classes/bard"
+    },
+    {
+      "id": "sorcerer",
+      "name": "Sorcerer",
+      "url": "/classes/sorcerer"
+    },
+    {
+      "id": "warlock",
+      "name": "Warlock",
+      "url": "/classes/warlock"
+    },
+    {
+      "id": "wizard",
+      "name": "Wizard",
+      "url": "/classes/wizard"
+    }
+  ],
+  "scroll": {
+    "value": 250,
+    "saveDC": 13,
+    "attackBonus": 5
+  },
+  "enchanting": {
+    "minLevel": 3,
+    "cost": 250,
+    "days": 10
+  }
+}

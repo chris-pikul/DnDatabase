@@ -1,0 +1,19 @@
+{
+  "type": "ITEM",
+  "id": "grappling-hook",
+  "name": "Grappling hook",
+  "url": "/items/grappling-hook",
+  "source": "PHB",
+  "description": "",
+  "category": {
+    "id": "general",
+    "name": "General",
+    "url": "/items/"
+  },
+  "subCategory": "STANDARD_GEAR",
+  "cost": "2GP",
+  "weight": 4,
+  "weaponDetails": null,
+  "armorDetails": null,
+  "vehicleDetails": null
+}

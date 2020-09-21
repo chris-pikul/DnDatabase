@@ -1,0 +1,79 @@
+{
+  "type": "SPELL",
+  "id": "prismatic-spray",
+  "name": "Prismatic Spray",
+  "url": "/spells/prismatic-spray",
+  "source": "PHB",
+  "level": 7,
+  "rarity": "VERY_RARE",
+  "description": "Eight multicolored rays of light flash from your hand. Each ray is a different color and has a different power and purpose. Each creature in a 60-foot cone must make a dexterity saving throw. For each target, roll a d8 to determine which color ray affects it.\\n1. Red.\\nThe target takes 10d6 fire damage on a failed save, or half as much damage on a successful one.\\n2. Orange.\\nThe target takes 10d6 acid damage on a failed save, or half as much damage on a successful one.\\n3. Yellow.\\nThe target takes 10d6 lightning damage on a failed save, or half as much damage on a successful one.\\n4. Green.\\nThe target takes 10d6 poison damage on a failed save, or half as much damage on a successful one.\\n5. Blue.\\nThe target takes 10d6 cold damage on a failed save, or half as much damage on a successful one.\\n6. Indigo.\\nOn a failed save, the target is restrained. It must then make a constitution saving throw at the end of each of its turns. If it successfully saves three times, the spell ends. If it fails its save three times, it permanently turns to stone and is subjected to the petrified condition. The successes and failures don't need to be consecutive; keep track of both until the target collects three of a kind.\\n7. Violet.\\nOn a failed save, the target is blinded. It must then make a wisdom saving throw at the start of your next turn. A successful save ends the blindness. If it fails that save, the creature is transported to another plane of existence of the DM's choosing and is no longer blinded. (Typically, a creature that is on a plane that isn't its home plane is banished home, while other creatures are usually cast into the Astral or Ethereal planes.)\\n8. Special.\\nThe target is struck by two rays. Roll twice more, rerolling any 8.",
+  "range": {
+    "type": "SELF",
+    "distance": 0
+  },
+  "components": {
+    "verbal": true,
+    "semantic": true,
+    "material": false,
+    "cost": null,
+    "goldValue": 0
+  },
+  "castingTime": "1 action",
+  "duration": "Instantaneous",
+  "ritual": false,
+  "concentration": false,
+  "damage": {
+    "type": null,
+    "slotLevels": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "10d6",
+      "",
+      ""
+    ],
+    "characterLevels": null
+  },
+  "save": {
+    "type": "DEX",
+    "onSuccess": "other",
+    "onFailure": null,
+    "extra": "For each target, roll a d8 to determine which color ray affects it."
+  },
+  "healing": null,
+  "areaOfEffect": {
+    "shape": "CONE",
+    "size": 60
+  },
+  "school": {
+    "id": "evocation",
+    "name": "Evocation",
+    "url": "/magic-schools/evocation"
+  },
+  "classes": [
+    {
+      "id": "sorcerer",
+      "name": "Sorcerer",
+      "url": "/classes/sorcerer"
+    },
+    {
+      "id": "wizard",
+      "name": "Wizard",
+      "url": "/classes/wizard"
+    }
+  ],
+  "scroll": {
+    "value": 25000,
+    "saveDC": 18,
+    "attackBonus": 10
+  },
+  "enchanting": {
+    "minLevel": 11,
+    "cost": 25000,
+    "days": 1000
+  }
+}

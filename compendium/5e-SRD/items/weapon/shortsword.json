@@ -1,0 +1,54 @@
+{
+  "type": "ITEM",
+  "id": "shortsword",
+  "name": "Shortsword",
+  "url": "/items/weapon/shortsword",
+  "source": "PHB",
+  "description": "",
+  "category": {
+    "id": "weapon",
+    "name": "Weapon",
+    "url": "/items/weapon/"
+  },
+  "subCategory": null,
+  "cost": "10GP",
+  "weight": 2,
+  "weaponDetails": {
+    "type": "MARTIAL",
+    "properties": [
+      {
+        "id": "finesse",
+        "name": "Finesse",
+        "url": "/weapon-properties/finesse"
+      },
+      {
+        "id": "light",
+        "name": "Light",
+        "url": "/weapon-properties/light"
+      },
+      {
+        "id": "monk",
+        "name": "Monk",
+        "url": "/weapon-properties/monk"
+      }
+    ],
+    "range": {
+      "type": "MELEE",
+      "normal": 5,
+      "long": 0
+    },
+    "damage": {
+      "amount": "1d6",
+      "twoHanded": null,
+      "type": {
+        "id": "piercing",
+        "name": "Piercing",
+        "url": "/damage-types/piercing"
+      }
+    },
+    "throw": null,
+    "extra": null
+  },
+  "armorDetails": null,
+  "vehicleDetails": null
+}

@@ -1,0 +1,57 @@
+{
+  "type": "EQUIPMENT_PACK",
+  "id": "dungeoneers-pack",
+  "name": "Dungeoneer's Pack",
+  "url": "/equipment-packs/dungeoneers-pack",
+  "cost": "12GP",
+  "contents": [
+    {
+      "id": "backpack",
+      "name": "Backpack",
+      "url": "/items/backpack",
+      "quantity": 1
+    },
+    {
+      "id": "crowbar",
+      "name": "Crowbar",
+      "url": "/items/crowbar",
+      "quantity": 1
+    },
+    {
+      "id": "hammer",
+      "name": "Hammer",
+      "url": "/items/hammer",
+      "quantity": 1
+    },
+    {
+      "id": "piton",
+      "name": "Piton",
+      "url": "/items/piton",
+      "quantity": 10
+    },
+    {
+      "id": "torch",
+      "name": "Torch",
+      "url": "/items/torch",
+      "quantity": 10
+    },
+    {
+      "id": "rations-1-day",
+      "name": "Rations (1 day)",
+      "url": "/items/rations-1-day",
+      "quantity": 10
+    },
+    {
+      "id": "waterskin",
+      "name": "Waterskin",
+      "url": "/items/waterskin",
+      "quantity": 1
+    },
+    {
+      "id": "rope-hempen-50-feet",
+      "name": "Rope, hempen (50 feet)",
+      "url": "/items/rope-hempen-50-feet",
+      "quantity": 1
+    }
+  ]
+}

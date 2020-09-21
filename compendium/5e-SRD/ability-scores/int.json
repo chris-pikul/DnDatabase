@@ -1,0 +1,36 @@
+{
+  "type": "ABILITY_SCORE",
+  "id": "int",
+  "name": "Intelligence",
+  "url": "/ability-scores/int",
+  "source": "PHB",
+  "abreviation": "INT",
+  "description": "Intelligence measures mental acuity, accuracy of recall, and the ability to reason.\\nAn Intelligence check comes into play when you need to draw on logic, education, memory, or deductive reasoning. The Arcana, History, Investigation, Nature, and Religion skills reflect aptitude in certain kinds of Intelligence checks.",
+  "skills": [
+    {
+      "id": "arcana",
+      "name": "Arcana",
+      "url": "/skills/arcana"
+    },
+    {
+      "id": "history",
+      "name": "History",
+      "url": "/skills/history"
+    },
+    {
+      "id": "investigation",
+      "name": "Investigation",
+      "url": "/skills/investigation"
+    },
+    {
+      "id": "nature",
+      "name": "Nature",
+      "url": "/skills/nature"
+    },
+    {
+      "id": "religion",
+      "name": "Religion",
+      "url": "/skills/religion"
+    }
+  ]
+}

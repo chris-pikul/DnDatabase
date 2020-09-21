@@ -1,0 +1,56 @@
+{
+  "type": "SPELL",
+  "id": "continual-flame",
+  "name": "Continual Flame",
+  "url": "/spells/continual-flame",
+  "source": "PHB",
+  "level": 2,
+  "rarity": "UNCOMMON",
+  "description": "A flame, equivalent in brightness to a torch, springs forth from an object that you touch. The effect looks like a regular flame, but it creates no heat and doesn't use oxygen. A continual flame can be covered or hidden but not smothered or quenched.",
+  "range": {
+    "type": "TOUCH",
+    "distance": 0
+  },
+  "components": {
+    "verbal": true,
+    "semantic": true,
+    "material": true,
+    "cost": "Ruby dust worth 50 gp, which the spell consumes.",
+    "goldValue": 0
+  },
+  "castingTime": "1 action",
+  "duration": "Until dispelled",
+  "ritual": false,
+  "concentration": false,
+  "damage": null,
+  "save": null,
+  "healing": null,
+  "areaOfEffect": null,
+  "school": {
+    "id": "evocation",
+    "name": "Evocation",
+    "url": "/magic-schools/evocation"
+  },
+  "classes": [
+    {
+      "id": "cleric",
+      "name": "Cleric",
+      "url": "/classes/cleric"
+    },
+    {
+      "id": "wizard",
+      "name": "Wizard",
+      "url": "/classes/wizard"
+    }
+  ],
+  "scroll": {
+    "value": 250,
+    "saveDC": 13,
+    "attackBonus": 5
+  },
+  "enchanting": {
+    "minLevel": 3,
+    "cost": 250,
+    "days": 10
+  }
+}

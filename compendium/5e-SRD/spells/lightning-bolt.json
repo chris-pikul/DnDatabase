@@ -1,0 +1,84 @@
+{
+  "type": "SPELL",
+  "id": "lightning-bolt",
+  "name": "Lightning Bolt",
+  "url": "/spells/lightning-bolt",
+  "source": "PHB",
+  "level": 3,
+  "rarity": "UNCOMMON",
+  "description": "A stroke of lightning forming a line 100 feet long and 5 feet wide blasts out from you in a direction you choose. Each creature in the line must make a dexterity saving throw. A creature takes 8d6 lightning damage on a failed save, or half as much damage on a successful one.\\nThe lightning ignites flammable objects in the area that aren't being worn or carried.",
+  "higherLevels": "When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd.",
+  "range": {
+    "type": "SELF",
+    "distance": 0
+  },
+  "components": {
+    "verbal": true,
+    "semantic": true,
+    "material": true,
+    "cost": "A bit of fur and a rod of amber, crystal, or glass.",
+    "goldValue": 0
+  },
+  "castingTime": "1 action",
+  "duration": "Instantaneous",
+  "ritual": false,
+  "concentration": false,
+  "damage": {
+    "type": {
+      "id": "lightning",
+      "name": "Lightning",
+      "url": "/damage-types/lightning"
+    },
+    "slotLevels": [
+      "",
+      "",
+      "",
+      "8d6",
+      "9d6",
+      "10d6",
+      "11d6",
+      "12d6",
+      "13d6",
+      "14d6"
+    ],
+    "characterLevels": null
+  },
+  "save": {
+    "type": "DEX",
+    "onSuccess": "half",
+    "onFailure": null,
+    "extra": null
+  },
+  "healing": null,
+  "areaOfEffect": {
+    "shape": "LINE",
+    "size": 100
+  },
+  "school": {
+    "id": "evocation",
+    "name": "Evocation",
+    "url": "/magic-schools/evocation"
+  },
+  "classes": [
+    {
+      "id": "sorcerer",
+      "name": "Sorcerer",
+      "url": "/classes/sorcerer"
+    },
+    {
+      "id": "wizard",
+      "name": "Wizard",
+      "url": "/classes/wizard"
+    }
+  ],
+  "scroll": {
+    "value": 500,
+    "saveDC": 15,
+    "attackBonus": 7
+  },
+  "enchanting": {
+    "minLevel": 3,
+    "cost": 500,
+    "days": 20
+  }
+}

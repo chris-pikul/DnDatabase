@@ -1,0 +1,69 @@
+{
+  "type": "SPELL",
+  "id": "hallucinatory-terrain",
+  "name": "Hallucinatory Terrain",
+  "url": "/spells/hallucinatory-terrain",
+  "source": "PHB",
+  "level": 4,
+  "rarity": "RARE",
+  "description": "You make natural terrain in a 150-foot cube in range look, sound, and smell like some other sort of natural terrain. Thus, open fields or a road can be made to resemble a swamp, hill, crevasse, or some other difficult or impassable terrain. A pond can be made to seem like a grassy meadow, a precipice like a gentle slope, or a rock-strewn gully like a wide and smooth road. Manufactured structures, equipment, and creatures within the area aren't changed in appearance.\\nThe tactile characteristics of the terrain are unchanged, so creatures entering the area are likely to see through the illusion. If the difference isn't obvious by touch, a creature carefully examining the illusion can attempt an Intelligence (Investigation) check against your spell save DC to disbelieve it. A creature who discerns the illusion for what it is, sees it as a vague image superimposed on the terrain.",
+  "range": {
+    "type": "RANGED",
+    "distance": 300
+  },
+  "components": {
+    "verbal": true,
+    "semantic": true,
+    "material": true,
+    "cost": "A stone, a twig, and a bit of green plant.",
+    "goldValue": 0
+  },
+  "castingTime": "10 minutes",
+  "duration": "24 hours",
+  "ritual": false,
+  "concentration": false,
+  "damage": null,
+  "save": null,
+  "healing": null,
+  "areaOfEffect": {
+    "shape": "CUBE",
+    "size": 150
+  },
+  "school": {
+    "id": "illusion",
+    "name": "Illusion",
+    "url": "/magic-schools/illusion"
+  },
+  "classes": [
+    {
+      "id": "bard",
+      "name": "Bard",
+      "url": "/classes/bard"
+    },
+    {
+      "id": "druid",
+      "name": "Druid",
+      "url": "/classes/druid"
+    },
+    {
+      "id": "warlock",
+      "name": "Warlock",
+      "url": "/classes/warlock"
+    },
+    {
+      "id": "wizard",
+      "name": "Wizard",
+      "url": "/classes/wizard"
+    }
+  ],
+  "scroll": {
+    "value": 2500,
+    "saveDC": 15,
+    "attackBonus": 7
+  },
+  "enchanting": {
+    "minLevel": 6,
+    "cost": 2500,
+    "days": 100
+  }
+}

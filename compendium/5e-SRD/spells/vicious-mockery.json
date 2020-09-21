@@ -1,0 +1,69 @@
+{
+  "type": "SPELL",
+  "id": "vicious-mockery",
+  "name": "Vicious Mockery",
+  "url": "/spells/vicious-mockery",
+  "source": "PHB",
+  "level": 0,
+  "rarity": "COMMON",
+  "description": "You unleash a string of insults laced with subtle enchantments at a creature you can see within range. If the target can hear you (though it need not understand you), it must succeed on a wisdom saving throw or take 1d4 psychic damage and have disadvantage on the next attack roll it makes before the end of its next turn.\\nThis spell's damage increases by 1d4 when you reach 5th level (2d4), 11th level (3d4), and 17th level (4d4).",
+  "range": {
+    "type": "RANGED",
+    "distance": 60
+  },
+  "components": {
+    "verbal": true,
+    "semantic": false,
+    "material": false,
+    "cost": null,
+    "goldValue": 0
+  },
+  "castingTime": "1 action",
+  "duration": "Instantaneous",
+  "ritual": false,
+  "concentration": false,
+  "damage": {
+    "type": {
+      "id": "psychic",
+      "name": "Psychic",
+      "url": "/damage-types/psychic"
+    },
+    "slotLevels": null,
+    "characterLevels": {
+      "1": "1d4",
+      "5": "2d4",
+      "11": "3d4",
+      "17": "4d4"
+    }
+  },
+  "save": {
+    "type": "WIS",
+    "onSuccess": null,
+    "onFailure": null,
+    "extra": null
+  },
+  "healing": null,
+  "areaOfEffect": null,
+  "school": {
+    "id": "enchantment",
+    "name": "Enchantment",
+    "url": "/magic-schools/enchantment"
+  },
+  "classes": [
+    {
+      "id": "bard",
+      "name": "Bard",
+      "url": "/classes/bard"
+    }
+  ],
+  "scroll": {
+    "value": 50,
+    "saveDC": 13,
+    "attackBonus": 5
+  },
+  "enchanting": {
+    "minLevel": 3,
+    "cost": 50,
+    "days": 2
+  }
+}

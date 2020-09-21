@@ -1,0 +1,22 @@
+{
+  "type": "TRAIT",
+  "id": "gnome-cunning",
+  "name": "Gnome Cunning",
+  "url": "/traits/gnome-cunning",
+  "source": "PHB",
+  "description": "You have advantage on all Intelligence, Wisdom, and Charisma saving throws against magic.",
+  "races": [
+    {
+      "id": "gnome",
+      "name": "Gnome Cunning",
+      "url": "/races/gnome"
+    }
+  ],
+  "subRaces": [
+    {
+      "id": "rock-gnome",
+      "name": "Gnome Cunning",
+      "url": "/sub-races/rock-gnome"
+    }
+  ]
+}

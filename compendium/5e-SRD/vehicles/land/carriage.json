@@ -1,0 +1,16 @@
+{
+  "type": "VEHICLE",
+  "id": "carriage",
+  "name": "Carriage",
+  "url": "/vehicles/land/carriage",
+  "source": "PHB",
+  "description": "",
+  "category": "MISC",
+  "subCategory": null,
+  "cost": "100GP",
+  "weight": 600,
+  "weaponDetails": null,
+  "armorDetails": null,
+  "vehicleDetails": null,
+  "subType": "SUPPLIES"
+}

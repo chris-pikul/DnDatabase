@@ -1,0 +1,71 @@
+{
+  "type": "SPELL",
+  "id": "guiding-bolt",
+  "name": "Guiding Bolt",
+  "url": "/spells/guiding-bolt",
+  "source": "PHB",
+  "level": 1,
+  "rarity": "COMMON",
+  "description": "A flash of light streaks toward a creature of your choice within range. Make a ranged spell attack against the target. On a hit, the target takes 4d6 radiant damage, and the next attack roll made against this target before the end of your next turn has advantage, thanks to the mystical dim light glittering on the target until then.",
+  "higherLevels": "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st.",
+  "range": {
+    "type": "RANGED",
+    "distance": 120
+  },
+  "components": {
+    "verbal": true,
+    "semantic": true,
+    "material": false,
+    "cost": null,
+    "goldValue": 0
+  },
+  "castingTime": "1 action",
+  "duration": "1 round",
+  "ritual": false,
+  "concentration": false,
+  "damage": {
+    "type": {
+      "id": "radiant",
+      "name": "Radiant",
+      "url": "/damage-types/radiant"
+    },
+    "slotLevels": [
+      "",
+      "4d6",
+      "5d6",
+      "6d6",
+      "7d6",
+      "8d6",
+      "9d6",
+      "10d6",
+      "11d6",
+      "12d6"
+    ],
+    "characterLevels": null
+  },
+  "save": null,
+  "healing": null,
+  "areaOfEffect": null,
+  "school": {
+    "id": "evocation",
+    "name": "Evocation",
+    "url": "/magic-schools/evocation"
+  },
+  "classes": [
+    {
+      "id": "cleric",
+      "name": "Cleric",
+      "url": "/classes/cleric"
+    }
+  ],
+  "scroll": {
+    "value": 100,
+    "saveDC": 13,
+    "attackBonus": 5
+  },
+  "enchanting": {
+    "minLevel": 3,
+    "cost": 100,
+    "days": 4
+  }
+}

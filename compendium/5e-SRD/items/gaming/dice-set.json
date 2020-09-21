@@ -1,0 +1,19 @@
+{
+  "type": "ITEM",
+  "id": "dice-set",
+  "name": "Dice set",
+  "url": "/items/gaming/dice-set",
+  "source": "PHB",
+  "description": "This item encompasses a wide range of game pieces, including dice and decks of cards (for games such as Three-Dragon Ante). A few common examples appear on the Tools table, but other kinds of gaming sets exist. If you are proficient with a gaming set, you can add your proficiency bonus to ability checks you make to play a game with that set. Each type of gaming set requires a separate proficiency.",
+  "category": {
+    "id": "gaming-sets",
+    "name": "Gaming Sets",
+    "url": "/items/gaming/"
+  },
+  "subCategory": null,
+  "cost": "1SP",
+  "weight": 0,
+  "weaponDetails": null,
+  "armorDetails": null,
+  "vehicleDetails": null
+}

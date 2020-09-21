@@ -1,0 +1,66 @@
+{
+  "type": "SPELL",
+  "id": "stoneskin",
+  "name": "Stoneskin",
+  "url": "/spells/stoneskin",
+  "source": "PHB",
+  "level": 4,
+  "rarity": "RARE",
+  "description": "This spell turns the flesh of a willing creature you touch as hard as stone. Until the spell ends, the target has resistance to nonmagical bludgeoning, piercing, and slashing damage.",
+  "range": {
+    "type": "TOUCH",
+    "distance": 0
+  },
+  "components": {
+    "verbal": true,
+    "semantic": true,
+    "material": true,
+    "cost": "Diamond dust worth 100 gp, which the spell consumes.",
+    "goldValue": 0
+  },
+  "castingTime": "1 action",
+  "duration": "Up to 1 hour",
+  "ritual": false,
+  "concentration": true,
+  "damage": null,
+  "save": null,
+  "healing": null,
+  "areaOfEffect": null,
+  "school": {
+    "id": "abjuration",
+    "name": "Abjuration",
+    "url": "/magic-schools/abjuration"
+  },
+  "classes": [
+    {
+      "id": "druid",
+      "name": "Druid",
+      "url": "/classes/druid"
+    },
+    {
+      "id": "ranger",
+      "name": "Ranger",
+      "url": "/classes/ranger"
+    },
+    {
+      "id": "sorcerer",
+      "name": "Sorcerer",
+      "url": "/classes/sorcerer"
+    },
+    {
+      "id": "wizard",
+      "name": "Wizard",
+      "url": "/classes/wizard"
+    }
+  ],
+  "scroll": {
+    "value": 2500,
+    "saveDC": 15,
+    "attackBonus": 7
+  },
+  "enchanting": {
+    "minLevel": 6,
+    "cost": 2500,
+    "days": 100
+  }
+}

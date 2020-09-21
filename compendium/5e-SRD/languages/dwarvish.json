@@ -1,0 +1,13 @@
+{
+  "type": "LANGUAGE",
+  "id": "dwarvish",
+  "name": "Dwarvish",
+  "url": "/languages/dwarvish",
+  "source": "PHB",
+  "description": "Dwarvish is full of hard consonants and guttural sounds.",
+  "isExotic": false,
+  "script": "Dwarvish",
+  "speakers": [
+    "Dwarves"
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "type": "SPELL",
+  "id": "wall-of-thorns",
+  "name": "Wall of Thorns",
+  "url": "/spells/wall-of-thorns",
+  "source": "PHB",
+  "level": 6,
+  "rarity": "VERY_RARE",
+  "description": "You create a wall of tough, pliable, tangled brush bristling with needle-sharp thorns. The wall appears within range on a solid surface and lasts for the duration. You choose to make the wall up to 60 feet long, 10 feet high, and 5 feet thick or a circle that has a 20-foot diameter and is up to 20 feet high and 5 feet thick. The wall blocks line of sight.\\nWhen the wall appears, each creature within its area must make a dexterity saving throw. On a failed save, a creature takes 7d8 piercing damage, or half as much damage on a successful save.\\nA creature can move through the wall, albeit slowly and painfully. For every 1 foot a creature moves through the wall, it must spend 4 feet of movement. Furthermore, the first time a creature enters the wall on a turn or ends its turn there, the creature must make a dexterity saving throw. It takes 7d8 slashing damage on a failed save, or half as much damage on a successful one.",
+  "higherLevels": "When you cast this spell using a spell slot of 7th level or higher, both types of damage increase by 1d8 for each slot level above 6th.",
+  "range": {
+    "type": "RANGED",
+    "distance": 120
+  },
+  "components": {
+    "verbal": true,
+    "semantic": true,
+    "material": true,
+    "cost": "A handful of thorns.",
+    "goldValue": 0
+  },
+  "castingTime": "1 action",
+  "duration": "Up to 10 minutes",
+  "ritual": false,
+  "concentration": true,
+  "damage": {
+    "type": {
+      "id": "piercing",
+      "name": "Piercing",
+      "url": "/damage-types/piercing"
+    },
+    "slotLevels": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "7d8",
+      "8d8",
+      "9d8",
+      "10d8"
+    ],
+    "characterLevels": null
+  },
+  "save": {
+    "type": "DEX",
+    "onSuccess": "half",
+    "onFailure": null,
+    "extra": null
+  },
+  "healing": null,
+  "areaOfEffect": {
+    "shape": "LINE",
+    "size": 60
+  },
+  "school": {
+    "id": "conjuration",
+    "name": "Conjuration",
+    "url": "/magic-schools/conjuration"
+  },
+  "classes": [
+    {
+      "id": "druid",
+      "name": "Druid",
+      "url": "/classes/druid"
+    }
+  ],
+  "scroll": {
+    "value": 10000,
+    "saveDC": 17,
+    "attackBonus": 9
+  },
+  "enchanting": {
+    "minLevel": 11,
+    "cost": 10000,
+    "days": 400
+  }
+}

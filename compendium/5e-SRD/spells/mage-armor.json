@@ -1,0 +1,56 @@
+{
+  "type": "SPELL",
+  "id": "mage-armor",
+  "name": "Mage Armor",
+  "url": "/spells/mage-armor",
+  "source": "PHB",
+  "level": 1,
+  "rarity": "COMMON",
+  "description": "You touch a willing creature who isn't wearing armor, and a protective magical force surrounds it until the spell ends. The target's base AC becomes 13 + its Dexterity modifier. The spell ends if the target dons armor or if you dismiss the spell as an action.",
+  "range": {
+    "type": "TOUCH",
+    "distance": 0
+  },
+  "components": {
+    "verbal": true,
+    "semantic": true,
+    "material": true,
+    "cost": "A piece of cured leather.",
+    "goldValue": 0
+  },
+  "castingTime": "1 action",
+  "duration": "8 hours",
+  "ritual": false,
+  "concentration": false,
+  "damage": null,
+  "save": null,
+  "healing": null,
+  "areaOfEffect": null,
+  "school": {
+    "id": "abjuration",
+    "name": "Abjuration",
+    "url": "/magic-schools/abjuration"
+  },
+  "classes": [
+    {
+      "id": "sorcerer",
+      "name": "Sorcerer",
+      "url": "/classes/sorcerer"
+    },
+    {
+      "id": "wizard",
+      "name": "Wizard",
+      "url": "/classes/wizard"
+    }
+  ],
+  "scroll": {
+    "value": 100,
+    "saveDC": 13,
+    "attackBonus": 5
+  },
+  "enchanting": {
+    "minLevel": 3,
+    "cost": 100,
+    "days": 4
+  }
+}

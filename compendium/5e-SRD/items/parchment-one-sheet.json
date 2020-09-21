@@ -1,0 +1,19 @@
+{
+  "type": "ITEM",
+  "id": "parchment-one-sheet",
+  "name": "Parchment (one sheet)",
+  "url": "/items/parchment-one-sheet",
+  "source": "PHB",
+  "description": "",
+  "category": {
+    "id": "general",
+    "name": "General",
+    "url": "/items/"
+  },
+  "subCategory": "STANDARD_GEAR",
+  "cost": "1SP",
+  "weight": 0,
+  "weaponDetails": null,
+  "armorDetails": null,
+  "vehicleDetails": null
+}

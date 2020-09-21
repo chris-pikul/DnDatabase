@@ -1,0 +1,61 @@
+{
+  "type": "SPELL",
+  "id": "prayer-of-healing",
+  "name": "Prayer of Healing",
+  "url": "/spells/prayer-of-healing",
+  "source": "PHB",
+  "level": 2,
+  "rarity": "UNCOMMON",
+  "description": "Up to six creatures of your choice that you can see within range each regain hit points equal to 2d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs.",
+  "higherLevels": "When you cast this spell using a spell slot of 3rd level or higher, the healing increases by 1d8 for each slot level above 2nd.",
+  "range": {
+    "type": "RANGED",
+    "distance": 30
+  },
+  "components": {
+    "verbal": true,
+    "semantic": false,
+    "material": false,
+    "cost": null,
+    "goldValue": 0
+  },
+  "castingTime": "10 minutes",
+  "duration": "Instantaneous",
+  "ritual": false,
+  "concentration": false,
+  "damage": null,
+  "save": null,
+  "healing": {
+    "2": "2d8 + MOD",
+    "3": "3d8 + MOD",
+    "4": "4d8 + MOD",
+    "5": "5d8 + MOD",
+    "6": "6d8 + MOD",
+    "7": "7d8 + MOD",
+    "8": "8d8 + MOD",
+    "9": "9d8 + MOD"
+  },
+  "areaOfEffect": null,
+  "school": {
+    "id": "evocation",
+    "name": "Evocation",
+    "url": "/magic-schools/evocation"
+  },
+  "classes": [
+    {
+      "id": "cleric",
+      "name": "Cleric",
+      "url": "/classes/cleric"
+    }
+  ],
+  "scroll": {
+    "value": 250,
+    "saveDC": 13,
+    "attackBonus": 5
+  },
+  "enchanting": {
+    "minLevel": 3,
+    "cost": 250,
+    "days": 10
+  }
+}

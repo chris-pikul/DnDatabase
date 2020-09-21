@@ -1,0 +1,8 @@
+{
+  "type": "DAMAGE_TYPE",
+  "id": "lightning",
+  "name": "Lightning",
+  "url": "/damage-types/lightning",
+  "source": "PHB",
+  "description": "A lightning bolt spell and a blue dragon's breath deal lightning damage."
+}

@@ -1,0 +1,76 @@
+{
+  "type": "SPELL",
+  "id": "locate-creature",
+  "name": "Locate Creature",
+  "url": "/spells/locate-creature",
+  "source": "PHB",
+  "level": 4,
+  "rarity": "RARE",
+  "description": "Describe or name a creature that is familiar to you. You sense the direction to the creature's location, as long as that creature is within 1,000 feet of you. If the creature is moving, you know the direction of its movement.\\nThe spell can locate a specific creature known to you, or the nearest creature of a specific kind (such as a human or a unicorn), so long as you have seen such a creature up close--within 30 feet--at least once. If the creature you described or named is in a different form, such as being under the effects of a polymorph spell, this spell doesn't locate the creature.\\nThis spell can't locate a creature if running water at least 10 feet wide blocks a direct path between you and the creature.",
+  "range": {
+    "type": "SELF",
+    "distance": 0
+  },
+  "components": {
+    "verbal": true,
+    "semantic": true,
+    "material": true,
+    "cost": "A bit of fur from a bloodhound.",
+    "goldValue": 0
+  },
+  "castingTime": "1 action",
+  "duration": "Up to 1 hour",
+  "ritual": false,
+  "concentration": true,
+  "damage": null,
+  "save": null,
+  "healing": null,
+  "areaOfEffect": null,
+  "school": {
+    "id": "divination",
+    "name": "Divination",
+    "url": "/magic-schools/divination"
+  },
+  "classes": [
+    {
+      "id": "bard",
+      "name": "Bard",
+      "url": "/classes/bard"
+    },
+    {
+      "id": "cleric",
+      "name": "Cleric",
+      "url": "/classes/cleric"
+    },
+    {
+      "id": "druid",
+      "name": "Druid",
+      "url": "/classes/druid"
+    },
+    {
+      "id": "paladin",
+      "name": "Paladin",
+      "url": "/classes/paladin"
+    },
+    {
+      "id": "ranger",
+      "name": "Ranger",
+      "url": "/classes/ranger"
+    },
+    {
+      "id": "wizard",
+      "name": "Wizard",
+      "url": "/classes/wizard"
+    }
+  ],
+  "scroll": {
+    "value": 2500,
+    "saveDC": 15,
+    "attackBonus": 7
+  },
+  "enchanting": {
+    "minLevel": 6,
+    "cost": 2500,
+    "days": 100
+  }
+}

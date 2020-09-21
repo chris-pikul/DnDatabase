@@ -1,0 +1,19 @@
+{
+  "type": "ITEM",
+  "id": "disguise-kit",
+  "name": "Disguise Kit",
+  "url": "/items/disguise-kit",
+  "source": "PHB",
+  "description": "This pouch of cosmetics, hair dye, and small props lets you create disguises that change your physical appearance. Proficiency with this kit lets you add your proficiency bonus to any ability checks you make to create a visual disguise.",
+  "category": {
+    "id": "general",
+    "name": "General",
+    "url": "/items/"
+  },
+  "subCategory": "KIT",
+  "cost": "25GP",
+  "weight": 3,
+  "weaponDetails": null,
+  "armorDetails": null,
+  "vehicleDetails": null
+}

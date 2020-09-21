@@ -1,0 +1,62 @@
+{
+  "type": "SPELL",
+  "id": "heal",
+  "name": "Heal",
+  "url": "/spells/heal",
+  "source": "PHB",
+  "level": 6,
+  "rarity": "VERY_RARE",
+  "description": "Choose a creature that you can see within range. A surge of positive energy washes through the creature, causing it to regain 70 hit points. This spell also ends blindness, deafness, and any diseases affecting the target. This spell has no effect on constructs or undead.",
+  "higherLevels": "When you cast this spell using a spell slot of 7th level or higher, the amount of healing increases by 10 for each slot level above 6th.",
+  "range": {
+    "type": "RANGED",
+    "distance": 60
+  },
+  "components": {
+    "verbal": true,
+    "semantic": true,
+    "material": false,
+    "cost": null,
+    "goldValue": 0
+  },
+  "castingTime": "1 action",
+  "duration": "Instantaneous",
+  "ritual": false,
+  "concentration": false,
+  "damage": null,
+  "save": null,
+  "healing": {
+    "6": "70",
+    "7": "80",
+    "8": "90",
+    "9": "100"
+  },
+  "areaOfEffect": null,
+  "school": {
+    "id": "evocation",
+    "name": "Evocation",
+    "url": "/magic-schools/evocation"
+  },
+  "classes": [
+    {
+      "id": "cleric",
+      "name": "Cleric",
+      "url": "/classes/cleric"
+    },
+    {
+      "id": "druid",
+      "name": "Druid",
+      "url": "/classes/druid"
+    }
+  ],
+  "scroll": {
+    "value": 10000,
+    "saveDC": 17,
+    "attackBonus": 9
+  },
+  "enchanting": {
+    "minLevel": 11,
+    "cost": 10000,
+    "days": 400
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "type": "EQUIPMENT_PACK",
+  "id": "scholars-pack",
+  "name": "Scholar's Pack",
+  "url": "/equipment-packs/scholars-pack",
+  "cost": "40GP",
+  "contents": [
+    {
+      "id": "backpack",
+      "name": "Backpack",
+      "url": "/items/backpack",
+      "quantity": 1
+    },
+    {
+      "id": "book",
+      "name": "Book",
+      "url": "/items/book",
+      "quantity": 1
+    },
+    {
+      "id": "ink-1-ounce-bottle",
+      "name": "Ink (1 ounce bottle)",
+      "url": "/items/ink-1-ounce-bottle",
+      "quantity": 1
+    },
+    {
+      "id": "ink-pen",
+      "name": "Ink pen",
+      "url": "/items/ink-pen",
+      "quantity": 1
+    },
+    {
+      "id": "parchment-one-sheet",
+      "name": "Parchment (one sheet)",
+      "url": "/items/parchment-one-sheet",
+      "quantity": 10
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "type": "ITEM",
+  "id": "abacus",
+  "name": "Abacus",
+  "url": "/items/abacus",
+  "source": "PHB",
+  "description": "",
+  "category": {
+    "id": "general",
+    "name": "General",
+    "url": "/items/"
+  },
+  "subCategory": "STANDARD_GEAR",
+  "cost": "2GP",
+  "weight": 2,
+  "weaponDetails": null,
+  "armorDetails": null,
+  "vehicleDetails": null
+}

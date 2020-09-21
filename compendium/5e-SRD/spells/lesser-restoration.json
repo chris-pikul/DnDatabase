@@ -1,0 +1,71 @@
+{
+  "type": "SPELL",
+  "id": "lesser-restoration",
+  "name": "Lesser Restoration",
+  "url": "/spells/lesser-restoration",
+  "source": "PHB",
+  "level": 2,
+  "rarity": "UNCOMMON",
+  "description": "You touch a creature and can end either one disease or one condition afflicting it. The condition can be blinded, deafened, paralyzed, or poisoned.",
+  "range": {
+    "type": "TOUCH",
+    "distance": 0
+  },
+  "components": {
+    "verbal": true,
+    "semantic": true,
+    "material": false,
+    "cost": null,
+    "goldValue": 0
+  },
+  "castingTime": "1 action",
+  "duration": "Instantaneous",
+  "ritual": false,
+  "concentration": false,
+  "damage": null,
+  "save": null,
+  "healing": null,
+  "areaOfEffect": null,
+  "school": {
+    "id": "abjuration",
+    "name": "Abjuration",
+    "url": "/magic-schools/abjuration"
+  },
+  "classes": [
+    {
+      "id": "bard",
+      "name": "Bard",
+      "url": "/classes/bard"
+    },
+    {
+      "id": "cleric",
+      "name": "Cleric",
+      "url": "/classes/cleric"
+    },
+    {
+      "id": "druid",
+      "name": "Druid",
+      "url": "/classes/druid"
+    },
+    {
+      "id": "paladin",
+      "name": "Paladin",
+      "url": "/classes/paladin"
+    },
+    {
+      "id": "ranger",
+      "name": "Ranger",
+      "url": "/classes/ranger"
+    }
+  ],
+  "scroll": {
+    "value": 250,
+    "saveDC": 13,
+    "attackBonus": 5
+  },
+  "enchanting": {
+    "minLevel": 3,
+    "cost": 250,
+    "days": 10
+  }
+}

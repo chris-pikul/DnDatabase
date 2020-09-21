@@ -1,0 +1,61 @@
+{
+  "type": "SPELL",
+  "id": "nondetection",
+  "name": "Nondetection",
+  "url": "/spells/nondetection",
+  "source": "PHB",
+  "level": 3,
+  "rarity": "UNCOMMON",
+  "description": "For the duration, you hide a target that you touch from divination magic. The target can be a willing creature or a place or an object no larger than 10 feet in any dimension. The target can't be targeted by any divination magic or perceived through magical scrying sensors.",
+  "range": {
+    "type": "TOUCH",
+    "distance": 0
+  },
+  "components": {
+    "verbal": true,
+    "semantic": true,
+    "material": true,
+    "cost": "A pinch of diamond dust worth 25 gp sprinkled over the target, which the spell consumes.",
+    "goldValue": 0
+  },
+  "castingTime": "1 action",
+  "duration": "8 hours",
+  "ritual": false,
+  "concentration": false,
+  "damage": null,
+  "save": null,
+  "healing": null,
+  "areaOfEffect": null,
+  "school": {
+    "id": "abjuration",
+    "name": "Abjuration",
+    "url": "/magic-schools/abjuration"
+  },
+  "classes": [
+    {
+      "id": "bard",
+      "name": "Bard",
+      "url": "/classes/bard"
+    },
+    {
+      "id": "ranger",
+      "name": "Ranger",
+      "url": "/classes/ranger"
+    },
+    {
+      "id": "wizard",
+      "name": "Wizard",
+      "url": "/classes/wizard"
+    }
+  ],
+  "scroll": {
+    "value": 500,
+    "saveDC": 15,
+    "attackBonus": 7
+  },
+  "enchanting": {
+    "minLevel": 3,
+    "cost": 500,
+    "days": 20
+  }
+}

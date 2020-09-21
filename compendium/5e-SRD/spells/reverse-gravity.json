@@ -1,0 +1,69 @@
+{
+  "type": "SPELL",
+  "id": "reverse-gravity",
+  "name": "Reverse Gravity",
+  "url": "/spells/reverse-gravity",
+  "source": "PHB",
+  "level": 7,
+  "rarity": "VERY_RARE",
+  "description": "This spell reverses gravity in a 50-foot-radius, 100-foot high cylinder centered on a point within range. All creatures and objects that aren't somehow anchored to the ground in the area fall upward and reach the top of the area when you cast this spell. A creature can make a dexterity saving throw to grab onto a fixed object it can reach, thus avoiding the fall.\\nIf some solid object (such as a ceiling) is encountered in this fall, falling objects and creatures strike it just as they would during a normal downward fall. If an object or creature reaches the top of the area without striking anything, it remains there, oscillating slightly, for the duration.\\nAt the end of the duration, affected objects and creatures fall back down.",
+  "range": {
+    "type": "RANGED",
+    "distance": 100
+  },
+  "components": {
+    "verbal": true,
+    "semantic": true,
+    "material": true,
+    "cost": "A lodestone and iron filings.",
+    "goldValue": 0
+  },
+  "castingTime": "1 action",
+  "duration": "Up to 1 minute",
+  "ritual": false,
+  "concentration": true,
+  "damage": null,
+  "save": {
+    "type": "DEX",
+    "onSuccess": "other",
+    "onFailure": null,
+    "extra": "A creature can make a dexterity saving throw to grab onto a fixed object it can reach, thus avoiding the fall."
+  },
+  "healing": null,
+  "areaOfEffect": {
+    "shape": "CYLINDER",
+    "size": 50
+  },
+  "school": {
+    "id": "transmutation",
+    "name": "Transmutation",
+    "url": "/magic-schools/transmutation"
+  },
+  "classes": [
+    {
+      "id": "druid",
+      "name": "Druid",
+      "url": "/classes/druid"
+    },
+    {
+      "id": "sorcerer",
+      "name": "Sorcerer",
+      "url": "/classes/sorcerer"
+    },
+    {
+      "id": "wizard",
+      "name": "Wizard",
+      "url": "/classes/wizard"
+    }
+  ],
+  "scroll": {
+    "value": 25000,
+    "saveDC": 18,
+    "attackBonus": 10
+  },
+  "enchanting": {
+    "minLevel": 11,
+    "cost": 25000,
+    "days": 1000
+  }
+}

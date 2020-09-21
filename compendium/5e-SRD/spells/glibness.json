@@ -1,0 +1,56 @@
+{
+  "type": "SPELL",
+  "id": "glibness",
+  "name": "Glibness",
+  "url": "/spells/glibness",
+  "source": "PHB",
+  "level": 8,
+  "rarity": "VERY_RARE",
+  "description": "Until the spell ends, when you make a Charisma check, you can replace the number you roll with a 15. Additionally, no matter what you say, magic that would determine if you are telling the truth indicates that you are being truthful.",
+  "range": {
+    "type": "SELF",
+    "distance": 0
+  },
+  "components": {
+    "verbal": true,
+    "semantic": false,
+    "material": false,
+    "cost": null,
+    "goldValue": 0
+  },
+  "castingTime": "1 action",
+  "duration": "1 hour",
+  "ritual": false,
+  "concentration": false,
+  "damage": null,
+  "save": null,
+  "healing": null,
+  "areaOfEffect": null,
+  "school": {
+    "id": "transmutation",
+    "name": "Transmutation",
+    "url": "/magic-schools/transmutation"
+  },
+  "classes": [
+    {
+      "id": "bard",
+      "name": "Bard",
+      "url": "/classes/bard"
+    },
+    {
+      "id": "warlock",
+      "name": "Warlock",
+      "url": "/classes/warlock"
+    }
+  ],
+  "scroll": {
+    "value": 50000,
+    "saveDC": 18,
+    "attackBonus": 10
+  },
+  "enchanting": {
+    "minLevel": 11,
+    "cost": 50000,
+    "days": 2000
+  }
+}

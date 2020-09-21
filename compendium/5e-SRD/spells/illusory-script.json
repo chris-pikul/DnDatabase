@@ -1,0 +1,61 @@
+{
+  "type": "SPELL",
+  "id": "illusory-script",
+  "name": "Illusory Script",
+  "url": "/spells/illusory-script",
+  "source": "PHB",
+  "level": 1,
+  "rarity": "COMMON",
+  "description": "You write on parchment, paper, or some other suitable writing material and imbue it with a potent illusion that lasts for the duration.\\nTo you and any creatures you designate when you cast the spell, the writing appears normal, written in your hand, and conveys whatever meaning you intended when you wrote the text. To all others, the writing appears as if it were written in an unknown or magical script that is unintelligible. Alternatively, you can cause the writing to appear to be an entirely different message, written in a different hand and language, though the language must be one you know.\\nShould the spell be dispelled, the original script and the illusion both disappear.\\nA creature with truesight can read the hidden message.",
+  "range": {
+    "type": "TOUCH",
+    "distance": 0
+  },
+  "components": {
+    "verbal": false,
+    "semantic": true,
+    "material": true,
+    "cost": "A lead-based ink worth at least 10gp, which this spell consumes.",
+    "goldValue": 10
+  },
+  "castingTime": "1 minute",
+  "duration": "10 days",
+  "ritual": true,
+  "concentration": false,
+  "damage": null,
+  "save": null,
+  "healing": null,
+  "areaOfEffect": null,
+  "school": {
+    "id": "illusion",
+    "name": "Illusion",
+    "url": "/magic-schools/illusion"
+  },
+  "classes": [
+    {
+      "id": "bard",
+      "name": "Bard",
+      "url": "/classes/bard"
+    },
+    {
+      "id": "warlock",
+      "name": "Warlock",
+      "url": "/classes/warlock"
+    },
+    {
+      "id": "wizard",
+      "name": "Wizard",
+      "url": "/classes/wizard"
+    }
+  ],
+  "scroll": {
+    "value": 120,
+    "saveDC": 13,
+    "attackBonus": 5
+  },
+  "enchanting": {
+    "minLevel": 3,
+    "cost": 180,
+    "days": 4
+  }
+}

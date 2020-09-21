@@ -1,0 +1,19 @@
+{
+  "type": "ITEM",
+  "id": "flask-or-tankard",
+  "name": "Flask or tankard",
+  "url": "/items/flask-or-tankard",
+  "source": "PHB",
+  "description": "",
+  "category": {
+    "id": "general",
+    "name": "General",
+    "url": "/items/"
+  },
+  "subCategory": "STANDARD_GEAR",
+  "cost": "2CP",
+  "weight": 1,
+  "weaponDetails": null,
+  "armorDetails": null,
+  "vehicleDetails": null
+}

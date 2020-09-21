@@ -1,0 +1,64 @@
+{
+  "type": "SPELL",
+  "id": "silence",
+  "name": "Silence",
+  "url": "/spells/silence",
+  "source": "PHB",
+  "level": 2,
+  "rarity": "UNCOMMON",
+  "description": "For the duration, no sound can be created within or pass through a 20-foot-radius sphere centered on a point you choose within range. Any creature or object entirely inside the sphere is immune to thunder damage, and creatures are deafened while entirely inside it.\\nCasting a spell that includes a verbal component is impossible there.",
+  "range": {
+    "type": "RANGED",
+    "distance": 120
+  },
+  "components": {
+    "verbal": true,
+    "semantic": true,
+    "material": false,
+    "cost": null,
+    "goldValue": 0
+  },
+  "castingTime": "1 action",
+  "duration": "Up to 10 minutes",
+  "ritual": true,
+  "concentration": true,
+  "damage": null,
+  "save": null,
+  "healing": null,
+  "areaOfEffect": {
+    "shape": "SPHERE",
+    "size": 20
+  },
+  "school": {
+    "id": "illusion",
+    "name": "Illusion",
+    "url": "/magic-schools/illusion"
+  },
+  "classes": [
+    {
+      "id": "bard",
+      "name": "Bard",
+      "url": "/classes/bard"
+    },
+    {
+      "id": "cleric",
+      "name": "Cleric",
+      "url": "/classes/cleric"
+    },
+    {
+      "id": "ranger",
+      "name": "Ranger",
+      "url": "/classes/ranger"
+    }
+  ],
+  "scroll": {
+    "value": 250,
+    "saveDC": 13,
+    "attackBonus": 5
+  },
+  "enchanting": {
+    "minLevel": 3,
+    "cost": 250,
+    "days": 10
+  }
+}

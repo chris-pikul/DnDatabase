@@ -1,0 +1,60 @@
+{
+  "type": "SPELL",
+  "id": "color-spray",
+  "name": "Color Spray",
+  "url": "/spells/color-spray",
+  "source": "PHB",
+  "level": 1,
+  "rarity": "COMMON",
+  "description": "A dazzling array of flashing, colored light springs from your hand. Roll 6d10; the total is how many hit points of creatures this spell can effect. Creatures in a 15-foot cone originating from you are affected in ascending order of their current hit points (ignoring unconscious creatures and creatures that can't see).\\nStarting with the creature that has the lowest current hit points, each creature affected by this spell is blinded until the spell ends. Subtract each creature's hit points from the total before moving on to the creature with the next lowest hit points. A creature's hit points must be equal to or less than the remaining total for that creature to be affected.",
+  "higherLevels": "When you cast this spell using a spell slot of 2nd level or higher, roll an additional 2d10 for each slot level above 1st.",
+  "range": {
+    "type": "SELF",
+    "distance": 0
+  },
+  "components": {
+    "verbal": true,
+    "semantic": true,
+    "material": true,
+    "cost": "A pinch of powder or sand that is colored red, yellow, and blue.",
+    "goldValue": 0
+  },
+  "castingTime": "1 action",
+  "duration": "1 round",
+  "ritual": false,
+  "concentration": false,
+  "damage": null,
+  "save": null,
+  "healing": null,
+  "areaOfEffect": {
+    "shape": "CONE",
+    "size": 15
+  },
+  "school": {
+    "id": "illusion",
+    "name": "Illusion",
+    "url": "/magic-schools/illusion"
+  },
+  "classes": [
+    {
+      "id": "sorcerer",
+      "name": "Sorcerer",
+      "url": "/classes/sorcerer"
+    },
+    {
+      "id": "wizard",
+      "name": "Wizard",
+      "url": "/classes/wizard"
+    }
+  ],
+  "scroll": {
+    "value": 100,
+    "saveDC": 13,
+    "attackBonus": 5
+  },
+  "enchanting": {
+    "minLevel": 3,
+    "cost": 100,
+    "days": 4
+  }
+}

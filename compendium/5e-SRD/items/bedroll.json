@@ -1,0 +1,19 @@
+{
+  "type": "ITEM",
+  "id": "bedroll",
+  "name": "Bedroll",
+  "url": "/items/bedroll",
+  "source": "PHB",
+  "description": "",
+  "category": {
+    "id": "general",
+    "name": "General",
+    "url": "/items/"
+  },
+  "subCategory": "STANDARD_GEAR",
+  "cost": "1GP",
+  "weight": 7,
+  "weaponDetails": null,
+  "armorDetails": null,
+  "vehicleDetails": null
+}

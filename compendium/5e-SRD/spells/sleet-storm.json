@@ -1,0 +1,64 @@
+{
+  "type": "SPELL",
+  "id": "sleet-storm",
+  "name": "Sleet Storm",
+  "url": "/spells/sleet-storm",
+  "source": "PHB",
+  "level": 3,
+  "rarity": "UNCOMMON",
+  "description": "Until the spell ends, freezing rain and sleet fall in a 20-foot-tall cylinder with a 40-foot radius centered on a point you choose within range. The area is heavily obscured, and exposed flames in the area are doused.\\nThe ground in the area is covered with slick ice, making it difficult terrain. When a creature enters the spell's area for the first time on a turn or starts its turn there, it must make a dexterity saving throw. On a failed save, it falls prone.\\nIf a creature is concentrating in the spell's area, the creature must make a successful constitution saving throw against your spell save DC or lose concentration.",
+  "range": {
+    "type": "RANGED",
+    "distance": 150
+  },
+  "components": {
+    "verbal": true,
+    "semantic": true,
+    "material": true,
+    "cost": "A pinch of dust and a few drops of water.",
+    "goldValue": 0
+  },
+  "castingTime": "1 action",
+  "duration": "Up to 1 minute",
+  "ritual": false,
+  "concentration": true,
+  "damage": null,
+  "save": null,
+  "healing": null,
+  "areaOfEffect": {
+    "shape": "CYLINDER",
+    "size": 40
+  },
+  "school": {
+    "id": "conjuration",
+    "name": "Conjuration",
+    "url": "/magic-schools/conjuration"
+  },
+  "classes": [
+    {
+      "id": "druid",
+      "name": "Druid",
+      "url": "/classes/druid"
+    },
+    {
+      "id": "sorcerer",
+      "name": "Sorcerer",
+      "url": "/classes/sorcerer"
+    },
+    {
+      "id": "wizard",
+      "name": "Wizard",
+      "url": "/classes/wizard"
+    }
+  ],
+  "scroll": {
+    "value": 500,
+    "saveDC": 15,
+    "attackBonus": 7
+  },
+  "enchanting": {
+    "minLevel": 3,
+    "cost": 500,
+    "days": 20
+  }
+}

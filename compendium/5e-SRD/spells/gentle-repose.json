@@ -1,0 +1,56 @@
+{
+  "type": "SPELL",
+  "id": "gentle-repose",
+  "name": "Gentle Repose",
+  "url": "/spells/gentle-repose",
+  "source": "PHB",
+  "level": 2,
+  "rarity": "UNCOMMON",
+  "description": "You touch a corpse or other remains. For the duration, the target is protected from decay and can't become undead.\\nThe spell also effectively extends the time limit on raising the target from the dead, since days spent under the influence of this spell don't count against the time limit of spells such as raise dead.",
+  "range": {
+    "type": "TOUCH",
+    "distance": 0
+  },
+  "components": {
+    "verbal": true,
+    "semantic": true,
+    "material": true,
+    "cost": "A pinch of salt and one copper piece placed on each of the corpse's eyes, which must remain there for the duration.",
+    "goldValue": 0
+  },
+  "castingTime": "1 action",
+  "duration": "10 days",
+  "ritual": true,
+  "concentration": false,
+  "damage": null,
+  "save": null,
+  "healing": null,
+  "areaOfEffect": null,
+  "school": {
+    "id": "necromancy",
+    "name": "Necromancy",
+    "url": "/magic-schools/necromancy"
+  },
+  "classes": [
+    {
+      "id": "cleric",
+      "name": "Cleric",
+      "url": "/classes/cleric"
+    },
+    {
+      "id": "wizard",
+      "name": "Wizard",
+      "url": "/classes/wizard"
+    }
+  ],
+  "scroll": {
+    "value": 250,
+    "saveDC": 13,
+    "attackBonus": 5
+  },
+  "enchanting": {
+    "minLevel": 3,
+    "cost": 250,
+    "days": 10
+  }
+}

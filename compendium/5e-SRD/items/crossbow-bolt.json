@@ -1,0 +1,19 @@
+{
+  "type": "ITEM",
+  "id": "crossbow-bolt",
+  "name": "Crossbow bolt",
+  "url": "/items/crossbow-bolt",
+  "source": "PHB",
+  "description": "",
+  "category": {
+    "id": "general",
+    "name": "General",
+    "url": "/items/"
+  },
+  "subCategory": "AMMUNITION",
+  "cost": "1GP",
+  "weight": 1.5,
+  "weaponDetails": null,
+  "armorDetails": null,
+  "vehicleDetails": null
+}

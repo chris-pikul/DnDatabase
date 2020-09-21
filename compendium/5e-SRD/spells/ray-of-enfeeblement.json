@@ -1,0 +1,56 @@
+{
+  "type": "SPELL",
+  "id": "ray-of-enfeeblement",
+  "name": "Ray of Enfeeblement",
+  "url": "/spells/ray-of-enfeeblement",
+  "source": "PHB",
+  "level": 2,
+  "rarity": "UNCOMMON",
+  "description": "A black beam of enervating energy springs from your finger toward a creature within range. Make a ranged spell attack against the target. On a hit, the target deals only half damage with weapon attacks that use Strength until the spell ends.\\nAt the end of each of the target's turns, it can make a constitution saving throw against the spell. On a success, the spell ends.",
+  "range": {
+    "type": "RANGED",
+    "distance": 60
+  },
+  "components": {
+    "verbal": true,
+    "semantic": true,
+    "material": false,
+    "cost": null,
+    "goldValue": 0
+  },
+  "castingTime": "1 action",
+  "duration": "Up to 1 minute",
+  "ritual": false,
+  "concentration": true,
+  "damage": null,
+  "save": null,
+  "healing": null,
+  "areaOfEffect": null,
+  "school": {
+    "id": "necromancy",
+    "name": "Necromancy",
+    "url": "/magic-schools/necromancy"
+  },
+  "classes": [
+    {
+      "id": "warlock",
+      "name": "Warlock",
+      "url": "/classes/warlock"
+    },
+    {
+      "id": "wizard",
+      "name": "Wizard",
+      "url": "/classes/wizard"
+    }
+  ],
+  "scroll": {
+    "value": 250,
+    "saveDC": 13,
+    "attackBonus": 5
+  },
+  "enchanting": {
+    "minLevel": 3,
+    "cost": 250,
+    "days": 10
+  }
+}

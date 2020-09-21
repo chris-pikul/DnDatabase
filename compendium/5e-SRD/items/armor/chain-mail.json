@@ -1,0 +1,26 @@
+{
+  "type": "ITEM",
+  "id": "chain-mail",
+  "name": "Chain Mail",
+  "url": "/items/armor/chain-mail",
+  "source": "PHB",
+  "description": "",
+  "category": {
+    "id": "armor",
+    "name": "Armor",
+    "url": "/items/armor/"
+  },
+  "subCategory": null,
+  "cost": "75GP",
+  "weight": 55,
+  "weaponDetails": null,
+  "armorDetails": {
+    "type": "HEAVY",
+    "baseAC": 16,
+    "addDexterity": false,
+    "maxDexterityBonus": 0,
+    "strength": 13,
+    "stealthDisadvantage": true
+  },
+  "vehicleDetails": null
+}

@@ -1,0 +1,54 @@
+{
+  "type": "ITEM",
+  "id": "crossbow-light",
+  "name": "Crossbow, light",
+  "url": "/items/weapon/crossbow-light",
+  "source": "PHB",
+  "description": "",
+  "category": {
+    "id": "weapon",
+    "name": "Weapon",
+    "url": "/items/weapon/"
+  },
+  "subCategory": null,
+  "cost": "25GP",
+  "weight": 5,
+  "weaponDetails": {
+    "type": "SIMPLE",
+    "properties": [
+      {
+        "id": "ammunition",
+        "name": "Ammunition",
+        "url": "/weapon-properties/ammunition"
+      },
+      {
+        "id": "loading",
+        "name": "Loading",
+        "url": "/weapon-properties/loading"
+      },
+      {
+        "id": "two-handed",
+        "name": "Two-handed",
+        "url": "/weapon-properties/two-handed"
+      }
+    ],
+    "range": {
+      "type": "RANGED",
+      "normal": 80,
+      "long": 320
+    },
+    "damage": {
+      "amount": "1d8",
+      "twoHanded": null,
+      "type": {
+        "id": "piercing",
+        "name": "Piercing",
+        "url": "/damage-types/piercing"
+      }
+    },
+    "throw": null,
+    "extra": null
+  },
+  "armorDetails": null,
+  "vehicleDetails": null
+}

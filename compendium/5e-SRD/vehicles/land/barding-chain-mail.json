@@ -1,0 +1,16 @@
+{
+  "type": "VEHICLE",
+  "id": "barding-chain-mail",
+  "name": "Barding: Chain mail",
+  "url": "/vehicles/land/barding-chain-mail",
+  "source": "PHB",
+  "description": "Barding is armor designed to protect an animal's head, neck, chest, and body. Any type of armor shown on the Armor table can be purchased as barding. The cost is four times the equivalent armor made for humanoids, and it weighs twice as much.",
+  "category": "MISC",
+  "subCategory": null,
+  "cost": "300GP",
+  "weight": 110,
+  "weaponDetails": null,
+  "armorDetails": null,
+  "vehicleDetails": null,
+  "subType": "SUPPLIES"
+}

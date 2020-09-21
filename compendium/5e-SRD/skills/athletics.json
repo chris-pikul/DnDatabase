@@ -1,0 +1,13 @@
+{
+  "type": "SKILL",
+  "id": "athletics",
+  "name": "Athletics",
+  "url": "/skills/athletics",
+  "source": "PHB",
+  "description": "Your Strength (Athletics) check covers difficult situations you encounter while climbing, jumping, or swimming.",
+  "ability": {
+    "id": "str",
+    "name": "Strength",
+    "url": "/ability-scores/str"
+  }
+}

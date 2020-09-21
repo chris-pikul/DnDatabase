@@ -1,0 +1,16 @@
+{
+  "type": "VEHICLE",
+  "id": "wagon",
+  "name": "Wagon",
+  "url": "/vehicles/land/wagon",
+  "source": "PHB",
+  "description": "",
+  "category": "MISC",
+  "subCategory": null,
+  "cost": "35GP",
+  "weight": 400,
+  "weaponDetails": null,
+  "armorDetails": null,
+  "vehicleDetails": null,
+  "subType": "SUPPLIES"
+}

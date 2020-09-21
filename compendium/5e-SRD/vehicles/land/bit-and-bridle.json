@@ -1,0 +1,16 @@
+{
+  "type": "VEHICLE",
+  "id": "bit-and-bridle",
+  "name": "Bit and bridle",
+  "url": "/vehicles/land/bit-and-bridle",
+  "source": "PHB",
+  "description": "",
+  "category": "MISC",
+  "subCategory": null,
+  "cost": "2GP",
+  "weight": 1,
+  "weaponDetails": null,
+  "armorDetails": null,
+  "vehicleDetails": null,
+  "subType": "SUPPLIES"
+}

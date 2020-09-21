@@ -1,0 +1,19 @@
+{
+  "type": "ITEM",
+  "id": "poisoners-kit",
+  "name": "Poisoner's Kit",
+  "url": "/items/poisoners-kit",
+  "source": "PHB",
+  "description": "A poisoner's kit includes the vials, chemicals, and other equipment necessary for the creation of poisons. Proficiency with this kit lets you add your proficiency bonus to any ability checks you make to craft or use poisons.",
+  "category": {
+    "id": "general",
+    "name": "General",
+    "url": "/items/"
+  },
+  "subCategory": "KIT",
+  "cost": "50GP",
+  "weight": 2,
+  "weaponDetails": null,
+  "armorDetails": null,
+  "vehicleDetails": null
+}

@@ -1,0 +1,54 @@
+{
+  "type": "ITEM",
+  "id": "longbow",
+  "name": "Longbow",
+  "url": "/items/weapon/longbow",
+  "source": "PHB",
+  "description": "",
+  "category": {
+    "id": "weapon",
+    "name": "Weapon",
+    "url": "/items/weapon/"
+  },
+  "subCategory": null,
+  "cost": "50GP",
+  "weight": 2,
+  "weaponDetails": {
+    "type": "MARTIAL",
+    "properties": [
+      {
+        "id": "ammunition",
+        "name": "Ammunition",
+        "url": "/weapon-properties/ammunition"
+      },
+      {
+        "id": "heavy",
+        "name": "Heavy",
+        "url": "/weapon-properties/heavy"
+      },
+      {
+        "id": "two-handed",
+        "name": "Two-handed",
+        "url": "/weapon-properties/two-handed"
+      }
+    ],
+    "range": {
+      "type": "RANGED",
+      "normal": 150,
+      "long": 600
+    },
+    "damage": {
+      "amount": "1d8",
+      "twoHanded": null,
+      "type": {
+        "id": "piercing",
+        "name": "Piercing",
+        "url": "/damage-types/piercing"
+      }
+    },
+    "throw": null,
+    "extra": null
+  },
+  "armorDetails": null,
+  "vehicleDetails": null
+}

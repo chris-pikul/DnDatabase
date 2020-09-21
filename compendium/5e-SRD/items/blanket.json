@@ -1,0 +1,19 @@
+{
+  "type": "ITEM",
+  "id": "blanket",
+  "name": "Blanket",
+  "url": "/items/blanket",
+  "source": "PHB",
+  "description": "",
+  "category": {
+    "id": "general",
+    "name": "General",
+    "url": "/items/"
+  },
+  "subCategory": "STANDARD_GEAR",
+  "cost": "5SP",
+  "weight": 3,
+  "weaponDetails": null,
+  "armorDetails": null,
+  "vehicleDetails": null
+}

@@ -1,0 +1,13 @@
+{
+  "type": "LANGUAGE",
+  "id": "abyssal",
+  "name": "Abyssal",
+  "url": "/languages/abyssal",
+  "source": "PHB",
+  "description": "",
+  "isExotic": true,
+  "script": "Infernal",
+  "speakers": [
+    "Demons"
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "type": "SPELL",
+  "id": "conjure-celestial",
+  "name": "Conjure Celestial",
+  "url": "/spells/conjure-celestial",
+  "source": "PHB",
+  "level": 7,
+  "rarity": "VERY_RARE",
+  "description": "You summon a celestial of challenge rating 4 or lower, which appears in an unoccupied space that you can see within range. The celestial disappears when it drops to 0 hit points or when the spell ends.\\nThe celestial is friendly to you and your companions for the duration. Roll initiative for the celestial, which has its own turns. It obeys any verbal commands that you issue to it (no action required by you), as long as they don't violate its alignment. If you don't issue any commands to the celestial, it defends itself from hostile creatures but otherwise takes no actions.\\nThe DM has the celestial's statistics.",
+  "higherLevels": "When you cast this spell using a 9th-level spell slot, you summon a celestial of challenge rating 5 or lower.",
+  "range": {
+    "type": "RANGED",
+    "distance": 90
+  },
+  "components": {
+    "verbal": true,
+    "semantic": true,
+    "material": false,
+    "cost": null,
+    "goldValue": 0
+  },
+  "castingTime": "1 minute",
+  "duration": "Up to 1 hour",
+  "ritual": false,
+  "concentration": true,
+  "damage": null,
+  "save": null,
+  "healing": null,
+  "areaOfEffect": null,
+  "school": {
+    "id": "conjuration",
+    "name": "Conjuration",
+    "url": "/magic-schools/conjuration"
+  },
+  "classes": [
+    {
+      "id": "cleric",
+      "name": "Cleric",
+      "url": "/classes/cleric"
+    }
+  ],
+  "scroll": {
+    "value": 25000,
+    "saveDC": 18,
+    "attackBonus": 10
+  },
+  "enchanting": {
+    "minLevel": 11,
+    "cost": 25000,
+    "days": 1000
+  }
+}

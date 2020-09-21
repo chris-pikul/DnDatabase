@@ -1,0 +1,8 @@
+{
+  "type": "DAMAGE_TYPE",
+  "id": "thunder",
+  "name": "Thunder",
+  "url": "/damage-types/thunder",
+  "source": "PHB",
+  "description": "A concussive burst of sound, such as the effect of the thunderwave spell, deals thunder damage."
+}

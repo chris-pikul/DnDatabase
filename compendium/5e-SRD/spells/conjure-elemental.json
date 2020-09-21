@@ -1,0 +1,60 @@
+{
+  "type": "SPELL",
+  "id": "conjure-elemental",
+  "name": "Conjure Elemental",
+  "url": "/spells/conjure-elemental",
+  "source": "PHB",
+  "level": 5,
+  "rarity": "RARE",
+  "description": "You call forth an elemental servant. Choose an area of air, earth, fire, or water that fills a 10-foot cube within range. An elemental of challenge rating 5 or lower appropriate to the area you chose appears in an unoccupied space within 10 feet of it. For example, a fire elemental emerges from a bonfire, and an earth elemental rises up from the ground. The elemental disappears when it drops to 0 hit points or when the spell ends.\\nThe elemental is friendly to you and your companions for the duration. Roll initiative for the elemental, which has its own turns. It obeys any verbal commands that you issue to it (no action required by you). If you don't issue any commands to the elemental, it defends itself from hostile creatures but otherwise takes no actions.\\nIf your concentration is broken, the elemental doesn't disappear. Instead, you lose control of the elemental, it becomes hostile toward you and your companions, and it might attack. An uncontrolled elemental can't be dismissed by you, and it disappears 1 hour after you summoned it.\\nThe DM has the elemental's statistics.",
+  "higherLevels": "When you cast this spell using a spell slot of 6th level or higher, the challenge rating increases by 1 for each slot level above 5th.",
+  "range": {
+    "type": "RANGED",
+    "distance": 90
+  },
+  "components": {
+    "verbal": true,
+    "semantic": true,
+    "material": true,
+    "cost": "Burning incense for air, soft clay for earth, sulfur and phosphorus for fire, or water and sand for water.",
+    "goldValue": 0
+  },
+  "castingTime": "1 minute",
+  "duration": "Up to 1 hour",
+  "ritual": false,
+  "concentration": true,
+  "damage": null,
+  "save": null,
+  "healing": null,
+  "areaOfEffect": {
+    "shape": "CUBE",
+    "size": 10
+  },
+  "school": {
+    "id": "conjuration",
+    "name": "Conjuration",
+    "url": "/magic-schools/conjuration"
+  },
+  "classes": [
+    {
+      "id": "druid",
+      "name": "Druid",
+      "url": "/classes/druid"
+    },
+    {
+      "id": "wizard",
+      "name": "Wizard",
+      "url": "/classes/wizard"
+    }
+  ],
+  "scroll": {
+    "value": 5000,
+    "saveDC": 17,
+    "attackBonus": 9
+  },
+  "enchanting": {
+    "minLevel": 6,
+    "cost": 5000,
+    "days": 200
+  }
+}

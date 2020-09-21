@@ -1,0 +1,52 @@
+{
+  "type": "ITEM",
+  "id": "javelin",
+  "name": "Javelin",
+  "url": "/items/weapon/javelin",
+  "source": "PHB",
+  "description": "",
+  "category": {
+    "id": "weapon",
+    "name": "Weapon",
+    "url": "/items/weapon/"
+  },
+  "subCategory": null,
+  "cost": "5SP",
+  "weight": 2,
+  "weaponDetails": {
+    "type": "SIMPLE",
+    "properties": [
+      {
+        "id": "thrown",
+        "name": "Thrown",
+        "url": "/weapon-properties/thrown"
+      },
+      {
+        "id": "monk",
+        "name": "Monk",
+        "url": "/weapon-properties/monk"
+      }
+    ],
+    "range": {
+      "type": "MELEE",
+      "normal": 5,
+      "long": 0
+    },
+    "damage": {
+      "amount": "1d6",
+      "twoHanded": null,
+      "type": {
+        "id": "piercing",
+        "name": "Piercing",
+        "url": "/damage-types/piercing"
+      }
+    },
+    "throw": {
+      "normal": 30,
+      "long": 120
+    },
+    "extra": null
+  },
+  "armorDetails": null,
+  "vehicleDetails": null
+}

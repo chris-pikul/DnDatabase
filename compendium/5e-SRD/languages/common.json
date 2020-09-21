@@ -1,0 +1,13 @@
+{
+  "type": "LANGUAGE",
+  "id": "common",
+  "name": "Common",
+  "url": "/languages/common",
+  "source": "PHB",
+  "description": "",
+  "isExotic": false,
+  "script": "Common",
+  "speakers": [
+    "Humans"
+  ]
+}

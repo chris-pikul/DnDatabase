@@ -1,0 +1,19 @@
+{
+  "type": "ITEM",
+  "id": "clothes-fine",
+  "name": "Clothes, fine",
+  "url": "/items/clothes-fine",
+  "source": "PHB",
+  "description": "",
+  "category": {
+    "id": "general",
+    "name": "General",
+    "url": "/items/"
+  },
+  "subCategory": "STANDARD_GEAR",
+  "cost": "15GP",
+  "weight": 6,
+  "weaponDetails": null,
+  "armorDetails": null,
+  "vehicleDetails": null
+}

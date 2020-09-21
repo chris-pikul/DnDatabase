@@ -1,0 +1,8 @@
+{
+  "type": "WEAPON_PROPERTY",
+  "id": "monk",
+  "name": "Monk",
+  "url": "/weapon-properties/monk",
+  "source": "PHB",
+  "description": "Monks gain several benefits while unarmed or wielding only monk weapons while they aren't wearing armor or wielding shields."
+}

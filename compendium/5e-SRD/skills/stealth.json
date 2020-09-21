@@ -1,0 +1,13 @@
+{
+  "type": "SKILL",
+  "id": "stealth",
+  "name": "Stealth",
+  "url": "/skills/stealth",
+  "source": "PHB",
+  "description": "Make a Dexterity (Stealth) check when you attempt to conceal yourself from enemies, slink past guards, slip away without being noticed, or sneak up on someone without being seen or heard.",
+  "ability": {
+    "id": "dex",
+    "name": "Dexterity",
+    "url": "/ability-scores/dex"
+  }
+}

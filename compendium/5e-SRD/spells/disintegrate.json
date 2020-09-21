@@ -1,0 +1,84 @@
+{
+  "type": "SPELL",
+  "id": "disintegrate",
+  "name": "Disintegrate",
+  "url": "/spells/disintegrate",
+  "source": "PHB",
+  "level": 6,
+  "rarity": "VERY_RARE",
+  "description": "A thin green ray springs from your pointing finger to a target that you can see within range. The target can be a creature, an object, or a creation of magical force, such as the wall created by wall of force.\\nA creature targeted by this spell must make a dexterity saving throw. On a failed save, the target takes 10d6 + 40 force damage. If this damage reduces the target to 0 hit points, it is disintegrated.\\nA disintegrated creature and everything it is wearing and carrying, except magic items, are reduced to a pile of fine gray dust. The creature can be restored to life only by means of a true resurrection or a wish spell.\\nThis spell automatically disintegrates a Large or smaller nonmagical object or a creation of magical force. If the target is a Huge or larger object or creation of force, this spell disintegrates a 10-foot-cube portion of it. A magic item is unaffected by this spell.",
+  "higherLevels": "When you cast this spell using a spell slot of 7th level or higher, the damage increases by 3d6 for each slot level above 6th.",
+  "range": {
+    "type": "RANGED",
+    "distance": 60
+  },
+  "components": {
+    "verbal": true,
+    "semantic": true,
+    "material": true,
+    "cost": "A lodestone and a pinch of dust.",
+    "goldValue": 0
+  },
+  "castingTime": "1 action",
+  "duration": "Instantaneous",
+  "ritual": false,
+  "concentration": false,
+  "damage": {
+    "type": {
+      "id": "force",
+      "name": "Force",
+      "url": "/damage-types/force"
+    },
+    "slotLevels": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "10d6 + 40",
+      "",
+      "",
+      ""
+    ],
+    "characterLevels": null
+  },
+  "save": {
+    "type": "DEX",
+    "onSuccess": null,
+    "onFailure": null,
+    "extra": null
+  },
+  "healing": null,
+  "areaOfEffect": {
+    "shape": "CUBE",
+    "size": 10
+  },
+  "school": {
+    "id": "transmutation",
+    "name": "Transmutation",
+    "url": "/magic-schools/transmutation"
+  },
+  "classes": [
+    {
+      "id": "sorcerer",
+      "name": "Sorcerer",
+      "url": "/classes/sorcerer"
+    },
+    {
+      "id": "wizard",
+      "name": "Wizard",
+      "url": "/classes/wizard"
+    }
+  ],
+  "scroll": {
+    "value": 10000,
+    "saveDC": 17,
+    "attackBonus": 9
+  },
+  "enchanting": {
+    "minLevel": 11,
+    "cost": 10000,
+    "days": 400
+  }
+}

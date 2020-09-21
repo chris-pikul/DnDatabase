@@ -1,0 +1,71 @@
+{
+  "type": "SPELL",
+  "id": "acid-arrow",
+  "name": "Acid Arrow",
+  "url": "/spells/acid-arrow",
+  "source": "PHB",
+  "level": 2,
+  "rarity": "UNCOMMON",
+  "description": "A shimmering green arrow streaks toward a target within range and bursts in a spray of acid. Make a ranged spell attack against the target. On a hit, the target takes 4d4 acid damage immediately and 2d4 acid damage at the end of its next turn. On a miss, the arrow splashes the target with acid for half as much of the initial damage and no damage at the end of its next turn.",
+  "higherLevels": "When you cast this spell using a spell slot of 3rd level or higher, the damage (both initial and later) increases by 1d4 for each slot level above 2nd.",
+  "range": {
+    "type": "RANGED",
+    "distance": 90
+  },
+  "components": {
+    "verbal": true,
+    "semantic": true,
+    "material": true,
+    "cost": "Powdered rhubarb leaf and an adder's stomach.",
+    "goldValue": 0
+  },
+  "castingTime": "1 action",
+  "duration": "Instantaneous",
+  "ritual": false,
+  "concentration": false,
+  "damage": {
+    "type": {
+      "id": "acid",
+      "name": "Acid",
+      "url": "/damage-types/acid"
+    },
+    "slotLevels": [
+      "",
+      "",
+      "4d4",
+      "5d4",
+      "6d4",
+      "7d4",
+      "8d4",
+      "9d4",
+      "10d4",
+      "11d4"
+    ],
+    "characterLevels": null
+  },
+  "save": null,
+  "healing": null,
+  "areaOfEffect": null,
+  "school": {
+    "id": "evocation",
+    "name": "Evocation",
+    "url": "/magic-schools/evocation"
+  },
+  "classes": [
+    {
+      "id": "wizard",
+      "name": "Wizard",
+      "url": "/classes/wizard"
+    }
+  ],
+  "scroll": {
+    "value": 250,
+    "saveDC": 13,
+    "attackBonus": 5
+  },
+  "enchanting": {
+    "minLevel": 3,
+    "cost": 250,
+    "days": 10
+  }
+}

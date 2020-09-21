@@ -1,0 +1,19 @@
+{
+  "type": "ITEM",
+  "id": "ram-portable",
+  "name": "Ram, portable",
+  "url": "/items/ram-portable",
+  "source": "PHB",
+  "description": "You can use a portable ram to break down doors. When doing so, you gain a +4 bonus on the Strength check. One other character can help you use the ram, giving you advantage on this check.",
+  "category": {
+    "id": "general",
+    "name": "General",
+    "url": "/items/"
+  },
+  "subCategory": "STANDARD_GEAR",
+  "cost": "4GP",
+  "weight": 35,
+  "weaponDetails": null,
+  "armorDetails": null,
+  "vehicleDetails": null
+}

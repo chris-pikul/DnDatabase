@@ -1,0 +1,19 @@
+{
+  "type": "ITEM",
+  "id": "blowgun-needle",
+  "name": "Blowgun needle",
+  "url": "/items/blowgun-needle",
+  "source": "PHB",
+  "description": "",
+  "category": {
+    "id": "general",
+    "name": "General",
+    "url": "/items/"
+  },
+  "subCategory": "AMMUNITION",
+  "cost": "1GP",
+  "weight": 1,
+  "weaponDetails": null,
+  "armorDetails": null,
+  "vehicleDetails": null
+}

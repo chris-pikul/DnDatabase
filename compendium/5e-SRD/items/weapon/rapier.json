@@ -1,0 +1,44 @@
+{
+  "type": "ITEM",
+  "id": "rapier",
+  "name": "Rapier",
+  "url": "/items/weapon/rapier",
+  "source": "PHB",
+  "description": "",
+  "category": {
+    "id": "weapon",
+    "name": "Weapon",
+    "url": "/items/weapon/"
+  },
+  "subCategory": null,
+  "cost": "25GP",
+  "weight": 2,
+  "weaponDetails": {
+    "type": "MARTIAL",
+    "properties": [
+      {
+        "id": "finesse",
+        "name": "Finesse",
+        "url": "/weapon-properties/finesse"
+      }
+    ],
+    "range": {
+      "type": "MELEE",
+      "normal": 5,
+      "long": 0
+    },
+    "damage": {
+      "amount": "1d8",
+      "twoHanded": null,
+      "type": {
+        "id": "piercing",
+        "name": "Piercing",
+        "url": "/damage-types/piercing"
+      }
+    },
+    "throw": null,
+    "extra": null
+  },
+  "armorDetails": null,
+  "vehicleDetails": null
+}

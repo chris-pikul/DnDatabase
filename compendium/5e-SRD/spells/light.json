@@ -1,0 +1,71 @@
+{
+  "type": "SPELL",
+  "id": "light",
+  "name": "Light",
+  "url": "/spells/light",
+  "source": "PHB",
+  "level": 0,
+  "rarity": "COMMON",
+  "description": "You touch one object that is no larger than 10 feet in any dimension. Until the spell ends, the object sheds bright light in a 20-foot radius and dim light for an additional 20 feet. The light can be colored as you like. Completely covering the object with something opaque blocks the light. The spell ends if you cast it again or dismiss it as an action.\\nIf you target an object held or worn by a hostile creature, that creature must succeed on a dexterity saving throw to avoid the spell.",
+  "range": {
+    "type": "TOUCH",
+    "distance": 0
+  },
+  "components": {
+    "verbal": true,
+    "semantic": false,
+    "material": true,
+    "cost": "A firefly or phosphorescent moss.",
+    "goldValue": 0
+  },
+  "castingTime": "1 action",
+  "duration": "1 hour",
+  "ritual": false,
+  "concentration": false,
+  "damage": null,
+  "save": {
+    "type": "DEX",
+    "onSuccess": null,
+    "onFailure": null,
+    "extra": null
+  },
+  "healing": null,
+  "areaOfEffect": null,
+  "school": {
+    "id": "evocation",
+    "name": "Evocation",
+    "url": "/magic-schools/evocation"
+  },
+  "classes": [
+    {
+      "id": "bard",
+      "name": "Bard",
+      "url": "/classes/bard"
+    },
+    {
+      "id": "cleric",
+      "name": "Cleric",
+      "url": "/classes/cleric"
+    },
+    {
+      "id": "sorcerer",
+      "name": "Sorcerer",
+      "url": "/classes/sorcerer"
+    },
+    {
+      "id": "wizard",
+      "name": "Wizard",
+      "url": "/classes/wizard"
+    }
+  ],
+  "scroll": {
+    "value": 50,
+    "saveDC": 13,
+    "attackBonus": 5
+  },
+  "enchanting": {
+    "minLevel": 3,
+    "cost": 50,
+    "days": 2
+  }
+}

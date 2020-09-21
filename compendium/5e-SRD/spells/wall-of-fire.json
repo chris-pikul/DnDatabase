@@ -1,0 +1,89 @@
+{
+  "type": "SPELL",
+  "id": "wall-of-fire",
+  "name": "Wall of Fire",
+  "url": "/spells/wall-of-fire",
+  "source": "PHB",
+  "level": 4,
+  "rarity": "RARE",
+  "description": "You create a wall of fire on a solid surface within range. You can make the wall up to 60 feet long, 20 feet high, and 1 foot thick, or a ringed wall up to 20 feet in diameter, 20 feet high, and 1 foot thick. The wall is opaque and lasts for the duration.\\nWhen the wall appears, each creature within its area must make a Dexterity saving throw. On a failed save, a creature takes 5d8 fire damage, or half as much damage on a successful save.\\nOne side of the wall, selected by you when you cast this spell, deals 5d8 fire damage to each creature that ends its turn within 10 feet o f that side or inside the wall. A creature takes the same damage when it enters the wall for the first time on a turn or ends its turn there. The other side o f the wall deals no damage.\\nThe other side of the wall deals no damage.",
+  "higherLevels": "When you cast this spell using a level spell slot 5 or more, the damage of the spell increases by 1d8 for each level of higher spell slot to 4.",
+  "range": {
+    "type": "RANGED",
+    "distance": 120
+  },
+  "components": {
+    "verbal": true,
+    "semantic": true,
+    "material": true,
+    "cost": "A small piece of phosphorus.",
+    "goldValue": 0
+  },
+  "castingTime": "1 action",
+  "duration": "Up to 1 minute",
+  "ritual": false,
+  "concentration": true,
+  "damage": {
+    "type": {
+      "id": "fire",
+      "name": "Fire",
+      "url": "/damage-types/fire"
+    },
+    "slotLevels": [
+      "",
+      "",
+      "",
+      "",
+      "5d8",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "characterLevels": null
+  },
+  "save": {
+    "type": "DEX",
+    "onSuccess": "half",
+    "onFailure": null,
+    "extra": null
+  },
+  "healing": null,
+  "areaOfEffect": {
+    "shape": "LINE",
+    "size": 60
+  },
+  "school": {
+    "id": "evocation",
+    "name": "Evocation",
+    "url": "/magic-schools/evocation"
+  },
+  "classes": [
+    {
+      "id": "druid",
+      "name": "Druid",
+      "url": "/classes/druid"
+    },
+    {
+      "id": "sorcerer",
+      "name": "Sorcerer",
+      "url": "/classes/sorcerer"
+    },
+    {
+      "id": "wizard",
+      "name": "Wizard",
+      "url": "/classes/wizard"
+    }
+  ],
+  "scroll": {
+    "value": 2500,
+    "saveDC": 15,
+    "attackBonus": 7
+  },
+  "enchanting": {
+    "minLevel": 6,
+    "cost": 2500,
+    "days": 100
+  }
+}

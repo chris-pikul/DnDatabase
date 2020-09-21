@@ -1,0 +1,67 @@
+{
+  "type": "SPELL",
+  "id": "false-life",
+  "name": "False Life",
+  "url": "/spells/false-life",
+  "source": "PHB",
+  "level": 1,
+  "rarity": "COMMON",
+  "description": "Bolstering yourself with a necromantic facsimile of life, you gain 1d4 + 4 temporary hit points for the duration.",
+  "higherLevels": "When you cast this spell using a spell slot of 2nd level or higher, you gain 5 additional temporary hit points for each slot level above 1st.",
+  "range": {
+    "type": "SELF",
+    "distance": 0
+  },
+  "components": {
+    "verbal": true,
+    "semantic": true,
+    "material": true,
+    "cost": "A small amount of alcohol or distilled spirits.",
+    "goldValue": 0
+  },
+  "castingTime": "1 action",
+  "duration": "1 hour",
+  "ritual": false,
+  "concentration": false,
+  "damage": null,
+  "save": null,
+  "healing": {
+    "1": "1d4 + 4",
+    "2": "1d4 + 9",
+    "3": "1d4 + 14",
+    "4": "1d4 + 19",
+    "5": "1d4 + 24",
+    "6": "1d4 + 29",
+    "7": "1d4 + 34",
+    "8": "1d4 + 39",
+    "9": "1d4 + 44"
+  },
+  "areaOfEffect": null,
+  "school": {
+    "id": "necromancy",
+    "name": "Necromancy",
+    "url": "/magic-schools/necromancy"
+  },
+  "classes": [
+    {
+      "id": "sorcerer",
+      "name": "Sorcerer",
+      "url": "/classes/sorcerer"
+    },
+    {
+      "id": "wizard",
+      "name": "Wizard",
+      "url": "/classes/wizard"
+    }
+  ],
+  "scroll": {
+    "value": 100,
+    "saveDC": 13,
+    "attackBonus": 5
+  },
+  "enchanting": {
+    "minLevel": 3,
+    "cost": 100,
+    "days": 4
+  }
+}

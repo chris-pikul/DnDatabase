@@ -1,0 +1,66 @@
+{
+  "type": "SPELL",
+  "id": "power-word-kill",
+  "name": "Power Word Kill",
+  "url": "/spells/power-word-kill",
+  "source": "PHB",
+  "level": 9,
+  "rarity": "LEGENDARY",
+  "description": "You utter a word of power that can compel one creature you can see within range to die instantly. If the creature you choose has 100 hit points or fewer, it dies. Otherwise, the spell has no effect.",
+  "range": {
+    "type": "RANGED",
+    "distance": 60
+  },
+  "components": {
+    "verbal": true,
+    "semantic": false,
+    "material": false,
+    "cost": null,
+    "goldValue": 0
+  },
+  "castingTime": "1 action",
+  "duration": "Instantaneous",
+  "ritual": false,
+  "concentration": false,
+  "damage": null,
+  "save": null,
+  "healing": null,
+  "areaOfEffect": null,
+  "school": {
+    "id": "enchantment",
+    "name": "Enchantment",
+    "url": "/magic-schools/enchantment"
+  },
+  "classes": [
+    {
+      "id": "bard",
+      "name": "Bard",
+      "url": "/classes/bard"
+    },
+    {
+      "id": "sorcerer",
+      "name": "Sorcerer",
+      "url": "/classes/sorcerer"
+    },
+    {
+      "id": "warlock",
+      "name": "Warlock",
+      "url": "/classes/warlock"
+    },
+    {
+      "id": "wizard",
+      "name": "Wizard",
+      "url": "/classes/wizard"
+    }
+  ],
+  "scroll": {
+    "value": 100000,
+    "saveDC": 19,
+    "attackBonus": 11
+  },
+  "enchanting": {
+    "minLevel": 17,
+    "cost": 100000,
+    "days": 4000
+  }
+}

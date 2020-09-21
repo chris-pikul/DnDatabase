@@ -1,0 +1,76 @@
+{
+  "type": "SPELL",
+  "id": "magic-missile",
+  "name": "Magic Missile",
+  "url": "/spells/magic-missile",
+  "source": "PHB",
+  "level": 1,
+  "rarity": "COMMON",
+  "description": "You create three glowing darts of magical force. Each dart hits a creature of your choice that you can see within range. A dart deals 1d4 + 1 force damage to its target. The darts all strike simultaneously, and you can direct them to hit one creature or several.",
+  "higherLevels": "When you cast this spell using a spell slot of 2nd level or higher, the spell creates one more dart for each slot level above 1st.",
+  "range": {
+    "type": "RANGED",
+    "distance": 120
+  },
+  "components": {
+    "verbal": true,
+    "semantic": true,
+    "material": false,
+    "cost": null,
+    "goldValue": 0
+  },
+  "castingTime": "1 action",
+  "duration": "Instantaneous",
+  "ritual": false,
+  "concentration": false,
+  "damage": {
+    "type": {
+      "id": "force",
+      "name": "Force",
+      "url": "/damage-types/force"
+    },
+    "slotLevels": [
+      "",
+      "1d4 + 1",
+      "1d4 + 1",
+      "1d4 + 1",
+      "1d4 + 1",
+      "1d4 + 1",
+      "1d4 + 1",
+      "1d4 + 1",
+      "1d4 + 1",
+      "1d4 + 1"
+    ],
+    "characterLevels": null
+  },
+  "save": null,
+  "healing": null,
+  "areaOfEffect": null,
+  "school": {
+    "id": "evocation",
+    "name": "Evocation",
+    "url": "/magic-schools/evocation"
+  },
+  "classes": [
+    {
+      "id": "sorcerer",
+      "name": "Sorcerer",
+      "url": "/classes/sorcerer"
+    },
+    {
+      "id": "wizard",
+      "name": "Wizard",
+      "url": "/classes/wizard"
+    }
+  ],
+  "scroll": {
+    "value": 100,
+    "saveDC": 13,
+    "attackBonus": 5
+  },
+  "enchanting": {
+    "minLevel": 3,
+    "cost": 100,
+    "days": 4
+  }
+}

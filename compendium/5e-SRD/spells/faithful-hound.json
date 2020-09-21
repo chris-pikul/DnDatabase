@@ -1,0 +1,70 @@
+{
+  "type": "SPELL",
+  "id": "faithful-hound",
+  "name": "Faithful Hound",
+  "url": "/spells/faithful-hound",
+  "source": "PHB",
+  "level": 4,
+  "rarity": "RARE",
+  "description": "You conjure a phantom watchdog in an unoccupied space that you can see within range, where it remains for the duration, until you dismiss it as an action, or until you move more than 100 feet away from it.\\nThe hound is invisible to all creatures except you and can't be harmed. When a Small or larger creature comes within 30 feet of it without first speaking the password that you specify when you cast this spell, the hound starts barking loudly. The hound sees invisible creatures and can see into the Ethereal Plane. It ignores illusions.\\nAt the start of each of your turns, the hound attempts to bite one creature within 5 feet of it that is hostile to you. The hound's attack bonus is equal to your spellcasting ability modifier + your proficiency bonus. On a hit, it deals 4d8 piercing damage.",
+  "range": {
+    "type": "RANGED",
+    "distance": 30
+  },
+  "components": {
+    "verbal": true,
+    "semantic": true,
+    "material": true,
+    "cost": "A tiny silver whistle, a piece of bone, and a thread",
+    "goldValue": 0
+  },
+  "castingTime": "1 action",
+  "duration": "8 hours",
+  "ritual": false,
+  "concentration": false,
+  "damage": {
+    "type": {
+      "id": "piercing",
+      "name": "Piercing",
+      "url": "/damage-types/piercing"
+    },
+    "slotLevels": [
+      "",
+      "",
+      "",
+      "",
+      "4d8",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "characterLevels": null
+  },
+  "save": null,
+  "healing": null,
+  "areaOfEffect": null,
+  "school": {
+    "id": "conjuration",
+    "name": "Conjuration",
+    "url": "/magic-schools/conjuration"
+  },
+  "classes": [
+    {
+      "id": "wizard",
+      "name": "Wizard",
+      "url": "/classes/wizard"
+    }
+  ],
+  "scroll": {
+    "value": 2500,
+    "saveDC": 15,
+    "attackBonus": 7
+  },
+  "enchanting": {
+    "minLevel": 6,
+    "cost": 2500,
+    "days": 100
+  }
+}

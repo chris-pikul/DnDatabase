@@ -1,0 +1,78 @@
+{
+  "type": "SPELL",
+  "id": "black-tentacles",
+  "name": "Black Tentacles",
+  "url": "/spells/black-tentacles",
+  "source": "PHB",
+  "level": 4,
+  "rarity": "RARE",
+  "description": "Squirming, ebony tentacles fill a 20-foot square on ground that you can see within range. For the duration, these tentacles turn the ground in the area into difficult terrain.\\nWhen a creature enters the affected area for the first time on a turn or starts its turn there, the creature must succeed on a Dexterity saving throw or take 3d6 bludgeoning damage and be restrained by the tentacles until the spell ends. A creature that starts its turn in the area and is already restrained by the tentacles takes 3d6 bludgeoning damage.\\nA creature restrained by the tentacles can use its action to make a Strength or Dexterity check (its choice) against your spell save DC. On a success, it frees itself.",
+  "range": {
+    "type": "RANGED",
+    "distance": 90
+  },
+  "components": {
+    "verbal": true,
+    "semantic": true,
+    "material": true,
+    "cost": "A piece of tentacle from a giant octopus or a giant squid",
+    "goldValue": 0
+  },
+  "castingTime": "1 action",
+  "duration": "Up to 1 minute",
+  "ritual": false,
+  "concentration": true,
+  "damage": {
+    "type": {
+      "id": "bludgeoning",
+      "name": "Bludgeoning",
+      "url": "/damage-types/bludgeoning"
+    },
+    "slotLevels": [
+      "",
+      "",
+      "",
+      "",
+      "3d6",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "characterLevels": null
+  },
+  "save": {
+    "type": "DEX",
+    "onSuccess": null,
+    "onFailure": null,
+    "extra": "A creature restrained by the tentacles can use its action to make a Strength or Dexterity check (its choice) against your spell save DC. On a success, it frees itself."
+  },
+  "healing": null,
+  "areaOfEffect": {
+    "shape": "CUBE",
+    "size": 20
+  },
+  "school": {
+    "id": "conjuration",
+    "name": "Conjuration",
+    "url": "/magic-schools/conjuration"
+  },
+  "classes": [
+    {
+      "id": "wizard",
+      "name": "Wizard",
+      "url": "/classes/wizard"
+    }
+  ],
+  "scroll": {
+    "value": 2500,
+    "saveDC": 15,
+    "attackBonus": 7
+  },
+  "enchanting": {
+    "minLevel": 6,
+    "cost": 2500,
+    "days": 100
+  }
+}

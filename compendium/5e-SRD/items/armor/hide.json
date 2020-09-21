@@ -1,0 +1,26 @@
+{
+  "type": "ITEM",
+  "id": "hide",
+  "name": "Hide",
+  "url": "/items/armor/hide",
+  "source": "PHB",
+  "description": "",
+  "category": {
+    "id": "armor",
+    "name": "Armor",
+    "url": "/items/armor/"
+  },
+  "subCategory": null,
+  "cost": "10GP",
+  "weight": 12,
+  "weaponDetails": null,
+  "armorDetails": {
+    "type": "MEDIUM",
+    "baseAC": 12,
+    "addDexterity": true,
+    "maxDexterityBonus": 2,
+    "strength": 0,
+    "stealthDisadvantage": false
+  },
+  "vehicleDetails": null
+}

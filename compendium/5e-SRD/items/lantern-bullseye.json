@@ -1,0 +1,19 @@
+{
+  "type": "ITEM",
+  "id": "lantern-bullseye",
+  "name": "Lantern, bullseye",
+  "url": "/items/lantern-bullseye",
+  "source": "PHB",
+  "description": "A bullseye lantern casts bright light in a 60-foot cone and dim light for an additional 60 feet. Once lit, it burns for 6 hours on a flask (1 pint) of oil.",
+  "category": {
+    "id": "general",
+    "name": "General",
+    "url": "/items/"
+  },
+  "subCategory": "STANDARD_GEAR",
+  "cost": "10GP",
+  "weight": 2,
+  "weaponDetails": null,
+  "armorDetails": null,
+  "vehicleDetails": null
+}

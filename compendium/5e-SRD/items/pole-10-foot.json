@@ -1,0 +1,19 @@
+{
+  "type": "ITEM",
+  "id": "pole-10-foot",
+  "name": "Pole (10-foot)",
+  "url": "/items/pole-10-foot",
+  "source": "PHB",
+  "description": "",
+  "category": {
+    "id": "general",
+    "name": "General",
+    "url": "/items/"
+  },
+  "subCategory": "STANDARD_GEAR",
+  "cost": "5CP",
+  "weight": 7,
+  "weaponDetails": null,
+  "armorDetails": null,
+  "vehicleDetails": null
+}

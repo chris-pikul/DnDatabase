@@ -1,0 +1,19 @@
+{
+  "type": "ITEM",
+  "id": "signal-whistle",
+  "name": "Signal whistle",
+  "url": "/items/signal-whistle",
+  "source": "PHB",
+  "description": "",
+  "category": {
+    "id": "general",
+    "name": "General",
+    "url": "/items/"
+  },
+  "subCategory": "STANDARD_GEAR",
+  "cost": "5CP",
+  "weight": 0,
+  "weaponDetails": null,
+  "armorDetails": null,
+  "vehicleDetails": null
+}

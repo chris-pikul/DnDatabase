@@ -1,0 +1,13 @@
+{
+  "type": "LANGUAGE",
+  "id": "infernal",
+  "name": "Infernal",
+  "url": "/languages/infernal",
+  "source": "PHB",
+  "description": "",
+  "isExotic": true,
+  "script": "Infernal",
+  "speakers": [
+    "Devils"
+  ]
+}

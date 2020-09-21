@@ -1,0 +1,19 @@
+{
+  "type": "ITEM",
+  "id": "ink-pen",
+  "name": "Ink pen",
+  "url": "/items/ink-pen",
+  "source": "PHB",
+  "description": "",
+  "category": {
+    "id": "general",
+    "name": "General",
+    "url": "/items/"
+  },
+  "subCategory": "STANDARD_GEAR",
+  "cost": "2CP",
+  "weight": 0,
+  "weaponDetails": null,
+  "armorDetails": null,
+  "vehicleDetails": null
+}

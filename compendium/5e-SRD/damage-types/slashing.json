@@ -1,0 +1,8 @@
+{
+  "type": "DAMAGE_TYPE",
+  "id": "slashing",
+  "name": "Slashing",
+  "url": "/damage-types/slashing",
+  "source": "PHB",
+  "description": "Swords, axes, and monsters' claws deal slashing damage."
+}

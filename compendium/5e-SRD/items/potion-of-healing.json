@@ -1,0 +1,19 @@
+{
+  "type": "ITEM",
+  "id": "potion-of-healing",
+  "name": "Potion of healing",
+  "url": "/items/potion-of-healing",
+  "source": "PHB",
+  "description": "A character who drinks the magical red fluid in this vial regains 2d4 + 2 hit points. Drinking or administering a potion takes an action.",
+  "category": {
+    "id": "general",
+    "name": "General",
+    "url": "/items/"
+  },
+  "subCategory": "STANDARD_GEAR",
+  "cost": "50GP",
+  "weight": 0.5,
+  "weaponDetails": null,
+  "armorDetails": null,
+  "vehicleDetails": null
+}

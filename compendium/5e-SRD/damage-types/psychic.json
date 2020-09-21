@@ -1,0 +1,8 @@
+{
+  "type": "DAMAGE_TYPE",
+  "id": "psychic",
+  "name": "Psychic",
+  "url": "/damage-types/psychic",
+  "source": "PHB",
+  "description": "Mental abilities such as a psionic blast deal psychic damage."
+}

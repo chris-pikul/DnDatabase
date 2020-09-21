@@ -1,0 +1,71 @@
+{
+  "type": "SPELL",
+  "id": "animal-friendship",
+  "name": "Animal Friendship",
+  "url": "/spells/animal-friendship",
+  "source": "PHB",
+  "level": 1,
+  "rarity": "COMMON",
+  "description": "This spell lets you convince a beast that you mean it no harm. Choose a beast that you can see within range. It must see and hear you. If the beast's Intelligence is 4 or higher, the spell fails. Otherwise, the beast must succeed on a wisdom saving throw or be charmed by you for the spell's duration. If you or one of your companions harms the target, the spells ends.",
+  "range": {
+    "type": "RANGED",
+    "distance": 30
+  },
+  "components": {
+    "verbal": true,
+    "semantic": true,
+    "material": true,
+    "cost": "A morsel of food.",
+    "goldValue": 0
+  },
+  "castingTime": "1 action",
+  "duration": "24 hours",
+  "ritual": false,
+  "concentration": false,
+  "damage": null,
+  "save": {
+    "type": "WIS",
+    "onSuccess": null,
+    "onFailure": null,
+    "extra": null
+  },
+  "healing": null,
+  "areaOfEffect": null,
+  "school": {
+    "id": "enchantment",
+    "name": "Enchantment",
+    "url": "/magic-schools/enchantment"
+  },
+  "classes": [
+    {
+      "id": "bard",
+      "name": "Bard",
+      "url": "/classes/bard"
+    },
+    {
+      "id": "cleric",
+      "name": "Cleric",
+      "url": "/classes/cleric"
+    },
+    {
+      "id": "druid",
+      "name": "Druid",
+      "url": "/classes/druid"
+    },
+    {
+      "id": "ranger",
+      "name": "Ranger",
+      "url": "/classes/ranger"
+    }
+  ],
+  "scroll": {
+    "value": 100,
+    "saveDC": 13,
+    "attackBonus": 5
+  },
+  "enchanting": {
+    "minLevel": 3,
+    "cost": 100,
+    "days": 4
+  }
+}

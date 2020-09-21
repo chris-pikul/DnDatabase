@@ -1,0 +1,13 @@
+{
+  "type": "LANGUAGE",
+  "id": "sylvan",
+  "name": "Sylvan",
+  "url": "/languages/sylvan",
+  "source": "PHB",
+  "description": "",
+  "isExotic": true,
+  "script": "Elvish",
+  "speakers": [
+    "Fey creatures"
+  ]
+}

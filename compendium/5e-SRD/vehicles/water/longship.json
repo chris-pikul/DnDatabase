@@ -1,0 +1,21 @@
+{
+  "type": "VEHICLE",
+  "id": "longship",
+  "name": "Longship",
+  "url": "/vehicles/water/longship",
+  "source": "PHB",
+  "description": "",
+  "category": "MISC",
+  "subCategory": null,
+  "cost": "10000GP",
+  "weight": 0,
+  "weaponDetails": null,
+  "armorDetails": null,
+  "vehicleDetails": {
+    "landSpeed": 0,
+    "waterSpeed": "3 mph",
+    "airSpeed": 0,
+    "capacity": 0
+  },
+  "subType": "NAVAL"
+}

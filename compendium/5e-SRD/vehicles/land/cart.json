@@ -1,0 +1,16 @@
+{
+  "type": "VEHICLE",
+  "id": "cart",
+  "name": "Cart",
+  "url": "/vehicles/land/cart",
+  "source": "PHB",
+  "description": "",
+  "category": "MISC",
+  "subCategory": null,
+  "cost": "15GP",
+  "weight": 200,
+  "weaponDetails": null,
+  "armorDetails": null,
+  "vehicleDetails": null,
+  "subType": "SUPPLIES"
+}

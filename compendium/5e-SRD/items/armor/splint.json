@@ -1,0 +1,26 @@
+{
+  "type": "ITEM",
+  "id": "splint",
+  "name": "Splint",
+  "url": "/items/armor/splint",
+  "source": "PHB",
+  "description": "",
+  "category": {
+    "id": "armor",
+    "name": "Armor",
+    "url": "/items/armor/"
+  },
+  "subCategory": null,
+  "cost": "200GP",
+  "weight": 60,
+  "weaponDetails": null,
+  "armorDetails": {
+    "type": "HEAVY",
+    "baseAC": 17,
+    "addDexterity": false,
+    "maxDexterityBonus": 0,
+    "strength": 15,
+    "stealthDisadvantage": true
+  },
+  "vehicleDetails": null
+}

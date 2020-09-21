@@ -1,0 +1,89 @@
+{
+  "type": "SPELL",
+  "id": "insect-plague",
+  "name": "Insect Plague",
+  "url": "/spells/insect-plague",
+  "source": "PHB",
+  "level": 5,
+  "rarity": "RARE",
+  "description": "Swarming, biting locusts fill a 20-foot-radius sphere centered on a point you choose within range. The sphere spreads around corners. The sphere remains for the duration, and its area is lightly obscured. The sphere's area is difficult terrain.\\nWhen the area appears, each creature in it must make a constitution saving throw. A creature takes 4d10 piercing damage on a failed save, or half as much damage on a successful one. A creature must also make this saving throw when it enters the spell's area for the first time on a turn or ends its turn there.",
+  "higherLevels": "When you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d10 for each slot level above 5th.",
+  "range": {
+    "type": "RANGED",
+    "distance": 300
+  },
+  "components": {
+    "verbal": true,
+    "semantic": true,
+    "material": true,
+    "cost": "A few grains of sugar, some kernels of grain, and a smear of fat.",
+    "goldValue": 0
+  },
+  "castingTime": "1 action",
+  "duration": "Up to 10 minutes",
+  "ritual": false,
+  "concentration": true,
+  "damage": {
+    "type": {
+      "id": "piercing",
+      "name": "Piercing",
+      "url": "/damage-types/piercing"
+    },
+    "slotLevels": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "4d10",
+      "5d10",
+      "6d10",
+      "7d10",
+      "8d10"
+    ],
+    "characterLevels": null
+  },
+  "save": {
+    "type": "CON",
+    "onSuccess": "half",
+    "onFailure": null,
+    "extra": null
+  },
+  "healing": null,
+  "areaOfEffect": {
+    "shape": "SPHERE",
+    "size": 20
+  },
+  "school": {
+    "id": "conjuration",
+    "name": "Conjuration",
+    "url": "/magic-schools/conjuration"
+  },
+  "classes": [
+    {
+      "id": "cleric",
+      "name": "Cleric",
+      "url": "/classes/cleric"
+    },
+    {
+      "id": "druid",
+      "name": "Druid",
+      "url": "/classes/druid"
+    },
+    {
+      "id": "sorcerer",
+      "name": "Sorcerer",
+      "url": "/classes/sorcerer"
+    }
+  ],
+  "scroll": {
+    "value": 5000,
+    "saveDC": 17,
+    "attackBonus": 9
+  },
+  "enchanting": {
+    "minLevel": 6,
+    "cost": 5000,
+    "days": 200
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "type": "SPELL",
+  "id": "geas",
+  "name": "Geas",
+  "url": "/spells/geas",
+  "source": "PHB",
+  "level": 5,
+  "rarity": "RARE",
+  "description": "You place a magical command on a creature that you can see within range, forcing it to carry out some service or refrain from some action or course of activity as you decide. If the creature can understand you, it must succeed on a wisdom saving throw or become charmed by you for the duration. While the creature is charmed by you, it takes 5d10 psychic damage each time it acts in a manner directly counter to your instructions, but no more than once each day. A creature that can't understand you is unaffected by the spell.\\nYou can issue any command you choose, short of an activity that would result in certain death. Should you issue a suicidal command, the spell ends.\\nYou can end the spell early by using an action to dismiss it. A remove curse, greater restoration, or wish spell also ends it.",
+  "higherLevels": "When you cast this spell using a spell slot of 7th or 8th level, the duration is 1 year. When you cast this spell using a spell slot of 9th level, the spell lasts until it is ended by one of the spells mentioned above.",
+  "range": {
+    "type": "RANGED",
+    "distance": 60
+  },
+  "components": {
+    "verbal": true,
+    "semantic": false,
+    "material": false,
+    "cost": null,
+    "goldValue": 0
+  },
+  "castingTime": "1 minute",
+  "duration": "30 days",
+  "ritual": false,
+  "concentration": false,
+  "damage": null,
+  "save": {
+    "type": "WIS",
+    "onSuccess": null,
+    "onFailure": null,
+    "extra": null
+  },
+  "healing": null,
+  "areaOfEffect": null,
+  "school": {
+    "id": "enchantment",
+    "name": "Enchantment",
+    "url": "/magic-schools/enchantment"
+  },
+  "classes": [
+    {
+      "id": "bard",
+      "name": "Bard",
+      "url": "/classes/bard"
+    },
+    {
+      "id": "cleric",
+      "name": "Cleric",
+      "url": "/classes/cleric"
+    },
+    {
+      "id": "druid",
+      "name": "Druid",
+      "url": "/classes/druid"
+    },
+    {
+      "id": "paladin",
+      "name": "Paladin",
+      "url": "/classes/paladin"
+    },
+    {
+      "id": "wizard",
+      "name": "Wizard",
+      "url": "/classes/wizard"
+    }
+  ],
+  "scroll": {
+    "value": 5000,
+    "saveDC": 17,
+    "attackBonus": 9
+  },
+  "enchanting": {
+    "minLevel": 6,
+    "cost": 5000,
+    "days": 200
+  }
+}

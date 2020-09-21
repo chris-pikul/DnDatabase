@@ -1,0 +1,14 @@
+{
+  "type": "LANGUAGE",
+  "id": "deep-speech",
+  "name": "Deep Speech",
+  "url": "/languages/deep-speech",
+  "source": "PHB",
+  "description": "",
+  "isExotic": true,
+  "script": "Common",
+  "speakers": [
+    "Aboleths",
+    "Cloakers"
+  ]
+}

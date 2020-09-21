@@ -1,0 +1,44 @@
+{
+  "type": "ITEM",
+  "id": "warhammer",
+  "name": "Warhammer",
+  "url": "/items/weapon/warhammer",
+  "source": "PHB",
+  "description": "",
+  "category": {
+    "id": "weapon",
+    "name": "Weapon",
+    "url": "/items/weapon/"
+  },
+  "subCategory": null,
+  "cost": "15GP",
+  "weight": 2,
+  "weaponDetails": {
+    "type": "MARTIAL",
+    "properties": [
+      {
+        "id": "versatile",
+        "name": "Versatile",
+        "url": "/weapon-properties/versatile"
+      }
+    ],
+    "range": {
+      "type": "MELEE",
+      "normal": 5,
+      "long": 0
+    },
+    "damage": {
+      "amount": "1d8",
+      "twoHanded": "1d10",
+      "type": {
+        "id": "bludgeoning",
+        "name": "Bludgeoning",
+        "url": "/damage-types/bludgeoning"
+      }
+    },
+    "throw": null,
+    "extra": null
+  },
+  "armorDetails": null,
+  "vehicleDetails": null
+}

@@ -1,0 +1,38 @@
+{
+  "type": "ITEM",
+  "id": "morningstar",
+  "name": "Morningstar",
+  "url": "/items/weapon/morningstar",
+  "source": "PHB",
+  "description": "",
+  "category": {
+    "id": "weapon",
+    "name": "Weapon",
+    "url": "/items/weapon/"
+  },
+  "subCategory": null,
+  "cost": "15GP",
+  "weight": 4,
+  "weaponDetails": {
+    "type": "MARTIAL",
+    "properties": [],
+    "range": {
+      "type": "MELEE",
+      "normal": 5,
+      "long": 0
+    },
+    "damage": {
+      "amount": "1d8",
+      "twoHanded": null,
+      "type": {
+        "id": "piercing",
+        "name": "Piercing",
+        "url": "/damage-types/piercing"
+      }
+    },
+    "throw": null,
+    "extra": null
+  },
+  "armorDetails": null,
+  "vehicleDetails": null
+}

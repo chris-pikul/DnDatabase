@@ -1,0 +1,51 @@
+{
+  "type": "SPELL",
+  "id": "instant-summons",
+  "name": "Instant Summons",
+  "url": "/spells/instant-summons",
+  "source": "PHB",
+  "level": 6,
+  "rarity": "VERY_RARE",
+  "description": "You touch an object weighing 10 pounds or less whose longest dimension is 6 feet or less. The spell leaves an invisible mark on its surface and invisibly inscribes the name of the item on the sapphire you use as the material component. Each time you cast this spell, you must use a different sapphire.\\nAt any time thereafter, you can use your action to speak the item's name and crush the sapphire. The item instantly appears in your hand regardless of physical or planar distances, and the spell ends.\\nIf another creature is holding or carrying the item, crushing the sapphire doesn't transport the item to you, but instead you learn who the creature possessing the object is and roughly where that creature is located at that moment.\\nDispel magic or a similar effect successfully applied to the sapphire ends this spell's effect.",
+  "range": {
+    "type": "TOUCH",
+    "distance": 0
+  },
+  "components": {
+    "verbal": true,
+    "semantic": true,
+    "material": true,
+    "cost": "A sapphire worth 1,000 gp.",
+    "goldValue": 0
+  },
+  "castingTime": "1 minute",
+  "duration": "Until dispelled",
+  "ritual": true,
+  "concentration": false,
+  "damage": null,
+  "save": null,
+  "healing": null,
+  "areaOfEffect": null,
+  "school": {
+    "id": "conjuration",
+    "name": "Conjuration",
+    "url": "/magic-schools/conjuration"
+  },
+  "classes": [
+    {
+      "id": "wizard",
+      "name": "Wizard",
+      "url": "/classes/wizard"
+    }
+  ],
+  "scroll": {
+    "value": 10000,
+    "saveDC": 17,
+    "attackBonus": 9
+  },
+  "enchanting": {
+    "minLevel": 11,
+    "cost": 10000,
+    "days": 400
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "TRAIT",
+  "id": "naturally-stealthy",
+  "name": "Naturally Stealthy",
+  "url": "/traits/naturally-stealthy",
+  "source": "PHB",
+  "description": "You can attempt to hide even when you are obscured only by a creature that is at least one size larger than you.",
+  "races": [],
+  "subRaces": [
+    {
+      "id": "lightfoot-halfling",
+      "name": "Naturally Stealthy",
+      "url": "/sub-races/lightfoot-halfling"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "type": "VEHICLE",
+  "id": "stabling-1-day",
+  "name": "Stabling (1 day)",
+  "url": "/vehicles/land/stabling-1-day",
+  "source": "PHB",
+  "description": "",
+  "category": "MISC",
+  "subCategory": null,
+  "cost": "5SP",
+  "weight": 0,
+  "weaponDetails": null,
+  "armorDetails": null,
+  "vehicleDetails": null,
+  "subType": "SUPPLIES"
+}

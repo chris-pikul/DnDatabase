@@ -1,0 +1,56 @@
+{
+  "type": "SPELL",
+  "id": "identify",
+  "name": "Identify",
+  "url": "/spells/identify",
+  "source": "PHB",
+  "level": 1,
+  "rarity": "COMMON",
+  "description": "You choose one object that you must touch throughout the casting of the spell. If it is a magic item or some other magic-imbued object, you learn its properties and how to use them, whether it requires attunement to use, and how many charges it has, if any. You learn whether any spells are affecting the item and what they are. If the item was created by a spell, you learn which spell created it.\\nIf you instead touch a creature throughout the casting, you learn what spells, if any, are currently affecting it.",
+  "range": {
+    "type": "TOUCH",
+    "distance": 0
+  },
+  "components": {
+    "verbal": true,
+    "semantic": true,
+    "material": true,
+    "cost": "A pearl worth at least 100gp and an owl feather.",
+    "goldValue": 100
+  },
+  "castingTime": "1 minute",
+  "duration": "Instantaneous",
+  "ritual": true,
+  "concentration": false,
+  "damage": null,
+  "save": null,
+  "healing": null,
+  "areaOfEffect": null,
+  "school": {
+    "id": "divination",
+    "name": "Divination",
+    "url": "/magic-schools/divination"
+  },
+  "classes": [
+    {
+      "id": "bard",
+      "name": "Bard",
+      "url": "/classes/bard"
+    },
+    {
+      "id": "wizard",
+      "name": "Wizard",
+      "url": "/classes/wizard"
+    }
+  ],
+  "scroll": {
+    "value": 300,
+    "saveDC": 13,
+    "attackBonus": 5
+  },
+  "enchanting": {
+    "minLevel": 3,
+    "cost": 900,
+    "days": 4
+  }
+}

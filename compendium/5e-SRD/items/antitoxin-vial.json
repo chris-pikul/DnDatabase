@@ -1,0 +1,19 @@
+{
+  "type": "ITEM",
+  "id": "antitoxin-vial",
+  "name": "Antitoxin (vial)",
+  "url": "/items/antitoxin-vial",
+  "source": "PHB",
+  "description": "A creature that drinks this vial of liquid gains advantage on saving throws against poison for 1 hour. It confers no benefit to undead or constructs.",
+  "category": {
+    "id": "general",
+    "name": "General",
+    "url": "/items/"
+  },
+  "subCategory": "STANDARD_GEAR",
+  "cost": "50GP",
+  "weight": 0,
+  "weaponDetails": null,
+  "armorDetails": null,
+  "vehicleDetails": null
+}

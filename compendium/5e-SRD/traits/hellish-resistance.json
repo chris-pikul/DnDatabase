@@ -1,0 +1,16 @@
+{
+  "type": "TRAIT",
+  "id": "hellish-resistance",
+  "name": "Hellish Resistance",
+  "url": "/traits/hellish-resistance",
+  "source": "PHB",
+  "description": "You have resistance to fire damage.",
+  "races": [
+    {
+      "id": "tiefling",
+      "name": "Hellish Resistance",
+      "url": "/races/tiefling"
+    }
+  ],
+  "subRaces": []
+}

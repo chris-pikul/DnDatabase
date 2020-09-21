@@ -1,0 +1,67 @@
+{
+  "type": "SPELL",
+  "id": "longstrider",
+  "name": "Longstrider",
+  "url": "/spells/longstrider",
+  "source": "PHB",
+  "level": 1,
+  "rarity": "COMMON",
+  "description": "You touch a creature. The target's speed increases by 10 feet until the spell ends.",
+  "higherLevels": "When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each spell slot above 1st.",
+  "range": {
+    "type": "TOUCH",
+    "distance": 0
+  },
+  "components": {
+    "verbal": true,
+    "semantic": true,
+    "material": true,
+    "cost": "A pinch of dirt.",
+    "goldValue": 0
+  },
+  "castingTime": "1 action",
+  "duration": "1 hour",
+  "ritual": false,
+  "concentration": false,
+  "damage": null,
+  "save": null,
+  "healing": null,
+  "areaOfEffect": null,
+  "school": {
+    "id": "transmutation",
+    "name": "Transmutation",
+    "url": "/magic-schools/transmutation"
+  },
+  "classes": [
+    {
+      "id": "bard",
+      "name": "Bard",
+      "url": "/classes/bard"
+    },
+    {
+      "id": "druid",
+      "name": "Druid",
+      "url": "/classes/druid"
+    },
+    {
+      "id": "ranger",
+      "name": "Ranger",
+      "url": "/classes/ranger"
+    },
+    {
+      "id": "wizard",
+      "name": "Wizard",
+      "url": "/classes/wizard"
+    }
+  ],
+  "scroll": {
+    "value": 100,
+    "saveDC": 13,
+    "attackBonus": 5
+  },
+  "enchanting": {
+    "minLevel": 3,
+    "cost": 100,
+    "days": 4
+  }
+}

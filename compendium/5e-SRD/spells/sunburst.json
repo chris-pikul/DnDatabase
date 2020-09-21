@@ -1,0 +1,88 @@
+{
+  "type": "SPELL",
+  "id": "sunburst",
+  "name": "Sunburst",
+  "url": "/spells/sunburst",
+  "source": "PHB",
+  "level": 8,
+  "rarity": "VERY_RARE",
+  "description": "Brilliant sunlight flashes in a 60-foot radius centered on a point you choose within range. Each creature in that light must make a constitution saving throw. On a failed save, a creature takes 12d6 radiant damage and is blinded for 1 minute. On a successful save, it takes half as much damage and isn't blinded by this spell. Undead and oozes have disadvantage on this saving throw.\\nA creature blinded by this spell makes another constitution saving throw at the end of each of its turns. On a successful save, it is no longer blinded.\\nThis spell dispels any darkness in its area that was created by a spell.",
+  "range": {
+    "type": "RANGED",
+    "distance": 150
+  },
+  "components": {
+    "verbal": true,
+    "semantic": true,
+    "material": true,
+    "cost": "Fire and a piece of sunstone.",
+    "goldValue": 0
+  },
+  "castingTime": "1 action",
+  "duration": "Instantaneous",
+  "ritual": false,
+  "concentration": false,
+  "damage": {
+    "type": {
+      "id": "radiant",
+      "name": "Radiant",
+      "url": "/damage-types/radiant"
+    },
+    "slotLevels": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "12d6",
+      ""
+    ],
+    "characterLevels": null
+  },
+  "save": {
+    "type": "CON",
+    "onSuccess": "half",
+    "onFailure": "On failure, the creature is also blinded for 1 minute.",
+    "extra": null
+  },
+  "healing": null,
+  "areaOfEffect": {
+    "shape": "CYLINDER",
+    "size": 60
+  },
+  "school": {
+    "id": "evocation",
+    "name": "Evocation",
+    "url": "/magic-schools/evocation"
+  },
+  "classes": [
+    {
+      "id": "druid",
+      "name": "Druid",
+      "url": "/classes/druid"
+    },
+    {
+      "id": "sorcerer",
+      "name": "Sorcerer",
+      "url": "/classes/sorcerer"
+    },
+    {
+      "id": "wizard",
+      "name": "Wizard",
+      "url": "/classes/wizard"
+    }
+  ],
+  "scroll": {
+    "value": 50000,
+    "saveDC": 18,
+    "attackBonus": 10
+  },
+  "enchanting": {
+    "minLevel": 11,
+    "cost": 50000,
+    "days": 2000
+  }
+}

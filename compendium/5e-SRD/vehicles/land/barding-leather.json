@@ -1,0 +1,16 @@
+{
+  "type": "VEHICLE",
+  "id": "barding-leather",
+  "name": "Barding: Leather",
+  "url": "/vehicles/land/barding-leather",
+  "source": "PHB",
+  "description": "Barding is armor designed to protect an animal's head, neck, chest, and body. Any type of armor shown on the Armor table can be purchased as barding. The cost is four times the equivalent armor made for humanoids, and it weighs twice as much.",
+  "category": "MISC",
+  "subCategory": null,
+  "cost": "40GP",
+  "weight": 20,
+  "weaponDetails": null,
+  "armorDetails": null,
+  "vehicleDetails": null,
+  "subType": "SUPPLIES"
+}

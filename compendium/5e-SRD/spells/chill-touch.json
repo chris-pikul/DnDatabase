@@ -1,0 +1,74 @@
+{
+  "type": "SPELL",
+  "id": "chill-touch",
+  "name": "Chill Touch",
+  "url": "/spells/chill-touch",
+  "source": "PHB",
+  "level": 0,
+  "rarity": "COMMON",
+  "description": "You create a ghostly, skeletal hand in the space of a creature within range. Make a ranged spell attack against the creature to assail it with the chill of the grave. On a hit, the target takes 1d8 necrotic damage, and it can't regain hit points until the start of your next turn. Until then, the hand clings to the target.\\nIf you hit an undead target, it also has disadvantage on attack rolls against you until the end of your next turn.\\nThis spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).",
+  "range": {
+    "type": "RANGED",
+    "distance": 120
+  },
+  "components": {
+    "verbal": true,
+    "semantic": true,
+    "material": false,
+    "cost": null,
+    "goldValue": 0
+  },
+  "castingTime": "1 action",
+  "duration": "1 round",
+  "ritual": false,
+  "concentration": false,
+  "damage": {
+    "type": {
+      "id": "necrotic",
+      "name": "Necrotic",
+      "url": "/damage-types/necrotic"
+    },
+    "slotLevels": null,
+    "characterLevels": {
+      "1": "1d8",
+      "5": "2d8",
+      "11": "3d8",
+      "17": "4d8"
+    }
+  },
+  "save": null,
+  "healing": null,
+  "areaOfEffect": null,
+  "school": {
+    "id": "necromancy",
+    "name": "Necromancy",
+    "url": "/magic-schools/necromancy"
+  },
+  "classes": [
+    {
+      "id": "sorcerer",
+      "name": "Sorcerer",
+      "url": "/classes/sorcerer"
+    },
+    {
+      "id": "warlock",
+      "name": "Warlock",
+      "url": "/classes/warlock"
+    },
+    {
+      "id": "wizard",
+      "name": "Wizard",
+      "url": "/classes/wizard"
+    }
+  ],
+  "scroll": {
+    "value": 50,
+    "saveDC": 13,
+    "attackBonus": 5
+  },
+  "enchanting": {
+    "minLevel": 3,
+    "cost": 50,
+    "days": 2
+  }
+}

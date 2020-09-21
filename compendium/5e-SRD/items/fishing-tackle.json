@@ -1,0 +1,19 @@
+{
+  "type": "ITEM",
+  "id": "fishing-tackle",
+  "name": "Fishing tackle",
+  "url": "/items/fishing-tackle",
+  "source": "PHB",
+  "description": "This kit includes a wooden rod, silken line, corkwood bobbers, steel hooks, lead sinkers, velvet lures, and narrow netting.",
+  "category": {
+    "id": "general",
+    "name": "General",
+    "url": "/items/"
+  },
+  "subCategory": "STANDARD_GEAR",
+  "cost": "1GP",
+  "weight": 4,
+  "weaponDetails": null,
+  "armorDetails": null,
+  "vehicleDetails": null
+}

@@ -1,0 +1,13 @@
+{
+  "type": "LANGUAGE",
+  "id": "undercommon",
+  "name": "Undercommon",
+  "url": "/languages/undercommon",
+  "source": "PHB",
+  "description": "",
+  "isExotic": true,
+  "script": "Elvish",
+  "speakers": [
+    "Underdark traders"
+  ]
+}

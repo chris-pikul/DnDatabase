@@ -1,0 +1,44 @@
+{
+  "type": "ITEM",
+  "id": "greatclub",
+  "name": "Greatclub",
+  "url": "/items/weapon/greatclub",
+  "source": "PHB",
+  "description": "",
+  "category": {
+    "id": "weapon",
+    "name": "Weapon",
+    "url": "/items/weapon/"
+  },
+  "subCategory": null,
+  "cost": "2SP",
+  "weight": 10,
+  "weaponDetails": {
+    "type": "SIMPLE",
+    "properties": [
+      {
+        "id": "two-handed",
+        "name": "Two-handed",
+        "url": "/weapon-properties/two-handed"
+      }
+    ],
+    "range": {
+      "type": "MELEE",
+      "normal": 5,
+      "long": 0
+    },
+    "damage": {
+      "amount": "1d8",
+      "twoHanded": null,
+      "type": {
+        "id": "bludgeoning",
+        "name": "Bludgeoning",
+        "url": "/damage-types/bludgeoning"
+      }
+    },
+    "throw": null,
+    "extra": null
+  },
+  "armorDetails": null,
+  "vehicleDetails": null
+}

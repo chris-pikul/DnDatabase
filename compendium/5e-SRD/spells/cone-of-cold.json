@@ -1,0 +1,84 @@
+{
+  "type": "SPELL",
+  "id": "cone-of-cold",
+  "name": "Cone of Cold",
+  "url": "/spells/cone-of-cold",
+  "source": "PHB",
+  "level": 5,
+  "rarity": "RARE",
+  "description": "A blast of cold air erupts from your hands. Each creature in a 60-foot cone must make a constitution saving throw. A creature takes 8d8 cold damage on a failed save, or half as much damage on a successful one.\\nA creature killed by this spell becomes a frozen statue until it thaws.",
+  "higherLevels": "When you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d8 for each slot level above 5th.",
+  "range": {
+    "type": "SELF",
+    "distance": 0
+  },
+  "components": {
+    "verbal": true,
+    "semantic": true,
+    "material": true,
+    "cost": "A small crystal or glass cone.",
+    "goldValue": 0
+  },
+  "castingTime": "1 action",
+  "duration": "Instantaneous",
+  "ritual": false,
+  "concentration": false,
+  "damage": {
+    "type": {
+      "id": "cold",
+      "name": "Cold",
+      "url": "/damage-types/cold"
+    },
+    "slotLevels": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "8d8",
+      "9d8",
+      "10d8",
+      "11d8",
+      "12d8"
+    ],
+    "characterLevels": null
+  },
+  "save": {
+    "type": "CON",
+    "onSuccess": "half",
+    "onFailure": null,
+    "extra": "A creature killed by this spell becomes a frozen statue until it thaws."
+  },
+  "healing": null,
+  "areaOfEffect": {
+    "shape": "CONE",
+    "size": 60
+  },
+  "school": {
+    "id": "evocation",
+    "name": "Evocation",
+    "url": "/magic-schools/evocation"
+  },
+  "classes": [
+    {
+      "id": "sorcerer",
+      "name": "Sorcerer",
+      "url": "/classes/sorcerer"
+    },
+    {
+      "id": "wizard",
+      "name": "Wizard",
+      "url": "/classes/wizard"
+    }
+  ],
+  "scroll": {
+    "value": 5000,
+    "saveDC": 17,
+    "attackBonus": 9
+  },
+  "enchanting": {
+    "minLevel": 6,
+    "cost": 5000,
+    "days": 200
+  }
+}

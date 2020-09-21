@@ -1,0 +1,16 @@
+{
+  "type": "VEHICLE",
+  "id": "animal-feed-1-day",
+  "name": "Animal Feed (1 day)",
+  "url": "/vehicles/land/animal-feed-1-day",
+  "source": "PHB",
+  "description": "",
+  "category": "MISC",
+  "subCategory": null,
+  "cost": "5CP",
+  "weight": 10,
+  "weaponDetails": null,
+  "armorDetails": null,
+  "vehicleDetails": null,
+  "subType": "SUPPLIES"
+}

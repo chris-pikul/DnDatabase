@@ -1,0 +1,44 @@
+{
+  "type": "ITEM",
+  "id": "longsword",
+  "name": "Longsword",
+  "url": "/items/weapon/longsword",
+  "source": "PHB",
+  "description": "",
+  "category": {
+    "id": "weapon",
+    "name": "Weapon",
+    "url": "/items/weapon/"
+  },
+  "subCategory": null,
+  "cost": "15GP",
+  "weight": 3,
+  "weaponDetails": {
+    "type": "MARTIAL",
+    "properties": [
+      {
+        "id": "versatile",
+        "name": "Versatile",
+        "url": "/weapon-properties/versatile"
+      }
+    ],
+    "range": {
+      "type": "MELEE",
+      "normal": 5,
+      "long": 0
+    },
+    "damage": {
+      "amount": "1d8",
+      "twoHanded": "1d10",
+      "type": {
+        "id": "slashing",
+        "name": "Slashing",
+        "url": "/damage-types/slashing"
+      }
+    },
+    "throw": null,
+    "extra": null
+  },
+  "armorDetails": null,
+  "vehicleDetails": null
+}

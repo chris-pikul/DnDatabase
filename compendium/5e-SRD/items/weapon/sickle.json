@@ -1,0 +1,49 @@
+{
+  "type": "ITEM",
+  "id": "sickle",
+  "name": "Sickle",
+  "url": "/items/weapon/sickle",
+  "source": "PHB",
+  "description": "",
+  "category": {
+    "id": "weapon",
+    "name": "Weapon",
+    "url": "/items/weapon/"
+  },
+  "subCategory": null,
+  "cost": "1GP",
+  "weight": 2,
+  "weaponDetails": {
+    "type": "SIMPLE",
+    "properties": [
+      {
+        "id": "light",
+        "name": "Light",
+        "url": "/weapon-properties/light"
+      },
+      {
+        "id": "monk",
+        "name": "Monk",
+        "url": "/weapon-properties/monk"
+      }
+    ],
+    "range": {
+      "type": "MELEE",
+      "normal": 5,
+      "long": 0
+    },
+    "damage": {
+      "amount": "1d4",
+      "twoHanded": null,
+      "type": {
+        "id": "slashing",
+        "name": "Slashing",
+        "url": "/damage-types/slashing"
+      }
+    },
+    "throw": null,
+    "extra": null
+  },
+  "armorDetails": null,
+  "vehicleDetails": null
+}

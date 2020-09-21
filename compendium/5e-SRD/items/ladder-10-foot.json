@@ -1,0 +1,19 @@
+{
+  "type": "ITEM",
+  "id": "ladder-10-foot",
+  "name": "Ladder (10-foot)",
+  "url": "/items/ladder-10-foot",
+  "source": "PHB",
+  "description": "",
+  "category": {
+    "id": "general",
+    "name": "General",
+    "url": "/items/"
+  },
+  "subCategory": "STANDARD_GEAR",
+  "cost": "1SP",
+  "weight": 25,
+  "weaponDetails": null,
+  "armorDetails": null,
+  "vehicleDetails": null
+}

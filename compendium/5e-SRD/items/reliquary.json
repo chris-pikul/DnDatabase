@@ -1,0 +1,19 @@
+{
+  "type": "ITEM",
+  "id": "reliquary",
+  "name": "Reliquary",
+  "url": "/items/reliquary",
+  "source": "PHB",
+  "description": "A holy symbol is a representation of a god or pantheon. It might be an amulet depicting a symbol representing a deity, the same symbol carefully engraved or inlaid as an emblem on a shield, or a tiny box holding a fragment of a sacred relic.\\nAppendix B lists the symbols commonly associated with many gods in the multiverse. A cleric or paladin can use a holy symbol as a spellcasting focus. To use the symbol in this way, the caster must hold it in hand, wear it visibly, or bear it on a shield.",
+  "category": {
+    "id": "general",
+    "name": "General",
+    "url": "/items/"
+  },
+  "subCategory": "HOLY_SYMBOLS",
+  "cost": "5GP",
+  "weight": 2,
+  "weaponDetails": null,
+  "armorDetails": null,
+  "vehicleDetails": null
+}

@@ -1,0 +1,22 @@
+{
+  "type": "TRAIT",
+  "id": "keen-senses",
+  "name": "Keen Senses",
+  "url": "/traits/keen-senses",
+  "source": "PHB",
+  "description": "You have proficiency in the Perception skill.",
+  "races": [
+    {
+      "id": "elf",
+      "name": "Keen Senses",
+      "url": "/races/elf"
+    }
+  ],
+  "subRaces": [
+    {
+      "id": "high-elf",
+      "name": "Keen Senses",
+      "url": "/sub-races/high-elf"
+    }
+  ]
+}

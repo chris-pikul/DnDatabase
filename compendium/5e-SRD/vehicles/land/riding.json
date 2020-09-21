@@ -1,0 +1,16 @@
+{
+  "type": "VEHICLE",
+  "id": "riding",
+  "name": "Riding",
+  "url": "/vehicles/land/riding",
+  "source": "PHB",
+  "description": "",
+  "category": "MISC",
+  "subCategory": null,
+  "cost": "10GP",
+  "weight": 25,
+  "weaponDetails": null,
+  "armorDetails": null,
+  "vehicleDetails": null,
+  "subType": "SUPPLIES"
+}

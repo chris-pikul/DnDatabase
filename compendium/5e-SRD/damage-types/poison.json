@@ -1,0 +1,8 @@
+{
+  "type": "DAMAGE_TYPE",
+  "id": "poison",
+  "name": "Poison",
+  "url": "/damage-types/poison",
+  "source": "PHB",
+  "description": "Venomous stings and the toxic gas of a green dragon's breath deal poison damage."
+}

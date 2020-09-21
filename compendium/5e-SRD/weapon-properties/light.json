@@ -1,0 +1,8 @@
+{
+  "type": "WEAPON_PROPERTY",
+  "id": "light",
+  "name": "Light",
+  "url": "/weapon-properties/light",
+  "source": "PHB",
+  "description": "A light weapon is small and easy to handle, making it ideal for use when fighting with two weapons."
+}

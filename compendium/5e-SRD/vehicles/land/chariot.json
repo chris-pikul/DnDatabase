@@ -1,0 +1,16 @@
+{
+  "type": "VEHICLE",
+  "id": "chariot",
+  "name": "Chariot",
+  "url": "/vehicles/land/chariot",
+  "source": "PHB",
+  "description": "",
+  "category": "MISC",
+  "subCategory": null,
+  "cost": "250GP",
+  "weight": 100,
+  "weaponDetails": null,
+  "armorDetails": null,
+  "vehicleDetails": null,
+  "subType": "SUPPLIES"
+}

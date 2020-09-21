@@ -1,0 +1,77 @@
+{
+  "type": "SPELL",
+  "id": "stinking-cloud",
+  "name": "Stinking Cloud",
+  "url": "/spells/stinking-cloud",
+  "source": "PHB",
+  "level": 3,
+  "rarity": "UNCOMMON",
+  "description": "You create a 20-foot-radius sphere of yellow, nauseating gas centered on a point within range. The cloud spreads around corners, and its area is heavily obscured. The cloud lingers in the air for the duration.\\nEach creature that is completely within the cloud at the start of its turn must make a constitution saving throw against poison. On a failed save, the creature spends its action that turn retching and reeling. Creatures that don't need to breathe or are immune to poison automatically succeed on this saving throw.\\nA moderate wind (at least 10 miles per hour) disperses the cloud after 4 rounds. A strong wind (at least 20 miles per hour) disperses it after 1 round.",
+  "range": {
+    "type": "RANGED",
+    "distance": 90
+  },
+  "components": {
+    "verbal": true,
+    "semantic": true,
+    "material": true,
+    "cost": "A rotten egg or several skunk cabbage leaves.",
+    "goldValue": 0
+  },
+  "castingTime": "1 action",
+  "duration": "Up to 1 minute",
+  "ritual": false,
+  "concentration": true,
+  "damage": {
+    "type": {
+      "id": "poison",
+      "name": "Poison",
+      "url": "/damage-types/poison"
+    },
+    "slotLevels": null,
+    "characterLevels": null
+  },
+  "save": {
+    "type": "CON",
+    "onSuccess": null,
+    "onFailure": "On a failed save, the creature spends its action that turn retching and reeling.",
+    "extra": null
+  },
+  "healing": null,
+  "areaOfEffect": {
+    "shape": "SPHERE",
+    "size": 20
+  },
+  "school": {
+    "id": "conjuration",
+    "name": "Conjuration",
+    "url": "/magic-schools/conjuration"
+  },
+  "classes": [
+    {
+      "id": "bard",
+      "name": "Bard",
+      "url": "/classes/bard"
+    },
+    {
+      "id": "sorcerer",
+      "name": "Sorcerer",
+      "url": "/classes/sorcerer"
+    },
+    {
+      "id": "wizard",
+      "name": "Wizard",
+      "url": "/classes/wizard"
+    }
+  ],
+  "scroll": {
+    "value": 500,
+    "saveDC": 15,
+    "attackBonus": 7
+  },
+  "enchanting": {
+    "minLevel": 3,
+    "cost": 500,
+    "days": 20
+  }
+}

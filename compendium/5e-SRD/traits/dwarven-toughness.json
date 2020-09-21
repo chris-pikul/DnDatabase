@@ -1,0 +1,16 @@
+{
+  "type": "TRAIT",
+  "id": "dwarven-toughness",
+  "name": "Dwarven Toughness",
+  "url": "/traits/dwarven-toughness",
+  "source": "PHB",
+  "description": "Your hit point maximum increases by 1, and it increases by 1 every time you gain a level.",
+  "races": [],
+  "subRaces": [
+    {
+      "id": "hill-dwarf",
+      "name": "Dwarven Toughness",
+      "url": "/sub-races/hill-dwarf"
+    }
+  ]
+}

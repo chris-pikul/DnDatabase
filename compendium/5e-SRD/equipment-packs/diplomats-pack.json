@@ -1,0 +1,75 @@
+{
+  "type": "EQUIPMENT_PACK",
+  "id": "diplomats-pack",
+  "name": "Diplomat's Pack",
+  "url": "/equipment-packs/diplomats-pack",
+  "cost": "39GP",
+  "contents": [
+    {
+      "id": "chest",
+      "name": "Chest",
+      "url": "/items/chest",
+      "quantity": 1
+    },
+    {
+      "id": "case-map-or-scroll",
+      "name": "Case, map or scroll",
+      "url": "/items/case-map-or-scroll",
+      "quantity": 2
+    },
+    {
+      "id": "clothes-fine",
+      "name": "Clothes, fine",
+      "url": "/items/clothes-fine",
+      "quantity": 5
+    },
+    {
+      "id": "ink-1-ounce-bottle",
+      "name": "Ink (1 ounce bottle)",
+      "url": "/items/ink-1-ounce-bottle",
+      "quantity": 1
+    },
+    {
+      "id": "ink-pen",
+      "name": "Ink pen",
+      "url": "/items/ink-pen",
+      "quantity": 1
+    },
+    {
+      "id": "lamp",
+      "name": "Lamp",
+      "url": "/items/lamp",
+      "quantity": 1
+    },
+    {
+      "id": "oil-flask",
+      "name": "Oil (flask)",
+      "url": "/items/oil-flask",
+      "quantity": 2
+    },
+    {
+      "id": "paper-one-sheet",
+      "name": "Paper (one sheet)",
+      "url": "/items/paper-one-sheet",
+      "quantity": 5
+    },
+    {
+      "id": "perfume-vial",
+      "name": "Perfume (vial)",
+      "url": "/items/perfume-vial",
+      "quantity": 1
+    },
+    {
+      "id": "sealing-wax",
+      "name": "Sealing wax",
+      "url": "/items/sealing-wax",
+      "quantity": 1
+    },
+    {
+      "id": "soap",
+      "name": "Soap",
+      "url": "/items/soap",
+      "quantity": 1
+    }
+  ]
+}

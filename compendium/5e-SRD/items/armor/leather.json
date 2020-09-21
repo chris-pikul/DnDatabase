@@ -1,0 +1,26 @@
+{
+  "type": "ITEM",
+  "id": "leather",
+  "name": "Leather",
+  "url": "/items/armor/leather",
+  "source": "PHB",
+  "description": "",
+  "category": {
+    "id": "armor",
+    "name": "Armor",
+    "url": "/items/armor/"
+  },
+  "subCategory": null,
+  "cost": "10GP",
+  "weight": 10,
+  "weaponDetails": null,
+  "armorDetails": {
+    "type": "LIGHT",
+    "baseAC": 11,
+    "addDexterity": true,
+    "maxDexterityBonus": 0,
+    "strength": 0,
+    "stealthDisadvantage": false
+  },
+  "vehicleDetails": null
+}

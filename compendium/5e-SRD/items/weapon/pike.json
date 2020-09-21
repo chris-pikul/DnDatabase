@@ -1,0 +1,54 @@
+{
+  "type": "ITEM",
+  "id": "pike",
+  "name": "Pike",
+  "url": "/items/weapon/pike",
+  "source": "PHB",
+  "description": "",
+  "category": {
+    "id": "weapon",
+    "name": "Weapon",
+    "url": "/items/weapon/"
+  },
+  "subCategory": null,
+  "cost": "5GP",
+  "weight": 18,
+  "weaponDetails": {
+    "type": "MARTIAL",
+    "properties": [
+      {
+        "id": "heavy",
+        "name": "Heavy",
+        "url": "/weapon-properties/heavy"
+      },
+      {
+        "id": "reach",
+        "name": "Reach",
+        "url": "/weapon-properties/reach"
+      },
+      {
+        "id": "two-handed",
+        "name": "Two-handed",
+        "url": "/weapon-properties/two-handed"
+      }
+    ],
+    "range": {
+      "type": "MELEE",
+      "normal": 5,
+      "long": 0
+    },
+    "damage": {
+      "amount": "1d10",
+      "twoHanded": null,
+      "type": {
+        "id": "piercing",
+        "name": "Piercing",
+        "url": "/damage-types/piercing"
+      }
+    },
+    "throw": null,
+    "extra": null
+  },
+  "armorDetails": null,
+  "vehicleDetails": null
+}

@@ -1,0 +1,19 @@
+{
+  "type": "ITEM",
+  "id": "rations-1-day",
+  "name": "Rations (1 day)",
+  "url": "/items/rations-1-day",
+  "source": "PHB",
+  "description": "Rations consist of dry foods suitable for extended travel, including jerky, dried fruit, hardtack, and nuts.",
+  "category": {
+    "id": "general",
+    "name": "General",
+    "url": "/items/"
+  },
+  "subCategory": "STANDARD_GEAR",
+  "cost": "5SP",
+  "weight": 2,
+  "weaponDetails": null,
+  "armorDetails": null,
+  "vehicleDetails": null
+}

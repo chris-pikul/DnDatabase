@@ -1,0 +1,19 @@
+{
+  "type": "ITEM",
+  "id": "mirror-steel",
+  "name": "Mirror, steel",
+  "url": "/items/mirror-steel",
+  "source": "PHB",
+  "description": "",
+  "category": {
+    "id": "general",
+    "name": "General",
+    "url": "/items/"
+  },
+  "subCategory": "STANDARD_GEAR",
+  "cost": "5GP",
+  "weight": 0.5,
+  "weaponDetails": null,
+  "armorDetails": null,
+  "vehicleDetails": null
+}

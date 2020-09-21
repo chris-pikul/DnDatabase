@@ -1,0 +1,69 @@
+{
+  "type": "SPELL",
+  "id": "contagion",
+  "name": "Contagion",
+  "url": "/spells/contagion",
+  "source": "PHB",
+  "level": 5,
+  "rarity": "RARE",
+  "description": "Your touch inflicts disease. Make a melee spell attack against a creature within your reach. On a hit, you afflict the creature with a disease of your choice from any of the ones described below.\\nAt the end of each of the target's turns, it must make a constitution saving throw. After failing three of these saving throws, the disease's effects last for the duration, and the creature stops making these saves. After succeeding on three of these saving throws, the creature recovers from the disease, and the spell ends.\\nSince this spell induces a natural disease in its target, any effect that removes a disease or otherwise ameliorates a disease's effects apply to it.\\nBlinding Sickness.\\nPain grips the creature's mind, and its eyes turn milky white. The creature has disadvantage on wisdom checks and wisdom saving throws and is blinded.\\nFilth Fever.\\nA raging fever sweeps through the creature's body. The creature has disadvantage on strength checks, strength saving throws, and attack rolls that use Strength.\\nFlesh Rot.\\nThe creature's flesh decays. The creature has disadvantage on Charisma checks and vulnerability to all damage.\\nMindfire.\\nThe creature's mind becomes feverish. The creature has disadvantage on intelligence checks and intelligence saving throws, and the creature behaves as if under the effects of the confusion spell during combat.\\nSeizure.\\nThe creature is overcome with shaking. The creature has disadvantage on dexterity checks, dexterity saving throws, and attack rolls that use Dexterity.\\nSlimy Doom.\\nThe creature begins to bleed uncontrollably. The creature has disadvantage on constitution checks and constitution saving throws. In addition, whenever the creature takes damage, it is stunned until the end of its next turn.",
+  "range": {
+    "type": "TOUCH",
+    "distance": 0
+  },
+  "components": {
+    "verbal": true,
+    "semantic": true,
+    "material": false,
+    "cost": null,
+    "goldValue": 0
+  },
+  "castingTime": "1 action",
+  "duration": "7 days",
+  "ritual": false,
+  "concentration": false,
+  "damage": {
+    "type": {
+      "id": "poison",
+      "name": "Poison",
+      "url": "/damage-types/poison"
+    },
+    "slotLevels": null,
+    "characterLevels": null
+  },
+  "save": {
+    "type": "CON",
+    "onSuccess": "other",
+    "onFailure": null,
+    "extra": "After succeeding on three of these saving throws, the creature recovers from the disease, and the spell ends."
+  },
+  "healing": null,
+  "areaOfEffect": null,
+  "school": {
+    "id": "necromancy",
+    "name": "Necromancy",
+    "url": "/magic-schools/necromancy"
+  },
+  "classes": [
+    {
+      "id": "cleric",
+      "name": "Cleric",
+      "url": "/classes/cleric"
+    },
+    {
+      "id": "druid",
+      "name": "Druid",
+      "url": "/classes/druid"
+    }
+  ],
+  "scroll": {
+    "value": 5000,
+    "saveDC": 17,
+    "attackBonus": 9
+  },
+  "enchanting": {
+    "minLevel": 6,
+    "cost": 5000,
+    "days": 200
+  }
+}

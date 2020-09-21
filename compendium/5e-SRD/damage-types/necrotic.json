@@ -1,0 +1,8 @@
+{
+  "type": "DAMAGE_TYPE",
+  "id": "necrotic",
+  "name": "Necrotic",
+  "url": "/damage-types/necrotic",
+  "source": "PHB",
+  "description": "Necrotic damage, dealt by certain undead and a spell such as chill touch, withers matter and even the soul."
+}

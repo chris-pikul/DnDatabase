@@ -1,0 +1,19 @@
+{
+  "type": "ITEM",
+  "id": "paper-one-sheet",
+  "name": "Paper (one sheet)",
+  "url": "/items/paper-one-sheet",
+  "source": "PHB",
+  "description": "",
+  "category": {
+    "id": "general",
+    "name": "General",
+    "url": "/items/"
+  },
+  "subCategory": "STANDARD_GEAR",
+  "cost": "2SP",
+  "weight": 0,
+  "weaponDetails": null,
+  "armorDetails": null,
+  "vehicleDetails": null
+}

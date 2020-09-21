@@ -1,0 +1,49 @@
+{
+  "type": "ITEM",
+  "id": "whip",
+  "name": "Whip",
+  "url": "/items/weapon/whip",
+  "source": "PHB",
+  "description": "",
+  "category": {
+    "id": "weapon",
+    "name": "Weapon",
+    "url": "/items/weapon/"
+  },
+  "subCategory": null,
+  "cost": "2GP",
+  "weight": 3,
+  "weaponDetails": {
+    "type": "MARTIAL",
+    "properties": [
+      {
+        "id": "finesse",
+        "name": "Finesse",
+        "url": "/weapon-properties/finesse"
+      },
+      {
+        "id": "reach",
+        "name": "Reach",
+        "url": "/weapon-properties/reach"
+      }
+    ],
+    "range": {
+      "type": "MELEE",
+      "normal": 5,
+      "long": 0
+    },
+    "damage": {
+      "amount": "1d4",
+      "twoHanded": null,
+      "type": {
+        "id": "slashing",
+        "name": "Slashing",
+        "url": "/damage-types/slashing"
+      }
+    },
+    "throw": null,
+    "extra": null
+  },
+  "armorDetails": null,
+  "vehicleDetails": null
+}

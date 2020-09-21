@@ -1,0 +1,21 @@
+{
+  "type": "VEHICLE",
+  "id": "warhorse",
+  "name": "Warhorse",
+  "url": "/vehicles/land/warhorse",
+  "source": "PHB",
+  "description": "",
+  "category": "MISC",
+  "subCategory": null,
+  "cost": "400GP",
+  "weight": 0,
+  "weaponDetails": null,
+  "armorDetails": null,
+  "vehicleDetails": {
+    "landSpeed": "60 ft/round",
+    "waterSpeed": 0,
+    "airSpeed": 0,
+    "capacity": "540 lb."
+  },
+  "subType": "MOUNT"
+}

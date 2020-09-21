@@ -1,0 +1,44 @@
+{
+  "type": "ITEM",
+  "id": "mace",
+  "name": "Mace",
+  "url": "/items/weapon/mace",
+  "source": "PHB",
+  "description": "",
+  "category": {
+    "id": "weapon",
+    "name": "Weapon",
+    "url": "/items/weapon/"
+  },
+  "subCategory": null,
+  "cost": "5GP",
+  "weight": 4,
+  "weaponDetails": {
+    "type": "SIMPLE",
+    "properties": [
+      {
+        "id": "monk",
+        "name": "Monk",
+        "url": "/weapon-properties/monk"
+      }
+    ],
+    "range": {
+      "type": "MELEE",
+      "normal": 5,
+      "long": 0
+    },
+    "damage": {
+      "amount": "1d6",
+      "twoHanded": null,
+      "type": {
+        "id": "bludgeoning",
+        "name": "Bludgeoning",
+        "url": "/damage-types/bludgeoning"
+      }
+    },
+    "throw": null,
+    "extra": null
+  },
+  "armorDetails": null,
+  "vehicleDetails": null
+}

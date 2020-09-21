@@ -1,0 +1,45 @@
+{
+  "type": "EQUIPMENT_PACK",
+  "id": "priests-pack",
+  "name": "Priest's Pack",
+  "url": "/equipment-packs/priests-pack",
+  "cost": "19GP",
+  "contents": [
+    {
+      "id": "backpack",
+      "name": "Backpack",
+      "url": "/items/backpack",
+      "quantity": 1
+    },
+    {
+      "id": "blanket",
+      "name": "Blanket",
+      "url": "/items/blanket",
+      "quantity": 1
+    },
+    {
+      "id": "candle",
+      "name": "Candle",
+      "url": "/items/candle",
+      "quantity": 10
+    },
+    {
+      "id": "tinderbox",
+      "name": "Tinderbox",
+      "url": "/items/tinderbox",
+      "quantity": 1
+    },
+    {
+      "id": "rations-1-day",
+      "name": "Rations (1 day)",
+      "url": "/items/rations-1-day",
+      "quantity": 2
+    },
+    {
+      "id": "waterskin",
+      "name": "Waterskin",
+      "url": "/items/waterskin",
+      "quantity": 1
+    }
+  ]
+}

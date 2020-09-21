@@ -1,0 +1,19 @@
+{
+  "type": "ITEM",
+  "id": "clothes-travelers",
+  "name": "Clothes, traveler's",
+  "url": "/items/clothes-travelers",
+  "source": "PHB",
+  "description": "",
+  "category": {
+    "id": "general",
+    "name": "General",
+    "url": "/items/"
+  },
+  "subCategory": "STANDARD_GEAR",
+  "cost": "2GP",
+  "weight": 4,
+  "weaponDetails": null,
+  "armorDetails": null,
+  "vehicleDetails": null
+}

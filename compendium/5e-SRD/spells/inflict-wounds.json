@@ -1,0 +1,71 @@
+{
+  "type": "SPELL",
+  "id": "inflict-wounds",
+  "name": "Inflict Wounds",
+  "url": "/spells/inflict-wounds",
+  "source": "PHB",
+  "level": 1,
+  "rarity": "COMMON",
+  "description": "Make a melee spell attack against a creature you can reach. On a hit, the target takes 3d10 necrotic damage.",
+  "higherLevels": "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d10 for each slot level above 1st.",
+  "range": {
+    "type": "TOUCH",
+    "distance": 0
+  },
+  "components": {
+    "verbal": true,
+    "semantic": true,
+    "material": false,
+    "cost": null,
+    "goldValue": 0
+  },
+  "castingTime": "1 action",
+  "duration": "Instantaneous",
+  "ritual": false,
+  "concentration": false,
+  "damage": {
+    "type": {
+      "id": "necrotic",
+      "name": "Necrotic",
+      "url": "/damage-types/necrotic"
+    },
+    "slotLevels": [
+      "",
+      "3d10",
+      "4d10",
+      "5d10",
+      "6d10",
+      "7d10",
+      "8d10",
+      "9d10",
+      "10d10",
+      "11d10"
+    ],
+    "characterLevels": null
+  },
+  "save": null,
+  "healing": null,
+  "areaOfEffect": null,
+  "school": {
+    "id": "necromancy",
+    "name": "Necromancy",
+    "url": "/magic-schools/necromancy"
+  },
+  "classes": [
+    {
+      "id": "cleric",
+      "name": "Cleric",
+      "url": "/classes/cleric"
+    }
+  ],
+  "scroll": {
+    "value": 100,
+    "saveDC": 13,
+    "attackBonus": 5
+  },
+  "enchanting": {
+    "minLevel": 3,
+    "cost": 100,
+    "days": 4
+  }
+}

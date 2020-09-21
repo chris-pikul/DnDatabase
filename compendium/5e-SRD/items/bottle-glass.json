@@ -1,0 +1,19 @@
+{
+  "type": "ITEM",
+  "id": "bottle-glass",
+  "name": "Bottle, glass",
+  "url": "/items/bottle-glass",
+  "source": "PHB",
+  "description": "",
+  "category": {
+    "id": "general",
+    "name": "General",
+    "url": "/items/"
+  },
+  "subCategory": "STANDARD_GEAR",
+  "cost": "2GP",
+  "weight": 2,
+  "weaponDetails": null,
+  "armorDetails": null,
+  "vehicleDetails": null
+}

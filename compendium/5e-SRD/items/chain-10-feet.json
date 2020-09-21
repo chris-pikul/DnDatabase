@@ -1,0 +1,19 @@
+{
+  "type": "ITEM",
+  "id": "chain-10-feet",
+  "name": "Chain (10 feet)",
+  "url": "/items/chain-10-feet",
+  "source": "PHB",
+  "description": "A chain has 10 hit points. It can be burst with a successful DC 20 Strength check.",
+  "category": {
+    "id": "general",
+    "name": "General",
+    "url": "/items/"
+  },
+  "subCategory": "STANDARD_GEAR",
+  "cost": "5GP",
+  "weight": 10,
+  "weaponDetails": null,
+  "armorDetails": null,
+  "vehicleDetails": null
+}

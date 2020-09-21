@@ -1,0 +1,49 @@
+{
+  "type": "ITEM",
+  "id": "greatsword",
+  "name": "Greatsword",
+  "url": "/items/weapon/greatsword",
+  "source": "PHB",
+  "description": "",
+  "category": {
+    "id": "weapon",
+    "name": "Weapon",
+    "url": "/items/weapon/"
+  },
+  "subCategory": null,
+  "cost": "50GP",
+  "weight": 6,
+  "weaponDetails": {
+    "type": "MARTIAL",
+    "properties": [
+      {
+        "id": "heavy",
+        "name": "Heavy",
+        "url": "/weapon-properties/heavy"
+      },
+      {
+        "id": "two-handed",
+        "name": "Two-handed",
+        "url": "/weapon-properties/two-handed"
+      }
+    ],
+    "range": {
+      "type": "MELEE",
+      "normal": 5,
+      "long": 0
+    },
+    "damage": {
+      "amount": "2d6",
+      "twoHanded": null,
+      "type": {
+        "id": "slashing",
+        "name": "Slashing",
+        "url": "/damage-types/slashing"
+      }
+    },
+    "throw": null,
+    "extra": null
+  },
+  "armorDetails": null,
+  "vehicleDetails": null
+}

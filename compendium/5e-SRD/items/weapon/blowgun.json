@@ -1,0 +1,49 @@
+{
+  "type": "ITEM",
+  "id": "blowgun",
+  "name": "Blowgun",
+  "url": "/items/weapon/blowgun",
+  "source": "PHB",
+  "description": "",
+  "category": {
+    "id": "weapon",
+    "name": "Weapon",
+    "url": "/items/weapon/"
+  },
+  "subCategory": null,
+  "cost": "10GP",
+  "weight": 1,
+  "weaponDetails": {
+    "type": "MARTIAL",
+    "properties": [
+      {
+        "id": "ammunition",
+        "name": "Ammunition",
+        "url": "/weapon-properties/ammunition"
+      },
+      {
+        "id": "loading",
+        "name": "Loading",
+        "url": "/weapon-properties/loading"
+      }
+    ],
+    "range": {
+      "type": "RANGED",
+      "normal": 25,
+      "long": 100
+    },
+    "damage": {
+      "amount": "1d1",
+      "twoHanded": null,
+      "type": {
+        "id": "piercing",
+        "name": "Piercing",
+        "url": "/damage-types/piercing"
+      }
+    },
+    "throw": null,
+    "extra": null
+  },
+  "armorDetails": null,
+  "vehicleDetails": null
+}

@@ -1,0 +1,19 @@
+{
+  "type": "ITEM",
+  "id": "tent-two-person",
+  "name": "Tent, two-person",
+  "url": "/items/tent-two-person",
+  "source": "PHB",
+  "description": "A simple and portable canvas shelter, a tent sleeps two.",
+  "category": {
+    "id": "general",
+    "name": "General",
+    "url": "/items/"
+  },
+  "subCategory": "STANDARD_GEAR",
+  "cost": "2GP",
+  "weight": 20,
+  "weaponDetails": null,
+  "armorDetails": null,
+  "vehicleDetails": null
+}

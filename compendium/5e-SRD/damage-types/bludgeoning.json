@@ -1,0 +1,8 @@
+{
+  "type": "DAMAGE_TYPE",
+  "id": "bludgeoning",
+  "name": "Bludgeoning",
+  "url": "/damage-types/bludgeoning",
+  "source": "PHB",
+  "description": "Blunt force attacks, falling, constriction, and the like deal bludgeoning damage."
+}

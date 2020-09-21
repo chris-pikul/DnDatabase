@@ -1,0 +1,26 @@
+{
+  "type": "ITEM",
+  "id": "plate",
+  "name": "Plate",
+  "url": "/items/armor/plate",
+  "source": "PHB",
+  "description": "",
+  "category": {
+    "id": "armor",
+    "name": "Armor",
+    "url": "/items/armor/"
+  },
+  "subCategory": null,
+  "cost": "1500GP",
+  "weight": 65,
+  "weaponDetails": null,
+  "armorDetails": {
+    "type": "HEAVY",
+    "baseAC": 18,
+    "addDexterity": false,
+    "maxDexterityBonus": 0,
+    "strength": 15,
+    "stealthDisadvantage": true
+  },
+  "vehicleDetails": null
+}

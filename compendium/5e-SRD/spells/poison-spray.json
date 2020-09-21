@@ -1,0 +1,79 @@
+{
+  "type": "SPELL",
+  "id": "poison-spray",
+  "name": "Poison Spray",
+  "url": "/spells/poison-spray",
+  "source": "PHB",
+  "level": 0,
+  "rarity": "COMMON",
+  "description": "You extend your hand toward a creature you can see within range and project a puff of noxious gas from your palm. The creature must succeed on a constitution saving throw or take 1d12 poison damage.\\nThis spell's damage increases by 1d12 when you reach 5th level (2d12), 11th level (3d12), and 17th level (4d12).",
+  "range": {
+    "type": "RANGED",
+    "distance": 10
+  },
+  "components": {
+    "verbal": true,
+    "semantic": true,
+    "material": false,
+    "cost": null,
+    "goldValue": 0
+  },
+  "castingTime": "1 action",
+  "duration": "Instantaneous",
+  "ritual": false,
+  "concentration": false,
+  "damage": {
+    "type": {
+      "id": "poison",
+      "name": "Poison",
+      "url": "/damage-types/poison"
+    },
+    "slotLevels": null,
+    "characterLevels": {
+      "1": "1d12",
+      "5": "2d12",
+      "11": "3d12",
+      "17": "4d12"
+    }
+  },
+  "save": {
+    "type": "CON",
+    "onSuccess": null,
+    "onFailure": null,
+    "extra": null
+  },
+  "healing": null,
+  "areaOfEffect": null,
+  "school": {
+    "id": "conjuration",
+    "name": "Conjuration",
+    "url": "/magic-schools/conjuration"
+  },
+  "classes": [
+    {
+      "id": "sorcerer",
+      "name": "Sorcerer",
+      "url": "/classes/sorcerer"
+    },
+    {
+      "id": "warlock",
+      "name": "Warlock",
+      "url": "/classes/warlock"
+    },
+    {
+      "id": "wizard",
+      "name": "Wizard",
+      "url": "/classes/wizard"
+    }
+  ],
+  "scroll": {
+    "value": 50,
+    "saveDC": 13,
+    "attackBonus": 5
+  },
+  "enchanting": {
+    "minLevel": 3,
+    "cost": 50,
+    "days": 2
+  }
+}

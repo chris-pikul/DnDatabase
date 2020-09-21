@@ -1,0 +1,57 @@
+{
+  "type": "ITEM",
+  "id": "light-hammer",
+  "name": "Light hammer",
+  "url": "/items/weapon/light-hammer",
+  "source": "PHB",
+  "description": "",
+  "category": {
+    "id": "weapon",
+    "name": "Weapon",
+    "url": "/items/weapon/"
+  },
+  "subCategory": null,
+  "cost": "2GP",
+  "weight": 2,
+  "weaponDetails": {
+    "type": "SIMPLE",
+    "properties": [
+      {
+        "id": "light",
+        "name": "Light",
+        "url": "/weapon-properties/light"
+      },
+      {
+        "id": "thrown",
+        "name": "Thrown",
+        "url": "/weapon-properties/thrown"
+      },
+      {
+        "id": "monk",
+        "name": "Monk",
+        "url": "/weapon-properties/monk"
+      }
+    ],
+    "range": {
+      "type": "MELEE",
+      "normal": 5,
+      "long": 0
+    },
+    "damage": {
+      "amount": "1d4",
+      "twoHanded": null,
+      "type": {
+        "id": "bludgeoning",
+        "name": "Bludgeoning",
+        "url": "/damage-types/bludgeoning"
+      }
+    },
+    "throw": {
+      "normal": 20,
+      "long": 60
+    },
+    "extra": null
+  },
+  "armorDetails": null,
+  "vehicleDetails": null
+}

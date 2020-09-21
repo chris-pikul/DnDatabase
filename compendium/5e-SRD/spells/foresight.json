@@ -1,0 +1,66 @@
+{
+  "type": "SPELL",
+  "id": "foresight",
+  "name": "Foresight",
+  "url": "/spells/foresight",
+  "source": "PHB",
+  "level": 9,
+  "rarity": "LEGENDARY",
+  "description": "You touch a willing creature and bestow a limited ability to see into the immediate future. For the duration, the target can't be surprised and has advantage on attack rolls, ability checks, and saving throws. Additionally, other creatures have disadvantage on attack rolls against the target for the duration.\\nThis spell immediately ends if you cast it again before its duration ends.",
+  "range": {
+    "type": "TOUCH",
+    "distance": 0
+  },
+  "components": {
+    "verbal": true,
+    "semantic": true,
+    "material": true,
+    "cost": "A hummingbird feather.",
+    "goldValue": 0
+  },
+  "castingTime": "1 minute",
+  "duration": "8 hours",
+  "ritual": false,
+  "concentration": false,
+  "damage": null,
+  "save": null,
+  "healing": null,
+  "areaOfEffect": null,
+  "school": {
+    "id": "divination",
+    "name": "Divination",
+    "url": "/magic-schools/divination"
+  },
+  "classes": [
+    {
+      "id": "bard",
+      "name": "Bard",
+      "url": "/classes/bard"
+    },
+    {
+      "id": "druid",
+      "name": "Druid",
+      "url": "/classes/druid"
+    },
+    {
+      "id": "warlock",
+      "name": "Warlock",
+      "url": "/classes/warlock"
+    },
+    {
+      "id": "wizard",
+      "name": "Wizard",
+      "url": "/classes/wizard"
+    }
+  ],
+  "scroll": {
+    "value": 100000,
+    "saveDC": 19,
+    "attackBonus": 11
+  },
+  "enchanting": {
+    "minLevel": 17,
+    "cost": 100000,
+    "days": 4000
+  }
+}

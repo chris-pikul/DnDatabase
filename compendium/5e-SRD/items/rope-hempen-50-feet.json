@@ -1,0 +1,19 @@
+{
+  "type": "ITEM",
+  "id": "rope-hempen-50-feet",
+  "name": "Rope, hempen (50 feet)",
+  "url": "/items/rope-hempen-50-feet",
+  "source": "PHB",
+  "description": "Rope, whether made of hemp or silk, has 2 hit points and can be burst with a DC 17 Strength check.",
+  "category": {
+    "id": "general",
+    "name": "General",
+    "url": "/items/"
+  },
+  "subCategory": "STANDARD_GEAR",
+  "cost": "1GP",
+  "weight": 10,
+  "weaponDetails": null,
+  "armorDetails": null,
+  "vehicleDetails": null
+}

@@ -1,0 +1,22 @@
+{
+  "type": "TRAIT",
+  "id": "dwarven-resilience",
+  "name": "Dwarven Resilience",
+  "url": "/traits/dwarven-resilience",
+  "source": "PHB",
+  "description": "You have advantage on saving throws against poison, and you have resistance against poison damage.",
+  "races": [
+    {
+      "id": "dwarf",
+      "name": "Dwarven Resilience",
+      "url": "/races/dwarf"
+    }
+  ],
+  "subRaces": [
+    {
+      "id": "hill-dwarf",
+      "name": "Dwarven Resilience",
+      "url": "/sub-races/hill-dwarf"
+    }
+  ]
+}

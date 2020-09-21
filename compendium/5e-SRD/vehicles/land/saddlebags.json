@@ -1,0 +1,16 @@
+{
+  "type": "VEHICLE",
+  "id": "saddlebags",
+  "name": "Saddlebags",
+  "url": "/vehicles/land/saddlebags",
+  "source": "PHB",
+  "description": "",
+  "category": "MISC",
+  "subCategory": null,
+  "cost": "4GP",
+  "weight": 8,
+  "weaponDetails": null,
+  "armorDetails": null,
+  "vehicleDetails": null,
+  "subType": "SUPPLIES"
+}

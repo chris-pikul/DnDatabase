@@ -1,0 +1,19 @@
+{
+  "type": "ITEM",
+  "id": "spellbook",
+  "name": "Spellbook",
+  "url": "/items/spellbook",
+  "source": "PHB",
+  "description": "Essential for wizards, a spellbook is a leather-bound tome with 100 blank vellum pages suitable for recording spells.",
+  "category": {
+    "id": "general",
+    "name": "General",
+    "url": "/items/"
+  },
+  "subCategory": "STANDARD_GEAR",
+  "cost": "50GP",
+  "weight": 3,
+  "weaponDetails": null,
+  "armorDetails": null,
+  "vehicleDetails": null
+}

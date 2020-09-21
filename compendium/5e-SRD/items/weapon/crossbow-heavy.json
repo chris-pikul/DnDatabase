@@ -1,0 +1,59 @@
+{
+  "type": "ITEM",
+  "id": "crossbow-heavy",
+  "name": "Crossbow, heavy",
+  "url": "/items/weapon/crossbow-heavy",
+  "source": "PHB",
+  "description": "",
+  "category": {
+    "id": "weapon",
+    "name": "Weapon",
+    "url": "/items/weapon/"
+  },
+  "subCategory": null,
+  "cost": "50GP",
+  "weight": 18,
+  "weaponDetails": {
+    "type": "MARTIAL",
+    "properties": [
+      {
+        "id": "ammunition",
+        "name": "Ammunition",
+        "url": "/weapon-properties/ammunition"
+      },
+      {
+        "id": "light",
+        "name": "Light",
+        "url": "/weapon-properties/light"
+      },
+      {
+        "id": "loading",
+        "name": "Loading",
+        "url": "/weapon-properties/loading"
+      },
+      {
+        "id": "two-handed",
+        "name": "Two-handed",
+        "url": "/weapon-properties/two-handed"
+      }
+    ],
+    "range": {
+      "type": "RANGED",
+      "normal": 100,
+      "long": 400
+    },
+    "damage": {
+      "amount": "1d10",
+      "twoHanded": null,
+      "type": {
+        "id": "piercing",
+        "name": "Piercing",
+        "url": "/damage-types/piercing"
+      }
+    },
+    "throw": null,
+    "extra": null
+  },
+  "armorDetails": null,
+  "vehicleDetails": null
+}

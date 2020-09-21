@@ -1,0 +1,16 @@
+{
+  "type": "VEHICLE",
+  "id": "sled",
+  "name": "Sled",
+  "url": "/vehicles/land/sled",
+  "source": "PHB",
+  "description": "",
+  "category": "MISC",
+  "subCategory": null,
+  "cost": "20GP",
+  "weight": 300,
+  "weaponDetails": null,
+  "armorDetails": null,
+  "vehicleDetails": null,
+  "subType": "SUPPLIES"
+}

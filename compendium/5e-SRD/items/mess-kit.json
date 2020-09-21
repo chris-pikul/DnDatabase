@@ -1,0 +1,19 @@
+{
+  "type": "ITEM",
+  "id": "mess-kit",
+  "name": "Mess Kit",
+  "url": "/items/mess-kit",
+  "source": "PHB",
+  "description": "This tin box contains a cup and simple cutlery. The box clamps together, and one side can be used as a cooking pan and the other as a plate or shallow bowl.",
+  "category": {
+    "id": "general",
+    "name": "General",
+    "url": "/items/"
+  },
+  "subCategory": "KIT",
+  "cost": "2SP",
+  "weight": 1,
+  "weaponDetails": null,
+  "armorDetails": null,
+  "vehicleDetails": null
+}

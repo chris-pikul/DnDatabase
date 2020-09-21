@@ -1,0 +1,19 @@
+{
+  "type": "ITEM",
+  "id": "bell",
+  "name": "Bell",
+  "url": "/items/bell",
+  "source": "PHB",
+  "description": "",
+  "category": {
+    "id": "general",
+    "name": "General",
+    "url": "/items/"
+  },
+  "subCategory": "STANDARD_GEAR",
+  "cost": "1GP",
+  "weight": 0,
+  "weaponDetails": null,
+  "armorDetails": null,
+  "vehicleDetails": null
+}

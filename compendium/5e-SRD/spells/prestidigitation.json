@@ -1,0 +1,66 @@
+{
+  "type": "SPELL",
+  "id": "prestidigitation",
+  "name": "Prestidigitation",
+  "url": "/spells/prestidigitation",
+  "source": "PHB",
+  "level": 0,
+  "rarity": "COMMON",
+  "description": "This spell is a minor magical trick that novice spellcasters use for practice. You create one of the following magical effects within 'range':\\nYou create an instantaneous, harmless sensory effect, such as a shower of sparks, a puff of wind, faint musical notes, or an odd odor.\\nYou instantaneously light or snuff out a candle, a torch, or a small campfire.\\nYou instantaneously clean or soil an object no larger than 1 cubic foot.\\nYou chill, warm, or flavor up to 1 cubic foot of nonliving material for 1 hour.\\nYou make a color, a small mark, or a symbol appear on an object or a surface for 1 hour.\\nYou create a nonmagical trinket or an illusory image that can fit in your hand and that lasts until the end of your next turn.\\nIf you cast this spell multiple times, you can have up to three of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action.",
+  "range": {
+    "type": "RANGED",
+    "distance": 10
+  },
+  "components": {
+    "verbal": true,
+    "semantic": true,
+    "material": false,
+    "cost": null,
+    "goldValue": 0
+  },
+  "castingTime": "1 action",
+  "duration": "1 hour",
+  "ritual": false,
+  "concentration": false,
+  "damage": null,
+  "save": null,
+  "healing": null,
+  "areaOfEffect": null,
+  "school": {
+    "id": "transmutation",
+    "name": "Transmutation",
+    "url": "/magic-schools/transmutation"
+  },
+  "classes": [
+    {
+      "id": "bard",
+      "name": "Bard",
+      "url": "/classes/bard"
+    },
+    {
+      "id": "sorcerer",
+      "name": "Sorcerer",
+      "url": "/classes/sorcerer"
+    },
+    {
+      "id": "warlock",
+      "name": "Warlock",
+      "url": "/classes/warlock"
+    },
+    {
+      "id": "wizard",
+      "name": "Wizard",
+      "url": "/classes/wizard"
+    }
+  ],
+  "scroll": {
+    "value": 50,
+    "saveDC": 13,
+    "attackBonus": 5
+  },
+  "enchanting": {
+    "minLevel": 3,
+    "cost": 50,
+    "days": 2
+  }
+}

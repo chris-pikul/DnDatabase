@@ -1,0 +1,8 @@
+{
+  "type": "WEAPON_PROPERTY",
+  "id": "two-handed",
+  "name": "Two-handed",
+  "url": "/weapon-properties/two-handed",
+  "source": "PHB",
+  "description": "This weapon requires two hands when you attack with it."
+}

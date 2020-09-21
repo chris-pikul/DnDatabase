@@ -1,0 +1,13 @@
+{
+  "type": "LANGUAGE",
+  "id": "celestial",
+  "name": "Celestial",
+  "url": "/languages/celestial",
+  "source": "PHB",
+  "description": "",
+  "isExotic": true,
+  "script": "Celestial",
+  "speakers": [
+    "Celestials"
+  ]
+}

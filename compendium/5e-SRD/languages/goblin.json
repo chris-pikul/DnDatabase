@@ -1,0 +1,13 @@
+{
+  "type": "LANGUAGE",
+  "id": "goblin",
+  "name": "Goblin",
+  "url": "/languages/goblin",
+  "source": "PHB",
+  "description": "",
+  "isExotic": false,
+  "script": "Dwarvish",
+  "speakers": [
+    "Goblinoids"
+  ]
+}

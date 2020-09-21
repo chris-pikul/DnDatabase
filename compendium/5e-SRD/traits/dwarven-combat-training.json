@@ -1,0 +1,22 @@
+{
+  "type": "TRAIT",
+  "id": "dwarven-combat-training",
+  "name": "Dwarven Combat Training",
+  "url": "/traits/dwarven-combat-training",
+  "source": "PHB",
+  "description": "You have proficiency with the battleaxe, handaxe, light hammer, and warhammer.",
+  "races": [
+    {
+      "id": "dwarf",
+      "name": "Dwarven Combat Training",
+      "url": "/races/dwarf"
+    }
+  ],
+  "subRaces": [
+    {
+      "id": "hill-dwarf",
+      "name": "Dwarven Combat Training",
+      "url": "/sub-races/hill-dwarf"
+    }
+  ]
+}

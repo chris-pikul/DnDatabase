@@ -1,0 +1,11 @@
+{
+  "type": "CONDITION",
+  "id": "incapacitated",
+  "name": "Incapacitated",
+  "url": "/conditions/incapacitated",
+  "source": "PHB",
+  "description": "",
+  "effects": [
+    "An incapacitated creature can't take actions or reactions."
+  ]
+}

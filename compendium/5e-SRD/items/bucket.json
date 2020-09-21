@@ -1,0 +1,19 @@
+{
+  "type": "ITEM",
+  "id": "bucket",
+  "name": "Bucket",
+  "url": "/items/bucket",
+  "source": "PHB",
+  "description": "",
+  "category": {
+    "id": "general",
+    "name": "General",
+    "url": "/items/"
+  },
+  "subCategory": "STANDARD_GEAR",
+  "cost": "5CP",
+  "weight": 2,
+  "weaponDetails": null,
+  "armorDetails": null,
+  "vehicleDetails": null
+}

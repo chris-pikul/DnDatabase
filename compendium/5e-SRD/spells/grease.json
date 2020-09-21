@@ -1,0 +1,59 @@
+{
+  "type": "SPELL",
+  "id": "grease",
+  "name": "Grease",
+  "url": "/spells/grease",
+  "source": "PHB",
+  "level": 1,
+  "rarity": "COMMON",
+  "description": "Slick grease covers the ground in a 10-foot square centered on a point within range and turns it into difficult terrain for the duration.\\nWhen the grease appears, each creature standing in its area must succeed on a dexterity saving throw or fall prone. A creature that enters the area or ends its turn there must also succeed on a dexterity saving throw or fall prone.",
+  "range": {
+    "type": "RANGED",
+    "distance": 60
+  },
+  "components": {
+    "verbal": true,
+    "semantic": true,
+    "material": true,
+    "cost": "A bit of pork rind or butter.",
+    "goldValue": 0
+  },
+  "castingTime": "1 action",
+  "duration": "1 minute",
+  "ritual": false,
+  "concentration": false,
+  "damage": null,
+  "save": {
+    "type": "DEX",
+    "onSuccess": null,
+    "onFailure": null,
+    "extra": null
+  },
+  "healing": null,
+  "areaOfEffect": {
+    "shape": "CUBE",
+    "size": 10
+  },
+  "school": {
+    "id": "conjuration",
+    "name": "Conjuration",
+    "url": "/magic-schools/conjuration"
+  },
+  "classes": [
+    {
+      "id": "wizard",
+      "name": "Wizard",
+      "url": "/classes/wizard"
+    }
+  ],
+  "scroll": {
+    "value": 100,
+    "saveDC": 13,
+    "attackBonus": 5
+  },
+  "enchanting": {
+    "minLevel": 3,
+    "cost": 100,
+    "days": 4
+  }
+}

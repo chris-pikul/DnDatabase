@@ -1,0 +1,19 @@
+{
+  "type": "ITEM",
+  "id": "case-map-or-scroll",
+  "name": "Case, map or scroll",
+  "url": "/items/case-map-or-scroll",
+  "source": "PHB",
+  "description": "This cylindrical leather case can hold up to ten rolled-up sheets of paper or five rolled-up sheets of parchment.",
+  "category": {
+    "id": "general",
+    "name": "General",
+    "url": "/items/"
+  },
+  "subCategory": "STANDARD_GEAR",
+  "cost": "1GP",
+  "weight": 1,
+  "weaponDetails": null,
+  "armorDetails": null,
+  "vehicleDetails": null
+}

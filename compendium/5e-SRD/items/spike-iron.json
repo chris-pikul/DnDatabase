@@ -1,0 +1,19 @@
+{
+  "type": "ITEM",
+  "id": "spike-iron",
+  "name": "Spike, iron",
+  "url": "/items/spike-iron",
+  "source": "PHB",
+  "description": "",
+  "category": {
+    "id": "general",
+    "name": "General",
+    "url": "/items/"
+  },
+  "subCategory": "STANDARD_GEAR",
+  "cost": "1SP",
+  "weight": 5,
+  "weaponDetails": null,
+  "armorDetails": null,
+  "vehicleDetails": null
+}

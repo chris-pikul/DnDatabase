@@ -1,0 +1,19 @@
+{
+  "type": "ITEM",
+  "id": "ink-1-ounce-bottle",
+  "name": "Ink (1 ounce bottle)",
+  "url": "/items/ink-1-ounce-bottle",
+  "source": "PHB",
+  "description": "",
+  "category": {
+    "id": "general",
+    "name": "General",
+    "url": "/items/"
+  },
+  "subCategory": "STANDARD_GEAR",
+  "cost": "10GP",
+  "weight": 0,
+  "weaponDetails": null,
+  "armorDetails": null,
+  "vehicleDetails": null
+}

@@ -1,0 +1,51 @@
+{
+  "type": "SPELL",
+  "id": "reincarnate",
+  "name": "Reincarnate",
+  "url": "/spells/reincarnate",
+  "source": "PHB",
+  "level": 5,
+  "rarity": "RARE",
+  "description": "You touch a dead humanoid or a piece of a dead humanoid. Provided that the creature has been dead no longer than 10 days, the spell forms a new adult body for it and then calls the soul to enter that body. If the target's soul isn't free or willing to do so, the spell fails.\\nThe magic fashions a new body for the creature to inhabit, which likely causes the creature's race to change. The DM rolls a d 100 and consults the following table to determine what form the creature takes when restored to life, or the DM chooses a form.\\n01-04\\nDragonborn\\n05-13\\nDwarf, hill\\n14-21\\nDwarf, mountain\\n22-25\\nElf, dark\\n26-34\\nElf, high\\n35-42\\nElf, wood\\n43-46\\nGnome, forest\\n47-52\\nGnome, rock\\n53-56\\nHalf-elf\\n57-60\\nHalf-orc\\n61-68\\nHalfling, lightfoot\\n69-76\\nHalfling, stout\\n77-96\\nHuman\\n97-00\\nTiefling\\nThe reincarnated creature recalls its former life and experiences. It retains the capabilities it had in its original form, except it exchanges its original race for the new one and changes its racial traits accordingly.",
+  "range": {
+    "type": "TOUCH",
+    "distance": 0
+  },
+  "components": {
+    "verbal": true,
+    "semantic": true,
+    "material": true,
+    "cost": "Rare oils and unguents worth at least 1,000 gp, which the spell consumes.",
+    "goldValue": 0
+  },
+  "castingTime": "1 hour",
+  "duration": "Instantaneous",
+  "ritual": false,
+  "concentration": false,
+  "damage": null,
+  "save": null,
+  "healing": null,
+  "areaOfEffect": null,
+  "school": {
+    "id": "transmutation",
+    "name": "Transmutation",
+    "url": "/magic-schools/transmutation"
+  },
+  "classes": [
+    {
+      "id": "druid",
+      "name": "Druid",
+      "url": "/classes/druid"
+    }
+  ],
+  "scroll": {
+    "value": 5000,
+    "saveDC": 17,
+    "attackBonus": 9
+  },
+  "enchanting": {
+    "minLevel": 6,
+    "cost": 5000,
+    "days": 200
+  }
+}

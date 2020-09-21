@@ -1,0 +1,71 @@
+{
+  "type": "SPELL",
+  "id": "spiritual-weapon",
+  "name": "Spiritual Weapon",
+  "url": "/spells/spiritual-weapon",
+  "source": "PHB",
+  "level": 2,
+  "rarity": "UNCOMMON",
+  "description": "You create a floating, spectral weapon within range that lasts for the duration or until you cast this spell again. When you cast the spell, you can make a melee spell attack against a creature within 5 feet of the weapon. On a hit, the target takes force damage equal to 1d8 + your spellcasting ability modifier.\\nAs a bonus action on your turn, you can move the weapon up to 20 feet and repeat the attack against a creature within 5 feet of it.\\nThe weapon can take whatever form you choose. Clerics of deities who are associated with a particular weapon (as St. Cuthbert is known for his mace and Thor for his hammer) make this spell's effect resemble that weapon.",
+  "higherLevels": "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for every two slot levels above the 2nd.",
+  "range": {
+    "type": "RANGED",
+    "distance": 60
+  },
+  "components": {
+    "verbal": true,
+    "semantic": true,
+    "material": false,
+    "cost": null,
+    "goldValue": 0
+  },
+  "castingTime": "1 bonus action",
+  "duration": "1 minute",
+  "ritual": false,
+  "concentration": false,
+  "damage": {
+    "type": {
+      "id": "force",
+      "name": "Force",
+      "url": "/damage-types/force"
+    },
+    "slotLevels": [
+      "",
+      "",
+      "1d8 + MOD",
+      "1d8 + MOD",
+      "2d8 + MOD",
+      "2d8 + MOD",
+      "3d8 + MOD",
+      "3d8 + MOD",
+      "4d8 + MOD",
+      "4d8 + MOD"
+    ],
+    "characterLevels": null
+  },
+  "save": null,
+  "healing": null,
+  "areaOfEffect": null,
+  "school": {
+    "id": "evocation",
+    "name": "Evocation",
+    "url": "/magic-schools/evocation"
+  },
+  "classes": [
+    {
+      "id": "cleric",
+      "name": "Cleric",
+      "url": "/classes/cleric"
+    }
+  ],
+  "scroll": {
+    "value": 250,
+    "saveDC": 13,
+    "attackBonus": 5
+  },
+  "enchanting": {
+    "minLevel": 3,
+    "cost": 250,
+    "days": 10
+  }
+}

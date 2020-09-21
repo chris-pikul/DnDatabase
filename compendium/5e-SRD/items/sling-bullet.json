@@ -1,0 +1,19 @@
+{
+  "type": "ITEM",
+  "id": "sling-bullet",
+  "name": "Sling bullet",
+  "url": "/items/sling-bullet",
+  "source": "PHB",
+  "description": "",
+  "category": {
+    "id": "general",
+    "name": "General",
+    "url": "/items/"
+  },
+  "subCategory": "AMMUNITION",
+  "cost": "4CP",
+  "weight": 1.5,
+  "weaponDetails": null,
+  "armorDetails": null,
+  "vehicleDetails": null
+}

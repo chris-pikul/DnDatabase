@@ -1,0 +1,19 @@
+{
+  "type": "ITEM",
+  "id": "barrel",
+  "name": "Barrel",
+  "url": "/items/barrel",
+  "source": "PHB",
+  "description": "",
+  "category": {
+    "id": "general",
+    "name": "General",
+    "url": "/items/"
+  },
+  "subCategory": "STANDARD_GEAR",
+  "cost": "2GP",
+  "weight": 70,
+  "weaponDetails": null,
+  "armorDetails": null,
+  "vehicleDetails": null
+}

@@ -1,0 +1,21 @@
+{
+  "type": "VEHICLE",
+  "id": "camel",
+  "name": "Camel",
+  "url": "/vehicles/land/camel",
+  "source": "PHB",
+  "description": "",
+  "category": "MISC",
+  "subCategory": null,
+  "cost": "50GP",
+  "weight": 0,
+  "weaponDetails": null,
+  "armorDetails": null,
+  "vehicleDetails": {
+    "landSpeed": "50 ft/round",
+    "waterSpeed": 0,
+    "airSpeed": 0,
+    "capacity": "480 lb."
+  },
+  "subType": "MOUNT"
+}

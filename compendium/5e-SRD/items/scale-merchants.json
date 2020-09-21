@@ -1,0 +1,19 @@
+{
+  "type": "ITEM",
+  "id": "scale-merchants",
+  "name": "Scale, merchant's",
+  "url": "/items/scale-merchants",
+  "source": "PHB",
+  "description": "A scale includes a small balance, pans, and a suitable assortment of weights up to 2 pounds. With it, you can measure the exact weight of small objects, such as raw precious metals or trade goods, to help determine their worth.",
+  "category": {
+    "id": "general",
+    "name": "General",
+    "url": "/items/"
+  },
+  "subCategory": "STANDARD_GEAR",
+  "cost": "5GP",
+  "weight": 3,
+  "weaponDetails": null,
+  "armorDetails": null,
+  "vehicleDetails": null
+}

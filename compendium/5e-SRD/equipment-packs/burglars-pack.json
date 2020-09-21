@@ -1,0 +1,81 @@
+{
+  "type": "EQUIPMENT_PACK",
+  "id": "burglars-pack",
+  "name": "Burglar's Pack",
+  "url": "/equipment-packs/burglars-pack",
+  "cost": "16GP",
+  "contents": [
+    {
+      "id": "backpack",
+      "name": "Backpack",
+      "url": "/items/backpack",
+      "quantity": 1
+    },
+    {
+      "id": "ball-bearings-bag-of-1000",
+      "name": "Ball bearings (bag of 1,000)",
+      "url": "/items/ball-bearings-bag-of-1000",
+      "quantity": 1
+    },
+    {
+      "id": "candle",
+      "name": "Candle",
+      "url": "/items/candle",
+      "quantity": 5
+    },
+    {
+      "id": "crowbar",
+      "name": "Crowbar",
+      "url": "/items/crowbar",
+      "quantity": 1
+    },
+    {
+      "id": "hammer",
+      "name": "Hammer",
+      "url": "/items/hammer",
+      "quantity": 1
+    },
+    {
+      "id": "piton",
+      "name": "Piton",
+      "url": "/items/piton",
+      "quantity": 10
+    },
+    {
+      "id": "lantern-hooded",
+      "name": "Lantern, hooded",
+      "url": "/items/lantern-hooded",
+      "quantity": 1
+    },
+    {
+      "id": "oil-flask",
+      "name": "Oil (flask)",
+      "url": "/items/oil-flask",
+      "quantity": 2
+    },
+    {
+      "id": "rations-1-day",
+      "name": "Rations (1 day)",
+      "url": "/items/rations-1-day",
+      "quantity": 5
+    },
+    {
+      "id": "tinderbox",
+      "name": "Tinderbox",
+      "url": "/items/tinderbox",
+      "quantity": 1
+    },
+    {
+      "id": "waterskin",
+      "name": "Waterskin",
+      "url": "/items/waterskin",
+      "quantity": 1
+    },
+    {
+      "id": "rope-hempen-50-feet",
+      "name": "Rope, hempen (50 feet)",
+      "url": "/items/rope-hempen-50-feet",
+      "quantity": 1
+    }
+  ]
+}

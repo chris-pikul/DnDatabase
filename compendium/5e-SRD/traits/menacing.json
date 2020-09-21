@@ -1,0 +1,16 @@
+{
+  "type": "TRAIT",
+  "id": "menacing",
+  "name": "Menacing",
+  "url": "/traits/menacing",
+  "source": "PHB",
+  "description": "You gain proficiency in the Intimidation skill.",
+  "races": [
+    {
+      "id": "half-orc",
+      "name": "Menacing",
+      "url": "/races/half-orc"
+    }
+  ],
+  "subRaces": []
+}

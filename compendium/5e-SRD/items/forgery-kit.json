@@ -1,0 +1,19 @@
+{
+  "type": "ITEM",
+  "id": "forgery-kit",
+  "name": "Forgery Kit",
+  "url": "/items/forgery-kit",
+  "source": "PHB",
+  "description": "This small box contains a variety of papers and parchments, pens and inks, seals and sealing wax, gold and silver leaf, and other supplies necessary to create convincing forgeries of physical documents. Proficiency with this kit lets you add your proficiency bonus to any ability checks you make to create a physical forgery of a document.",
+  "category": {
+    "id": "general",
+    "name": "General",
+    "url": "/items/"
+  },
+  "subCategory": "KIT",
+  "cost": "15GP",
+  "weight": 5,
+  "weaponDetails": null,
+  "armorDetails": null,
+  "vehicleDetails": null
+}

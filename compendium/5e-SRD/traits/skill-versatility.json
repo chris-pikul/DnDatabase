@@ -1,0 +1,16 @@
+{
+  "type": "TRAIT",
+  "id": "skill-versatility",
+  "name": "Skill Versatility",
+  "url": "/traits/skill-versatility",
+  "source": "PHB",
+  "description": "You gain proficiency in two skills of your choice.",
+  "races": [
+    {
+      "id": "half-elf",
+      "name": "Skill Versatility",
+      "url": "/races/half-elf"
+    }
+  ],
+  "subRaces": []
+}

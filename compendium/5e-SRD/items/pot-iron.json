@@ -1,0 +1,19 @@
+{
+  "type": "ITEM",
+  "id": "pot-iron",
+  "name": "Pot, iron",
+  "url": "/items/pot-iron",
+  "source": "PHB",
+  "description": "",
+  "category": {
+    "id": "general",
+    "name": "General",
+    "url": "/items/"
+  },
+  "subCategory": "STANDARD_GEAR",
+  "cost": "2GP",
+  "weight": 10,
+  "weaponDetails": null,
+  "armorDetails": null,
+  "vehicleDetails": null
+}

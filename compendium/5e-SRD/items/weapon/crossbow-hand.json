@@ -1,0 +1,54 @@
+{
+  "type": "ITEM",
+  "id": "crossbow-hand",
+  "name": "Crossbow, hand",
+  "url": "/items/weapon/crossbow-hand",
+  "source": "PHB",
+  "description": "",
+  "category": {
+    "id": "weapon",
+    "name": "Weapon",
+    "url": "/items/weapon/"
+  },
+  "subCategory": null,
+  "cost": "75GP",
+  "weight": 3,
+  "weaponDetails": {
+    "type": "MARTIAL",
+    "properties": [
+      {
+        "id": "ammunition",
+        "name": "Ammunition",
+        "url": "/weapon-properties/ammunition"
+      },
+      {
+        "id": "light",
+        "name": "Light",
+        "url": "/weapon-properties/light"
+      },
+      {
+        "id": "loading",
+        "name": "Loading",
+        "url": "/weapon-properties/loading"
+      }
+    ],
+    "range": {
+      "type": "RANGED",
+      "normal": 30,
+      "long": 120
+    },
+    "damage": {
+      "amount": "1d6",
+      "twoHanded": null,
+      "type": {
+        "id": "piercing",
+        "name": "Piercing",
+        "url": "/damage-types/piercing"
+      }
+    },
+    "throw": null,
+    "extra": null
+  },
+  "armorDetails": null,
+  "vehicleDetails": null
+}

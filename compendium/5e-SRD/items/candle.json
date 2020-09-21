@@ -1,0 +1,19 @@
+{
+  "type": "ITEM",
+  "id": "candle",
+  "name": "Candle",
+  "url": "/items/candle",
+  "source": "PHB",
+  "description": "For 1 hour, a candle sheds bright light in a 5-foot radius and dim light for an additional 5 feet.",
+  "category": {
+    "id": "general",
+    "name": "General",
+    "url": "/items/"
+  },
+  "subCategory": "STANDARD_GEAR",
+  "cost": "1CP",
+  "weight": 0,
+  "weaponDetails": null,
+  "armorDetails": null,
+  "vehicleDetails": null
+}

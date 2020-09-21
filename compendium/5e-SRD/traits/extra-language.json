@@ -1,0 +1,16 @@
+{
+  "type": "TRAIT",
+  "id": "extra-language",
+  "name": "Extra Language",
+  "url": "/traits/extra-language",
+  "source": "PHB",
+  "description": "You can speak, read, and write one extra language of your choice.",
+  "races": [],
+  "subRaces": [
+    {
+      "id": "high-elf",
+      "name": "Extra Language",
+      "url": "/sub-races/high-elf"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "type": "SPELL",
+  "id": "enhance-ability",
+  "name": "Enhance Ability",
+  "url": "/spells/enhance-ability",
+  "source": "PHB",
+  "level": 2,
+  "rarity": "UNCOMMON",
+  "description": "You touch a creature and bestow upon it a magical enhancement. Choose one of the following effects; the target gains that effect until the spell ends.\\nBear's Endurance.\\nThe target has advantage on constitution checks. It also gains 2d6 temporary hit points, which are lost when the spell ends.\\nBull's Strength.\\nThe target has advantage on strength checks, and his or her carrying capacity doubles.\\nCat's Grace.\\nThe target has advantage on dexterity checks. It also doesn't take damage from falling 20 feet or less if it isn't incapacitated.\\nEagle's Splendor.\\nThe target has advantage on Charisma checks.\\nFox's Cunning.\\nThe target has advantage on intelligence checks.\\nOwl's Wisdom.\\nThe target has advantage on wisdom checks.",
+  "higherLevels": "When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd.",
+  "range": {
+    "type": "TOUCH",
+    "distance": 0
+  },
+  "components": {
+    "verbal": true,
+    "semantic": true,
+    "material": true,
+    "cost": "Fur or a feather from a beast.",
+    "goldValue": 0
+  },
+  "castingTime": "1 action",
+  "duration": "Up to 1 hour",
+  "ritual": false,
+  "concentration": true,
+  "damage": null,
+  "save": null,
+  "healing": null,
+  "areaOfEffect": null,
+  "school": {
+    "id": "transmutation",
+    "name": "Transmutation",
+    "url": "/magic-schools/transmutation"
+  },
+  "classes": [
+    {
+      "id": "bard",
+      "name": "Bard",
+      "url": "/classes/bard"
+    },
+    {
+      "id": "cleric",
+      "name": "Cleric",
+      "url": "/classes/cleric"
+    },
+    {
+      "id": "druid",
+      "name": "Druid",
+      "url": "/classes/druid"
+    },
+    {
+      "id": "sorcerer",
+      "name": "Sorcerer",
+      "url": "/classes/sorcerer"
+    }
+  ],
+  "scroll": {
+    "value": 250,
+    "saveDC": 13,
+    "attackBonus": 5
+  },
+  "enchanting": {
+    "minLevel": 3,
+    "cost": 250,
+    "days": 10
+  }
+}

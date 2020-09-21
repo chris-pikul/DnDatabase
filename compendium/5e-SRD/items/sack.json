@@ -1,0 +1,19 @@
+{
+  "type": "ITEM",
+  "id": "sack",
+  "name": "Sack",
+  "url": "/items/sack",
+  "source": "PHB",
+  "description": "",
+  "category": {
+    "id": "general",
+    "name": "General",
+    "url": "/items/"
+  },
+  "subCategory": "STANDARD_GEAR",
+  "cost": "1CP",
+  "weight": 0.5,
+  "weaponDetails": null,
+  "armorDetails": null,
+  "vehicleDetails": null
+}

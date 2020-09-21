@@ -1,0 +1,60 @@
+{
+  "type": "SPELL",
+  "id": "creation",
+  "name": "Creation",
+  "url": "/spells/creation",
+  "source": "PHB",
+  "level": 5,
+  "rarity": "RARE",
+  "description": "You pull wisps of shadow material from the Shadowfell to create a nonliving object of vegetable matter within range: soft goods, rope, wood, or something similar. You can also use this spell to create mineral objects such as stone, crystal, or metal. The object created must be no larger than a 5-foot cube, and the object must be of a form and material that you have seen before.\\nThe duration depends on the object's material. If the object is composed of multiple materials, use the shortest duration.\\nVegetable matter\\n1 day\\nStone or crystal\\n12 hours\\nPrecious metals\\n1 hour\\nGems\\n10 minutes\\nAdamantine or mithral\\n1 minute\\nUsing any material created by this spell as another spell's material component causes that spell to fail.",
+  "higherLevels": "When you cast this spell using a spell slot of 6th level or higher, the cube increases by 5 feet for each slot level above 5th.",
+  "range": {
+    "type": "RANGED",
+    "distance": 30
+  },
+  "components": {
+    "verbal": true,
+    "semantic": true,
+    "material": true,
+    "cost": "A tiny piece of matter of the same type of the item you plan to create.",
+    "goldValue": 0
+  },
+  "castingTime": "1 minute",
+  "duration": "Special",
+  "ritual": false,
+  "concentration": false,
+  "damage": null,
+  "save": null,
+  "healing": null,
+  "areaOfEffect": {
+    "shape": "CUBE",
+    "size": 5
+  },
+  "school": {
+    "id": "illusion",
+    "name": "Illusion",
+    "url": "/magic-schools/illusion"
+  },
+  "classes": [
+    {
+      "id": "sorcerer",
+      "name": "Sorcerer",
+      "url": "/classes/sorcerer"
+    },
+    {
+      "id": "wizard",
+      "name": "Wizard",
+      "url": "/classes/wizard"
+    }
+  ],
+  "scroll": {
+    "value": 5000,
+    "saveDC": 17,
+    "attackBonus": 9
+  },
+  "enchanting": {
+    "minLevel": 6,
+    "cost": 5000,
+    "days": 200
+  }
+}

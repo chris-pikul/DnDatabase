@@ -1,0 +1,19 @@
+{
+  "type": "ITEM",
+  "id": "hourglass",
+  "name": "Hourglass",
+  "url": "/items/hourglass",
+  "source": "PHB",
+  "description": "",
+  "category": {
+    "id": "general",
+    "name": "General",
+    "url": "/items/"
+  },
+  "subCategory": "STANDARD_GEAR",
+  "cost": "25GP",
+  "weight": 1,
+  "weaponDetails": null,
+  "armorDetails": null,
+  "vehicleDetails": null
+}

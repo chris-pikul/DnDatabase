@@ -1,0 +1,13 @@
+{
+  "type": "LANGUAGE",
+  "id": "primordial",
+  "name": "Primordial",
+  "url": "/languages/primordial",
+  "source": "PHB",
+  "description": "",
+  "isExotic": true,
+  "script": "Dwarvish",
+  "speakers": [
+    "Elementals"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "type": "LANGUAGE",
+  "id": "giant",
+  "name": "Giant",
+  "url": "/languages/giant",
+  "source": "PHB",
+  "description": "",
+  "isExotic": false,
+  "script": "Dwarvish",
+  "speakers": [
+    "Ogres",
+    "Giants"
+  ]
+}

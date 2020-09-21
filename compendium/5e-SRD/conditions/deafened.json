@@ -1,0 +1,11 @@
+{
+  "type": "CONDITION",
+  "id": "deafened",
+  "name": "Deafened",
+  "url": "/conditions/deafened",
+  "source": "PHB",
+  "description": "",
+  "effects": [
+    "A deafened creature can't hear and automatically fails any ability check that requires hearing."
+  ]
+}

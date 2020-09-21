@@ -1,0 +1,19 @@
+{
+  "type": "ITEM",
+  "id": "crowbar",
+  "name": "Crowbar",
+  "url": "/items/crowbar",
+  "source": "PHB",
+  "description": "Using a crowbar grants advantage to Strength checks where the crowbar's leverage can be applied.",
+  "category": {
+    "id": "general",
+    "name": "General",
+    "url": "/items/"
+  },
+  "subCategory": "STANDARD_GEAR",
+  "cost": "2GP",
+  "weight": 5,
+  "weaponDetails": null,
+  "armorDetails": null,
+  "vehicleDetails": null
+}

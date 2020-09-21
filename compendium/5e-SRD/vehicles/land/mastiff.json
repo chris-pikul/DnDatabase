@@ -1,0 +1,21 @@
+{
+  "type": "VEHICLE",
+  "id": "mastiff",
+  "name": "Mastiff",
+  "url": "/vehicles/land/mastiff",
+  "source": "PHB",
+  "description": "",
+  "category": "MISC",
+  "subCategory": null,
+  "cost": "25GP",
+  "weight": 0,
+  "weaponDetails": null,
+  "armorDetails": null,
+  "vehicleDetails": {
+    "landSpeed": "40 ft/round",
+    "waterSpeed": 0,
+    "airSpeed": 0,
+    "capacity": "195 lb."
+  },
+  "subType": "MOUNT"
+}

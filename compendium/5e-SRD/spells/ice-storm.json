@@ -1,0 +1,89 @@
+{
+  "type": "SPELL",
+  "id": "ice-storm",
+  "name": "Ice Storm",
+  "url": "/spells/ice-storm",
+  "source": "PHB",
+  "level": 4,
+  "rarity": "RARE",
+  "description": "A hail of rock-hard ice pounds to the ground in a 20-foot-radius, 40-foot-high cylinder centered on a point within range. Each creature in the cylinder must make a dexterity saving throw. A creature takes 2d8 bludgeoning damage and 4d6 cold damage on a failed save, or half as much damage on a successful one.\\nHailstones turn the storm's area of effect into difficult terrain until the end of your next turn.",
+  "higherLevels": "When you cast this spell using a spell slot of 5th level or higher, the bludgeoning damage increases by 1d8 for each slot level above 4th.",
+  "range": {
+    "type": "RANGED",
+    "distance": 300
+  },
+  "components": {
+    "verbal": true,
+    "semantic": true,
+    "material": true,
+    "cost": "A pinch of dust and a few drops of water.",
+    "goldValue": 0
+  },
+  "castingTime": "1 action",
+  "duration": "Instantaneous",
+  "ritual": false,
+  "concentration": false,
+  "damage": {
+    "type": {
+      "id": "bludgeoning",
+      "name": "Bludgeoning",
+      "url": "/damage-types/bludgeoning"
+    },
+    "slotLevels": [
+      "",
+      "",
+      "",
+      "",
+      "2d8 + 4d6",
+      "3d8 + 4d6",
+      "4d8 + 4d6",
+      "5d8 + 4d6",
+      "6d8 + 4d6",
+      "7d8 + 4d6"
+    ],
+    "characterLevels": null
+  },
+  "save": {
+    "type": "DEX",
+    "onSuccess": "half",
+    "onFailure": null,
+    "extra": null
+  },
+  "healing": null,
+  "areaOfEffect": {
+    "shape": "CYLINDER",
+    "size": 20
+  },
+  "school": {
+    "id": "evocation",
+    "name": "Evocation",
+    "url": "/magic-schools/evocation"
+  },
+  "classes": [
+    {
+      "id": "druid",
+      "name": "Druid",
+      "url": "/classes/druid"
+    },
+    {
+      "id": "sorcerer",
+      "name": "Sorcerer",
+      "url": "/classes/sorcerer"
+    },
+    {
+      "id": "wizard",
+      "name": "Wizard",
+      "url": "/classes/wizard"
+    }
+  ],
+  "scroll": {
+    "value": 2500,
+    "saveDC": 15,
+    "attackBonus": 7
+  },
+  "enchanting": {
+    "minLevel": 6,
+    "cost": 2500,
+    "days": 100
+  }
+}

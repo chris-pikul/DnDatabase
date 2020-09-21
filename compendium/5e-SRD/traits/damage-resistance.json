@@ -1,0 +1,16 @@
+{
+  "type": "TRAIT",
+  "id": "damage-resistance",
+  "name": "Damage Resistance",
+  "url": "/traits/damage-resistance",
+  "source": "PHB",
+  "description": "You have resistance to the damage type associated with your draconic ancestry.",
+  "races": [
+    {
+      "id": "dragonborn",
+      "name": "Damage Resistance",
+      "url": "/races/dragonborn"
+    }
+  ],
+  "subRaces": []
+}

@@ -1,0 +1,19 @@
+{
+  "type": "ITEM",
+  "id": "quiver",
+  "name": "Quiver",
+  "url": "/items/quiver",
+  "source": "PHB",
+  "description": "A quiver can hold up to 20 arrows.",
+  "category": {
+    "id": "general",
+    "name": "General",
+    "url": "/items/"
+  },
+  "subCategory": "STANDARD_GEAR",
+  "cost": "1GP",
+  "weight": 1,
+  "weaponDetails": null,
+  "armorDetails": null,
+  "vehicleDetails": null
+}

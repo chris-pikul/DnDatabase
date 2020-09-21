@@ -1,0 +1,49 @@
+{
+  "type": "ITEM",
+  "id": "scimitar",
+  "name": "Scimitar",
+  "url": "/items/weapon/scimitar",
+  "source": "PHB",
+  "description": "",
+  "category": {
+    "id": "weapon",
+    "name": "Weapon",
+    "url": "/items/weapon/"
+  },
+  "subCategory": null,
+  "cost": "25GP",
+  "weight": 3,
+  "weaponDetails": {
+    "type": "MARTIAL",
+    "properties": [
+      {
+        "id": "finesse",
+        "name": "Finesse",
+        "url": "/weapon-properties/finesse"
+      },
+      {
+        "id": "light",
+        "name": "Light",
+        "url": "/weapon-properties/light"
+      }
+    ],
+    "range": {
+      "type": "MELEE",
+      "normal": 5,
+      "long": 0
+    },
+    "damage": {
+      "amount": "1d6",
+      "twoHanded": null,
+      "type": {
+        "id": "slashing",
+        "name": "Slashing",
+        "url": "/damage-types/slashing"
+      }
+    },
+    "throw": null,
+    "extra": null
+  },
+  "armorDetails": null,
+  "vehicleDetails": null
+}

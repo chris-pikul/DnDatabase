@@ -1,0 +1,57 @@
+{
+  "type": "EQUIPMENT_PACK",
+  "id": "explorers-pack",
+  "name": "Explorer's Pack",
+  "url": "/equipment-packs/explorers-pack",
+  "cost": "10GP",
+  "contents": [
+    {
+      "id": "backpack",
+      "name": "Backpack",
+      "url": "/items/backpack",
+      "quantity": 1
+    },
+    {
+      "id": "bedroll",
+      "name": "Bedroll",
+      "url": "/items/bedroll",
+      "quantity": 1
+    },
+    {
+      "id": "mess-kit",
+      "name": "Mess Kit",
+      "url": "/items/mess-kit",
+      "quantity": 1
+    },
+    {
+      "id": "tinderbox",
+      "name": "Tinderbox",
+      "url": "/items/tinderbox",
+      "quantity": 1
+    },
+    {
+      "id": "torch",
+      "name": "Torch",
+      "url": "/items/torch",
+      "quantity": 10
+    },
+    {
+      "id": "rations-1-day",
+      "name": "Rations (1 day)",
+      "url": "/items/rations-1-day",
+      "quantity": 10
+    },
+    {
+      "id": "waterskin",
+      "name": "Waterskin",
+      "url": "/items/waterskin",
+      "quantity": 1
+    },
+    {
+      "id": "disguise-kit",
+      "name": "Disguise Kit",
+      "url": "/items/disguise-kit",
+      "quantity": 1
+    }
+  ]
+}
