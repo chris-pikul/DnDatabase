@@ -7,6 +7,7 @@ const {
 module.exports = data => data.map(lang => {
     const id = MakeKabob(lang.index);
     const out = {
+        type: 'LANGUAGE',
         id,
         name: MakeTitleCase(lang.name),
         url: MakeURL('languages', id),

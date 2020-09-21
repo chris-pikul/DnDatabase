@@ -18,6 +18,7 @@ module.exports = data => {
     return data.map(skl => {
         const id = MakeKabob(skl.index);
         const out = {
+            type: 'SKILL',
             id,
             name: MakeTitleCase(skl.name),
             url: MakeURL('skills', id),

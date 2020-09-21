@@ -1,9 +1,4 @@
-const fs = require('fs');
-const path = require('path');
-
-function buildDictionary() {
-    
-}
+const buildDictionary = require('./dictionary');
 
 const cliArgs = process.argv.slice(2);
 if(cliArgs.length === 0) {
@@ -13,7 +8,7 @@ if(cliArgs.length === 0) {
     const op = cliArgs[0].toUpperCase();
     switch(op) {
         case 'ALL':
-
+            buildDictionary();
             break;
         default:
             console.error(`Unknown operation '${op}'`);

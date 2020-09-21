@@ -7,6 +7,7 @@ const {
 
 module.exports = data => data.map(abl => {
     const out = {
+        type: 'ABILITY_SCORE',
         id: MakeKabob(abl.index),
         name: abl.full_name.trim(),
         url: MakeURL('ability-scores', abl.name),

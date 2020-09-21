@@ -9,6 +9,7 @@ const {
 module.exports = data => data.map(trt => {
     const id = MakeKabob(trt.index);
     const out = {
+        type: 'TRAIT',
         id,
         name: MakeTitleCase(trt.name),
         url: MakeURL('traits', id),

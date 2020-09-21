@@ -3,6 +3,7 @@ const { MakeKabob, MakeURL } = require('./utils');
 module.exports = data => data.map(con => {
     const id = MakeKabob(con.index);
     const out = {
+        type: 'CONDITION',
         id,
         name: con.name,
         url: MakeURL('conditions', id),

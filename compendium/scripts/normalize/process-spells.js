@@ -11,11 +11,13 @@ const {
 
 module.exports = data => data.map(spl => {
     const out = {
+        type: 'SPELL',
         id: MakeKabob(spl.index),
         name: spl.name,
         url: MakeURL('spells', spl.index),
         source: 'PHB',
         level: spl.level ? parseInt(spl.level) : 0,
+        rarity: 'COMMON',
     };
 
     if(spl.desc && Array.isArray(spl.desc))
@@ -169,85 +171,181 @@ module.exports = data => data.map(spl => {
 
     //Scroll data
     switch(out.level) {
-        case 0:
+        case 0: //COMMON
+            out.rarity = 'COMMON';
+
             out.scroll = {
-                rarity: 'COMMON',
                 value: 50 + componentCost,
                 saveDC: 13,
                 attackBonus: 5,
             };
+
+            out.enchanting = {
+                minLevel: 3,
+                cost: 50,
+                days: 1,
+            };
+            out.enchanting.days = Math.ceil(out.enchanting.cost / 25);
+            out.enchanting.cost += componentCost * out.enchanting.days;
+
             break;
-        case 1:
+        case 1: //COMMON
+            out.rarity = 'COMMON';
+            
             out.scroll = {
-                rarity: 'COMMON',
                 value: 100 + componentCost,
                 saveDC: 13,
                 attackBonus: 5,
             };
+
+            out.enchanting = {
+                minLevel: 3,
+                cost: 100,
+                days: 1,
+            };
+            out.enchanting.days = Math.ceil(out.enchanting.cost / 25);
+            out.enchanting.cost += componentCost * out.enchanting.days;
             break;
-        case 2:
+        case 2: //UNCOMMON
+            out.rarity = 'UNCOMMON';
+        
             out.scroll = {
-                rarity: 'UNCOMMON',
                 value: 250 + componentCost,
                 saveDC: 13,
                 attackBonus: 5,
             };
+
+            out.enchanting = {
+                minLevel: 3,
+                cost: 250,
+                days: 1,
+            };
+            out.enchanting.days = Math.ceil(out.enchanting.cost / 25);
+            out.enchanting.cost += componentCost * out.enchanting.days;
             break;
-        case 3:
+        case 3: //UNCOMMON
+            out.rarity = 'UNCOMMON';
+            
             out.scroll = {
-                rarity: 'UNCOMMON',
                 value: 500 + componentCost,
                 saveDC: 15,
                 attackBonus: 7,
             };
+
+            out.enchanting = {
+                minLevel: 3,
+                cost: 500,
+                days: 1,
+            };
+            out.enchanting.days = Math.ceil(out.enchanting.cost / 25);
+            out.enchanting.cost += componentCost * out.enchanting.days;
             break;
-        case 4:
+        case 4: //RARE
+            out.rarity = 'RARE';
+            
             out.scroll = {
-                rarity: 'RARE',
                 value: 2500 + componentCost,
                 saveDC: 15,
                 attackBonus: 7,
             };
+
+            out.enchanting = {
+                minLevel: 6,
+                cost: 2500,
+                days: 1,
+            };
+            out.enchanting.days = Math.ceil(out.enchanting.cost / 25);
+            out.enchanting.cost += componentCost * out.enchanting.days;
+
             break;
-        case 5:
+        case 5: //RARE
+            out.rarity = 'RARE';
+            
             out.scroll = {
-                rarity: 'RARE',
                 value: 5000 + componentCost,
                 saveDC: 17,
                 attackBonus: 9,
             };
+
+            out.enchanting = {
+                minLevel: 6,
+                cost: 5000,
+                days: 1,
+            };
+            out.enchanting.days = Math.ceil(out.enchanting.cost / 25);
+            out.enchanting.cost += componentCost * out.enchanting.days;
+
             break;
-        case 6:
+        case 6: //VERY_RARE
+            out.rarity = 'VERY_RARE';
+            
             out.scroll = {
-                rarity: 'VERY_RARE',
                 value: 10000 + componentCost,
                 saveDC: 17,
                 attackBonus: 9,
             };
+
+            out.enchanting = {
+                minLevel: 11,
+                cost: 10000,
+                days: 1,
+            };
+            out.enchanting.days = Math.ceil(out.enchanting.cost / 25);
+            out.enchanting.cost += componentCost * out.enchanting.days;
+
             break;
-        case 7:
+        case 7: //VERY_RARE
+            out.rarity = 'VERY_RARE';
+            
             out.scroll = {
-                rarity: 'VERY_RARE',
                 value: 25000 + componentCost,
                 saveDC: 18,
                 attackBonus: 10,
             };
+
+            out.enchanting = {
+                minLevel: 11,
+                cost: 25000,
+                days: 1,
+            };
+            out.enchanting.days = Math.ceil(out.enchanting.cost / 25);
+            out.enchanting.cost += componentCost * out.enchanting.days;
+
             break;
-        case 8:
+        case 8: //VERY_RARE
+            out.rarity = 'VERY_RARE';
+            
             out.scroll = {
-                rarity: 'VERY_RARE',
                 value: 50000 + componentCost,
                 saveDC: 18,
                 attackBonus: 10,
             };
+
+            out.enchanting = {
+                minLevel: 11,
+                cost: 50000,
+                days: 1,
+            };
+            out.enchanting.days = Math.ceil(out.enchanting.cost / 25);
+            out.enchanting.cost += componentCost * out.enchanting.days;
+
             break;
-        case 9:
+        case 9: //LEGENDARY
+            out.rarity = 'LEGENDARY';
+            
             out.scroll = {
-                rarity: 'LEGENDARY',
                 value: 100000 + componentCost,
                 saveDC: 19,
                 attackBonus: 11,
             };
+
+            out.enchanting = {
+                minLevel: 17,
+                cost: 100000,
+                days: 1,
+            };
+            out.enchanting.days = Math.ceil(out.enchanting.cost / 25);
+            out.enchanting.cost += componentCost * out.enchanting.days;
             break;
     }
 

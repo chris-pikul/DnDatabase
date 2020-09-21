@@ -16,11 +16,14 @@ module.exports = data => {
     const tools = [];
     const vehicle = [];
     const misc = [];
+    const instruments = [];
+    const gaming = [];
 
     var packs = [];
 
     data.forEach(eqp => {
         const out = {
+            type: 'ITEM',
             id: MakeKabob(eqp.index),
             name: eqp.name.trim(),
             url: '', //Changed below
@@ -45,16 +48,16 @@ module.exports = data => {
 
         //Weight?
         if(eqp.weight)
-            out.weight = parseInt(eqp.weight);
+            out.weight = parseFloat(eqp.weight);
 
         //Multiple types of sub-categories. Just normalize them I suppose
         if(eqp.weapon_category) {
             out.category = {
                 id: 'weapon',
                 name: 'Weapon',
-                url: '/equipment/weapon/',
+                url: '/items/weapon/',
             };
-            out.url = MakeURL('equipment', 'weapon', out.id);
+            out.url = MakeURL('items', 'weapon', out.id);
 
             const wep = {
                 type: MakeEnum(eqp.weapon_category),
@@ -111,9 +114,9 @@ module.exports = data => {
             out.category = {
                 id: 'armor',
                 name: 'Armor',
-                url: '/equipment/armor/',
+                url: '/items/armor/',
             };
-            out.url = MakeURL('equipment', 'armor', out.id);
+            out.url = MakeURL('items', 'armor', out.id);
 
             const arm = {
                 type: MakeEnum(eqp.armor_category),
@@ -142,6 +145,7 @@ module.exports = data => {
         } else if(eqp.gear_category) {
             if(eqp.contents) {
                 const pack = {
+                    type: 'EQUIPMENT_PACK',
                     id: out.id,
                     name: MakeTitleCase(eqp.name),
                     url: MakeURL('equipment-packs', eqp.index),
@@ -149,7 +153,7 @@ module.exports = data => {
                     contents: eqp.contents.map(ent => ({
                         id: ExtractIDFromURL(ent.item_url),
                         name: '',
-                        url: MakeURL('equipment', 'general', ExtractIDFromURL(ent.item_url)),
+                        url: MakeURL('items', ExtractIDFromURL(ent.item_url)),
                         quantity: parseInt(ent.quantity || 1),
                     })),
                 };
@@ -158,29 +162,49 @@ module.exports = data => {
             } else {
                 out.category = {
                     id: 'general',
-                    name: 'general',
-                    url: '/equipment/general/',
+                    name: 'General',
+                    url: '/items/',
                 };
-                out.url = MakeURL('equipment', 'general', out.id);
+                out.url = MakeURL('items', out.id);
 
                 out.subCategory = MakeEnum(eqp.gear_category);
 
                 misc.push(out);
             }
         } else if(eqp.tool_category) {
-            out.category = {
-                id: 'tools',
-                name: 'Tools',
-                url: '/equipment/tools/',
-            };
-            out.url = MakeURL('equipment', 'tools', out.id);
+            if(eqp.tool_category === 'Musical Instrument') {
+                out.category = {
+                    id: 'instruments',
+                    name: 'Musical Instruments',
+                    url: '/items/instrument/',
+                };
+                out.url = MakeURL('items', 'instrument', out.id);
 
-            out.subCategory = MakeEnum(eqp.tool_category);
+                instruments.push(out);
+            } else if(eqp.tool_category === 'Artisan\'s Tools') {
+                out.category = {
+                    id: 'tools',
+                    name: 'Tools',
+                    url: '/items/tools/',
+                };
+                out.url = MakeURL('items', 'tools', out.id);
 
-            tools.push(out);
+                tools.push(out);
+            } else if(eqp.tool_category === 'Gaming Sets') {
+                out.category = {
+                    id: 'gaming-sets',
+                    name: 'Gaming Sets',
+                    url: '/items/gaming/',
+                };
+                out.url = MakeURL('items', 'gaming', out.id);
+
+                gaming.push(out);
+            }
         } else if(eqp.vehicle_category) {
             out.type = 'VEHICLE';
             if(eqp.vehicle_category.indexOf('Mounts') !== -1) {
+                out.url = MakeURL('vehicles', 'land', out.id);
+
                 out.subType = 'MOUNT';
 
                 out.vehicleDetails = {
@@ -190,8 +214,10 @@ module.exports = data => {
                     capacity: eqp.capacity || 0,
                 };
             } else if(eqp.vehicle_category.indexOf('Tack') !== -1) {
+                out.url = MakeURL('vehicles', 'land', out.id);
                 out.subType = 'SUPPLIES';
             } else if(eqp.vehicle_category.indexOf('Waterborne') !== -1) {
+                out.url = MakeURL('vehicles', 'water', out.id);
                 out.subType = 'NAVAL';
 
                 out.vehicleDetails = {
@@ -201,31 +227,10 @@ module.exports = data => {
                     capacity: 0,
                 };
             }
+
+            vehicle.push(out);
         }
     });
-
-    var outPath;
-
-    //Write out the weapons
-    outPath = Path.resolve('..', 'weapons.json');
-    console.log(`Writing weapon data to "${outPath}"`);
-    FS.writeFileSync(outPath, JSON.stringify(weapons, null, 2), 'utf8');
-
-    //Write out the armor
-    outPath = Path.resolve('..', 'armor.json');
-    console.log(`Writing armor data to "${outPath}"`);
-    FS.writeFileSync(outPath, JSON.stringify(armor, null, 2), 'utf8');
-
-    //Write out the general
-    outPath = Path.resolve('..', 'general-equipment.json');
-    console.log(`Writing general data to "${outPath}"`);
-    FS.writeFileSync(outPath, JSON.stringify(misc, null, 2), 'utf8');
-
-    //Write out the tools
-    outPath = Path.resolve('..', 'tools.json');
-    console.log(`Writing tools data to "${outPath}"`);
-    FS.writeFileSync(outPath, JSON.stringify(tools, null, 2), 'utf8');
-
 
     //Figure out the packs
     packs = packs.map(pack => ({
@@ -234,16 +239,13 @@ module.exports = data => {
             const item = misc.find(chk => ent.url == chk.url);
             if(item) {
                 ent.name = item.name;
+                ent.url = item.url;
             } else {
                 console.warn('Unable to find name for item', ent.url);
             }
             return ent;
         }),
     }));
-    outPath = Path.resolve('..', 'packs.json');
-    console.log(`Writing packs data to "${outPath}"`);
-    FS.writeFileSync(outPath, JSON.stringify(packs, null, 2), 'utf8');
 
-
-    return null;
+    return armor.concat(weapons, tools, instruments, gaming, vehicle, misc, packs);
 };

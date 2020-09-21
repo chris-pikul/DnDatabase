@@ -27,5 +27,8 @@
   "bugs": {
     "url": "https://github.com/chris-pikul/DnDatabase/issues"
   },
-  "homepage": "https://github.com/chris-pikul/DnDatabase#readme"
+  "homepage": "https://github.com/chris-pikul/DnDatabase#readme",
+  "dependencies": {
+    "rimraf": "^3.0.2"
+  }
 }
