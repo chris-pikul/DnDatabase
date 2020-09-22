@@ -5,6 +5,7 @@
   "url": "/races/elf",
   "source": "PHB",
   "description": "",
+  "race": null,
   "alignment": "Elves love freedom, variety, and self-expression, so they lean strongly toward the gentler aspects of chaos. They value and protect others' freedom as well as their own, and they are more often good than not. The drow are an exception; their exile has made them vicious and dangerous. Drow are more often evil than not.",
   "age": {
     "adulthood": 100,
@@ -52,23 +53,26 @@
     "options": null,
     "description": "You can speak, read, and write Common and Elvish. Elvish is fluid, with subtle intonations and intricate grammar. Elven literature is rich and varied, and their songs and poems are famous among other races. Many bards learn their language so they can add Elvish ballads to their repertoires."
   },
-  "traits": [
-    {
-      "id": "darkvision",
-      "name": "Darkvision",
-      "url": "/traits/darkvision"
-    },
-    {
-      "id": "fey-ancestry",
-      "name": "Fey Ancestry",
-      "url": "/traits/fey-ancestry"
-    },
-    {
-      "id": "trance",
-      "name": "Trance",
-      "url": "/traits/trance"
-    }
-  ],
+  "traits": {
+    "starting": [
+      {
+        "id": "darkvision",
+        "name": "Darkvision",
+        "url": "/traits/darkvision"
+      },
+      {
+        "id": "fey-ancestry",
+        "name": "Fey Ancestry",
+        "url": "/traits/fey-ancestry"
+      },
+      {
+        "id": "trance",
+        "name": "Trance",
+        "url": "/traits/trance"
+      }
+    ],
+    "options": null
+  },
   "subRaces": [
     {
       "id": "high-elf",

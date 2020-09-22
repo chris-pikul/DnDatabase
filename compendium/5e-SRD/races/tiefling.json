@@ -5,6 +5,7 @@
   "url": "/races/tiefling",
   "source": "PHB",
   "description": "",
+  "race": null,
   "alignment": "Tieflings might not have an innate tendency toward evil, but many of them end up there. Evil or not, an independent nature inclines many tieflings toward a chaotic alignment.",
   "age": {
     "adulthood": 0,
@@ -52,22 +53,25 @@
     "options": null,
     "description": "You can speak, read, and write Common and Infernal."
   },
-  "traits": [
-    {
-      "id": "darkvision",
-      "name": "Darkvision",
-      "url": "/traits/darkvision"
-    },
-    {
-      "id": "hellish-resistance",
-      "name": "Hellish Resistance",
-      "url": "/traits/hellish-resistance"
-    },
-    {
-      "id": "infernal-legacy",
-      "name": "Infernal Legacy",
-      "url": "/traits/infernal-legacy"
-    }
-  ],
+  "traits": {
+    "starting": [
+      {
+        "id": "darkvision",
+        "name": "Darkvision",
+        "url": "/traits/darkvision"
+      },
+      {
+        "id": "hellish-resistance",
+        "name": "Hellish Resistance",
+        "url": "/traits/hellish-resistance"
+      },
+      {
+        "id": "infernal-legacy",
+        "name": "Infernal Legacy",
+        "url": "/traits/infernal-legacy"
+      }
+    ],
+    "options": null
+  },
   "subRaces": []
 }

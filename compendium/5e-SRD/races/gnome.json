@@ -5,6 +5,7 @@
   "url": "/races/gnome",
   "source": "PHB",
   "description": "",
+  "race": null,
   "alignment": "Gnomes are most often good. Those who tend toward law are sages, engineers, researchers, scholars, investigators, or inventors. Those who tend toward chaos are minstrels, tricksters, wanderers, or fanciful jewelers. Gnomes are good-hearted, and even the tricksters among them are more playful than vicious.",
   "age": {
     "adulthood": 40,
@@ -46,18 +47,21 @@
     "options": null,
     "description": "You can speak, read, and write Common and Gnomish. The Gnomish language, which uses the Dwarvish script, is renowned for its technical treatises and its catalogs of knowledge about the natural world."
   },
-  "traits": [
-    {
-      "id": "darkvision",
-      "name": "Darkvision",
-      "url": "/traits/darkvision"
-    },
-    {
-      "id": "gnome-cunning",
-      "name": "Gnome Cunning",
-      "url": "/traits/gnome-cunning"
-    }
-  ],
+  "traits": {
+    "starting": [
+      {
+        "id": "darkvision",
+        "name": "Darkvision",
+        "url": "/traits/darkvision"
+      },
+      {
+        "id": "gnome-cunning",
+        "name": "Gnome Cunning",
+        "url": "/traits/gnome-cunning"
+      }
+    ],
+    "options": null
+  },
   "subRaces": [
     {
       "id": "rock-gnome",

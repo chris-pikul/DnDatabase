@@ -15,6 +15,7 @@ const processWeaponProperties = require('./process-weapon-properties');
 const processTraits = require('./process-traits');
 const processProfeciencies = require('./process-profeciencies');
 const processRaces = require('./process-races');
+const processSubraces = require('./process-subraces');
 
 function buildDirs() {
     const subFolders = [ '5e-SRD', 'homebrew' ];
@@ -124,6 +125,7 @@ if(cliArgs.length === 0) {
             normalize( '5e-SRD-Traits.json', 'traits.json', processTraits);
             normalize( '5e-SRD-Proficiencies.json', 'proficiencies.json', processProfeciencies);
             normalize( '5e-SRD-Races.json', 'races.json', processRaces);
+            normalize( '5e-SRD-Subraces.json', 'subraces.json', processSubraces);
             
             break;
         case 'DIRECTORIES':
@@ -172,6 +174,7 @@ if(cliArgs.length === 0) {
             break;
         case 'RACES':
             normalize( '5e-SRD-Races.json', 'races.json', processRaces);
+            normalize( '5e-SRD-Subraces.json', 'subraces.json', processSubraces);
             break;
         default:
             console.error(`Unknown operation '${op}'`);

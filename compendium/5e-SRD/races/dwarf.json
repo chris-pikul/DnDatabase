@@ -5,6 +5,7 @@
   "url": "/races/dwarf",
   "source": "PHB",
   "description": "",
+  "race": null,
   "alignment": "Most dwarves are lawful, believing firmly in the benefits of a well-ordered society. They tend toward good as well, with a strong sense of fair play and a belief that everyone deserves to share in the benefits of a just order.",
   "age": {
     "adulthood": 50,
@@ -86,28 +87,31 @@
     "options": null,
     "description": "You can speak, read, and write Common and Dwarvish. Dwarvish is full of hard consonants and guttural sounds, and those characteristics spill over into whatever other language a dwarf might speak."
   },
-  "traits": [
-    {
-      "id": "darkvision",
-      "name": "Darkvision",
-      "url": "/traits/darkvision"
-    },
-    {
-      "id": "dwarven-resilience",
-      "name": "Dwarven Resilience",
-      "url": "/traits/dwarven-resilience"
-    },
-    {
-      "id": "stonecunning",
-      "name": "Stonecunning",
-      "url": "/traits/stonecunning"
-    },
-    {
-      "id": "dwarven-combat-training",
-      "name": "Dwarven Combat Training",
-      "url": "/traits/dwarven-combat-training"
-    }
-  ],
+  "traits": {
+    "starting": [
+      {
+        "id": "darkvision",
+        "name": "Darkvision",
+        "url": "/traits/darkvision"
+      },
+      {
+        "id": "dwarven-resilience",
+        "name": "Dwarven Resilience",
+        "url": "/traits/dwarven-resilience"
+      },
+      {
+        "id": "stonecunning",
+        "name": "Stonecunning",
+        "url": "/traits/stonecunning"
+      },
+      {
+        "id": "dwarven-combat-training",
+        "name": "Dwarven Combat Training",
+        "url": "/traits/dwarven-combat-training"
+      }
+    ],
+    "options": null
+  },
   "subRaces": [
     {
       "id": "hill-dwarf",

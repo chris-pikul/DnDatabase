@@ -3,44 +3,20 @@ const {
     MakeURL,
     MakeTitleCase,
     MakeObj,
-    MakeEnum,
     ExtractIDFromURL,
 } = require('./utils');
-
-const extractAge = inp => {
-    let matches = inp.match(/(\d+)/g);
-    if(matches && matches.length > 1) {
-        matches = matches.map(m => parseInt(m));
-        matches.sort((a,b) => (a > b ? 1 : (a < b ? -1 : 0)));
-        return [ matches[0], matches[matches.length - 1]];
-    }
-    return null;
-};
 
 module.exports = data => data.map(race => {
     const id = MakeKabob(race.index);
     const out = {
-        type: 'RACE',
+        type: 'SUB_RACE',
         id,
         name: MakeTitleCase(race.name),
-        url: MakeURL('races', id),
+        url: MakeURL('races/sub-races', id),
         source: 'PHB',
-        description: '',
+        description: (race.desc || '').trim(),
 
-        race: null,
-        
-        alignment: (race.alignment || '').trim(),
-
-        age: {
-            adulthood: 0,
-            lifespan: 0,
-            description: (race.age || '').trim(),
-        },
-
-        size: {
-            type: MakeEnum(race.size),
-            description: (race.size_description || '').trim(),
-        },
+        race: MakeObj('races', ExtractIDFromURL(race.race.url), MakeTitleCase(race.race.name)),
 
         abilityScores: { 
             starting: [], 
@@ -65,15 +41,6 @@ module.exports = data => data.map(race => {
 
         subRaces: [],
     };
-
-    //Figure out age range
-    let ageMatch = extractAge(race.age);
-    if(ageMatch) {
-        out.age.adulthood = ageMatch[0];
-        out.age.lifespan = ageMatch[1];
-    } else {
-        console.warn(`Unable to determin age range for ${out.id}`);
-    }
 
     //Ability scores
     if(race.ability_bonuses && Array.isArray(race.ability_bonuses)) {
@@ -125,8 +92,15 @@ module.exports = data => data.map(race => {
     }
 
     //Traits
-    if(race.traits && Array.isArray(race.traits)) {
-        out.traits.starting = race.traits.map(t => MakeObj('traits', ExtractIDFromURL(t.url), MakeTitleCase(t.name)));
+    if(race.racial_traits && Array.isArray(race.racial_traits)) {
+        out.traits.starting = race.racial_traits.map(t => MakeObj('traits', ExtractIDFromURL(t.url), MakeTitleCase(t.name)));
+    }
+    if(race.racial_trait_options && race.racial_trait_options.choose) {
+        const opt = race.racial_trait_options;
+        out.traits.options = {
+            number: parseInt(opt.choose || 1),
+            choices: opt.from.map(o => MakeObj('traits', ExtractIDFromURL(o.url), MakeTitleCase(o.name))),
+        }
     }
 
     //SubRaces

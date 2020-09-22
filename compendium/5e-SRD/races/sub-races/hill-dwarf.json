@@ -1,0 +1,44 @@
+{
+  "type": "SUB_RACE",
+  "id": "hill-dwarf",
+  "name": "Hill Dwarf",
+  "url": "/races/sub-races/hill-dwarf",
+  "source": "PHB",
+  "description": "As a hill dwarf, you have keen senses, deep intuition, and remarkable resilience.",
+  "race": {
+    "id": "dwarf",
+    "name": "Dwarf",
+    "url": "/races/dwarf"
+  },
+  "abilityScores": {
+    "starting": [
+      {
+        "id": "wis",
+        "name": "Wis",
+        "url": "/ability-scores/wis",
+        "amount": 1
+      }
+    ],
+    "options": null
+  },
+  "proficiencies": {
+    "starting": [],
+    "options": null
+  },
+  "languages": {
+    "starting": [],
+    "options": null,
+    "description": ""
+  },
+  "traits": {
+    "starting": [
+      {
+        "id": "dwarven-toughness",
+        "name": "Dwarven Toughness",
+        "url": "/traits/dwarven-toughness"
+      }
+    ],
+    "options": null
+  },
+  "subRaces": []
+}

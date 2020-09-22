@@ -1,0 +1,60 @@
+{
+  "type": "SUB_RACE",
+  "id": "rock-gnome",
+  "name": "Rock Gnome",
+  "url": "/races/sub-races/rock-gnome",
+  "source": "PHB",
+  "description": "As a rock gnome, you have a natural inventiveness and hardiness beyond that of other gnomes.",
+  "race": {
+    "id": "gnome",
+    "name": "Gnome",
+    "url": "/races/gnome"
+  },
+  "abilityScores": {
+    "starting": [
+      {
+        "id": "con",
+        "name": "Con",
+        "url": "/ability-scores/con",
+        "amount": 1
+      }
+    ],
+    "options": null
+  },
+  "proficiencies": {
+    "starting": [],
+    "options": null
+  },
+  "languages": {
+    "starting": [
+      {
+        "id": "common",
+        "name": "Common",
+        "url": "/languages/common"
+      },
+      {
+        "id": "gnomish",
+        "name": "Gnomish",
+        "url": "/languages/gnomish"
+      }
+    ],
+    "options": null,
+    "description": ""
+  },
+  "traits": {
+    "starting": [
+      {
+        "id": "artificers-lore",
+        "name": "Artificer's Lore",
+        "url": "/traits/artificers-lore"
+      },
+      {
+        "id": "tinker",
+        "name": "Tinker",
+        "url": "/traits/tinker"
+      }
+    ],
+    "options": null
+  },
+  "subRaces": []
+}
