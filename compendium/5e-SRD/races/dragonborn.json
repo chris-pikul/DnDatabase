@@ -1,0 +1,73 @@
+{
+  "type": "RACE",
+  "id": "dragonborn",
+  "name": "Dragonborn",
+  "url": "/races/dragonborn",
+  "source": "PHB",
+  "description": "",
+  "alignment": "Dragonborn tend to extremes, making a conscious choice for one side or the other in the cosmic war between good and evil. Most dragonborn are good, but those who side with evil can be terrible villains.",
+  "age": {
+    "adulthood": 3,
+    "lifespan": 80,
+    "description": "Young dragonborn grow quickly. They walk hours after hatching, attain the size and development of a 10-year-old human child by the age of 3, and reach adulthood by 15. They live to be around 80."
+  },
+  "size": {
+    "type": "MEDIUM",
+    "description": "Dragonborn are taller and heavier than humans, standing well over 6 feet tall and averaging almost 250 pounds. Your size is Medium."
+  },
+  "abilityScores": {
+    "starting": [
+      {
+        "id": "str",
+        "name": "Str",
+        "url": "/ability-scores/str",
+        "amount": 2
+      },
+      {
+        "id": "cha",
+        "name": "Cha",
+        "url": "/ability-scores/cha",
+        "amount": 1
+      }
+    ],
+    "options": null
+  },
+  "proficiencies": {
+    "starting": [],
+    "options": null
+  },
+  "languages": {
+    "starting": [
+      {
+        "id": "common",
+        "name": "Common",
+        "url": "/languages/common"
+      },
+      {
+        "id": "draconic",
+        "name": "Draconic",
+        "url": "/languages/draconic"
+      }
+    ],
+    "options": null,
+    "description": "You can speak, read, and write Common and Draconic. Draconic is thought to be one of the oldest languages and is often used in the study of magic. The language sounds harsh to most other creatures and includes numerous hard consonants and sibilants."
+  },
+  "traits": [
+    {
+      "id": "draconic-ancestry",
+      "name": "Draconic Ancestry",
+      "url": "/traits/draconic-ancestry"
+    },
+    {
+      "id": "breath-weapon",
+      "name": "Breath Weapon",
+      "url": "/traits/breath-weapon"
+    },
+    {
+      "id": "damage-resistance",
+      "name": "Damage Resistance",
+      "url": "/traits/damage-resistance"
+    }
+  ],
+  "subRaces": []
+}

@@ -1,0 +1,175 @@
+{
+  "type": "RACE",
+  "id": "half-elf",
+  "name": "Half-elf",
+  "url": "/races/half-elf",
+  "source": "PHB",
+  "description": "",
+  "alignment": "Half-elves share the chaotic bent of their elven heritage. They value both personal freedom and creative expression, demonstrating neither love of leaders nor desire for followers. They chafe at rules, resent others' demands, and sometimes prove unreliable, or at least unpredictable.",
+  "age": {
+    "adulthood": 20,
+    "lifespan": 180,
+    "description": "Half-elves mature at the same rate humans do and reach adulthood around the age of 20. They live much longer than humans, however, often exceeding 180 years."
+  },
+  "size": {
+    "type": "MEDIUM",
+    "description": "Half-elves are about the same size as humans, ranging from 5 to 6 feet tall. Your size is Medium."
+  },
+  "abilityScores": {
+    "starting": [
+      {
+        "id": "cha",
+        "name": "Cha",
+        "url": "/ability-scores/cha",
+        "amount": 2
+      }
+    ],
+    "options": {
+      "number": 2,
+      "choices": [
+        {
+          "id": "str",
+          "name": "Str",
+          "url": "/ability-scores/str",
+          "amount": 1
+        },
+        {
+          "id": "dex",
+          "name": "Dex",
+          "url": "/ability-scores/dex",
+          "amount": 1
+        },
+        {
+          "id": "con",
+          "name": "Con",
+          "url": "/ability-scores/con",
+          "amount": 1
+        },
+        {
+          "id": "int",
+          "name": "Int",
+          "url": "/ability-scores/int",
+          "amount": 1
+        },
+        {
+          "id": "wis",
+          "name": "Wis",
+          "url": "/ability-scores/wis",
+          "amount": 1
+        }
+      ]
+    }
+  },
+  "proficiencies": {
+    "starting": [],
+    "options": null
+  },
+  "languages": {
+    "starting": [
+      {
+        "id": "common",
+        "name": "Common",
+        "url": "/languages/common"
+      },
+      {
+        "id": "elvish",
+        "name": "Elvish",
+        "url": "/languages/elvish"
+      }
+    ],
+    "options": {
+      "number": 1,
+      "choices": [
+        {
+          "id": "dwarvish",
+          "name": "Dwarvish",
+          "url": "/languages/dwarvish"
+        },
+        {
+          "id": "giant",
+          "name": "Giant",
+          "url": "/languages/giant"
+        },
+        {
+          "id": "gnomish",
+          "name": "Gnomish",
+          "url": "/languages/gnomish"
+        },
+        {
+          "id": "goblin",
+          "name": "Goblin",
+          "url": "/languages/goblin"
+        },
+        {
+          "id": "halfling",
+          "name": "Halfling",
+          "url": "/languages/halfling"
+        },
+        {
+          "id": "orc",
+          "name": "Orc",
+          "url": "/languages/orc"
+        },
+        {
+          "id": "abyssal",
+          "name": "Abyssal",
+          "url": "/languages/abyssal"
+        },
+        {
+          "id": "celestial",
+          "name": "Celestial",
+          "url": "/languages/celestial"
+        },
+        {
+          "id": "draconic",
+          "name": "Draconic",
+          "url": "/languages/draconic"
+        },
+        {
+          "id": "deep-speech",
+          "name": "Deep Speech",
+          "url": "/languages/deep-speech"
+        },
+        {
+          "id": "infernal",
+          "name": "Infernal",
+          "url": "/languages/infernal"
+        },
+        {
+          "id": "primordial",
+          "name": "Primordial",
+          "url": "/languages/primordial"
+        },
+        {
+          "id": "sylvan",
+          "name": "Sylvan",
+          "url": "/languages/sylvan"
+        },
+        {
+          "id": "undercommon",
+          "name": "Undercommon",
+          "url": "/languages/undercommon"
+        }
+      ]
+    },
+    "description": "You can speak, read, and write Common, Elvish, and one extra language of your choice."
+  },
+  "traits": [
+    {
+      "id": "darkvision",
+      "name": "Darkvision",
+      "url": "/traits/darkvision"
+    },
+    {
+      "id": "fey-ancestry",
+      "name": "Fey Ancestry",
+      "url": "/traits/fey-ancestry"
+    },
+    {
+      "id": "skill-versatility",
+      "name": "Skill Versatility",
+      "url": "/traits/skill-versatility"
+    }
+  ],
+  "subRaces": []
+}

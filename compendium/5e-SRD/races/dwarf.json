@@ -1,0 +1,118 @@
+{
+  "type": "RACE",
+  "id": "dwarf",
+  "name": "Dwarf",
+  "url": "/races/dwarf",
+  "source": "PHB",
+  "description": "",
+  "alignment": "Most dwarves are lawful, believing firmly in the benefits of a well-ordered society. They tend toward good as well, with a strong sense of fair play and a belief that everyone deserves to share in the benefits of a just order.",
+  "age": {
+    "adulthood": 50,
+    "lifespan": 350,
+    "description": "Dwarves mature at the same rate as humans, but they're considered young until they reach the age of 50. On average, they live about 350 years."
+  },
+  "size": {
+    "type": "MEDIUM",
+    "description": "Dwarves stand between 4 and 5 feet tall and average about 150 pounds. Your size is Medium."
+  },
+  "abilityScores": {
+    "starting": [
+      {
+        "id": "con",
+        "name": "Con",
+        "url": "/ability-scores/con",
+        "amount": 2
+      }
+    ],
+    "options": null
+  },
+  "proficiencies": {
+    "starting": [
+      {
+        "id": "battleaxes",
+        "name": "Battleaxes",
+        "url": "/proficiencies/battleaxes"
+      },
+      {
+        "id": "handaxes",
+        "name": "Handaxes",
+        "url": "/proficiencies/handaxes"
+      },
+      {
+        "id": "light-hammers",
+        "name": "Light Hammers",
+        "url": "/proficiencies/light-hammers"
+      },
+      {
+        "id": "warhammers",
+        "name": "Warhammers",
+        "url": "/proficiencies/warhammers"
+      }
+    ],
+    "options": {
+      "number": 1,
+      "choices": [
+        {
+          "id": "smiths-tools",
+          "name": "Smith's Tools",
+          "url": "/proficiencies/smiths-tools"
+        },
+        {
+          "id": "brewers-supplies",
+          "name": "Brewer's Supplies",
+          "url": "/proficiencies/brewers-supplies"
+        },
+        {
+          "id": "masons-tools",
+          "name": "Mason's Tools",
+          "url": "/proficiencies/masons-tools"
+        }
+      ]
+    }
+  },
+  "languages": {
+    "starting": [
+      {
+        "id": "common",
+        "name": "Common",
+        "url": "/languages/common"
+      },
+      {
+        "id": "dwarvish",
+        "name": "Dwarvish",
+        "url": "/languages/dwarvish"
+      }
+    ],
+    "options": null,
+    "description": "You can speak, read, and write Common and Dwarvish. Dwarvish is full of hard consonants and guttural sounds, and those characteristics spill over into whatever other language a dwarf might speak."
+  },
+  "traits": [
+    {
+      "id": "darkvision",
+      "name": "Darkvision",
+      "url": "/traits/darkvision"
+    },
+    {
+      "id": "dwarven-resilience",
+      "name": "Dwarven Resilience",
+      "url": "/traits/dwarven-resilience"
+    },
+    {
+      "id": "stonecunning",
+      "name": "Stonecunning",
+      "url": "/traits/stonecunning"
+    },
+    {
+      "id": "dwarven-combat-training",
+      "name": "Dwarven Combat Training",
+      "url": "/traits/dwarven-combat-training"
+    }
+  ],
+  "subRaces": [
+    {
+      "id": "hill-dwarf",
+      "name": "Hill Dwarf",
+      "url": "/races/sub-races/hill-dwarf"
+    }
+  ]
+}
