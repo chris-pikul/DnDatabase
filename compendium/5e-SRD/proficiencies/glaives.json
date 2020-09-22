@@ -1,0 +1,18 @@
+{
+  "type": "PROFICIENCY",
+  "id": "glaives",
+  "name": "Glaives",
+  "url": "/proficiencies/glaives",
+  "source": "PHB",
+  "description": "",
+  "category": "WEAPONS",
+  "races": [],
+  "classes": [],
+  "references": [
+    {
+      "id": "glaive",
+      "name": "Glaive",
+      "url": "/items/weapon/glaive"
+    }
+  ]
+}

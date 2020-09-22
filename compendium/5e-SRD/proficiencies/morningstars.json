@@ -1,0 +1,18 @@
+{
+  "type": "PROFICIENCY",
+  "id": "morningstars",
+  "name": "Morningstars",
+  "url": "/proficiencies/morningstars",
+  "source": "PHB",
+  "description": "",
+  "category": "WEAPONS",
+  "races": [],
+  "classes": [],
+  "references": [
+    {
+      "id": "morningstar",
+      "name": "Morningstar",
+      "url": "/items/weapon/morningstar"
+    }
+  ]
+}

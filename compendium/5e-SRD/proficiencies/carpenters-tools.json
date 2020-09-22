@@ -1,0 +1,18 @@
+{
+  "type": "PROFICIENCY",
+  "id": "carpenters-tools",
+  "name": "Carpenter's Tools",
+  "url": "/proficiencies/carpenters-tools",
+  "source": "PHB",
+  "description": "",
+  "category": "TOOLS",
+  "races": [],
+  "classes": [],
+  "references": [
+    {
+      "id": "carpenters-tools",
+      "name": "Carpenter's Tools",
+      "url": "/items/tools/carpenters-tools"
+    }
+  ]
+}

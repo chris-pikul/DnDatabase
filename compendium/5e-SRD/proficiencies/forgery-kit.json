@@ -1,0 +1,18 @@
+{
+  "type": "PROFICIENCY",
+  "id": "forgery-kit",
+  "name": "Forgery Kit",
+  "url": "/proficiencies/forgery-kit",
+  "source": "PHB",
+  "description": "",
+  "category": "TOOLS",
+  "races": [],
+  "classes": [],
+  "references": [
+    {
+      "id": "forgery-kit",
+      "name": "Forgery Kit",
+      "url": "/items/tools/forgery-kit"
+    }
+  ]
+}

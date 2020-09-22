@@ -1,0 +1,18 @@
+{
+  "type": "PROFICIENCY",
+  "id": "horn",
+  "name": "Horn",
+  "url": "/proficiencies/horn",
+  "source": "PHB",
+  "description": "",
+  "category": "MUSICAL_INSTRUMENTS",
+  "races": [],
+  "classes": [],
+  "references": [
+    {
+      "id": "horn",
+      "name": "Horn",
+      "url": "/items/instrument/horn"
+    }
+  ]
+}

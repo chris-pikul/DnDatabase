@@ -1,0 +1,18 @@
+{
+  "type": "PROFICIENCY",
+  "id": "padded",
+  "name": "Padded",
+  "url": "/proficiencies/padded",
+  "source": "PHB",
+  "description": "",
+  "category": "ARMOR",
+  "races": [],
+  "classes": [],
+  "references": [
+    {
+      "id": "padded",
+      "name": "Padded",
+      "url": "/items/armor/padded"
+    }
+  ]
+}

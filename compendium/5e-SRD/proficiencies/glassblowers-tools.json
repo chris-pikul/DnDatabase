@@ -1,0 +1,18 @@
+{
+  "type": "PROFICIENCY",
+  "id": "glassblowers-tools",
+  "name": "Glassblower's Tools",
+  "url": "/proficiencies/glassblowers-tools",
+  "source": "PHB",
+  "description": "",
+  "category": "TOOLS",
+  "races": [],
+  "classes": [],
+  "references": [
+    {
+      "id": "glassblowers-tools",
+      "name": "Glassblower's Tools",
+      "url": "/items/tools/glassblowers-tools"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "type": "PROFICIENCY",
+  "id": "skill-perception",
+  "name": "erception",
+  "url": "/proficiencies/skill-perception",
+  "source": "PHB",
+  "description": "",
+  "category": "SKILLS",
+  "races": [
+    {
+      "id": "elf",
+      "name": "Elf",
+      "url": "/races/elf"
+    }
+  ],
+  "classes": [],
+  "references": [
+    {
+      "id": "perception",
+      "name": "Perception",
+      "url": "/skills/perception"
+    }
+  ]
+}

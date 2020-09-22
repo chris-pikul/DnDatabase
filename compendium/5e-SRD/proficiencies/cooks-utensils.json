@@ -1,0 +1,18 @@
+{
+  "type": "PROFICIENCY",
+  "id": "cooks-utensils",
+  "name": "Cook's Utensils",
+  "url": "/proficiencies/cooks-utensils",
+  "source": "PHB",
+  "description": "",
+  "category": "TOOLS",
+  "races": [],
+  "classes": [],
+  "references": [
+    {
+      "id": "cooks-utensils",
+      "name": "Cook's Utensils",
+      "url": "/items/tools/cooks-utensils"
+    }
+  ]
+}

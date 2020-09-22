@@ -1,0 +1,24 @@
+{
+  "type": "PROFICIENCY",
+  "id": "handaxes",
+  "name": "Handaxes",
+  "url": "/proficiencies/handaxes",
+  "source": "PHB",
+  "description": "",
+  "category": "WEAPONS",
+  "races": [
+    {
+      "id": "dwarf",
+      "name": "Dwarf",
+      "url": "/races/dwarf"
+    }
+  ],
+  "classes": [],
+  "references": [
+    {
+      "id": "handaxe",
+      "name": "Handaxe",
+      "url": "/items/weapon/handaxe"
+    }
+  ]
+}

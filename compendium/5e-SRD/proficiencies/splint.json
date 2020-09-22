@@ -1,0 +1,18 @@
+{
+  "type": "PROFICIENCY",
+  "id": "splint",
+  "name": "Splint",
+  "url": "/proficiencies/splint",
+  "source": "PHB",
+  "description": "",
+  "category": "ARMOR",
+  "races": [],
+  "classes": [],
+  "references": [
+    {
+      "id": "splint",
+      "name": "Splint",
+      "url": "/items/armor/splint"
+    }
+  ]
+}

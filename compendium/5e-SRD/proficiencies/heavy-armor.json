@@ -1,0 +1,18 @@
+{
+  "type": "PROFICIENCY",
+  "id": "heavy-armor",
+  "name": "Heavy Armor",
+  "url": "/proficiencies/heavy-armor",
+  "source": "PHB",
+  "description": "",
+  "category": "ARMOR",
+  "races": [],
+  "classes": [],
+  "references": [
+    {
+      "id": "heavy-armor",
+      "name": "Heavy Armor",
+      "url": "/item-categories/heavy-armor"
+    }
+  ]
+}

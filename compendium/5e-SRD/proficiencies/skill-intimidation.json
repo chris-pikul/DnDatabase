@@ -1,0 +1,18 @@
+{
+  "type": "PROFICIENCY",
+  "id": "skill-intimidation",
+  "name": "ntimidation",
+  "url": "/proficiencies/skill-intimidation",
+  "source": "PHB",
+  "description": "",
+  "category": "SKILLS",
+  "races": [],
+  "classes": [],
+  "references": [
+    {
+      "id": "intimidation",
+      "name": "Intimidation",
+      "url": "/skills/intimidation"
+    }
+  ]
+}

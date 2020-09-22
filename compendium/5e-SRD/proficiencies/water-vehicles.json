@@ -1,0 +1,18 @@
+{
+  "type": "PROFICIENCY",
+  "id": "water-vehicles",
+  "name": "Water Vehicles",
+  "url": "/proficiencies/water-vehicles",
+  "source": "PHB",
+  "description": "",
+  "category": "VEHICLES",
+  "races": [],
+  "classes": [],
+  "references": [
+    {
+      "id": "waterborne-vehicles",
+      "name": "Waterborne Vehicles",
+      "url": "/item-categories/waterborne-vehicles"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "type": "PROFICIENCY",
+  "id": "lances",
+  "name": "Lances",
+  "url": "/proficiencies/lances",
+  "source": "PHB",
+  "description": "",
+  "category": "WEAPONS",
+  "races": [],
+  "classes": [],
+  "references": [
+    {
+      "id": "lance",
+      "name": "Lance",
+      "url": "/items/weapon/lance"
+    }
+  ]
+}

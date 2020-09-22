@@ -1,0 +1,18 @@
+{
+  "type": "PROFICIENCY",
+  "id": "land-vehicles",
+  "name": "Land Vehicles",
+  "url": "/proficiencies/land-vehicles",
+  "source": "PHB",
+  "description": "",
+  "category": "VEHICLES",
+  "races": [],
+  "classes": [],
+  "references": [
+    {
+      "id": "land-vehicles",
+      "name": "Land Vehicles",
+      "url": "/item-categories/land-vehicles"
+    }
+  ]
+}

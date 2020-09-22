@@ -1,0 +1,18 @@
+{
+  "type": "PROFICIENCY",
+  "id": "cartographers-tools",
+  "name": "Cartographer's Tools",
+  "url": "/proficiencies/cartographers-tools",
+  "source": "PHB",
+  "description": "",
+  "category": "TOOLS",
+  "races": [],
+  "classes": [],
+  "references": [
+    {
+      "id": "cartographers-tools",
+      "name": "Cartographer's Tools",
+      "url": "/items/tools/cartographers-tools"
+    }
+  ]
+}

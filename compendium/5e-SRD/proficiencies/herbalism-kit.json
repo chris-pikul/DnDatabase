@@ -1,0 +1,24 @@
+{
+  "type": "PROFICIENCY",
+  "id": "herbalism-kit",
+  "name": "Herbalism Kit",
+  "url": "/proficiencies/herbalism-kit",
+  "source": "PHB",
+  "description": "",
+  "category": "MISC",
+  "races": [],
+  "classes": [
+    {
+      "id": "druid",
+      "name": "Druid",
+      "url": "/classes/druid"
+    }
+  ],
+  "references": [
+    {
+      "id": "herbalism-kit",
+      "name": "Herbalism Kit",
+      "url": "/items/herbalism-kit"
+    }
+  ]
+}

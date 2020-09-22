@@ -1,0 +1,29 @@
+{
+  "type": "PROFICIENCY",
+  "id": "rapiers",
+  "name": "Rapiers",
+  "url": "/proficiencies/rapiers",
+  "source": "PHB",
+  "description": "",
+  "category": "WEAPONS",
+  "races": [],
+  "classes": [
+    {
+      "id": "bard",
+      "name": "Bard",
+      "url": "/classes/bard"
+    },
+    {
+      "id": "rogue",
+      "name": "Rogue",
+      "url": "/classes/rogue"
+    }
+  ],
+  "references": [
+    {
+      "id": "rapier",
+      "name": "Rapier",
+      "url": "/items/weapon/rapier"
+    }
+  ]
+}

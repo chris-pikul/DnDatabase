@@ -1,0 +1,39 @@
+{
+  "type": "PROFICIENCY",
+  "id": "martial-weapons",
+  "name": "Martial Weapons",
+  "url": "/proficiencies/martial-weapons",
+  "source": "PHB",
+  "description": "",
+  "category": "WEAPONS",
+  "races": [],
+  "classes": [
+    {
+      "id": "barbarian",
+      "name": "Barbarian",
+      "url": "/classes/barbarian"
+    },
+    {
+      "id": "fighter",
+      "name": "Fighter",
+      "url": "/classes/fighter"
+    },
+    {
+      "id": "paladin",
+      "name": "Paladin",
+      "url": "/classes/paladin"
+    },
+    {
+      "id": "ranger",
+      "name": "Ranger",
+      "url": "/classes/ranger"
+    }
+  ],
+  "references": [
+    {
+      "id": "martial-weapons",
+      "name": "Martial Weapons",
+      "url": "/item-categories/martial-weapons"
+    }
+  ]
+}

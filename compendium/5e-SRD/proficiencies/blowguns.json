@@ -1,0 +1,18 @@
+{
+  "type": "PROFICIENCY",
+  "id": "blowguns",
+  "name": "Blowguns",
+  "url": "/proficiencies/blowguns",
+  "source": "PHB",
+  "description": "",
+  "category": "WEAPONS",
+  "races": [],
+  "classes": [],
+  "references": [
+    {
+      "id": "blowgun",
+      "name": "Blowgun",
+      "url": "/items/weapon/blowgun"
+    }
+  ]
+}

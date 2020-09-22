@@ -1,0 +1,18 @@
+{
+  "type": "PROFICIENCY",
+  "id": "chain-shirt",
+  "name": "Chain Shirt",
+  "url": "/proficiencies/chain-shirt",
+  "source": "PHB",
+  "description": "",
+  "category": "ARMOR",
+  "races": [],
+  "classes": [],
+  "references": [
+    {
+      "id": "chain-shirt",
+      "name": "Chain Shirt",
+      "url": "/items/armor/chain-shirt"
+    }
+  ]
+}

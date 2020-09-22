@@ -1,0 +1,18 @@
+{
+  "type": "PROFICIENCY",
+  "id": "ring-mail",
+  "name": "Ring Mail",
+  "url": "/proficiencies/ring-mail",
+  "source": "PHB",
+  "description": "",
+  "category": "ARMOR",
+  "races": [],
+  "classes": [],
+  "references": [
+    {
+      "id": "ring-mail",
+      "name": "Ring Mail",
+      "url": "/items/armor/ring-mail"
+    }
+  ]
+}

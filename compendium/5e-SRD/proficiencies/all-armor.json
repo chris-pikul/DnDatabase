@@ -1,0 +1,29 @@
+{
+  "type": "PROFICIENCY",
+  "id": "all-armor",
+  "name": "All Armor",
+  "url": "/proficiencies/all-armor",
+  "source": "PHB",
+  "description": "",
+  "category": "ARMOR",
+  "races": [],
+  "classes": [
+    {
+      "id": "fighter",
+      "name": "Fighter",
+      "url": "/classes/fighter"
+    },
+    {
+      "id": "paladin",
+      "name": "Paladin",
+      "url": "/classes/paladin"
+    }
+  ],
+  "references": [
+    {
+      "id": "armor",
+      "name": "All Armor",
+      "url": "/item-categories/armor"
+    }
+  ]
+}

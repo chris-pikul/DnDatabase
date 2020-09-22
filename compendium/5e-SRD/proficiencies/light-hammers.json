@@ -1,0 +1,24 @@
+{
+  "type": "PROFICIENCY",
+  "id": "light-hammers",
+  "name": "Light Hammers",
+  "url": "/proficiencies/light-hammers",
+  "source": "PHB",
+  "description": "",
+  "category": "WEAPONS",
+  "races": [
+    {
+      "id": "dwarf",
+      "name": "Dwarf",
+      "url": "/races/dwarf"
+    }
+  ],
+  "classes": [],
+  "references": [
+    {
+      "id": "light-hammer",
+      "name": "Light Hammer",
+      "url": "/items/weapon/light-hammer"
+    }
+  ]
+}

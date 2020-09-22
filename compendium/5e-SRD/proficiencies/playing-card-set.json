@@ -1,0 +1,18 @@
+{
+  "type": "PROFICIENCY",
+  "id": "playing-card-set",
+  "name": "Playing Card Set",
+  "url": "/proficiencies/playing-card-set",
+  "source": "PHB",
+  "description": "",
+  "category": "GAMING",
+  "races": [],
+  "classes": [],
+  "references": [
+    {
+      "id": "playing-card-set",
+      "name": "Playing Card Set",
+      "url": "/items/gaming/playing-card-set"
+    }
+  ]
+}

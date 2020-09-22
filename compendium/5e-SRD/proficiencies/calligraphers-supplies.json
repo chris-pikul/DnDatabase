@@ -1,0 +1,18 @@
+{
+  "type": "PROFICIENCY",
+  "id": "calligraphers-supplies",
+  "name": "Calligrapher's Supplies",
+  "url": "/proficiencies/calligraphers-supplies",
+  "source": "PHB",
+  "description": "",
+  "category": "TOOLS",
+  "races": [],
+  "classes": [],
+  "references": [
+    {
+      "id": "calligraphers-supplies",
+      "name": "Calligrapher's Supplies",
+      "url": "/items/tools/calligraphers-supplies"
+    }
+  ]
+}

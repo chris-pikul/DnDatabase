@@ -1,0 +1,24 @@
+{
+  "type": "PROFICIENCY",
+  "id": "thieves-tools",
+  "name": "Thieves' Tools",
+  "url": "/proficiencies/thieves-tools",
+  "source": "PHB",
+  "description": "",
+  "category": "MISC",
+  "races": [],
+  "classes": [
+    {
+      "id": "rogue",
+      "name": "Rogue",
+      "url": "/classes/rogue"
+    }
+  ],
+  "references": [
+    {
+      "id": "thieves-tools",
+      "name": "Thieves' Tools",
+      "url": "/items/thieves-tools"
+    }
+  ]
+}

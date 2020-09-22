@@ -6,11 +6,12 @@ const {
 } = require('./utils');
 
 module.exports = data => data.map(abl => {
+    const fullName = abl.full_name.trim();
     const out = {
         type: 'ABILITY_SCORE',
-        id: MakeKabob(abl.index),
-        name: abl.full_name.trim(),
-        url: MakeURL('ability-scores', abl.name),
+        id: MakeKabob(fullName),
+        name: fullName,
+        url: MakeURL('ability-scores', fullName),
         source: 'PHB',
         abreviation: abl.name.toUpperCase().trim(),
     };

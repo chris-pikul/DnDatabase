@@ -1,0 +1,18 @@
+{
+  "type": "PROFICIENCY",
+  "id": "chain-mail",
+  "name": "Chain Mail",
+  "url": "/proficiencies/chain-mail",
+  "source": "PHB",
+  "description": "",
+  "category": "ARMOR",
+  "races": [],
+  "classes": [],
+  "references": [
+    {
+      "id": "chain-mail",
+      "name": "Chain Mail",
+      "url": "/items/armor/chain-mail"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "type": "PROFICIENCY",
+  "id": "skill-arcana",
+  "name": "rcana",
+  "url": "/proficiencies/skill-arcana",
+  "source": "PHB",
+  "description": "",
+  "category": "SKILLS",
+  "races": [],
+  "classes": [],
+  "references": [
+    {
+      "id": "arcana",
+      "name": "Arcana",
+      "url": "/skills/arcana"
+    }
+  ]
+}

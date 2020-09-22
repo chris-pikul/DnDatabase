@@ -1,0 +1,18 @@
+{
+  "type": "PROFICIENCY",
+  "id": "skill-athletics",
+  "name": "thletics",
+  "url": "/proficiencies/skill-athletics",
+  "source": "PHB",
+  "description": "",
+  "category": "SKILLS",
+  "races": [],
+  "classes": [],
+  "references": [
+    {
+      "id": "athletics",
+      "name": "Athletics",
+      "url": "/skills/athletics"
+    }
+  ]
+}

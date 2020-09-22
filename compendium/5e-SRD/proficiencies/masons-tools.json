@@ -1,0 +1,18 @@
+{
+  "type": "PROFICIENCY",
+  "id": "masons-tools",
+  "name": "Mason's Tools",
+  "url": "/proficiencies/masons-tools",
+  "source": "PHB",
+  "description": "",
+  "category": "TOOLS",
+  "races": [],
+  "classes": [],
+  "references": [
+    {
+      "id": "masons-tools",
+      "name": "Mason's Tools",
+      "url": "/items/tools/masons-tools"
+    }
+  ]
+}

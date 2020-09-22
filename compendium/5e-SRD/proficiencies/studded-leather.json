@@ -1,0 +1,18 @@
+{
+  "type": "PROFICIENCY",
+  "id": "studded-leather",
+  "name": "Studded Leather",
+  "url": "/proficiencies/studded-leather",
+  "source": "PHB",
+  "description": "",
+  "category": "ARMOR",
+  "races": [],
+  "classes": [],
+  "references": [
+    {
+      "id": "studded-leather",
+      "name": "Studded Leather",
+      "url": "/items/armor/studded-leather"
+    }
+  ]
+}

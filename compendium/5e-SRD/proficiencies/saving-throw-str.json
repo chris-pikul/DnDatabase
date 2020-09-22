@@ -1,0 +1,39 @@
+{
+  "type": "PROFICIENCY",
+  "id": "saving-throw-str",
+  "name": "Saving Throw: Str",
+  "url": "/proficiencies/saving-throw-str",
+  "source": "PHB",
+  "description": "",
+  "category": "SAVING_THROWS",
+  "races": [],
+  "classes": [
+    {
+      "id": "barbarian",
+      "name": "Barbarian",
+      "url": "/classes/barbarian"
+    },
+    {
+      "id": "fighter",
+      "name": "Fighter",
+      "url": "/classes/fighter"
+    },
+    {
+      "id": "monk",
+      "name": "Monk",
+      "url": "/classes/monk"
+    },
+    {
+      "id": "ranger",
+      "name": "Ranger",
+      "url": "/classes/ranger"
+    }
+  ],
+  "references": [
+    {
+      "id": "str",
+      "name": "Str",
+      "url": "/ability-scores/str"
+    }
+  ]
+}

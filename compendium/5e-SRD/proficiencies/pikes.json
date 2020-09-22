@@ -1,0 +1,18 @@
+{
+  "type": "PROFICIENCY",
+  "id": "pikes",
+  "name": "Pikes",
+  "url": "/proficiencies/pikes",
+  "source": "PHB",
+  "description": "",
+  "category": "WEAPONS",
+  "races": [],
+  "classes": [],
+  "references": [
+    {
+      "id": "pike",
+      "name": "Pike",
+      "url": "/items/weapon/pike"
+    }
+  ]
+}

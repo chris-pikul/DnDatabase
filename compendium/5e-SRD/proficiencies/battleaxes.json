@@ -1,0 +1,24 @@
+{
+  "type": "PROFICIENCY",
+  "id": "battleaxes",
+  "name": "Battleaxes",
+  "url": "/proficiencies/battleaxes",
+  "source": "PHB",
+  "description": "",
+  "category": "WEAPONS",
+  "races": [
+    {
+      "id": "dwarf",
+      "name": "Dwarf",
+      "url": "/races/dwarf"
+    }
+  ],
+  "classes": [],
+  "references": [
+    {
+      "id": "battleaxe",
+      "name": "Battleaxe",
+      "url": "/items/weapon/battleaxe"
+    }
+  ]
+}

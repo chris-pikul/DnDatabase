@@ -1,0 +1,18 @@
+{
+  "type": "PROFICIENCY",
+  "id": "greataxes",
+  "name": "Greataxes",
+  "url": "/proficiencies/greataxes",
+  "source": "PHB",
+  "description": "",
+  "category": "WEAPONS",
+  "races": [],
+  "classes": [],
+  "references": [
+    {
+      "id": "greataxe",
+      "name": "Greataxe",
+      "url": "/items/weapon/greataxe"
+    }
+  ]
+}

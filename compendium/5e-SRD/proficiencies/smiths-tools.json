@@ -1,0 +1,18 @@
+{
+  "type": "PROFICIENCY",
+  "id": "smiths-tools",
+  "name": "Smith's Tools",
+  "url": "/proficiencies/smiths-tools",
+  "source": "PHB",
+  "description": "",
+  "category": "TOOLS",
+  "races": [],
+  "classes": [],
+  "references": [
+    {
+      "id": "smiths-tools",
+      "name": "Smith's Tools",
+      "url": "/items/tools/smiths-tools"
+    }
+  ]
+}

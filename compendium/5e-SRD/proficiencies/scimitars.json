@@ -1,0 +1,24 @@
+{
+  "type": "PROFICIENCY",
+  "id": "scimitars",
+  "name": "Scimitars",
+  "url": "/proficiencies/scimitars",
+  "source": "PHB",
+  "description": "",
+  "category": "WEAPONS",
+  "races": [],
+  "classes": [
+    {
+      "id": "druid",
+      "name": "Druid",
+      "url": "/classes/druid"
+    }
+  ],
+  "references": [
+    {
+      "id": "scimitar",
+      "name": "Scimitar",
+      "url": "/items/weapon/scimitar"
+    }
+  ]
+}

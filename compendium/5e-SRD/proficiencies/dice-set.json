@@ -1,0 +1,18 @@
+{
+  "type": "PROFICIENCY",
+  "id": "dice-set",
+  "name": "Dice Set",
+  "url": "/proficiencies/dice-set",
+  "source": "PHB",
+  "description": "",
+  "category": "GAMING",
+  "races": [],
+  "classes": [],
+  "references": [
+    {
+      "id": "dice-set",
+      "name": "Dice Set",
+      "url": "/items/gaming/dice-set"
+    }
+  ]
+}

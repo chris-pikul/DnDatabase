@@ -1,0 +1,18 @@
+{
+  "type": "PROFICIENCY",
+  "id": "breastplate",
+  "name": "Breastplate",
+  "url": "/proficiencies/breastplate",
+  "source": "PHB",
+  "description": "",
+  "category": "ARMOR",
+  "races": [],
+  "classes": [],
+  "references": [
+    {
+      "id": "breastplate",
+      "name": "Breastplate",
+      "url": "/items/armor/breastplate"
+    }
+  ]
+}

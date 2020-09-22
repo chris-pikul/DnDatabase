@@ -1,0 +1,29 @@
+{
+  "type": "PROFICIENCY",
+  "id": "crossbows-hand",
+  "name": "Crossbows, Hand",
+  "url": "/proficiencies/crossbows-hand",
+  "source": "PHB",
+  "description": "",
+  "category": "WEAPONS",
+  "races": [],
+  "classes": [
+    {
+      "id": "bard",
+      "name": "Bard",
+      "url": "/classes/bard"
+    },
+    {
+      "id": "rogue",
+      "name": "Rogue",
+      "url": "/classes/rogue"
+    }
+  ],
+  "references": [
+    {
+      "id": "crossbow-hand",
+      "name": "Crossbow, Hand",
+      "url": "/items/weapon/crossbow-hand"
+    }
+  ]
+}

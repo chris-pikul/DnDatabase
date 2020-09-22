@@ -1,0 +1,18 @@
+{
+  "type": "PROFICIENCY",
+  "id": "crossbows-heavy",
+  "name": "Crossbows, Heavy",
+  "url": "/proficiencies/crossbows-heavy",
+  "source": "PHB",
+  "description": "",
+  "category": "WEAPONS",
+  "races": [],
+  "classes": [],
+  "references": [
+    {
+      "id": "crossbow-heavy",
+      "name": "Crossbow, Heavy",
+      "url": "/items/weapon/crossbow-heavy"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "type": "PROFICIENCY",
+  "id": "leatherworkers-tools",
+  "name": "Leatherworker's Tools",
+  "url": "/proficiencies/leatherworkers-tools",
+  "source": "PHB",
+  "description": "",
+  "category": "TOOLS",
+  "races": [],
+  "classes": [],
+  "references": [
+    {
+      "id": "leatherworkers-tools",
+      "name": "Leatherworker's Tools",
+      "url": "/items/tools/leatherworkers-tools"
+    }
+  ]
+}

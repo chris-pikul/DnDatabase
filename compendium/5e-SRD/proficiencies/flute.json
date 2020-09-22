@@ -1,0 +1,18 @@
+{
+  "type": "PROFICIENCY",
+  "id": "flute",
+  "name": "Flute",
+  "url": "/proficiencies/flute",
+  "source": "PHB",
+  "description": "",
+  "category": "MUSICAL_INSTRUMENTS",
+  "races": [],
+  "classes": [],
+  "references": [
+    {
+      "id": "flute",
+      "name": "Flute",
+      "url": "/items/instrument/flute"
+    }
+  ]
+}

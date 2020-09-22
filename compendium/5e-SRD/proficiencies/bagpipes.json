@@ -1,0 +1,18 @@
+{
+  "type": "PROFICIENCY",
+  "id": "bagpipes",
+  "name": "Bagpipes",
+  "url": "/proficiencies/bagpipes",
+  "source": "PHB",
+  "description": "",
+  "category": "MUSICAL_INSTRUMENTS",
+  "races": [],
+  "classes": [],
+  "references": [
+    {
+      "id": "bagpipes",
+      "name": "Bagpipes",
+      "url": "/items/instrument/bagpipes"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "type": "PROFICIENCY",
+  "id": "dulcimer",
+  "name": "Dulcimer",
+  "url": "/proficiencies/dulcimer",
+  "source": "PHB",
+  "description": "",
+  "category": "MUSICAL_INSTRUMENTS",
+  "races": [],
+  "classes": [],
+  "references": [
+    {
+      "id": "dulcimer",
+      "name": "Dulcimer",
+      "url": "/items/instrument/dulcimer"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "type": "PROFICIENCY",
+  "id": "poisoners-kit",
+  "name": "Poisoner's Kit",
+  "url": "/proficiencies/poisoners-kit",
+  "source": "PHB",
+  "description": "",
+  "category": "MISC",
+  "races": [],
+  "classes": [],
+  "references": [
+    {
+      "id": "poisoners-kit",
+      "name": "Poisoner's Kit",
+      "url": "/items/poisoners-kit"
+    }
+  ]
+}

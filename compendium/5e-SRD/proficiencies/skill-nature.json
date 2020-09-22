@@ -1,0 +1,18 @@
+{
+  "type": "PROFICIENCY",
+  "id": "skill-nature",
+  "name": "ature",
+  "url": "/proficiencies/skill-nature",
+  "source": "PHB",
+  "description": "",
+  "category": "SKILLS",
+  "races": [],
+  "classes": [],
+  "references": [
+    {
+      "id": "nature",
+      "name": "Nature",
+      "url": "/skills/nature"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "type": "PROFICIENCY",
+  "id": "shawm",
+  "name": "Shawm",
+  "url": "/proficiencies/shawm",
+  "source": "PHB",
+  "description": "",
+  "category": "MUSICAL_INSTRUMENTS",
+  "races": [],
+  "classes": [],
+  "references": [
+    {
+      "id": "shawm",
+      "name": "Shawm",
+      "url": "/items/instrument/shawm"
+    }
+  ]
+}

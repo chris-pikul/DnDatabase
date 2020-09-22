@@ -1,0 +1,18 @@
+{
+  "type": "PROFICIENCY",
+  "id": "lute",
+  "name": "Lute",
+  "url": "/proficiencies/lute",
+  "source": "PHB",
+  "description": "",
+  "category": "MUSICAL_INSTRUMENTS",
+  "races": [],
+  "classes": [],
+  "references": [
+    {
+      "id": "lute",
+      "name": "Lute",
+      "url": "/items/instrument/lute"
+    }
+  ]
+}

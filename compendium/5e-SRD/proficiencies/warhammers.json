@@ -1,0 +1,24 @@
+{
+  "type": "PROFICIENCY",
+  "id": "warhammers",
+  "name": "Warhammers",
+  "url": "/proficiencies/warhammers",
+  "source": "PHB",
+  "description": "",
+  "category": "WEAPONS",
+  "races": [
+    {
+      "id": "dwarf",
+      "name": "Dwarf",
+      "url": "/races/dwarf"
+    }
+  ],
+  "classes": [],
+  "references": [
+    {
+      "id": "warhammer",
+      "name": "Warhammer",
+      "url": "/items/weapon/warhammer"
+    }
+  ]
+}

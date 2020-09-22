@@ -1,0 +1,18 @@
+{
+  "type": "PROFICIENCY",
+  "id": "lyre",
+  "name": "Lyre",
+  "url": "/proficiencies/lyre",
+  "source": "PHB",
+  "description": "",
+  "category": "MUSICAL_INSTRUMENTS",
+  "races": [],
+  "classes": [],
+  "references": [
+    {
+      "id": "lyre",
+      "name": "Lyre",
+      "url": "/items/instrument/lyre"
+    }
+  ]
+}

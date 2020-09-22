@@ -1,0 +1,18 @@
+{
+  "type": "PROFICIENCY",
+  "id": "greatswords",
+  "name": "Greatswords",
+  "url": "/proficiencies/greatswords",
+  "source": "PHB",
+  "description": "",
+  "category": "WEAPONS",
+  "races": [],
+  "classes": [],
+  "references": [
+    {
+      "id": "greatsword",
+      "name": "Greatsword",
+      "url": "/items/weapon/greatsword"
+    }
+  ]
+}

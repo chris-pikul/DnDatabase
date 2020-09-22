@@ -1,0 +1,18 @@
+{
+  "type": "PROFICIENCY",
+  "id": "nets",
+  "name": "Nets",
+  "url": "/proficiencies/nets",
+  "source": "PHB",
+  "description": "",
+  "category": "WEAPONS",
+  "races": [],
+  "classes": [],
+  "references": [
+    {
+      "id": "net",
+      "name": "Net",
+      "url": "/items/weapon/net"
+    }
+  ]
+}

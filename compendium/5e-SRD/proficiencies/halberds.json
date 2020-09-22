@@ -1,0 +1,18 @@
+{
+  "type": "PROFICIENCY",
+  "id": "halberds",
+  "name": "Halberds",
+  "url": "/proficiencies/halberds",
+  "source": "PHB",
+  "description": "",
+  "category": "WEAPONS",
+  "races": [],
+  "classes": [],
+  "references": [
+    {
+      "id": "halberd",
+      "name": "Halberd",
+      "url": "/items/weapon/halberd"
+    }
+  ]
+}

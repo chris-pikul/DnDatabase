@@ -1,0 +1,18 @@
+{
+  "type": "PROFICIENCY",
+  "id": "alchemists-supplies",
+  "name": "Alchemist's Supplies",
+  "url": "/proficiencies/alchemists-supplies",
+  "source": "PHB",
+  "description": "",
+  "category": "TOOLS",
+  "races": [],
+  "classes": [],
+  "references": [
+    {
+      "id": "alchemists-supplies",
+      "name": "Alchemist's Supplies",
+      "url": "/items/tools/alchemists-supplies"
+    }
+  ]
+}

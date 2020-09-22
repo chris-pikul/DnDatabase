@@ -1,0 +1,18 @@
+{
+  "type": "PROFICIENCY",
+  "id": "disguise-kit",
+  "name": "Disguise Kit",
+  "url": "/proficiencies/disguise-kit",
+  "source": "PHB",
+  "description": "",
+  "category": "TOOLS",
+  "races": [],
+  "classes": [],
+  "references": [
+    {
+      "id": "disguise-kit",
+      "name": "Disguise Kit",
+      "url": "/items/tools/disguise-kit"
+    }
+  ]
+}

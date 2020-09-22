@@ -1,0 +1,18 @@
+{
+  "type": "PROFICIENCY",
+  "id": "whips",
+  "name": "Whips",
+  "url": "/proficiencies/whips",
+  "source": "PHB",
+  "description": "",
+  "category": "WEAPONS",
+  "races": [],
+  "classes": [],
+  "references": [
+    {
+      "id": "whip",
+      "name": "Whip",
+      "url": "/items/weapon/whip"
+    }
+  ]
+}

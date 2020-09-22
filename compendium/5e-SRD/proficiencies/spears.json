@@ -1,0 +1,24 @@
+{
+  "type": "PROFICIENCY",
+  "id": "spears",
+  "name": "Spears",
+  "url": "/proficiencies/spears",
+  "source": "PHB",
+  "description": "",
+  "category": "WEAPONS",
+  "races": [],
+  "classes": [
+    {
+      "id": "druid",
+      "name": "Druid",
+      "url": "/classes/druid"
+    }
+  ],
+  "references": [
+    {
+      "id": "spear",
+      "name": "Spear",
+      "url": "/items/weapon/spear"
+    }
+  ]
+}

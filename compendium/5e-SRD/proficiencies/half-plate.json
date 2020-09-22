@@ -1,0 +1,18 @@
+{
+  "type": "PROFICIENCY",
+  "id": "half-plate",
+  "name": "Half Plate",
+  "url": "/proficiencies/half-plate",
+  "source": "PHB",
+  "description": "",
+  "category": "ARMOR",
+  "races": [],
+  "classes": [],
+  "references": [
+    {
+      "id": "half-plate",
+      "name": "Half Plate",
+      "url": "/items/armor/half-plate"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "type": "PROFICIENCY",
+  "id": "painters-supplies",
+  "name": "Painter's Supplies",
+  "url": "/proficiencies/painters-supplies",
+  "source": "PHB",
+  "description": "",
+  "category": "TOOLS",
+  "races": [],
+  "classes": [],
+  "references": [
+    {
+      "id": "painters-supplies",
+      "name": "Painter's Supplies",
+      "url": "/items/tools/painters-supplies"
+    }
+  ]
+}

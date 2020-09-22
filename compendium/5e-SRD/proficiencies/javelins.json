@@ -1,0 +1,24 @@
+{
+  "type": "PROFICIENCY",
+  "id": "javelins",
+  "name": "Javelins",
+  "url": "/proficiencies/javelins",
+  "source": "PHB",
+  "description": "",
+  "category": "WEAPONS",
+  "races": [],
+  "classes": [
+    {
+      "id": "druid",
+      "name": "Druid",
+      "url": "/classes/druid"
+    }
+  ],
+  "references": [
+    {
+      "id": "javelin",
+      "name": "Javelin",
+      "url": "/items/weapon/javelin"
+    }
+  ]
+}

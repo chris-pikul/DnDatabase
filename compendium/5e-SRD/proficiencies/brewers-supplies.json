@@ -1,0 +1,18 @@
+{
+  "type": "PROFICIENCY",
+  "id": "brewers-supplies",
+  "name": "Brewer's Supplies",
+  "url": "/proficiencies/brewers-supplies",
+  "source": "PHB",
+  "description": "",
+  "category": "TOOLS",
+  "races": [],
+  "classes": [],
+  "references": [
+    {
+      "id": "brewers-supplies",
+      "name": "Brewer's Supplies",
+      "url": "/items/tools/brewers-supplies"
+    }
+  ]
+}

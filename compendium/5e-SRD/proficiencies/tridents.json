@@ -1,0 +1,18 @@
+{
+  "type": "PROFICIENCY",
+  "id": "tridents",
+  "name": "Tridents",
+  "url": "/proficiencies/tridents",
+  "source": "PHB",
+  "description": "",
+  "category": "WEAPONS",
+  "races": [],
+  "classes": [],
+  "references": [
+    {
+      "id": "trident",
+      "name": "Trident",
+      "url": "/items/weapon/trident"
+    }
+  ]
+}

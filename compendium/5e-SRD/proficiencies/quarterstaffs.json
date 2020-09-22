@@ -1,0 +1,34 @@
+{
+  "type": "PROFICIENCY",
+  "id": "quarterstaffs",
+  "name": "Quarterstaffs",
+  "url": "/proficiencies/quarterstaffs",
+  "source": "PHB",
+  "description": "",
+  "category": "WEAPONS",
+  "races": [],
+  "classes": [
+    {
+      "id": "druid",
+      "name": "Druid",
+      "url": "/classes/druid"
+    },
+    {
+      "id": "sorcerer",
+      "name": "Sorcerer",
+      "url": "/classes/sorcerer"
+    },
+    {
+      "id": "wizard",
+      "name": "Wizard",
+      "url": "/classes/wizard"
+    }
+  ],
+  "references": [
+    {
+      "id": "quarterstaff",
+      "name": "Quarterstaff",
+      "url": "/items/weapon/quarterstaff"
+    }
+  ]
+}

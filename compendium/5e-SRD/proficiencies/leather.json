@@ -1,0 +1,18 @@
+{
+  "type": "PROFICIENCY",
+  "id": "leather",
+  "name": "Leather",
+  "url": "/proficiencies/leather",
+  "source": "PHB",
+  "description": "",
+  "category": "ARMOR",
+  "races": [],
+  "classes": [],
+  "references": [
+    {
+      "id": "leather",
+      "name": "Leather",
+      "url": "/items/armor/leather"
+    }
+  ]
+}

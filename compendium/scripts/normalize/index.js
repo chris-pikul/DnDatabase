@@ -13,19 +13,22 @@ const processSchools = require('./process-schools');
 const processSkills = require('./process-skills');
 const processWeaponProperties = require('./process-weapon-properties');
 const processTraits = require('./process-traits');
+const processProfeciencies = require('./process-profeciencies');
 
 function buildDirs() {
     const subFolders = [ '5e-SRD', 'homebrew' ];
 
+    
+    RimRaf.sync(path.resolve('..', '5e-SRD'));
+
     for(const sub of subFolders) {
         const root = path.resolve('..', sub);
-
-        RimRaf.sync(root);
 
         fs.mkdirSync( path.join(root, 'ability-scores'), { recursive: true });
         fs.mkdirSync( path.join(root, 'classes'), { recursive: true });
         fs.mkdirSync( path.join(root, 'conditions'), { recursive: true });
         fs.mkdirSync( path.join(root, 'damage-types'), { recursive: true });
+        fs.mkdirSync( path.join(root, 'equipment-packs'), { recursive: true });
         fs.mkdirSync( path.join(root, 'items', 'armor'), { recursive: true });
         fs.mkdirSync( path.join(root, 'items', 'gaming'), { recursive: true });
         fs.mkdirSync( path.join(root, 'items', 'instrument'), { recursive: true });
@@ -34,7 +37,8 @@ function buildDirs() {
         fs.mkdirSync( path.join(root, 'items', 'weapon'), { recursive: true });
         fs.mkdirSync( path.join(root, 'languages'), { recursive: true });
         fs.mkdirSync( path.join(root, 'magic-schools'), { recursive: true });
-        fs.mkdirSync( path.join(root, 'equipment-packs'), { recursive: true });
+        fs.mkdirSync( path.join(root, 'proficiencies'), { recursive: true });
+        fs.mkdirSync( path.join(root, 'races', 'sub-races'), { recursive: true });
         fs.mkdirSync( path.join(root, 'skills'), { recursive: true });
         fs.mkdirSync( path.join(root, 'spells'), { recursive: true });
         fs.mkdirSync( path.join(root, 'traits'), { recursive: true });
@@ -117,6 +121,7 @@ if(cliArgs.length === 0) {
             normalize( '5e-SRD-Skills.json', 'skills.json', processSkills);
             normalize( '5e-SRD-Weapon-Properties.json', 'weapon-properties.json', processWeaponProperties);
             normalize( '5e-SRD-Traits.json', 'traits.json', processTraits);
+            normalize( '5e-SRD-Proficiencies.json', 'proficiencies.json', processProfeciencies);
             break;
         case 'DIRECTORIES':
             buildDirs();
@@ -158,6 +163,9 @@ if(cliArgs.length === 0) {
             break;
         case 'TRAITS':
             normalize( '5e-SRD-Traits.json', 'traits.json', processTraits);
+            break;
+        case 'PROFICIENCIES':
+            normalize( '5e-SRD-Proficiencies.json', 'proficiencies.json', processProfeciencies);
             break;
         default:
             console.error(`Unknown operation '${op}'`);

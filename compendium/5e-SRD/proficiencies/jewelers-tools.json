@@ -1,0 +1,18 @@
+{
+  "type": "PROFICIENCY",
+  "id": "jewelers-tools",
+  "name": "Jeweler's Tools",
+  "url": "/proficiencies/jewelers-tools",
+  "source": "PHB",
+  "description": "",
+  "category": "TOOLS",
+  "races": [],
+  "classes": [],
+  "references": [
+    {
+      "id": "jewelers-tools",
+      "name": "Jeweler's Tools",
+      "url": "/items/tools/jewelers-tools"
+    }
+  ]
+}

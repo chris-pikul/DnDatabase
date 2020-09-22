@@ -1,0 +1,24 @@
+{
+  "type": "PROFICIENCY",
+  "id": "longbows",
+  "name": "Longbows",
+  "url": "/proficiencies/longbows",
+  "source": "PHB",
+  "description": "",
+  "category": "WEAPONS",
+  "races": [
+    {
+      "id": "high-elf",
+      "name": "High Elf",
+      "url": "/races/high-elf"
+    }
+  ],
+  "classes": [],
+  "references": [
+    {
+      "id": "longbow",
+      "name": "Longbow",
+      "url": "/items/weapon/longbow"
+    }
+  ]
+}

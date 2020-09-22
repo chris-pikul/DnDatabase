@@ -1,0 +1,18 @@
+{
+  "type": "PROFICIENCY",
+  "id": "navigators-tools",
+  "name": "Navigator's Tools",
+  "url": "/proficiencies/navigators-tools",
+  "source": "PHB",
+  "description": "",
+  "category": "MISC",
+  "races": [],
+  "classes": [],
+  "references": [
+    {
+      "id": "navigators-tools",
+      "name": "Navigator's Tools",
+      "url": "/items/navigators-tools"
+    }
+  ]
+}

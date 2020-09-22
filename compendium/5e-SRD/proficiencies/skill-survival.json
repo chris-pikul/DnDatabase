@@ -1,0 +1,18 @@
+{
+  "type": "PROFICIENCY",
+  "id": "skill-survival",
+  "name": "urvival",
+  "url": "/proficiencies/skill-survival",
+  "source": "PHB",
+  "description": "",
+  "category": "SKILLS",
+  "races": [],
+  "classes": [],
+  "references": [
+    {
+      "id": "survival",
+      "name": "Survival",
+      "url": "/skills/survival"
+    }
+  ]
+}

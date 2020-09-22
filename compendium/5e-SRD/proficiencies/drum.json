@@ -1,0 +1,18 @@
+{
+  "type": "PROFICIENCY",
+  "id": "drum",
+  "name": "Drum",
+  "url": "/proficiencies/drum",
+  "source": "PHB",
+  "description": "",
+  "category": "MUSICAL_INSTRUMENTS",
+  "races": [],
+  "classes": [],
+  "references": [
+    {
+      "id": "drum",
+      "name": "Drum",
+      "url": "/items/instrument/drum"
+    }
+  ]
+}

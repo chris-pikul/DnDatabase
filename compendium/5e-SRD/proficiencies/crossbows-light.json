@@ -1,0 +1,18 @@
+{
+  "type": "PROFICIENCY",
+  "id": "crossbows-light",
+  "name": "Crossbows, Light",
+  "url": "/proficiencies/crossbows-light",
+  "source": "PHB",
+  "description": "",
+  "category": "WEAPONS",
+  "races": [],
+  "classes": [],
+  "references": [
+    {
+      "id": "crossbow-light",
+      "name": "Crossbow, Light",
+      "url": "/items/weapon/crossbow-light"
+    }
+  ]
+}

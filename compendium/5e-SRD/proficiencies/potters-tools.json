@@ -1,0 +1,18 @@
+{
+  "type": "PROFICIENCY",
+  "id": "potters-tools",
+  "name": "Potter's Tools",
+  "url": "/proficiencies/potters-tools",
+  "source": "PHB",
+  "description": "",
+  "category": "TOOLS",
+  "races": [],
+  "classes": [],
+  "references": [
+    {
+      "id": "potters-tools",
+      "name": "Potter's Tools",
+      "url": "/items/tools/potters-tools"
+    }
+  ]
+}

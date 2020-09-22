@@ -1,0 +1,18 @@
+{
+  "type": "PROFICIENCY",
+  "id": "mauls",
+  "name": "Mauls",
+  "url": "/proficiencies/mauls",
+  "source": "PHB",
+  "description": "",
+  "category": "WEAPONS",
+  "races": [],
+  "classes": [],
+  "references": [
+    {
+      "id": "maul",
+      "name": "Maul",
+      "url": "/items/weapon/maul"
+    }
+  ]
+}

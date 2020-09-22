@@ -1,0 +1,18 @@
+{
+  "type": "PROFICIENCY",
+  "id": "tinkers-tools",
+  "name": "Tinker's Tools",
+  "url": "/proficiencies/tinkers-tools",
+  "source": "PHB",
+  "description": "",
+  "category": "TOOLS",
+  "races": [],
+  "classes": [],
+  "references": [
+    {
+      "id": "tinkers-tools",
+      "name": "Tinker's Tools",
+      "url": "/items/tools/tinkers-tools"
+    }
+  ]
+}

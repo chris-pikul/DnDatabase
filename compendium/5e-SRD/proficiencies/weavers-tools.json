@@ -1,0 +1,18 @@
+{
+  "type": "PROFICIENCY",
+  "id": "weavers-tools",
+  "name": "Weaver's Tools",
+  "url": "/proficiencies/weavers-tools",
+  "source": "PHB",
+  "description": "",
+  "category": "TOOLS",
+  "races": [],
+  "classes": [],
+  "references": [
+    {
+      "id": "weavers-tools",
+      "name": "Weaver's Tools",
+      "url": "/items/tools/weavers-tools"
+    }
+  ]
+}

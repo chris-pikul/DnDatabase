@@ -1,0 +1,18 @@
+{
+  "type": "PROFICIENCY",
+  "id": "skill-sleight-of-hand",
+  "name": "leight Of Hand",
+  "url": "/proficiencies/skill-sleight-of-hand",
+  "source": "PHB",
+  "description": "",
+  "category": "SKILLS",
+  "races": [],
+  "classes": [],
+  "references": [
+    {
+      "id": "sleight-of-hand",
+      "name": "Sleight Of Hand",
+      "url": "/skills/sleight-of-hand"
+    }
+  ]
+}

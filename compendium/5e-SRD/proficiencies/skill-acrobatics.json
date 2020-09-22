@@ -1,0 +1,18 @@
+{
+  "type": "PROFICIENCY",
+  "id": "skill-acrobatics",
+  "name": "crobatics",
+  "url": "/proficiencies/skill-acrobatics",
+  "source": "PHB",
+  "description": "",
+  "category": "SKILLS",
+  "races": [],
+  "classes": [],
+  "references": [
+    {
+      "id": "acrobatics",
+      "name": "Acrobatics",
+      "url": "/skills/acrobatics"
+    }
+  ]
+}

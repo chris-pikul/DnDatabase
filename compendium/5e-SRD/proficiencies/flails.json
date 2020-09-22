@@ -1,0 +1,18 @@
+{
+  "type": "PROFICIENCY",
+  "id": "flails",
+  "name": "Flails",
+  "url": "/proficiencies/flails",
+  "source": "PHB",
+  "description": "",
+  "category": "WEAPONS",
+  "races": [],
+  "classes": [],
+  "references": [
+    {
+      "id": "flail",
+      "name": "Flail",
+      "url": "/items/weapon/flail"
+    }
+  ]
+}

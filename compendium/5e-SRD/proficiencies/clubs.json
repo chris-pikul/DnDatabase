@@ -1,0 +1,24 @@
+{
+  "type": "PROFICIENCY",
+  "id": "clubs",
+  "name": "Clubs",
+  "url": "/proficiencies/clubs",
+  "source": "PHB",
+  "description": "",
+  "category": "WEAPONS",
+  "races": [],
+  "classes": [
+    {
+      "id": "druid",
+      "name": "Druid",
+      "url": "/classes/druid"
+    }
+  ],
+  "references": [
+    {
+      "id": "club",
+      "name": "Club",
+      "url": "/items/weapon/club"
+    }
+  ]
+}

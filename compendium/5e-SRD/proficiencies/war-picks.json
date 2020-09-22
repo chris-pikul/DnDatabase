@@ -1,0 +1,18 @@
+{
+  "type": "PROFICIENCY",
+  "id": "war-picks",
+  "name": "War Picks",
+  "url": "/proficiencies/war-picks",
+  "source": "PHB",
+  "description": "",
+  "category": "WEAPONS",
+  "races": [],
+  "classes": [],
+  "references": [
+    {
+      "id": "war-pick",
+      "name": "War Pick",
+      "url": "/items/weapon/war-pick"
+    }
+  ]
+}

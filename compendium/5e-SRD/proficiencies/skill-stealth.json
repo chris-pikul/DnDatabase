@@ -1,0 +1,18 @@
+{
+  "type": "PROFICIENCY",
+  "id": "skill-stealth",
+  "name": "tealth",
+  "url": "/proficiencies/skill-stealth",
+  "source": "PHB",
+  "description": "",
+  "category": "SKILLS",
+  "races": [],
+  "classes": [],
+  "references": [
+    {
+      "id": "stealth",
+      "name": "Stealth",
+      "url": "/skills/stealth"
+    }
+  ]
+}

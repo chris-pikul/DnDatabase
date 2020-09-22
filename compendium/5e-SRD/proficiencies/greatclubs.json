@@ -1,0 +1,18 @@
+{
+  "type": "PROFICIENCY",
+  "id": "greatclubs",
+  "name": "Greatclubs",
+  "url": "/proficiencies/greatclubs",
+  "source": "PHB",
+  "description": "",
+  "category": "WEAPONS",
+  "races": [],
+  "classes": [],
+  "references": [
+    {
+      "id": "greatclub",
+      "name": "Greatclub",
+      "url": "/items/weapon/greatclub"
+    }
+  ]
+}

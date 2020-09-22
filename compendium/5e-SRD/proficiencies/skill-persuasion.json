@@ -1,0 +1,18 @@
+{
+  "type": "PROFICIENCY",
+  "id": "skill-persuasion",
+  "name": "ersuasion",
+  "url": "/proficiencies/skill-persuasion",
+  "source": "PHB",
+  "description": "",
+  "category": "SKILLS",
+  "races": [],
+  "classes": [],
+  "references": [
+    {
+      "id": "persuasion",
+      "name": "Persuasion",
+      "url": "/skills/persuasion"
+    }
+  ]
+}

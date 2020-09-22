@@ -1,0 +1,18 @@
+{
+  "type": "PROFICIENCY",
+  "id": "skill-investigation",
+  "name": "nvestigation",
+  "url": "/proficiencies/skill-investigation",
+  "source": "PHB",
+  "description": "",
+  "category": "SKILLS",
+  "races": [],
+  "classes": [],
+  "references": [
+    {
+      "id": "investigation",
+      "name": "Investigation",
+      "url": "/skills/investigation"
+    }
+  ]
+}

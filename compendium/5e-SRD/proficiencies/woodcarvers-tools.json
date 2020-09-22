@@ -1,0 +1,18 @@
+{
+  "type": "PROFICIENCY",
+  "id": "woodcarvers-tools",
+  "name": "Woodcarver's Tools",
+  "url": "/proficiencies/woodcarvers-tools",
+  "source": "PHB",
+  "description": "",
+  "category": "TOOLS",
+  "races": [],
+  "classes": [],
+  "references": [
+    {
+      "id": "woodcarvers-tools",
+      "name": "Woodcarver's Tools",
+      "url": "/items/tools/woodcarvers-tools"
+    }
+  ]
+}
