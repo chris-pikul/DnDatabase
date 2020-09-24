@@ -6,7 +6,6 @@
   "source": "PHB",
   "description": "A Wisdom (Medicine) check lets you try to stabilize a dying companion or diagnose an illness.",
   "ability": {
-    "id": "wis",
     "name": "Wisdom",
     "url": "/ability-scores/wis"
   }

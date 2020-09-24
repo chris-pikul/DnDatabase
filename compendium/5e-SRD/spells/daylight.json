@@ -30,33 +30,27 @@
     "size": 60
   },
   "school": {
-    "id": "evocation",
     "name": "Evocation",
     "url": "/magic-schools/evocation"
   },
   "classes": [
     {
-      "id": "cleric",
       "name": "Cleric",
       "url": "/classes/cleric"
     },
     {
-      "id": "druid",
       "name": "Druid",
       "url": "/classes/druid"
     },
     {
-      "id": "paladin",
       "name": "Paladin",
       "url": "/classes/paladin"
     },
     {
-      "id": "ranger",
       "name": "Ranger",
       "url": "/classes/ranger"
     },
     {
-      "id": "sorcerer",
       "name": "Sorcerer",
       "url": "/classes/sorcerer"
     }

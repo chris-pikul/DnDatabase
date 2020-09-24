@@ -8,7 +8,6 @@
   "category": "WEAPONS",
   "races": [
     {
-      "id": "dwarf",
       "name": "Dwarf",
       "url": "/races/dwarf"
     }
@@ -16,7 +15,6 @@
   "classes": [],
   "references": [
     {
-      "id": "handaxe",
       "name": "Handaxe",
       "url": "/items/weapon/handaxe"
     }

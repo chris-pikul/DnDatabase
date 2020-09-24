@@ -25,7 +25,6 @@
   "concentration": false,
   "damage": {
     "type": {
-      "id": "bludgeoning",
       "name": "Bludgeoning",
       "url": "/damage-types/bludgeoning"
     },
@@ -55,23 +54,19 @@
     "size": 20
   },
   "school": {
-    "id": "evocation",
     "name": "Evocation",
     "url": "/magic-schools/evocation"
   },
   "classes": [
     {
-      "id": "druid",
       "name": "Druid",
       "url": "/classes/druid"
     },
     {
-      "id": "sorcerer",
       "name": "Sorcerer",
       "url": "/classes/sorcerer"
     },
     {
-      "id": "wizard",
       "name": "Wizard",
       "url": "/classes/wizard"
     }

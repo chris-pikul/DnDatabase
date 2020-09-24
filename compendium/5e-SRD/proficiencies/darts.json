@@ -9,24 +9,20 @@
   "races": [],
   "classes": [
     {
-      "id": "druid",
       "name": "Druid",
       "url": "/classes/druid"
     },
     {
-      "id": "sorcerer",
       "name": "Sorcerer",
       "url": "/classes/sorcerer"
     },
     {
-      "id": "wizard",
       "name": "Wizard",
       "url": "/classes/wizard"
     }
   ],
   "references": [
     {
-      "id": "dart",
       "name": "Dart",
       "url": "/items/weapon/dart"
     }

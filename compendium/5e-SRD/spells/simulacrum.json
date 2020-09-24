@@ -27,13 +27,11 @@
   "healing": null,
   "areaOfEffect": null,
   "school": {
-    "id": "illusion",
     "name": "Illusion",
     "url": "/magic-schools/illusion"
   },
   "classes": [
     {
-      "id": "wizard",
       "name": "Wizard",
       "url": "/classes/wizard"
     }

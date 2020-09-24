@@ -6,14 +6,12 @@
   "source": "PHB",
   "description": "As a rock gnome, you have a natural inventiveness and hardiness beyond that of other gnomes.",
   "race": {
-    "id": "gnome",
     "name": "Gnome",
     "url": "/races/gnome"
   },
   "abilityScores": {
     "starting": [
       {
-        "id": "con",
         "name": "Con",
         "url": "/ability-scores/con",
         "amount": 1
@@ -28,12 +26,10 @@
   "languages": {
     "starting": [
       {
-        "id": "common",
         "name": "Common",
         "url": "/languages/common"
       },
       {
-        "id": "gnomish",
         "name": "Gnomish",
         "url": "/languages/gnomish"
       }
@@ -44,12 +40,10 @@
   "traits": {
     "starting": [
       {
-        "id": "artificers-lore",
         "name": "Artificer's Lore",
         "url": "/traits/artificers-lore"
       },
       {
-        "id": "tinker",
         "name": "Tinker",
         "url": "/traits/tinker"
       }

@@ -24,7 +24,6 @@
   "concentration": true,
   "damage": {
     "type": {
-      "id": "radiant",
       "name": "Radiant",
       "url": "/damage-types/radiant"
     },
@@ -54,23 +53,19 @@
     "size": 60
   },
   "school": {
-    "id": "evocation",
     "name": "Evocation",
     "url": "/magic-schools/evocation"
   },
   "classes": [
     {
-      "id": "druid",
       "name": "Druid",
       "url": "/classes/druid"
     },
     {
-      "id": "sorcerer",
       "name": "Sorcerer",
       "url": "/classes/sorcerer"
     },
     {
-      "id": "wizard",
       "name": "Wizard",
       "url": "/classes/wizard"
     }

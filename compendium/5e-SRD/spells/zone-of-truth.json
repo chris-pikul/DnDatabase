@@ -30,23 +30,19 @@
     "size": 15
   },
   "school": {
-    "id": "enchantment",
     "name": "Enchantment",
     "url": "/magic-schools/enchantment"
   },
   "classes": [
     {
-      "id": "bard",
       "name": "Bard",
       "url": "/classes/bard"
     },
     {
-      "id": "cleric",
       "name": "Cleric",
       "url": "/classes/cleric"
     },
     {
-      "id": "paladin",
       "name": "Paladin",
       "url": "/classes/paladin"
     }

@@ -24,7 +24,6 @@
   "concentration": false,
   "damage": {
     "type": {
-      "id": "psychic",
       "name": "Psychic",
       "url": "/damage-types/psychic"
     },
@@ -45,13 +44,11 @@
   "healing": null,
   "areaOfEffect": null,
   "school": {
-    "id": "enchantment",
     "name": "Enchantment",
     "url": "/magic-schools/enchantment"
   },
   "classes": [
     {
-      "id": "bard",
       "name": "Bard",
       "url": "/classes/bard"
     }

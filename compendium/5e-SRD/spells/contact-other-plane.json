@@ -32,18 +32,15 @@
   "healing": null,
   "areaOfEffect": null,
   "school": {
-    "id": "divination",
     "name": "Divination",
     "url": "/magic-schools/divination"
   },
   "classes": [
     {
-      "id": "warlock",
       "name": "Warlock",
       "url": "/classes/warlock"
     },
     {
-      "id": "wizard",
       "name": "Wizard",
       "url": "/classes/wizard"
     }

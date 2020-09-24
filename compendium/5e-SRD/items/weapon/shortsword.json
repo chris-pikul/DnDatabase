@@ -17,17 +17,14 @@
     "type": "MARTIAL",
     "properties": [
       {
-        "id": "finesse",
         "name": "Finesse",
         "url": "/weapon-properties/finesse"
       },
       {
-        "id": "light",
         "name": "Light",
         "url": "/weapon-properties/light"
       },
       {
-        "id": "monk",
         "name": "Monk",
         "url": "/weapon-properties/monk"
       }
@@ -41,7 +38,6 @@
       "amount": "1d6",
       "twoHanded": null,
       "type": {
-        "id": "piercing",
         "name": "Piercing",
         "url": "/damage-types/piercing"
       }

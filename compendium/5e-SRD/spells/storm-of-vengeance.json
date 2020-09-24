@@ -24,7 +24,6 @@
   "concentration": true,
   "damage": {
     "type": {
-      "id": "thunder",
       "name": "Thunder",
       "url": "/damage-types/thunder"
     },
@@ -54,13 +53,11 @@
     "size": 360
   },
   "school": {
-    "id": "conjuration",
     "name": "Conjuration",
     "url": "/magic-schools/conjuration"
   },
   "classes": [
     {
-      "id": "druid",
       "name": "Druid",
       "url": "/classes/druid"
     }

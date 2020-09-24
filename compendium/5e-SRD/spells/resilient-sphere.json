@@ -32,13 +32,11 @@
   "healing": null,
   "areaOfEffect": null,
   "school": {
-    "id": "evocation",
     "name": "Evocation",
     "url": "/magic-schools/evocation"
   },
   "classes": [
     {
-      "id": "wizard",
       "name": "Wizard",
       "url": "/classes/wizard"
     }

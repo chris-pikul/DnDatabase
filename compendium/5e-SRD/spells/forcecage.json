@@ -30,23 +30,19 @@
     "size": 20
   },
   "school": {
-    "id": "evocation",
     "name": "Evocation",
     "url": "/magic-schools/evocation"
   },
   "classes": [
     {
-      "id": "bard",
       "name": "Bard",
       "url": "/classes/bard"
     },
     {
-      "id": "warlock",
       "name": "Warlock",
       "url": "/classes/warlock"
     },
     {
-      "id": "wizard",
       "name": "Wizard",
       "url": "/classes/wizard"
     }

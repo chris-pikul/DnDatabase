@@ -24,7 +24,6 @@
   "concentration": true,
   "damage": {
     "type": {
-      "id": "bludgeoning",
       "name": "Bludgeoning",
       "url": "/damage-types/bludgeoning"
     },
@@ -54,13 +53,11 @@
     "size": 20
   },
   "school": {
-    "id": "conjuration",
     "name": "Conjuration",
     "url": "/magic-schools/conjuration"
   },
   "classes": [
     {
-      "id": "wizard",
       "name": "Wizard",
       "url": "/classes/wizard"
     }

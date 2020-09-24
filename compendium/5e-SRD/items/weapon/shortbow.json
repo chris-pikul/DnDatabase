@@ -17,12 +17,10 @@
     "type": "SIMPLE",
     "properties": [
       {
-        "id": "ammunition",
         "name": "Ammunition",
         "url": "/weapon-properties/ammunition"
       },
       {
-        "id": "two-handed",
         "name": "Two-handed",
         "url": "/weapon-properties/two-handed"
       }
@@ -36,7 +34,6 @@
       "amount": "1d6",
       "twoHanded": null,
       "type": {
-        "id": "piercing",
         "name": "Piercing",
         "url": "/damage-types/piercing"
       }

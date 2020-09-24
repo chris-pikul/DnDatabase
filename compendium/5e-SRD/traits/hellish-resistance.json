@@ -7,7 +7,6 @@
   "description": "You have resistance to fire damage.",
   "races": [
     {
-      "id": "tiefling",
       "name": "Hellish Resistance",
       "url": "/races/tiefling"
     }

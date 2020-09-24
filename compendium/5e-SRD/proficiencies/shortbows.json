@@ -8,7 +8,6 @@
   "category": "WEAPONS",
   "races": [
     {
-      "id": "high-elf",
       "name": "High Elf",
       "url": "/races/high-elf"
     }
@@ -16,7 +15,6 @@
   "classes": [],
   "references": [
     {
-      "id": "shortbow",
       "name": "Shortbow",
       "url": "/items/weapon/shortbow"
     }

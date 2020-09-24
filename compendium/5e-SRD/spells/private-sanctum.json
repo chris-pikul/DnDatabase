@@ -31,13 +31,11 @@
     "size": 100
   },
   "school": {
-    "id": "abjuration",
     "name": "Abjuration",
     "url": "/magic-schools/abjuration"
   },
   "classes": [
     {
-      "id": "wizard",
       "name": "Wizard",
       "url": "/classes/wizard"
     }

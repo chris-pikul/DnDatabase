@@ -9,39 +9,32 @@
   "races": [],
   "classes": [
     {
-      "id": "barbarian",
       "name": "Barbarian",
       "url": "/classes/barbarian"
     },
     {
-      "id": "cleric",
       "name": "Cleric",
       "url": "/classes/cleric"
     },
     {
-      "id": "druid",
       "name": "Druid",
       "url": "/classes/druid"
     },
     {
-      "id": "fighter",
       "name": "Fighter",
       "url": "/classes/fighter"
     },
     {
-      "id": "paladin",
       "name": "Paladin",
       "url": "/classes/paladin"
     },
     {
-      "id": "ranger",
       "name": "Ranger",
       "url": "/classes/ranger"
     }
   ],
   "references": [
     {
-      "id": "shield",
       "name": "Shield",
       "url": "/items/armor/shield"
     }

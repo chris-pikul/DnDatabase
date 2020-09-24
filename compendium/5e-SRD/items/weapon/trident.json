@@ -17,12 +17,10 @@
     "type": "MARTIAL",
     "properties": [
       {
-        "id": "thrown",
         "name": "Thrown",
         "url": "/weapon-properties/thrown"
       },
       {
-        "id": "versatile",
         "name": "Versatile",
         "url": "/weapon-properties/versatile"
       }
@@ -36,7 +34,6 @@
       "amount": "1d6",
       "twoHanded": "1d8",
       "type": {
-        "id": "slashing",
         "name": "Slashing",
         "url": "/damage-types/slashing"
       }

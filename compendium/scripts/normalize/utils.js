@@ -24,7 +24,7 @@ const MakeTitleCase = input => input.split(' ')
     .join(' ');
 
 const MakeObj = (urlBase, id, name) => ({
-    id: MakeKabob(id),
+    //id: MakeKabob(id),
     name: MakeTitleCase(name || id || ''),
     url: MakeURL(urlBase, id),
 });

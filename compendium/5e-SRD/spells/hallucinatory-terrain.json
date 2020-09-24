@@ -30,28 +30,23 @@
     "size": 150
   },
   "school": {
-    "id": "illusion",
     "name": "Illusion",
     "url": "/magic-schools/illusion"
   },
   "classes": [
     {
-      "id": "bard",
       "name": "Bard",
       "url": "/classes/bard"
     },
     {
-      "id": "druid",
       "name": "Druid",
       "url": "/classes/druid"
     },
     {
-      "id": "warlock",
       "name": "Warlock",
       "url": "/classes/warlock"
     },
     {
-      "id": "wizard",
       "name": "Wizard",
       "url": "/classes/wizard"
     }

@@ -27,18 +27,15 @@
   "healing": null,
   "areaOfEffect": null,
   "school": {
-    "id": "abjuration",
     "name": "Abjuration",
     "url": "/magic-schools/abjuration"
   },
   "classes": [
     {
-      "id": "druid",
       "name": "Druid",
       "url": "/classes/druid"
     },
     {
-      "id": "ranger",
       "name": "Ranger",
       "url": "/classes/ranger"
     }

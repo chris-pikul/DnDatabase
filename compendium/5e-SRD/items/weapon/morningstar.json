@@ -25,7 +25,6 @@
       "amount": "1d8",
       "twoHanded": null,
       "type": {
-        "id": "piercing",
         "name": "Piercing",
         "url": "/damage-types/piercing"
       }

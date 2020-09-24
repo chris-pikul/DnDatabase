@@ -31,18 +31,15 @@
     "size": 30
   },
   "school": {
-    "id": "transmutation",
     "name": "Transmutation",
     "url": "/magic-schools/transmutation"
   },
   "classes": [
     {
-      "id": "cleric",
       "name": "Cleric",
       "url": "/classes/cleric"
     },
     {
-      "id": "druid",
       "name": "Druid",
       "url": "/classes/druid"
     }

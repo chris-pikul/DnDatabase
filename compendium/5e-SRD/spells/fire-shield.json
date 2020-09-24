@@ -24,7 +24,6 @@
   "concentration": false,
   "damage": {
     "type": {
-      "id": "fire",
       "name": "Fire",
       "url": "/damage-types/fire"
     },
@@ -49,13 +48,11 @@
     "size": 5
   },
   "school": {
-    "id": "evocation",
     "name": "Evocation",
     "url": "/magic-schools/evocation"
   },
   "classes": [
     {
-      "id": "wizard",
       "name": "Wizard",
       "url": "/classes/wizard"
     }

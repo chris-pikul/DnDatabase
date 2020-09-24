@@ -8,7 +8,6 @@
   "races": [],
   "subRaces": [
     {
-      "id": "lightfoot-halfling",
       "name": "Naturally Stealthy",
       "url": "/sub-races/lightfoot-halfling"
     }

@@ -30,23 +30,19 @@
     "size": 10
   },
   "school": {
-    "id": "abjuration",
     "name": "Abjuration",
     "url": "/magic-schools/abjuration"
   },
   "classes": [
     {
-      "id": "bard",
       "name": "Bard",
       "url": "/classes/bard"
     },
     {
-      "id": "cleric",
       "name": "Cleric",
       "url": "/classes/cleric"
     },
     {
-      "id": "wizard",
       "name": "Wizard",
       "url": "/classes/wizard"
     }

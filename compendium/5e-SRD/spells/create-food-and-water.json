@@ -27,23 +27,19 @@
   "healing": null,
   "areaOfEffect": null,
   "school": {
-    "id": "conjuration",
     "name": "Conjuration",
     "url": "/magic-schools/conjuration"
   },
   "classes": [
     {
-      "id": "cleric",
       "name": "Cleric",
       "url": "/classes/cleric"
     },
     {
-      "id": "druid",
       "name": "Druid",
       "url": "/classes/druid"
     },
     {
-      "id": "paladin",
       "name": "Paladin",
       "url": "/classes/paladin"
     }

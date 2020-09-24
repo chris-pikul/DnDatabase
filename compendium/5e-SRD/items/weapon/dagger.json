@@ -17,22 +17,18 @@
     "type": "SIMPLE",
     "properties": [
       {
-        "id": "finesse",
         "name": "Finesse",
         "url": "/weapon-properties/finesse"
       },
       {
-        "id": "light",
         "name": "Light",
         "url": "/weapon-properties/light"
       },
       {
-        "id": "thrown",
         "name": "Thrown",
         "url": "/weapon-properties/thrown"
       },
       {
-        "id": "monk",
         "name": "Monk",
         "url": "/weapon-properties/monk"
       }
@@ -46,7 +42,6 @@
       "amount": "1d4",
       "twoHanded": null,
       "type": {
-        "id": "piercing",
         "name": "Piercing",
         "url": "/damage-types/piercing"
       }

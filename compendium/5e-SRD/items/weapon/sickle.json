@@ -17,12 +17,10 @@
     "type": "SIMPLE",
     "properties": [
       {
-        "id": "light",
         "name": "Light",
         "url": "/weapon-properties/light"
       },
       {
-        "id": "monk",
         "name": "Monk",
         "url": "/weapon-properties/monk"
       }
@@ -36,7 +34,6 @@
       "amount": "1d4",
       "twoHanded": null,
       "type": {
-        "id": "slashing",
         "name": "Slashing",
         "url": "/damage-types/slashing"
       }

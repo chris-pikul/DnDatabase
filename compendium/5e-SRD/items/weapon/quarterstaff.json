@@ -17,12 +17,10 @@
     "type": "SIMPLE",
     "properties": [
       {
-        "id": "versatile",
         "name": "Versatile",
         "url": "/weapon-properties/versatile"
       },
       {
-        "id": "monk",
         "name": "Monk",
         "url": "/weapon-properties/monk"
       }
@@ -36,7 +34,6 @@
       "amount": "1d6",
       "twoHanded": "1d8",
       "type": {
-        "id": "bludgeoning",
         "name": "Bludgeoning",
         "url": "/damage-types/bludgeoning"
       }

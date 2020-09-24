@@ -17,12 +17,10 @@
     "type": "MARTIAL",
     "properties": [
       {
-        "id": "thrown",
         "name": "Thrown",
         "url": "/weapon-properties/thrown"
       },
       {
-        "id": "special",
         "name": "Special",
         "url": "/weapon-properties/special"
       }

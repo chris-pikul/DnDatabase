@@ -7,7 +7,6 @@
   "description": "When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. you cannot use this feature again until you finish a long rest.",
   "races": [
     {
-      "id": "half-orc",
       "name": "Relentless Endurance",
       "url": "/races/half-orc"
     }

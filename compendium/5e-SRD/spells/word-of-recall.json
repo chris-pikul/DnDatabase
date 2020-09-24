@@ -30,13 +30,11 @@
     "size": 5
   },
   "school": {
-    "id": "conjuration",
     "name": "Conjuration",
     "url": "/magic-schools/conjuration"
   },
   "classes": [
     {
-      "id": "cleric",
       "name": "Cleric",
       "url": "/classes/cleric"
     }

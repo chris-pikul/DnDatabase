@@ -8,7 +8,6 @@
   "category": "SKILLS",
   "races": [
     {
-      "id": "elf",
       "name": "Elf",
       "url": "/races/elf"
     }
@@ -16,7 +15,6 @@
   "classes": [],
   "references": [
     {
-      "id": "perception",
       "name": "Perception",
       "url": "/skills/perception"
     }

@@ -20,13 +20,11 @@
   "abilityScores": {
     "starting": [
       {
-        "id": "str",
         "name": "Str",
         "url": "/ability-scores/str",
         "amount": 2
       },
       {
-        "id": "cha",
         "name": "Cha",
         "url": "/ability-scores/cha",
         "amount": 1
@@ -41,12 +39,10 @@
   "languages": {
     "starting": [
       {
-        "id": "common",
         "name": "Common",
         "url": "/languages/common"
       },
       {
-        "id": "draconic",
         "name": "Draconic",
         "url": "/languages/draconic"
       }
@@ -57,17 +53,14 @@
   "traits": {
     "starting": [
       {
-        "id": "draconic-ancestry",
         "name": "Draconic Ancestry",
         "url": "/traits/draconic-ancestry"
       },
       {
-        "id": "breath-weapon",
         "name": "Breath Weapon",
         "url": "/traits/breath-weapon"
       },
       {
-        "id": "damage-resistance",
         "name": "Damage Resistance",
         "url": "/traits/damage-resistance"
       }

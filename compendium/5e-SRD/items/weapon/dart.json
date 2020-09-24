@@ -17,12 +17,10 @@
     "type": "SIMPLE",
     "properties": [
       {
-        "id": "finesse",
         "name": "Finesse",
         "url": "/weapon-properties/finesse"
       },
       {
-        "id": "thrown",
         "name": "Thrown",
         "url": "/weapon-properties/thrown"
       }
@@ -36,7 +34,6 @@
       "amount": "1d4",
       "twoHanded": null,
       "type": {
-        "id": "piercing",
         "name": "Piercing",
         "url": "/damage-types/piercing"
       }

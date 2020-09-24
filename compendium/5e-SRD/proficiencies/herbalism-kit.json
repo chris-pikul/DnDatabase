@@ -9,14 +9,12 @@
   "races": [],
   "classes": [
     {
-      "id": "druid",
       "name": "Druid",
       "url": "/classes/druid"
     }
   ],
   "references": [
     {
-      "id": "herbalism-kit",
       "name": "Herbalism Kit",
       "url": "/items/herbalism-kit"
     }

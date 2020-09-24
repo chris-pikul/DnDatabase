@@ -24,7 +24,6 @@
   "concentration": false,
   "damage": {
     "type": {
-      "id": "radiant",
       "name": "Radiant",
       "url": "/damage-types/radiant"
     },
@@ -54,18 +53,15 @@
     "size": 10
   },
   "school": {
-    "id": "conjuration",
     "name": "Conjuration",
     "url": "/magic-schools/conjuration"
   },
   "classes": [
     {
-      "id": "cleric",
       "name": "Cleric",
       "url": "/classes/cleric"
     },
     {
-      "id": "paladin",
       "name": "Paladin",
       "url": "/classes/paladin"
     }

@@ -9,19 +9,16 @@
   "races": [],
   "classes": [
     {
-      "id": "bard",
       "name": "Bard",
       "url": "/classes/bard"
     },
     {
-      "id": "rogue",
       "name": "Rogue",
       "url": "/classes/rogue"
     }
   ],
   "references": [
     {
-      "id": "rapier",
       "name": "Rapier",
       "url": "/items/weapon/rapier"
     }

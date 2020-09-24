@@ -9,44 +9,36 @@
   "races": [],
   "classes": [
     {
-      "id": "barbarian",
       "name": "Barbarian",
       "url": "/classes/barbarian"
     },
     {
-      "id": "bard",
       "name": "Bard",
       "url": "/classes/bard"
     },
     {
-      "id": "cleric",
       "name": "Cleric",
       "url": "/classes/cleric"
     },
     {
-      "id": "druid",
       "name": "Druid",
       "url": "/classes/druid"
     },
     {
-      "id": "ranger",
       "name": "Ranger",
       "url": "/classes/ranger"
     },
     {
-      "id": "rogue",
       "name": "Rogue",
       "url": "/classes/rogue"
     },
     {
-      "id": "warlock",
       "name": "Warlock",
       "url": "/classes/warlock"
     }
   ],
   "references": [
     {
-      "id": "light-armor",
       "name": "Light Armor",
       "url": "/item-categories/light-armor"
     }

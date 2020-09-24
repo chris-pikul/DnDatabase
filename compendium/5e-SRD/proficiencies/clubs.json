@@ -9,14 +9,12 @@
   "races": [],
   "classes": [
     {
-      "id": "druid",
       "name": "Druid",
       "url": "/classes/druid"
     }
   ],
   "references": [
     {
-      "id": "club",
       "name": "Club",
       "url": "/items/weapon/club"
     }

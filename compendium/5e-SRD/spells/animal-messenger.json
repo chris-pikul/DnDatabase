@@ -28,23 +28,19 @@
   "healing": null,
   "areaOfEffect": null,
   "school": {
-    "id": "enchantment",
     "name": "Enchantment",
     "url": "/magic-schools/enchantment"
   },
   "classes": [
     {
-      "id": "bard",
       "name": "Bard",
       "url": "/classes/bard"
     },
     {
-      "id": "druid",
       "name": "Druid",
       "url": "/classes/druid"
     },
     {
-      "id": "ranger",
       "name": "Ranger",
       "url": "/classes/ranger"
     }

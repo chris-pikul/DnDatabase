@@ -25,7 +25,6 @@
   "concentration": false,
   "damage": {
     "type": {
-      "id": "necrotic",
       "name": "Necrotic",
       "url": "/damage-types/necrotic"
     },
@@ -47,13 +46,11 @@
   "healing": null,
   "areaOfEffect": null,
   "school": {
-    "id": "necromancy",
     "name": "Necromancy",
     "url": "/magic-schools/necromancy"
   },
   "classes": [
     {
-      "id": "cleric",
       "name": "Cleric",
       "url": "/classes/cleric"
     }

@@ -9,29 +9,24 @@
   "races": [],
   "classes": [
     {
-      "id": "barbarian",
       "name": "Barbarian",
       "url": "/classes/barbarian"
     },
     {
-      "id": "fighter",
       "name": "Fighter",
       "url": "/classes/fighter"
     },
     {
-      "id": "monk",
       "name": "Monk",
       "url": "/classes/monk"
     },
     {
-      "id": "ranger",
       "name": "Ranger",
       "url": "/classes/ranger"
     }
   ],
   "references": [
     {
-      "id": "str",
       "name": "Str",
       "url": "/ability-scores/str"
     }

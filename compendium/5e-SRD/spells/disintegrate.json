@@ -25,7 +25,6 @@
   "concentration": false,
   "damage": {
     "type": {
-      "id": "force",
       "name": "Force",
       "url": "/damage-types/force"
     },
@@ -55,18 +54,15 @@
     "size": 10
   },
   "school": {
-    "id": "transmutation",
     "name": "Transmutation",
     "url": "/magic-schools/transmutation"
   },
   "classes": [
     {
-      "id": "sorcerer",
       "name": "Sorcerer",
       "url": "/classes/sorcerer"
     },
     {
-      "id": "wizard",
       "name": "Wizard",
       "url": "/classes/wizard"
     }

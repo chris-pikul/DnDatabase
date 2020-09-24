@@ -17,7 +17,6 @@
     "type": "SIMPLE",
     "properties": [
       {
-        "id": "two-handed",
         "name": "Two-handed",
         "url": "/weapon-properties/two-handed"
       }
@@ -31,7 +30,6 @@
       "amount": "1d8",
       "twoHanded": null,
       "type": {
-        "id": "bludgeoning",
         "name": "Bludgeoning",
         "url": "/damage-types/bludgeoning"
       }

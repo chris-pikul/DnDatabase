@@ -25,7 +25,6 @@
   "concentration": false,
   "damage": {
     "type": {
-      "id": "lightning",
       "name": "Lightning",
       "url": "/damage-types/lightning"
     },
@@ -55,18 +54,15 @@
     "size": 100
   },
   "school": {
-    "id": "evocation",
     "name": "Evocation",
     "url": "/magic-schools/evocation"
   },
   "classes": [
     {
-      "id": "sorcerer",
       "name": "Sorcerer",
       "url": "/classes/sorcerer"
     },
     {
-      "id": "wizard",
       "name": "Wizard",
       "url": "/classes/wizard"
     }

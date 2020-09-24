@@ -20,13 +20,11 @@
   "abilityScores": {
     "starting": [
       {
-        "id": "str",
         "name": "Str",
         "url": "/ability-scores/str",
         "amount": 2
       },
       {
-        "id": "con",
         "name": "Con",
         "url": "/ability-scores/con",
         "amount": 1
@@ -37,7 +35,6 @@
   "proficiencies": {
     "starting": [
       {
-        "id": "skill-intimidation",
         "name": "Ntimidation",
         "url": "/proficiencies/skill-intimidation"
       }
@@ -47,12 +44,10 @@
   "languages": {
     "starting": [
       {
-        "id": "common",
         "name": "Common",
         "url": "/languages/common"
       },
       {
-        "id": "orc",
         "name": "Orcish",
         "url": "/languages/orc"
       }
@@ -63,17 +58,14 @@
   "traits": {
     "starting": [
       {
-        "id": "darkvision",
         "name": "Darkvision",
         "url": "/traits/darkvision"
       },
       {
-        "id": "savage-attacks",
         "name": "Savage Attacks",
         "url": "/traits/savage-attacks"
       },
       {
-        "id": "relentless-endurance",
         "name": "Restless Endurance",
         "url": "/traits/relentless-endurance"
       }

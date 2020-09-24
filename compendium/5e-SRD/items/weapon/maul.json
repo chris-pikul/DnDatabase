@@ -17,12 +17,10 @@
     "type": "MARTIAL",
     "properties": [
       {
-        "id": "heavy",
         "name": "Heavy",
         "url": "/weapon-properties/heavy"
       },
       {
-        "id": "two-handed",
         "name": "Two-handed",
         "url": "/weapon-properties/two-handed"
       }
@@ -36,7 +34,6 @@
       "amount": "2d6",
       "twoHanded": null,
       "type": {
-        "id": "bludgeoning",
         "name": "Bludgeoning",
         "url": "/damage-types/bludgeoning"
       }

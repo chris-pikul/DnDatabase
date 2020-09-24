@@ -25,7 +25,6 @@
   "concentration": true,
   "damage": {
     "type": {
-      "id": "fire",
       "name": "Fire",
       "url": "/damage-types/fire"
     },
@@ -52,18 +51,15 @@
   "healing": null,
   "areaOfEffect": null,
   "school": {
-    "id": "transmutation",
     "name": "Transmutation",
     "url": "/magic-schools/transmutation"
   },
   "classes": [
     {
-      "id": "bard",
       "name": "Bard",
       "url": "/classes/bard"
     },
     {
-      "id": "druid",
       "name": "Druid",
       "url": "/classes/druid"
     }

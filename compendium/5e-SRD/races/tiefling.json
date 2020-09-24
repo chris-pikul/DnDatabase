@@ -20,13 +20,11 @@
   "abilityScores": {
     "starting": [
       {
-        "id": "int",
         "name": "Int",
         "url": "/ability-scores/int",
         "amount": 1
       },
       {
-        "id": "cha",
         "name": "Cha",
         "url": "/ability-scores/cha",
         "amount": 2
@@ -41,12 +39,10 @@
   "languages": {
     "starting": [
       {
-        "id": "common",
         "name": "Common",
         "url": "/languages/common"
       },
       {
-        "id": "abyssal",
         "name": "Infernal",
         "url": "/languages/abyssal"
       }
@@ -57,17 +53,14 @@
   "traits": {
     "starting": [
       {
-        "id": "darkvision",
         "name": "Darkvision",
         "url": "/traits/darkvision"
       },
       {
-        "id": "hellish-resistance",
         "name": "Hellish Resistance",
         "url": "/traits/hellish-resistance"
       },
       {
-        "id": "infernal-legacy",
         "name": "Infernal Legacy",
         "url": "/traits/infernal-legacy"
       }

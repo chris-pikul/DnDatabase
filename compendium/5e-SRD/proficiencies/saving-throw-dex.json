@@ -9,29 +9,24 @@
   "races": [],
   "classes": [
     {
-      "id": "bard",
       "name": "Bard",
       "url": "/classes/bard"
     },
     {
-      "id": "monk",
       "name": "Monk",
       "url": "/classes/monk"
     },
     {
-      "id": "ranger",
       "name": "Ranger",
       "url": "/classes/ranger"
     },
     {
-      "id": "rogue",
       "name": "Rogue",
       "url": "/classes/rogue"
     }
   ],
   "references": [
     {
-      "id": "dex",
       "name": "Dex",
       "url": "/ability-scores/dex"
     }

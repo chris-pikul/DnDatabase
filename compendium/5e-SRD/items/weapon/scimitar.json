@@ -17,12 +17,10 @@
     "type": "MARTIAL",
     "properties": [
       {
-        "id": "finesse",
         "name": "Finesse",
         "url": "/weapon-properties/finesse"
       },
       {
-        "id": "light",
         "name": "Light",
         "url": "/weapon-properties/light"
       }
@@ -36,7 +34,6 @@
       "amount": "1d6",
       "twoHanded": null,
       "type": {
-        "id": "slashing",
         "name": "Slashing",
         "url": "/damage-types/slashing"
       }

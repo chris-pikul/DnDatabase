@@ -6,14 +6,12 @@
   "source": "PHB",
   "description": "As a lightfoot halfling, you can easily hide from notice, even using other people as cover. You're inclined to be affable and get along well with others. Lightfoots are more prone to wanderlust than other halflings, and often dwell alongside other races or take up a nomadic life.",
   "race": {
-    "id": "halfling",
     "name": "Halfling",
     "url": "/races/halfling"
   },
   "abilityScores": {
     "starting": [
       {
-        "id": "cha",
         "name": "Cha",
         "url": "/ability-scores/cha",
         "amount": 1
@@ -33,7 +31,6 @@
   "traits": {
     "starting": [
       {
-        "id": "naturally-stealthy",
         "name": "Naturally Stealthy",
         "url": "/traits/naturally-stealthy"
       }

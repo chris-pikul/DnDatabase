@@ -25,7 +25,6 @@
   "concentration": true,
   "damage": {
     "type": {
-      "id": "cold",
       "name": "Cold",
       "url": "/damage-types/cold"
     },
@@ -55,13 +54,11 @@
     "size": 10
   },
   "school": {
-    "id": "evocation",
     "name": "Evocation",
     "url": "/magic-schools/evocation"
   },
   "classes": [
     {
-      "id": "wizard",
       "name": "Wizard",
       "url": "/classes/wizard"
     }

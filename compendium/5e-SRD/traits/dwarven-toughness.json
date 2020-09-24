@@ -8,7 +8,6 @@
   "races": [],
   "subRaces": [
     {
-      "id": "hill-dwarf",
       "name": "Dwarven Toughness",
       "url": "/sub-races/hill-dwarf"
     }

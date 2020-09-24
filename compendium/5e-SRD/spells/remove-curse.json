@@ -27,28 +27,23 @@
   "healing": null,
   "areaOfEffect": null,
   "school": {
-    "id": "abjuration",
     "name": "Abjuration",
     "url": "/magic-schools/abjuration"
   },
   "classes": [
     {
-      "id": "cleric",
       "name": "Cleric",
       "url": "/classes/cleric"
     },
     {
-      "id": "paladin",
       "name": "Paladin",
       "url": "/classes/paladin"
     },
     {
-      "id": "warlock",
       "name": "Warlock",
       "url": "/classes/warlock"
     },
     {
-      "id": "wizard",
       "name": "Wizard",
       "url": "/classes/wizard"
     }

@@ -17,17 +17,14 @@
     "type": "MARTIAL",
     "properties": [
       {
-        "id": "ammunition",
         "name": "Ammunition",
         "url": "/weapon-properties/ammunition"
       },
       {
-        "id": "light",
         "name": "Light",
         "url": "/weapon-properties/light"
       },
       {
-        "id": "loading",
         "name": "Loading",
         "url": "/weapon-properties/loading"
       }
@@ -41,7 +38,6 @@
       "amount": "1d6",
       "twoHanded": null,
       "type": {
-        "id": "piercing",
         "name": "Piercing",
         "url": "/damage-types/piercing"
       }

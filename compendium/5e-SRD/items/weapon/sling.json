@@ -17,7 +17,6 @@
     "type": "SIMPLE",
     "properties": [
       {
-        "id": "ammunition",
         "name": "Ammunition",
         "url": "/weapon-properties/ammunition"
       }
@@ -31,7 +30,6 @@
       "amount": "1d4",
       "twoHanded": null,
       "type": {
-        "id": "bludgeoning",
         "name": "Bludgeoning",
         "url": "/damage-types/bludgeoning"
       }

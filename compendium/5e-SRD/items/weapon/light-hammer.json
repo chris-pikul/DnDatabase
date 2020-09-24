@@ -17,17 +17,14 @@
     "type": "SIMPLE",
     "properties": [
       {
-        "id": "light",
         "name": "Light",
         "url": "/weapon-properties/light"
       },
       {
-        "id": "thrown",
         "name": "Thrown",
         "url": "/weapon-properties/thrown"
       },
       {
-        "id": "monk",
         "name": "Monk",
         "url": "/weapon-properties/monk"
       }
@@ -41,7 +38,6 @@
       "amount": "1d4",
       "twoHanded": null,
       "type": {
-        "id": "bludgeoning",
         "name": "Bludgeoning",
         "url": "/damage-types/bludgeoning"
       }

@@ -25,7 +25,6 @@
   "concentration": false,
   "damage": {
     "type": {
-      "id": "necrotic",
       "name": "Necrotic",
       "url": "/damage-types/necrotic"
     },
@@ -52,28 +51,23 @@
   "healing": null,
   "areaOfEffect": null,
   "school": {
-    "id": "necromancy",
     "name": "Necromancy",
     "url": "/magic-schools/necromancy"
   },
   "classes": [
     {
-      "id": "druid",
       "name": "Druid",
       "url": "/classes/druid"
     },
     {
-      "id": "sorcerer",
       "name": "Sorcerer",
       "url": "/classes/sorcerer"
     },
     {
-      "id": "warlock",
       "name": "Warlock",
       "url": "/classes/warlock"
     },
     {
-      "id": "wizard",
       "name": "Wizard",
       "url": "/classes/wizard"
     }

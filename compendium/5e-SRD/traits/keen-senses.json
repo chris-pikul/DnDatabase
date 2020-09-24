@@ -7,14 +7,12 @@
   "description": "You have proficiency in the Perception skill.",
   "races": [
     {
-      "id": "elf",
       "name": "Keen Senses",
       "url": "/races/elf"
     }
   ],
   "subRaces": [
     {
-      "id": "high-elf",
       "name": "Keen Senses",
       "url": "/sub-races/high-elf"
     }

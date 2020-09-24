@@ -17,12 +17,10 @@
     "type": "MARTIAL",
     "properties": [
       {
-        "id": "reach",
         "name": "Reach",
         "url": "/weapon-properties/reach"
       },
       {
-        "id": "special",
         "name": "Special",
         "url": "/weapon-properties/special"
       }
@@ -36,7 +34,6 @@
       "amount": "1d12",
       "twoHanded": null,
       "type": {
-        "id": "piercing",
         "name": "Piercing",
         "url": "/damage-types/piercing"
       }

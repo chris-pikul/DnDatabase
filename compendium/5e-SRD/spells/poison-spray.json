@@ -24,7 +24,6 @@
   "concentration": false,
   "damage": {
     "type": {
-      "id": "poison",
       "name": "Poison",
       "url": "/damage-types/poison"
     },
@@ -45,23 +44,19 @@
   "healing": null,
   "areaOfEffect": null,
   "school": {
-    "id": "conjuration",
     "name": "Conjuration",
     "url": "/magic-schools/conjuration"
   },
   "classes": [
     {
-      "id": "sorcerer",
       "name": "Sorcerer",
       "url": "/classes/sorcerer"
     },
     {
-      "id": "warlock",
       "name": "Warlock",
       "url": "/classes/warlock"
     },
     {
-      "id": "wizard",
       "name": "Wizard",
       "url": "/classes/wizard"
     }

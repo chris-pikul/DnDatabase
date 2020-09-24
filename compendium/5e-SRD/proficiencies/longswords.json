@@ -8,26 +8,22 @@
   "category": "WEAPONS",
   "races": [
     {
-      "id": "high-elf",
       "name": "High Elf",
       "url": "/races/high-elf"
     }
   ],
   "classes": [
     {
-      "id": "bard",
       "name": "Bard",
       "url": "/classes/bard"
     },
     {
-      "id": "rogue",
       "name": "Rogue",
       "url": "/classes/rogue"
     }
   ],
   "references": [
     {
-      "id": "longsword",
       "name": "Longsword",
       "url": "/items/weapon/longsword"
     }

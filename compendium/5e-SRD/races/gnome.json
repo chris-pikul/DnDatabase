@@ -20,7 +20,6 @@
   "abilityScores": {
     "starting": [
       {
-        "id": "int",
         "name": "Int",
         "url": "/ability-scores/int",
         "amount": 2
@@ -35,12 +34,10 @@
   "languages": {
     "starting": [
       {
-        "id": "common",
         "name": "Common",
         "url": "/languages/common"
       },
       {
-        "id": "gnomish",
         "name": "Gnomish",
         "url": "/languages/gnomish"
       }
@@ -51,12 +48,10 @@
   "traits": {
     "starting": [
       {
-        "id": "darkvision",
         "name": "Darkvision",
         "url": "/traits/darkvision"
       },
       {
-        "id": "gnome-cunning",
         "name": "Gnome Cunning",
         "url": "/traits/gnome-cunning"
       }
@@ -65,7 +60,6 @@
   },
   "subRaces": [
     {
-      "id": "rock-gnome",
       "name": "Rock Gnome",
       "url": "/races/sub-races/rock-gnome"
     }

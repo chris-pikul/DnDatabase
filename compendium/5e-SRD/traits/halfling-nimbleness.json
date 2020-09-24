@@ -7,14 +7,12 @@
   "description": "You can move through the space of any creature that is of a size larger than yours.",
   "races": [
     {
-      "id": "halfling",
       "name": "Halfling Nimbleness",
       "url": "/races/halfling"
     }
   ],
   "subRaces": [
     {
-      "id": "lightfoot-halfling",
       "name": "Halfling Nimbleness",
       "url": "/sub-races/lightfoot-halfling"
     }

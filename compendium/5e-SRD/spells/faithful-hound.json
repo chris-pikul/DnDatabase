@@ -24,7 +24,6 @@
   "concentration": false,
   "damage": {
     "type": {
-      "id": "piercing",
       "name": "Piercing",
       "url": "/damage-types/piercing"
     },
@@ -46,13 +45,11 @@
   "healing": null,
   "areaOfEffect": null,
   "school": {
-    "id": "conjuration",
     "name": "Conjuration",
     "url": "/magic-schools/conjuration"
   },
   "classes": [
     {
-      "id": "wizard",
       "name": "Wizard",
       "url": "/classes/wizard"
     }

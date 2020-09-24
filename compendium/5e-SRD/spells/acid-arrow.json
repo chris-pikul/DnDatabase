@@ -25,7 +25,6 @@
   "concentration": false,
   "damage": {
     "type": {
-      "id": "acid",
       "name": "Acid",
       "url": "/damage-types/acid"
     },
@@ -47,13 +46,11 @@
   "healing": null,
   "areaOfEffect": null,
   "school": {
-    "id": "evocation",
     "name": "Evocation",
     "url": "/magic-schools/evocation"
   },
   "classes": [
     {
-      "id": "wizard",
       "name": "Wizard",
       "url": "/classes/wizard"
     }

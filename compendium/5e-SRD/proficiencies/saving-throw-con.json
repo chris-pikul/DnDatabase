@@ -9,24 +9,20 @@
   "races": [],
   "classes": [
     {
-      "id": "barbarian",
       "name": "Barbarian",
       "url": "/classes/barbarian"
     },
     {
-      "id": "fighter",
       "name": "Fighter",
       "url": "/classes/fighter"
     },
     {
-      "id": "sorcerer",
       "name": "Sorcerer",
       "url": "/classes/sorcerer"
     }
   ],
   "references": [
     {
-      "id": "con",
       "name": "Con",
       "url": "/ability-scores/con"
     }

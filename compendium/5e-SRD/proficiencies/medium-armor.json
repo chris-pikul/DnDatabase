@@ -9,29 +9,24 @@
   "races": [],
   "classes": [
     {
-      "id": "barbarian",
       "name": "Barbarian",
       "url": "/classes/barbarian"
     },
     {
-      "id": "cleric",
       "name": "Cleric",
       "url": "/classes/cleric"
     },
     {
-      "id": "druid",
       "name": "Druid",
       "url": "/classes/druid"
     },
     {
-      "id": "ranger",
       "name": "Ranger",
       "url": "/classes/ranger"
     }
   ],
   "references": [
     {
-      "id": "medium-armor",
       "name": "Medium Armor",
       "url": "/item-categories/medium-armor"
     }

@@ -24,7 +24,6 @@
   "concentration": false,
   "damage": {
     "type": {
-      "id": "force",
       "name": "Force",
       "url": "/damage-types/force"
     },
@@ -40,13 +39,11 @@
   "healing": null,
   "areaOfEffect": null,
   "school": {
-    "id": "evocation",
     "name": "Evocation",
     "url": "/magic-schools/evocation"
   },
   "classes": [
     {
-      "id": "warlock",
       "name": "Warlock",
       "url": "/classes/warlock"
     }

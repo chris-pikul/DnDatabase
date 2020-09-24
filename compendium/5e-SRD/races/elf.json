@@ -20,7 +20,6 @@
   "abilityScores": {
     "starting": [
       {
-        "id": "dex",
         "name": "Dex",
         "url": "/ability-scores/dex",
         "amount": 2
@@ -31,7 +30,6 @@
   "proficiencies": {
     "starting": [
       {
-        "id": "skill-perception",
         "name": "Erception",
         "url": "/proficiencies/skill-perception"
       }
@@ -41,12 +39,10 @@
   "languages": {
     "starting": [
       {
-        "id": "common",
         "name": "Common",
         "url": "/languages/common"
       },
       {
-        "id": "elvish",
         "name": "Elvish",
         "url": "/languages/elvish"
       }
@@ -57,17 +53,14 @@
   "traits": {
     "starting": [
       {
-        "id": "darkvision",
         "name": "Darkvision",
         "url": "/traits/darkvision"
       },
       {
-        "id": "fey-ancestry",
         "name": "Fey Ancestry",
         "url": "/traits/fey-ancestry"
       },
       {
-        "id": "trance",
         "name": "Trance",
         "url": "/traits/trance"
       }
@@ -76,7 +69,6 @@
   },
   "subRaces": [
     {
-      "id": "high-elf",
       "name": "High Elf",
       "url": "/races/sub-races/high-elf"
     }

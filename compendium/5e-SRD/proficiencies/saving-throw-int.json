@@ -9,24 +9,20 @@
   "races": [],
   "classes": [
     {
-      "id": "druid",
       "name": "Druid",
       "url": "/classes/druid"
     },
     {
-      "id": "rogue",
       "name": "Rogue",
       "url": "/classes/rogue"
     },
     {
-      "id": "wizard",
       "name": "Wizard",
       "url": "/classes/wizard"
     }
   ],
   "references": [
     {
-      "id": "int",
       "name": "Int",
       "url": "/ability-scores/int"
     }

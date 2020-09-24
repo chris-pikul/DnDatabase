@@ -17,7 +17,6 @@
     "type": "MARTIAL",
     "properties": [
       {
-        "id": "versatile",
         "name": "Versatile",
         "url": "/weapon-properties/versatile"
       }
@@ -31,7 +30,6 @@
       "amount": "1d8",
       "twoHanded": "1d10",
       "type": {
-        "id": "bludgeoning",
         "name": "Bludgeoning",
         "url": "/damage-types/bludgeoning"
       }

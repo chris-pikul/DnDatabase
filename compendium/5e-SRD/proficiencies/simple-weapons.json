@@ -9,54 +9,44 @@
   "races": [],
   "classes": [
     {
-      "id": "barbarian",
       "name": "Barbarian",
       "url": "/classes/barbarian"
     },
     {
-      "id": "bard",
       "name": "Bard",
       "url": "/classes/bard"
     },
     {
-      "id": "cleric",
       "name": "Cleric",
       "url": "/classes/cleric"
     },
     {
-      "id": "fighter",
       "name": "Fighter",
       "url": "/classes/fighter"
     },
     {
-      "id": "monk",
       "name": "Monk",
       "url": "/classes/monk"
     },
     {
-      "id": "paladin",
       "name": "Paladin",
       "url": "/classes/paladin"
     },
     {
-      "id": "ranger",
       "name": "Ranger",
       "url": "/classes/ranger"
     },
     {
-      "id": "rogue",
       "name": "Rogue",
       "url": "/classes/rogue"
     },
     {
-      "id": "warlock",
       "name": "Warlock",
       "url": "/classes/warlock"
     }
   ],
   "references": [
     {
-      "id": "simple-weapons",
       "name": "Simple Weapons",
       "url": "/item-categories/simple-weapons"
     }

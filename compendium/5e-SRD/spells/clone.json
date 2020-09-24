@@ -27,13 +27,11 @@
   "healing": null,
   "areaOfEffect": null,
   "school": {
-    "id": "necromancy",
     "name": "Necromancy",
     "url": "/magic-schools/necromancy"
   },
   "classes": [
     {
-      "id": "wizard",
       "name": "Wizard",
       "url": "/classes/wizard"
     }

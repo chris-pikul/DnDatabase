@@ -17,7 +17,6 @@
     "type": "MARTIAL",
     "properties": [
       {
-        "id": "finesse",
         "name": "Finesse",
         "url": "/weapon-properties/finesse"
       }
@@ -31,7 +30,6 @@
       "amount": "1d8",
       "twoHanded": null,
       "type": {
-        "id": "piercing",
         "name": "Piercing",
         "url": "/damage-types/piercing"
       }
