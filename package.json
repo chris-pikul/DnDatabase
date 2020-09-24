@@ -33,6 +33,7 @@
   },
   "homepage": "https://github.com/chris-pikul/DnDatabase#readme",
   "dependencies": {
-    "rimraf": "^3.0.2"
+    "rimraf": "^3.0.2",
+    "stemmer": "^1.0.5"
   }
 }

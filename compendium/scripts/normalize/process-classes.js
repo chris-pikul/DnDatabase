@@ -243,6 +243,7 @@ module.exports = data => {
     console.log('Building classes data...');
     return data.map(cls => {
         const out = {
+            type: 'CLASS',
             id: MakeKabob(cls.index),
             url: MakeURL('classes', cls.index),
             name: cls.name,
