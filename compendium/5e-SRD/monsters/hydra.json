@@ -1,0 +1,134 @@
+{
+  "type": "MONSTER",
+  "id": "hydra",
+  "name": "Hydra",
+  "url": "/monsters/hydra",
+  "source": "MM",
+  "description": "",
+  "challengeRating": 8,
+  "size": "HUGE",
+  "kind": "MONSTROSITY",
+  "subKind": null,
+  "alignment": "UNALIGNED",
+  "maxHP": 172,
+  "hitDice": "15d12",
+  "armorClass": 15,
+  "proficiencyBonus": 3,
+  "speed": {
+    "walk": 30,
+    "swim": 30,
+    "fly": 0
+  },
+  "senses": {
+    "passivePerception": 16,
+    "passiveInsight": 10,
+    "darkvision": 60,
+    "blindsight": 0,
+    "truesight": 0,
+    "tremorsense": 0
+  },
+  "abilityScores": {
+    "strength": {
+      "score": 20,
+      "modifier": 5,
+      "savingThrow": 5
+    },
+    "dexterity": {
+      "score": 12,
+      "modifier": 1,
+      "savingThrow": 1
+    },
+    "constitution": {
+      "score": 20,
+      "modifier": 5,
+      "savingThrow": 5
+    },
+    "intelligence": {
+      "score": 2,
+      "modifier": -4,
+      "savingThrow": -4
+    },
+    "wisdom": {
+      "score": 10,
+      "modifier": 0,
+      "savingThrow": 0
+    },
+    "charisma": {
+      "score": 7,
+      "modifier": -2,
+      "savingThrow": -2
+    }
+  },
+  "proficiencies": [
+    {
+      "name": "Perception",
+      "url": "/skills/perception",
+      "amount": 6
+    }
+  ],
+  "resistances": [],
+  "immunities": {
+    "damageTypes": [],
+    "conditions": []
+  },
+  "vulnerabilities": [],
+  "languages": [
+    ""
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "description": "The hydra makes as many bite attacks as it has heads.",
+      "attackBonus": 0,
+      "damage": null,
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Bite",
+      "description": "Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 10 (1d10 + 5) piercing damage.",
+      "attackBonus": 8,
+      "damage": [
+        {
+          "type": {
+            "name": "Piercing",
+            "url": "/damage-types/piercing"
+          },
+          "amount": "1d10+5",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    }
+  ],
+  "legendaryActions": [],
+  "specialAbilities": [
+    {
+      "name": "Hold Breath",
+      "description": "The hydra can hold its breath for 1 hour.",
+      "usage": null,
+      "spellcasting": null
+    },
+    {
+      "name": "Multiple Heads",
+      "description": "The hydra has five heads. While it has more than one head, the hydra has advantage on saving throws against being blinded, charmed, deafened, frightened, stunned, and knocked unconscious.\nWhenever the hydra takes 25 or more damage in a single turn, one of its heads dies. If all its heads die, the hydra dies.\nAt the end of its turn, it grows two heads for each of its heads that died since its last turn, unless it has taken fire damage since its last turn. The hydra regains 10 hit points for each head regrown in this way.",
+      "usage": null,
+      "spellcasting": null
+    },
+    {
+      "name": "Reactive Heads",
+      "description": "For each head the hydra has beyond one, it gets an extra reaction that can be used only for opportunity attacks.",
+      "usage": null,
+      "spellcasting": null
+    },
+    {
+      "name": "Wakeful",
+      "description": "While the hydra sleeps, at least one of its heads is awake.",
+      "usage": null,
+      "spellcasting": null
+    }
+  ]
+}

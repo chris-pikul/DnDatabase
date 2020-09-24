@@ -1,0 +1,180 @@
+{
+  "type": "MONSTER",
+  "id": "green-dragon-wyrmling",
+  "name": "Green Dragon Wyrmling",
+  "url": "/monsters/green-dragon-wyrmling",
+  "source": "MM",
+  "description": "",
+  "challengeRating": 2,
+  "size": "MEDIUM",
+  "kind": "DRAGON",
+  "subKind": null,
+  "alignment": "LAWFUL_EVIL",
+  "maxHP": 38,
+  "hitDice": "7d8",
+  "armorClass": 17,
+  "proficiencyBonus": 2,
+  "speed": {
+    "walk": 30,
+    "swim": 30,
+    "fly": 60
+  },
+  "senses": {
+    "passivePerception": 14,
+    "passiveInsight": 10,
+    "darkvision": 60,
+    "blindsight": 10,
+    "truesight": 0,
+    "tremorsense": 0
+  },
+  "abilityScores": {
+    "strength": {
+      "score": 15,
+      "modifier": 2,
+      "savingThrow": 2
+    },
+    "dexterity": {
+      "score": 12,
+      "modifier": 1,
+      "savingThrow": 4
+    },
+    "constitution": {
+      "score": 13,
+      "modifier": 1,
+      "savingThrow": 4
+    },
+    "intelligence": {
+      "score": 14,
+      "modifier": 2,
+      "savingThrow": 2
+    },
+    "wisdom": {
+      "score": 11,
+      "modifier": 0,
+      "savingThrow": 2
+    },
+    "charisma": {
+      "score": 13,
+      "modifier": 1,
+      "savingThrow": 4
+    }
+  },
+  "proficiencies": [
+    {
+      "name": "Dexterity",
+      "url": "/ability-scores/dexterity",
+      "amount": 3
+    },
+    {
+      "name": "Constitution",
+      "url": "/ability-scores/constitution",
+      "amount": 3
+    },
+    {
+      "name": "Wisdom",
+      "url": "/ability-scores/wisdom",
+      "amount": 2
+    },
+    {
+      "name": "Charisma",
+      "url": "/ability-scores/charisma",
+      "amount": 3
+    },
+    {
+      "name": "Perception",
+      "url": "/skills/perception",
+      "amount": 4
+    },
+    {
+      "name": "Stealth",
+      "url": "/skills/stealth",
+      "amount": 3
+    }
+  ],
+  "resistances": [],
+  "immunities": {
+    "damageTypes": [
+      {
+        "name": "Poison",
+        "url": "/damage-types/poison"
+      }
+    ],
+    "conditions": [
+      {
+        "name": "Poisoned",
+        "url": "/conditions/poisoned"
+      }
+    ]
+  },
+  "vulnerabilities": [],
+  "languages": [
+    "Draconic"
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "description": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (1d10 + 2) piercing damage plus 3 (1d6) poison damage.",
+      "attackBonus": 4,
+      "damage": [
+        {
+          "type": {
+            "name": "Piercing",
+            "url": "/damage-types/piercing"
+          },
+          "amount": "1d10+2",
+          "options": null
+        },
+        {
+          "type": {
+            "name": "Poison",
+            "url": "/damage-types/poison"
+          },
+          "amount": "1d6",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Poison Breath",
+      "description": "The dragon exhales poisonous gas in a 15-foot cone. Each creature in that area must make a DC 11 Constitution saving throw, taking 21 (6d6) poison damage on a failed save, or half as much damage on a successful one.",
+      "attackBonus": 0,
+      "damage": [
+        {
+          "type": {
+            "name": "Poison",
+            "url": "/damage-types/poison"
+          },
+          "amount": "6d6",
+          "options": null
+        }
+      ],
+      "saveDC": {
+        "ability": {
+          "name": "Constitution",
+          "url": "/ability-scores/constitution"
+        },
+        "value": 11,
+        "onSuccess": "NONE"
+      },
+      "usage": {
+        "type": "RECHARGE_ON_ROLL",
+        "amount": 0,
+        "dice": "1d6",
+        "minRoll": 5
+      },
+      "options": null
+    }
+  ],
+  "legendaryActions": [],
+  "specialAbilities": [
+    {
+      "name": "Amphibious",
+      "description": "The dragon can breathe air and water.",
+      "usage": null,
+      "spellcasting": null
+    }
+  ]
+}

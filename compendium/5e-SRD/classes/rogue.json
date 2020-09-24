@@ -1,0 +1,520 @@
+{
+  "id": "rogue",
+  "url": "/classes/rogue",
+  "name": "Rogue",
+  "source": "PHB",
+  "hitDie": 8,
+  "levels": [
+    {
+      "level": 1,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 2,
+      "spellcasting": null,
+      "features": [
+        {
+          "name": "Sneak Attack",
+          "url": "/features/sneak-attack"
+        },
+        {
+          "name": "Thieves' Cant",
+          "url": "/features/thieves-cant"
+        }
+      ],
+      "featureChoices": [
+        {
+          "name": "Expertise 1",
+          "url": "/features/rogue-choose-expertise-1"
+        }
+      ],
+      "classSpecific": {
+        "sneakAttack": {
+          "dice_count": 1,
+          "dice_value": 6
+        }
+      }
+    },
+    {
+      "level": 2,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 2,
+      "spellcasting": null,
+      "features": [
+        {
+          "name": "Cunning Action",
+          "url": "/features/cunning-action"
+        }
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "sneakAttack": {
+          "dice_count": 1,
+          "dice_value": 6
+        }
+      }
+    },
+    {
+      "level": 3,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 2,
+      "spellcasting": null,
+      "features": [
+        {
+          "name": "Roguish Archetype",
+          "url": "/features/roguish-archetype"
+        }
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "sneakAttack": {
+          "dice_count": 2,
+          "dice_value": 6
+        }
+      }
+    },
+    {
+      "level": 4,
+      "abilityScoreIncrease": true,
+      "proficiencyBonus": 2,
+      "spellcasting": null,
+      "features": [],
+      "featureChoices": [],
+      "classSpecific": {
+        "sneakAttack": {
+          "dice_count": 2,
+          "dice_value": 6
+        }
+      }
+    },
+    {
+      "level": 5,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 3,
+      "spellcasting": null,
+      "features": [
+        {
+          "name": "Uncanny Dodge",
+          "url": "/features/uncanny-dodge"
+        }
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "sneakAttack": {
+          "dice_count": 3,
+          "dice_value": 6
+        }
+      }
+    },
+    {
+      "level": 6,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 3,
+      "spellcasting": null,
+      "features": [],
+      "featureChoices": [
+        {
+          "name": "Expertise 2",
+          "url": "/features/rogue-choose-expertise-2"
+        }
+      ],
+      "classSpecific": {
+        "sneakAttack": {
+          "dice_count": 3,
+          "dice_value": 6
+        }
+      }
+    },
+    {
+      "level": 7,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 3,
+      "spellcasting": null,
+      "features": [
+        {
+          "name": "Evasion",
+          "url": "/features/rogue-evasion"
+        }
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "sneakAttack": {
+          "dice_count": 4,
+          "dice_value": 6
+        }
+      }
+    },
+    {
+      "level": 8,
+      "abilityScoreIncrease": true,
+      "proficiencyBonus": 3,
+      "spellcasting": null,
+      "features": [],
+      "featureChoices": [],
+      "classSpecific": {
+        "sneakAttack": {
+          "dice_count": 4,
+          "dice_value": 6
+        }
+      }
+    },
+    {
+      "level": 9,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 4,
+      "spellcasting": null,
+      "features": [],
+      "featureChoices": [],
+      "classSpecific": {
+        "sneakAttack": {
+          "dice_count": 5,
+          "dice_value": 6
+        }
+      }
+    },
+    {
+      "level": 10,
+      "abilityScoreIncrease": true,
+      "proficiencyBonus": 4,
+      "spellcasting": null,
+      "features": [],
+      "featureChoices": [],
+      "classSpecific": {
+        "sneakAttack": {
+          "dice_count": 5,
+          "dice_value": 6
+        }
+      }
+    },
+    {
+      "level": 11,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 4,
+      "spellcasting": null,
+      "features": [
+        {
+          "name": "Reliable Talent",
+          "url": "/features/reliable-talent"
+        }
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "sneakAttack": {
+          "dice_count": 6,
+          "dice_value": 6
+        }
+      }
+    },
+    {
+      "level": 12,
+      "abilityScoreIncrease": true,
+      "proficiencyBonus": 4,
+      "spellcasting": null,
+      "features": [],
+      "featureChoices": [],
+      "classSpecific": {
+        "sneakAttack": {
+          "dice_count": 6,
+          "dice_value": 6
+        }
+      }
+    },
+    {
+      "level": 13,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 5,
+      "spellcasting": null,
+      "features": [],
+      "featureChoices": [],
+      "classSpecific": {
+        "sneakAttack": {
+          "dice_count": 7,
+          "dice_value": 6
+        }
+      }
+    },
+    {
+      "level": 14,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 5,
+      "spellcasting": null,
+      "features": [
+        {
+          "name": "Blindsense",
+          "url": "/features/blindsense"
+        }
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "sneakAttack": {
+          "dice_count": 7,
+          "dice_value": 6
+        }
+      }
+    },
+    {
+      "level": 15,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 5,
+      "spellcasting": null,
+      "features": [
+        {
+          "name": "Slippery Mind",
+          "url": "/features/slippery-mind"
+        }
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "sneakAttack": {
+          "dice_count": 8,
+          "dice_value": 6
+        }
+      }
+    },
+    {
+      "level": 16,
+      "abilityScoreIncrease": true,
+      "proficiencyBonus": 5,
+      "spellcasting": null,
+      "features": [],
+      "featureChoices": [],
+      "classSpecific": {
+        "sneakAttack": {
+          "dice_count": 8,
+          "dice_value": 6
+        }
+      }
+    },
+    {
+      "level": 17,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 6,
+      "spellcasting": null,
+      "features": [],
+      "featureChoices": [],
+      "classSpecific": {
+        "sneakAttack": {
+          "dice_count": 9,
+          "dice_value": 6
+        }
+      }
+    },
+    {
+      "level": 18,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 6,
+      "spellcasting": null,
+      "features": [
+        {
+          "name": "Elusive",
+          "url": "/features/elusive"
+        }
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "sneakAttack": {
+          "dice_count": 9,
+          "dice_value": 6
+        }
+      }
+    },
+    {
+      "level": 19,
+      "abilityScoreIncrease": true,
+      "proficiencyBonus": 6,
+      "spellcasting": null,
+      "features": [],
+      "featureChoices": [],
+      "classSpecific": {
+        "sneakAttack": {
+          "dice_count": 10,
+          "dice_value": 6
+        }
+      }
+    },
+    {
+      "level": 20,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 6,
+      "spellcasting": null,
+      "features": [
+        {
+          "name": "Stroke Of Luck",
+          "url": "/features/stroke-of-luck"
+        }
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "sneakAttack": {
+          "dice_count": 10,
+          "dice_value": 6
+        }
+      }
+    }
+  ],
+  "proficiencies": {
+    "savingThrows": [
+      {
+        "name": "Dexterity",
+        "url": "/ability-scores/dexterity"
+      },
+      {
+        "name": "Intelligence",
+        "url": "/ability-scores/intelligence"
+      }
+    ],
+    "equipment": [
+      {
+        "name": "Light Armor",
+        "url": "/proficiencies/light-armor"
+      },
+      {
+        "name": "Simple Weapons",
+        "url": "/proficiencies/simple-weapons"
+      },
+      {
+        "name": "Longswords",
+        "url": "/proficiencies/longswords"
+      },
+      {
+        "name": "Rapiers",
+        "url": "/proficiencies/rapiers"
+      },
+      {
+        "name": "Shortswords",
+        "url": "/proficiencies/shortswords"
+      },
+      {
+        "name": "Crossbows, Hand",
+        "url": "/proficiencies/crossbows-hand"
+      },
+      {
+        "name": "Thieves' Tools",
+        "url": "/proficiencies/thieves-tools"
+      }
+    ],
+    "options": [
+      {
+        "type": "SKILL",
+        "amount": 4,
+        "choices": [
+          {
+            "name": "Acrobatics",
+            "url": "/skills/acrobatics"
+          },
+          {
+            "name": "Athletics",
+            "url": "/skills/athletics"
+          },
+          {
+            "name": "Deception",
+            "url": "/skills/deception"
+          },
+          {
+            "name": "Insight",
+            "url": "/skills/insight"
+          },
+          {
+            "name": "Intimidation",
+            "url": "/skills/intimidation"
+          },
+          {
+            "name": "Investigation",
+            "url": "/skills/investigation"
+          },
+          {
+            "name": "Perception",
+            "url": "/skills/perception"
+          },
+          {
+            "name": "Performance",
+            "url": "/skills/performance"
+          },
+          {
+            "name": "Persuasion",
+            "url": "/skills/persuasion"
+          },
+          {
+            "name": "Sleight Of Hand",
+            "url": "/skills/sleight-of-hand"
+          },
+          {
+            "name": "Stealth",
+            "url": "/skills/stealth"
+          }
+        ]
+      }
+    ]
+  },
+  "spellcasting": null,
+  "equipment": {
+    "starting": [
+      {
+        "name": "Leather",
+        "url": "/items/leather",
+        "amount": 1
+      },
+      {
+        "name": "Dagger",
+        "url": "/items/dagger",
+        "amount": 2
+      },
+      {
+        "name": "Thieves' Tools",
+        "url": "/items/thieves-tools",
+        "amount": 1
+      }
+    ],
+    "options": [
+      {
+        "amount": 1,
+        "choices": [
+          {
+            "type": "ITEM",
+            "name": "Rapier",
+            "url": "/items/rapier",
+            "amount": 1
+          },
+          {
+            "type": "ITEM",
+            "name": "Shortsword",
+            "url": "/items/shortsword",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "amount": 1,
+        "choices": [
+          {
+            "type": "ITEM",
+            "name": "Shortsword",
+            "url": "/items/shortsword",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "amount": 1,
+        "choices": [
+          {
+            "type": "EQUIPMENT_PACK",
+            "name": "Burglar's Pack",
+            "url": "/equipment-packs/burglars-pack",
+            "amount": 1
+          },
+          {
+            "type": "EQUIPMENT_PACK",
+            "name": "Dungeoneer's Pack",
+            "url": "/equipment-packs/dungeoneers-pack",
+            "amount": 1
+          },
+          {
+            "type": "EQUIPMENT_PACK",
+            "name": "Explorer's Pack",
+            "url": "/equipment-packs/explorers-pack",
+            "amount": 1
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "type": "MONSTER",
+  "id": "homunculus",
+  "name": "Homunculus",
+  "url": "/monsters/homunculus",
+  "source": "MM",
+  "description": "",
+  "challengeRating": 0,
+  "size": "TINY",
+  "kind": "CONSTRUCT",
+  "subKind": null,
+  "alignment": "NEUTRAL",
+  "maxHP": 5,
+  "hitDice": "2d4",
+  "armorClass": 13,
+  "proficiencyBonus": 2,
+  "speed": {
+    "walk": 20,
+    "swim": 0,
+    "fly": 40
+  },
+  "senses": {
+    "passivePerception": 10,
+    "passiveInsight": 10,
+    "darkvision": 60,
+    "blindsight": 0,
+    "truesight": 0,
+    "tremorsense": 0
+  },
+  "abilityScores": {
+    "strength": {
+      "score": 4,
+      "modifier": -3,
+      "savingThrow": -3
+    },
+    "dexterity": {
+      "score": 15,
+      "modifier": 2,
+      "savingThrow": 2
+    },
+    "constitution": {
+      "score": 11,
+      "modifier": 0,
+      "savingThrow": 0
+    },
+    "intelligence": {
+      "score": 10,
+      "modifier": 0,
+      "savingThrow": 0
+    },
+    "wisdom": {
+      "score": 10,
+      "modifier": 0,
+      "savingThrow": 0
+    },
+    "charisma": {
+      "score": 7,
+      "modifier": -2,
+      "savingThrow": -2
+    }
+  },
+  "proficiencies": [],
+  "resistances": [],
+  "immunities": {
+    "damageTypes": [
+      {
+        "name": "Poison",
+        "url": "/damage-types/poison"
+      }
+    ],
+    "conditions": [
+      {
+        "name": "Charmed",
+        "url": "/conditions/charmed"
+      },
+      {
+        "name": "Poisoned",
+        "url": "/conditions/poisoned"
+      }
+    ]
+  },
+  "vulnerabilities": [],
+  "languages": [
+    "Understands The Languages Of Its Creator But Can't Speak"
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "description": "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 1 piercing damage, and the target must succeed on a DC 10 Constitution saving throw or be poisoned for 1 minute. If the saving throw fails by 5 or more, the target is instead poisoned for 5 (1d10) minutes and unconscious while poisoned in this way.",
+      "attackBonus": 4,
+      "damage": [
+        {
+          "type": {
+            "name": "Piercing",
+            "url": "/damage-types/piercing"
+          },
+          "amount": "1",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    }
+  ],
+  "legendaryActions": [],
+  "specialAbilities": [
+    {
+      "name": "Telepathic Bond",
+      "description": "While the homunculus is on the same plane of existence as its master, it can magically convey what it senses to its master, and the two can communicate telepathically.",
+      "usage": null,
+      "spellcasting": null
+    }
+  ]
+}

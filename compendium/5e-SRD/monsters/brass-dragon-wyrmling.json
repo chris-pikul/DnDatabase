@@ -1,0 +1,180 @@
+{
+  "type": "MONSTER",
+  "id": "brass-dragon-wyrmling",
+  "name": "Brass Dragon Wyrmling",
+  "url": "/monsters/brass-dragon-wyrmling",
+  "source": "MM",
+  "description": "",
+  "challengeRating": 1,
+  "size": "MEDIUM",
+  "kind": "DRAGON",
+  "subKind": null,
+  "alignment": "CHAOTIC_GOOD",
+  "maxHP": 16,
+  "hitDice": "3d8",
+  "armorClass": 16,
+  "proficiencyBonus": 2,
+  "speed": {
+    "walk": 30,
+    "swim": 0,
+    "fly": 60
+  },
+  "senses": {
+    "passivePerception": 14,
+    "passiveInsight": 10,
+    "darkvision": 60,
+    "blindsight": 10,
+    "truesight": 0,
+    "tremorsense": 0
+  },
+  "abilityScores": {
+    "strength": {
+      "score": 15,
+      "modifier": 2,
+      "savingThrow": 2
+    },
+    "dexterity": {
+      "score": 10,
+      "modifier": 0,
+      "savingThrow": 2
+    },
+    "constitution": {
+      "score": 13,
+      "modifier": 1,
+      "savingThrow": 4
+    },
+    "intelligence": {
+      "score": 10,
+      "modifier": 0,
+      "savingThrow": 0
+    },
+    "wisdom": {
+      "score": 11,
+      "modifier": 0,
+      "savingThrow": 2
+    },
+    "charisma": {
+      "score": 13,
+      "modifier": 1,
+      "savingThrow": 4
+    }
+  },
+  "proficiencies": [
+    {
+      "name": "Dexterity",
+      "url": "/ability-scores/dexterity",
+      "amount": 2
+    },
+    {
+      "name": "Constitution",
+      "url": "/ability-scores/constitution",
+      "amount": 3
+    },
+    {
+      "name": "Wisdom",
+      "url": "/ability-scores/wisdom",
+      "amount": 2
+    },
+    {
+      "name": "Charisma",
+      "url": "/ability-scores/charisma",
+      "amount": 3
+    },
+    {
+      "name": "Perception",
+      "url": "/skills/perception",
+      "amount": 4
+    },
+    {
+      "name": "Stealth",
+      "url": "/skills/stealth",
+      "amount": 2
+    }
+  ],
+  "resistances": [],
+  "immunities": {
+    "damageTypes": [
+      {
+        "name": "Fire",
+        "url": "/damage-types/fire"
+      }
+    ],
+    "conditions": []
+  },
+  "vulnerabilities": [],
+  "languages": [
+    "Draconic"
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "description": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (1d10 + 2) piercing damage.",
+      "attackBonus": 4,
+      "damage": [
+        {
+          "type": {
+            "name": "Piercing",
+            "url": "/damage-types/piercing"
+          },
+          "amount": "1d10+2",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Breath Weapons",
+      "description": "The dragon uses one of the following breath weapons.\nFire Breath. The dragon exhales fire in an 20-foot line that is 5 feet wide. Each creature in that line must make a DC 11 Dexterity saving throw, taking 14 (4d6) fire damage on a failed save, or half as much damage on a successful one.\nSleep Breath. The dragon exhales sleep gas in a 15-foot cone. Each creature in that area must succeed on a DC 11 Constitution saving throw or fall unconscious for 1 minute. This effect ends for a creature if the creature takes damage or someone uses an action to wake it.",
+      "attackBonus": 0,
+      "damage": null,
+      "saveDC": null,
+      "usage": {
+        "type": "RECHARGE_ON_ROLL",
+        "amount": 0,
+        "dice": "1d6",
+        "minRoll": 5
+      },
+      "options": {
+        "amount": 1,
+        "choices": [
+          {
+            "name": "Fire Breath",
+            "damage": [
+              {
+                "type": {
+                  "name": "Fire",
+                  "url": "/damage-types/fire"
+                },
+                "amount": "4d6"
+              }
+            ],
+            "saveDC": {
+              "ability": {
+                "name": "Dexterity",
+                "url": "/ability-scores/dexterity"
+              },
+              "value": 11,
+              "onSuccess": "HALF"
+            }
+          },
+          {
+            "name": "Sleep Breath",
+            "damage": null,
+            "saveDC": {
+              "ability": {
+                "name": "Constitution",
+                "url": "/ability-scores/constitution"
+              },
+              "value": 11,
+              "onSuccess": "NONE"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "legendaryActions": [],
+  "specialAbilities": []
+}

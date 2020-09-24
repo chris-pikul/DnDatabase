@@ -1,0 +1,461 @@
+{
+  "id": "paladin",
+  "url": "/classes/paladin",
+  "name": "Paladin",
+  "source": "PHB",
+  "hitDie": 10,
+  "levels": [
+    {
+      "level": 1,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 2,
+      "spellcasting": null,
+      "features": [
+        {
+          "name": "Divine Sense",
+          "url": "/features/divine-sense"
+        },
+        {
+          "name": "Lay On Hands",
+          "url": "/features/lay-on-hands"
+        }
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "auraRange": 0
+      }
+    },
+    {
+      "level": 2,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 2,
+      "spellcasting": null,
+      "features": [
+        {
+          "name": "Spellcasting",
+          "url": "/features/spellcasting-paladin"
+        },
+        {
+          "name": "Divine Smite",
+          "url": "/features/divine-smite"
+        }
+      ],
+      "featureChoices": [
+        {
+          "name": "Fighting Style",
+          "url": "/features/paladin-choose-fighting-style"
+        }
+      ],
+      "classSpecific": {
+        "auraRange": 0
+      }
+    },
+    {
+      "level": 3,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 2,
+      "spellcasting": null,
+      "features": [
+        {
+          "name": "Divine Health",
+          "url": "/features/divine-health"
+        },
+        {
+          "name": "Sacred Oath",
+          "url": "/features/sacred-oath"
+        },
+        {
+          "name": "Oath Spells",
+          "url": "/features/oath-spells"
+        },
+        {
+          "name": "Channel Divinity",
+          "url": "/features/channel-divinity"
+        }
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "auraRange": 0
+      }
+    },
+    {
+      "level": 4,
+      "abilityScoreIncrease": true,
+      "proficiencyBonus": 2,
+      "spellcasting": null,
+      "features": [],
+      "featureChoices": [],
+      "classSpecific": {
+        "auraRange": 0
+      }
+    },
+    {
+      "level": 5,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 3,
+      "spellcasting": null,
+      "features": [
+        {
+          "name": "Extra Attack",
+          "url": "/features/paladin-extra-attack"
+        }
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "auraRange": 0
+      }
+    },
+    {
+      "level": 6,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 3,
+      "spellcasting": null,
+      "features": [
+        {
+          "name": "Aura Of Protection",
+          "url": "/features/aura-of-protection"
+        }
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "auraRange": 10
+      }
+    },
+    {
+      "level": 7,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 3,
+      "spellcasting": null,
+      "features": [],
+      "featureChoices": [],
+      "classSpecific": {
+        "auraRange": 10
+      }
+    },
+    {
+      "level": 8,
+      "abilityScoreIncrease": true,
+      "proficiencyBonus": 3,
+      "spellcasting": null,
+      "features": [],
+      "featureChoices": [],
+      "classSpecific": {
+        "auraRange": 10
+      }
+    },
+    {
+      "level": 9,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 4,
+      "spellcasting": null,
+      "features": [],
+      "featureChoices": [],
+      "classSpecific": {
+        "auraRange": 10
+      }
+    },
+    {
+      "level": 10,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 4,
+      "spellcasting": null,
+      "features": [
+        {
+          "name": "Aura Of Courage",
+          "url": "/features/aura-of-courage"
+        }
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "auraRange": 10
+      }
+    },
+    {
+      "level": 11,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 4,
+      "spellcasting": null,
+      "features": [
+        {
+          "name": "Improved Divine Smite",
+          "url": "/features/improved-divine-smite"
+        }
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "auraRange": 10
+      }
+    },
+    {
+      "level": 12,
+      "abilityScoreIncrease": true,
+      "proficiencyBonus": 4,
+      "spellcasting": null,
+      "features": [],
+      "featureChoices": [],
+      "classSpecific": {
+        "auraRange": 10
+      }
+    },
+    {
+      "level": 13,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 5,
+      "spellcasting": null,
+      "features": [],
+      "featureChoices": [],
+      "classSpecific": {
+        "auraRange": 10
+      }
+    },
+    {
+      "level": 14,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 5,
+      "spellcasting": null,
+      "features": [
+        {
+          "name": "Cleansing Touch",
+          "url": "/features/cleansing-touch"
+        }
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "auraRange": 10
+      }
+    },
+    {
+      "level": 15,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 5,
+      "spellcasting": null,
+      "features": [],
+      "featureChoices": [],
+      "classSpecific": {
+        "auraRange": 10
+      }
+    },
+    {
+      "level": 16,
+      "abilityScoreIncrease": true,
+      "proficiencyBonus": 5,
+      "spellcasting": null,
+      "features": [],
+      "featureChoices": [],
+      "classSpecific": {
+        "auraRange": 10
+      }
+    },
+    {
+      "level": 17,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 6,
+      "spellcasting": null,
+      "features": [],
+      "featureChoices": [],
+      "classSpecific": {
+        "auraRange": 10
+      }
+    },
+    {
+      "level": 18,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 6,
+      "spellcasting": null,
+      "features": [
+        {
+          "name": "Aura Improvements",
+          "url": "/features/aura-improvements"
+        }
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "auraRange": 30
+      }
+    },
+    {
+      "level": 19,
+      "abilityScoreIncrease": true,
+      "proficiencyBonus": 6,
+      "spellcasting": null,
+      "features": [],
+      "featureChoices": [],
+      "classSpecific": {
+        "auraRange": 30
+      }
+    },
+    {
+      "level": 20,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 6,
+      "spellcasting": null,
+      "features": [],
+      "featureChoices": [],
+      "classSpecific": {
+        "auraRange": 30
+      }
+    }
+  ],
+  "proficiencies": {
+    "savingThrows": [
+      {
+        "name": "Wisdom",
+        "url": "/ability-scores/wisdom"
+      },
+      {
+        "name": "Charisma",
+        "url": "/ability-scores/charisma"
+      }
+    ],
+    "equipment": [
+      {
+        "name": "Light Armor",
+        "url": "/proficiencies/light-armor"
+      },
+      {
+        "name": "Medium Armor",
+        "url": "/proficiencies/medium-armor"
+      },
+      {
+        "name": "Heavy Armor",
+        "url": "/proficiencies/heavy-armor"
+      },
+      {
+        "name": "Shields",
+        "url": "/proficiencies/shields"
+      },
+      {
+        "name": "Shields",
+        "url": "/proficiencies/shields"
+      },
+      {
+        "name": "Simple Weapons",
+        "url": "/proficiencies/simple-weapons"
+      },
+      {
+        "name": "Martial Weapons",
+        "url": "/proficiencies/martial-weapons"
+      }
+    ],
+    "options": [
+      {
+        "type": "SKILL",
+        "amount": 2,
+        "choices": [
+          {
+            "name": "Athletics",
+            "url": "/skills/athletics"
+          },
+          {
+            "name": "Insight",
+            "url": "/skills/insight"
+          },
+          {
+            "name": "Intimidation",
+            "url": "/skills/intimidation"
+          },
+          {
+            "name": "Medicine",
+            "url": "/skills/medicine"
+          },
+          {
+            "name": "Persuasion",
+            "url": "/skills/persuasion"
+          },
+          {
+            "name": "Religion",
+            "url": "/skills/religion"
+          }
+        ]
+      }
+    ]
+  },
+  "spellcasting": {
+    "ability": {
+      "name": "Charisma",
+      "url": "/ability-scores/charisma"
+    },
+    "unlockLevel": 2,
+    "features": [
+      {
+        "title": "Preparing and Casting Spells",
+        "description": "The Paladin table shows how many spell slots you have to cast your spells. To cast one of your paladin spells of 1st level or higher, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.\\nYou prepare the list of paladin spells that are available for you to cast, choosing from the paladin spell list. When you do so, choose a number of paladin spells equal to your Charisma modifier + half your paladin level, rounded down (minimum of one spell). The spells must be of a level for which you have spell slots.\\nFor example, if you are a 5th-level paladin, you have four 1st-level and two 2nd-level spell slots. With a Charisma of 14, your list of prepared spells can include four spells of 1st or 2nd level, in any combination. If you prepare the 1st-level spell cure wounds, you can cast it using a 1st-level or a 2nd- level slot. Casting the spell doesn't remove it from your list of prepared spells.\\nYou can change your list of prepared spells when you finish a long rest. Preparing a new list of paladin spells requires time spent in prayer and meditation: at least 1 minute per spell level for each spell on your list."
+      },
+      {
+        "title": "Spellcasting Ability",
+        "description": "Charisma is your spellcasting ability for your paladin spells, since their power derives from the strength of your convictions. You use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a paladin spell you cast and when making an attack roll with one."
+      },
+      {
+        "title": "Spellcasting Focus",
+        "description": "You can use a holy symbol as a spellcasting focus for your paladin spells."
+      }
+    ]
+  },
+  "equipment": {
+    "starting": [
+      {
+        "name": "Chain Mail",
+        "url": "/items/chain-mail",
+        "amount": 1
+      }
+    ],
+    "options": [
+      {
+        "amount": 1,
+        "choices": [
+          {
+            "type": "ITEM",
+            "name": "Shield",
+            "url": "/items/shield",
+            "amount": 1
+          },
+          {
+            "type": "CATEGORY",
+            "name": "Martial Weapons",
+            "url": "/equipment-categories/martial-weapons",
+            "amount": 2
+          }
+        ]
+      },
+      {
+        "amount": 1,
+        "choices": [
+          {
+            "type": "ITEM",
+            "name": "Javelin",
+            "url": "/items/javelin",
+            "amount": 5
+          },
+          {
+            "type": "CATEGORY",
+            "name": "Simple Weapons",
+            "url": "/equipment-categories/simple-weapons",
+            "item": "SIMPLE_WEAPONS",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "amount": 1,
+        "choices": [
+          {
+            "type": "EQUIPMENT_PACK",
+            "name": "Priest's Pack",
+            "url": "/equipment-packs/priests-pack",
+            "amount": 1
+          },
+          {
+            "type": "EQUIPMENT_PACK",
+            "name": "Explorer's Pack",
+            "url": "/equipment-packs/explorers-pack",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "amount": 1,
+        "choices": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,242 @@
+{
+  "type": "MONSTER",
+  "id": "balor",
+  "name": "Balor",
+  "url": "/monsters/balor",
+  "source": "MM",
+  "description": "",
+  "challengeRating": 19,
+  "size": "HUGE",
+  "kind": "FIEND",
+  "subKind": "DEMON",
+  "alignment": "CHAOTIC_EVIL",
+  "maxHP": 262,
+  "hitDice": "21d12",
+  "armorClass": 19,
+  "proficiencyBonus": 6,
+  "speed": {
+    "walk": 40,
+    "swim": 0,
+    "fly": 80
+  },
+  "senses": {
+    "passivePerception": 13,
+    "passiveInsight": 10,
+    "darkvision": 0,
+    "blindsight": 0,
+    "truesight": 120,
+    "tremorsense": 0
+  },
+  "abilityScores": {
+    "strength": {
+      "score": 26,
+      "modifier": 8,
+      "savingThrow": 22
+    },
+    "dexterity": {
+      "score": 15,
+      "modifier": 2,
+      "savingThrow": 2
+    },
+    "constitution": {
+      "score": 22,
+      "modifier": 6,
+      "savingThrow": 18
+    },
+    "intelligence": {
+      "score": 20,
+      "modifier": 5,
+      "savingThrow": 5
+    },
+    "wisdom": {
+      "score": 16,
+      "modifier": 3,
+      "savingThrow": 12
+    },
+    "charisma": {
+      "score": 22,
+      "modifier": 6,
+      "savingThrow": 18
+    }
+  },
+  "proficiencies": [
+    {
+      "name": "Strength",
+      "url": "/ability-scores/strength",
+      "amount": 14
+    },
+    {
+      "name": "Constitution",
+      "url": "/ability-scores/constitution",
+      "amount": 12
+    },
+    {
+      "name": "Wisdom",
+      "url": "/ability-scores/wisdom",
+      "amount": 9
+    },
+    {
+      "name": "Charisma",
+      "url": "/ability-scores/charisma",
+      "amount": 12
+    }
+  ],
+  "resistances": [
+    {
+      "name": "Cold",
+      "url": "/damage-types/cold"
+    },
+    {
+      "name": "Lightning",
+      "url": "/damage-types/lightning"
+    },
+    {
+      "name": "Bludgeoning",
+      "url": "/damage-types/bludgeoning"
+    },
+    {
+      "name": "Piercing",
+      "url": "/damage-types/piercing"
+    },
+    {
+      "name": "Slashing",
+      "url": "/damage-types/slashing"
+    }
+  ],
+  "immunities": {
+    "damageTypes": [
+      {
+        "name": "Fire",
+        "url": "/damage-types/fire"
+      },
+      {
+        "name": "Poison",
+        "url": "/damage-types/poison"
+      }
+    ],
+    "conditions": [
+      {
+        "name": "Poisoned",
+        "url": "/conditions/poisoned"
+      }
+    ]
+  },
+  "vulnerabilities": [],
+  "languages": [
+    "Abyssal",
+    "Telepathy 120 Ft."
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "description": "The balor makes two attacks: one with its longsword and one with its whip.",
+      "attackBonus": 0,
+      "damage": null,
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Longsword",
+      "description": "Melee Weapon Attack: +14 to hit, reach 10 ft., one target. Hit: 21 (3d8 + 8) slashing damage plus 13 (3d8) lightning damage. If the balor scores a critical hit, it rolls damage dice three times, instead of twice.",
+      "attackBonus": 14,
+      "damage": [
+        {
+          "type": {
+            "name": "Slashing",
+            "url": "/damage-types/slashing"
+          },
+          "amount": "3d8+8",
+          "options": null
+        },
+        {
+          "type": {
+            "name": "Lightning",
+            "url": "/damage-types/lightning"
+          },
+          "amount": "3d8",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Whip",
+      "description": "Melee Weapon Attack: +14 to hit, reach 30 ft., one target. Hit: 15 (2d6 + 8) slashing damage plus 10 (3d6) fire damage, and the target must succeed on a DC 20 Strength saving throw or be pulled up to 25 feet toward the balor.",
+      "attackBonus": 14,
+      "damage": [
+        {
+          "type": {
+            "name": "Slashing",
+            "url": "/damage-types/slashing"
+          },
+          "amount": "2d6+8",
+          "options": null
+        },
+        {
+          "type": {
+            "name": "Fire",
+            "url": "/damage-types/fire"
+          },
+          "amount": "3d6",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Teleport",
+      "description": "The balor magically teleports, along with any equipment it is wearing or carrying, up to 120 feet to an unoccupied space it can see.",
+      "attackBonus": 0,
+      "damage": null,
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Variant: Summon Demon",
+      "description": "The demon chooses what to summon and attempts a magical summoning.\nA balor has a 50 percent chance of summoning 1d8 vrocks, 1d6 hezrous, 1d4 glabrezus, 1d3 nalfeshnees, 1d2 mariliths, or one goristro.\nA summoned demon appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other demons. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action.",
+      "attackBonus": 0,
+      "damage": null,
+      "saveDC": null,
+      "usage": {
+        "type": "PER_DAY",
+        "amount": 1,
+        "dice": null,
+        "minRoll": 0
+      },
+      "options": null
+    }
+  ],
+  "legendaryActions": [],
+  "specialAbilities": [
+    {
+      "name": "Death Throes",
+      "description": "When the balor dies, it explodes, and each creature within 30 feet of it must make a DC 20 Dexterity saving throw, taking 70 (20d6) fire damage on a failed save, or half as much damage on a successful one. The explosion ignites flammable objects in that area that aren't being worn or carried, and it destroys the balor's weapons.",
+      "usage": null,
+      "spellcasting": null
+    },
+    {
+      "name": "Fire Aura",
+      "description": "At the start of each of the balor's turns, each creature within 5 feet of it takes 10 (3d6) fire damage, and flammable objects in the aura that aren't being worn or carried ignite. A creature that touches the balor or hits it with a melee attack while within 5 feet of it takes 10 (3d6) fire damage.",
+      "usage": null,
+      "spellcasting": null
+    },
+    {
+      "name": "Magic Resistance",
+      "description": "The balor has advantage on saving throws against spells and other magical effects.",
+      "usage": null,
+      "spellcasting": null
+    },
+    {
+      "name": "Magic Weapons",
+      "description": "The balor's weapon attacks are magical.",
+      "usage": null,
+      "spellcasting": null
+    }
+  ]
+}

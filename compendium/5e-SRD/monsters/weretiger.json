@@ -1,0 +1,200 @@
+{
+  "type": "MONSTER",
+  "id": "weretiger",
+  "name": "Weretiger",
+  "url": "/monsters/weretiger",
+  "source": "MM",
+  "description": "",
+  "challengeRating": 4,
+  "size": "MEDIUM",
+  "kind": "HUMANOID",
+  "subKind": "HUMAN",
+  "alignment": "NEUTRAL",
+  "maxHP": 120,
+  "hitDice": "16d8",
+  "armorClass": 12,
+  "proficiencyBonus": 2,
+  "speed": {
+    "walk": 30,
+    "swim": 0,
+    "fly": 0
+  },
+  "senses": {
+    "passivePerception": 15,
+    "passiveInsight": 10,
+    "darkvision": 60,
+    "blindsight": 0,
+    "truesight": 0,
+    "tremorsense": 0
+  },
+  "abilityScores": {
+    "strength": {
+      "score": 17,
+      "modifier": 3,
+      "savingThrow": 3
+    },
+    "dexterity": {
+      "score": 15,
+      "modifier": 2,
+      "savingThrow": 2
+    },
+    "constitution": {
+      "score": 16,
+      "modifier": 3,
+      "savingThrow": 3
+    },
+    "intelligence": {
+      "score": 10,
+      "modifier": 0,
+      "savingThrow": 0
+    },
+    "wisdom": {
+      "score": 13,
+      "modifier": 1,
+      "savingThrow": 1
+    },
+    "charisma": {
+      "score": 11,
+      "modifier": 0,
+      "savingThrow": 0
+    }
+  },
+  "proficiencies": [
+    {
+      "name": "Perception",
+      "url": "/skills/perception",
+      "amount": 5
+    },
+    {
+      "name": "Stealth",
+      "url": "/skills/stealth",
+      "amount": 4
+    }
+  ],
+  "resistances": [],
+  "immunities": {
+    "damageTypes": [
+      {
+        "name": "Bludgeoning",
+        "url": "/damage-types/bludgeoning"
+      },
+      {
+        "name": "Piercing",
+        "url": "/damage-types/piercing"
+      },
+      {
+        "name": "Slashing",
+        "url": "/damage-types/slashing"
+      }
+    ],
+    "conditions": []
+  },
+  "vulnerabilities": [],
+  "languages": [
+    "Common (can't Speak In Tiger Form)"
+  ],
+  "actions": [
+    {
+      "name": "Multiattack (humanoid Or Hybrid Form Only)",
+      "description": "In humanoid form, the weretiger makes two scimitar attacks or two longbow attacks. In hybrid form, it can attack like a humanoid or make two claw attacks.",
+      "attackBonus": 0,
+      "damage": null,
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Bite (tiger Or Hybrid Form Only)",
+      "description": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (1d10 + 3) piercing damage. If the target is a humanoid, it must succeed on a DC 13 Constitution saving throw or be cursed with weretiger lycanthropy.",
+      "attackBonus": 5,
+      "damage": [
+        {
+          "type": {
+            "name": "Piercing",
+            "url": "/damage-types/piercing"
+          },
+          "amount": "1d10+3",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Claw (tiger Or Hybrid Form Only)",
+      "description": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) slashing damage.",
+      "attackBonus": 5,
+      "damage": [
+        {
+          "type": {
+            "name": "Slashing",
+            "url": "/damage-types/slashing"
+          },
+          "amount": "1d8+3",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Scimitar (humanoid Or Hybrid Form Only)",
+      "description": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) slashing damage.",
+      "attackBonus": 5,
+      "damage": [
+        {
+          "type": {
+            "name": "Slashing",
+            "url": "/damage-types/slashing"
+          },
+          "amount": "1d6+3",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Longbow (humanoid Or Hybrid Form Only)",
+      "description": "Ranged Weapon Attack: +4 to hit, range 150/600 ft., one target. Hit: 6 (1d8 + 2) piercing damage.",
+      "attackBonus": 4,
+      "damage": [
+        {
+          "type": {
+            "name": "Piercing",
+            "url": "/damage-types/piercing"
+          },
+          "amount": "1d8+2",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    }
+  ],
+  "legendaryActions": [],
+  "specialAbilities": [
+    {
+      "name": "Shapechanger",
+      "description": "The weretiger can use its action to polymorph into a tiger-humanoid hybrid or into a tiger, or back into its true form, which is humanoid. Its statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies.",
+      "usage": null,
+      "spellcasting": null
+    },
+    {
+      "name": "Keen Hearing And Smell",
+      "description": "The weretiger has advantage on Wisdom (Perception) checks that rely on hearing or smell.",
+      "usage": null,
+      "spellcasting": null
+    },
+    {
+      "name": "Pounce (tiger Or Hybrid Form Only)",
+      "description": "If the weretiger moves at least 15 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 14 Strength saving throw or be knocked prone. If the target is prone, the weretiger can make one bite attack against it as a bonus action.",
+      "usage": null,
+      "spellcasting": null
+    }
+  ]
+}

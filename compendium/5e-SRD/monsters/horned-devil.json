@@ -1,0 +1,205 @@
+{
+  "type": "MONSTER",
+  "id": "horned-devil",
+  "name": "Horned Devil",
+  "url": "/monsters/horned-devil",
+  "source": "MM",
+  "description": "",
+  "challengeRating": 11,
+  "size": "LARGE",
+  "kind": "FIEND",
+  "subKind": "DEVIL",
+  "alignment": "LAWFUL_EVIL",
+  "maxHP": 148,
+  "hitDice": "17d10",
+  "armorClass": 18,
+  "proficiencyBonus": 4,
+  "speed": {
+    "walk": 20,
+    "swim": 0,
+    "fly": 60
+  },
+  "senses": {
+    "passivePerception": 13,
+    "passiveInsight": 10,
+    "darkvision": 120,
+    "blindsight": 0,
+    "truesight": 0,
+    "tremorsense": 0
+  },
+  "abilityScores": {
+    "strength": {
+      "score": 22,
+      "modifier": 6,
+      "savingThrow": 16
+    },
+    "dexterity": {
+      "score": 17,
+      "modifier": 3,
+      "savingThrow": 10
+    },
+    "constitution": {
+      "score": 21,
+      "modifier": 5,
+      "savingThrow": 5
+    },
+    "intelligence": {
+      "score": 12,
+      "modifier": 1,
+      "savingThrow": 1
+    },
+    "wisdom": {
+      "score": 16,
+      "modifier": 3,
+      "savingThrow": 10
+    },
+    "charisma": {
+      "score": 17,
+      "modifier": 3,
+      "savingThrow": 10
+    }
+  },
+  "proficiencies": [
+    {
+      "name": "Strength",
+      "url": "/ability-scores/strength",
+      "amount": 10
+    },
+    {
+      "name": "Dexterity",
+      "url": "/ability-scores/dexterity",
+      "amount": 7
+    },
+    {
+      "name": "Wisdom",
+      "url": "/ability-scores/wisdom",
+      "amount": 7
+    },
+    {
+      "name": "Charisma",
+      "url": "/ability-scores/charisma",
+      "amount": 7
+    }
+  ],
+  "resistances": [
+    {
+      "name": "Cold",
+      "url": "/damage-types/cold"
+    },
+    {
+      "name": "Bludgeoning",
+      "url": "/damage-types/bludgeoning"
+    },
+    {
+      "name": "Piercing",
+      "url": "/damage-types/piercing"
+    },
+    {
+      "name": "Slashing",
+      "url": "/damage-types/slashing"
+    }
+  ],
+  "immunities": {
+    "damageTypes": [
+      {
+        "name": "Fire",
+        "url": "/damage-types/fire"
+      },
+      {
+        "name": "Poison",
+        "url": "/damage-types/poison"
+      }
+    ],
+    "conditions": [
+      {
+        "name": "Poisoned",
+        "url": "/conditions/poisoned"
+      }
+    ]
+  },
+  "vulnerabilities": [],
+  "languages": [
+    "Infernal",
+    "Telepathy 120 Ft."
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "description": "The devil makes three melee attacks: two with its fork and one with its tail. It can use Hurl Flame in place of any melee attack.",
+      "attackBonus": 0,
+      "damage": null,
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Fork",
+      "description": "Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 15 (2d8 + 6) piercing damage.",
+      "attackBonus": 10,
+      "damage": [
+        {
+          "type": {
+            "name": "Piercing",
+            "url": "/damage-types/piercing"
+          },
+          "amount": "2d8+6",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Tail",
+      "description": "Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 10 (1d8 + 6) piercing damage. If the target is a creature other than an undead or a construct, it must succeed on a DC 17 Constitution saving throw or lose 10 (3d6) hit points at the start of each of its turns due to an infernal wound. Each time the devil hits the wounded target with this attack, the damage dealt by the wound increases by 10 (3d6). Any creature can take an action to stanch the wound with a successful DC 12 Wisdom (Medicine) check. The wound also closes if the target receives magical healing.",
+      "attackBonus": 10,
+      "damage": [
+        {
+          "type": {
+            "name": "Piercing",
+            "url": "/damage-types/piercing"
+          },
+          "amount": "1d8+6",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Hurl Flame",
+      "description": "Ranged Spell Attack: +7 to hit, range 150 ft., one target. Hit: 14 (4d6) fire damage. If the target is a flammable object that isn't being worn or carried, it also catches fire.",
+      "attackBonus": 7,
+      "damage": [
+        {
+          "type": {
+            "name": "Fire",
+            "url": "/damage-types/fire"
+          },
+          "amount": "4d6",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    }
+  ],
+  "legendaryActions": [],
+  "specialAbilities": [
+    {
+      "name": "Devil's Sight",
+      "description": "Magical darkness doesn't impede the devil's darkvision.",
+      "usage": null,
+      "spellcasting": null
+    },
+    {
+      "name": "Magic Resistance",
+      "description": "The devil has advantage on saving throws against spells and other magical effects.",
+      "usage": null,
+      "spellcasting": null
+    }
+  ]
+}

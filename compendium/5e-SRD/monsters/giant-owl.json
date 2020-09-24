@@ -1,0 +1,121 @@
+{
+  "type": "MONSTER",
+  "id": "giant-owl",
+  "name": "Giant Owl",
+  "url": "/monsters/giant-owl",
+  "source": "MM",
+  "description": "",
+  "challengeRating": 0.25,
+  "size": "LARGE",
+  "kind": "BEAST",
+  "subKind": null,
+  "alignment": "NEUTRAL",
+  "maxHP": 19,
+  "hitDice": "3d10",
+  "armorClass": 12,
+  "proficiencyBonus": 2,
+  "speed": {
+    "walk": 5,
+    "swim": 0,
+    "fly": 60
+  },
+  "senses": {
+    "passivePerception": 15,
+    "passiveInsight": 10,
+    "darkvision": 120,
+    "blindsight": 0,
+    "truesight": 0,
+    "tremorsense": 0
+  },
+  "abilityScores": {
+    "strength": {
+      "score": 13,
+      "modifier": 1,
+      "savingThrow": 1
+    },
+    "dexterity": {
+      "score": 15,
+      "modifier": 2,
+      "savingThrow": 2
+    },
+    "constitution": {
+      "score": 12,
+      "modifier": 1,
+      "savingThrow": 1
+    },
+    "intelligence": {
+      "score": 8,
+      "modifier": -1,
+      "savingThrow": -1
+    },
+    "wisdom": {
+      "score": 13,
+      "modifier": 1,
+      "savingThrow": 1
+    },
+    "charisma": {
+      "score": 10,
+      "modifier": 0,
+      "savingThrow": 0
+    }
+  },
+  "proficiencies": [
+    {
+      "name": "Perception",
+      "url": "/skills/perception",
+      "amount": 5
+    },
+    {
+      "name": "Stealth",
+      "url": "/skills/stealth",
+      "amount": 4
+    }
+  ],
+  "resistances": [],
+  "immunities": {
+    "damageTypes": [],
+    "conditions": []
+  },
+  "vulnerabilities": [],
+  "languages": [
+    "Giant Owl",
+    "Understands Common",
+    "Elvish",
+    "And Sylvan But Can't Speak"
+  ],
+  "actions": [
+    {
+      "name": "Talons",
+      "description": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 8 (2d6 + 1) slashing damage.",
+      "attackBonus": 3,
+      "damage": [
+        {
+          "type": {
+            "name": "Slashing",
+            "url": "/damage-types/slashing"
+          },
+          "amount": "2d6+1",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    }
+  ],
+  "legendaryActions": [],
+  "specialAbilities": [
+    {
+      "name": "Flyby",
+      "description": "The owl doesn't provoke opportunity attacks when it flies out of an enemy's reach.",
+      "usage": null,
+      "spellcasting": null
+    },
+    {
+      "name": "Keen Hearing And Sight",
+      "description": "The owl has advantage on Wisdom (Perception) checks that rely on hearing or sight.",
+      "usage": null,
+      "spellcasting": null
+    }
+  ]
+}

@@ -1,0 +1,190 @@
+{
+  "type": "MONSTER",
+  "id": "deep-gnome-svirfneblin",
+  "name": "Deep Gnome (svirfneblin)",
+  "url": "/monsters/deep-gnome-svirfneblin",
+  "source": "MM",
+  "description": "",
+  "challengeRating": 0.5,
+  "size": "SMALL",
+  "kind": "HUMANOID",
+  "subKind": "GNOME",
+  "alignment": "NEUTRAL_GOOD",
+  "maxHP": 16,
+  "hitDice": "3d6",
+  "armorClass": 15,
+  "proficiencyBonus": 2,
+  "speed": {
+    "walk": 20,
+    "swim": 0,
+    "fly": 0
+  },
+  "senses": {
+    "passivePerception": 12,
+    "passiveInsight": 10,
+    "darkvision": 120,
+    "blindsight": 0,
+    "truesight": 0,
+    "tremorsense": 0
+  },
+  "abilityScores": {
+    "strength": {
+      "score": 15,
+      "modifier": 2,
+      "savingThrow": 2
+    },
+    "dexterity": {
+      "score": 14,
+      "modifier": 2,
+      "savingThrow": 2
+    },
+    "constitution": {
+      "score": 14,
+      "modifier": 2,
+      "savingThrow": 2
+    },
+    "intelligence": {
+      "score": 12,
+      "modifier": 1,
+      "savingThrow": 1
+    },
+    "wisdom": {
+      "score": 10,
+      "modifier": 0,
+      "savingThrow": 0
+    },
+    "charisma": {
+      "score": 9,
+      "modifier": -1,
+      "savingThrow": -1
+    }
+  },
+  "proficiencies": [
+    {
+      "name": "Investigation",
+      "url": "/skills/investigation",
+      "amount": 3
+    },
+    {
+      "name": "Perception",
+      "url": "/skills/perception",
+      "amount": 2
+    },
+    {
+      "name": "Stealth",
+      "url": "/skills/stealth",
+      "amount": 4
+    }
+  ],
+  "resistances": [],
+  "immunities": {
+    "damageTypes": [],
+    "conditions": []
+  },
+  "vulnerabilities": [],
+  "languages": [
+    "Gnomish",
+    "Terran",
+    "Undercommon"
+  ],
+  "actions": [
+    {
+      "name": "War Pick",
+      "description": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) piercing damage.",
+      "attackBonus": 4,
+      "damage": [
+        {
+          "type": {
+            "name": "Piercing",
+            "url": "/damage-types/piercing"
+          },
+          "amount": "1d8+2",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Poisoned Dart",
+      "description": "Ranged Weapon Attack: +4 to hit, range 30/120 ft., one creature. Hit: 4 (1d4 + 2) piercing damage, and the target must succeed on a DC 12 Constitution saving throw or be poisoned for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success",
+      "attackBonus": 4,
+      "damage": [
+        {
+          "type": {
+            "name": "Piercing",
+            "url": "/damage-types/piercing"
+          },
+          "amount": "1d4+2",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    }
+  ],
+  "legendaryActions": [],
+  "specialAbilities": [
+    {
+      "name": "Stone Camouflage",
+      "description": "The gnome has advantage on Dexterity (Stealth) checks made to hide in rocky terrain.",
+      "usage": null,
+      "spellcasting": null
+    },
+    {
+      "name": "Gnome Cunning",
+      "description": "The gnome has advantage on Intelligence, Wisdom, and Charisma saving throws against magic.",
+      "usage": null,
+      "spellcasting": null
+    },
+    {
+      "name": "Innate Spellcasting",
+      "description": "The gnome's innate spellcasting ability is Intelligence (spell save DC 11). It can innately cast the following spells, requiring no material components:\nAt will: nondetection (self only)\n1/day each: blindness/deafness, blur, disguise self",
+      "usage": null,
+      "spellcasting": {
+        "level": 1,
+        "ability": {
+          "name": "Intelligence",
+          "url": "/ability-scores/intelligence"
+        },
+        "saveDC": 11,
+        "attackBonus": 0,
+        "slots": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "spells": [
+          {
+            "name": "Nondetection",
+            "url": "/spells/nondetection",
+            "level": 0
+          },
+          {
+            "name": "Blindness/deafness",
+            "url": "/spells/blindness-deafness",
+            "level": 0
+          },
+          {
+            "name": "Blur",
+            "url": "/spells/blur",
+            "level": 0
+          },
+          {
+            "name": "Disguise Self",
+            "url": "/spells/disguise-self",
+            "level": 0
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "type": "MONSTER",
+  "id": "ghoul",
+  "name": "Ghoul",
+  "url": "/monsters/ghoul",
+  "source": "MM",
+  "description": "",
+  "challengeRating": 1,
+  "size": "MEDIUM",
+  "kind": "UNDEAD",
+  "subKind": null,
+  "alignment": "CHAOTIC_EVIL",
+  "maxHP": 22,
+  "hitDice": "5d8",
+  "armorClass": 12,
+  "proficiencyBonus": 2,
+  "speed": {
+    "walk": 30,
+    "swim": 0,
+    "fly": 0
+  },
+  "senses": {
+    "passivePerception": 10,
+    "passiveInsight": 10,
+    "darkvision": 60,
+    "blindsight": 0,
+    "truesight": 0,
+    "tremorsense": 0
+  },
+  "abilityScores": {
+    "strength": {
+      "score": 13,
+      "modifier": 1,
+      "savingThrow": 1
+    },
+    "dexterity": {
+      "score": 15,
+      "modifier": 2,
+      "savingThrow": 2
+    },
+    "constitution": {
+      "score": 10,
+      "modifier": 0,
+      "savingThrow": 0
+    },
+    "intelligence": {
+      "score": 7,
+      "modifier": -2,
+      "savingThrow": -2
+    },
+    "wisdom": {
+      "score": 10,
+      "modifier": 0,
+      "savingThrow": 0
+    },
+    "charisma": {
+      "score": 6,
+      "modifier": -2,
+      "savingThrow": -2
+    }
+  },
+  "proficiencies": [],
+  "resistances": [],
+  "immunities": {
+    "damageTypes": [],
+    "conditions": [
+      {
+        "name": "Poisoned",
+        "url": "/conditions/poisoned"
+      }
+    ]
+  },
+  "vulnerabilities": [],
+  "languages": [
+    "Common"
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "description": "Melee Weapon Attack: +2 to hit, reach 5 ft., one creature. Hit: 9 (2d6 + 2) piercing damage.",
+      "attackBonus": 2,
+      "damage": [
+        {
+          "type": {
+            "name": "Piercing",
+            "url": "/damage-types/piercing"
+          },
+          "amount": "2d6+2",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Claws",
+      "description": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (2d4 + 2) slashing damage. If the target is a creature other than an elf or undead, it must succeed on a DC 10 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+      "attackBonus": 4,
+      "damage": [
+        {
+          "type": {
+            "name": "Slashing",
+            "url": "/damage-types/slashing"
+          },
+          "amount": "2d4+2",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    }
+  ],
+  "legendaryActions": [],
+  "specialAbilities": []
+}

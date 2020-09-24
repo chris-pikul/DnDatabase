@@ -1,0 +1,127 @@
+{
+  "type": "MONSTER",
+  "id": "tyrannosaurus-rex",
+  "name": "Tyrannosaurus Rex",
+  "url": "/monsters/tyrannosaurus-rex",
+  "source": "MM",
+  "description": "",
+  "challengeRating": 8,
+  "size": "HUGE",
+  "kind": "BEAST",
+  "subKind": null,
+  "alignment": "UNALIGNED",
+  "maxHP": 136,
+  "hitDice": "13d12",
+  "armorClass": 13,
+  "proficiencyBonus": 3,
+  "speed": {
+    "walk": 50,
+    "swim": 0,
+    "fly": 0
+  },
+  "senses": {
+    "passivePerception": 14,
+    "passiveInsight": 10,
+    "darkvision": 0,
+    "blindsight": 0,
+    "truesight": 0,
+    "tremorsense": 0
+  },
+  "abilityScores": {
+    "strength": {
+      "score": 25,
+      "modifier": 7,
+      "savingThrow": 7
+    },
+    "dexterity": {
+      "score": 10,
+      "modifier": 0,
+      "savingThrow": 0
+    },
+    "constitution": {
+      "score": 19,
+      "modifier": 4,
+      "savingThrow": 4
+    },
+    "intelligence": {
+      "score": 2,
+      "modifier": -4,
+      "savingThrow": -4
+    },
+    "wisdom": {
+      "score": 12,
+      "modifier": 1,
+      "savingThrow": 1
+    },
+    "charisma": {
+      "score": 9,
+      "modifier": -1,
+      "savingThrow": -1
+    }
+  },
+  "proficiencies": [
+    {
+      "name": "Perception",
+      "url": "/skills/perception",
+      "amount": 4
+    }
+  ],
+  "resistances": [],
+  "immunities": {
+    "damageTypes": [],
+    "conditions": []
+  },
+  "vulnerabilities": [],
+  "languages": [
+    ""
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "description": "The tyrannosaurus makes two attacks: one with its bite and one with its tail. It can't make both attacks against the same target.",
+      "attackBonus": 0,
+      "damage": null,
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Bite",
+      "description": "Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 33 (4d12 + 7) piercing damage. If the target is a Medium or smaller creature, it is grappled (escape DC 17). Until this grapple ends, the target is restrained, and the tyrannosaurus can't bite another target.",
+      "attackBonus": 10,
+      "damage": [
+        {
+          "type": {
+            "name": "Piercing",
+            "url": "/damage-types/piercing"
+          },
+          "amount": "4d12+7",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Tail",
+      "description": "Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 20 (3d8 + 7) bludgeoning damage.",
+      "attackBonus": 10,
+      "damage": [
+        {
+          "type": {
+            "name": "Bludgeoning",
+            "url": "/damage-types/bludgeoning"
+          },
+          "amount": "3d8+7",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    }
+  ],
+  "legendaryActions": [],
+  "specialAbilities": []
+}

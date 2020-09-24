@@ -1,0 +1,175 @@
+{
+  "type": "MONSTER",
+  "id": "gladiator",
+  "name": "Gladiator",
+  "url": "/monsters/gladiator",
+  "source": "MM",
+  "description": "",
+  "challengeRating": 5,
+  "size": "MEDIUM",
+  "kind": "HUMANOID",
+  "subKind": "ANY_RACE",
+  "alignment": "ANY_ALIGNMENT",
+  "maxHP": 112,
+  "hitDice": "15d8",
+  "armorClass": 16,
+  "proficiencyBonus": 3,
+  "speed": {
+    "walk": 30,
+    "swim": 0,
+    "fly": 0
+  },
+  "senses": {
+    "passivePerception": 11,
+    "passiveInsight": 10,
+    "darkvision": 0,
+    "blindsight": 0,
+    "truesight": 0,
+    "tremorsense": 0
+  },
+  "abilityScores": {
+    "strength": {
+      "score": 18,
+      "modifier": 4,
+      "savingThrow": 11
+    },
+    "dexterity": {
+      "score": 15,
+      "modifier": 2,
+      "savingThrow": 7
+    },
+    "constitution": {
+      "score": 16,
+      "modifier": 3,
+      "savingThrow": 9
+    },
+    "intelligence": {
+      "score": 10,
+      "modifier": 0,
+      "savingThrow": 0
+    },
+    "wisdom": {
+      "score": 12,
+      "modifier": 1,
+      "savingThrow": 1
+    },
+    "charisma": {
+      "score": 15,
+      "modifier": 2,
+      "savingThrow": 2
+    }
+  },
+  "proficiencies": [
+    {
+      "name": "Strength",
+      "url": "/ability-scores/strength",
+      "amount": 7
+    },
+    {
+      "name": "Dexterity",
+      "url": "/ability-scores/dexterity",
+      "amount": 5
+    },
+    {
+      "name": "Constitution",
+      "url": "/ability-scores/constitution",
+      "amount": 6
+    },
+    {
+      "name": "Athletics",
+      "url": "/skills/athletics",
+      "amount": 10
+    },
+    {
+      "name": "Intimidation",
+      "url": "/skills/intimidation",
+      "amount": 5
+    }
+  ],
+  "resistances": [],
+  "immunities": {
+    "damageTypes": [],
+    "conditions": []
+  },
+  "vulnerabilities": [],
+  "languages": [
+    "Any One Language (usually Common)"
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "description": "The gladiator makes three melee attacks or two ranged attacks.",
+      "attackBonus": 0,
+      "damage": null,
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Spear",
+      "description": "Melee or Ranged Weapon Attack: +7 to hit, reach 5 ft. and range 20/60 ft., one target. Hit: 11 (2d6 + 4) piercing damage, or 13 (2d8 + 4) piercing damage if used with two hands to make a melee attack.",
+      "attackBonus": 7,
+      "damage": [
+        {
+          "type": null,
+          "amount": null,
+          "options": {
+            "amount": 1,
+            "choices": [
+              {
+                "type": {
+                  "name": "Piercing",
+                  "url": "/damage-types/piercing"
+                },
+                "amount": "2d6+4"
+              },
+              {
+                "type": {
+                  "name": "Piercing",
+                  "url": "/damage-types/piercing"
+                },
+                "amount": "2d8+4"
+              }
+            ]
+          }
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Shield Bash",
+      "description": "Melee Weapon Attack: +7 to hit, reach 5 ft., one creature. Hit: 9 (2d4 + 4) bludgeoning damage. If the target is a Medium or smaller creature, it must succeed on a DC 15 Strength saving throw or be knocked prone.",
+      "attackBonus": 7,
+      "damage": [
+        {
+          "type": {
+            "name": "Bludgeoning",
+            "url": "/damage-types/bludgeoning"
+          },
+          "amount": "2d4+4",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    }
+  ],
+  "legendaryActions": [],
+  "specialAbilities": [
+    {
+      "name": "Brave",
+      "description": "The gladiator has advantage on saving throws against being frightened.",
+      "usage": null,
+      "spellcasting": null
+    },
+    {
+      "name": "Brute",
+      "description": "A melee weapon deals one extra die of its damage when the gladiator hits with it (included in the attack).",
+      "usage": null,
+      "spellcasting": null
+    }
+  ]
+}

@@ -1,0 +1,231 @@
+{
+  "type": "MONSTER",
+  "id": "ice-mephit",
+  "name": "Ice Mephit",
+  "url": "/monsters/ice-mephit",
+  "source": "MM",
+  "description": "",
+  "challengeRating": 0.5,
+  "size": "SMALL",
+  "kind": "ELEMENTAL",
+  "subKind": null,
+  "alignment": "NEUTRAL_EVIL",
+  "maxHP": 21,
+  "hitDice": "6d6",
+  "armorClass": 11,
+  "proficiencyBonus": 2,
+  "speed": {
+    "walk": 30,
+    "swim": 0,
+    "fly": 30
+  },
+  "senses": {
+    "passivePerception": 12,
+    "passiveInsight": 10,
+    "darkvision": 60,
+    "blindsight": 0,
+    "truesight": 0,
+    "tremorsense": 0
+  },
+  "abilityScores": {
+    "strength": {
+      "score": 7,
+      "modifier": -2,
+      "savingThrow": -2
+    },
+    "dexterity": {
+      "score": 13,
+      "modifier": 1,
+      "savingThrow": 1
+    },
+    "constitution": {
+      "score": 10,
+      "modifier": 0,
+      "savingThrow": 0
+    },
+    "intelligence": {
+      "score": 9,
+      "modifier": -1,
+      "savingThrow": -1
+    },
+    "wisdom": {
+      "score": 11,
+      "modifier": 0,
+      "savingThrow": 0
+    },
+    "charisma": {
+      "score": 12,
+      "modifier": 1,
+      "savingThrow": 1
+    }
+  },
+  "proficiencies": [
+    {
+      "name": "Perception",
+      "url": "/skills/perception",
+      "amount": 2
+    },
+    {
+      "name": "Stealth",
+      "url": "/skills/stealth",
+      "amount": 3
+    }
+  ],
+  "resistances": [],
+  "immunities": {
+    "damageTypes": [
+      {
+        "name": "Cold",
+        "url": "/damage-types/cold"
+      },
+      {
+        "name": "Poison",
+        "url": "/damage-types/poison"
+      }
+    ],
+    "conditions": [
+      {
+        "name": "Poisoned",
+        "url": "/conditions/poisoned"
+      }
+    ]
+  },
+  "vulnerabilities": [
+    [
+      {
+        "name": "Bludgeoning",
+        "url": "/damage-types/bludgeoning"
+      },
+      {
+        "name": "Piercing",
+        "url": "/damage-types/piercing"
+      },
+      {
+        "name": "Slashing",
+        "url": "/damage-types/slashing"
+      }
+    ],
+    {
+      "name": "Fire",
+      "url": "/damage-types/fire"
+    }
+  ],
+  "languages": [
+    "Aquan",
+    "Auran"
+  ],
+  "actions": [
+    {
+      "name": "Claws",
+      "description": "Melee Weapon Attack: +3 to hit, reach 5 ft., one creature. Hit: 3 (1d4 + 1) slashing damage plus 2 (1d4) cold damage.",
+      "attackBonus": 3,
+      "damage": [
+        {
+          "type": {
+            "name": "Slashing",
+            "url": "/damage-types/slashing"
+          },
+          "amount": "1d4+1",
+          "options": null
+        },
+        {
+          "type": {
+            "name": "Cold",
+            "url": "/damage-types/cold"
+          },
+          "amount": "1d4",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Frost Breath (recharge 6)",
+      "description": "The mephit exhales a 15-foot cone of cold air. Each creature in that area must succeed on a DC 10 Dexterity saving throw, taking 5 (2d4) cold damage on a failed save, or half as much damage on a successful one.",
+      "attackBonus": 0,
+      "damage": [
+        {
+          "type": {
+            "name": "Cold",
+            "url": "/damage-types/cold"
+          },
+          "amount": "2d4",
+          "options": null
+        }
+      ],
+      "saveDC": {
+        "ability": {
+          "name": "Dexterity",
+          "url": "/ability-scores/dexterity"
+        },
+        "value": 23,
+        "onSuccess": "HALF"
+      },
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Variant: Summon Mephits",
+      "description": "The mephit has a 25 percent chance of summoning 1d4 mephits of its kind. A summoned mephit appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other mephits. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action.",
+      "attackBonus": 0,
+      "damage": null,
+      "saveDC": null,
+      "usage": {
+        "type": "PER_DAY",
+        "amount": 1,
+        "dice": null,
+        "minRoll": 0
+      },
+      "options": null
+    }
+  ],
+  "legendaryActions": [],
+  "specialAbilities": [
+    {
+      "name": "Death Burst",
+      "description": "When the mephit dies, it explodes in a burst of jagged ice. Each creature within 5 ft. of it must make a DC 10 Dexterity saving throw, taking 4 (1d8) slashing damage on a failed save, or half as much damage on a successful one.",
+      "usage": null,
+      "spellcasting": null
+    },
+    {
+      "name": "False Appearance",
+      "description": "While the mephit remains motionless, it is indistinguishable from an ordinary shard of ice.",
+      "usage": null,
+      "spellcasting": null
+    },
+    {
+      "name": "Innate Spellcasting",
+      "description": "The mephit can innately cast fog cloud, requiring no material components. Its innate spellcasting ability is Charisma.",
+      "usage": null,
+      "spellcasting": {
+        "level": 1,
+        "ability": {
+          "name": "Charisma",
+          "url": "/ability-scores/charisma"
+        },
+        "saveDC": 10,
+        "attackBonus": 0,
+        "slots": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "spells": [
+          {
+            "name": "Fog Cloud",
+            "url": "/spells/fog-cloud",
+            "level": 0
+          }
+        ]
+      }
+    }
+  ]
+}

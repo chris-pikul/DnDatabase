@@ -1,0 +1,159 @@
+{
+  "type": "MONSTER",
+  "id": "gargoyle",
+  "name": "Gargoyle",
+  "url": "/monsters/gargoyle",
+  "source": "MM",
+  "description": "",
+  "challengeRating": 2,
+  "size": "MEDIUM",
+  "kind": "ELEMENTAL",
+  "subKind": null,
+  "alignment": "CHAOTIC_EVIL",
+  "maxHP": 52,
+  "hitDice": "7d8",
+  "armorClass": 15,
+  "proficiencyBonus": 2,
+  "speed": {
+    "walk": 30,
+    "swim": 0,
+    "fly": 60
+  },
+  "senses": {
+    "passivePerception": 10,
+    "passiveInsight": 10,
+    "darkvision": 60,
+    "blindsight": 0,
+    "truesight": 0,
+    "tremorsense": 0
+  },
+  "abilityScores": {
+    "strength": {
+      "score": 15,
+      "modifier": 2,
+      "savingThrow": 2
+    },
+    "dexterity": {
+      "score": 11,
+      "modifier": 0,
+      "savingThrow": 0
+    },
+    "constitution": {
+      "score": 16,
+      "modifier": 3,
+      "savingThrow": 3
+    },
+    "intelligence": {
+      "score": 6,
+      "modifier": -2,
+      "savingThrow": -2
+    },
+    "wisdom": {
+      "score": 11,
+      "modifier": 0,
+      "savingThrow": 0
+    },
+    "charisma": {
+      "score": 7,
+      "modifier": -2,
+      "savingThrow": -2
+    }
+  },
+  "proficiencies": [],
+  "resistances": [
+    {
+      "name": "Bludgeoning",
+      "url": "/damage-types/bludgeoning"
+    },
+    {
+      "name": "Piercing",
+      "url": "/damage-types/piercing"
+    },
+    {
+      "name": "Slashing",
+      "url": "/damage-types/slashing"
+    }
+  ],
+  "immunities": {
+    "damageTypes": [
+      {
+        "name": "Poison",
+        "url": "/damage-types/poison"
+      }
+    ],
+    "conditions": [
+      {
+        "name": "Exhaustion",
+        "url": "/conditions/exhaustion"
+      },
+      {
+        "name": "Petrified",
+        "url": "/conditions/petrified"
+      },
+      {
+        "name": "Poisoned",
+        "url": "/conditions/poisoned"
+      }
+    ]
+  },
+  "vulnerabilities": [],
+  "languages": [
+    "Terran"
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "description": "The gargoyle makes two attacks: one with its bite and one with its claws.",
+      "attackBonus": 0,
+      "damage": null,
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Bite",
+      "description": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage.",
+      "attackBonus": 4,
+      "damage": [
+        {
+          "type": {
+            "name": "Piercing",
+            "url": "/damage-types/piercing"
+          },
+          "amount": "1d6+2",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Claws",
+      "description": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) slashing damage.",
+      "attackBonus": 4,
+      "damage": [
+        {
+          "type": {
+            "name": "Slashing",
+            "url": "/damage-types/slashing"
+          },
+          "amount": "1d6+2",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    }
+  ],
+  "legendaryActions": [],
+  "specialAbilities": [
+    {
+      "name": "False Appearance",
+      "description": "While the gargoyle remains motion less, it is indistinguishable from an inanimate statue.",
+      "usage": null,
+      "spellcasting": null
+    }
+  ]
+}

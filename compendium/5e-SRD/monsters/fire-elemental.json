@@ -1,0 +1,177 @@
+{
+  "type": "MONSTER",
+  "id": "fire-elemental",
+  "name": "Fire Elemental",
+  "url": "/monsters/fire-elemental",
+  "source": "MM",
+  "description": "",
+  "challengeRating": 5,
+  "size": "LARGE",
+  "kind": "ELEMENTAL",
+  "subKind": null,
+  "alignment": "NEUTRAL",
+  "maxHP": 102,
+  "hitDice": "12d10",
+  "armorClass": 13,
+  "proficiencyBonus": 3,
+  "speed": {
+    "walk": 50,
+    "swim": 0,
+    "fly": 0
+  },
+  "senses": {
+    "passivePerception": 10,
+    "passiveInsight": 10,
+    "darkvision": 60,
+    "blindsight": 0,
+    "truesight": 0,
+    "tremorsense": 0
+  },
+  "abilityScores": {
+    "strength": {
+      "score": 10,
+      "modifier": 0,
+      "savingThrow": 0
+    },
+    "dexterity": {
+      "score": 17,
+      "modifier": 3,
+      "savingThrow": 3
+    },
+    "constitution": {
+      "score": 16,
+      "modifier": 3,
+      "savingThrow": 3
+    },
+    "intelligence": {
+      "score": 6,
+      "modifier": -2,
+      "savingThrow": -2
+    },
+    "wisdom": {
+      "score": 10,
+      "modifier": 0,
+      "savingThrow": 0
+    },
+    "charisma": {
+      "score": 7,
+      "modifier": -2,
+      "savingThrow": -2
+    }
+  },
+  "proficiencies": [],
+  "resistances": [
+    {
+      "name": "Bludgeoning",
+      "url": "/damage-types/bludgeoning"
+    },
+    {
+      "name": "Piercing",
+      "url": "/damage-types/piercing"
+    },
+    {
+      "name": "Slashing",
+      "url": "/damage-types/slashing"
+    }
+  ],
+  "immunities": {
+    "damageTypes": [
+      {
+        "name": "Fire",
+        "url": "/damage-types/fire"
+      },
+      {
+        "name": "Poison",
+        "url": "/damage-types/poison"
+      }
+    ],
+    "conditions": [
+      {
+        "name": "Exhaustion",
+        "url": "/conditions/exhaustion"
+      },
+      {
+        "name": "Grappled",
+        "url": "/conditions/grappled"
+      },
+      {
+        "name": "Paralyzed",
+        "url": "/conditions/paralyzed"
+      },
+      {
+        "name": "Petrified",
+        "url": "/conditions/petrified"
+      },
+      {
+        "name": "Poisoned",
+        "url": "/conditions/poisoned"
+      },
+      {
+        "name": "Prone",
+        "url": "/conditions/prone"
+      },
+      {
+        "name": "Restrained",
+        "url": "/conditions/restrained"
+      },
+      {
+        "name": "Unconscious",
+        "url": "/conditions/unconscious"
+      }
+    ]
+  },
+  "vulnerabilities": [],
+  "languages": [
+    "Ignan"
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "description": "The elemental makes two touch attacks.",
+      "attackBonus": 0,
+      "damage": null,
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Touch",
+      "description": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) fire damage. If the target is a creature or a flammable object, it ignites. Until a creature takes an action to douse the fire, the target takes 5 (1d10) fire damage at the start of each of its turns.",
+      "attackBonus": 6,
+      "damage": [
+        {
+          "type": {
+            "name": "Fire",
+            "url": "/damage-types/fire"
+          },
+          "amount": "2d6+3",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    }
+  ],
+  "legendaryActions": [],
+  "specialAbilities": [
+    {
+      "name": "Fire Form",
+      "description": "The elemental can move through a space as narrow as 1 inch wide without squeezing. A creature that touches the elemental or hits it with a melee attack while within 5 ft. of it takes 5 (1d10) fire damage. In addition, the elemental can enter a hostile creature's space and stop there. The first time it enters a creature's space on a turn, that creature takes 5 (1d10) fire damage and catches fire; until someone takes an action to douse the fire, the creature takes 5 (1d10) fire damage at the start of each of its turns.",
+      "usage": null,
+      "spellcasting": null
+    },
+    {
+      "name": "Illumination",
+      "description": "The elemental sheds bright light in a 30-foot radius and dim light in an additional 30 ft..",
+      "usage": null,
+      "spellcasting": null
+    },
+    {
+      "name": "Water Susceptibility",
+      "description": "For every 5 ft. the elemental moves in water, or for every gallon of water splashed on it, it takes 1 cold damage.",
+      "usage": null,
+      "spellcasting": null
+    }
+  ]
+}

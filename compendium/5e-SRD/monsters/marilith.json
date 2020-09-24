@@ -1,0 +1,220 @@
+{
+  "type": "MONSTER",
+  "id": "marilith",
+  "name": "Marilith",
+  "url": "/monsters/marilith",
+  "source": "MM",
+  "description": "",
+  "challengeRating": 16,
+  "size": "LARGE",
+  "kind": "FIEND",
+  "subKind": "DEMON",
+  "alignment": "CHAOTIC_EVIL",
+  "maxHP": 189,
+  "hitDice": "18d10",
+  "armorClass": 18,
+  "proficiencyBonus": 5,
+  "speed": {
+    "walk": 40,
+    "swim": 0,
+    "fly": 0
+  },
+  "senses": {
+    "passivePerception": 13,
+    "passiveInsight": 10,
+    "darkvision": 0,
+    "blindsight": 0,
+    "truesight": 120,
+    "tremorsense": 0
+  },
+  "abilityScores": {
+    "strength": {
+      "score": 18,
+      "modifier": 4,
+      "savingThrow": 13
+    },
+    "dexterity": {
+      "score": 20,
+      "modifier": 5,
+      "savingThrow": 5
+    },
+    "constitution": {
+      "score": 20,
+      "modifier": 5,
+      "savingThrow": 15
+    },
+    "intelligence": {
+      "score": 18,
+      "modifier": 4,
+      "savingThrow": 4
+    },
+    "wisdom": {
+      "score": 16,
+      "modifier": 3,
+      "savingThrow": 11
+    },
+    "charisma": {
+      "score": 20,
+      "modifier": 5,
+      "savingThrow": 15
+    }
+  },
+  "proficiencies": [
+    {
+      "name": "Strength",
+      "url": "/ability-scores/strength",
+      "amount": 9
+    },
+    {
+      "name": "Constitution",
+      "url": "/ability-scores/constitution",
+      "amount": 10
+    },
+    {
+      "name": "Wisdom",
+      "url": "/ability-scores/wisdom",
+      "amount": 8
+    },
+    {
+      "name": "Charisma",
+      "url": "/ability-scores/charisma",
+      "amount": 10
+    }
+  ],
+  "resistances": [
+    {
+      "name": "Cold",
+      "url": "/damage-types/cold"
+    },
+    {
+      "name": "Fire",
+      "url": "/damage-types/fire"
+    },
+    {
+      "name": "Lightning",
+      "url": "/damage-types/lightning"
+    },
+    {
+      "name": "Bludgeoning",
+      "url": "/damage-types/bludgeoning"
+    },
+    {
+      "name": "Piercing",
+      "url": "/damage-types/piercing"
+    },
+    {
+      "name": "Slashing",
+      "url": "/damage-types/slashing"
+    }
+  ],
+  "immunities": {
+    "damageTypes": [
+      {
+        "name": "Poison",
+        "url": "/damage-types/poison"
+      }
+    ],
+    "conditions": [
+      {
+        "name": "Poisoned",
+        "url": "/conditions/poisoned"
+      }
+    ]
+  },
+  "vulnerabilities": [],
+  "languages": [
+    "Abyssal",
+    "Telepathy 120 Ft."
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "description": "The marilith can make seven attacks: six with its longswords and one with its tail.",
+      "attackBonus": 0,
+      "damage": null,
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Longsword",
+      "description": "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) slashing damage.",
+      "attackBonus": 9,
+      "damage": [
+        {
+          "type": {
+            "name": "Slashing",
+            "url": "/damage-types/slashing"
+          },
+          "amount": "2d8+4",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Tail",
+      "description": "Melee Weapon Attack: +9 to hit, reach 10 ft., one creature. Hit: 15 (2d10 + 4) bludgeoning damage. If the target is Medium or smaller, it is grappled (escape DC 19). Until this grapple ends, the target is restrained, the marilith can automatically hit the target with its tail, and the marilith can't make tail attacks against other targets.",
+      "attackBonus": 9,
+      "damage": [
+        {
+          "type": {
+            "name": "Bludgeoning",
+            "url": "/damage-types/bludgeoning"
+          },
+          "amount": "2d10+4",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Teleport",
+      "description": "The marilith magically teleports, along with any equipment it is wearing or carrying, up to 120 feet to an unoccupied space it can see.",
+      "attackBonus": 0,
+      "damage": null,
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Variant: Summon Demon",
+      "description": "The demon chooses what to summon and attempts a magical summoning.\nA marilith has a 50 percent chance of summoning 1d6 vrocks, 1d4 hezrous, 1d3 glabrezus, 1d2 nalfeshnees, or one marilith.\nA summoned demon appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other demons. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action.",
+      "attackBonus": 0,
+      "damage": null,
+      "saveDC": null,
+      "usage": {
+        "type": "PER_DAY",
+        "amount": 1,
+        "dice": null,
+        "minRoll": 0
+      },
+      "options": null
+    }
+  ],
+  "legendaryActions": [],
+  "specialAbilities": [
+    {
+      "name": "Magic Resistance",
+      "description": "The marilith has advantage on saving throws against spells and other magical effects.",
+      "usage": null,
+      "spellcasting": null
+    },
+    {
+      "name": "Magic Weapons",
+      "description": "The marilith's weapon attacks are magical.",
+      "usage": null,
+      "spellcasting": null
+    },
+    {
+      "name": "Reactive",
+      "description": "The marilith can take one reaction on every turn in combat.",
+      "usage": null,
+      "spellcasting": null
+    }
+  ]
+}

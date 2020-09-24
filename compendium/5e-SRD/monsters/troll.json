@@ -1,0 +1,146 @@
+{
+  "type": "MONSTER",
+  "id": "troll",
+  "name": "Troll",
+  "url": "/monsters/troll",
+  "source": "MM",
+  "description": "",
+  "challengeRating": 5,
+  "size": "LARGE",
+  "kind": "GIANT",
+  "subKind": null,
+  "alignment": "CHAOTIC_EVIL",
+  "maxHP": 84,
+  "hitDice": "8d10",
+  "armorClass": 15,
+  "proficiencyBonus": 3,
+  "speed": {
+    "walk": 30,
+    "swim": 0,
+    "fly": 0
+  },
+  "senses": {
+    "passivePerception": 12,
+    "passiveInsight": 10,
+    "darkvision": 60,
+    "blindsight": 0,
+    "truesight": 0,
+    "tremorsense": 0
+  },
+  "abilityScores": {
+    "strength": {
+      "score": 18,
+      "modifier": 4,
+      "savingThrow": 4
+    },
+    "dexterity": {
+      "score": 13,
+      "modifier": 1,
+      "savingThrow": 1
+    },
+    "constitution": {
+      "score": 20,
+      "modifier": 5,
+      "savingThrow": 5
+    },
+    "intelligence": {
+      "score": 7,
+      "modifier": -2,
+      "savingThrow": -2
+    },
+    "wisdom": {
+      "score": 9,
+      "modifier": -1,
+      "savingThrow": -1
+    },
+    "charisma": {
+      "score": 7,
+      "modifier": -2,
+      "savingThrow": -2
+    }
+  },
+  "proficiencies": [
+    {
+      "name": "Perception",
+      "url": "/skills/perception",
+      "amount": 2
+    }
+  ],
+  "resistances": [],
+  "immunities": {
+    "damageTypes": [],
+    "conditions": []
+  },
+  "vulnerabilities": [],
+  "languages": [
+    "Giant"
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "description": "The troll makes three attacks: one with its bite and two with its claws.",
+      "attackBonus": 0,
+      "damage": null,
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Bite",
+      "description": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) piercing damage.",
+      "attackBonus": 7,
+      "damage": [
+        {
+          "type": {
+            "name": "Piercing",
+            "url": "/damage-types/piercing"
+          },
+          "amount": "1d6+4",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Claw",
+      "description": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing damage.",
+      "attackBonus": 7,
+      "damage": [
+        {
+          "type": {
+            "name": "Slashing",
+            "url": "/damage-types/slashing"
+          },
+          "amount": "2d6+4",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    }
+  ],
+  "legendaryActions": [],
+  "specialAbilities": [
+    {
+      "name": "Keen Smell",
+      "description": "The troll has advantage on Wisdom (Perception) checks that rely on smell.",
+      "usage": null,
+      "spellcasting": null
+    },
+    {
+      "name": "Regeneration",
+      "description": "The troll regains 10 hit points at the start of its turn. If the troll takes acid or fire damage, this trait doesn't function at the start of the troll's next turn. The troll dies only if it starts its turn with 0 hit points and doesn't regenerate.",
+      "usage": null,
+      "spellcasting": null
+    },
+    {
+      "name": "Variant: Loathsome Limbs",
+      "description": "Whenever the troll takes at least 15 slashing damage at one time, roll a d20 to determine what else happens to it:\n1-10: Nothing else happens.\n11-14: One leg is severed from the troll if it has any legs left.\n15- 18: One arm is severed from the troll if it has any arms left.\n19-20: The troll is decapitated, but the troll dies only if it can't regenerate. If it dies, so does the severed head.\nIf the troll finishes a short or long rest without reattaching a severed limb or head, the part regrows. At that point, the severed part dies. Until then, a severed part acts on the troll's initiative and has its own action and movement. A severed part has AC 13, 10 hit points, and the troll's Regeneration trait.\nA severed leg is unable to attack and has a speed of 5 feet.\nA severed arm has a speed of 5 feet and can make one claw attack on its turn, with disadvantage on the attack roll unless the troll can see the arm and its target. Each time the troll loses an arm, it loses a claw attack.\nIf its head is severed, the troll loses its bite attack and its body is blinded unless the head can see it. The severed head has a speed of 0 feet and the troll's Keen Smell trait. It can make a bite attack but only against a target in its space.\nThe troll's speed is halved if it's missing a leg. If it loses both legs, it falls prone. If it has both arms, it can crawl. With only one arm, it can still crawl, but its speed is halved. With no arms or legs, its speed is 0, and it can't benefit from bonuses to speed.",
+      "usage": null,
+      "spellcasting": null
+    }
+  ]
+}

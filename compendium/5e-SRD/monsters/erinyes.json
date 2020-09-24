@@ -1,0 +1,227 @@
+{
+  "type": "MONSTER",
+  "id": "erinyes",
+  "name": "Erinyes",
+  "url": "/monsters/erinyes",
+  "source": "MM",
+  "description": "",
+  "challengeRating": 12,
+  "size": "MEDIUM",
+  "kind": "FIEND",
+  "subKind": "DEVIL",
+  "alignment": "LAWFUL_EVIL",
+  "maxHP": 153,
+  "hitDice": "18d8",
+  "armorClass": 18,
+  "proficiencyBonus": 4,
+  "speed": {
+    "walk": 30,
+    "swim": 0,
+    "fly": 60
+  },
+  "senses": {
+    "passivePerception": 12,
+    "passiveInsight": 10,
+    "darkvision": 0,
+    "blindsight": 0,
+    "truesight": 120,
+    "tremorsense": 0
+  },
+  "abilityScores": {
+    "strength": {
+      "score": 18,
+      "modifier": 4,
+      "savingThrow": 4
+    },
+    "dexterity": {
+      "score": 16,
+      "modifier": 3,
+      "savingThrow": 10
+    },
+    "constitution": {
+      "score": 18,
+      "modifier": 4,
+      "savingThrow": 12
+    },
+    "intelligence": {
+      "score": 14,
+      "modifier": 2,
+      "savingThrow": 2
+    },
+    "wisdom": {
+      "score": 14,
+      "modifier": 2,
+      "savingThrow": 8
+    },
+    "charisma": {
+      "score": 18,
+      "modifier": 4,
+      "savingThrow": 12
+    }
+  },
+  "proficiencies": [
+    {
+      "name": "Dexterity",
+      "url": "/ability-scores/dexterity",
+      "amount": 7
+    },
+    {
+      "name": "Constitution",
+      "url": "/ability-scores/constitution",
+      "amount": 8
+    },
+    {
+      "name": "Wisdom",
+      "url": "/ability-scores/wisdom",
+      "amount": 6
+    },
+    {
+      "name": "Charisma",
+      "url": "/ability-scores/charisma",
+      "amount": 8
+    }
+  ],
+  "resistances": [
+    {
+      "name": "Cold",
+      "url": "/damage-types/cold"
+    },
+    {
+      "name": "Bludgeoning",
+      "url": "/damage-types/bludgeoning"
+    },
+    {
+      "name": "Piercing",
+      "url": "/damage-types/piercing"
+    },
+    {
+      "name": "Slashing",
+      "url": "/damage-types/slashing"
+    }
+  ],
+  "immunities": {
+    "damageTypes": [
+      {
+        "name": "Fire",
+        "url": "/damage-types/fire"
+      },
+      {
+        "name": "Poison",
+        "url": "/damage-types/poison"
+      }
+    ],
+    "conditions": [
+      {
+        "name": "Poisoned",
+        "url": "/conditions/poisoned"
+      }
+    ]
+  },
+  "vulnerabilities": [],
+  "languages": [
+    "Infernal",
+    "Telepathy 120 Ft."
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "description": "The erinyes makes three attacks",
+      "attackBonus": 0,
+      "damage": null,
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Longsword",
+      "description": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) slashing damage, or 9 (1d10 + 4) slashing damage if used with two hands, plus 13 (3d8) poison damage.",
+      "attackBonus": 8,
+      "damage": [
+        {
+          "type": null,
+          "amount": null,
+          "options": {
+            "amount": 1,
+            "choices": [
+              {
+                "type": {
+                  "name": "Slashing",
+                  "url": "/damage-types/slashing"
+                },
+                "amount": "1d8+4"
+              },
+              {
+                "type": {
+                  "name": "Slashing",
+                  "url": "/damage-types/slashing"
+                },
+                "amount": "1d10+4"
+              }
+            ]
+          }
+        },
+        {
+          "type": {
+            "name": "Poison",
+            "url": "/damage-types/poison"
+          },
+          "amount": "3d8",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Longbow",
+      "description": "Ranged Weapon Attack: +7 to hit, range 150/600 ft., one target. Hit: 7 (1d8 + 3) piercing damage plus 13 (3d8) poison damage, and the target must succeed on a DC 14 Constitution saving throw or be poisoned. The poison lasts until it is removed by the lesser restoration spell or similar magic.",
+      "attackBonus": 7,
+      "damage": [
+        {
+          "type": {
+            "name": "Piercing",
+            "url": "/damage-types/piercing"
+          },
+          "amount": "1d8+3",
+          "options": null
+        },
+        {
+          "type": {
+            "name": "Poison",
+            "url": "/damage-types/poison"
+          },
+          "amount": "3d8",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Variant: Rope Of Entanglement",
+      "description": "Some erinyes carry a rope of entanglement (detailed in the Dungeon Master's Guide). When such an erinyes uses its Multiattack, the erinyes can use the rope in place of two of the attacks.",
+      "attackBonus": 0,
+      "damage": null,
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    }
+  ],
+  "legendaryActions": [],
+  "specialAbilities": [
+    {
+      "name": "Hellish Weapons",
+      "description": "The erinyes's weapon attacks are magical and deal an extra 13 (3d8) poison damage on a hit (included in the attacks).",
+      "usage": null,
+      "spellcasting": null
+    },
+    {
+      "name": "Magic Resistance",
+      "description": "The erinyes has advantage on saving throws against spells and other magical effects.",
+      "usage": null,
+      "spellcasting": null
+    }
+  ]
+}

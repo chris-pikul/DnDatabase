@@ -1,0 +1,265 @@
+{
+  "type": "MONSTER",
+  "id": "couatl",
+  "name": "Couatl",
+  "url": "/monsters/couatl",
+  "source": "MM",
+  "description": "",
+  "challengeRating": 4,
+  "size": "MEDIUM",
+  "kind": "CELESTIAL",
+  "subKind": null,
+  "alignment": "LAWFUL_GOOD",
+  "maxHP": 97,
+  "hitDice": "13d8",
+  "armorClass": 19,
+  "proficiencyBonus": 2,
+  "speed": {
+    "walk": 30,
+    "swim": 0,
+    "fly": 90
+  },
+  "senses": {
+    "passivePerception": 15,
+    "passiveInsight": 10,
+    "darkvision": 0,
+    "blindsight": 0,
+    "truesight": 120,
+    "tremorsense": 0
+  },
+  "abilityScores": {
+    "strength": {
+      "score": 16,
+      "modifier": 3,
+      "savingThrow": 3
+    },
+    "dexterity": {
+      "score": 20,
+      "modifier": 5,
+      "savingThrow": 5
+    },
+    "constitution": {
+      "score": 17,
+      "modifier": 3,
+      "savingThrow": 8
+    },
+    "intelligence": {
+      "score": 18,
+      "modifier": 4,
+      "savingThrow": 4
+    },
+    "wisdom": {
+      "score": 20,
+      "modifier": 5,
+      "savingThrow": 12
+    },
+    "charisma": {
+      "score": 18,
+      "modifier": 4,
+      "savingThrow": 10
+    }
+  },
+  "proficiencies": [
+    {
+      "name": "Constitution",
+      "url": "/ability-scores/constitution",
+      "amount": 5
+    },
+    {
+      "name": "Wisdom",
+      "url": "/ability-scores/wisdom",
+      "amount": 7
+    },
+    {
+      "name": "Charisma",
+      "url": "/ability-scores/charisma",
+      "amount": 6
+    }
+  ],
+  "resistances": [
+    {
+      "name": "Radiant",
+      "url": "/damage-types/radiant"
+    }
+  ],
+  "immunities": {
+    "damageTypes": [
+      {
+        "name": "Psychic",
+        "url": "/damage-types/psychic"
+      },
+      {
+        "name": "Bludgeoning",
+        "url": "/damage-types/bludgeoning"
+      },
+      {
+        "name": "Piercing",
+        "url": "/damage-types/piercing"
+      },
+      {
+        "name": "Slashing",
+        "url": "/damage-types/slashing"
+      }
+    ],
+    "conditions": []
+  },
+  "vulnerabilities": [],
+  "languages": [
+    "All",
+    "Telepathy 120 Ft."
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "description": "Melee Weapon Attack: +8 to hit, reach 5 ft., one creature. Hit: 8 (1d6 + 5) piercing damage, and the target must succeed on a DC 13 Constitution saving throw or be poisoned for 24 hours. Until this poison ends, the target is unconscious. Another creature can use an action to shake the target awake.",
+      "attackBonus": 8,
+      "damage": [
+        {
+          "type": {
+            "name": "Piercing",
+            "url": "/damage-types/piercing"
+          },
+          "amount": "1d6+5",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Constrict",
+      "description": "Melee Weapon Attack: +6 to hit, reach 10 ft., one Medium or smaller creature. Hit: 10 (2d6 + 3) bludgeoning damage, and the target is grappled (escape DC 15). Until this grapple ends, the target is restrained, and the couatl can't constrict another target.",
+      "attackBonus": 6,
+      "damage": [
+        {
+          "type": {
+            "name": "Bludgeoning",
+            "url": "/damage-types/bludgeoning"
+          },
+          "amount": "2d6+3",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Change Shape",
+      "description": "The couatl magically polymorphs into a humanoid or beast that has a challenge rating equal to or less than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the couatl's choice).\nIn a new form, the couatl retains its game statistics and ability to speak, but its AC, movement modes, Strength, Dexterity, and other actions are replaced by those of the new form, and it gains any statistics and capabilities (except class features, legendary actions, and lair actions) that the new form has but that it lacks. If the new form has a bite attack, the couatl can use its bite in that form.",
+      "attackBonus": 0,
+      "damage": null,
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    }
+  ],
+  "legendaryActions": [],
+  "specialAbilities": [
+    {
+      "name": "Innate Spellcasting",
+      "description": "The couatl's spellcasting ability is Charisma (spell save DC 14). It can innately cast the following spells, requiring only verbal components:\n\nAt will: detect evil and good, detect magic, detect thoughts\n3/day each: bless, create food and water, cure wounds, lesser restoration, protection from poison, sanctuary, shield\n1/day each: dream, greater restoration, scrying",
+      "usage": null,
+      "spellcasting": {
+        "level": 1,
+        "ability": {
+          "name": "Charisma",
+          "url": "/ability-scores/charisma"
+        },
+        "saveDC": 14,
+        "attackBonus": 0,
+        "slots": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "spells": [
+          {
+            "name": "Detect Evil And Good",
+            "url": "/spells/detect-evil-and-good",
+            "level": 0
+          },
+          {
+            "name": "Detect Magic",
+            "url": "/spells/detect-magic",
+            "level": 0
+          },
+          {
+            "name": "Detect Thoughts",
+            "url": "/spells/detect-thoughts",
+            "level": 0
+          },
+          {
+            "name": "Bless",
+            "url": "/spells/bless",
+            "level": 0
+          },
+          {
+            "name": "Create Food And Water",
+            "url": "/spells/create-food-and-water",
+            "level": 0
+          },
+          {
+            "name": "Cure Wounds",
+            "url": "/spells/cure-wounds",
+            "level": 0
+          },
+          {
+            "name": "Lesser Restoration",
+            "url": "/spells/lesser-restoration",
+            "level": 0
+          },
+          {
+            "name": "Protection From Poison",
+            "url": "/spells/protection-from-poison",
+            "level": 0
+          },
+          {
+            "name": "Sanctuary",
+            "url": "/spells/sanctuary",
+            "level": 0
+          },
+          {
+            "name": "Shield",
+            "url": "/spells/shield",
+            "level": 0
+          },
+          {
+            "name": "Dream",
+            "url": "/spells/dream",
+            "level": 0
+          },
+          {
+            "name": "Greater Restoration",
+            "url": "/spells/greater-restoration",
+            "level": 0
+          },
+          {
+            "name": "Scrying",
+            "url": "/spells/scrying",
+            "level": 0
+          }
+        ]
+      }
+    },
+    {
+      "name": "Magic Weapons",
+      "description": "The couatl's weapon attacks are magical.",
+      "usage": null,
+      "spellcasting": null
+    },
+    {
+      "name": "Shielded Mind",
+      "description": "The couatl is immune to scrying and to any effect that would sense its emotions, read its thoughts, or detect its location.",
+      "usage": null,
+      "spellcasting": null
+    }
+  ]
+}

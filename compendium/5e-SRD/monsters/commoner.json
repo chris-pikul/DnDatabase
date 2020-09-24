@@ -1,0 +1,94 @@
+{
+  "type": "MONSTER",
+  "id": "commoner",
+  "name": "Commoner",
+  "url": "/monsters/commoner",
+  "source": "MM",
+  "description": "",
+  "challengeRating": 0,
+  "size": "MEDIUM",
+  "kind": "HUMANOID",
+  "subKind": "ANY_RACE",
+  "alignment": "ANY_ALIGNMENT",
+  "maxHP": 4,
+  "hitDice": "1d8",
+  "armorClass": 10,
+  "proficiencyBonus": 2,
+  "speed": {
+    "walk": 30,
+    "swim": 0,
+    "fly": 0
+  },
+  "senses": {
+    "passivePerception": 10,
+    "passiveInsight": 10,
+    "darkvision": 0,
+    "blindsight": 0,
+    "truesight": 0,
+    "tremorsense": 0
+  },
+  "abilityScores": {
+    "strength": {
+      "score": 10,
+      "modifier": 0,
+      "savingThrow": 0
+    },
+    "dexterity": {
+      "score": 10,
+      "modifier": 0,
+      "savingThrow": 0
+    },
+    "constitution": {
+      "score": 10,
+      "modifier": 0,
+      "savingThrow": 0
+    },
+    "intelligence": {
+      "score": 10,
+      "modifier": 0,
+      "savingThrow": 0
+    },
+    "wisdom": {
+      "score": 10,
+      "modifier": 0,
+      "savingThrow": 0
+    },
+    "charisma": {
+      "score": 10,
+      "modifier": 0,
+      "savingThrow": 0
+    }
+  },
+  "proficiencies": [],
+  "resistances": [],
+  "immunities": {
+    "damageTypes": [],
+    "conditions": []
+  },
+  "vulnerabilities": [],
+  "languages": [
+    "Any One Language (usually Common)"
+  ],
+  "actions": [
+    {
+      "name": "Club",
+      "description": "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) bludgeoning damage.",
+      "attackBonus": 2,
+      "damage": [
+        {
+          "type": {
+            "name": "Bludgeoning",
+            "url": "/damage-types/bludgeoning"
+          },
+          "amount": "1d4",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    }
+  ],
+  "legendaryActions": [],
+  "specialAbilities": []
+}

@@ -1,0 +1,132 @@
+{
+  "type": "MONSTER",
+  "id": "skeleton",
+  "name": "Skeleton",
+  "url": "/monsters/skeleton",
+  "source": "MM",
+  "description": "",
+  "challengeRating": 0.25,
+  "size": "MEDIUM",
+  "kind": "UNDEAD",
+  "subKind": null,
+  "alignment": "LAWFUL_EVIL",
+  "maxHP": 13,
+  "hitDice": "2d8",
+  "armorClass": 13,
+  "proficiencyBonus": 2,
+  "speed": {
+    "walk": 30,
+    "swim": 0,
+    "fly": 0
+  },
+  "senses": {
+    "passivePerception": 9,
+    "passiveInsight": 10,
+    "darkvision": 60,
+    "blindsight": 0,
+    "truesight": 0,
+    "tremorsense": 0
+  },
+  "abilityScores": {
+    "strength": {
+      "score": 10,
+      "modifier": 0,
+      "savingThrow": 0
+    },
+    "dexterity": {
+      "score": 14,
+      "modifier": 2,
+      "savingThrow": 2
+    },
+    "constitution": {
+      "score": 15,
+      "modifier": 2,
+      "savingThrow": 2
+    },
+    "intelligence": {
+      "score": 6,
+      "modifier": -2,
+      "savingThrow": -2
+    },
+    "wisdom": {
+      "score": 8,
+      "modifier": -1,
+      "savingThrow": -1
+    },
+    "charisma": {
+      "score": 5,
+      "modifier": -3,
+      "savingThrow": -3
+    }
+  },
+  "proficiencies": [],
+  "resistances": [],
+  "immunities": {
+    "damageTypes": [],
+    "conditions": [
+      {
+        "name": "Poisoned",
+        "url": "/conditions/poisoned"
+      }
+    ]
+  },
+  "vulnerabilities": [
+    [
+      {
+        "name": "Bludgeoning",
+        "url": "/damage-types/bludgeoning"
+      },
+      {
+        "name": "Piercing",
+        "url": "/damage-types/piercing"
+      },
+      {
+        "name": "Slashing",
+        "url": "/damage-types/slashing"
+      }
+    ]
+  ],
+  "languages": [
+    "Understands All Languages It Spoke In Life But Can't Speak"
+  ],
+  "actions": [
+    {
+      "name": "Shortsword",
+      "description": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage.",
+      "attackBonus": 4,
+      "damage": [
+        {
+          "type": {
+            "name": "Piercing",
+            "url": "/damage-types/piercing"
+          },
+          "amount": "1d6+2",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Shortbow",
+      "description": "Ranged Weapon Attack: +4 to hit, range 80/320 ft., one target. Hit: 5 (1d6 + 2) piercing damage.",
+      "attackBonus": 4,
+      "damage": [
+        {
+          "type": {
+            "name": "Piercing",
+            "url": "/damage-types/piercing"
+          },
+          "amount": "1d6+2",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    }
+  ],
+  "legendaryActions": [],
+  "specialAbilities": []
+}

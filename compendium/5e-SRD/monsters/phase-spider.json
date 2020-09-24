@@ -1,0 +1,119 @@
+{
+  "type": "MONSTER",
+  "id": "phase-spider",
+  "name": "Phase Spider",
+  "url": "/monsters/phase-spider",
+  "source": "MM",
+  "description": "",
+  "challengeRating": 3,
+  "size": "LARGE",
+  "kind": "MONSTROSITY",
+  "subKind": null,
+  "alignment": "UNALIGNED",
+  "maxHP": 32,
+  "hitDice": "5d10",
+  "armorClass": 13,
+  "proficiencyBonus": 2,
+  "speed": {
+    "walk": 30,
+    "swim": 0,
+    "fly": 0
+  },
+  "senses": {
+    "passivePerception": 10,
+    "passiveInsight": 10,
+    "darkvision": 60,
+    "blindsight": 0,
+    "truesight": 0,
+    "tremorsense": 0
+  },
+  "abilityScores": {
+    "strength": {
+      "score": 15,
+      "modifier": 2,
+      "savingThrow": 2
+    },
+    "dexterity": {
+      "score": 15,
+      "modifier": 2,
+      "savingThrow": 2
+    },
+    "constitution": {
+      "score": 12,
+      "modifier": 1,
+      "savingThrow": 1
+    },
+    "intelligence": {
+      "score": 6,
+      "modifier": -2,
+      "savingThrow": -2
+    },
+    "wisdom": {
+      "score": 10,
+      "modifier": 0,
+      "savingThrow": 0
+    },
+    "charisma": {
+      "score": 6,
+      "modifier": -2,
+      "savingThrow": -2
+    }
+  },
+  "proficiencies": [
+    {
+      "name": "Stealth",
+      "url": "/skills/stealth",
+      "amount": 6
+    }
+  ],
+  "resistances": [],
+  "immunities": {
+    "damageTypes": [],
+    "conditions": []
+  },
+  "vulnerabilities": [],
+  "languages": [
+    ""
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "description": "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 7 (1d10 + 2) piercing damage, and the target must make a DC 11 Constitution saving throw, taking 18 (4d8) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way.",
+      "attackBonus": 4,
+      "damage": [
+        {
+          "type": {
+            "name": "Piercing",
+            "url": "/damage-types/piercing"
+          },
+          "amount": "1d10+2",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    }
+  ],
+  "legendaryActions": [],
+  "specialAbilities": [
+    {
+      "name": "Ethereal Jaunt",
+      "description": "As a bonus action, the spider can magically shift from the Material Plane to the Ethereal Plane, or vice versa.",
+      "usage": null,
+      "spellcasting": null
+    },
+    {
+      "name": "Spider Climb",
+      "description": "The spider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.",
+      "usage": null,
+      "spellcasting": null
+    },
+    {
+      "name": "Web Walker",
+      "description": "The spider ignores movement restrictions caused by webbing.",
+      "usage": null,
+      "spellcasting": null
+    }
+  ]
+}

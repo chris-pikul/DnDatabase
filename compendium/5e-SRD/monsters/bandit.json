@@ -1,0 +1,112 @@
+{
+  "type": "MONSTER",
+  "id": "bandit",
+  "name": "Bandit",
+  "url": "/monsters/bandit",
+  "source": "MM",
+  "description": "",
+  "challengeRating": 0.125,
+  "size": "MEDIUM",
+  "kind": "HUMANOID",
+  "subKind": "ANY_RACE",
+  "alignment": "ANY_NON_LAWFUL_ALIGNMENT",
+  "maxHP": 11,
+  "hitDice": "2d8",
+  "armorClass": 12,
+  "proficiencyBonus": 2,
+  "speed": {
+    "walk": 30,
+    "swim": 0,
+    "fly": 0
+  },
+  "senses": {
+    "passivePerception": 10,
+    "passiveInsight": 10,
+    "darkvision": 0,
+    "blindsight": 0,
+    "truesight": 0,
+    "tremorsense": 0
+  },
+  "abilityScores": {
+    "strength": {
+      "score": 11,
+      "modifier": 0,
+      "savingThrow": 0
+    },
+    "dexterity": {
+      "score": 12,
+      "modifier": 1,
+      "savingThrow": 1
+    },
+    "constitution": {
+      "score": 12,
+      "modifier": 1,
+      "savingThrow": 1
+    },
+    "intelligence": {
+      "score": 10,
+      "modifier": 0,
+      "savingThrow": 0
+    },
+    "wisdom": {
+      "score": 10,
+      "modifier": 0,
+      "savingThrow": 0
+    },
+    "charisma": {
+      "score": 10,
+      "modifier": 0,
+      "savingThrow": 0
+    }
+  },
+  "proficiencies": [],
+  "resistances": [],
+  "immunities": {
+    "damageTypes": [],
+    "conditions": []
+  },
+  "vulnerabilities": [],
+  "languages": [
+    "Any One Language (usually Common)"
+  ],
+  "actions": [
+    {
+      "name": "Scimitar",
+      "description": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) slashing damage.",
+      "attackBonus": 3,
+      "damage": [
+        {
+          "type": {
+            "name": "Slashing",
+            "url": "/damage-types/slashing"
+          },
+          "amount": "1d6+1",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Light Crossbow",
+      "description": "Ranged Weapon Attack: +3 to hit, range 80 ft./320 ft., one target. Hit: 5 (1d8 + 1) piercing damage.",
+      "attackBonus": 3,
+      "damage": [
+        {
+          "type": {
+            "name": "Piercing",
+            "url": "/damage-types/piercing"
+          },
+          "amount": "1d8+1",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    }
+  ],
+  "legendaryActions": [],
+  "specialAbilities": []
+}

@@ -1,0 +1,154 @@
+{
+  "type": "MONSTER",
+  "id": "stone-giant",
+  "name": "Stone Giant",
+  "url": "/monsters/stone-giant",
+  "source": "MM",
+  "description": "",
+  "challengeRating": 7,
+  "size": "HUGE",
+  "kind": "GIANT",
+  "subKind": null,
+  "alignment": "NEUTRAL",
+  "maxHP": 126,
+  "hitDice": "11d12",
+  "armorClass": 17,
+  "proficiencyBonus": 3,
+  "speed": {
+    "walk": 40,
+    "swim": 0,
+    "fly": 0
+  },
+  "senses": {
+    "passivePerception": 14,
+    "passiveInsight": 10,
+    "darkvision": 60,
+    "blindsight": 0,
+    "truesight": 0,
+    "tremorsense": 0
+  },
+  "abilityScores": {
+    "strength": {
+      "score": 23,
+      "modifier": 6,
+      "savingThrow": 6
+    },
+    "dexterity": {
+      "score": 15,
+      "modifier": 2,
+      "savingThrow": 7
+    },
+    "constitution": {
+      "score": 20,
+      "modifier": 5,
+      "savingThrow": 13
+    },
+    "intelligence": {
+      "score": 10,
+      "modifier": 0,
+      "savingThrow": 0
+    },
+    "wisdom": {
+      "score": 12,
+      "modifier": 1,
+      "savingThrow": 5
+    },
+    "charisma": {
+      "score": 9,
+      "modifier": -1,
+      "savingThrow": -1
+    }
+  },
+  "proficiencies": [
+    {
+      "name": "Dexterity",
+      "url": "/ability-scores/dexterity",
+      "amount": 5
+    },
+    {
+      "name": "Constitution",
+      "url": "/ability-scores/constitution",
+      "amount": 8
+    },
+    {
+      "name": "Wisdom",
+      "url": "/ability-scores/wisdom",
+      "amount": 4
+    },
+    {
+      "name": "Athletics",
+      "url": "/skills/athletics",
+      "amount": 12
+    },
+    {
+      "name": "Perception",
+      "url": "/skills/perception",
+      "amount": 4
+    }
+  ],
+  "resistances": [],
+  "immunities": {
+    "damageTypes": [],
+    "conditions": []
+  },
+  "vulnerabilities": [],
+  "languages": [
+    "Giant"
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "description": "The giant makes two greatclub attacks.",
+      "attackBonus": 0,
+      "damage": null,
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Greatclub",
+      "description": "Melee Weapon Attack: +9 to hit, reach 15 ft., one target. Hit: 19 (3d8 + 6) bludgeoning damage.",
+      "attackBonus": 9,
+      "damage": [
+        {
+          "type": {
+            "name": "Bludgeoning",
+            "url": "/damage-types/bludgeoning"
+          },
+          "amount": "3d8+6",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Rock",
+      "description": "Ranged Weapon Attack: +9 to hit, range 60/240 ft., one target. Hit: 28 (4d10 + 6) bludgeoning damage. If the target is a creature, it must succeed on a DC 17 Strength saving throw or be knocked prone.",
+      "attackBonus": 9,
+      "damage": [
+        {
+          "type": {
+            "name": "Bludgeoning",
+            "url": "/damage-types/bludgeoning"
+          },
+          "amount": "4d10+6",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    }
+  ],
+  "legendaryActions": [],
+  "specialAbilities": [
+    {
+      "name": "Stone Camouflage",
+      "description": "The giant has advantage on Dexterity (Stealth) checks made to hide in rocky terrain.",
+      "usage": null,
+      "spellcasting": null
+    }
+  ]
+}

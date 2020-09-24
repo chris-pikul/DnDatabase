@@ -1,0 +1,193 @@
+{
+  "type": "MONSTER",
+  "id": "behir",
+  "name": "Behir",
+  "url": "/monsters/behir",
+  "source": "MM",
+  "description": "",
+  "challengeRating": 11,
+  "size": "HUGE",
+  "kind": "MONSTROSITY",
+  "subKind": null,
+  "alignment": "NEUTRAL_EVIL",
+  "maxHP": 168,
+  "hitDice": "16d12",
+  "armorClass": 17,
+  "proficiencyBonus": 4,
+  "speed": {
+    "walk": 50,
+    "swim": 0,
+    "fly": 0
+  },
+  "senses": {
+    "passivePerception": 16,
+    "passiveInsight": 10,
+    "darkvision": 90,
+    "blindsight": 0,
+    "truesight": 0,
+    "tremorsense": 0
+  },
+  "abilityScores": {
+    "strength": {
+      "score": 23,
+      "modifier": 6,
+      "savingThrow": 6
+    },
+    "dexterity": {
+      "score": 16,
+      "modifier": 3,
+      "savingThrow": 3
+    },
+    "constitution": {
+      "score": 18,
+      "modifier": 4,
+      "savingThrow": 4
+    },
+    "intelligence": {
+      "score": 7,
+      "modifier": -2,
+      "savingThrow": -2
+    },
+    "wisdom": {
+      "score": 14,
+      "modifier": 2,
+      "savingThrow": 2
+    },
+    "charisma": {
+      "score": 12,
+      "modifier": 1,
+      "savingThrow": 1
+    }
+  },
+  "proficiencies": [
+    {
+      "name": "Perception",
+      "url": "/skills/perception",
+      "amount": 6
+    },
+    {
+      "name": "Stealth",
+      "url": "/skills/stealth",
+      "amount": 7
+    }
+  ],
+  "resistances": [],
+  "immunities": {
+    "damageTypes": [
+      {
+        "name": "Lightning",
+        "url": "/damage-types/lightning"
+      }
+    ],
+    "conditions": []
+  },
+  "vulnerabilities": [],
+  "languages": [
+    "Draconic"
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "description": "The behir makes two attacks: one with its bite and one to constrict.",
+      "attackBonus": 0,
+      "damage": null,
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Bite",
+      "description": "Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 22 (3d10 + 6) piercing damage.",
+      "attackBonus": 10,
+      "damage": [
+        {
+          "type": {
+            "name": "Piercing",
+            "url": "/damage-types/piercing"
+          },
+          "amount": "3d10+6",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Constrict",
+      "description": "Melee Weapon Attack: +10 to hit, reach 5 ft., one Large or smaller creature. Hit: 17 (2d10 + 6) bludgeoning damage plus 17 (2d10 + 6) slashing damage. The target is grappled (escape DC 16) if the behir isn't already constricting a creature, and the target is restrained until this grapple ends.",
+      "attackBonus": 10,
+      "damage": [
+        {
+          "type": {
+            "name": "Bludgeoning",
+            "url": "/damage-types/bludgeoning"
+          },
+          "amount": "2d10+6",
+          "options": null
+        },
+        {
+          "type": {
+            "name": "Slashing",
+            "url": "/damage-types/slashing"
+          },
+          "amount": "2d10+6",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Lightning Breath",
+      "description": "The behir exhales a line of lightning that is 20 ft. long and 5 ft. wide. Each creature in that line must make a DC 16 Dexterity saving throw, taking 66 (12d10) lightning damage on a failed save, or half as much damage on a successful one.",
+      "attackBonus": 0,
+      "damage": [
+        {
+          "type": {
+            "name": "Lightning",
+            "url": "/damage-types/lightning"
+          },
+          "amount": "12d10",
+          "options": null
+        }
+      ],
+      "saveDC": {
+        "ability": {
+          "name": "Dexterity",
+          "url": "/ability-scores/dexterity"
+        },
+        "value": 16,
+        "onSuccess": "HALF"
+      },
+      "usage": {
+        "type": "RECHARGE_ON_ROLL",
+        "amount": 0,
+        "dice": "1d6",
+        "minRoll": 5
+      },
+      "options": null
+    },
+    {
+      "name": "Swallow",
+      "description": "The behir makes one bite attack against a Medium or smaller target it is grappling. If the attack hits, the target is also swallowed, and the grapple ends. While swallowed, the target is blinded and restrained, it has total cover against attacks and other effects outside the behir, and it takes 21 (6d6) acid damage at the start of each of the behir's turns. A behir can have only one creature swallowed at a time.\nIf the behir takes 30 damage or more on a single turn from the swallowed creature, the behir must succeed on a DC 14 Constitution saving throw at the end of that turn or regurgitate the creature, which falls prone in a space within 10 ft. of the behir. If the behir dies, a swallowed creature is no longer restrained by it and can escape from the corpse by using 15 ft. of movement, exiting prone.",
+      "attackBonus": 0,
+      "damage": [
+        {
+          "type": {
+            "name": "Acid",
+            "url": "/damage-types/acid"
+          },
+          "amount": "6d6",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    }
+  ],
+  "legendaryActions": [],
+  "specialAbilities": []
+}

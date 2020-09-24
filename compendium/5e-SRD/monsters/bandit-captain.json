@@ -1,0 +1,147 @@
+{
+  "type": "MONSTER",
+  "id": "bandit-captain",
+  "name": "Bandit Captain",
+  "url": "/monsters/bandit-captain",
+  "source": "MM",
+  "description": "",
+  "challengeRating": 2,
+  "size": "MEDIUM",
+  "kind": "HUMANOID",
+  "subKind": "ANY_RACE",
+  "alignment": "ANY_NON_LAWFUL_ALIGNMENT",
+  "maxHP": 65,
+  "hitDice": "10d8",
+  "armorClass": 15,
+  "proficiencyBonus": 2,
+  "speed": {
+    "walk": 30,
+    "swim": 0,
+    "fly": 0
+  },
+  "senses": {
+    "passivePerception": 10,
+    "passiveInsight": 10,
+    "darkvision": 0,
+    "blindsight": 0,
+    "truesight": 0,
+    "tremorsense": 0
+  },
+  "abilityScores": {
+    "strength": {
+      "score": 15,
+      "modifier": 2,
+      "savingThrow": 6
+    },
+    "dexterity": {
+      "score": 16,
+      "modifier": 3,
+      "savingThrow": 8
+    },
+    "constitution": {
+      "score": 14,
+      "modifier": 2,
+      "savingThrow": 2
+    },
+    "intelligence": {
+      "score": 14,
+      "modifier": 2,
+      "savingThrow": 2
+    },
+    "wisdom": {
+      "score": 11,
+      "modifier": 0,
+      "savingThrow": 2
+    },
+    "charisma": {
+      "score": 14,
+      "modifier": 2,
+      "savingThrow": 2
+    }
+  },
+  "proficiencies": [
+    {
+      "name": "Strength",
+      "url": "/ability-scores/strength",
+      "amount": 4
+    },
+    {
+      "name": "Dexterity",
+      "url": "/ability-scores/dexterity",
+      "amount": 5
+    },
+    {
+      "name": "Wisdom",
+      "url": "/ability-scores/wisdom",
+      "amount": 2
+    },
+    {
+      "name": "Athletics",
+      "url": "/skills/athletics",
+      "amount": 4
+    },
+    {
+      "name": "Deception",
+      "url": "/skills/deception",
+      "amount": 4
+    }
+  ],
+  "resistances": [],
+  "immunities": {
+    "damageTypes": [],
+    "conditions": []
+  },
+  "vulnerabilities": [],
+  "languages": [
+    "Any Two Languages"
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "description": "The captain makes three melee attacks: two with its scimitar and one with its dagger. Or the captain makes two ranged attacks with its daggers.",
+      "attackBonus": 0,
+      "damage": null,
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Scimitar",
+      "description": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) slashing damage.",
+      "attackBonus": 5,
+      "damage": [
+        {
+          "type": {
+            "name": "Slashing",
+            "url": "/damage-types/slashing"
+          },
+          "amount": "1d6+3",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Dagger",
+      "description": "Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 5 (1d4 + 3) piercing damage.",
+      "attackBonus": 5,
+      "damage": [
+        {
+          "type": {
+            "name": "Piercing",
+            "url": "/damage-types/piercing"
+          },
+          "amount": "1d4+3",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    }
+  ],
+  "legendaryActions": [],
+  "specialAbilities": []
+}

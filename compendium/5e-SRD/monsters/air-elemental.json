@@ -1,0 +1,183 @@
+{
+  "type": "MONSTER",
+  "id": "air-elemental",
+  "name": "Air Elemental",
+  "url": "/monsters/air-elemental",
+  "source": "MM",
+  "description": "",
+  "challengeRating": 5,
+  "size": "LARGE",
+  "kind": "ELEMENTAL",
+  "subKind": null,
+  "alignment": "NEUTRAL",
+  "maxHP": 90,
+  "hitDice": "12d10",
+  "armorClass": 15,
+  "proficiencyBonus": 3,
+  "speed": {
+    "walk": 0,
+    "swim": 0,
+    "fly": 90
+  },
+  "senses": {
+    "passivePerception": 10,
+    "passiveInsight": 10,
+    "darkvision": 60,
+    "blindsight": 0,
+    "truesight": 0,
+    "tremorsense": 0
+  },
+  "abilityScores": {
+    "strength": {
+      "score": 14,
+      "modifier": 2,
+      "savingThrow": 2
+    },
+    "dexterity": {
+      "score": 20,
+      "modifier": 5,
+      "savingThrow": 5
+    },
+    "constitution": {
+      "score": 14,
+      "modifier": 2,
+      "savingThrow": 2
+    },
+    "intelligence": {
+      "score": 6,
+      "modifier": -2,
+      "savingThrow": -2
+    },
+    "wisdom": {
+      "score": 10,
+      "modifier": 0,
+      "savingThrow": 0
+    },
+    "charisma": {
+      "score": 6,
+      "modifier": -2,
+      "savingThrow": -2
+    }
+  },
+  "proficiencies": [],
+  "resistances": [
+    {
+      "name": "Lightning",
+      "url": "/damage-types/lightning"
+    },
+    {
+      "name": "Thunder",
+      "url": "/damage-types/thunder"
+    },
+    {
+      "name": "Bludgeoning",
+      "url": "/damage-types/bludgeoning"
+    },
+    {
+      "name": "Piercing",
+      "url": "/damage-types/piercing"
+    },
+    {
+      "name": "Slashing",
+      "url": "/damage-types/slashing"
+    }
+  ],
+  "immunities": {
+    "damageTypes": [
+      {
+        "name": "Poison",
+        "url": "/damage-types/poison"
+      }
+    ],
+    "conditions": [
+      {
+        "name": "Exhaustion",
+        "url": "/conditions/exhaustion"
+      },
+      {
+        "name": "Grappled",
+        "url": "/conditions/grappled"
+      },
+      {
+        "name": "Paralyzed",
+        "url": "/conditions/paralyzed"
+      },
+      {
+        "name": "Petrified",
+        "url": "/conditions/petrified"
+      },
+      {
+        "name": "Poisoned",
+        "url": "/conditions/poisoned"
+      },
+      {
+        "name": "Prone",
+        "url": "/conditions/prone"
+      },
+      {
+        "name": "Restrained",
+        "url": "/conditions/restrained"
+      },
+      {
+        "name": "Unconscious",
+        "url": "/conditions/unconscious"
+      }
+    ]
+  },
+  "vulnerabilities": [],
+  "languages": [
+    "Auran"
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "description": "The elemental makes two slam attacks.",
+      "attackBonus": 0,
+      "damage": null,
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Slam",
+      "description": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 5) bludgeoning damage.",
+      "attackBonus": 8,
+      "damage": [
+        {
+          "type": {
+            "name": "Bludgeoning",
+            "url": "/damage-types/bludgeoning"
+          },
+          "amount": "2d8+5",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Whirlwind",
+      "description": "Each creature in the elemental's space must make a DC 13 Strength saving throw. On a failure, a target takes 15 (3d8 + 2) bludgeoning damage and is flung up 20 feet away from the elemental in a random direction and knocked prone. If a thrown target strikes an object, such as a wall or floor, the target takes 3 (1d6) bludgeoning damage for every 10 feet it was thrown. If the target is thrown at another creature, that creature must succeed on a DC 13 Dexterity saving throw or take the same damage and be knocked prone.\nIf the saving throw is successful, the target takes half the bludgeoning damage and isn't flung away or knocked prone.",
+      "attackBonus": 0,
+      "damage": null,
+      "saveDC": null,
+      "usage": {
+        "type": "RECHARGE_ON_ROLL",
+        "amount": 0,
+        "dice": "1d6",
+        "minRoll": 4
+      },
+      "options": null
+    }
+  ],
+  "legendaryActions": [],
+  "specialAbilities": [
+    {
+      "name": "Air Form",
+      "description": "The elemental can enter a hostile creature's space and stop there. It can move through a space as narrow as 1 inch wide without squeezing.",
+      "usage": null,
+      "spellcasting": null
+    }
+  ]
+}

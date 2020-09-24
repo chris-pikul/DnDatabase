@@ -1,0 +1,196 @@
+{
+  "type": "MONSTER",
+  "id": "ettercap",
+  "name": "Ettercap",
+  "url": "/monsters/ettercap",
+  "source": "MM",
+  "description": "",
+  "challengeRating": 2,
+  "size": "MEDIUM",
+  "kind": "MONSTROSITY",
+  "subKind": null,
+  "alignment": "NEUTRAL_EVIL",
+  "maxHP": 44,
+  "hitDice": "8d8",
+  "armorClass": 13,
+  "proficiencyBonus": 2,
+  "speed": {
+    "walk": 30,
+    "swim": 0,
+    "fly": 0
+  },
+  "senses": {
+    "passivePerception": 13,
+    "passiveInsight": 10,
+    "darkvision": 60,
+    "blindsight": 0,
+    "truesight": 0,
+    "tremorsense": 0
+  },
+  "abilityScores": {
+    "strength": {
+      "score": 14,
+      "modifier": 2,
+      "savingThrow": 2
+    },
+    "dexterity": {
+      "score": 15,
+      "modifier": 2,
+      "savingThrow": 2
+    },
+    "constitution": {
+      "score": 13,
+      "modifier": 1,
+      "savingThrow": 1
+    },
+    "intelligence": {
+      "score": 7,
+      "modifier": -2,
+      "savingThrow": -2
+    },
+    "wisdom": {
+      "score": 12,
+      "modifier": 1,
+      "savingThrow": 1
+    },
+    "charisma": {
+      "score": 8,
+      "modifier": -1,
+      "savingThrow": -1
+    }
+  },
+  "proficiencies": [
+    {
+      "name": "Perception",
+      "url": "/skills/perception",
+      "amount": 3
+    },
+    {
+      "name": "Stealth",
+      "url": "/skills/stealth",
+      "amount": 4
+    },
+    {
+      "name": "Survival",
+      "url": "/skills/survival",
+      "amount": 3
+    }
+  ],
+  "resistances": [],
+  "immunities": {
+    "damageTypes": [],
+    "conditions": []
+  },
+  "vulnerabilities": [],
+  "languages": [
+    ""
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "description": "The ettercap makes two attacks: one with its bite and one with its claws.",
+      "attackBonus": 0,
+      "damage": null,
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Bite",
+      "description": "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 6 (1d8 + 2) piercing damage plus 4 (1d8) poison damage. The target must succeed on a DC 11 Constitution saving throw or be poisoned for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+      "attackBonus": 4,
+      "damage": [
+        {
+          "type": {
+            "name": "Piercing",
+            "url": "/damage-types/piercing"
+          },
+          "amount": "2d6+2",
+          "options": null
+        },
+        {
+          "type": {
+            "name": "Poison",
+            "url": "/damage-types/poison"
+          },
+          "amount": "1d8",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Claws",
+      "description": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (2d4 + 2) slashing damage.",
+      "attackBonus": 4,
+      "damage": [
+        {
+          "type": {
+            "name": "Bludgeoning",
+            "url": "/damage-types/bludgeoning"
+          },
+          "amount": "2d4+2",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Web",
+      "description": "Ranged Weapon Attack: +4 to hit, range 30/60 ft., one Large or smaller creature. Hit: The creature is restrained by webbing. As an action, the restrained creature can make a DC 11 Strength check, escaping from the webbing on a success. The effect ends if the webbing is destroyed. The webbing has AC 10, 5 hit points, is vulnerable to fire damage and immune to bludgeoning damage.",
+      "attackBonus": 4,
+      "damage": null,
+      "saveDC": null,
+      "usage": {
+        "type": "RECHARGE_ON_ROLL",
+        "amount": 0,
+        "dice": "1d6",
+        "minRoll": 5
+      },
+      "options": null
+    },
+    {
+      "name": "Variant: Web Garrote",
+      "description": "Melee Weapon Attack: +4 to hit, reach 5 ft., one Medium or Small creature against which the ettercap has advantage on the attack roll. Hit: 4 (1d4 + 2) bludgeoning damage, and the target is grappled (escape DC 12). Until this grapple ends, the target can't breathe, and the ettercap has advantage on attack rolls against it.",
+      "attackBonus": 4,
+      "damage": [
+        {
+          "type": {
+            "name": "Bludgeoning",
+            "url": "/damage-types/bludgeoning"
+          },
+          "amount": "1d4+2",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    }
+  ],
+  "legendaryActions": [],
+  "specialAbilities": [
+    {
+      "name": "Spider Climb",
+      "description": "The ettercap can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.",
+      "usage": null,
+      "spellcasting": null
+    },
+    {
+      "name": "Web Sense",
+      "description": "While in contact with a web, the ettercap knows the exact location of any other creature in contact with the same web.",
+      "usage": null,
+      "spellcasting": null
+    },
+    {
+      "name": "Web Walker",
+      "description": "The ettercap ignores movement restrictions caused by webbing.",
+      "usage": null,
+      "spellcasting": null
+    }
+  ]
+}

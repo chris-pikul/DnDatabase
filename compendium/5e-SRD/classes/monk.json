@@ -1,0 +1,659 @@
+{
+  "id": "monk",
+  "url": "/classes/monk",
+  "name": "Monk",
+  "source": "PHB",
+  "hitDie": 8,
+  "levels": [
+    {
+      "level": 1,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 2,
+      "spellcasting": null,
+      "features": [
+        {
+          "name": "Unarmored Defense",
+          "url": "/features/monk-unarmored-defense"
+        },
+        {
+          "name": "Martial Arts",
+          "url": "/features/martial-arts"
+        }
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "martialArts": {
+          "dice_count": 1,
+          "dice_value": 4
+        },
+        "kiPoints": 0,
+        "unarmoredMovement": 0
+      }
+    },
+    {
+      "level": 2,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 2,
+      "spellcasting": null,
+      "features": [
+        {
+          "name": "Ki",
+          "url": "/features/ki"
+        },
+        {
+          "name": "Flurry Of Blows",
+          "url": "/features/flurry-of-blows"
+        },
+        {
+          "name": "Patient Defense",
+          "url": "/features/patient-defense"
+        },
+        {
+          "name": "Step Of The Wind",
+          "url": "/features/step-of-the-wind"
+        },
+        {
+          "name": "Unarmored Movement 1",
+          "url": "/features/unarmored-movement-1"
+        }
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "martialArts": {
+          "dice_count": 1,
+          "dice_value": 4
+        },
+        "kiPoints": 2,
+        "unarmoredMovement": 10
+      }
+    },
+    {
+      "level": 3,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 2,
+      "spellcasting": null,
+      "features": [
+        {
+          "name": "Monastic Tradition",
+          "url": "/features/monastic-tradition"
+        },
+        {
+          "name": "Deflect Missiles",
+          "url": "/features/deflect-missiles"
+        }
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "martialArts": {
+          "dice_count": 1,
+          "dice_value": 4
+        },
+        "kiPoints": 3,
+        "unarmoredMovement": 10
+      }
+    },
+    {
+      "level": 4,
+      "abilityScoreIncrease": true,
+      "proficiencyBonus": 2,
+      "spellcasting": null,
+      "features": [
+        {
+          "name": "Slow Fall",
+          "url": "/features/slow-fall"
+        }
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "martialArts": {
+          "dice_count": 1,
+          "dice_value": 4
+        },
+        "kiPoints": 4,
+        "unarmoredMovement": 10
+      }
+    },
+    {
+      "level": 5,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 3,
+      "spellcasting": null,
+      "features": [
+        {
+          "name": "Extra Attack",
+          "url": "/features/monk-extra-attack"
+        },
+        {
+          "name": "Stunning Strike",
+          "url": "/features/stunning-strike"
+        }
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "martialArts": {
+          "dice_count": 1,
+          "dice_value": 6
+        },
+        "kiPoints": 5,
+        "unarmoredMovement": 10
+      }
+    },
+    {
+      "level": 6,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 3,
+      "spellcasting": null,
+      "features": [
+        {
+          "name": "Ki Empowered Strikes",
+          "url": "/features/ki-empowered-strikes"
+        }
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "martialArts": {
+          "dice_count": 1,
+          "dice_value": 6
+        },
+        "kiPoints": 6,
+        "unarmoredMovement": 15
+      }
+    },
+    {
+      "level": 7,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 3,
+      "spellcasting": null,
+      "features": [
+        {
+          "name": "Evasion",
+          "url": "/features/monk-evasion"
+        },
+        {
+          "name": "Stillness Of Mind",
+          "url": "/features/stillness-of-mind"
+        }
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "martialArts": {
+          "dice_count": 1,
+          "dice_value": 6
+        },
+        "kiPoints": 7,
+        "unarmoredMovement": 15
+      }
+    },
+    {
+      "level": 8,
+      "abilityScoreIncrease": true,
+      "proficiencyBonus": 3,
+      "spellcasting": null,
+      "features": [],
+      "featureChoices": [],
+      "classSpecific": {
+        "martialArts": {
+          "dice_count": 1,
+          "dice_value": 6
+        },
+        "kiPoints": 8,
+        "unarmoredMovement": 15
+      }
+    },
+    {
+      "level": 9,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 4,
+      "spellcasting": null,
+      "features": [
+        {
+          "name": "Unarmored Movement 2",
+          "url": "/features/unarmored-movement-2"
+        }
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "martialArts": {
+          "dice_count": 1,
+          "dice_value": 6
+        },
+        "kiPoints": 9,
+        "unarmoredMovement": 15
+      }
+    },
+    {
+      "level": 10,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 4,
+      "spellcasting": null,
+      "features": [
+        {
+          "name": "Purity Of Body",
+          "url": "/features/purity-of-body"
+        }
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "martialArts": {
+          "dice_count": 1,
+          "dice_value": 6
+        },
+        "kiPoints": 10,
+        "unarmoredMovement": 20
+      }
+    },
+    {
+      "level": 11,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 4,
+      "spellcasting": null,
+      "features": [],
+      "featureChoices": [],
+      "classSpecific": {
+        "martialArts": {
+          "dice_count": 1,
+          "dice_value": 8
+        },
+        "kiPoints": 11,
+        "unarmoredMovement": 20
+      }
+    },
+    {
+      "level": 12,
+      "abilityScoreIncrease": true,
+      "proficiencyBonus": 4,
+      "spellcasting": null,
+      "features": [],
+      "featureChoices": [],
+      "classSpecific": {
+        "martialArts": {
+          "dice_count": 1,
+          "dice_value": 8
+        },
+        "kiPoints": 12,
+        "unarmoredMovement": 20
+      }
+    },
+    {
+      "level": 13,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 5,
+      "spellcasting": null,
+      "features": [
+        {
+          "name": "Tongue Of The Sun And Moon",
+          "url": "/features/tongue-of-the-sun-and-moon"
+        }
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "martialArts": {
+          "dice_count": 1,
+          "dice_value": 8
+        },
+        "kiPoints": 13,
+        "unarmoredMovement": 20
+      }
+    },
+    {
+      "level": 14,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 5,
+      "spellcasting": null,
+      "features": [
+        {
+          "name": "Diamond Soul",
+          "url": "/features/diamond-soul"
+        }
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "martialArts": {
+          "dice_count": 1,
+          "dice_value": 8
+        },
+        "kiPoints": 14,
+        "unarmoredMovement": 25
+      }
+    },
+    {
+      "level": 15,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 5,
+      "spellcasting": null,
+      "features": [
+        {
+          "name": "Timeless Body",
+          "url": "/features/monk-timeless-body"
+        }
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "martialArts": {
+          "dice_count": 1,
+          "dice_value": 8
+        },
+        "kiPoints": 15,
+        "unarmoredMovement": 25
+      }
+    },
+    {
+      "level": 16,
+      "abilityScoreIncrease": true,
+      "proficiencyBonus": 5,
+      "spellcasting": null,
+      "features": [],
+      "featureChoices": [],
+      "classSpecific": {
+        "martialArts": {
+          "dice_count": 1,
+          "dice_value": 8
+        },
+        "kiPoints": 16,
+        "unarmoredMovement": 25
+      }
+    },
+    {
+      "level": 17,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 6,
+      "spellcasting": null,
+      "features": [],
+      "featureChoices": [],
+      "classSpecific": {
+        "martialArts": {
+          "dice_count": 1,
+          "dice_value": 10
+        },
+        "kiPoints": 17,
+        "unarmoredMovement": 25
+      }
+    },
+    {
+      "level": 18,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 6,
+      "spellcasting": null,
+      "features": [
+        {
+          "name": "Empty Body",
+          "url": "/features/empty-body"
+        }
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "martialArts": {
+          "dice_count": 1,
+          "dice_value": 10
+        },
+        "kiPoints": 18,
+        "unarmoredMovement": 30
+      }
+    },
+    {
+      "level": 19,
+      "abilityScoreIncrease": true,
+      "proficiencyBonus": 6,
+      "spellcasting": null,
+      "features": [],
+      "featureChoices": [],
+      "classSpecific": {
+        "martialArts": {
+          "dice_count": 1,
+          "dice_value": 10
+        },
+        "kiPoints": 19,
+        "unarmoredMovement": 30
+      }
+    },
+    {
+      "level": 20,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 6,
+      "spellcasting": null,
+      "features": [
+        {
+          "name": "Perfect Self",
+          "url": "/features/perfect-self"
+        }
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "martialArts": {
+          "dice_count": 1,
+          "dice_value": 10
+        },
+        "kiPoints": 20,
+        "unarmoredMovement": 30
+      }
+    }
+  ],
+  "proficiencies": {
+    "savingThrows": [
+      {
+        "name": "Strength",
+        "url": "/ability-scores/strength"
+      },
+      {
+        "name": "Dexterity",
+        "url": "/ability-scores/dexterity"
+      }
+    ],
+    "equipment": [
+      {
+        "name": "Simple Weapons",
+        "url": "/proficiencies/simple-weapons"
+      },
+      {
+        "name": "Shortswords",
+        "url": "/proficiencies/shortswords"
+      }
+    ],
+    "options": [
+      {
+        "type": "INSTRUMENT",
+        "amount": 1,
+        "choices": [
+          {
+            "name": "Bagpipes",
+            "url": "/items/instrument/bagpipes"
+          },
+          {
+            "name": "Drum",
+            "url": "/items/instrument/drum"
+          },
+          {
+            "name": "Dulcimer",
+            "url": "/items/instrument/dulcimer"
+          },
+          {
+            "name": "Flute",
+            "url": "/items/instrument/flute"
+          },
+          {
+            "name": "Lute",
+            "url": "/items/instrument/lute"
+          },
+          {
+            "name": "Lyre",
+            "url": "/items/instrument/lyre"
+          },
+          {
+            "name": "Horn",
+            "url": "/items/instrument/horn"
+          },
+          {
+            "name": "Pan Flute",
+            "url": "/items/instrument/pan-flute"
+          },
+          {
+            "name": "Shawm",
+            "url": "/items/instrument/shawm"
+          },
+          {
+            "name": "Viol",
+            "url": "/items/instrument/viol"
+          }
+        ]
+      },
+      {
+        "type": "SKILL",
+        "amount": 2,
+        "choices": [
+          {
+            "name": "Acrobatics",
+            "url": "/skills/acrobatics"
+          },
+          {
+            "name": "Athletics",
+            "url": "/skills/athletics"
+          },
+          {
+            "name": "History",
+            "url": "/skills/history"
+          },
+          {
+            "name": "Insight",
+            "url": "/skills/insight"
+          },
+          {
+            "name": "Religion",
+            "url": "/skills/religion"
+          },
+          {
+            "name": "Stealth",
+            "url": "/skills/stealth"
+          }
+        ]
+      },
+      {
+        "type": "TOOLS",
+        "amount": 1,
+        "choices": [
+          {
+            "name": "Alchemist's Supplies",
+            "url": "/proficiencies/alchemists-supplies"
+          },
+          {
+            "name": "Brewer's Supplies",
+            "url": "/proficiencies/brewers-supplies"
+          },
+          {
+            "name": "Calligrapher's Supplies",
+            "url": "/proficiencies/calligraphers-supplies"
+          },
+          {
+            "name": "Carpenter's Tools",
+            "url": "/proficiencies/carpenters-tools"
+          },
+          {
+            "name": "Cartographer's Tools",
+            "url": "/proficiencies/cartographers-tools"
+          },
+          {
+            "name": "Cobbler's Tools",
+            "url": "/proficiencies/cobblers-tools"
+          },
+          {
+            "name": "Cook's Utensils",
+            "url": "/proficiencies/cooks-utensils"
+          },
+          {
+            "name": "Glassblower's Tools",
+            "url": "/proficiencies/glassblowers-tools"
+          },
+          {
+            "name": "Jeweler's Tools",
+            "url": "/proficiencies/jewelers-tools"
+          },
+          {
+            "name": "Leatherworker's Tools",
+            "url": "/proficiencies/leatherworkers-tools"
+          },
+          {
+            "name": "Mason's Tools",
+            "url": "/proficiencies/masons-tools"
+          },
+          {
+            "name": "Painter's Supplies",
+            "url": "/proficiencies/painters-supplies"
+          },
+          {
+            "name": "Potter's Tools",
+            "url": "/proficiencies/potters-tools"
+          },
+          {
+            "name": "Smith's Tools",
+            "url": "/proficiencies/smiths-tools"
+          },
+          {
+            "name": "Tinker's Tools",
+            "url": "/proficiencies/tinkers-tools"
+          },
+          {
+            "name": "Weaver's Tools",
+            "url": "/proficiencies/weavers-tools"
+          },
+          {
+            "name": "Woodcarver's Tools",
+            "url": "/proficiencies/woodcarvers-tools"
+          },
+          {
+            "name": "Disguise Kit",
+            "url": "/proficiencies/disguise-kit"
+          },
+          {
+            "name": "Forgery Kit",
+            "url": "/proficiencies/forgery-kit"
+          }
+        ]
+      }
+    ]
+  },
+  "spellcasting": null,
+  "equipment": {
+    "starting": [
+      {
+        "name": "Dart",
+        "url": "/items/dart",
+        "amount": 10
+      }
+    ],
+    "options": [
+      {
+        "amount": 1,
+        "choices": [
+          {
+            "type": "ITEM",
+            "name": "Shortsword",
+            "url": "/items/shortsword",
+            "amount": 1
+          },
+          {
+            "type": "CATEGORY",
+            "name": "Simple Weapons",
+            "url": "/equipment-categories/simple-weapons",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "amount": 1,
+        "choices": [
+          {
+            "type": "EQUIPMENT_PACK",
+            "name": "Dungeoneer's Pack",
+            "url": "/equipment-packs/dungeoneers-pack",
+            "amount": 1
+          },
+          {
+            "type": "EQUIPMENT_PACK",
+            "name": "Explorer's Pack",
+            "url": "/equipment-packs/explorers-pack",
+            "amount": 1
+          }
+        ]
+      }
+    ]
+  }
+}

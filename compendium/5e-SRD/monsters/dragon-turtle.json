@@ -1,0 +1,198 @@
+{
+  "type": "MONSTER",
+  "id": "dragon-turtle",
+  "name": "Dragon Turtle",
+  "url": "/monsters/dragon-turtle",
+  "source": "MM",
+  "description": "",
+  "challengeRating": 17,
+  "size": "GARGANTUAN",
+  "kind": "DRAGON",
+  "subKind": null,
+  "alignment": "NEUTRAL",
+  "maxHP": 341,
+  "hitDice": "22d20",
+  "armorClass": 20,
+  "proficiencyBonus": 6,
+  "speed": {
+    "walk": 20,
+    "swim": 40,
+    "fly": 0
+  },
+  "senses": {
+    "passivePerception": 11,
+    "passiveInsight": 10,
+    "darkvision": 120,
+    "blindsight": 0,
+    "truesight": 0,
+    "tremorsense": 0
+  },
+  "abilityScores": {
+    "strength": {
+      "score": 25,
+      "modifier": 7,
+      "savingThrow": 7
+    },
+    "dexterity": {
+      "score": 10,
+      "modifier": 0,
+      "savingThrow": 6
+    },
+    "constitution": {
+      "score": 20,
+      "modifier": 5,
+      "savingThrow": 16
+    },
+    "intelligence": {
+      "score": 10,
+      "modifier": 0,
+      "savingThrow": 0
+    },
+    "wisdom": {
+      "score": 12,
+      "modifier": 1,
+      "savingThrow": 8
+    },
+    "charisma": {
+      "score": 12,
+      "modifier": 1,
+      "savingThrow": 1
+    }
+  },
+  "proficiencies": [
+    {
+      "name": "Dexterity",
+      "url": "/ability-scores/dexterity",
+      "amount": 6
+    },
+    {
+      "name": "Constitution",
+      "url": "/ability-scores/constitution",
+      "amount": 11
+    },
+    {
+      "name": "Wisdom",
+      "url": "/ability-scores/wisdom",
+      "amount": 7
+    }
+  ],
+  "resistances": [
+    {
+      "name": "Fire",
+      "url": "/damage-types/fire"
+    }
+  ],
+  "immunities": {
+    "damageTypes": [],
+    "conditions": []
+  },
+  "vulnerabilities": [],
+  "languages": [
+    "Aquan",
+    "Draconic"
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "description": "The dragon turtle makes three attacks: one with its bite and two with its claws. It can make one tail attack in place of its two claw attacks.",
+      "attackBonus": 0,
+      "damage": null,
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Bite",
+      "description": "Melee Weapon Attack: +13 to hit, reach 15 ft., one target. Hit: 26 (3d12 + 7) piercing damage.",
+      "attackBonus": 13,
+      "damage": [
+        {
+          "type": {
+            "name": "Piercing",
+            "url": "/damage-types/piercing"
+          },
+          "amount": "3d12+7",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Claw",
+      "description": "Melee Weapon Attack: +13 to hit, reach 10 ft., one target. Hit: 16 (2d8 + 7) slashing damage.",
+      "attackBonus": 13,
+      "damage": [
+        {
+          "type": {
+            "name": "Piercing",
+            "url": "/damage-types/piercing"
+          },
+          "amount": "2d8+7",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Tail",
+      "description": "Melee Weapon Attack: +13 to hit, reach 15 ft., one target. Hit: 26 (3d12 + 7) bludgeoning damage. If the target is a creature, it must succeed on a DC 20 Strength saving throw or be pushed up to 10 feet away from the dragon turtle and knocked prone.",
+      "attackBonus": 13,
+      "damage": [
+        {
+          "type": {
+            "name": "Bludgeoning",
+            "url": "/damage-types/bludgeoning"
+          },
+          "amount": "3d12+7",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Steam Breath",
+      "description": "The dragon turtle exhales scalding steam in a 60-foot cone. Each creature in that area must make a DC 18 Constitution saving throw, taking 52 (15d6) fire damage on a failed save, or half as much damage on a successful one. Being underwater doesn't grant resistance against this damage.",
+      "attackBonus": 0,
+      "damage": [
+        {
+          "type": {
+            "name": "Fire",
+            "url": "/damage-types/fire"
+          },
+          "amount": "15d6",
+          "options": null
+        }
+      ],
+      "saveDC": {
+        "ability": {
+          "name": "Constitution",
+          "url": "/ability-scores/constitution"
+        },
+        "value": 18,
+        "onSuccess": "HALF"
+      },
+      "usage": {
+        "type": "RECHARGE_ON_ROLL",
+        "amount": 0,
+        "dice": "1d6",
+        "minRoll": 5
+      },
+      "options": null
+    }
+  ],
+  "legendaryActions": [],
+  "specialAbilities": [
+    {
+      "name": "Amphibious",
+      "description": "The dragon turtle can breathe air and water.",
+      "usage": null,
+      "spellcasting": null
+    }
+  ]
+}

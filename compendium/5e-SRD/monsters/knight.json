@@ -1,0 +1,153 @@
+{
+  "type": "MONSTER",
+  "id": "knight",
+  "name": "Knight",
+  "url": "/monsters/knight",
+  "source": "MM",
+  "description": "",
+  "challengeRating": 3,
+  "size": "MEDIUM",
+  "kind": "HUMANOID",
+  "subKind": "ANY_RACE",
+  "alignment": "ANY_ALIGNMENT",
+  "maxHP": 52,
+  "hitDice": "8d8",
+  "armorClass": 18,
+  "proficiencyBonus": 2,
+  "speed": {
+    "walk": 30,
+    "swim": 0,
+    "fly": 0
+  },
+  "senses": {
+    "passivePerception": 10,
+    "passiveInsight": 10,
+    "darkvision": 0,
+    "blindsight": 0,
+    "truesight": 0,
+    "tremorsense": 0
+  },
+  "abilityScores": {
+    "strength": {
+      "score": 16,
+      "modifier": 3,
+      "savingThrow": 3
+    },
+    "dexterity": {
+      "score": 11,
+      "modifier": 0,
+      "savingThrow": 0
+    },
+    "constitution": {
+      "score": 14,
+      "modifier": 2,
+      "savingThrow": 6
+    },
+    "intelligence": {
+      "score": 11,
+      "modifier": 0,
+      "savingThrow": 0
+    },
+    "wisdom": {
+      "score": 11,
+      "modifier": 0,
+      "savingThrow": 2
+    },
+    "charisma": {
+      "score": 15,
+      "modifier": 2,
+      "savingThrow": 2
+    }
+  },
+  "proficiencies": [
+    {
+      "name": "Constitution",
+      "url": "/ability-scores/constitution",
+      "amount": 4
+    },
+    {
+      "name": "Wisdom",
+      "url": "/ability-scores/wisdom",
+      "amount": 2
+    }
+  ],
+  "resistances": [],
+  "immunities": {
+    "damageTypes": [],
+    "conditions": []
+  },
+  "vulnerabilities": [],
+  "languages": [
+    "Any One Language (usually Common)"
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "description": "The knight makes two melee attacks.",
+      "attackBonus": 0,
+      "damage": null,
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Greatsword",
+      "description": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) slashing damage.",
+      "attackBonus": 5,
+      "damage": [
+        {
+          "type": {
+            "name": "Slashing",
+            "url": "/damage-types/slashing"
+          },
+          "amount": "2d6+3",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Heavy Crossbow",
+      "description": "Ranged Weapon Attack: +2 to hit, range 100/400 ft., one target. Hit: 5 (1d10) piercing damage.",
+      "attackBonus": 2,
+      "damage": [
+        {
+          "type": {
+            "name": "Piercing",
+            "url": "/damage-types/piercing"
+          },
+          "amount": "1d10",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Leadership",
+      "description": "For 1 minute, the knight can utter a special command or warning whenever a nonhostile creature that it can see within 30 ft. of it makes an attack roll or a saving throw. The creature can add a d4 to its roll provided it can hear and understand the knight. A creature can benefit from only one Leadership die at a time. This effect ends if the knight is incapacitated.",
+      "attackBonus": 0,
+      "damage": null,
+      "saveDC": null,
+      "usage": {
+        "type": "RECHARGE_AFTER_REST",
+        "amount": 0,
+        "dice": null,
+        "minRoll": 0
+      },
+      "options": null
+    }
+  ],
+  "legendaryActions": [],
+  "specialAbilities": [
+    {
+      "name": "Brave",
+      "description": "The knight has advantage on saving throws against being frightened.",
+      "usage": null,
+      "spellcasting": null
+    }
+  ]
+}

@@ -1,0 +1,190 @@
+{
+  "type": "MONSTER",
+  "id": "half-red-dragon-veteran",
+  "name": "Half-red Dragon Veteran",
+  "url": "/monsters/half-red-dragon-veteran",
+  "source": "MM",
+  "description": "",
+  "challengeRating": 5,
+  "size": "MEDIUM",
+  "kind": "HUMANOID",
+  "subKind": "HUMAN",
+  "alignment": "ANY_ALIGNMENT",
+  "maxHP": 65,
+  "hitDice": "10d8",
+  "armorClass": 18,
+  "proficiencyBonus": 3,
+  "speed": {
+    "walk": 30,
+    "swim": 0,
+    "fly": 0
+  },
+  "senses": {
+    "passivePerception": 12,
+    "passiveInsight": 10,
+    "darkvision": 60,
+    "blindsight": 10,
+    "truesight": 0,
+    "tremorsense": 0
+  },
+  "abilityScores": {
+    "strength": {
+      "score": 16,
+      "modifier": 3,
+      "savingThrow": 3
+    },
+    "dexterity": {
+      "score": 13,
+      "modifier": 1,
+      "savingThrow": 1
+    },
+    "constitution": {
+      "score": 14,
+      "modifier": 2,
+      "savingThrow": 2
+    },
+    "intelligence": {
+      "score": 10,
+      "modifier": 0,
+      "savingThrow": 0
+    },
+    "wisdom": {
+      "score": 11,
+      "modifier": 0,
+      "savingThrow": 0
+    },
+    "charisma": {
+      "score": 10,
+      "modifier": 0,
+      "savingThrow": 0
+    }
+  },
+  "proficiencies": [],
+  "resistances": [
+    {
+      "name": "Fire",
+      "url": "/damage-types/fire"
+    }
+  ],
+  "immunities": {
+    "damageTypes": [],
+    "conditions": []
+  },
+  "vulnerabilities": [],
+  "languages": [
+    "Common",
+    "Draconic"
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "description": "The veteran makes two longsword attacks. If it has a shortsword drawn, it can also make a shortsword attack.",
+      "attackBonus": 0,
+      "damage": null,
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Longsword",
+      "description": "Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) slashing damage, or 8 (1d10 + 3) slashing damage if used with two hands.",
+      "attackBonus": 5,
+      "damage": [
+        {
+          "type": null,
+          "amount": null,
+          "options": {
+            "amount": 1,
+            "choices": [
+              {
+                "type": {
+                  "name": "Bludgeoning",
+                  "url": "/damage-types/bludgeoning"
+                },
+                "amount": "1d8+3"
+              },
+              {
+                "type": {
+                  "name": "Bludgeoning",
+                  "url": "/damage-types/bludgeoning"
+                },
+                "amount": "1d10+3"
+              }
+            ]
+          }
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Shortsword",
+      "description": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing damage.",
+      "attackBonus": 5,
+      "damage": [
+        {
+          "type": {
+            "name": "Piercing",
+            "url": "/damage-types/piercing"
+          },
+          "amount": "1d6+3",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Heavy Crossbow",
+      "description": "Ranged Weapon Attack: +3 to hit, range 100/400 ft., one target. Hit: 6 (1d10 + 1) piercing damage.",
+      "attackBonus": 3,
+      "damage": [
+        {
+          "type": {
+            "name": "Piercing",
+            "url": "/damage-types/piercing"
+          },
+          "amount": "1d10+1",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Fire Breath",
+      "description": "The veteran exhales fire in a 15-foot cone. Each creature in that area must make a DC 15 Dexterity saving throw, taking 24 (7d6) fire damage on a failed save, or half as much damage on a successful one.",
+      "attackBonus": 0,
+      "damage": [
+        {
+          "type": {
+            "name": "Fire",
+            "url": "/damage-types/fire"
+          },
+          "amount": "7d6",
+          "options": null
+        }
+      ],
+      "saveDC": {
+        "ability": {
+          "name": "Dexterity",
+          "url": "/ability-scores/dexterity"
+        },
+        "value": 15,
+        "onSuccess": "HALF"
+      },
+      "usage": {
+        "type": "RECHARGE_ON_ROLL",
+        "amount": 0,
+        "dice": "1d6",
+        "minRoll": 5
+      },
+      "options": null
+    }
+  ],
+  "legendaryActions": [],
+  "specialAbilities": []
+}

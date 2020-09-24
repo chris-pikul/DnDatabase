@@ -1,0 +1,149 @@
+{
+  "type": "MONSTER",
+  "id": "scout",
+  "name": "Scout",
+  "url": "/monsters/scout",
+  "source": "MM",
+  "description": "",
+  "challengeRating": 0.5,
+  "size": "MEDIUM",
+  "kind": "HUMANOID",
+  "subKind": "ANY_RACE",
+  "alignment": "ANY_ALIGNMENT",
+  "maxHP": 16,
+  "hitDice": "3d8",
+  "armorClass": 13,
+  "proficiencyBonus": 2,
+  "speed": {
+    "walk": 30,
+    "swim": 0,
+    "fly": 0
+  },
+  "senses": {
+    "passivePerception": 15,
+    "passiveInsight": 10,
+    "darkvision": 0,
+    "blindsight": 0,
+    "truesight": 0,
+    "tremorsense": 0
+  },
+  "abilityScores": {
+    "strength": {
+      "score": 11,
+      "modifier": 0,
+      "savingThrow": 0
+    },
+    "dexterity": {
+      "score": 14,
+      "modifier": 2,
+      "savingThrow": 2
+    },
+    "constitution": {
+      "score": 12,
+      "modifier": 1,
+      "savingThrow": 1
+    },
+    "intelligence": {
+      "score": 11,
+      "modifier": 0,
+      "savingThrow": 0
+    },
+    "wisdom": {
+      "score": 13,
+      "modifier": 1,
+      "savingThrow": 1
+    },
+    "charisma": {
+      "score": 11,
+      "modifier": 0,
+      "savingThrow": 0
+    }
+  },
+  "proficiencies": [
+    {
+      "name": "Nature",
+      "url": "/skills/nature",
+      "amount": 4
+    },
+    {
+      "name": "Perception",
+      "url": "/skills/perception",
+      "amount": 5
+    },
+    {
+      "name": "Stealth",
+      "url": "/skills/stealth",
+      "amount": 6
+    },
+    {
+      "name": "Survival",
+      "url": "/skills/survival",
+      "amount": 5
+    }
+  ],
+  "resistances": [],
+  "immunities": {
+    "damageTypes": [],
+    "conditions": []
+  },
+  "vulnerabilities": [],
+  "languages": [
+    "Any One Language (usually Common)"
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "description": "The scout makes two melee attacks or two ranged attacks.",
+      "attackBonus": 0,
+      "damage": null,
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Shortsword",
+      "description": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage.",
+      "attackBonus": 4,
+      "damage": [
+        {
+          "type": {
+            "name": "Piercing",
+            "url": "/damage-types/piercing"
+          },
+          "amount": "1d6+2",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Longbow",
+      "description": "Ranged Weapon Attack: +4 to hit, ranged 150/600 ft., one target. Hit: 6 (1d8 + 2) piercing damage.",
+      "attackBonus": 4,
+      "damage": [
+        {
+          "type": {
+            "name": "Piercing",
+            "url": "/damage-types/piercing"
+          },
+          "amount": "1d8+2",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    }
+  ],
+  "legendaryActions": [],
+  "specialAbilities": [
+    {
+      "name": "Keen Hearing And Sight",
+      "description": "The scout has advantage on Wisdom (Perception) checks that rely on hearing or sight.",
+      "usage": null,
+      "spellcasting": null
+    }
+  ]
+}

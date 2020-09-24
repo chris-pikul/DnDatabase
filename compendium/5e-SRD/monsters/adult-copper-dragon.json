@@ -1,0 +1,298 @@
+{
+  "type": "MONSTER",
+  "id": "adult-copper-dragon",
+  "name": "Adult Copper Dragon",
+  "url": "/monsters/adult-copper-dragon",
+  "source": "MM",
+  "description": "",
+  "challengeRating": 14,
+  "size": "HUGE",
+  "kind": "DRAGON",
+  "subKind": null,
+  "alignment": "CHAOTIC_GOOD",
+  "maxHP": 184,
+  "hitDice": "16d12",
+  "armorClass": 18,
+  "proficiencyBonus": 5,
+  "speed": {
+    "walk": 40,
+    "swim": 0,
+    "fly": 80
+  },
+  "senses": {
+    "passivePerception": 22,
+    "passiveInsight": 10,
+    "darkvision": 120,
+    "blindsight": 60,
+    "truesight": 0,
+    "tremorsense": 0
+  },
+  "abilityScores": {
+    "strength": {
+      "score": 23,
+      "modifier": 6,
+      "savingThrow": 6
+    },
+    "dexterity": {
+      "score": 12,
+      "modifier": 1,
+      "savingThrow": 7
+    },
+    "constitution": {
+      "score": 21,
+      "modifier": 5,
+      "savingThrow": 15
+    },
+    "intelligence": {
+      "score": 18,
+      "modifier": 4,
+      "savingThrow": 4
+    },
+    "wisdom": {
+      "score": 15,
+      "modifier": 2,
+      "savingThrow": 9
+    },
+    "charisma": {
+      "score": 17,
+      "modifier": 3,
+      "savingThrow": 11
+    }
+  },
+  "proficiencies": [
+    {
+      "name": "Dexterity",
+      "url": "/ability-scores/dexterity",
+      "amount": 6
+    },
+    {
+      "name": "Constitution",
+      "url": "/ability-scores/constitution",
+      "amount": 10
+    },
+    {
+      "name": "Wisdom",
+      "url": "/ability-scores/wisdom",
+      "amount": 7
+    },
+    {
+      "name": "Charisma",
+      "url": "/ability-scores/charisma",
+      "amount": 8
+    },
+    {
+      "name": "Deception",
+      "url": "/skills/deception",
+      "amount": 8
+    },
+    {
+      "name": "Perception",
+      "url": "/skills/perception",
+      "amount": 12
+    },
+    {
+      "name": "Stealth",
+      "url": "/skills/stealth",
+      "amount": 6
+    }
+  ],
+  "resistances": [],
+  "immunities": {
+    "damageTypes": [
+      {
+        "name": "Acid",
+        "url": "/damage-types/acid"
+      }
+    ],
+    "conditions": []
+  },
+  "vulnerabilities": [],
+  "languages": [
+    "Common",
+    "Draconic"
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "description": "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.",
+      "attackBonus": 0,
+      "damage": null,
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Bite",
+      "description": "Melee Weapon Attack: +11 to hit, reach 10 ft., one target. Hit: 17 (2d10 + 6) piercing damage.",
+      "attackBonus": 11,
+      "damage": [
+        {
+          "type": {
+            "name": "Piercing",
+            "url": "/damage-types/piercing"
+          },
+          "amount": "2d10+6",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Claw",
+      "description": "Melee Weapon Attack: +11 to hit, reach 5 ft., one target. Hit: 13 (2d6 + 6) slashing damage.",
+      "attackBonus": 11,
+      "damage": [
+        {
+          "type": {
+            "name": "Slashing",
+            "url": "/damage-types/slashing"
+          },
+          "amount": "2d6+6",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Tail",
+      "description": "Melee Weapon Attack: +11 to hit, reach 15 ft., one target. Hit: 15 (2d8 + 6) bludgeoning damage.",
+      "attackBonus": 11,
+      "damage": [
+        {
+          "type": {
+            "name": "Bludgeoning",
+            "url": "/damage-types/bludgeoning"
+          },
+          "amount": "2d8+6",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Frightful Presence",
+      "description": "Each creature of the dragon's choice that is within 120 feet of the dragon and aware of it must succeed on a DC 16 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours.",
+      "attackBonus": 0,
+      "damage": null,
+      "saveDC": {
+        "ability": {
+          "name": "Wisdom",
+          "url": "/ability-scores/wisdom"
+        },
+        "value": 16,
+        "onSuccess": "NONE"
+      },
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Breath Weapons",
+      "description": "The dragon uses one of the following breath weapons.\nAcid Breath. The dragon exhales acid in an 60-foot line that is 5 feet wide. Each creature in that line must make a DC 18 Dexterity saving throw, taking 54 (12d8) acid damage on a failed save, or half as much damage on a successful one.\nSlowing Breath. The dragon exhales gas in a 60-foot cone. Each creature in that area must succeed on a DC 18 Constitution saving throw. On a failed save, the creature can't use reactions, its speed is halved, and it can't make more than one attack on its turn. In addition, the creature can use either an action or a bonus action on its turn, but not both. These effects last for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself with a successful save.",
+      "attackBonus": 0,
+      "damage": null,
+      "saveDC": null,
+      "usage": {
+        "type": "RECHARGE_ON_ROLL",
+        "amount": 0,
+        "dice": "1d6",
+        "minRoll": 5
+      },
+      "options": {
+        "amount": 1,
+        "choices": [
+          {
+            "name": "Acid Breath",
+            "damage": [
+              {
+                "type": {
+                  "name": "Acid",
+                  "url": "/damage-types/acid"
+                },
+                "amount": "12d8"
+              }
+            ],
+            "saveDC": {
+              "ability": {
+                "name": "Dexterity",
+                "url": "/ability-scores/dexterity"
+              },
+              "value": 18,
+              "onSuccess": "HALF"
+            }
+          },
+          {
+            "name": "Slowing Breath",
+            "damage": null,
+            "saveDC": {
+              "ability": {
+                "name": "Constitution",
+                "url": "/ability-scores/constitution"
+              },
+              "value": 18,
+              "onSuccess": "NONE"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "legendaryActions": {
+    "amount": 3,
+    "options": [
+      {
+        "name": "Detect",
+        "description": "The dragon makes a Wisdom (Perception) check.",
+        "cost": 1,
+        "damage": null,
+        "saveDC": null
+      },
+      {
+        "name": "Tail Attack",
+        "description": "The dragon makes a tail attack.",
+        "cost": 1,
+        "damage": null,
+        "saveDC": null
+      },
+      {
+        "name": "Wing Attack",
+        "description": "The dragon beats its wings. Each creature within 10 ft. of the dragon must succeed on a DC 19 Dexterity saving throw or take 13 (2d6 + 6) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
+        "cost": 2,
+        "damage": [
+          {
+            "type": {
+              "name": "Bludgeoning",
+              "url": "/damage-types/bludgeoning"
+            },
+            "amount": "13d6+6",
+            "options": null
+          }
+        ],
+        "saveDC": {
+          "ability": {
+            "name": "Dexterity",
+            "url": "/ability-scores/dexterity"
+          },
+          "value": 19,
+          "onSuccess": "NONE"
+        }
+      }
+    ]
+  },
+  "specialAbilities": [
+    {
+      "name": "Legendary Resistance",
+      "description": "If the dragon fails a saving throw, it can choose to succeed instead.",
+      "usage": {
+        "type": "PER_DAY",
+        "amount": 1
+      },
+      "spellcasting": null
+    }
+  ]
+}

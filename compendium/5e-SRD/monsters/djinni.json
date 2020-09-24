@@ -1,0 +1,267 @@
+{
+  "type": "MONSTER",
+  "id": "djinni",
+  "name": "Djinni",
+  "url": "/monsters/djinni",
+  "source": "MM",
+  "description": "",
+  "challengeRating": 11,
+  "size": "LARGE",
+  "kind": "ELEMENTAL",
+  "subKind": null,
+  "alignment": "CHAOTIC_GOOD",
+  "maxHP": 161,
+  "hitDice": "14d10",
+  "armorClass": 17,
+  "proficiencyBonus": 4,
+  "speed": {
+    "walk": 30,
+    "swim": 0,
+    "fly": 90
+  },
+  "senses": {
+    "passivePerception": 13,
+    "passiveInsight": 10,
+    "darkvision": 120,
+    "blindsight": 0,
+    "truesight": 0,
+    "tremorsense": 0
+  },
+  "abilityScores": {
+    "strength": {
+      "score": 21,
+      "modifier": 5,
+      "savingThrow": 5
+    },
+    "dexterity": {
+      "score": 15,
+      "modifier": 2,
+      "savingThrow": 8
+    },
+    "constitution": {
+      "score": 22,
+      "modifier": 6,
+      "savingThrow": 6
+    },
+    "intelligence": {
+      "score": 15,
+      "modifier": 2,
+      "savingThrow": 2
+    },
+    "wisdom": {
+      "score": 16,
+      "modifier": 3,
+      "savingThrow": 10
+    },
+    "charisma": {
+      "score": 20,
+      "modifier": 5,
+      "savingThrow": 14
+    }
+  },
+  "proficiencies": [
+    {
+      "name": "Dexterity",
+      "url": "/ability-scores/dexterity",
+      "amount": 6
+    },
+    {
+      "name": "Wisdom",
+      "url": "/ability-scores/wisdom",
+      "amount": 7
+    },
+    {
+      "name": "Charisma",
+      "url": "/ability-scores/charisma",
+      "amount": 9
+    }
+  ],
+  "resistances": [],
+  "immunities": {
+    "damageTypes": [
+      {
+        "name": "Lightning",
+        "url": "/damage-types/lightning"
+      },
+      {
+        "name": "Thunder",
+        "url": "/damage-types/thunder"
+      }
+    ],
+    "conditions": []
+  },
+  "vulnerabilities": [],
+  "languages": [
+    "Auran"
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "description": "The djinni makes three scimitar attacks.",
+      "attackBonus": 0,
+      "damage": null,
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Scimitar",
+      "description": "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) slashing damage plus 3 (1d6) lightning or thunder damage (djinni's choice).",
+      "attackBonus": 9,
+      "damage": [
+        {
+          "type": {
+            "name": "Slashing",
+            "url": "/damage-types/slashing"
+          },
+          "amount": "2d6+5",
+          "options": null
+        },
+        {
+          "type": null,
+          "amount": null,
+          "options": {
+            "amount": 1,
+            "choices": [
+              {
+                "type": {
+                  "name": "Lightning",
+                  "url": "/damage-types/lightning"
+                },
+                "amount": "1d6"
+              },
+              {
+                "type": {
+                  "name": "Thunder",
+                  "url": "/damage-types/thunder"
+                },
+                "amount": "1d6"
+              }
+            ]
+          }
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Create Whirlwind",
+      "description": "A 5-foot-radius, 30-foot-tall cylinder of swirling air magically forms on a point the djinni can see within 120 feet of it. The whirlwind lasts as long as the djinni maintains concentration (as if concentrating on a spell). Any creature but the djinni that enters the whirlwind must succeed on a DC 18 Strength saving throw or be restrained by it. The djinni can move the whirlwind up to 60 feet as an action, and creatures restrained by the whirlwind move with it. The whirlwind ends if the djinni loses sight of it.\nA creature can use its action to free a creature restrained by the whirlwind, including itself, by succeeding on a DC 18 Strength check. If the check succeeds, the creature is no longer restrained and moves to the nearest space outside the whirlwind.",
+      "attackBonus": 0,
+      "damage": null,
+      "saveDC": {
+        "ability": {
+          "name": "Strength",
+          "url": "/ability-scores/strength"
+        },
+        "value": 18,
+        "onSuccess": "NONE"
+      },
+      "usage": null,
+      "options": null
+    }
+  ],
+  "legendaryActions": [],
+  "specialAbilities": [
+    {
+      "name": "Elemental Demise",
+      "description": "If the djinni dies, its body disintegrates into a warm breeze, leaving behind only equipment the djinni was wearing or carrying.",
+      "usage": null,
+      "spellcasting": null
+    },
+    {
+      "name": "Innate Spellcasting",
+      "description": "The djinni's innate spellcasting ability is Charisma (spell save DC 17, +9 to hit with spell attacks). It can innately cast the following spells, requiring no material components:\n\nAt will: detect evil and good, detect magic, thunderwave\n3/day each: create food and water (can create wine instead of water), tongues, wind walk\n1/day each: conjure elemental (air elemental only), creation, gaseous form, invisibility, major image, plane shift",
+      "usage": null,
+      "spellcasting": {
+        "level": 1,
+        "ability": {
+          "name": "Charisma",
+          "url": "/ability-scores/charisma"
+        },
+        "saveDC": 17,
+        "attackBonus": 9,
+        "slots": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "spells": [
+          {
+            "name": "Detect Evil And Good",
+            "url": "/spells/detect-evil-and-good",
+            "level": 0
+          },
+          {
+            "name": "Detect Magic",
+            "url": "/spells/detect-magic",
+            "level": 0
+          },
+          {
+            "name": "Thunderwave",
+            "url": "/spells/thunderwave",
+            "level": 0
+          },
+          {
+            "name": "Create Food And Water",
+            "url": "/spells/create-food-and-water",
+            "level": 0
+          },
+          {
+            "name": "Tongues",
+            "url": "/spells/tongues",
+            "level": 0
+          },
+          {
+            "name": "Wind Walk",
+            "url": "/spells/wind-walk",
+            "level": 0
+          },
+          {
+            "name": "Conjure Elemental",
+            "url": "/spells/conjure-elemental",
+            "level": 0
+          },
+          {
+            "name": "Creation",
+            "url": "/spells/creation",
+            "level": 0
+          },
+          {
+            "name": "Gaseous Form",
+            "url": "/spells/gaseous-form",
+            "level": 0
+          },
+          {
+            "name": "Invisibility",
+            "url": "/spells/invisibility",
+            "level": 0
+          },
+          {
+            "name": "Major Image",
+            "url": "/spells/major-image",
+            "level": 0
+          },
+          {
+            "name": "Plane Shift",
+            "url": "/spells/plane-shift",
+            "level": 0
+          }
+        ]
+      }
+    },
+    {
+      "name": "Variant: Genie Powers",
+      "description": "Genies have a variety of magical capabilities, including spells. A few have even greater powers that allow them to alter their appearance or the nature of reality.\n\nDisguises.\nSome genies can veil themselves in illusion to pass as other similarly shaped creatures. Such genies can innately cast the disguise self spell at will, often with a longer duration than is normal for that spell. Mightier genies can cast the true polymorph spell one to three times per day, possibly with a longer duration than normal. Such genies can change only their own shape, but a rare few can use the spell on other creatures and objects as well.\nWishes.\nThe genie power to grant wishes is legendary among mortals. Only the most potent genies, such as those among the nobility, can do so. A particular genie that has this power can grant one to three wishes to a creature that isn't a genie. Once a genie has granted its limit of wishes, it can't grant wishes again for some amount of time (usually 1 year). and cosmic law dictates that the same genie can expend its limit of wishes on a specific creature only once in that creature's existence.\nTo be granted a wish, a creature within 60 feet of the genie states a desired effect to it. The genie can then cast the wish spell on the creature's behalf to bring about the effect. Depending on the genie's nature, the genie might try to pervert the intent of the wish by exploiting the wish's poor wording. The perversion of the wording is usually crafted to be to the genie's benefit.",
+      "usage": null,
+      "spellcasting": null
+    }
+  ]
+}

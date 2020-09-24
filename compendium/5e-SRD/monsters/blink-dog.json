@@ -1,0 +1,127 @@
+{
+  "type": "MONSTER",
+  "id": "blink-dog",
+  "name": "Blink Dog",
+  "url": "/monsters/blink-dog",
+  "source": "MM",
+  "description": "",
+  "challengeRating": 0.25,
+  "size": "MEDIUM",
+  "kind": "FEY",
+  "subKind": null,
+  "alignment": "LAWFUL_GOOD",
+  "maxHP": 22,
+  "hitDice": "4d8",
+  "armorClass": 13,
+  "proficiencyBonus": 2,
+  "speed": {
+    "walk": 40,
+    "swim": 0,
+    "fly": 0
+  },
+  "senses": {
+    "passivePerception": 10,
+    "passiveInsight": 10,
+    "darkvision": 0,
+    "blindsight": 0,
+    "truesight": 0,
+    "tremorsense": 0
+  },
+  "abilityScores": {
+    "strength": {
+      "score": 12,
+      "modifier": 1,
+      "savingThrow": 1
+    },
+    "dexterity": {
+      "score": 17,
+      "modifier": 3,
+      "savingThrow": 3
+    },
+    "constitution": {
+      "score": 12,
+      "modifier": 1,
+      "savingThrow": 1
+    },
+    "intelligence": {
+      "score": 10,
+      "modifier": 0,
+      "savingThrow": 0
+    },
+    "wisdom": {
+      "score": 13,
+      "modifier": 1,
+      "savingThrow": 1
+    },
+    "charisma": {
+      "score": 11,
+      "modifier": 0,
+      "savingThrow": 0
+    }
+  },
+  "proficiencies": [
+    {
+      "name": "Perception",
+      "url": "/skills/perception",
+      "amount": 3
+    },
+    {
+      "name": "Stealth",
+      "url": "/skills/stealth",
+      "amount": 5
+    }
+  ],
+  "resistances": [],
+  "immunities": {
+    "damageTypes": [],
+    "conditions": []
+  },
+  "vulnerabilities": [],
+  "languages": [
+    "Blink Dog",
+    "Understands Sylvan But Can't Speak It"
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "description": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) piercing damage.",
+      "attackBonus": 3,
+      "damage": [
+        {
+          "type": {
+            "name": "Piercing",
+            "url": "/damage-types/piercing"
+          },
+          "amount": "1d6+1",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Teleport",
+      "description": "The dog magically teleports, along with any equipment it is wearing or carrying, up to 40 ft. to an unoccupied space it can see. Before or after teleporting, the dog can make one bite attack.",
+      "attackBonus": 0,
+      "damage": null,
+      "saveDC": null,
+      "usage": {
+        "type": "RECHARGE_ON_ROLL",
+        "amount": 0,
+        "dice": "1d6",
+        "minRoll": 4
+      },
+      "options": null
+    }
+  ],
+  "legendaryActions": [],
+  "specialAbilities": [
+    {
+      "name": "Keen Hearing And Smell",
+      "description": "The dog has advantage on Wisdom (Perception) checks that rely on hearing or smell.",
+      "usage": null,
+      "spellcasting": null
+    }
+  ]
+}

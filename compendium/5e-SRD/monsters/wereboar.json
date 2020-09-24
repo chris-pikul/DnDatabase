@@ -1,0 +1,162 @@
+{
+  "type": "MONSTER",
+  "id": "wereboar",
+  "name": "Wereboar",
+  "url": "/monsters/wereboar",
+  "source": "MM",
+  "description": "",
+  "challengeRating": 4,
+  "size": "MEDIUM",
+  "kind": "HUMANOID",
+  "subKind": "HUMAN",
+  "alignment": "NEUTRAL_EVIL",
+  "maxHP": 78,
+  "hitDice": "12d8",
+  "armorClass": 10,
+  "proficiencyBonus": 2,
+  "speed": {
+    "walk": 30,
+    "swim": 0,
+    "fly": 0
+  },
+  "senses": {
+    "passivePerception": 12,
+    "passiveInsight": 10,
+    "darkvision": 0,
+    "blindsight": 0,
+    "truesight": 0,
+    "tremorsense": 0
+  },
+  "abilityScores": {
+    "strength": {
+      "score": 17,
+      "modifier": 3,
+      "savingThrow": 3
+    },
+    "dexterity": {
+      "score": 10,
+      "modifier": 0,
+      "savingThrow": 0
+    },
+    "constitution": {
+      "score": 15,
+      "modifier": 2,
+      "savingThrow": 2
+    },
+    "intelligence": {
+      "score": 10,
+      "modifier": 0,
+      "savingThrow": 0
+    },
+    "wisdom": {
+      "score": 11,
+      "modifier": 0,
+      "savingThrow": 0
+    },
+    "charisma": {
+      "score": 8,
+      "modifier": -1,
+      "savingThrow": -1
+    }
+  },
+  "proficiencies": [
+    {
+      "name": "Perception",
+      "url": "/skills/perception",
+      "amount": 2
+    }
+  ],
+  "resistances": [],
+  "immunities": {
+    "damageTypes": [
+      {
+        "name": "Bludgeoning",
+        "url": "/damage-types/bludgeoning"
+      },
+      {
+        "name": "Piercing",
+        "url": "/damage-types/piercing"
+      },
+      {
+        "name": "Slashing",
+        "url": "/damage-types/slashing"
+      }
+    ],
+    "conditions": []
+  },
+  "vulnerabilities": [],
+  "languages": [
+    "Common (can't Speak In Boar Form)"
+  ],
+  "actions": [
+    {
+      "name": "Multiattack (humanoid Or Hybrid Form Only)",
+      "description": "The wereboar makes two attacks, only one of which can be with its tusks.",
+      "attackBonus": 0,
+      "damage": null,
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Maul (humanoid Or Hybrid Form Only)",
+      "description": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) bludgeoning damage.",
+      "attackBonus": 5,
+      "damage": [
+        {
+          "type": {
+            "name": "Bludgeoning",
+            "url": "/damage-types/bludgeoning"
+          },
+          "amount": "2d6+3",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Tusks (boar Or Hybrid Form Only)",
+      "description": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) slashing damage. If the target is a humanoid, it must succeed on a DC 12 Constitution saving throw or be cursed with wereboar lycanthropy.",
+      "attackBonus": 5,
+      "damage": [
+        {
+          "type": {
+            "name": "Slashing",
+            "url": "/damage-types/slashing"
+          },
+          "amount": "2d6+3",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    }
+  ],
+  "legendaryActions": [],
+  "specialAbilities": [
+    {
+      "name": "Shapechanger",
+      "description": "The wereboar can use its action to polymorph into a boar-humanoid hybrid or into a boar, or back into its true form, which is humanoid. Its statistics, other than its AC, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies.",
+      "usage": null,
+      "spellcasting": null
+    },
+    {
+      "name": "Charge (boar Or Hybrid Form Only)",
+      "description": "If the wereboar moves at least 15 feet straight toward a target and then hits it with its tusks on the same turn, the target takes an extra 7 (2d6) slashing damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.",
+      "usage": null,
+      "spellcasting": null
+    },
+    {
+      "name": "Relentless",
+      "description": "If the wereboar takes 14 damage or less that would reduce it to 0 hit points, it is reduced to 1 hit point instead.",
+      "usage": {
+        "type": "RECHARGE_AFTER_REST",
+        "amount": 1
+      },
+      "spellcasting": null
+    }
+  ]
+}

@@ -1,0 +1,800 @@
+{
+  "id": "warlock",
+  "url": "/classes/warlock",
+  "name": "Warlock",
+  "source": "PHB",
+  "hitDie": 8,
+  "levels": [
+    {
+      "level": 1,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 2,
+      "spellcasting": {
+        "cantrips": 2,
+        "slots": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "features": [
+        {
+          "name": "Otherworldly Patron",
+          "url": "/features/otherworldly-patron"
+        },
+        {
+          "name": "Pact Magic",
+          "url": "/features/pact-magic"
+        }
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "invocationsKnown": 0,
+        "mysticArcanumLevel6": 0,
+        "mysticArcanumLevel7": 0,
+        "mysticArcanumLevel8": 0,
+        "mysticArcanumLevel9": 0
+      }
+    },
+    {
+      "level": 2,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 2,
+      "spellcasting": {
+        "cantrips": 2,
+        "slots": [
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "features": [],
+      "featureChoices": [
+        {
+          "name": "Eldritch Invocations",
+          "url": "/features/choose-eldritch-invocations"
+        }
+      ],
+      "classSpecific": {
+        "invocationsKnown": 2,
+        "mysticArcanumLevel6": 0,
+        "mysticArcanumLevel7": 0,
+        "mysticArcanumLevel8": 0,
+        "mysticArcanumLevel9": 0
+      }
+    },
+    {
+      "level": 3,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 2,
+      "spellcasting": {
+        "cantrips": 2,
+        "slots": [
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "features": [],
+      "featureChoices": [
+        {
+          "name": "Pact Boon",
+          "url": "/features/choose-pact-boon"
+        }
+      ],
+      "classSpecific": {
+        "invocationsKnown": 2,
+        "mysticArcanumLevel6": 0,
+        "mysticArcanumLevel7": 0,
+        "mysticArcanumLevel8": 0,
+        "mysticArcanumLevel9": 0
+      }
+    },
+    {
+      "level": 4,
+      "abilityScoreIncrease": true,
+      "proficiencyBonus": 2,
+      "spellcasting": {
+        "cantrips": 3,
+        "slots": [
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "features": [],
+      "featureChoices": [],
+      "classSpecific": {
+        "invocationsKnown": 3,
+        "mysticArcanumLevel6": 0,
+        "mysticArcanumLevel7": 0,
+        "mysticArcanumLevel8": 0,
+        "mysticArcanumLevel9": 0
+      }
+    },
+    {
+      "level": 5,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 3,
+      "spellcasting": {
+        "cantrips": 3,
+        "slots": [
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "features": [],
+      "featureChoices": [
+        {
+          "name": "Additional Eldritch Invocation",
+          "url": "/features/choose-additional-eldritch-invocation-1"
+        }
+      ],
+      "classSpecific": {
+        "invocationsKnown": 3,
+        "mysticArcanumLevel6": 0,
+        "mysticArcanumLevel7": 0,
+        "mysticArcanumLevel8": 0,
+        "mysticArcanumLevel9": 0
+      }
+    },
+    {
+      "level": 6,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 3,
+      "spellcasting": {
+        "cantrips": 3,
+        "slots": [
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "features": [],
+      "featureChoices": [],
+      "classSpecific": {
+        "invocationsKnown": 4,
+        "mysticArcanumLevel6": 0,
+        "mysticArcanumLevel7": 0,
+        "mysticArcanumLevel8": 0,
+        "mysticArcanumLevel9": 0
+      }
+    },
+    {
+      "level": 7,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 3,
+      "spellcasting": {
+        "cantrips": 3,
+        "slots": [
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "features": [],
+      "featureChoices": [
+        {
+          "name": "Additional Eldritch Invocation",
+          "url": "/features/choose-additional-eldritch-invocation-2"
+        }
+      ],
+      "classSpecific": {
+        "invocationsKnown": 4,
+        "mysticArcanumLevel6": 0,
+        "mysticArcanumLevel7": 0,
+        "mysticArcanumLevel8": 0,
+        "mysticArcanumLevel9": 0
+      }
+    },
+    {
+      "level": 8,
+      "abilityScoreIncrease": true,
+      "proficiencyBonus": 3,
+      "spellcasting": {
+        "cantrips": 3,
+        "slots": [
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "features": [],
+      "featureChoices": [],
+      "classSpecific": {
+        "invocationsKnown": 4,
+        "mysticArcanumLevel6": 0,
+        "mysticArcanumLevel7": 0,
+        "mysticArcanumLevel8": 0,
+        "mysticArcanumLevel9": 0
+      }
+    },
+    {
+      "level": 9,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 4,
+      "spellcasting": {
+        "cantrips": 3,
+        "slots": [
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "features": [],
+      "featureChoices": [
+        {
+          "name": "Additional Eldritch Invocation",
+          "url": "/features/choose-additional-eldritch-invocation-3"
+        }
+      ],
+      "classSpecific": {
+        "invocationsKnown": 5,
+        "mysticArcanumLevel6": 0,
+        "mysticArcanumLevel7": 0,
+        "mysticArcanumLevel8": 0,
+        "mysticArcanumLevel9": 0
+      }
+    },
+    {
+      "level": 10,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 4,
+      "spellcasting": {
+        "cantrips": 4,
+        "slots": [
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "features": [],
+      "featureChoices": [],
+      "classSpecific": {
+        "invocationsKnown": 5,
+        "mysticArcanumLevel6": 0,
+        "mysticArcanumLevel7": 0,
+        "mysticArcanumLevel8": 0,
+        "mysticArcanumLevel9": 0
+      }
+    },
+    {
+      "level": 11,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 4,
+      "spellcasting": {
+        "cantrips": 4,
+        "slots": [
+          0,
+          0,
+          0,
+          0,
+          3,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "features": [
+        {
+          "name": "Mystic Arcanum (6th Level)",
+          "url": "/features/mystic-arcanum-6th-level"
+        }
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "invocationsKnown": 5,
+        "mysticArcanumLevel6": 1,
+        "mysticArcanumLevel7": 0,
+        "mysticArcanumLevel8": 0,
+        "mysticArcanumLevel9": 0
+      }
+    },
+    {
+      "level": 12,
+      "abilityScoreIncrease": true,
+      "proficiencyBonus": 4,
+      "spellcasting": {
+        "cantrips": 4,
+        "slots": [
+          0,
+          0,
+          0,
+          0,
+          3,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "features": [],
+      "featureChoices": [
+        {
+          "name": "Additional Eldritch Invocation",
+          "url": "/features/choose-additional-eldritch-invocation-4"
+        }
+      ],
+      "classSpecific": {
+        "invocationsKnown": 6,
+        "mysticArcanumLevel6": 1,
+        "mysticArcanumLevel7": 0,
+        "mysticArcanumLevel8": 0,
+        "mysticArcanumLevel9": 0
+      }
+    },
+    {
+      "level": 13,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 5,
+      "spellcasting": {
+        "cantrips": 4,
+        "slots": [
+          0,
+          0,
+          0,
+          0,
+          3,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "features": [
+        {
+          "name": "Mystic Arcanum (7th Level)",
+          "url": "/features/mystic-arcanum-7th-level"
+        }
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "invocationsKnown": 6,
+        "mysticArcanumLevel6": 1,
+        "mysticArcanumLevel7": 1,
+        "mysticArcanumLevel8": 0,
+        "mysticArcanumLevel9": 0
+      }
+    },
+    {
+      "level": 14,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 5,
+      "spellcasting": {
+        "cantrips": 4,
+        "slots": [
+          0,
+          0,
+          0,
+          0,
+          3,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "features": [],
+      "featureChoices": [],
+      "classSpecific": {
+        "invocationsKnown": 6,
+        "mysticArcanumLevel6": 1,
+        "mysticArcanumLevel7": 1,
+        "mysticArcanumLevel8": 0,
+        "mysticArcanumLevel9": 0
+      }
+    },
+    {
+      "level": 15,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 5,
+      "spellcasting": {
+        "cantrips": 4,
+        "slots": [
+          0,
+          0,
+          0,
+          0,
+          3,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "features": [
+        {
+          "name": "Mystic Arcanum (8th Level)",
+          "url": "/features/mystic-arcanum-8th-level"
+        }
+      ],
+      "featureChoices": [
+        {
+          "name": "Additional Eldritch Invocation",
+          "url": "/features/choose-additional-eldritch-invocation-5"
+        }
+      ],
+      "classSpecific": {
+        "invocationsKnown": 7,
+        "mysticArcanumLevel6": 1,
+        "mysticArcanumLevel7": 1,
+        "mysticArcanumLevel8": 1,
+        "mysticArcanumLevel9": 0
+      }
+    },
+    {
+      "level": 16,
+      "abilityScoreIncrease": true,
+      "proficiencyBonus": 5,
+      "spellcasting": {
+        "cantrips": 4,
+        "slots": [
+          0,
+          0,
+          0,
+          0,
+          3,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "features": [],
+      "featureChoices": [],
+      "classSpecific": {
+        "invocationsKnown": 7,
+        "mysticArcanumLevel6": 1,
+        "mysticArcanumLevel7": 1,
+        "mysticArcanumLevel8": 1,
+        "mysticArcanumLevel9": 0
+      }
+    },
+    {
+      "level": 17,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 6,
+      "spellcasting": {
+        "cantrips": 4,
+        "slots": [
+          0,
+          0,
+          0,
+          0,
+          4,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "features": [
+        {
+          "name": "Mystic Arcanum (9th Level)",
+          "url": "/features/mystic-arcanum-9th-level"
+        }
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "invocationsKnown": 7,
+        "mysticArcanumLevel6": 1,
+        "mysticArcanumLevel7": 1,
+        "mysticArcanumLevel8": 1,
+        "mysticArcanumLevel9": 1
+      }
+    },
+    {
+      "level": 18,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 6,
+      "spellcasting": {
+        "cantrips": 4,
+        "slots": [
+          0,
+          0,
+          0,
+          0,
+          4,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "features": [],
+      "featureChoices": [
+        {
+          "name": "Additional Eldritch Invocation",
+          "url": "/features/choose-additional-eldritch-invocation-6"
+        }
+      ],
+      "classSpecific": {
+        "invocationsKnown": 8,
+        "mysticArcanumLevel6": 1,
+        "mysticArcanumLevel7": 1,
+        "mysticArcanumLevel8": 1,
+        "mysticArcanumLevel9": 1
+      }
+    },
+    {
+      "level": 19,
+      "abilityScoreIncrease": true,
+      "proficiencyBonus": 6,
+      "spellcasting": {
+        "cantrips": 4,
+        "slots": [
+          0,
+          0,
+          0,
+          0,
+          4,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "features": [],
+      "featureChoices": [],
+      "classSpecific": {
+        "invocationsKnown": 8,
+        "mysticArcanumLevel6": 1,
+        "mysticArcanumLevel7": 1,
+        "mysticArcanumLevel8": 1,
+        "mysticArcanumLevel9": 1
+      }
+    },
+    {
+      "level": 20,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 6,
+      "spellcasting": {
+        "cantrips": 4,
+        "slots": [
+          0,
+          0,
+          0,
+          0,
+          4,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "features": [
+        {
+          "name": "Eldritch Master",
+          "url": "/features/eldritch-master"
+        }
+      ],
+      "featureChoices": [
+        {
+          "name": "Additional Eldritch Invocation",
+          "url": "/features/choose-additional-eldritch-invocation-7"
+        }
+      ],
+      "classSpecific": {
+        "invocationsKnown": 8,
+        "mysticArcanumLevel6": 1,
+        "mysticArcanumLevel7": 1,
+        "mysticArcanumLevel8": 1,
+        "mysticArcanumLevel9": 1
+      }
+    }
+  ],
+  "proficiencies": {
+    "savingThrows": [
+      {
+        "name": "Wisdom",
+        "url": "/ability-scores/wisdom"
+      },
+      {
+        "name": "Charisma",
+        "url": "/ability-scores/charisma"
+      }
+    ],
+    "equipment": [
+      {
+        "name": "Light Armor",
+        "url": "/proficiencies/light-armor"
+      },
+      {
+        "name": "Simple Weapons",
+        "url": "/proficiencies/simple-weapons"
+      }
+    ],
+    "options": [
+      {
+        "type": "SKILL",
+        "amount": 2,
+        "choices": [
+          {
+            "name": "Arcana",
+            "url": "/skills/arcana"
+          },
+          {
+            "name": "Deception",
+            "url": "/skills/deception"
+          },
+          {
+            "name": "History",
+            "url": "/skills/history"
+          },
+          {
+            "name": "Intimidation",
+            "url": "/skills/intimidation"
+          },
+          {
+            "name": "Investigation",
+            "url": "/skills/investigation"
+          },
+          {
+            "name": "Nature",
+            "url": "/skills/nature"
+          },
+          {
+            "name": "Religion",
+            "url": "/skills/religion"
+          }
+        ]
+      }
+    ]
+  },
+  "spellcasting": {
+    "ability": {
+      "name": "Charisma",
+      "url": "/ability-scores/charisma"
+    },
+    "unlockLevel": 1,
+    "features": [
+      {
+        "title": "Cantrips",
+        "description": "You know two cantrips of your choice from the warlock spell list. You learn additional warlock cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Warlock table."
+      },
+      {
+        "title": "Spell Slots",
+        "description": "The Warlock table shows how many spell slots you have. The table also shows what the level of those slots is; all of your spell slots are the same level. To cast one of your warlock spells of 1st level or higher, you must expend a spell slot. You regain all expended spell slots when you finish a short or long rest.\\nFor example, when you are 5th level, you have two 3rd-level spell slots. To cast the 1st-level spell thunderwave, you must spend one of those slots, and you cast it as a 3rd-level spell."
+      },
+      {
+        "title": "Spells Known of 1st Level and Higher",
+        "description": "At 1st level, you know two 1st-level spells of your choice from the warlock spell list.\\nThe Spells Known column of the Warlock table shows when you learn more warlock spells of your choice of 1st level and higher. \\nA spell you choose must be of a level no higher than what's shown in the table's Slot Level column for your level. When you reach 6th level, for example, you learn a new warlock spell, which can be 1st, 2nd, or 3rd level.\\nAdditionally, when you gain a level in this class, you can choose one of the warlock spells you know and replace it with another spell from the warlock spell list, which also must be of a level for which you have spell slots."
+      },
+      {
+        "title": "Spellcasting Ability",
+        "description": "Charisma is your spellcasting ability for your warlock spells, so you use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a warlock spell you cast and when making an attack roll with one."
+      },
+      {
+        "title": "Spellcasting Focus",
+        "description": "You can use an arcane focus as a spellcasting focus for your warlock spells."
+      }
+    ]
+  },
+  "equipment": {
+    "starting": [
+      {
+        "name": "Dagger",
+        "url": "/items/dagger",
+        "amount": 2
+      },
+      {
+        "name": "Leather",
+        "url": "/items/leather",
+        "amount": 1
+      }
+    ],
+    "options": [
+      {
+        "amount": 1,
+        "choices": [
+          {
+            "type": "CATEGORY",
+            "name": "Simple Weapons",
+            "url": "/equipment-categories/simple-weapons",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "amount": 1,
+        "choices": [
+          {
+            "type": "ITEM",
+            "name": "Component Pouch",
+            "url": "/items/component-pouch",
+            "amount": 1
+          },
+          {
+            "type": "CATEGORY",
+            "name": "Arcane Foci",
+            "url": "/equipment-categories/arcane-foci",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "amount": 1,
+        "choices": [
+          {
+            "type": "EQUIPMENT_PACK",
+            "name": "Scholar's Pack",
+            "url": "/equipment-packs/scholars-pack",
+            "amount": 1
+          },
+          {
+            "type": "EQUIPMENT_PACK",
+            "name": "Dungeoneer's Pack",
+            "url": "/equipment-packs/dungeoneers-pack",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "amount": 1,
+        "choices": []
+      }
+    ]
+  }
+}

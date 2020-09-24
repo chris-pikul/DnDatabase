@@ -1,0 +1,126 @@
+{
+  "type": "MONSTER",
+  "id": "goblin",
+  "name": "Goblin",
+  "url": "/monsters/goblin",
+  "source": "MM",
+  "description": "",
+  "challengeRating": 0.25,
+  "size": "SMALL",
+  "kind": "HUMANOID",
+  "subKind": "GOBLINOID",
+  "alignment": "NEUTRAL_EVIL",
+  "maxHP": 7,
+  "hitDice": "2d6",
+  "armorClass": 15,
+  "proficiencyBonus": 2,
+  "speed": {
+    "walk": 30,
+    "swim": 0,
+    "fly": 0
+  },
+  "senses": {
+    "passivePerception": 9,
+    "passiveInsight": 10,
+    "darkvision": 60,
+    "blindsight": 0,
+    "truesight": 0,
+    "tremorsense": 0
+  },
+  "abilityScores": {
+    "strength": {
+      "score": 8,
+      "modifier": -1,
+      "savingThrow": -1
+    },
+    "dexterity": {
+      "score": 14,
+      "modifier": 2,
+      "savingThrow": 2
+    },
+    "constitution": {
+      "score": 10,
+      "modifier": 0,
+      "savingThrow": 0
+    },
+    "intelligence": {
+      "score": 10,
+      "modifier": 0,
+      "savingThrow": 0
+    },
+    "wisdom": {
+      "score": 8,
+      "modifier": -1,
+      "savingThrow": -1
+    },
+    "charisma": {
+      "score": 8,
+      "modifier": -1,
+      "savingThrow": -1
+    }
+  },
+  "proficiencies": [
+    {
+      "name": "Stealth",
+      "url": "/skills/stealth",
+      "amount": 6
+    }
+  ],
+  "resistances": [],
+  "immunities": {
+    "damageTypes": [],
+    "conditions": []
+  },
+  "vulnerabilities": [],
+  "languages": [
+    "Common",
+    "Goblin"
+  ],
+  "actions": [
+    {
+      "name": "Scimitar",
+      "description": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) slashing damage.",
+      "attackBonus": 4,
+      "damage": [
+        {
+          "type": {
+            "name": "Slashing",
+            "url": "/damage-types/slashing"
+          },
+          "amount": "1d6+2",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Shortbow",
+      "description": "Ranged Weapon Attack: +4 to hit, range 80/320 ft., one target. Hit: 5 (1d6 + 2) piercing damage.",
+      "attackBonus": 4,
+      "damage": [
+        {
+          "type": {
+            "name": "Piercing",
+            "url": "/damage-types/piercing"
+          },
+          "amount": "1d6+2",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    }
+  ],
+  "legendaryActions": [],
+  "specialAbilities": [
+    {
+      "name": "Nimble Escape",
+      "description": "The goblin can take the Disengage or Hide action as a bonus action on each of its turns.",
+      "usage": null,
+      "spellcasting": null
+    }
+  ]
+}

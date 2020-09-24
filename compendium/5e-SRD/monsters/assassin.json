@@ -1,0 +1,192 @@
+{
+  "type": "MONSTER",
+  "id": "assassin",
+  "name": "Assassin",
+  "url": "/monsters/assassin",
+  "source": "MM",
+  "description": "",
+  "challengeRating": 8,
+  "size": "MEDIUM",
+  "kind": "HUMANOID",
+  "subKind": "ANY_RACE",
+  "alignment": "ANY_NON_GOOD_ALIGNMENT",
+  "maxHP": 78,
+  "hitDice": "12d8",
+  "armorClass": 15,
+  "proficiencyBonus": 3,
+  "speed": {
+    "walk": 30,
+    "swim": 0,
+    "fly": 0
+  },
+  "senses": {
+    "passivePerception": 13,
+    "passiveInsight": 10,
+    "darkvision": 0,
+    "blindsight": 0,
+    "truesight": 0,
+    "tremorsense": 0
+  },
+  "abilityScores": {
+    "strength": {
+      "score": 11,
+      "modifier": 0,
+      "savingThrow": 0
+    },
+    "dexterity": {
+      "score": 16,
+      "modifier": 3,
+      "savingThrow": 9
+    },
+    "constitution": {
+      "score": 14,
+      "modifier": 2,
+      "savingThrow": 2
+    },
+    "intelligence": {
+      "score": 13,
+      "modifier": 1,
+      "savingThrow": 5
+    },
+    "wisdom": {
+      "score": 11,
+      "modifier": 0,
+      "savingThrow": 0
+    },
+    "charisma": {
+      "score": 10,
+      "modifier": 0,
+      "savingThrow": 0
+    }
+  },
+  "proficiencies": [
+    {
+      "name": "Dexterity",
+      "url": "/ability-scores/dexterity",
+      "amount": 6
+    },
+    {
+      "name": "Intelligence",
+      "url": "/ability-scores/intelligence",
+      "amount": 4
+    },
+    {
+      "name": "Acrobatics",
+      "url": "/skills/acrobatics",
+      "amount": 6
+    },
+    {
+      "name": "Deception",
+      "url": "/skills/deception",
+      "amount": 3
+    },
+    {
+      "name": "Perception",
+      "url": "/skills/perception",
+      "amount": 3
+    },
+    {
+      "name": "Stealth",
+      "url": "/skills/stealth",
+      "amount": 9
+    }
+  ],
+  "resistances": [
+    {
+      "name": "Poison",
+      "url": "/damage-types/poison"
+    }
+  ],
+  "immunities": {
+    "damageTypes": [],
+    "conditions": []
+  },
+  "vulnerabilities": [],
+  "languages": [
+    "Thieves' Cant Plus Any Two Languages"
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "description": "The assassin makes two shortsword attacks.",
+      "attackBonus": 0,
+      "damage": null,
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Shortsword",
+      "description": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing damage, and the target must make a DC 15 Constitution saving throw, taking 24 (7d6) poison damage on a failed save, or half as much damage on a successful one.",
+      "attackBonus": 6,
+      "damage": [
+        {
+          "type": {
+            "name": "Piercing",
+            "url": "/damage-types/piercing"
+          },
+          "amount": "1d6+3",
+          "options": null
+        },
+        {
+          "type": {
+            "name": "Poison",
+            "url": "/damage-types/poison"
+          },
+          "amount": "7d6",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Light Crossbow",
+      "description": "Ranged Weapon Attack: +6 to hit, range 80/320 ft., one target. Hit: 7 (1d8 + 3) piercing damage, and the target must make a DC 15 Constitution saving throw, taking 24 (7d6) poison damage on a failed save, or half as much damage on a successful one.",
+      "attackBonus": 6,
+      "damage": [
+        {
+          "type": {
+            "name": "Piercing",
+            "url": "/damage-types/piercing"
+          },
+          "amount": "1d8+3",
+          "options": null
+        },
+        {
+          "type": {
+            "name": "Poison",
+            "url": "/damage-types/poison"
+          },
+          "amount": "7d6",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    }
+  ],
+  "legendaryActions": [],
+  "specialAbilities": [
+    {
+      "name": "Assassinate",
+      "description": "During its first turn, the assassin has advantage on attack rolls against any creature that hasn't taken a turn. Any hit the assassin scores against a surprised creature is a critical hit.",
+      "usage": null,
+      "spellcasting": null
+    },
+    {
+      "name": "Evasion",
+      "description": "If the assassin is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, the assassin instead takes no damage if it succeeds on the saving throw, and only half damage if it fails.",
+      "usage": null,
+      "spellcasting": null
+    },
+    {
+      "name": "Sneak Attack (1/turn)",
+      "description": "The assassin deals an extra 13 (4d6) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 ft. of an ally of the assassin that isn't incapacitated and the assassin doesn't have disadvantage on the attack roll.",
+      "usage": null,
+      "spellcasting": null
+    }
+  ]
+}

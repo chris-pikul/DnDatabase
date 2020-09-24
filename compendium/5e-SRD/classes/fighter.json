@@ -1,0 +1,461 @@
+{
+  "id": "fighter",
+  "url": "/classes/fighter",
+  "name": "Fighter",
+  "source": "PHB",
+  "hitDie": 10,
+  "levels": [
+    {
+      "level": 1,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 2,
+      "spellcasting": null,
+      "features": [
+        {
+          "name": "Second Wind",
+          "url": "/features/second-wind"
+        }
+      ],
+      "featureChoices": [
+        {
+          "name": "Fighting Style",
+          "url": "/features/fighter-choose-fighting-style"
+        }
+      ],
+      "classSpecific": {
+        "actionSurges": 0,
+        "indomitableUses": 0,
+        "extraAttacks": 0
+      }
+    },
+    {
+      "level": 2,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 2,
+      "spellcasting": null,
+      "features": [
+        {
+          "name": "Action Surge (1 Use)",
+          "url": "/features/action-surge-1-use"
+        }
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "actionSurges": 1,
+        "indomitableUses": 0,
+        "extraAttacks": 0
+      }
+    },
+    {
+      "level": 3,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 2,
+      "spellcasting": null,
+      "features": [
+        {
+          "name": "Martial Archetype",
+          "url": "/features/martial-archetype"
+        }
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "actionSurges": 1,
+        "indomitableUses": 0,
+        "extraAttacks": 0
+      }
+    },
+    {
+      "level": 4,
+      "abilityScoreIncrease": true,
+      "proficiencyBonus": 2,
+      "spellcasting": null,
+      "features": [],
+      "featureChoices": [],
+      "classSpecific": {
+        "actionSurges": 1,
+        "indomitableUses": 0,
+        "extraAttacks": 0
+      }
+    },
+    {
+      "level": 5,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 3,
+      "spellcasting": null,
+      "features": [
+        {
+          "name": "Extra Attack (1)",
+          "url": "/features/extra-attack-1"
+        }
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "actionSurges": 1,
+        "indomitableUses": 0,
+        "extraAttacks": 1
+      }
+    },
+    {
+      "level": 6,
+      "abilityScoreIncrease": true,
+      "proficiencyBonus": 3,
+      "spellcasting": null,
+      "features": [],
+      "featureChoices": [],
+      "classSpecific": {
+        "actionSurges": 1,
+        "indomitableUses": 0,
+        "extraAttacks": 1
+      }
+    },
+    {
+      "level": 7,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 3,
+      "spellcasting": null,
+      "features": [],
+      "featureChoices": [],
+      "classSpecific": {
+        "actionSurges": 1,
+        "indomitableUses": 0,
+        "extraAttacks": 1
+      }
+    },
+    {
+      "level": 8,
+      "abilityScoreIncrease": true,
+      "proficiencyBonus": 3,
+      "spellcasting": null,
+      "features": [],
+      "featureChoices": [],
+      "classSpecific": {
+        "actionSurges": 1,
+        "indomitableUses": 0,
+        "extraAttacks": 1
+      }
+    },
+    {
+      "level": 9,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 4,
+      "spellcasting": null,
+      "features": [
+        {
+          "name": "Indomitable (1 Use)",
+          "url": "/features/indomitable-1-use"
+        }
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "actionSurges": 1,
+        "indomitableUses": 1,
+        "extraAttacks": 1
+      }
+    },
+    {
+      "level": 10,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 4,
+      "spellcasting": null,
+      "features": [],
+      "featureChoices": [],
+      "classSpecific": {
+        "actionSurges": 1,
+        "indomitableUses": 1,
+        "extraAttacks": 1
+      }
+    },
+    {
+      "level": 11,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 4,
+      "spellcasting": null,
+      "features": [
+        {
+          "name": "Extra Attack (2)",
+          "url": "/features/extra-attack-2"
+        }
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "actionSurges": 1,
+        "indomitableUses": 1,
+        "extraAttacks": 2
+      }
+    },
+    {
+      "level": 12,
+      "abilityScoreIncrease": true,
+      "proficiencyBonus": 4,
+      "spellcasting": null,
+      "features": [],
+      "featureChoices": [],
+      "classSpecific": {
+        "actionSurges": 1,
+        "indomitableUses": 1,
+        "extraAttacks": 2
+      }
+    },
+    {
+      "level": 13,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 5,
+      "spellcasting": null,
+      "features": [
+        {
+          "name": "Indomitable (2 Uses)",
+          "url": "/features/indomitable-2-uses"
+        }
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "actionSurges": 1,
+        "indomitableUses": 2,
+        "extraAttacks": 2
+      }
+    },
+    {
+      "level": 14,
+      "abilityScoreIncrease": true,
+      "proficiencyBonus": 5,
+      "spellcasting": null,
+      "features": [],
+      "featureChoices": [],
+      "classSpecific": {
+        "actionSurges": 1,
+        "indomitableUses": 2,
+        "extraAttacks": 2
+      }
+    },
+    {
+      "level": 15,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 5,
+      "spellcasting": null,
+      "features": [],
+      "featureChoices": [],
+      "classSpecific": {
+        "actionSurges": 1,
+        "indomitableUses": 2,
+        "extraAttacks": 2
+      }
+    },
+    {
+      "level": 16,
+      "abilityScoreIncrease": true,
+      "proficiencyBonus": 5,
+      "spellcasting": null,
+      "features": [],
+      "featureChoices": [],
+      "classSpecific": {
+        "actionSurges": 1,
+        "indomitableUses": 2,
+        "extraAttacks": 2
+      }
+    },
+    {
+      "level": 17,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 6,
+      "spellcasting": null,
+      "features": [
+        {
+          "name": "Action Surge (2 Uses)",
+          "url": "/features/action-surge-2-uses"
+        },
+        {
+          "name": "Indomitable (3 Uses)",
+          "url": "/features/indomitable-3-uses"
+        }
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "actionSurges": 2,
+        "indomitableUses": 3,
+        "extraAttacks": 2
+      }
+    },
+    {
+      "level": 18,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 6,
+      "spellcasting": null,
+      "features": [],
+      "featureChoices": [],
+      "classSpecific": {
+        "actionSurges": 2,
+        "indomitableUses": 3,
+        "extraAttacks": 2
+      }
+    },
+    {
+      "level": 19,
+      "abilityScoreIncrease": true,
+      "proficiencyBonus": 6,
+      "spellcasting": null,
+      "features": [],
+      "featureChoices": [],
+      "classSpecific": {
+        "actionSurges": 2,
+        "indomitableUses": 3,
+        "extraAttacks": 2
+      }
+    },
+    {
+      "level": 20,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 6,
+      "spellcasting": null,
+      "features": [
+        {
+          "name": "Extra Attack (3)",
+          "url": "/features/extra-attack-3"
+        }
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "actionSurges": 2,
+        "indomitableUses": 3,
+        "extraAttacks": 3
+      }
+    }
+  ],
+  "proficiencies": {
+    "savingThrows": [
+      {
+        "name": "Strength",
+        "url": "/ability-scores/strength"
+      },
+      {
+        "name": "Constitution",
+        "url": "/ability-scores/constitution"
+      }
+    ],
+    "equipment": [
+      {
+        "name": "Light Armor",
+        "url": "/proficiencies/light-armor"
+      },
+      {
+        "name": "Medium Armor",
+        "url": "/proficiencies/medium-armor"
+      },
+      {
+        "name": "Heavy Armor",
+        "url": "/proficiencies/heavy-armor"
+      },
+      {
+        "name": "Shields",
+        "url": "/proficiencies/shields"
+      },
+      {
+        "name": "Shields",
+        "url": "/proficiencies/shields"
+      },
+      {
+        "name": "Simple Weapons",
+        "url": "/proficiencies/simple-weapons"
+      },
+      {
+        "name": "Martial Weapons",
+        "url": "/proficiencies/martial-weapons"
+      }
+    ],
+    "options": [
+      {
+        "type": "SKILL",
+        "amount": 2,
+        "choices": [
+          {
+            "name": "Acrobatics",
+            "url": "/skills/acrobatics"
+          },
+          {
+            "name": "Animal Handling",
+            "url": "/skills/animal-handling"
+          },
+          {
+            "name": "Athletics",
+            "url": "/skills/athletics"
+          },
+          {
+            "name": "History",
+            "url": "/skills/history"
+          },
+          {
+            "name": "Insight",
+            "url": "/skills/insight"
+          },
+          {
+            "name": "Intimidation",
+            "url": "/skills/intimidation"
+          },
+          {
+            "name": "Perception",
+            "url": "/skills/perception"
+          },
+          {
+            "name": "Survival",
+            "url": "/skills/survival"
+          }
+        ]
+      }
+    ]
+  },
+  "spellcasting": null,
+  "equipment": {
+    "starting": [],
+    "options": [
+      {
+        "amount": 1,
+        "choices": [
+          {
+            "type": "ITEM",
+            "name": "Chain Mail",
+            "url": "/items/chain-mail",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "amount": 1,
+        "choices": [
+          {
+            "type": "CATEGORY",
+            "name": "Martial Weapons",
+            "url": "/equipment-categories/martial-weapons",
+            "amount": 2
+          }
+        ]
+      },
+      {
+        "amount": 1,
+        "choices": [
+          {
+            "type": "ITEM",
+            "name": "Handaxe",
+            "url": "/items/handaxe",
+            "amount": 2
+          }
+        ]
+      },
+      {
+        "amount": 1,
+        "choices": [
+          {
+            "type": "EQUIPMENT_PACK",
+            "name": "Dungeoneer's Pack",
+            "url": "/equipment-packs/dungeoneers-pack",
+            "amount": 1
+          },
+          {
+            "type": "EQUIPMENT_PACK",
+            "name": "Explorer's Pack",
+            "url": "/equipment-packs/explorers-pack",
+            "amount": 1
+          }
+        ]
+      }
+    ]
+  }
+}

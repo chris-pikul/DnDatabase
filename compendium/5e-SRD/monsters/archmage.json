@@ -1,0 +1,293 @@
+{
+  "type": "MONSTER",
+  "id": "archmage",
+  "name": "Archmage",
+  "url": "/monsters/archmage",
+  "source": "MM",
+  "description": "",
+  "challengeRating": 12,
+  "size": "MEDIUM",
+  "kind": "HUMANOID",
+  "subKind": "ANY_RACE",
+  "alignment": "ANY_ALIGNMENT",
+  "maxHP": 99,
+  "hitDice": "18d8",
+  "armorClass": 12,
+  "proficiencyBonus": 4,
+  "speed": {
+    "walk": 30,
+    "swim": 0,
+    "fly": 0
+  },
+  "senses": {
+    "passivePerception": 12,
+    "passiveInsight": 10,
+    "darkvision": 0,
+    "blindsight": 0,
+    "truesight": 0,
+    "tremorsense": 0
+  },
+  "abilityScores": {
+    "strength": {
+      "score": 10,
+      "modifier": 0,
+      "savingThrow": 0
+    },
+    "dexterity": {
+      "score": 14,
+      "modifier": 2,
+      "savingThrow": 2
+    },
+    "constitution": {
+      "score": 12,
+      "modifier": 1,
+      "savingThrow": 1
+    },
+    "intelligence": {
+      "score": 20,
+      "modifier": 5,
+      "savingThrow": 14
+    },
+    "wisdom": {
+      "score": 15,
+      "modifier": 2,
+      "savingThrow": 8
+    },
+    "charisma": {
+      "score": 16,
+      "modifier": 3,
+      "savingThrow": 3
+    }
+  },
+  "proficiencies": [
+    {
+      "name": "Intelligence",
+      "url": "/ability-scores/intelligence",
+      "amount": 9
+    },
+    {
+      "name": "Wisdom",
+      "url": "/ability-scores/wisdom",
+      "amount": 6
+    },
+    {
+      "name": "Arcana",
+      "url": "/skills/arcana",
+      "amount": 13
+    },
+    {
+      "name": "History",
+      "url": "/skills/history",
+      "amount": 13
+    }
+  ],
+  "resistances": [
+    {
+      "name": "Damage From Spells",
+      "url": "/damage-types/damage-from-spells"
+    },
+    {
+      "name": "Non Magical Bludgeoning, Piercing, And Slashing (from Stoneskin)",
+      "url": "/damage-types/non-magical-bludgeoning--piercing--and-slashing--from-stoneskin-"
+    }
+  ],
+  "immunities": {
+    "damageTypes": [],
+    "conditions": []
+  },
+  "vulnerabilities": [],
+  "languages": [
+    "Any Six Languages"
+  ],
+  "actions": [
+    {
+      "name": "Dagger",
+      "description": "Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.",
+      "attackBonus": 6,
+      "damage": [
+        {
+          "type": {
+            "name": "Piercing",
+            "url": "/damage-types/piercing"
+          },
+          "amount": "1d4+2",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    }
+  ],
+  "legendaryActions": [],
+  "specialAbilities": [
+    {
+      "name": "Magic Resistance",
+      "description": "The archmage has advantage on saving throws against spells and other magical effects.",
+      "usage": null,
+      "spellcasting": null
+    },
+    {
+      "name": "Spellcasting",
+      "description": "The archmage is an 18th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 17, +9 to hit with spell attacks). The archmage can cast disguise self and invisibility at will and has the following wizard spells prepared:\n\n- Cantrips (at will): fire bolt, light, mage hand, prestidigitation, shocking grasp\n- 1st level (4 slots): detect magic, identify, mage armor*, magic missile\n- 2nd level (3 slots): detect thoughts, mirror image, misty step\n- 3rd level (3 slots): counterspell, fly, lightning bolt\n- 4th level (3 slots): banishment, fire shield, stoneskin*\n- 5th level (3 slots): cone of cold, scrying, wall of force\n- 6th level (1 slot): globe of invulnerability\n- 7th level (1 slot): teleport\n- 8th level (1 slot): mind blank*\n- 9th level (1 slot): time stop\n* The archmage casts these spells on itself before combat.",
+      "usage": null,
+      "spellcasting": {
+        "level": 18,
+        "ability": {
+          "name": "Intelligence",
+          "url": "/ability-scores/intelligence"
+        },
+        "saveDC": 17,
+        "attackBonus": 9,
+        "slots": [
+          4,
+          3,
+          3,
+          3,
+          3,
+          1,
+          1,
+          1,
+          1
+        ],
+        "spells": [
+          {
+            "name": "Disguise Self",
+            "url": "/spells/83",
+            "level": 0
+          },
+          {
+            "name": "Invisibility",
+            "url": "/spells/173",
+            "level": 0
+          },
+          {
+            "name": "Fire Bolt",
+            "url": "/spells/116",
+            "level": 0
+          },
+          {
+            "name": "Light",
+            "url": "/spells/180",
+            "level": 0
+          },
+          {
+            "name": "Mage Hand",
+            "url": "/spells/187",
+            "level": 0
+          },
+          {
+            "name": "Prestidigitation",
+            "url": "/spells/227",
+            "level": 0
+          },
+          {
+            "name": "Shocking Grasp",
+            "url": "/spells/264",
+            "level": 0
+          },
+          {
+            "name": "Detect Magic",
+            "url": "/spells/79",
+            "level": 1
+          },
+          {
+            "name": "Identify",
+            "url": "/spells/166",
+            "level": 1
+          },
+          {
+            "name": "Mage Armor",
+            "url": "/spells/186",
+            "level": 1
+          },
+          {
+            "name": "Magic Missile",
+            "url": "/spells/190",
+            "level": 1
+          },
+          {
+            "name": "Detect Thoughts",
+            "url": "/spells/81",
+            "level": 2
+          },
+          {
+            "name": "Mirror Image",
+            "url": "/spells/207",
+            "level": 2
+          },
+          {
+            "name": "Misty Step",
+            "url": "/spells/209",
+            "level": 2
+          },
+          {
+            "name": "Counterspell",
+            "url": "/spells/65",
+            "level": 3
+          },
+          {
+            "name": "Fly",
+            "url": "/spells/125",
+            "level": 3
+          },
+          {
+            "name": "Lightning Bolt",
+            "url": "/spells/181",
+            "level": 3
+          },
+          {
+            "name": "Banishment",
+            "url": "/spells/23",
+            "level": 4
+          },
+          {
+            "name": "Fire Shield",
+            "url": "/spells/117",
+            "level": 4
+          },
+          {
+            "name": "Stoneskin",
+            "url": "/spells/281",
+            "level": 4
+          },
+          {
+            "name": "Cone Of Cold",
+            "url": "/spells/51",
+            "level": 5
+          },
+          {
+            "name": "Scrying",
+            "url": "/spells/253",
+            "level": 5
+          },
+          {
+            "name": "Wall Of Force",
+            "url": "/spells/306",
+            "level": 5
+          },
+          {
+            "name": "Globe Of Invulnerability",
+            "url": "/spells/138",
+            "level": 6
+          },
+          {
+            "name": "Teleport",
+            "url": "/spells/289",
+            "level": 7
+          },
+          {
+            "name": "Mind Blank",
+            "url": "/spells/204",
+            "level": 8
+          },
+          {
+            "name": "Time Stop",
+            "url": "/spells/293",
+            "level": 9
+          }
+        ]
+      }
+    }
+  ]
+}

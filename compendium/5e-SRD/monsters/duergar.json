@@ -1,0 +1,159 @@
+{
+  "type": "MONSTER",
+  "id": "duergar",
+  "name": "Duergar",
+  "url": "/monsters/duergar",
+  "source": "MM",
+  "description": "",
+  "challengeRating": 1,
+  "size": "MEDIUM",
+  "kind": "HUMANOID",
+  "subKind": "DWARF",
+  "alignment": "LAWFUL_EVIL",
+  "maxHP": 26,
+  "hitDice": "4d8",
+  "armorClass": 16,
+  "proficiencyBonus": 2,
+  "speed": {
+    "walk": 25,
+    "swim": 0,
+    "fly": 0
+  },
+  "senses": {
+    "passivePerception": 10,
+    "passiveInsight": 10,
+    "darkvision": 120,
+    "blindsight": 0,
+    "truesight": 0,
+    "tremorsense": 0
+  },
+  "abilityScores": {
+    "strength": {
+      "score": 14,
+      "modifier": 2,
+      "savingThrow": 2
+    },
+    "dexterity": {
+      "score": 11,
+      "modifier": 0,
+      "savingThrow": 0
+    },
+    "constitution": {
+      "score": 14,
+      "modifier": 2,
+      "savingThrow": 2
+    },
+    "intelligence": {
+      "score": 11,
+      "modifier": 0,
+      "savingThrow": 0
+    },
+    "wisdom": {
+      "score": 10,
+      "modifier": 0,
+      "savingThrow": 0
+    },
+    "charisma": {
+      "score": 9,
+      "modifier": -1,
+      "savingThrow": -1
+    }
+  },
+  "proficiencies": [],
+  "resistances": [
+    {
+      "name": "Poison",
+      "url": "/damage-types/poison"
+    }
+  ],
+  "immunities": {
+    "damageTypes": [],
+    "conditions": []
+  },
+  "vulnerabilities": [],
+  "languages": [
+    "Dwarvish",
+    "Undercommon"
+  ],
+  "actions": [
+    {
+      "name": "Enlarge",
+      "description": "For 1 minute, the duergar magically increases in size, along with anything it is wearing or carrying. While enlarged, the duergar is Large, doubles its damage dice on Strength-based weapon attacks (included in the attacks), and makes Strength checks and Strength saving throws with advantage. If the duergar lacks the room to become Large, it attains the maximum size possible in the space available.",
+      "attackBonus": 0,
+      "damage": null,
+      "saveDC": null,
+      "usage": {
+        "type": "RECHARGE_AFTER_REST",
+        "amount": 0,
+        "dice": null,
+        "minRoll": 0
+      },
+      "options": null
+    },
+    {
+      "name": "War Pick",
+      "description": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) piercing damage, or 11 (2d8 + 2) piercing damage while enlarged.",
+      "attackBonus": 4,
+      "damage": [
+        {
+          "type": {
+            "name": "Piercing",
+            "url": "/damage-types/piercing"
+          },
+          "amount": "1d8+2",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Javelin",
+      "description": "Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 30/120 ft., one target. Hit: 5 (1d6 + 2) piercing damage, or 9 (2d6 + 2) piercing damage while enlarged.",
+      "attackBonus": 4,
+      "damage": [
+        {
+          "type": {
+            "name": "Bludgeoning",
+            "url": "/damage-types/bludgeoning"
+          },
+          "amount": "1d6+2",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Invisibility",
+      "description": "The duergar magically turns invisible until it attacks, casts a spell, or uses its Enlarge, or until its concentration is broken, up to 1 hour (as if concentrating on a spell). Any equipment the duergar wears or carries is invisible with it .",
+      "attackBonus": 0,
+      "damage": null,
+      "saveDC": null,
+      "usage": {
+        "type": "RECHARGE_AFTER_REST",
+        "amount": 0,
+        "dice": null,
+        "minRoll": 0
+      },
+      "options": null
+    }
+  ],
+  "legendaryActions": [],
+  "specialAbilities": [
+    {
+      "name": "Duergar Resilience",
+      "description": "The duergar has advantage on saving throws against poison, spells, and illusions, as well as to resist being charmed or paralyzed.",
+      "usage": null,
+      "spellcasting": null
+    },
+    {
+      "name": "Sunlight Sensitivity",
+      "description": "While in sunlight, the duergar has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.",
+      "usage": null,
+      "spellcasting": null
+    }
+  ]
+}

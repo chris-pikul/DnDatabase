@@ -1,0 +1,201 @@
+{
+  "type": "MONSTER",
+  "id": "water-elemental",
+  "name": "Water Elemental",
+  "url": "/monsters/water-elemental",
+  "source": "MM",
+  "description": "",
+  "challengeRating": 5,
+  "size": "LARGE",
+  "kind": "ELEMENTAL",
+  "subKind": null,
+  "alignment": "NEUTRAL",
+  "maxHP": 114,
+  "hitDice": "12d10",
+  "armorClass": 14,
+  "proficiencyBonus": 3,
+  "speed": {
+    "walk": 30,
+    "swim": 90,
+    "fly": 0
+  },
+  "senses": {
+    "passivePerception": 10,
+    "passiveInsight": 10,
+    "darkvision": 60,
+    "blindsight": 0,
+    "truesight": 0,
+    "tremorsense": 0
+  },
+  "abilityScores": {
+    "strength": {
+      "score": 18,
+      "modifier": 4,
+      "savingThrow": 4
+    },
+    "dexterity": {
+      "score": 14,
+      "modifier": 2,
+      "savingThrow": 2
+    },
+    "constitution": {
+      "score": 18,
+      "modifier": 4,
+      "savingThrow": 4
+    },
+    "intelligence": {
+      "score": 5,
+      "modifier": -3,
+      "savingThrow": -3
+    },
+    "wisdom": {
+      "score": 10,
+      "modifier": 0,
+      "savingThrow": 0
+    },
+    "charisma": {
+      "score": 8,
+      "modifier": -1,
+      "savingThrow": -1
+    }
+  },
+  "proficiencies": [],
+  "resistances": [
+    {
+      "name": "Acid",
+      "url": "/damage-types/acid"
+    },
+    {
+      "name": "Bludgeoning",
+      "url": "/damage-types/bludgeoning"
+    },
+    {
+      "name": "Piercing",
+      "url": "/damage-types/piercing"
+    },
+    {
+      "name": "Slashing",
+      "url": "/damage-types/slashing"
+    }
+  ],
+  "immunities": {
+    "damageTypes": [
+      {
+        "name": "Poison",
+        "url": "/damage-types/poison"
+      }
+    ],
+    "conditions": [
+      {
+        "name": "Exhaustion",
+        "url": "/conditions/exhaustion"
+      },
+      {
+        "name": "Grappled",
+        "url": "/conditions/grappled"
+      },
+      {
+        "name": "Paralyzed",
+        "url": "/conditions/paralyzed"
+      },
+      {
+        "name": "Petrified",
+        "url": "/conditions/petrified"
+      },
+      {
+        "name": "Poisoned",
+        "url": "/conditions/poisoned"
+      },
+      {
+        "name": "Prone",
+        "url": "/conditions/prone"
+      },
+      {
+        "name": "Restrained",
+        "url": "/conditions/restrained"
+      },
+      {
+        "name": "Unconscious",
+        "url": "/conditions/unconscious"
+      }
+    ]
+  },
+  "vulnerabilities": [],
+  "languages": [
+    "Aquan"
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "description": "The elemental makes two slam attacks.",
+      "attackBonus": 0,
+      "damage": null,
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Slam",
+      "description": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) bludgeoning damage.",
+      "attackBonus": 7,
+      "damage": [
+        {
+          "type": {
+            "name": "Bludgeoning",
+            "url": "/damage-types/bludgeoning"
+          },
+          "amount": "2d8+4",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Whelm",
+      "description": "Each creature in the elemental's space must make a DC 15 Strength saving throw. On a failure, a target takes 13 (2d8 + 4) bludgeoning damage. If it is Large or smaller, it is also grappled (escape DC 14). Until this grapple ends, the target is restrained and unable to breathe unless it can breathe water. If the saving throw is successful, the target is pushed out of the elemental's space.\nThe elemental can grapple one Large creature or up to two Medium or smaller creatures at one time. At the start of each of the elemental's turns, each target grappled by it takes 13 (2d8 + 4) bludgeoning damage. A creature within 5 feet of the elemental can pull a creature or object out of it by taking an action to make a DC 14 Strength and succeeding.",
+      "attackBonus": 0,
+      "damage": [
+        {
+          "type": {
+            "name": "Bludgeoning",
+            "url": "/damage-types/bludgeoning"
+          },
+          "amount": "2d8+4",
+          "options": null
+        }
+      ],
+      "saveDC": {
+        "ability": {
+          "name": "Strength",
+          "url": "/ability-scores/strength"
+        },
+        "value": 15,
+        "onSuccess": "NONE"
+      },
+      "usage": {
+        "type": "RECHARGE_ON_ROLL",
+        "amount": 0,
+        "dice": "1d6",
+        "minRoll": 4
+      },
+      "options": null
+    }
+  ],
+  "legendaryActions": [],
+  "specialAbilities": [
+    {
+      "name": "Water Form",
+      "description": "The elemental can enter a hostile creature's space and stop there. It can move through a space as narrow as 1 inch wide without squeezing.",
+      "usage": null,
+      "spellcasting": null
+    },
+    {
+      "name": "Freeze",
+      "description": "If the elemental takes cold damage, it partially freezes; its speed is reduced by 20 ft. until the end of its next turn.",
+      "usage": null,
+      "spellcasting": null
+    }
+  ]
+}

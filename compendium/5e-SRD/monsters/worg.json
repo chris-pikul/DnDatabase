@@ -1,0 +1,108 @@
+{
+  "type": "MONSTER",
+  "id": "worg",
+  "name": "Worg",
+  "url": "/monsters/worg",
+  "source": "MM",
+  "description": "",
+  "challengeRating": 0.5,
+  "size": "LARGE",
+  "kind": "MONSTROSITY",
+  "subKind": null,
+  "alignment": "NEUTRAL_EVIL",
+  "maxHP": 26,
+  "hitDice": "4d10",
+  "armorClass": 13,
+  "proficiencyBonus": 2,
+  "speed": {
+    "walk": 50,
+    "swim": 0,
+    "fly": 0
+  },
+  "senses": {
+    "passivePerception": 14,
+    "passiveInsight": 10,
+    "darkvision": 60,
+    "blindsight": 0,
+    "truesight": 0,
+    "tremorsense": 0
+  },
+  "abilityScores": {
+    "strength": {
+      "score": 16,
+      "modifier": 3,
+      "savingThrow": 3
+    },
+    "dexterity": {
+      "score": 13,
+      "modifier": 1,
+      "savingThrow": 1
+    },
+    "constitution": {
+      "score": 13,
+      "modifier": 1,
+      "savingThrow": 1
+    },
+    "intelligence": {
+      "score": 7,
+      "modifier": -2,
+      "savingThrow": -2
+    },
+    "wisdom": {
+      "score": 11,
+      "modifier": 0,
+      "savingThrow": 0
+    },
+    "charisma": {
+      "score": 8,
+      "modifier": -1,
+      "savingThrow": -1
+    }
+  },
+  "proficiencies": [
+    {
+      "name": "Perception",
+      "url": "/skills/perception",
+      "amount": 4
+    }
+  ],
+  "resistances": [],
+  "immunities": {
+    "damageTypes": [],
+    "conditions": []
+  },
+  "vulnerabilities": [],
+  "languages": [
+    "Goblin",
+    "Worg"
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "description": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) piercing damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.",
+      "attackBonus": 5,
+      "damage": [
+        {
+          "type": {
+            "name": "Piercing",
+            "url": "/damage-types/piercing"
+          },
+          "amount": "2d6+3",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    }
+  ],
+  "legendaryActions": [],
+  "specialAbilities": [
+    {
+      "name": "Keen Hearing And Smell",
+      "description": "The worg has advantage on Wisdom (Perception) checks that rely on hearing or smell.",
+      "usage": null,
+      "spellcasting": null
+    }
+  ]
+}

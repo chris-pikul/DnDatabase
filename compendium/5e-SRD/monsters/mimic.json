@@ -1,0 +1,161 @@
+{
+  "type": "MONSTER",
+  "id": "mimic",
+  "name": "Mimic",
+  "url": "/monsters/mimic",
+  "source": "MM",
+  "description": "",
+  "challengeRating": 2,
+  "size": "MEDIUM",
+  "kind": "MONSTROSITY",
+  "subKind": "SHAPECHANGER",
+  "alignment": "NEUTRAL",
+  "maxHP": 58,
+  "hitDice": "9d8",
+  "armorClass": 12,
+  "proficiencyBonus": 2,
+  "speed": {
+    "walk": 15,
+    "swim": 0,
+    "fly": 0
+  },
+  "senses": {
+    "passivePerception": 11,
+    "passiveInsight": 10,
+    "darkvision": 60,
+    "blindsight": 0,
+    "truesight": 0,
+    "tremorsense": 0
+  },
+  "abilityScores": {
+    "strength": {
+      "score": 17,
+      "modifier": 3,
+      "savingThrow": 3
+    },
+    "dexterity": {
+      "score": 12,
+      "modifier": 1,
+      "savingThrow": 1
+    },
+    "constitution": {
+      "score": 15,
+      "modifier": 2,
+      "savingThrow": 2
+    },
+    "intelligence": {
+      "score": 5,
+      "modifier": -3,
+      "savingThrow": -3
+    },
+    "wisdom": {
+      "score": 13,
+      "modifier": 1,
+      "savingThrow": 1
+    },
+    "charisma": {
+      "score": 8,
+      "modifier": -1,
+      "savingThrow": -1
+    }
+  },
+  "proficiencies": [
+    {
+      "name": "Stealth",
+      "url": "/skills/stealth",
+      "amount": 5
+    }
+  ],
+  "resistances": [],
+  "immunities": {
+    "damageTypes": [
+      {
+        "name": "Acid",
+        "url": "/damage-types/acid"
+      }
+    ],
+    "conditions": [
+      {
+        "name": "Prone",
+        "url": "/conditions/prone"
+      }
+    ]
+  },
+  "vulnerabilities": [],
+  "languages": [
+    ""
+  ],
+  "actions": [
+    {
+      "name": "Pseudopod",
+      "description": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) bludgeoning damage. If the mimic is in object form, the target is subjected to its Adhesive trait.",
+      "attackBonus": 5,
+      "damage": [
+        {
+          "type": {
+            "name": "Bludgeoning",
+            "url": "/damage-types/bludgeoning"
+          },
+          "amount": "1d8+3",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Bite",
+      "description": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) piercing damage plus 4 (1d8) acid damage.",
+      "attackBonus": 5,
+      "damage": [
+        {
+          "type": {
+            "name": "Piercing",
+            "url": "/damage-types/piercing"
+          },
+          "amount": "1d8+3",
+          "options": null
+        },
+        {
+          "type": {
+            "name": "Acid",
+            "url": "/damage-types/acid"
+          },
+          "amount": "1d8",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    }
+  ],
+  "legendaryActions": [],
+  "specialAbilities": [
+    {
+      "name": "Shapechanger",
+      "description": "The mimic can use its action to polymorph into an object or back into its true, amorphous form. Its statistics are the same in each form. Any equipment it is wearing or carrying isn 't transformed. It reverts to its true form if it dies.",
+      "usage": null,
+      "spellcasting": null
+    },
+    {
+      "name": "Adhesive (object Form Only)",
+      "description": "The mimic adheres to anything that touches it. A Huge or smaller creature adhered to the mimic is also grappled by it (escape DC 13). Ability checks made to escape this grapple have disadvantage.",
+      "usage": null,
+      "spellcasting": null
+    },
+    {
+      "name": "False Appearance (object Form Only)",
+      "description": "While the mimic remains motionless, it is indistinguishable from an ordinary object.",
+      "usage": null,
+      "spellcasting": null
+    },
+    {
+      "name": "Grappler",
+      "description": "The mimic has advantage on attack rolls against any creature grappled by it.",
+      "usage": null,
+      "spellcasting": null
+    }
+  ]
+}

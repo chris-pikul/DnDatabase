@@ -1,0 +1,142 @@
+{
+  "type": "MONSTER",
+  "id": "grimlock",
+  "name": "Grimlock",
+  "url": "/monsters/grimlock",
+  "source": "MM",
+  "description": "",
+  "challengeRating": 0.25,
+  "size": "MEDIUM",
+  "kind": "HUMANOID",
+  "subKind": "GRIMLOCK",
+  "alignment": "NEUTRAL_EVIL",
+  "maxHP": 11,
+  "hitDice": "2d8",
+  "armorClass": 11,
+  "proficiencyBonus": 2,
+  "speed": {
+    "walk": 30,
+    "swim": 0,
+    "fly": 0
+  },
+  "senses": {
+    "passivePerception": 13,
+    "passiveInsight": 10,
+    "darkvision": 0,
+    "blindsight": 30,
+    "truesight": 0,
+    "tremorsense": 0
+  },
+  "abilityScores": {
+    "strength": {
+      "score": 16,
+      "modifier": 3,
+      "savingThrow": 3
+    },
+    "dexterity": {
+      "score": 12,
+      "modifier": 1,
+      "savingThrow": 1
+    },
+    "constitution": {
+      "score": 12,
+      "modifier": 1,
+      "savingThrow": 1
+    },
+    "intelligence": {
+      "score": 9,
+      "modifier": -1,
+      "savingThrow": -1
+    },
+    "wisdom": {
+      "score": 8,
+      "modifier": -1,
+      "savingThrow": -1
+    },
+    "charisma": {
+      "score": 6,
+      "modifier": -2,
+      "savingThrow": -2
+    }
+  },
+  "proficiencies": [
+    {
+      "name": "Athletics",
+      "url": "/skills/athletics",
+      "amount": 5
+    },
+    {
+      "name": "Perception",
+      "url": "/skills/perception",
+      "amount": 3
+    },
+    {
+      "name": "Stealth",
+      "url": "/skills/stealth",
+      "amount": 3
+    }
+  ],
+  "resistances": [],
+  "immunities": {
+    "damageTypes": [],
+    "conditions": [
+      {
+        "name": "Blinded",
+        "url": "/conditions/blinded"
+      }
+    ]
+  },
+  "vulnerabilities": [],
+  "languages": [
+    "Undercommon"
+  ],
+  "actions": [
+    {
+      "name": "Spiked Bone Club",
+      "description": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) bludgeoning damage plus 2 (1d4) piercing damage.",
+      "attackBonus": 5,
+      "damage": [
+        {
+          "type": {
+            "name": "Bludgeoning",
+            "url": "/damage-types/bludgeoning"
+          },
+          "amount": "1d4+3",
+          "options": null
+        },
+        {
+          "type": {
+            "name": "Piercing",
+            "url": "/damage-types/piercing"
+          },
+          "amount": "1d4",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    }
+  ],
+  "legendaryActions": [],
+  "specialAbilities": [
+    {
+      "name": "Blind Senses",
+      "description": "The grimlock can't use its blindsight while deafened and unable to smell.",
+      "usage": null,
+      "spellcasting": null
+    },
+    {
+      "name": "Keen Hearing And Smell",
+      "description": "The grimlock has advantage on Wisdom (Perception) checks that rely on hearing or smell.",
+      "usage": null,
+      "spellcasting": null
+    },
+    {
+      "name": "Stone Camouflage",
+      "description": "The grimlock has advantage on Dexterity (Stealth) checks made to hide in rocky terrain.",
+      "usage": null,
+      "spellcasting": null
+    }
+  ]
+}

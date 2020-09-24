@@ -1,0 +1,271 @@
+{
+  "type": "MONSTER",
+  "id": "storm-giant",
+  "name": "Storm Giant",
+  "url": "/monsters/storm-giant",
+  "source": "MM",
+  "description": "",
+  "challengeRating": 13,
+  "size": "HUGE",
+  "kind": "GIANT",
+  "subKind": null,
+  "alignment": "CHAOTIC_GOOD",
+  "maxHP": 230,
+  "hitDice": "20d12",
+  "armorClass": 16,
+  "proficiencyBonus": 5,
+  "speed": {
+    "walk": 50,
+    "swim": 50,
+    "fly": 0
+  },
+  "senses": {
+    "passivePerception": 19,
+    "passiveInsight": 10,
+    "darkvision": 0,
+    "blindsight": 0,
+    "truesight": 0,
+    "tremorsense": 0
+  },
+  "abilityScores": {
+    "strength": {
+      "score": 29,
+      "modifier": 9,
+      "savingThrow": 23
+    },
+    "dexterity": {
+      "score": 14,
+      "modifier": 2,
+      "savingThrow": 2
+    },
+    "constitution": {
+      "score": 20,
+      "modifier": 5,
+      "savingThrow": 15
+    },
+    "intelligence": {
+      "score": 16,
+      "modifier": 3,
+      "savingThrow": 3
+    },
+    "wisdom": {
+      "score": 18,
+      "modifier": 4,
+      "savingThrow": 13
+    },
+    "charisma": {
+      "score": 18,
+      "modifier": 4,
+      "savingThrow": 13
+    }
+  },
+  "proficiencies": [
+    {
+      "name": "Strength",
+      "url": "/ability-scores/strength",
+      "amount": 14
+    },
+    {
+      "name": "Constitution",
+      "url": "/ability-scores/constitution",
+      "amount": 10
+    },
+    {
+      "name": "Wisdom",
+      "url": "/ability-scores/wisdom",
+      "amount": 9
+    },
+    {
+      "name": "Charisma",
+      "url": "/ability-scores/charisma",
+      "amount": 9
+    },
+    {
+      "name": "Arcana",
+      "url": "/skills/arcana",
+      "amount": 8
+    },
+    {
+      "name": "Athletics",
+      "url": "/skills/athletics",
+      "amount": 14
+    },
+    {
+      "name": "History",
+      "url": "/skills/history",
+      "amount": 8
+    },
+    {
+      "name": "Perception",
+      "url": "/skills/perception",
+      "amount": 9
+    }
+  ],
+  "resistances": [
+    {
+      "name": "Cold",
+      "url": "/damage-types/cold"
+    }
+  ],
+  "immunities": {
+    "damageTypes": [
+      {
+        "name": "Lightning",
+        "url": "/damage-types/lightning"
+      },
+      {
+        "name": "Thunder",
+        "url": "/damage-types/thunder"
+      }
+    ],
+    "conditions": []
+  },
+  "vulnerabilities": [],
+  "languages": [
+    "Common",
+    "Giant"
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "description": "The giant makes two greatsword attacks.",
+      "attackBonus": 0,
+      "damage": null,
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Greatsword",
+      "description": "Melee Weapon Attack: +14 to hit, reach 10 ft., one target. Hit: 30 (6d6 + 9) slashing damage.",
+      "attackBonus": 14,
+      "damage": [
+        {
+          "type": {
+            "name": "Slashing",
+            "url": "/damage-types/slashing"
+          },
+          "amount": "6d6+9",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Rock",
+      "description": "Ranged Weapon Attack: +14 to hit, range 60/240 ft., one target. Hit: 35 (4d12 + 9) bludgeoning damage.",
+      "attackBonus": 14,
+      "damage": [
+        {
+          "type": {
+            "name": "Bludgeoning",
+            "url": "/damage-types/bludgeoning"
+          },
+          "amount": "4d12+9",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Lightning Strike",
+      "description": "The giant hurls a magical lightning bolt at a point it can see within 500 feet of it. Each creature within 10 feet of that point must make a DC 17 Dexterity saving throw, taking 54 (12d8) lightning damage on a failed save, or half as much damage on a successful one.",
+      "attackBonus": 0,
+      "damage": [
+        {
+          "type": {
+            "name": "Lightning",
+            "url": "/damage-types/lightning"
+          },
+          "amount": "12d8",
+          "options": null
+        }
+      ],
+      "saveDC": {
+        "ability": {
+          "name": "Dexterity",
+          "url": "/ability-scores/dexterity"
+        },
+        "value": 17,
+        "onSuccess": "HALF"
+      },
+      "usage": {
+        "type": "RECHARGE_ON_ROLL",
+        "amount": 0,
+        "dice": "1d6",
+        "minRoll": 5
+      },
+      "options": null
+    }
+  ],
+  "legendaryActions": [],
+  "specialAbilities": [
+    {
+      "name": "Amphibious",
+      "description": "The giant can breathe air and water.",
+      "usage": null,
+      "spellcasting": null
+    },
+    {
+      "name": "Innate Spellcasting",
+      "description": "The giant's innate spellcasting ability is Charisma (spell save DC 17). It can innately cast the following spells, requiring no material components:\n\nAt will: detect magic, feather fall, levitate, light\n3/day each: control weather, water breathing",
+      "usage": null,
+      "spellcasting": {
+        "level": 1,
+        "ability": {
+          "name": "Charisma",
+          "url": "/ability-scores/charisma"
+        },
+        "saveDC": 17,
+        "attackBonus": 0,
+        "slots": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "spells": [
+          {
+            "name": "Detect Magic",
+            "url": "/spells/detect-magic",
+            "level": 0
+          },
+          {
+            "name": "Feather Fall",
+            "url": "/spells/feather-fall",
+            "level": 0
+          },
+          {
+            "name": "Levitate",
+            "url": "/spells/levitate",
+            "level": 0
+          },
+          {
+            "name": "Light",
+            "url": "/spells/light",
+            "level": 0
+          },
+          {
+            "name": "Control Weather",
+            "url": "/spells/control-weather",
+            "level": 0
+          },
+          {
+            "name": "Water Breathing",
+            "url": "/spells/water-breathing",
+            "level": 0
+          }
+        ]
+      }
+    }
+  ]
+}

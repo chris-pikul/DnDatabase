@@ -1,0 +1,168 @@
+{
+  "type": "MONSTER",
+  "id": "white-dragon-wyrmling",
+  "name": "White Dragon Wyrmling",
+  "url": "/monsters/white-dragon-wyrmling",
+  "source": "MM",
+  "description": "",
+  "challengeRating": 2,
+  "size": "MEDIUM",
+  "kind": "DRAGON",
+  "subKind": null,
+  "alignment": "CHAOTIC_EVIL",
+  "maxHP": 32,
+  "hitDice": "5d8",
+  "armorClass": 16,
+  "proficiencyBonus": 2,
+  "speed": {
+    "walk": 30,
+    "swim": 30,
+    "fly": 60
+  },
+  "senses": {
+    "passivePerception": 14,
+    "passiveInsight": 10,
+    "darkvision": 60,
+    "blindsight": 10,
+    "truesight": 0,
+    "tremorsense": 0
+  },
+  "abilityScores": {
+    "strength": {
+      "score": 14,
+      "modifier": 2,
+      "savingThrow": 2
+    },
+    "dexterity": {
+      "score": 10,
+      "modifier": 0,
+      "savingThrow": 2
+    },
+    "constitution": {
+      "score": 14,
+      "modifier": 2,
+      "savingThrow": 6
+    },
+    "intelligence": {
+      "score": 5,
+      "modifier": -3,
+      "savingThrow": -3
+    },
+    "wisdom": {
+      "score": 10,
+      "modifier": 0,
+      "savingThrow": 2
+    },
+    "charisma": {
+      "score": 11,
+      "modifier": 0,
+      "savingThrow": 2
+    }
+  },
+  "proficiencies": [
+    {
+      "name": "Dexterity",
+      "url": "/ability-scores/dexterity",
+      "amount": 2
+    },
+    {
+      "name": "Constitution",
+      "url": "/ability-scores/constitution",
+      "amount": 4
+    },
+    {
+      "name": "Wisdom",
+      "url": "/ability-scores/wisdom",
+      "amount": 2
+    },
+    {
+      "name": "Charisma",
+      "url": "/ability-scores/charisma",
+      "amount": 2
+    },
+    {
+      "name": "Perception",
+      "url": "/skills/perception",
+      "amount": 4
+    },
+    {
+      "name": "Stealth",
+      "url": "/skills/stealth",
+      "amount": 2
+    }
+  ],
+  "resistances": [],
+  "immunities": {
+    "damageTypes": [
+      {
+        "name": "Cold",
+        "url": "/damage-types/cold"
+      }
+    ],
+    "conditions": []
+  },
+  "vulnerabilities": [],
+  "languages": [
+    "Draconic"
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "description": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (1d10 + 2) piercing damage plus 2 (1d4) cold damage.",
+      "attackBonus": 4,
+      "damage": [
+        {
+          "type": {
+            "name": "Piercing",
+            "url": "/damage-types/piercing"
+          },
+          "amount": "1d10+2",
+          "options": null
+        },
+        {
+          "type": {
+            "name": "Cold",
+            "url": "/damage-types/cold"
+          },
+          "amount": "1d4",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Cold Breath",
+      "description": "The dragon exhales an icy blast of hail in a 15-foot cone. Each creature in that area must make a DC 12 Constitution saving throw, taking 22 (5d8) cold damage on a failed save, or half as much damage on a successful one.",
+      "attackBonus": 0,
+      "damage": [
+        {
+          "type": {
+            "name": "Cold",
+            "url": "/damage-types/cold"
+          },
+          "amount": "5d8",
+          "options": null
+        }
+      ],
+      "saveDC": {
+        "ability": {
+          "name": "Constitution",
+          "url": "/ability-scores/constitution"
+        },
+        "value": 12,
+        "onSuccess": "HALF"
+      },
+      "usage": {
+        "type": "RECHARGE_ON_ROLL",
+        "amount": 0,
+        "dice": "1d6",
+        "minRoll": 5
+      },
+      "options": null
+    }
+  ],
+  "legendaryActions": [],
+  "specialAbilities": []
+}

@@ -1,0 +1,320 @@
+{
+  "type": "MONSTER",
+  "id": "androsphinx",
+  "name": "Androsphinx",
+  "url": "/monsters/androsphinx",
+  "source": "MM",
+  "description": "",
+  "challengeRating": 17,
+  "size": "LARGE",
+  "kind": "MONSTROSITY",
+  "subKind": null,
+  "alignment": "LAWFUL_NEUTRAL",
+  "maxHP": 199,
+  "hitDice": "19d10",
+  "armorClass": 17,
+  "proficiencyBonus": 6,
+  "speed": {
+    "walk": 40,
+    "swim": 0,
+    "fly": 60
+  },
+  "senses": {
+    "passivePerception": 20,
+    "passiveInsight": 10,
+    "darkvision": 0,
+    "blindsight": 0,
+    "truesight": 120,
+    "tremorsense": 0
+  },
+  "abilityScores": {
+    "strength": {
+      "score": 22,
+      "modifier": 6,
+      "savingThrow": 6
+    },
+    "dexterity": {
+      "score": 10,
+      "modifier": 0,
+      "savingThrow": 6
+    },
+    "constitution": {
+      "score": 20,
+      "modifier": 5,
+      "savingThrow": 16
+    },
+    "intelligence": {
+      "score": 16,
+      "modifier": 3,
+      "savingThrow": 12
+    },
+    "wisdom": {
+      "score": 18,
+      "modifier": 4,
+      "savingThrow": 14
+    },
+    "charisma": {
+      "score": 23,
+      "modifier": 6,
+      "savingThrow": 6
+    }
+  },
+  "proficiencies": [
+    {
+      "name": "Dexterity",
+      "url": "/ability-scores/dexterity",
+      "amount": 6
+    },
+    {
+      "name": "Constitution",
+      "url": "/ability-scores/constitution",
+      "amount": 11
+    },
+    {
+      "name": "Intelligence",
+      "url": "/ability-scores/intelligence",
+      "amount": 9
+    },
+    {
+      "name": "Wisdom",
+      "url": "/ability-scores/wisdom",
+      "amount": 10
+    },
+    {
+      "name": "Arcana",
+      "url": "/skills/arcana",
+      "amount": 9
+    },
+    {
+      "name": "Perception",
+      "url": "/skills/perception",
+      "amount": 10
+    },
+    {
+      "name": "Religion",
+      "url": "/skills/religion",
+      "amount": 15
+    }
+  ],
+  "resistances": [],
+  "immunities": {
+    "damageTypes": [
+      {
+        "name": "Psychic",
+        "url": "/damage-types/psychic"
+      },
+      {
+        "name": "Bludgeoning",
+        "url": "/damage-types/bludgeoning"
+      },
+      {
+        "name": "Piercing",
+        "url": "/damage-types/piercing"
+      },
+      {
+        "name": "Slashing",
+        "url": "/damage-types/slashing"
+      }
+    ],
+    "conditions": [
+      {
+        "name": "Charmed",
+        "url": "/conditions/charmed"
+      },
+      {
+        "name": "Frightened",
+        "url": "/conditions/frightened"
+      }
+    ]
+  },
+  "vulnerabilities": [],
+  "languages": [
+    "Common",
+    "Sphinx"
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "description": "The sphinx makes two claw attacks.",
+      "attackBonus": 0,
+      "damage": null,
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Claw",
+      "description": "Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 17 (2d10 + 6) slashing damage.",
+      "attackBonus": 12,
+      "damage": [
+        {
+          "type": {
+            "name": "Slashing",
+            "url": "/damage-types/slashing"
+          },
+          "amount": "2d10+6",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Roar",
+      "description": "The sphinx emits a magical roar. Each time it roars before finishing a long rest, the roar is louder and the effect is different, as detailed below. Each creature within 500 feet of the sphinx and able to hear the roar must make a saving throw.\n\nFirst Roar. Each creature that fails a DC 18 Wisdom saving throw is frightened for 1 minute. A frightened creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.\n\nSecond Roar. Each creature that fails a DC 18 Wisdom saving throw is deafened and frightened for 1 minute. A frightened creature is paralyzed and can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.\n\nThird Roar. Each creature makes a DC 18 Constitution saving throw. On a failed save, a creature takes 44 (8d10) thunder damage and is knocked prone. On a successful save, the creature takes half as much damage and isn't knocked prone.",
+      "attackBonus": 0,
+      "damage": null,
+      "saveDC": null,
+      "usage": {
+        "type": "PER_DAY",
+        "amount": 3,
+        "dice": null,
+        "minRoll": 0
+      },
+      "options": null
+    }
+  ],
+  "legendaryActions": {
+    "amount": 3,
+    "options": [
+      {
+        "name": "Claw Attack",
+        "description": "The sphinx makes one claw attack.",
+        "cost": 1,
+        "damage": null,
+        "saveDC": null
+      },
+      {
+        "name": "Teleport",
+        "description": "The sphinx magically teleports, along with any equipment it is wearing or carrying, up to 120 feet to an unoccupied space it can see.",
+        "cost": 2,
+        "damage": null,
+        "saveDC": null
+      },
+      {
+        "name": "Cast A Spell",
+        "description": "The sphinx casts a spell from its list of prepared spells, using a spell slot as normal.",
+        "cost": 3,
+        "damage": null,
+        "saveDC": null
+      }
+    ]
+  },
+  "specialAbilities": [
+    {
+      "name": "Inscrutable",
+      "description": "The sphinx is immune to any effect that would sense its emotions or read its thoughts, as well as any divination spell that it refuses. Wisdom (Insight) checks made to ascertain the sphinx's intentions or sincerity have disadvantage.",
+      "usage": null,
+      "spellcasting": null
+    },
+    {
+      "name": "Magic Weapons",
+      "description": "The sphinx's weapon attacks are magical.",
+      "usage": null,
+      "spellcasting": null
+    },
+    {
+      "name": "Spellcasting",
+      "description": "The sphinx is a 12th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 18, +10 to hit with spell attacks). It requires no material components to cast its spells. The sphinx has the following cleric spells prepared:\n\n- Cantrips (at will): sacred flame, spare the dying, thaumaturgy\n- 1st level (4 slots): command, detect evil and good, detect magic\n- 2nd level (3 slots): lesser restoration, zone of truth\n- 3rd level (3 slots): dispel magic, tongues\n- 4th level (3 slots): banishment, freedom of movement\n- 5th level (2 slots): flame strike, greater restoration\n- 6th level (1 slot): heroes' feast",
+      "usage": null,
+      "spellcasting": {
+        "level": 12,
+        "ability": {
+          "name": "Wisdom",
+          "url": "/ability-scores/wisdom"
+        },
+        "saveDC": 18,
+        "attackBonus": 10,
+        "slots": [
+          4,
+          3,
+          3,
+          3,
+          2,
+          1,
+          0,
+          0,
+          0
+        ],
+        "spells": [
+          {
+            "name": "Sacred Flame",
+            "url": "/spells/250",
+            "level": 0
+          },
+          {
+            "name": "Spare The Dying",
+            "url": "/spells/271",
+            "level": 0
+          },
+          {
+            "name": "Thaumaturgy",
+            "url": "/spells/291",
+            "level": 0
+          },
+          {
+            "name": "Command",
+            "url": "/spells/46",
+            "level": 1
+          },
+          {
+            "name": "Detect Evil And Good",
+            "url": "/spells/78",
+            "level": 1
+          },
+          {
+            "name": "Detect Magic",
+            "url": "/spells/79",
+            "level": 1
+          },
+          {
+            "name": "Lesser Restoration",
+            "url": "/spells/178",
+            "level": 2
+          },
+          {
+            "name": "Zone Of Truth",
+            "url": "/spells/319",
+            "level": 2
+          },
+          {
+            "name": "Dispel Magic",
+            "url": "/spells/86",
+            "level": 3
+          },
+          {
+            "name": "Tongues",
+            "url": "/spells/295",
+            "level": 3
+          },
+          {
+            "name": "Banishment",
+            "url": "/spells/23",
+            "level": 4
+          },
+          {
+            "name": "Freedom Of Movement",
+            "url": "/spells/130",
+            "level": 4
+          },
+          {
+            "name": "Flame Strike",
+            "url": "/spells/121",
+            "level": 5
+          },
+          {
+            "name": "Greater Restoration",
+            "url": "/spells/143",
+            "level": 5
+          },
+          {
+            "name": "Heroes' Feast",
+            "url": "/spells/157",
+            "level": 6
+          }
+        ]
+      }
+    }
+  ]
+}

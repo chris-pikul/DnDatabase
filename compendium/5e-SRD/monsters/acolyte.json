@@ -1,0 +1,163 @@
+{
+  "type": "MONSTER",
+  "id": "acolyte",
+  "name": "Acolyte",
+  "url": "/monsters/acolyte",
+  "source": "MM",
+  "description": "",
+  "challengeRating": 0.25,
+  "size": "MEDIUM",
+  "kind": "HUMANOID",
+  "subKind": "ANY_RACE",
+  "alignment": "ANY_ALIGNMENT",
+  "maxHP": 9,
+  "hitDice": "2d8",
+  "armorClass": 10,
+  "proficiencyBonus": 2,
+  "speed": {
+    "walk": 30,
+    "swim": 0,
+    "fly": 0
+  },
+  "senses": {
+    "passivePerception": 12,
+    "passiveInsight": 10,
+    "darkvision": 0,
+    "blindsight": 0,
+    "truesight": 0,
+    "tremorsense": 0
+  },
+  "abilityScores": {
+    "strength": {
+      "score": 10,
+      "modifier": 0,
+      "savingThrow": 0
+    },
+    "dexterity": {
+      "score": 10,
+      "modifier": 0,
+      "savingThrow": 0
+    },
+    "constitution": {
+      "score": 10,
+      "modifier": 0,
+      "savingThrow": 0
+    },
+    "intelligence": {
+      "score": 10,
+      "modifier": 0,
+      "savingThrow": 0
+    },
+    "wisdom": {
+      "score": 14,
+      "modifier": 2,
+      "savingThrow": 2
+    },
+    "charisma": {
+      "score": 11,
+      "modifier": 0,
+      "savingThrow": 0
+    }
+  },
+  "proficiencies": [
+    {
+      "name": "Medicine",
+      "url": "/skills/medicine",
+      "amount": 4
+    },
+    {
+      "name": "Religion",
+      "url": "/skills/religion",
+      "amount": 2
+    }
+  ],
+  "resistances": [],
+  "immunities": {
+    "damageTypes": [],
+    "conditions": []
+  },
+  "vulnerabilities": [],
+  "languages": [
+    "Any One Language (usually Common)"
+  ],
+  "actions": [
+    {
+      "name": "Club",
+      "description": "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) bludgeoning damage.",
+      "attackBonus": 2,
+      "damage": [
+        {
+          "type": {
+            "name": "Bludgeoning",
+            "url": "/damage-types/bludgeoning"
+          },
+          "amount": "1d4",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    }
+  ],
+  "legendaryActions": [],
+  "specialAbilities": [
+    {
+      "name": "Spellcasting",
+      "description": "The acolyte is a 1st-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 12, +4 to hit with spell attacks). The acolyte has following cleric spells prepared:\n\n- Cantrips (at will): light, sacred flame, thaumaturgy\n- 1st level (3 slots): bless, cure wounds, sanctuary",
+      "usage": null,
+      "spellcasting": {
+        "level": 1,
+        "ability": {
+          "name": "Wisdom",
+          "url": "/ability-scores/wisdom"
+        },
+        "saveDC": 12,
+        "attackBonus": 4,
+        "slots": [
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "spells": [
+          {
+            "name": "Light",
+            "url": "/spells/180",
+            "level": 0
+          },
+          {
+            "name": "Sacred Flame",
+            "url": "/spells/250",
+            "level": 0
+          },
+          {
+            "name": "Thaumaturgy",
+            "url": "/spells/291",
+            "level": 0
+          },
+          {
+            "name": "Bless",
+            "url": "/spells/29",
+            "level": 1
+          },
+          {
+            "name": "Cure Wounds",
+            "url": "/spells/70",
+            "level": 1
+          },
+          {
+            "name": "Sanctuary",
+            "url": "/spells/251",
+            "level": 1
+          }
+        ]
+      }
+    }
+  ]
+}

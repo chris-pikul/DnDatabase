@@ -1,0 +1,208 @@
+{
+  "type": "MONSTER",
+  "id": "succubus-incubus",
+  "name": "Succubus/incubus",
+  "url": "/monsters/succubus-incubus",
+  "source": "MM",
+  "description": "",
+  "challengeRating": 4,
+  "size": "MEDIUM",
+  "kind": "FIEND",
+  "subKind": "SHAPECHANGER",
+  "alignment": "NEUTRAL_EVIL",
+  "maxHP": 66,
+  "hitDice": "12d8",
+  "armorClass": 15,
+  "proficiencyBonus": 2,
+  "speed": {
+    "walk": 30,
+    "swim": 0,
+    "fly": 60
+  },
+  "senses": {
+    "passivePerception": 15,
+    "passiveInsight": 15,
+    "darkvision": 60,
+    "blindsight": 0,
+    "truesight": 0,
+    "tremorsense": 0
+  },
+  "abilityScores": {
+    "strength": {
+      "score": 8,
+      "modifier": -1,
+      "savingThrow": -1
+    },
+    "dexterity": {
+      "score": 17,
+      "modifier": 3,
+      "savingThrow": 3
+    },
+    "constitution": {
+      "score": 13,
+      "modifier": 1,
+      "savingThrow": 1
+    },
+    "intelligence": {
+      "score": 15,
+      "modifier": 2,
+      "savingThrow": 2
+    },
+    "wisdom": {
+      "score": 12,
+      "modifier": 1,
+      "savingThrow": 1
+    },
+    "charisma": {
+      "score": 20,
+      "modifier": 5,
+      "savingThrow": 5
+    }
+  },
+  "proficiencies": [
+    {
+      "name": "Deception",
+      "url": "/skills/deception",
+      "amount": 9
+    },
+    {
+      "name": "Insight",
+      "url": "/skills/insight",
+      "amount": 5
+    },
+    {
+      "name": "Perception",
+      "url": "/skills/perception",
+      "amount": 5
+    },
+    {
+      "name": "Persuasion",
+      "url": "/skills/persuasion",
+      "amount": 9
+    },
+    {
+      "name": "Stealth",
+      "url": "/skills/stealth",
+      "amount": 7
+    }
+  ],
+  "resistances": [
+    {
+      "name": "Cold",
+      "url": "/damage-types/cold"
+    },
+    {
+      "name": "Fire",
+      "url": "/damage-types/fire"
+    },
+    {
+      "name": "Lightning",
+      "url": "/damage-types/lightning"
+    },
+    {
+      "name": "Poison",
+      "url": "/damage-types/poison"
+    },
+    {
+      "name": "Bludgeoning",
+      "url": "/damage-types/bludgeoning"
+    },
+    {
+      "name": "Piercing",
+      "url": "/damage-types/piercing"
+    },
+    {
+      "name": "Slashing",
+      "url": "/damage-types/slashing"
+    }
+  ],
+  "immunities": {
+    "damageTypes": [],
+    "conditions": []
+  },
+  "vulnerabilities": [],
+  "languages": [
+    "Abyssal",
+    "Common",
+    "Infernal",
+    "Telepathy 60 Ft."
+  ],
+  "actions": [
+    {
+      "name": "Claw (fiend Form Only)",
+      "description": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) slashing damage.",
+      "attackBonus": 5,
+      "damage": [
+        {
+          "type": {
+            "name": "Slashing",
+            "url": "/damage-types/slashing"
+          },
+          "amount": "1d6+3",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Charm",
+      "description": "One humanoid the fiend can see within 30 feet of it must succeed on a DC 15 Wisdom saving throw or be magically charmed for 1 day. The charmed target obeys the fiend's verbal or telepathic commands. If the target suffers any harm or receives a suicidal command, it can repeat the saving throw, ending the effect on a success. If the target successfully saves against the effect, or if the effect on it ends, the target is immune to this fiend's Charm for the next 24 hours.\nThe fiend can have only one target charmed at a time. If it charms another, the effect on the previous target ends.",
+      "attackBonus": 0,
+      "damage": null,
+      "saveDC": {
+        "ability": {
+          "name": "Wisdom",
+          "url": "/ability-scores/wisdom"
+        },
+        "value": 15,
+        "onSuccess": "NONE"
+      },
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Draining Kiss",
+      "description": "The fiend kisses a creature charmed by it or a willing creature. The target must make a DC 15 Constitution saving throw against this magic, taking 32 (5d10 + 5) psychic damage on a failed save, or half as much damage on a successful one. The target's hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0.",
+      "attackBonus": 0,
+      "damage": [
+        {
+          "type": {
+            "name": "Psychic",
+            "url": "/damage-types/psychic"
+          },
+          "amount": "5d10+5",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Etherealness",
+      "description": "The fiend magically enters the Ethereal Plane from the Material Plane, or vice versa.",
+      "attackBonus": 0,
+      "damage": null,
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    }
+  ],
+  "legendaryActions": [],
+  "specialAbilities": [
+    {
+      "name": "Telepathic Bond",
+      "description": "The fiend ignores the range restriction on its telepathy when communicating with a creature it has charmed. The two don't even need to be on the same plane of existence.",
+      "usage": null,
+      "spellcasting": null
+    },
+    {
+      "name": "Shapechanger",
+      "description": "The fiend can use its action to polymorph into a Small or Medium humanoid, or back into its true form. Without wings, the fiend loses its flying speed. Other than its size and speed, its statistics are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies.",
+      "usage": null,
+      "spellcasting": null
+    }
+  ]
+}

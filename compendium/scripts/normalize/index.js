@@ -16,6 +16,7 @@ const processTraits = require('./process-traits');
 const processProfeciencies = require('./process-profeciencies');
 const processRaces = require('./process-races');
 const processSubraces = require('./process-subraces');
+const processMonsters = require('./process-monsters');
 
 function buildDirs() {
     const subFolders = [ '5e-SRD', 'homebrew' ];
@@ -27,7 +28,7 @@ function buildDirs() {
         const root = path.resolve('..', sub);
 
         fs.mkdirSync( path.join(root, 'ability-scores'), { recursive: true });
-        fs.mkdirSync( path.join(root, 'classes'), { recursive: true });
+        fs.mkdirSync( path.join(root, 'classes', 'sub-classes'), { recursive: true });
         fs.mkdirSync( path.join(root, 'conditions'), { recursive: true });
         fs.mkdirSync( path.join(root, 'damage-types'), { recursive: true });
         fs.mkdirSync( path.join(root, 'equipment-packs'), { recursive: true });
@@ -39,6 +40,7 @@ function buildDirs() {
         fs.mkdirSync( path.join(root, 'items', 'weapon'), { recursive: true });
         fs.mkdirSync( path.join(root, 'languages'), { recursive: true });
         fs.mkdirSync( path.join(root, 'magic-schools'), { recursive: true });
+        fs.mkdirSync( path.join(root, 'monsters'), { recursive: true });
         fs.mkdirSync( path.join(root, 'proficiencies'), { recursive: true });
         fs.mkdirSync( path.join(root, 'races', 'sub-races'), { recursive: true });
         fs.mkdirSync( path.join(root, 'skills'), { recursive: true });
@@ -107,11 +109,13 @@ if(cliArgs.length === 0) {
     console.error('Must include an operation to perform');
     process.exit(1);
 } else {
+    //buildDirs();
+
     const op = cliArgs[0].toUpperCase();
     switch(op) {
         case 'ALL':
             buildDirs();
-            
+
             normalize( '5e-SRD-Ability-Scores.json', 'ability-scores.json', processAbilities);
             normalize( '5e-SRD-Classes.json', 'classes.json', processClasses);
             normalize( '5e-SRD-Conditions.json', 'conditions.json', processConditions);
@@ -126,8 +130,15 @@ if(cliArgs.length === 0) {
             normalize( '5e-SRD-Proficiencies.json', 'proficiencies.json', processProfeciencies);
             normalize( '5e-SRD-Races.json', 'races.json', processRaces);
             normalize( '5e-SRD-Subraces.json', 'subraces.json', processSubraces);
+            normalize( '5e-SRD-Monsters.json', 'monsters.json', processMonsters);
             
             break;
+        case 'RACE-CLASS':
+            normalize( '5e-SRD-Races.json', 'races.json', processRaces);
+            normalize( '5e-SRD-Subraces.json', 'subraces.json', processSubraces);
+            normalize( '5e-SRD-Classes.json', 'classes.json', processClasses);
+            break;
+
         case 'DIRECTORIES':
             buildDirs();
 
@@ -175,6 +186,9 @@ if(cliArgs.length === 0) {
         case 'RACES':
             normalize( '5e-SRD-Races.json', 'races.json', processRaces);
             normalize( '5e-SRD-Subraces.json', 'subraces.json', processSubraces);
+            break;
+        case 'MONSTERS':
+            normalize( '5e-SRD-Monsters.json', 'monsters.json', processMonsters);
             break;
         default:
             console.error(`Unknown operation '${op}'`);

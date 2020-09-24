@@ -1,0 +1,191 @@
+{
+  "type": "MONSTER",
+  "id": "wraith",
+  "name": "Wraith",
+  "url": "/monsters/wraith",
+  "source": "MM",
+  "description": "",
+  "challengeRating": 5,
+  "size": "MEDIUM",
+  "kind": "UNDEAD",
+  "subKind": null,
+  "alignment": "NEUTRAL_EVIL",
+  "maxHP": 67,
+  "hitDice": "9d8",
+  "armorClass": 13,
+  "proficiencyBonus": 3,
+  "speed": {
+    "walk": 0,
+    "swim": 0,
+    "fly": 60
+  },
+  "senses": {
+    "passivePerception": 12,
+    "passiveInsight": 10,
+    "darkvision": 60,
+    "blindsight": 0,
+    "truesight": 0,
+    "tremorsense": 0
+  },
+  "abilityScores": {
+    "strength": {
+      "score": 6,
+      "modifier": -2,
+      "savingThrow": -2
+    },
+    "dexterity": {
+      "score": 16,
+      "modifier": 3,
+      "savingThrow": 3
+    },
+    "constitution": {
+      "score": 16,
+      "modifier": 3,
+      "savingThrow": 3
+    },
+    "intelligence": {
+      "score": 12,
+      "modifier": 1,
+      "savingThrow": 1
+    },
+    "wisdom": {
+      "score": 14,
+      "modifier": 2,
+      "savingThrow": 2
+    },
+    "charisma": {
+      "score": 15,
+      "modifier": 2,
+      "savingThrow": 2
+    }
+  },
+  "proficiencies": [],
+  "resistances": [
+    {
+      "name": "Acid",
+      "url": "/damage-types/acid"
+    },
+    {
+      "name": "Cold",
+      "url": "/damage-types/cold"
+    },
+    {
+      "name": "Fire",
+      "url": "/damage-types/fire"
+    },
+    {
+      "name": "Lightning",
+      "url": "/damage-types/lightning"
+    },
+    {
+      "name": "Thunder",
+      "url": "/damage-types/thunder"
+    },
+    {
+      "name": "Bludgeoning",
+      "url": "/damage-types/bludgeoning"
+    },
+    {
+      "name": "Piercing",
+      "url": "/damage-types/piercing"
+    },
+    {
+      "name": "Slashing",
+      "url": "/damage-types/slashing"
+    }
+  ],
+  "immunities": {
+    "damageTypes": [
+      {
+        "name": "Necrotic",
+        "url": "/damage-types/necrotic"
+      },
+      {
+        "name": "Poison",
+        "url": "/damage-types/poison"
+      }
+    ],
+    "conditions": [
+      {
+        "name": "Charmed",
+        "url": "/conditions/charmed"
+      },
+      {
+        "name": "Exhaustion",
+        "url": "/conditions/exhaustion"
+      },
+      {
+        "name": "Grappled",
+        "url": "/conditions/grappled"
+      },
+      {
+        "name": "Paralyzed",
+        "url": "/conditions/paralyzed"
+      },
+      {
+        "name": "Petrified",
+        "url": "/conditions/petrified"
+      },
+      {
+        "name": "Poisoned",
+        "url": "/conditions/poisoned"
+      },
+      {
+        "name": "Prone",
+        "url": "/conditions/prone"
+      },
+      {
+        "name": "Restrained",
+        "url": "/conditions/restrained"
+      }
+    ]
+  },
+  "vulnerabilities": [],
+  "languages": [
+    "The Languages It Knew In Life"
+  ],
+  "actions": [
+    {
+      "name": "Life Drain",
+      "description": "Melee Weapon Attack: +6 to hit, reach 5 ft., one creature. Hit: 21 (4d8 + 3) necrotic damage. The target must succeed on a DC 14 Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0.",
+      "attackBonus": 6,
+      "damage": [
+        {
+          "type": {
+            "name": "Necrotic",
+            "url": "/damage-types/necrotic"
+          },
+          "amount": "4d8+3",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Create Specter",
+      "description": "The wraith targets a humanoid within 10 feet of it that has been dead for no longer than 1 minute and died violently. The target's spirit rises as a specter in the space of its corpse or in the nearest unoccupied space. The specter is under the wraith's control. The wraith can have no more than seven specters under its control at one time.",
+      "attackBonus": 0,
+      "damage": null,
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    }
+  ],
+  "legendaryActions": [],
+  "specialAbilities": [
+    {
+      "name": "Incorporeal Movement",
+      "description": "The wraith can move through other creatures and objects as if they were difficult terrain. It takes 5 (1d10) force damage if it ends its turn inside an object.",
+      "usage": null,
+      "spellcasting": null
+    },
+    {
+      "name": "Sunlight Sensitivity",
+      "description": "While in sunlight, the wraith has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.",
+      "usage": null,
+      "spellcasting": null
+    }
+  ]
+}

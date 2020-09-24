@@ -1,0 +1,152 @@
+{
+  "type": "MONSTER",
+  "id": "fire-giant",
+  "name": "Fire Giant",
+  "url": "/monsters/fire-giant",
+  "source": "MM",
+  "description": "",
+  "challengeRating": 9,
+  "size": "HUGE",
+  "kind": "GIANT",
+  "subKind": null,
+  "alignment": "LAWFUL_EVIL",
+  "maxHP": 162,
+  "hitDice": "13d12",
+  "armorClass": 18,
+  "proficiencyBonus": 4,
+  "speed": {
+    "walk": 30,
+    "swim": 0,
+    "fly": 0
+  },
+  "senses": {
+    "passivePerception": 16,
+    "passiveInsight": 10,
+    "darkvision": 0,
+    "blindsight": 0,
+    "truesight": 0,
+    "tremorsense": 0
+  },
+  "abilityScores": {
+    "strength": {
+      "score": 25,
+      "modifier": 7,
+      "savingThrow": 7
+    },
+    "dexterity": {
+      "score": 9,
+      "modifier": -1,
+      "savingThrow": 2
+    },
+    "constitution": {
+      "score": 23,
+      "modifier": 6,
+      "savingThrow": 16
+    },
+    "intelligence": {
+      "score": 10,
+      "modifier": 0,
+      "savingThrow": 0
+    },
+    "wisdom": {
+      "score": 14,
+      "modifier": 2,
+      "savingThrow": 2
+    },
+    "charisma": {
+      "score": 13,
+      "modifier": 1,
+      "savingThrow": 6
+    }
+  },
+  "proficiencies": [
+    {
+      "name": "Dexterity",
+      "url": "/ability-scores/dexterity",
+      "amount": 3
+    },
+    {
+      "name": "Constitution",
+      "url": "/ability-scores/constitution",
+      "amount": 10
+    },
+    {
+      "name": "Charisma",
+      "url": "/ability-scores/charisma",
+      "amount": 5
+    },
+    {
+      "name": "Athletics",
+      "url": "/skills/athletics",
+      "amount": 11
+    },
+    {
+      "name": "Perception",
+      "url": "/skills/perception",
+      "amount": 6
+    }
+  ],
+  "resistances": [],
+  "immunities": {
+    "damageTypes": [
+      {
+        "name": "Fire",
+        "url": "/damage-types/fire"
+      }
+    ],
+    "conditions": []
+  },
+  "vulnerabilities": [],
+  "languages": [
+    "Giant"
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "description": "The giant makes two greatsword attacks.",
+      "attackBonus": 0,
+      "damage": null,
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Greatsword",
+      "description": "Melee Weapon Attack: +11 to hit, reach 10 ft., one target. Hit: 28 (6d6 + 7) slashing damage.",
+      "attackBonus": 11,
+      "damage": [
+        {
+          "type": {
+            "name": "Slashing",
+            "url": "/damage-types/slashing"
+          },
+          "amount": "6d6+7",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Rock",
+      "description": "Ranged Weapon Attack: +11 to hit, range 60/240 ft., one target. Hit: 29 (4d10 + 7) bludgeoning damage.",
+      "attackBonus": 11,
+      "damage": [
+        {
+          "type": {
+            "name": "Bludgeoning",
+            "url": "/damage-types/bludgeoning"
+          },
+          "amount": "4d10+7",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    }
+  ],
+  "legendaryActions": [],
+  "specialAbilities": []
+}

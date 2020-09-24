@@ -1,0 +1,193 @@
+{
+  "type": "MONSTER",
+  "id": "cult-fanatic",
+  "name": "Cult Fanatic",
+  "url": "/monsters/cult-fanatic",
+  "source": "MM",
+  "description": "",
+  "challengeRating": 2,
+  "size": "MEDIUM",
+  "kind": "HUMANOID",
+  "subKind": "ANY_RACE",
+  "alignment": "ANY_NON_GOOD_ALIGNMENT",
+  "maxHP": 22,
+  "hitDice": "6d8",
+  "armorClass": 13,
+  "proficiencyBonus": 2,
+  "speed": {
+    "walk": 30,
+    "swim": 0,
+    "fly": 0
+  },
+  "senses": {
+    "passivePerception": 11,
+    "passiveInsight": 10,
+    "darkvision": 0,
+    "blindsight": 0,
+    "truesight": 0,
+    "tremorsense": 0
+  },
+  "abilityScores": {
+    "strength": {
+      "score": 11,
+      "modifier": 0,
+      "savingThrow": 0
+    },
+    "dexterity": {
+      "score": 14,
+      "modifier": 2,
+      "savingThrow": 2
+    },
+    "constitution": {
+      "score": 12,
+      "modifier": 1,
+      "savingThrow": 1
+    },
+    "intelligence": {
+      "score": 10,
+      "modifier": 0,
+      "savingThrow": 0
+    },
+    "wisdom": {
+      "score": 13,
+      "modifier": 1,
+      "savingThrow": 1
+    },
+    "charisma": {
+      "score": 14,
+      "modifier": 2,
+      "savingThrow": 2
+    }
+  },
+  "proficiencies": [
+    {
+      "name": "Deception",
+      "url": "/skills/deception",
+      "amount": 4
+    },
+    {
+      "name": "Persuasion",
+      "url": "/skills/persuasion",
+      "amount": 4
+    },
+    {
+      "name": "Religion",
+      "url": "/skills/religion",
+      "amount": 2
+    }
+  ],
+  "resistances": [],
+  "immunities": {
+    "damageTypes": [],
+    "conditions": []
+  },
+  "vulnerabilities": [],
+  "languages": [
+    "Any One Language (usually Common)"
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "description": "The fanatic makes two melee attacks.",
+      "attackBonus": 0,
+      "damage": null,
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Dagger",
+      "description": "Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 20/60 ft., one creature. Hit: 4 (1d4 + 2) piercing damage.",
+      "attackBonus": 4,
+      "damage": [
+        {
+          "type": {
+            "name": "Piercing",
+            "url": "/damage-types/piercing"
+          },
+          "amount": "1d4+2",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    }
+  ],
+  "legendaryActions": [],
+  "specialAbilities": [
+    {
+      "name": "Dark Devotion",
+      "description": "The fanatic has advantage on saving throws against being charmed or frightened.",
+      "usage": null,
+      "spellcasting": null
+    },
+    {
+      "name": "Spellcasting",
+      "description": "The fanatic is a 4th-level spellcaster. Its spell casting ability is Wisdom (spell save DC 11, +3 to hit with spell attacks). The fanatic has the following cleric spells prepared:\n\nCantrips (at will): light, sacred flame, thaumaturgy\n- 1st level (4 slots): command, inflict wounds, shield of faith\n- 2nd level (3 slots): hold person, spiritual weapon",
+      "usage": null,
+      "spellcasting": {
+        "level": 4,
+        "ability": {
+          "name": "Wisdom",
+          "url": "/ability-scores/wisdom"
+        },
+        "saveDC": 11,
+        "attackBonus": 3,
+        "slots": [
+          4,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "spells": [
+          {
+            "name": "Light",
+            "url": "/spells/180",
+            "level": 0
+          },
+          {
+            "name": "Sacred Flame",
+            "url": "/spells/250",
+            "level": 0
+          },
+          {
+            "name": "Thaumaturgy",
+            "url": "/spells/291",
+            "level": 0
+          },
+          {
+            "name": "Command",
+            "url": "/spells/46",
+            "level": 0
+          },
+          {
+            "name": "Inflict Wounds",
+            "url": "/spells/170",
+            "level": 0
+          },
+          {
+            "name": "Shield Of Faith",
+            "url": "/spells/262",
+            "level": 0
+          },
+          {
+            "name": "Hold Person",
+            "url": "/spells/161",
+            "level": 0
+          },
+          {
+            "name": "Spiritual Weapon",
+            "url": "/spells/278",
+            "level": 0
+          }
+        ]
+      }
+    }
+  ]
+}

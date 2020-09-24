@@ -1,0 +1,140 @@
+{
+  "type": "MONSTER",
+  "id": "giant-vulture",
+  "name": "Giant Vulture",
+  "url": "/monsters/giant-vulture",
+  "source": "MM",
+  "description": "",
+  "challengeRating": 1,
+  "size": "LARGE",
+  "kind": "BEAST",
+  "subKind": null,
+  "alignment": "NEUTRAL_EVIL",
+  "maxHP": 22,
+  "hitDice": "3d10",
+  "armorClass": 10,
+  "proficiencyBonus": 2,
+  "speed": {
+    "walk": 10,
+    "swim": 0,
+    "fly": 60
+  },
+  "senses": {
+    "passivePerception": 13,
+    "passiveInsight": 10,
+    "darkvision": 0,
+    "blindsight": 0,
+    "truesight": 0,
+    "tremorsense": 0
+  },
+  "abilityScores": {
+    "strength": {
+      "score": 15,
+      "modifier": 2,
+      "savingThrow": 2
+    },
+    "dexterity": {
+      "score": 10,
+      "modifier": 0,
+      "savingThrow": 0
+    },
+    "constitution": {
+      "score": 15,
+      "modifier": 2,
+      "savingThrow": 2
+    },
+    "intelligence": {
+      "score": 6,
+      "modifier": -2,
+      "savingThrow": -2
+    },
+    "wisdom": {
+      "score": 12,
+      "modifier": 1,
+      "savingThrow": 1
+    },
+    "charisma": {
+      "score": 7,
+      "modifier": -2,
+      "savingThrow": -2
+    }
+  },
+  "proficiencies": [
+    {
+      "name": "Perception",
+      "url": "/skills/perception",
+      "amount": 3
+    }
+  ],
+  "resistances": [],
+  "immunities": {
+    "damageTypes": [],
+    "conditions": []
+  },
+  "vulnerabilities": [],
+  "languages": [
+    "Understands Common But Can't Speak"
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "description": "The vulture makes two attacks: one with its beak and one with its talons.",
+      "attackBonus": 0,
+      "damage": null,
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Beak",
+      "description": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (2d4 + 2) piercing damage.",
+      "attackBonus": 4,
+      "damage": [
+        {
+          "type": {
+            "name": "Piercing",
+            "url": "/damage-types/piercing"
+          },
+          "amount": "2d4+2",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Talons",
+      "description": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 9 (2d6 + 2) slashing damage.",
+      "attackBonus": 4,
+      "damage": [
+        {
+          "type": {
+            "name": "Slashing",
+            "url": "/damage-types/slashing"
+          },
+          "amount": "2d6+2",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    }
+  ],
+  "legendaryActions": [],
+  "specialAbilities": [
+    {
+      "name": "Keen Sight And Smell",
+      "description": "The vulture has advantage on Wisdom (Perception) checks that rely on sight or smell.",
+      "usage": null,
+      "spellcasting": null
+    },
+    {
+      "name": "Pack Tactics",
+      "description": "The vulture has advantage on an attack roll against a creature if at least one of the vulture's allies is within 5 ft. of the creature and the ally isn't incapacitated.",
+      "usage": null,
+      "spellcasting": null
+    }
+  ]
+}

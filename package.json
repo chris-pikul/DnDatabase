@@ -5,6 +5,10 @@
   "main": "index.js",
   "scripts": {
     "normalize": "cd compendium/scripts && node normalize all",
+    "normalize:items": "cd compendium/scripts && node normalize items",
+    "normalize:spells": "cd compendium/scripts && node normalize spells",
+    "normalize:race-class": "cd compendium/scripts && node normalize race-class",
+    "normalize:monsters": "cd compendium/scripts && node normalize monsters",
     "index": "cd compendium/scripts && node indexing all"
   },
   "repository": {

@@ -1,0 +1,164 @@
+{
+  "type": "MONSTER",
+  "id": "satyr",
+  "name": "Satyr",
+  "url": "/monsters/satyr",
+  "source": "MM",
+  "description": "",
+  "challengeRating": 0.5,
+  "size": "MEDIUM",
+  "kind": "FEY",
+  "subKind": null,
+  "alignment": "CHAOTIC_NEUTRAL",
+  "maxHP": 31,
+  "hitDice": "7d8",
+  "armorClass": 14,
+  "proficiencyBonus": 2,
+  "speed": {
+    "walk": 40,
+    "swim": 0,
+    "fly": 0
+  },
+  "senses": {
+    "passivePerception": 12,
+    "passiveInsight": 10,
+    "darkvision": 0,
+    "blindsight": 0,
+    "truesight": 0,
+    "tremorsense": 0
+  },
+  "abilityScores": {
+    "strength": {
+      "score": 12,
+      "modifier": 1,
+      "savingThrow": 1
+    },
+    "dexterity": {
+      "score": 16,
+      "modifier": 3,
+      "savingThrow": 3
+    },
+    "constitution": {
+      "score": 11,
+      "modifier": 0,
+      "savingThrow": 0
+    },
+    "intelligence": {
+      "score": 12,
+      "modifier": 1,
+      "savingThrow": 1
+    },
+    "wisdom": {
+      "score": 10,
+      "modifier": 0,
+      "savingThrow": 0
+    },
+    "charisma": {
+      "score": 14,
+      "modifier": 2,
+      "savingThrow": 2
+    }
+  },
+  "proficiencies": [
+    {
+      "name": "Perception",
+      "url": "/skills/perception",
+      "amount": 2
+    },
+    {
+      "name": "Performance",
+      "url": "/skills/performance",
+      "amount": 6
+    },
+    {
+      "name": "Stealth",
+      "url": "/skills/stealth",
+      "amount": 5
+    }
+  ],
+  "resistances": [],
+  "immunities": {
+    "damageTypes": [],
+    "conditions": []
+  },
+  "vulnerabilities": [],
+  "languages": [
+    "Common",
+    "Elvish",
+    "Sylvan"
+  ],
+  "actions": [
+    {
+      "name": "Ram",
+      "description": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 6 (2d4 + 1) bludgeoning damage.",
+      "attackBonus": 3,
+      "damage": [
+        {
+          "type": {
+            "name": "Bludgeoning",
+            "url": "/damage-types/bludgeoning"
+          },
+          "amount": "2d4+1",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Shortsword",
+      "description": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1 d6 + 3) piercing damage.",
+      "attackBonus": 5,
+      "damage": [
+        {
+          "type": {
+            "name": "Piercing",
+            "url": "/damage-types/piercing"
+          },
+          "amount": "1d6+3",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Shortbow",
+      "description": "Ranged Weapon Attack: +5 to hit, range 80/320 ft., one target. Hit: 6 (1d6 + 3) piercing damage.",
+      "attackBonus": 5,
+      "damage": [
+        {
+          "type": {
+            "name": "Piercing",
+            "url": "/damage-types/piercing"
+          },
+          "amount": "1d6+3",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Variant: Panpipes",
+      "description": "Gentle Lullaby. The creature falls asleep and is unconscious for 1 minute. The effect ends if the creature takes damage or if someone takes an action to shake the creature awake.",
+      "attackBonus": 0,
+      "damage": null,
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    }
+  ],
+  "legendaryActions": [],
+  "specialAbilities": [
+    {
+      "name": "Magic Resistance",
+      "description": "The satyr has advantage on saving throws against spells and other magical effects.",
+      "usage": null,
+      "spellcasting": null
+    }
+  ]
+}

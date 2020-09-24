@@ -1,0 +1,227 @@
+{
+  "type": "MONSTER",
+  "id": "cloud-giant",
+  "name": "Cloud Giant",
+  "url": "/monsters/cloud-giant",
+  "source": "MM",
+  "description": "",
+  "challengeRating": 9,
+  "size": "HUGE",
+  "kind": "GIANT",
+  "subKind": null,
+  "alignment": "NEUTRAL_GOOD_50_OR_NEUTRAL_EVIL_50",
+  "maxHP": 200,
+  "hitDice": "16d12",
+  "armorClass": 14,
+  "proficiencyBonus": 4,
+  "speed": {
+    "walk": 40,
+    "swim": 0,
+    "fly": 0
+  },
+  "senses": {
+    "passivePerception": 17,
+    "passiveInsight": 17,
+    "darkvision": 0,
+    "blindsight": 0,
+    "truesight": 0,
+    "tremorsense": 0
+  },
+  "abilityScores": {
+    "strength": {
+      "score": 27,
+      "modifier": 8,
+      "savingThrow": 8
+    },
+    "dexterity": {
+      "score": 10,
+      "modifier": 0,
+      "savingThrow": 0
+    },
+    "constitution": {
+      "score": 22,
+      "modifier": 6,
+      "savingThrow": 16
+    },
+    "intelligence": {
+      "score": 12,
+      "modifier": 1,
+      "savingThrow": 1
+    },
+    "wisdom": {
+      "score": 16,
+      "modifier": 3,
+      "savingThrow": 10
+    },
+    "charisma": {
+      "score": 16,
+      "modifier": 3,
+      "savingThrow": 10
+    }
+  },
+  "proficiencies": [
+    {
+      "name": "Constitution",
+      "url": "/ability-scores/constitution",
+      "amount": 10
+    },
+    {
+      "name": "Wisdom",
+      "url": "/ability-scores/wisdom",
+      "amount": 7
+    },
+    {
+      "name": "Charisma",
+      "url": "/ability-scores/charisma",
+      "amount": 7
+    },
+    {
+      "name": "Insight",
+      "url": "/skills/insight",
+      "amount": 7
+    },
+    {
+      "name": "Perception",
+      "url": "/skills/perception",
+      "amount": 7
+    }
+  ],
+  "resistances": [],
+  "immunities": {
+    "damageTypes": [],
+    "conditions": []
+  },
+  "vulnerabilities": [],
+  "languages": [
+    "Common",
+    "Giant"
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "description": "The giant makes two morningstar attacks.",
+      "attackBonus": 0,
+      "damage": null,
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Morningstar",
+      "description": "Melee Weapon Attack: +12 to hit, reach 10 ft., one target. Hit: 21 (3d8 + 8) piercing damage.",
+      "attackBonus": 12,
+      "damage": [
+        {
+          "type": {
+            "name": "Piercing",
+            "url": "/damage-types/piercing"
+          },
+          "amount": "3d8+8",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Rock",
+      "description": "Ranged Weapon Attack: +12 to hit, range 60/240 ft., one target. Hit: 30 (4d10 + 8) bludgeoning damage.",
+      "attackBonus": 12,
+      "damage": [
+        {
+          "type": {
+            "name": "Bludgeoning",
+            "url": "/damage-types/bludgeoning"
+          },
+          "amount": "4d10+8",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    }
+  ],
+  "legendaryActions": [],
+  "specialAbilities": [
+    {
+      "name": "Keen Smell",
+      "description": "The giant has advantage on Wisdom (Perception) checks that rely on smell.",
+      "usage": null,
+      "spellcasting": null
+    },
+    {
+      "name": "Innate Spellcasting",
+      "description": "The giant's innate spellcasting ability is Charisma. It can innately cast the following spells, requiring no material components:\n\nAt will: detect magic, fog cloud, light\n3/day each: feather fall, fly, misty step, telekinesis\n1/day each: control weather, gaseous form",
+      "usage": null,
+      "spellcasting": {
+        "level": 1,
+        "ability": {
+          "name": "Charisma",
+          "url": "/ability-scores/charisma"
+        },
+        "saveDC": 10,
+        "attackBonus": 0,
+        "slots": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "spells": [
+          {
+            "name": "Detect Magic",
+            "url": "/spells/detect-magic",
+            "level": 0
+          },
+          {
+            "name": "Fog Cloud",
+            "url": "/spells/fog-cloud",
+            "level": 0
+          },
+          {
+            "name": "Light",
+            "url": "/spells/light",
+            "level": 0
+          },
+          {
+            "name": "Feather Fall",
+            "url": "/spells/feather-fall",
+            "level": 0
+          },
+          {
+            "name": "Fly",
+            "url": "/spells/fly",
+            "level": 0
+          },
+          {
+            "name": "Misty Step",
+            "url": "/spells/misty-step",
+            "level": 0
+          },
+          {
+            "name": "Telekinesis",
+            "url": "/spells/telekinesis",
+            "level": 0
+          },
+          {
+            "name": "Control Weather",
+            "url": "/spells/control-weather",
+            "level": 0
+          },
+          {
+            "name": "Gaseous Form",
+            "url": "/spells/gaseous-form",
+            "level": 0
+          }
+        ]
+      }
+    }
+  ]
+}

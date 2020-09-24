@@ -1,0 +1,415 @@
+{
+  "type": "MONSTER",
+  "id": "lich",
+  "name": "Lich",
+  "url": "/monsters/lich",
+  "source": "MM",
+  "description": "",
+  "challengeRating": 21,
+  "size": "MEDIUM",
+  "kind": "UNDEAD",
+  "subKind": null,
+  "alignment": "ANY_EVIL_ALIGNMENT",
+  "maxHP": 135,
+  "hitDice": "18d8",
+  "armorClass": 17,
+  "proficiencyBonus": 7,
+  "speed": {
+    "walk": 30,
+    "swim": 0,
+    "fly": 0
+  },
+  "senses": {
+    "passivePerception": 19,
+    "passiveInsight": 19,
+    "darkvision": 0,
+    "blindsight": 0,
+    "truesight": 120,
+    "tremorsense": 0
+  },
+  "abilityScores": {
+    "strength": {
+      "score": 11,
+      "modifier": 0,
+      "savingThrow": 0
+    },
+    "dexterity": {
+      "score": 16,
+      "modifier": 3,
+      "savingThrow": 3
+    },
+    "constitution": {
+      "score": 16,
+      "modifier": 3,
+      "savingThrow": 13
+    },
+    "intelligence": {
+      "score": 20,
+      "modifier": 5,
+      "savingThrow": 17
+    },
+    "wisdom": {
+      "score": 14,
+      "modifier": 2,
+      "savingThrow": 11
+    },
+    "charisma": {
+      "score": 16,
+      "modifier": 3,
+      "savingThrow": 3
+    }
+  },
+  "proficiencies": [
+    {
+      "name": "Constitution",
+      "url": "/ability-scores/constitution",
+      "amount": 10
+    },
+    {
+      "name": "Intelligence",
+      "url": "/ability-scores/intelligence",
+      "amount": 12
+    },
+    {
+      "name": "Wisdom",
+      "url": "/ability-scores/wisdom",
+      "amount": 9
+    },
+    {
+      "name": "Arcana",
+      "url": "/skills/arcana",
+      "amount": 18
+    },
+    {
+      "name": "History",
+      "url": "/skills/history",
+      "amount": 12
+    },
+    {
+      "name": "Insight",
+      "url": "/skills/insight",
+      "amount": 9
+    },
+    {
+      "name": "Perception",
+      "url": "/skills/perception",
+      "amount": 9
+    }
+  ],
+  "resistances": [
+    {
+      "name": "Cold",
+      "url": "/damage-types/cold"
+    },
+    {
+      "name": "Lightning",
+      "url": "/damage-types/lightning"
+    },
+    {
+      "name": "Necrotic",
+      "url": "/damage-types/necrotic"
+    }
+  ],
+  "immunities": {
+    "damageTypes": [
+      {
+        "name": "Poison",
+        "url": "/damage-types/poison"
+      },
+      {
+        "name": "Bludgeoning",
+        "url": "/damage-types/bludgeoning"
+      },
+      {
+        "name": "Piercing",
+        "url": "/damage-types/piercing"
+      },
+      {
+        "name": "Slashing",
+        "url": "/damage-types/slashing"
+      }
+    ],
+    "conditions": [
+      {
+        "name": "Charmed",
+        "url": "/conditions/charmed"
+      },
+      {
+        "name": "Exhaustion",
+        "url": "/conditions/exhaustion"
+      },
+      {
+        "name": "Frightened",
+        "url": "/conditions/frightened"
+      },
+      {
+        "name": "Paralyzed",
+        "url": "/conditions/paralyzed"
+      },
+      {
+        "name": "Poisoned",
+        "url": "/conditions/poisoned"
+      }
+    ]
+  },
+  "vulnerabilities": [],
+  "languages": [
+    "Common Plus Up To Five Other Languages"
+  ],
+  "actions": [
+    {
+      "name": "Paralyzing Touch",
+      "description": "Melee Spell Attack: +12 to hit, reach 5 ft., one creature. Hit: 10 (3d6) cold damage. The target must succeed on a DC 18 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+      "attackBonus": 12,
+      "damage": [
+        {
+          "type": {
+            "name": "Cold",
+            "url": "/damage-types/cold"
+          },
+          "amount": "3d6",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    }
+  ],
+  "legendaryActions": {
+    "amount": 3,
+    "options": [
+      {
+        "name": "Cantrip",
+        "description": "The lich casts a cantrip.",
+        "cost": 1,
+        "damage": null,
+        "saveDC": null
+      },
+      {
+        "name": "Paralyzing Touch",
+        "description": "The lich uses its Paralyzing Touch.",
+        "cost": 2,
+        "damage": null,
+        "saveDC": null
+      },
+      {
+        "name": "Frightening Gaze",
+        "description": "The lich fixes its gaze on one creature it can see within 10 feet of it. The target must succeed on a DC 18 Wisdom saving throw against this magic or become frightened for 1 minute. The frightened target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a target's saving throw is successful or the effect ends for it, the target is immune to the lich's gaze for the next 24 hours.",
+        "cost": 2,
+        "damage": null,
+        "saveDC": {
+          "ability": {
+            "name": "Wisdom",
+            "url": "/ability-scores/wisdom"
+          },
+          "value": 18,
+          "onSuccess": "NONE"
+        }
+      },
+      {
+        "name": "Disrupt Life",
+        "description": "Each living creature within 20 feet of the lich must make a DC 18 Constitution saving throw against this magic, taking 21 (6d6) necrotic damage on a failed save, or half as much damage on a successful one.",
+        "cost": 3,
+        "damage": [
+          {
+            "type": {
+              "name": "Necrotic",
+              "url": "/damage-types/necrotic"
+            },
+            "amount": "6d6",
+            "options": null
+          }
+        ],
+        "saveDC": {
+          "ability": {
+            "name": "Constitution",
+            "url": "/ability-scores/constitution"
+          },
+          "value": 18,
+          "onSuccess": "NONE"
+        }
+      }
+    ]
+  },
+  "specialAbilities": [
+    {
+      "name": "Legendary Resistance",
+      "description": "If the lich fails a saving throw, it can choose to succeed instead.",
+      "usage": {
+        "type": "PER_DAY",
+        "amount": 1
+      },
+      "spellcasting": null
+    },
+    {
+      "name": "Rejuvenation",
+      "description": "If it has a phylactery, a destroyed lich gains a new body in 1d10 days, regaining all its hit points and becoming active again. The new body appears within 5 feet of the phylactery.",
+      "usage": null,
+      "spellcasting": null
+    },
+    {
+      "name": "Spellcasting",
+      "description": "The lich is an 18th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 20, +12 to hit with spell attacks). The lich has the following wizard spells prepared:\n\n- Cantrips (at will): mage hand, prestidigitation, ray of frost\n- 1st level (4 slots): detect magic, magic missile, shield, thunderwave\n- 2nd level (3 slots): acid arrow, detect thoughts, invisibility, mirror image\n- 3rd level (3 slots): animate dead, counterspell, dispel magic, fireball\n- 4th level (3 slots): blight, dimension door\n- 5th level (3 slots): cloudkill, scrying\n- 6th level (1 slot): disintegrate, globe of invulnerability\n- 7th level (1 slot): finger of death, plane shift\n- 8th level (1 slot): dominate monster, power word stun\n- 9th level (1 slot): power word kill",
+      "usage": null,
+      "spellcasting": {
+        "level": 18,
+        "ability": {
+          "name": "Intelligence",
+          "url": "/ability-scores/intelligence"
+        },
+        "saveDC": 20,
+        "attackBonus": 12,
+        "slots": [
+          4,
+          3,
+          3,
+          3,
+          3,
+          1,
+          1,
+          1,
+          1
+        ],
+        "spells": [
+          {
+            "name": "Mage Hand",
+            "url": "/spells/187",
+            "level": 0
+          },
+          {
+            "name": "Prestidigitation",
+            "url": "/spells/227",
+            "level": 0
+          },
+          {
+            "name": "Ray Of Frost",
+            "url": "/spells/240",
+            "level": 0
+          },
+          {
+            "name": "Detect Magic",
+            "url": "/spells/179",
+            "level": 1
+          },
+          {
+            "name": "Magic Missile",
+            "url": "/spells/190",
+            "level": 1
+          },
+          {
+            "name": "Shield",
+            "url": "/spells/261",
+            "level": 1
+          },
+          {
+            "name": "Thunderwave",
+            "url": "/spells/292",
+            "level": 1
+          },
+          {
+            "name": "Acid Arrow",
+            "url": "/spells/1",
+            "level": 2
+          },
+          {
+            "name": "Detect Thoughts",
+            "url": "/spells/81",
+            "level": 2
+          },
+          {
+            "name": "Invisibility",
+            "url": "/spells/172",
+            "level": 2
+          },
+          {
+            "name": "Mirror Image",
+            "url": "/spells/207",
+            "level": 2
+          },
+          {
+            "name": "Animate Dead",
+            "url": "/spells/9",
+            "level": 3
+          },
+          {
+            "name": "Counterspell",
+            "url": "/spells/65",
+            "level": 3
+          },
+          {
+            "name": "Dispel Magic",
+            "url": "/spells/86",
+            "level": 3
+          },
+          {
+            "name": "Fireball",
+            "url": "/spells/119",
+            "level": 3
+          },
+          {
+            "name": "Blight",
+            "url": "/spells/30",
+            "level": 4
+          },
+          {
+            "name": "Dimension Door",
+            "url": "/spells/82",
+            "level": 4
+          },
+          {
+            "name": "Cloudkill",
+            "url": "/spells/44",
+            "level": 5
+          },
+          {
+            "name": "Scrying",
+            "url": "/spells/253",
+            "level": 5
+          },
+          {
+            "name": "Disintegrate",
+            "url": "/spells/84",
+            "level": 6
+          },
+          {
+            "name": "Globe Of Invulnerability",
+            "url": "/spells/138",
+            "level": 6
+          },
+          {
+            "name": "Finger Of Death",
+            "url": "/spells/115",
+            "level": 7
+          },
+          {
+            "name": "Plane Shift",
+            "url": "/spells/220",
+            "level": 7
+          },
+          {
+            "name": "Dominate Monster",
+            "url": "/spells/91",
+            "level": 8
+          },
+          {
+            "name": "Power Word Stun",
+            "url": "/spells/225",
+            "level": 8
+          },
+          {
+            "name": "Power Word Kill",
+            "url": "/spells/224",
+            "level": 9
+          }
+        ]
+      }
+    },
+    {
+      "name": "Turn Resistance",
+      "description": "The lich has advantage on saving throws against any effect that turns undead.",
+      "usage": null,
+      "spellcasting": null
+    }
+  ]
+}

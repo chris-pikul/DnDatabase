@@ -1,0 +1,218 @@
+{
+  "type": "MONSTER",
+  "id": "young-silver-dragon",
+  "name": "Young Silver Dragon",
+  "url": "/monsters/young-silver-dragon",
+  "source": "MM",
+  "description": "",
+  "challengeRating": 9,
+  "size": "LARGE",
+  "kind": "DRAGON",
+  "subKind": null,
+  "alignment": "LAWFUL_GOOD",
+  "maxHP": 168,
+  "hitDice": "16d10",
+  "armorClass": 18,
+  "proficiencyBonus": 4,
+  "speed": {
+    "walk": 40,
+    "swim": 0,
+    "fly": 80
+  },
+  "senses": {
+    "passivePerception": 18,
+    "passiveInsight": 10,
+    "darkvision": 120,
+    "blindsight": 30,
+    "truesight": 0,
+    "tremorsense": 0
+  },
+  "abilityScores": {
+    "strength": {
+      "score": 23,
+      "modifier": 6,
+      "savingThrow": 6
+    },
+    "dexterity": {
+      "score": 10,
+      "modifier": 0,
+      "savingThrow": 4
+    },
+    "constitution": {
+      "score": 21,
+      "modifier": 5,
+      "savingThrow": 14
+    },
+    "intelligence": {
+      "score": 14,
+      "modifier": 2,
+      "savingThrow": 2
+    },
+    "wisdom": {
+      "score": 11,
+      "modifier": 0,
+      "savingThrow": 4
+    },
+    "charisma": {
+      "score": 19,
+      "modifier": 4,
+      "savingThrow": 12
+    }
+  },
+  "proficiencies": [
+    {
+      "name": "Dexterity",
+      "url": "/ability-scores/dexterity",
+      "amount": 4
+    },
+    {
+      "name": "Constitution",
+      "url": "/ability-scores/constitution",
+      "amount": 9
+    },
+    {
+      "name": "Wisdom",
+      "url": "/ability-scores/wisdom",
+      "amount": 4
+    },
+    {
+      "name": "Charisma",
+      "url": "/ability-scores/charisma",
+      "amount": 8
+    },
+    {
+      "name": "Arcana",
+      "url": "/skills/arcana",
+      "amount": 6
+    },
+    {
+      "name": "History",
+      "url": "/skills/history",
+      "amount": 6
+    },
+    {
+      "name": "Perception",
+      "url": "/skills/perception",
+      "amount": 8
+    },
+    {
+      "name": "Stealth",
+      "url": "/skills/stealth",
+      "amount": 4
+    }
+  ],
+  "resistances": [],
+  "immunities": {
+    "damageTypes": [
+      {
+        "name": "Cold",
+        "url": "/damage-types/cold"
+      }
+    ],
+    "conditions": []
+  },
+  "vulnerabilities": [],
+  "languages": [
+    "Common",
+    "Draconic"
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "description": "The dragon makes three attacks: one with its bite and two with its claws.",
+      "attackBonus": 0,
+      "damage": null,
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Bite",
+      "description": "Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 17 (2d10 + 6) piercing damage.",
+      "attackBonus": 10,
+      "damage": [
+        {
+          "type": {
+            "name": "Piercing",
+            "url": "/damage-types/piercing"
+          },
+          "amount": "2d10+6",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Claw",
+      "description": "Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 13 (2d6 + 6) slashing damage.",
+      "attackBonus": 10,
+      "damage": [
+        {
+          "type": {
+            "name": "Slashing",
+            "url": "/damage-types/slashing"
+          },
+          "amount": "2d6+6",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Breath Weapons",
+      "description": "The dragon uses one of the following breath weapons.\nCold Breath. The dragon exhales an icy blast in a 30-foot cone. Each creature in that area must make a DC 17 Constitution saving throw, taking 54 (12d8) cold damage on a failed save, or half as much damage on a successful one.\nParalyzing Breath. The dragon exhales paralyzing gas in a 30-foot cone. Each creature in that area must succeed on a DC 17 Constitution saving throw or be paralyzed for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+      "attackBonus": 0,
+      "damage": null,
+      "saveDC": null,
+      "usage": {
+        "type": "RECHARGE_ON_ROLL",
+        "amount": 0,
+        "dice": "1d6",
+        "minRoll": 5
+      },
+      "options": {
+        "amount": 1,
+        "choices": [
+          {
+            "name": "Cold Breath",
+            "damage": [
+              {
+                "type": {
+                  "name": "Cold",
+                  "url": "/damage-types/cold"
+                },
+                "amount": "12d8"
+              }
+            ],
+            "saveDC": {
+              "ability": {
+                "name": "Constitution",
+                "url": "/ability-scores/constitution"
+              },
+              "value": 17,
+              "onSuccess": "HALF"
+            }
+          },
+          {
+            "name": "Paralyzing Breath",
+            "damage": null,
+            "saveDC": {
+              "ability": {
+                "name": "Constitution",
+                "url": "/ability-scores/constitution"
+              },
+              "value": 17,
+              "onSuccess": "NONE"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "legendaryActions": [],
+  "specialAbilities": []
+}

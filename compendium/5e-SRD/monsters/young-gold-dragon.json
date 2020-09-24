@@ -1,0 +1,225 @@
+{
+  "type": "MONSTER",
+  "id": "young-gold-dragon",
+  "name": "Young Gold Dragon",
+  "url": "/monsters/young-gold-dragon",
+  "source": "MM",
+  "description": "",
+  "challengeRating": 10,
+  "size": "LARGE",
+  "kind": "DRAGON",
+  "subKind": null,
+  "alignment": "LAWFUL_GOOD",
+  "maxHP": 178,
+  "hitDice": "17d10",
+  "armorClass": 18,
+  "proficiencyBonus": 4,
+  "speed": {
+    "walk": 40,
+    "swim": 40,
+    "fly": 80
+  },
+  "senses": {
+    "passivePerception": 19,
+    "passiveInsight": 15,
+    "darkvision": 120,
+    "blindsight": 30,
+    "truesight": 0,
+    "tremorsense": 0
+  },
+  "abilityScores": {
+    "strength": {
+      "score": 23,
+      "modifier": 6,
+      "savingThrow": 6
+    },
+    "dexterity": {
+      "score": 14,
+      "modifier": 2,
+      "savingThrow": 8
+    },
+    "constitution": {
+      "score": 21,
+      "modifier": 5,
+      "savingThrow": 14
+    },
+    "intelligence": {
+      "score": 16,
+      "modifier": 3,
+      "savingThrow": 3
+    },
+    "wisdom": {
+      "score": 13,
+      "modifier": 1,
+      "savingThrow": 6
+    },
+    "charisma": {
+      "score": 20,
+      "modifier": 5,
+      "savingThrow": 14
+    }
+  },
+  "proficiencies": [
+    {
+      "name": "Dexterity",
+      "url": "/ability-scores/dexterity",
+      "amount": 6
+    },
+    {
+      "name": "Constitution",
+      "url": "/ability-scores/constitution",
+      "amount": 9
+    },
+    {
+      "name": "Wisdom",
+      "url": "/ability-scores/wisdom",
+      "amount": 5
+    },
+    {
+      "name": "Charisma",
+      "url": "/ability-scores/charisma",
+      "amount": 9
+    },
+    {
+      "name": "Insight",
+      "url": "/skills/insight",
+      "amount": 5
+    },
+    {
+      "name": "Perception",
+      "url": "/skills/perception",
+      "amount": 9
+    },
+    {
+      "name": "Persuasion",
+      "url": "/skills/persuasion",
+      "amount": 9
+    },
+    {
+      "name": "Stealth",
+      "url": "/skills/stealth",
+      "amount": 6
+    }
+  ],
+  "resistances": [],
+  "immunities": {
+    "damageTypes": [
+      {
+        "name": "Fire",
+        "url": "/damage-types/fire"
+      }
+    ],
+    "conditions": []
+  },
+  "vulnerabilities": [],
+  "languages": [
+    "Common",
+    "Draconic"
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "description": "The dragon makes three attacks: one with its bite and two with its claws.",
+      "attackBonus": 0,
+      "damage": null,
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Bite",
+      "description": "Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 17 (2d10 + 6) piercing damage.",
+      "attackBonus": 10,
+      "damage": [
+        {
+          "type": {
+            "name": "Piercing",
+            "url": "/damage-types/piercing"
+          },
+          "amount": "2d10+6",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Claw",
+      "description": "Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 13 (2d6 + 6) slashing damage.",
+      "attackBonus": 10,
+      "damage": [
+        {
+          "type": {
+            "name": "Slashing",
+            "url": "/damage-types/slashing"
+          },
+          "amount": "2d6+6",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Breath Weapons",
+      "description": "The dragon uses one of the following breath weapons.\nFire Breath. The dragon exhales fire in a 30-foot cone. Each creature in that area must make a DC 17 Dexterity saving throw, taking 55 (10d10) fire damage on a failed save, or half as much damage on a successful one.\nWeakening Breath. The dragon exhales gas in a 30-foot cone. Each creature in that area must succeed on a DC 17 Strength saving throw or have disadvantage on Strength-based attack rolls, Strength checks, and Strength saving throws for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+      "attackBonus": 0,
+      "damage": null,
+      "saveDC": null,
+      "usage": {
+        "type": "RECHARGE_ON_ROLL",
+        "amount": 0,
+        "dice": "1d6",
+        "minRoll": 5
+      },
+      "options": {
+        "amount": 1,
+        "choices": [
+          {
+            "name": "Fire Breath",
+            "damage": [
+              {
+                "type": {
+                  "name": "Fire",
+                  "url": "/damage-types/fire"
+                },
+                "amount": "10d10"
+              }
+            ],
+            "saveDC": {
+              "ability": {
+                "name": "Dexterity",
+                "url": "/ability-scores/dexterity"
+              },
+              "value": 17,
+              "onSuccess": "HALF"
+            }
+          },
+          {
+            "name": "Weakening Breath",
+            "damage": null,
+            "saveDC": {
+              "ability": {
+                "name": "Strength",
+                "url": "/ability-scores/strength"
+              },
+              "value": 17,
+              "onSuccess": "NONE"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "legendaryActions": [],
+  "specialAbilities": [
+    {
+      "name": "Amphibious",
+      "description": "The dragon can breathe air and water.",
+      "usage": null,
+      "spellcasting": null
+    }
+  ]
+}

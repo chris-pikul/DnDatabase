@@ -1,0 +1,930 @@
+{
+  "id": "bard",
+  "url": "/classes/bard",
+  "name": "Bard",
+  "source": "PHB",
+  "hitDie": 8,
+  "levels": [
+    {
+      "level": 1,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 2,
+      "spellcasting": {
+        "cantrips": 2,
+        "slots": [
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "features": [
+        {
+          "name": "Spellcasting",
+          "url": "/features/spellcasting-bard"
+        },
+        {
+          "name": "Bardic Inspiration (d6)",
+          "url": "/features/bardic-inspiration-d6"
+        }
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "bardicInspirationDie": 6,
+        "songOfRestDie": 0,
+        "magicalSecretsMax5": 0,
+        "magicalSecretsMax7": 0,
+        "magicalSecretsMax9": 0
+      }
+    },
+    {
+      "level": 2,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 2,
+      "spellcasting": {
+        "cantrips": 2,
+        "slots": [
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "features": [
+        {
+          "name": "Jack Of All Trades",
+          "url": "/features/jack-of-all-trades"
+        },
+        {
+          "name": "Song Of Rest (d6)",
+          "url": "/features/song-of-rest-d6"
+        }
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "bardicInspirationDie": 6,
+        "songOfRestDie": 6,
+        "magicalSecretsMax5": 0,
+        "magicalSecretsMax7": 0,
+        "magicalSecretsMax9": 0
+      }
+    },
+    {
+      "level": 3,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 2,
+      "spellcasting": {
+        "cantrips": 2,
+        "slots": [
+          4,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "features": [
+        {
+          "name": "Bard College",
+          "url": "/features/bard-college"
+        }
+      ],
+      "featureChoices": [
+        {
+          "name": "Expertise 1",
+          "url": "/features/bard-choose-expertise-1"
+        }
+      ],
+      "classSpecific": {
+        "bardicInspirationDie": 6,
+        "songOfRestDie": 6,
+        "magicalSecretsMax5": 0,
+        "magicalSecretsMax7": 0,
+        "magicalSecretsMax9": 0
+      }
+    },
+    {
+      "level": 4,
+      "abilityScoreIncrease": true,
+      "proficiencyBonus": 2,
+      "spellcasting": {
+        "cantrips": 3,
+        "slots": [
+          4,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "features": [],
+      "featureChoices": [],
+      "classSpecific": {
+        "bardicInspirationDie": 6,
+        "songOfRestDie": 6,
+        "magicalSecretsMax5": 0,
+        "magicalSecretsMax7": 0,
+        "magicalSecretsMax9": 0
+      }
+    },
+    {
+      "level": 5,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 3,
+      "spellcasting": {
+        "cantrips": 3,
+        "slots": [
+          4,
+          3,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "features": [
+        {
+          "name": "Bardic Inspiration (d8)",
+          "url": "/features/bardic-inspiration-d8"
+        },
+        {
+          "name": "Font Of Inspiration",
+          "url": "/features/font-of-inspiration"
+        }
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "bardicInspirationDie": 8,
+        "songOfRestDie": 6,
+        "magicalSecretsMax5": 0,
+        "magicalSecretsMax7": 0,
+        "magicalSecretsMax9": 0
+      }
+    },
+    {
+      "level": 6,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 3,
+      "spellcasting": {
+        "cantrips": 3,
+        "slots": [
+          4,
+          3,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "features": [
+        {
+          "name": "Countercharm",
+          "url": "/features/countercharm"
+        }
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "bardicInspirationDie": 8,
+        "songOfRestDie": 6,
+        "magicalSecretsMax5": 0,
+        "magicalSecretsMax7": 0,
+        "magicalSecretsMax9": 0
+      }
+    },
+    {
+      "level": 7,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 3,
+      "spellcasting": {
+        "cantrips": 3,
+        "slots": [
+          4,
+          3,
+          3,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "features": [],
+      "featureChoices": [],
+      "classSpecific": {
+        "bardicInspirationDie": 8,
+        "songOfRestDie": 6,
+        "magicalSecretsMax5": 0,
+        "magicalSecretsMax7": 0,
+        "magicalSecretsMax9": 0
+      }
+    },
+    {
+      "level": 8,
+      "abilityScoreIncrease": true,
+      "proficiencyBonus": 3,
+      "spellcasting": {
+        "cantrips": 3,
+        "slots": [
+          4,
+          3,
+          3,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "features": [],
+      "featureChoices": [],
+      "classSpecific": {
+        "bardicInspirationDie": 8,
+        "songOfRestDie": 6,
+        "magicalSecretsMax5": 0,
+        "magicalSecretsMax7": 0,
+        "magicalSecretsMax9": 0
+      }
+    },
+    {
+      "level": 9,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 4,
+      "spellcasting": {
+        "cantrips": 3,
+        "slots": [
+          4,
+          3,
+          3,
+          3,
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "features": [
+        {
+          "name": "Song Of Rest (d8)",
+          "url": "/features/song-of-rest-d8"
+        }
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "bardicInspirationDie": 8,
+        "songOfRestDie": 8,
+        "magicalSecretsMax5": 0,
+        "magicalSecretsMax7": 0,
+        "magicalSecretsMax9": 0
+      }
+    },
+    {
+      "level": 10,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 4,
+      "spellcasting": {
+        "cantrips": 4,
+        "slots": [
+          4,
+          3,
+          3,
+          3,
+          2,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "features": [
+        {
+          "name": "Bardic Inspiration (d10)",
+          "url": "/features/bardic-inspiration-d10"
+        },
+        {
+          "name": "Magical Secrets 1",
+          "url": "/features/magical-secrets-1"
+        }
+      ],
+      "featureChoices": [
+        {
+          "name": "Expertise 2",
+          "url": "/features/bard-choose-expertise-2"
+        }
+      ],
+      "classSpecific": {
+        "bardicInspirationDie": 10,
+        "songOfRestDie": 8,
+        "magicalSecretsMax5": 2,
+        "magicalSecretsMax7": 0,
+        "magicalSecretsMax9": 0
+      }
+    },
+    {
+      "level": 11,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 4,
+      "spellcasting": {
+        "cantrips": 4,
+        "slots": [
+          4,
+          3,
+          3,
+          3,
+          2,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "features": [],
+      "featureChoices": [],
+      "classSpecific": {
+        "bardicInspirationDie": 10,
+        "songOfRestDie": 8,
+        "magicalSecretsMax5": 2,
+        "magicalSecretsMax7": 0,
+        "magicalSecretsMax9": 0
+      }
+    },
+    {
+      "level": 12,
+      "abilityScoreIncrease": true,
+      "proficiencyBonus": 4,
+      "spellcasting": {
+        "cantrips": 4,
+        "slots": [
+          4,
+          3,
+          3,
+          3,
+          2,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "features": [],
+      "featureChoices": [],
+      "classSpecific": {
+        "bardicInspirationDie": 10,
+        "songOfRestDie": 8,
+        "magicalSecretsMax5": 2,
+        "magicalSecretsMax7": 0,
+        "magicalSecretsMax9": 0
+      }
+    },
+    {
+      "level": 13,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 5,
+      "spellcasting": {
+        "cantrips": 4,
+        "slots": [
+          4,
+          3,
+          3,
+          3,
+          2,
+          1,
+          1,
+          0,
+          0
+        ]
+      },
+      "features": [
+        {
+          "name": "Song Of Rest (d10)",
+          "url": "/features/song-of-rest-d10"
+        }
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "bardicInspirationDie": 10,
+        "songOfRestDie": 10,
+        "magicalSecretsMax5": 2,
+        "magicalSecretsMax7": 0,
+        "magicalSecretsMax9": 0
+      }
+    },
+    {
+      "level": 14,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 5,
+      "spellcasting": {
+        "cantrips": 4,
+        "slots": [
+          4,
+          3,
+          3,
+          3,
+          2,
+          1,
+          1,
+          0,
+          0
+        ]
+      },
+      "features": [
+        {
+          "name": "Magical Secrets 2",
+          "url": "/features/magical-secrets-2"
+        }
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "bardicInspirationDie": 10,
+        "songOfRestDie": 10,
+        "magicalSecretsMax5": 2,
+        "magicalSecretsMax7": 2,
+        "magicalSecretsMax9": 0
+      }
+    },
+    {
+      "level": 15,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 5,
+      "spellcasting": {
+        "cantrips": 4,
+        "slots": [
+          4,
+          3,
+          3,
+          3,
+          2,
+          1,
+          1,
+          1,
+          0
+        ]
+      },
+      "features": [
+        {
+          "name": "Bardic Inspiration (d12)",
+          "url": "/features/bardic-inspiration-d12"
+        }
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "bardicInspirationDie": 12,
+        "songOfRestDie": 10,
+        "magicalSecretsMax5": 2,
+        "magicalSecretsMax7": 2,
+        "magicalSecretsMax9": 0
+      }
+    },
+    {
+      "level": 16,
+      "abilityScoreIncrease": true,
+      "proficiencyBonus": 5,
+      "spellcasting": {
+        "cantrips": 4,
+        "slots": [
+          4,
+          3,
+          3,
+          3,
+          2,
+          1,
+          1,
+          1,
+          0
+        ]
+      },
+      "features": [],
+      "featureChoices": [],
+      "classSpecific": {
+        "bardicInspirationDie": 12,
+        "songOfRestDie": 10,
+        "magicalSecretsMax5": 2,
+        "magicalSecretsMax7": 2,
+        "magicalSecretsMax9": 0
+      }
+    },
+    {
+      "level": 17,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 6,
+      "spellcasting": {
+        "cantrips": 4,
+        "slots": [
+          4,
+          3,
+          3,
+          3,
+          2,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "features": [
+        {
+          "name": "Song Of Rest (d12)",
+          "url": "/features/song-of-rest-d12"
+        }
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "bardicInspirationDie": 12,
+        "songOfRestDie": 12,
+        "magicalSecretsMax5": 2,
+        "magicalSecretsMax7": 2,
+        "magicalSecretsMax9": 0
+      }
+    },
+    {
+      "level": 18,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 6,
+      "spellcasting": {
+        "cantrips": 4,
+        "slots": [
+          4,
+          3,
+          3,
+          3,
+          3,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "features": [
+        {
+          "name": "Magical Secrets 3",
+          "url": "/features/magical-secrets-3"
+        }
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "bardicInspirationDie": 12,
+        "songOfRestDie": 12,
+        "magicalSecretsMax5": 2,
+        "magicalSecretsMax7": 2,
+        "magicalSecretsMax9": 2
+      }
+    },
+    {
+      "level": 19,
+      "abilityScoreIncrease": true,
+      "proficiencyBonus": 6,
+      "spellcasting": {
+        "cantrips": 4,
+        "slots": [
+          4,
+          3,
+          3,
+          3,
+          3,
+          2,
+          1,
+          1,
+          1
+        ]
+      },
+      "features": [],
+      "featureChoices": [],
+      "classSpecific": {
+        "bardicInspirationDie": 12,
+        "songOfRestDie": 12,
+        "magicalSecretsMax5": 2,
+        "magicalSecretsMax7": 2,
+        "magicalSecretsMax9": 2
+      }
+    },
+    {
+      "level": 20,
+      "abilityScoreIncrease": false,
+      "proficiencyBonus": 6,
+      "spellcasting": {
+        "cantrips": 4,
+        "slots": [
+          4,
+          3,
+          3,
+          3,
+          3,
+          2,
+          2,
+          1,
+          1
+        ]
+      },
+      "features": [
+        {
+          "name": "Superior Inspiration",
+          "url": "/features/superior-inspiration"
+        }
+      ],
+      "featureChoices": [],
+      "classSpecific": {
+        "bardicInspirationDie": 12,
+        "songOfRestDie": 12,
+        "magicalSecretsMax5": 2,
+        "magicalSecretsMax7": 2,
+        "magicalSecretsMax9": 2
+      }
+    }
+  ],
+  "proficiencies": {
+    "savingThrows": [
+      {
+        "name": "Dexterity",
+        "url": "/ability-scores/dexterity"
+      },
+      {
+        "name": "Charisma",
+        "url": "/ability-scores/charisma"
+      }
+    ],
+    "equipment": [
+      {
+        "name": "Light Armor",
+        "url": "/proficiencies/light-armor"
+      },
+      {
+        "name": "Simple Weapons",
+        "url": "/proficiencies/simple-weapons"
+      },
+      {
+        "name": "Longswords",
+        "url": "/proficiencies/longswords"
+      },
+      {
+        "name": "Rapiers",
+        "url": "/proficiencies/rapiers"
+      },
+      {
+        "name": "Shortswords",
+        "url": "/proficiencies/shortswords"
+      },
+      {
+        "name": "Crossbows, Hand",
+        "url": "/proficiencies/crossbows-hand"
+      }
+    ],
+    "options": [
+      {
+        "type": "INSTRUMENT",
+        "amount": 3,
+        "choices": [
+          {
+            "name": "Bagpipes",
+            "url": "/items/instrument/bagpipes"
+          },
+          {
+            "name": "Drum",
+            "url": "/items/instrument/drum"
+          },
+          {
+            "name": "Dulcimer",
+            "url": "/items/instrument/dulcimer"
+          },
+          {
+            "name": "Flute",
+            "url": "/items/instrument/flute"
+          },
+          {
+            "name": "Lute",
+            "url": "/items/instrument/lute"
+          },
+          {
+            "name": "Lyre",
+            "url": "/items/instrument/lyre"
+          },
+          {
+            "name": "Horn",
+            "url": "/items/instrument/horn"
+          },
+          {
+            "name": "Pan Flute",
+            "url": "/items/instrument/pan-flute"
+          },
+          {
+            "name": "Shawm",
+            "url": "/items/instrument/shawm"
+          },
+          {
+            "name": "Viol",
+            "url": "/items/instrument/viol"
+          }
+        ]
+      },
+      {
+        "type": "SKILL",
+        "amount": 3,
+        "choices": [
+          {
+            "name": "Acrobatics",
+            "url": "/skills/acrobatics"
+          },
+          {
+            "name": "Animal Handling",
+            "url": "/skills/animal-handling"
+          },
+          {
+            "name": "Arcana",
+            "url": "/skills/arcana"
+          },
+          {
+            "name": "Athletics",
+            "url": "/skills/athletics"
+          },
+          {
+            "name": "Deception",
+            "url": "/skills/deception"
+          },
+          {
+            "name": "History",
+            "url": "/skills/history"
+          },
+          {
+            "name": "Insight",
+            "url": "/skills/insight"
+          },
+          {
+            "name": "Intimidation",
+            "url": "/skills/intimidation"
+          },
+          {
+            "name": "Investigation",
+            "url": "/skills/investigation"
+          },
+          {
+            "name": "Medicine",
+            "url": "/skills/medicine"
+          },
+          {
+            "name": "Nature",
+            "url": "/skills/nature"
+          },
+          {
+            "name": "Perception",
+            "url": "/skills/perception"
+          },
+          {
+            "name": "Performance",
+            "url": "/skills/performance"
+          },
+          {
+            "name": "Persuasion",
+            "url": "/skills/persuasion"
+          },
+          {
+            "name": "Religion",
+            "url": "/skills/religion"
+          },
+          {
+            "name": "Sleight Of Hand",
+            "url": "/skills/sleight-of-hand"
+          },
+          {
+            "name": "Stealth",
+            "url": "/skills/stealth"
+          },
+          {
+            "name": "Survival",
+            "url": "/skills/survival"
+          }
+        ]
+      }
+    ]
+  },
+  "spellcasting": {
+    "ability": {
+      "name": "Charisma",
+      "url": "/ability-scores/charisma"
+    },
+    "unlockLevel": 1,
+    "features": [
+      {
+        "title": "Cantrips",
+        "description": "You know two cantrips of your choice from the bard spell list. You learn additional bard cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Bard table."
+      },
+      {
+        "title": "Spell Slots",
+        "description": "The Bard table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.\\nFor example, if you know the 1st-level spell cure wounds and have a 1st-level and a 2nd-level spell slot available, you can cast cure wounds using either slot."
+      },
+      {
+        "title": "Spells Known of 1st Level and Higher",
+        "description": "You know four 1st-level spells of your choice from the bard spell list.\\nThe Spells Known column of the Bard table shows when you learn more bard spells of your choice.\\nEach of these spells must be of a level for which you have spell slots, as shown on the table. For instance, when you reach 3rd level in this class, you can learn one new spell of 1st or 2nd level.\\nAdditionally, when you gain a level in this class, you can choose one of the bard spells you know and replace it with another spell from the bard spell list, which also must be of a level for which you have spell slots."
+      },
+      {
+        "title": "Spellcasting Ability",
+        "description": "Charisma is your spellcasting ability for your bard spells. Your magic comes from the heart and soul you pour into the performance of your music or oration. You use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a bard spell you cast and when making an attack roll with one.\\nSpell save DC = 8 + your proficiency bonus + your Charisma modifier.\\nSpell attack modifier = your proficiency bonus + your Charisma modifier."
+      },
+      {
+        "title": "Ritual Casting",
+        "description": "You can cast any bard spell you know as a ritual if that spell has the ritual tag."
+      },
+      {
+        "title": "Spellcasting Focus",
+        "description": "You can use a musical instrument (see Equipment) as a spellcasting focus for your bard spells."
+      }
+    ]
+  },
+  "equipment": {
+    "starting": [
+      {
+        "name": "Leather",
+        "url": "/items/leather",
+        "amount": 1
+      },
+      {
+        "name": "Dagger",
+        "url": "/items/dagger",
+        "amount": 1
+      }
+    ],
+    "options": [
+      {
+        "amount": 1,
+        "choices": [
+          {
+            "type": "ITEM",
+            "name": "Rapier",
+            "url": "/items/rapier",
+            "amount": 1
+          },
+          {
+            "type": "ITEM",
+            "name": "Longsword",
+            "url": "/items/longsword",
+            "amount": 1
+          },
+          {
+            "type": "CATEGORY",
+            "name": "Simple Weapons",
+            "url": "/equipment-categories/simple-weapons",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "amount": 1,
+        "choices": [
+          {
+            "type": "EQUIPMENT_PACK",
+            "name": "Diplomat's Pack",
+            "url": "/equipment-packs/diplomats-pack",
+            "amount": 1
+          },
+          {
+            "type": "EQUIPMENT_PACK",
+            "name": "Entertainer's Pack",
+            "url": "/equipment-packs/entertainers-pack",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "amount": 1,
+        "choices": [
+          {
+            "type": "ITEM",
+            "name": "Lute",
+            "url": "/items/instrument/lute",
+            "amount": 1
+          },
+          {
+            "type": "CATEGORY",
+            "name": "Musical Instruments",
+            "url": "/equipment-categories/musical-instruments",
+            "amount": 1
+          }
+        ]
+      }
+    ]
+  }
+}

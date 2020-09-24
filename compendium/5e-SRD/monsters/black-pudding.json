@@ -1,0 +1,163 @@
+{
+  "type": "MONSTER",
+  "id": "black-pudding",
+  "name": "Black Pudding",
+  "url": "/monsters/black-pudding",
+  "source": "MM",
+  "description": "",
+  "challengeRating": 4,
+  "size": "LARGE",
+  "kind": "OOZE",
+  "subKind": null,
+  "alignment": "UNALIGNED",
+  "maxHP": 85,
+  "hitDice": "10d10",
+  "armorClass": 7,
+  "proficiencyBonus": 2,
+  "speed": {
+    "walk": 20,
+    "swim": 0,
+    "fly": 0
+  },
+  "senses": {
+    "passivePerception": 8,
+    "passiveInsight": 10,
+    "darkvision": 0,
+    "blindsight": 60,
+    "truesight": 0,
+    "tremorsense": 0
+  },
+  "abilityScores": {
+    "strength": {
+      "score": 16,
+      "modifier": 3,
+      "savingThrow": 3
+    },
+    "dexterity": {
+      "score": 5,
+      "modifier": -3,
+      "savingThrow": -3
+    },
+    "constitution": {
+      "score": 16,
+      "modifier": 3,
+      "savingThrow": 3
+    },
+    "intelligence": {
+      "score": 1,
+      "modifier": -5,
+      "savingThrow": -5
+    },
+    "wisdom": {
+      "score": 6,
+      "modifier": -2,
+      "savingThrow": -2
+    },
+    "charisma": {
+      "score": 1,
+      "modifier": -5,
+      "savingThrow": -5
+    }
+  },
+  "proficiencies": [],
+  "resistances": [],
+  "immunities": {
+    "damageTypes": [
+      {
+        "name": "Acid",
+        "url": "/damage-types/acid"
+      },
+      {
+        "name": "Cold",
+        "url": "/damage-types/cold"
+      },
+      {
+        "name": "Lightning",
+        "url": "/damage-types/lightning"
+      },
+      {
+        "name": "Slashing",
+        "url": "/damage-types/slashing"
+      }
+    ],
+    "conditions": [
+      {
+        "name": "Blinded",
+        "url": "/conditions/blinded"
+      },
+      {
+        "name": "Charmed",
+        "url": "/conditions/charmed"
+      },
+      {
+        "name": "Blinded",
+        "url": "/conditions/blinded"
+      },
+      {
+        "name": "Exhaustion",
+        "url": "/conditions/exhaustion"
+      },
+      {
+        "name": "Frightened",
+        "url": "/conditions/frightened"
+      },
+      {
+        "name": "Prone",
+        "url": "/conditions/prone"
+      }
+    ]
+  },
+  "vulnerabilities": [],
+  "languages": [
+    ""
+  ],
+  "actions": [
+    {
+      "name": "Pseudopod",
+      "description": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) bludgeoning damage plus 18 (4d8) acid damage. In addition, nonmagical armor worn by the target is partly dissolved and takes a permanent and cumulative -1 penalty to the AC it offers. The armor is destroyed if the penalty reduces its AC to 10.",
+      "attackBonus": 5,
+      "damage": [
+        {
+          "type": {
+            "name": "Bludgeoning",
+            "url": "/damage-types/bludgeoning"
+          },
+          "amount": "1d6+3",
+          "options": null
+        },
+        {
+          "type": {
+            "name": "Acid",
+            "url": "/damage-types/acid"
+          },
+          "amount": "4d8",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    }
+  ],
+  "legendaryActions": [],
+  "specialAbilities": [
+    {
+      "name": "Amorphous",
+      "description": "The pudding can move through a space as narrow as 1 inch wide without squeezing.",
+      "usage": null,
+      "spellcasting": null
+    },
+    {
+      "name": "Corrosive Form",
+      "description": "A creature that touches the pudding or hits it with a melee attack while within 5 feet of it takes 4 (1d8) acid damage. Any nonmagical weapon made of metal or wood that hits the pudding corrodes. After dealing damage, the weapon takes a permanent and cumulative -1 penalty to damage rolls. If its penalty drops to -5, the weapon is destroyed. Nonmagical ammunition made of metal or wood that hits the pudding is destroyed after dealing damage. The pudding can eat through 2-inch-thick, nonmagical wood or metal in 1 round.",
+      "usage": null,
+      "spellcasting": null
+    },
+    {
+      "name": "Spider Climb",
+      "description": "The pudding can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.",
+      "usage": null,
+      "spellcasting": null
+    }
+  ]
+}

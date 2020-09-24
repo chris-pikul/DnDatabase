@@ -1,0 +1,198 @@
+{
+  "type": "MONSTER",
+  "id": "dryad",
+  "name": "Dryad",
+  "url": "/monsters/dryad",
+  "source": "MM",
+  "description": "",
+  "challengeRating": 1,
+  "size": "MEDIUM",
+  "kind": "FEY",
+  "subKind": null,
+  "alignment": "NEUTRAL",
+  "maxHP": 22,
+  "hitDice": "5d8",
+  "armorClass": 11,
+  "proficiencyBonus": 2,
+  "speed": {
+    "walk": 30,
+    "swim": 0,
+    "fly": 0
+  },
+  "senses": {
+    "passivePerception": 14,
+    "passiveInsight": 10,
+    "darkvision": 60,
+    "blindsight": 0,
+    "truesight": 0,
+    "tremorsense": 0
+  },
+  "abilityScores": {
+    "strength": {
+      "score": 10,
+      "modifier": 0,
+      "savingThrow": 0
+    },
+    "dexterity": {
+      "score": 12,
+      "modifier": 1,
+      "savingThrow": 1
+    },
+    "constitution": {
+      "score": 11,
+      "modifier": 0,
+      "savingThrow": 0
+    },
+    "intelligence": {
+      "score": 14,
+      "modifier": 2,
+      "savingThrow": 2
+    },
+    "wisdom": {
+      "score": 15,
+      "modifier": 2,
+      "savingThrow": 2
+    },
+    "charisma": {
+      "score": 18,
+      "modifier": 4,
+      "savingThrow": 4
+    }
+  },
+  "proficiencies": [
+    {
+      "name": "Perception",
+      "url": "/skills/perception",
+      "amount": 4
+    },
+    {
+      "name": "Stealth",
+      "url": "/skills/stealth",
+      "amount": 5
+    }
+  ],
+  "resistances": [],
+  "immunities": {
+    "damageTypes": [],
+    "conditions": []
+  },
+  "vulnerabilities": [],
+  "languages": [
+    "Elvish",
+    "Sylvan"
+  ],
+  "actions": [
+    {
+      "name": "Club",
+      "description": "Melee Weapon Attack: +2 to hit (+6 to hit with shillelagh), reach 5 ft., one target. Hit: 2 (1 d4) bludgeoning damage, or 8 (1d8 + 4) bludgeoning damage with shillelagh.",
+      "attackBonus": 2,
+      "damage": [
+        {
+          "type": {
+            "name": "Bludgeoning",
+            "url": "/damage-types/bludgeoning"
+          },
+          "amount": "1d4",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Fey Charm",
+      "description": "The dryad targets one humanoid or beast that she can see within 30 feet of her. If the target can see the dryad, it must succeed on a DC 14 Wisdom saving throw or be magically charmed. The charmed creature regards the dryad as a trusted friend to be heeded and protected. Although the target isn't under the dryad's control, it takes the dryad's requests or actions in the most favorable way it can.\nEach time the dryad or its allies do anything harmful to the target, it can repeat the saving throw, ending the effect on itself on a success. Otherwise, the effect lasts 24 hours or until the dryad dies, is on a different plane of existence from the target, or ends the effect as a bonus action. If a target's saving throw is successful, the target is immune to the dryad's Fey Charm for the next 24 hours.\nThe dryad can have no more than one humanoid and up to three beasts charmed at a time.",
+      "attackBonus": 0,
+      "damage": null,
+      "saveDC": {
+        "ability": {
+          "name": "Wisdom",
+          "url": "/ability-scores/wisdom"
+        },
+        "value": 14,
+        "onSuccess": "NONE"
+      },
+      "usage": null,
+      "options": null
+    }
+  ],
+  "legendaryActions": [],
+  "specialAbilities": [
+    {
+      "name": "Innate Spellcasting",
+      "description": "The dryad's innate spellcasting ability is Charisma (spell save DC 14). The dryad can innately cast the following spells, requiring no material components:\n\nAt will: druidcraft\n3/day each: entangle, goodberry\n1/day each: barkskin, pass without trace, shillelagh",
+      "usage": null,
+      "spellcasting": {
+        "level": 1,
+        "ability": {
+          "name": "Charisma",
+          "url": "/ability-scores/charisma"
+        },
+        "saveDC": 14,
+        "attackBonus": 0,
+        "slots": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "spells": [
+          {
+            "name": "Druidcraft",
+            "url": "/spells/druidcraft",
+            "level": 0
+          },
+          {
+            "name": "Entangle",
+            "url": "/spells/entangle",
+            "level": 0
+          },
+          {
+            "name": "Goodberry",
+            "url": "/spells/goodberry",
+            "level": 0
+          },
+          {
+            "name": "Barkskin",
+            "url": "/spells/barkskin",
+            "level": 0
+          },
+          {
+            "name": "Pass Without Trace",
+            "url": "/spells/pass-without-trace",
+            "level": 0
+          },
+          {
+            "name": "Shillelagh",
+            "url": "/spells/shillelagh",
+            "level": 0
+          }
+        ]
+      }
+    },
+    {
+      "name": "Magic Resistance",
+      "description": "The dryad has advantage on saving throws against spells and other magical effects.",
+      "usage": null,
+      "spellcasting": null
+    },
+    {
+      "name": "Speak With Beasts And Plants",
+      "description": "The dryad can communicate with beasts and plants as if they shared a language.",
+      "usage": null,
+      "spellcasting": null
+    },
+    {
+      "name": "Tree Stride",
+      "description": "Once on her turn, the dryad can use 10 ft. of her movement to step magically into one living tree within her reach and emerge from a second living tree within 60 ft. of the first tree, appearing in an unoccupied space within 5 ft. of the second tree. Both trees must be large or bigger.",
+      "usage": null,
+      "spellcasting": null
+    }
+  ]
+}

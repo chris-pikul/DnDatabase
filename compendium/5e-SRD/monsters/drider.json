@@ -1,0 +1,249 @@
+{
+  "type": "MONSTER",
+  "id": "drider",
+  "name": "Drider",
+  "url": "/monsters/drider",
+  "source": "MM",
+  "description": "",
+  "challengeRating": 6,
+  "size": "LARGE",
+  "kind": "MONSTROSITY",
+  "subKind": null,
+  "alignment": "CHAOTIC_EVIL",
+  "maxHP": 123,
+  "hitDice": "13d10",
+  "armorClass": 19,
+  "proficiencyBonus": 3,
+  "speed": {
+    "walk": 30,
+    "swim": 0,
+    "fly": 0
+  },
+  "senses": {
+    "passivePerception": 15,
+    "passiveInsight": 10,
+    "darkvision": 120,
+    "blindsight": 0,
+    "truesight": 0,
+    "tremorsense": 0
+  },
+  "abilityScores": {
+    "strength": {
+      "score": 16,
+      "modifier": 3,
+      "savingThrow": 3
+    },
+    "dexterity": {
+      "score": 16,
+      "modifier": 3,
+      "savingThrow": 3
+    },
+    "constitution": {
+      "score": 18,
+      "modifier": 4,
+      "savingThrow": 4
+    },
+    "intelligence": {
+      "score": 13,
+      "modifier": 1,
+      "savingThrow": 1
+    },
+    "wisdom": {
+      "score": 14,
+      "modifier": 2,
+      "savingThrow": 2
+    },
+    "charisma": {
+      "score": 12,
+      "modifier": 1,
+      "savingThrow": 1
+    }
+  },
+  "proficiencies": [
+    {
+      "name": "Perception",
+      "url": "/skills/perception",
+      "amount": 5
+    },
+    {
+      "name": "Stealth",
+      "url": "/skills/stealth",
+      "amount": 9
+    }
+  ],
+  "resistances": [],
+  "immunities": {
+    "damageTypes": [],
+    "conditions": []
+  },
+  "vulnerabilities": [],
+  "languages": [
+    "Elvish",
+    "Undercommon"
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "description": "The drider makes three attacks, either with its longsword or its longbow. It can replace one of those attacks with a bite attack.",
+      "attackBonus": 0,
+      "damage": null,
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Bite",
+      "description": "Melee Weapon Attack: +6 to hit, reach 5 ft., one creature. Hit: 2 (1d4) piercing damage plus 9 (2d8) poison damage.",
+      "attackBonus": 6,
+      "damage": [
+        {
+          "type": {
+            "name": "Piercing",
+            "url": "/damage-types/piercing"
+          },
+          "amount": "1d4",
+          "options": null
+        },
+        {
+          "type": {
+            "name": "Poison",
+            "url": "/damage-types/poison"
+          },
+          "amount": "2d8",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Longsword",
+      "description": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) slashing damage, or 8 (1d10 + 3) slashing damage if used with two hands.",
+      "attackBonus": 6,
+      "damage": [
+        {
+          "type": null,
+          "amount": null,
+          "options": {
+            "amount": 1,
+            "choices": [
+              {
+                "type": {
+                  "name": "Slashing",
+                  "url": "/damage-types/slashing"
+                },
+                "amount": "1d8+3"
+              },
+              {
+                "type": {
+                  "name": "Slashing",
+                  "url": "/damage-types/slashing"
+                },
+                "amount": "1d10+3"
+              }
+            ]
+          }
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Longbow",
+      "description": "Ranged Weapon Attack: +6 to hit, range 150/600 ft., one target. Hit: 7 (1d8 + 3) piercing damage plus 4 (1d8) poison damage.",
+      "attackBonus": 6,
+      "damage": [
+        {
+          "type": {
+            "name": "Piercing",
+            "url": "/damage-types/piercing"
+          },
+          "amount": "1d8+3",
+          "options": null
+        },
+        {
+          "type": {
+            "name": "Poison",
+            "url": "/damage-types/poison"
+          },
+          "amount": "1d8",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    }
+  ],
+  "legendaryActions": [],
+  "specialAbilities": [
+    {
+      "name": "Fey Ancestry",
+      "description": "The drider has advantage on saving throws against being charmed, and magic can't put the drider to sleep.",
+      "usage": null,
+      "spellcasting": null
+    },
+    {
+      "name": "Innate Spellcasting",
+      "description": "The drider's innate spellcasting ability is Wisdom (spell save DC 13). The drider can innately cast the following spells, requiring no material components:\nAt will: dancing lights\n1/day each: darkness, faerie fire",
+      "usage": null,
+      "spellcasting": {
+        "level": 1,
+        "ability": {
+          "name": "Wisdom",
+          "url": "/ability-scores/wisdom"
+        },
+        "saveDC": 13,
+        "attackBonus": 0,
+        "slots": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "spells": [
+          {
+            "name": "Entangle",
+            "url": "/spells/dancing-lights",
+            "level": 0
+          },
+          {
+            "name": "Darkness",
+            "url": "/spells/darkness",
+            "level": 0
+          },
+          {
+            "name": "Faerie Fire",
+            "url": "/spells/faerie-fire",
+            "level": 0
+          }
+        ]
+      }
+    },
+    {
+      "name": "Spider Climb",
+      "description": "The drider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.",
+      "usage": null,
+      "spellcasting": null
+    },
+    {
+      "name": "Sunlight Sensitivity",
+      "description": "While in sunlight, the drider has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.",
+      "usage": null,
+      "spellcasting": null
+    },
+    {
+      "name": "Web Walker",
+      "description": "The drider ignores movement restrictions caused by webbing.",
+      "usage": null,
+      "spellcasting": null
+    }
+  ]
+}

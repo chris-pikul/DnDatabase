@@ -1,0 +1,181 @@
+{
+  "type": "MONSTER",
+  "id": "imp",
+  "name": "Imp",
+  "url": "/monsters/imp",
+  "source": "MM",
+  "description": "",
+  "challengeRating": 1,
+  "size": "TINY",
+  "kind": "FIEND",
+  "subKind": "DEVIL",
+  "alignment": "LAWFUL_EVIL",
+  "maxHP": 10,
+  "hitDice": "3d4",
+  "armorClass": 13,
+  "proficiencyBonus": 2,
+  "speed": {
+    "walk": 20,
+    "swim": 0,
+    "fly": 40
+  },
+  "senses": {
+    "passivePerception": 11,
+    "passiveInsight": 13,
+    "darkvision": 120,
+    "blindsight": 0,
+    "truesight": 0,
+    "tremorsense": 0
+  },
+  "abilityScores": {
+    "strength": {
+      "score": 6,
+      "modifier": -2,
+      "savingThrow": -2
+    },
+    "dexterity": {
+      "score": 17,
+      "modifier": 3,
+      "savingThrow": 3
+    },
+    "constitution": {
+      "score": 13,
+      "modifier": 1,
+      "savingThrow": 1
+    },
+    "intelligence": {
+      "score": 11,
+      "modifier": 0,
+      "savingThrow": 0
+    },
+    "wisdom": {
+      "score": 12,
+      "modifier": 1,
+      "savingThrow": 1
+    },
+    "charisma": {
+      "score": 14,
+      "modifier": 2,
+      "savingThrow": 2
+    }
+  },
+  "proficiencies": [
+    {
+      "name": "Deception",
+      "url": "/skills/deception",
+      "amount": 4
+    },
+    {
+      "name": "Insight",
+      "url": "/skills/insight",
+      "amount": 3
+    },
+    {
+      "name": "Persuasion",
+      "url": "/skills/persuasion",
+      "amount": 4
+    },
+    {
+      "name": "Stealth",
+      "url": "/skills/stealth",
+      "amount": 5
+    }
+  ],
+  "resistances": [
+    {
+      "name": "Cold",
+      "url": "/damage-types/cold"
+    },
+    {
+      "name": "Bludgeoning",
+      "url": "/damage-types/bludgeoning"
+    },
+    {
+      "name": "Piercing",
+      "url": "/damage-types/piercing"
+    },
+    {
+      "name": "Slashing",
+      "url": "/damage-types/slashing"
+    }
+  ],
+  "immunities": {
+    "damageTypes": [
+      {
+        "name": "Fire",
+        "url": "/damage-types/fire"
+      },
+      {
+        "name": "Poison",
+        "url": "/damage-types/poison"
+      }
+    ],
+    "conditions": [
+      {
+        "name": "Poisoned",
+        "url": "/conditions/poisoned"
+      }
+    ]
+  },
+  "vulnerabilities": [],
+  "languages": [
+    "Infernal",
+    "Common"
+  ],
+  "actions": [
+    {
+      "name": "Sting (bite In Beast Form)",
+      "description": "Melee Weapon Attack: +5 to hit, reach 5 ft ., one target. Hit: 5 (1d4 + 3) piercing damage, and the target must make on a DC 11 Constitution saving throw, taking 10 (3d6) poison damage on a failed save, or half as much damage on a successful one.",
+      "attackBonus": 5,
+      "damage": [
+        {
+          "type": {
+            "name": "Piercing",
+            "url": "/damage-types/piercing"
+          },
+          "amount": "1d4+3",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Invisibility",
+      "description": "The imp magically turns invisible until it attacks, or until its concentration ends (as if concentrating on a spell). Any equipment the imp wears or carries is invisible with it.",
+      "attackBonus": 0,
+      "damage": null,
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    }
+  ],
+  "legendaryActions": [],
+  "specialAbilities": [
+    {
+      "name": "Shapechanger",
+      "description": "The imp can use its action to polymorph into a beast form that resembles a rat (speed 20 ft.), a raven (20 ft., fly 60 ft.), or a spider (20 ft., climb 20 ft.), or back into its true form. Its statistics are the same in each form, except for the speed changes noted. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies.",
+      "usage": null,
+      "spellcasting": null
+    },
+    {
+      "name": "Devil's Sight",
+      "description": "Magical darkness doesn't impede the imp's darkvision.",
+      "usage": null,
+      "spellcasting": null
+    },
+    {
+      "name": "Magic Resistance",
+      "description": "The imp has advantage on saving throws against spells and other magical effects.",
+      "usage": null,
+      "spellcasting": null
+    },
+    {
+      "name": "Variant: Familiar",
+      "description": "The imp can serve another creature as a familiar, forming a telepathic bond with its willing master. While the two are bonded, the master can sense what the quasit senses as long as they are within 1 mile of each other. While the imp is within 10 feet of its master, the master shares the quasit's Magic Resistance trait. At any time and for any reason, the imp can end its service as a familiar, ending the telepathic bond.",
+      "usage": null,
+      "spellcasting": null
+    }
+  ]
+}

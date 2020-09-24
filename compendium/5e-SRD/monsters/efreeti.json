@@ -1,0 +1,235 @@
+{
+  "type": "MONSTER",
+  "id": "efreeti",
+  "name": "Efreeti",
+  "url": "/monsters/efreeti",
+  "source": "MM",
+  "description": "",
+  "challengeRating": 11,
+  "size": "LARGE",
+  "kind": "ELEMENTAL",
+  "subKind": null,
+  "alignment": "LAWFUL_EVIL",
+  "maxHP": 200,
+  "hitDice": "16d10",
+  "armorClass": 17,
+  "proficiencyBonus": 4,
+  "speed": {
+    "walk": 40,
+    "swim": 0,
+    "fly": 60
+  },
+  "senses": {
+    "passivePerception": 12,
+    "passiveInsight": 10,
+    "darkvision": 120,
+    "blindsight": 0,
+    "truesight": 0,
+    "tremorsense": 0
+  },
+  "abilityScores": {
+    "strength": {
+      "score": 22,
+      "modifier": 6,
+      "savingThrow": 6
+    },
+    "dexterity": {
+      "score": 12,
+      "modifier": 1,
+      "savingThrow": 1
+    },
+    "constitution": {
+      "score": 24,
+      "modifier": 7,
+      "savingThrow": 7
+    },
+    "intelligence": {
+      "score": 16,
+      "modifier": 3,
+      "savingThrow": 10
+    },
+    "wisdom": {
+      "score": 15,
+      "modifier": 2,
+      "savingThrow": 8
+    },
+    "charisma": {
+      "score": 16,
+      "modifier": 3,
+      "savingThrow": 10
+    }
+  },
+  "proficiencies": [
+    {
+      "name": "Intelligence",
+      "url": "/ability-scores/intelligence",
+      "amount": 7
+    },
+    {
+      "name": "Wisdom",
+      "url": "/ability-scores/wisdom",
+      "amount": 6
+    },
+    {
+      "name": "Charisma",
+      "url": "/ability-scores/charisma",
+      "amount": 7
+    }
+  ],
+  "resistances": [],
+  "immunities": {
+    "damageTypes": [
+      {
+        "name": "Fire",
+        "url": "/damage-types/fire"
+      }
+    ],
+    "conditions": []
+  },
+  "vulnerabilities": [],
+  "languages": [
+    "Ignan"
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "description": "The efreeti makes two scimitar attacks or uses its Hurl Flame twice.",
+      "attackBonus": 0,
+      "damage": null,
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Scimitar",
+      "description": "Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 13 (2d6 + 6) slashing damage plus 7 (2d6) fire damage.",
+      "attackBonus": 10,
+      "damage": [
+        {
+          "type": {
+            "name": "Slashing",
+            "url": "/damage-types/slashing"
+          },
+          "amount": "2d6+6",
+          "options": null
+        },
+        {
+          "type": {
+            "name": "Fire",
+            "url": "/damage-types/fire"
+          },
+          "amount": "2d6",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Hurl Flame",
+      "description": "Ranged Spell Attack: +7 to hit, range 120 ft., one target. Hit: 17 (5d6) fire damage.",
+      "attackBonus": 7,
+      "damage": [
+        {
+          "type": {
+            "name": "Fire",
+            "url": "/damage-types/fire"
+          },
+          "amount": "5d6",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    }
+  ],
+  "legendaryActions": [],
+  "specialAbilities": [
+    {
+      "name": "Elemental Demise",
+      "description": "If the efreeti dies, its body disintegrates in a flash of fire and puff of smoke, leaving behind only equipment the djinni was wearing or carrying.",
+      "usage": null,
+      "spellcasting": null
+    },
+    {
+      "name": "Innate Spellcasting",
+      "description": "The efreeti's innate spell casting ability is Charisma (spell save DC 15, +7 to hit with spell attacks). It can innately cast the following spells, requiring no material components:\n\nAt will: detect magic\n3/day: enlarge/reduce, tongues\n1/day each: conjure elemental (fire elemental only), gaseous form, invisibility, major image, plane shift, wall of fire",
+      "usage": null,
+      "spellcasting": {
+        "level": 1,
+        "ability": {
+          "name": "Charisma",
+          "url": "/ability-scores/charisma"
+        },
+        "saveDC": 15,
+        "attackBonus": 7,
+        "slots": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "spells": [
+          {
+            "name": "Detect Magic",
+            "url": "/spells/detect-magic",
+            "level": 0
+          },
+          {
+            "name": "Enlarge/reduce",
+            "url": "/spells/enlarge-reduce",
+            "level": 0
+          },
+          {
+            "name": "Tongues",
+            "url": "/spells/tongues",
+            "level": 0
+          },
+          {
+            "name": "Conjure Elemental",
+            "url": "/spells/conjure-elemental",
+            "level": 0
+          },
+          {
+            "name": "Gaseous Form",
+            "url": "/spells/gaseous-form",
+            "level": 0
+          },
+          {
+            "name": "Invisibility",
+            "url": "/spells/invisibility",
+            "level": 0
+          },
+          {
+            "name": "Major Image",
+            "url": "/spells/major-image",
+            "level": 0
+          },
+          {
+            "name": "Plane Shift",
+            "url": "/spells/plane-shift",
+            "level": 0
+          },
+          {
+            "name": "Wall Of Fire",
+            "url": "/spells/wall-of-fire",
+            "level": 0
+          }
+        ]
+      }
+    },
+    {
+      "name": "Variant: Genie Powers",
+      "description": "Genies have a variety of magical capabilities, including spells. A few have even greater powers that allow them to alter their appearance or the nature of reality.\n\nDisguises.\nSome genies can veil themselves in illusion to pass as other similarly shaped creatures. Such genies can innately cast the disguise self spell at will, often with a longer duration than is normal for that spell. Mightier genies can cast the true polymorph spell one to three times per day, possibly with a longer duration than normal. Such genies can change only their own shape, but a rare few can use the spell on other creatures and objects as well.\nWishes.\nThe genie power to grant wishes is legendary among mortals. Only the most potent genies, such as those among the nobility, can do so. A particular genie that has this power can grant one to three wishes to a creature that isn't a genie. Once a genie has granted its limit of wishes, it can't grant wishes again for some amount of time (usually 1 year). and cosmic law dictates that the same genie can expend its limit of wishes on a specific creature only once in that creature's existence.\nTo be granted a wish, a creature within 60 feet of the genie states a desired effect to it. The genie can then cast the wish spell on the creature's behalf to bring about the effect. Depending on the genie's nature, the genie might try to pervert the intent of the wish by exploiting the wish's poor wording. The perversion of the wording is usually crafted to be to the genie's benefit.",
+      "usage": null,
+      "spellcasting": null
+    }
+  ]
+}

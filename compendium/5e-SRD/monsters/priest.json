@@ -1,0 +1,194 @@
+{
+  "type": "MONSTER",
+  "id": "priest",
+  "name": "Priest",
+  "url": "/monsters/priest",
+  "source": "MM",
+  "description": "",
+  "challengeRating": 2,
+  "size": "MEDIUM",
+  "kind": "HUMANOID",
+  "subKind": "ANY_RACE",
+  "alignment": "ANY_ALIGNMENT",
+  "maxHP": 27,
+  "hitDice": "5d8",
+  "armorClass": 13,
+  "proficiencyBonus": 2,
+  "speed": {
+    "walk": 25,
+    "swim": 0,
+    "fly": 0
+  },
+  "senses": {
+    "passivePerception": 13,
+    "passiveInsight": 10,
+    "darkvision": 0,
+    "blindsight": 0,
+    "truesight": 0,
+    "tremorsense": 0
+  },
+  "abilityScores": {
+    "strength": {
+      "score": 10,
+      "modifier": 0,
+      "savingThrow": 0
+    },
+    "dexterity": {
+      "score": 10,
+      "modifier": 0,
+      "savingThrow": 0
+    },
+    "constitution": {
+      "score": 12,
+      "modifier": 1,
+      "savingThrow": 1
+    },
+    "intelligence": {
+      "score": 13,
+      "modifier": 1,
+      "savingThrow": 1
+    },
+    "wisdom": {
+      "score": 16,
+      "modifier": 3,
+      "savingThrow": 3
+    },
+    "charisma": {
+      "score": 13,
+      "modifier": 1,
+      "savingThrow": 1
+    }
+  },
+  "proficiencies": [
+    {
+      "name": "Medicine",
+      "url": "/skills/medicine",
+      "amount": 7
+    },
+    {
+      "name": "Persuasion",
+      "url": "/skills/persuasion",
+      "amount": 3
+    },
+    {
+      "name": "Religion",
+      "url": "/skills/religion",
+      "amount": 4
+    }
+  ],
+  "resistances": [],
+  "immunities": {
+    "damageTypes": [],
+    "conditions": []
+  },
+  "vulnerabilities": [],
+  "languages": [
+    "Any Two Languages"
+  ],
+  "actions": [
+    {
+      "name": "Mace",
+      "description": "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 3 (1d6) bludgeoning damage.",
+      "attackBonus": 2,
+      "damage": [
+        {
+          "type": {
+            "name": "Bludgeoning",
+            "url": "/damage-types/bludgeoning"
+          },
+          "amount": "1d6",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    }
+  ],
+  "legendaryActions": [],
+  "specialAbilities": [
+    {
+      "name": "Divine Eminence",
+      "description": "As a bonus action, the priest can expend a spell slot to cause its melee weapon attacks to magically deal an extra 10 (3d6) radiant damage to a target on a hit. This benefit lasts until the end of the turn. If the priest expends a spell slot of 2nd level or higher, the extra damage increases by 1d6 for each level above 1st.",
+      "usage": null,
+      "spellcasting": null
+    },
+    {
+      "name": "Spellcasting",
+      "description": "The priest is a 5th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 13, +5 to hit with spell attacks). The priest has the following cleric spells prepared:\n\n- Cantrips (at will): light, sacred flame, thaumaturgy\n- 1st level (4 slots): cure wounds, guiding bolt, sanctuary\n- 2nd level (3 slots): lesser restoration, spiritual weapon\n- 3rd level (2 slots): dispel magic, spirit guardians",
+      "usage": null,
+      "spellcasting": {
+        "level": 5,
+        "ability": {
+          "name": "Wisdom",
+          "url": "/ability-scores/wisdom"
+        },
+        "saveDC": 13,
+        "attackBonus": 5,
+        "slots": [
+          4,
+          3,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "spells": [
+          {
+            "name": "Light",
+            "url": "/spells/180",
+            "level": 0
+          },
+          {
+            "name": "Sacred Flame",
+            "url": "/spells/250",
+            "level": 0
+          },
+          {
+            "name": "Thaumaturgy",
+            "url": "/spells/291",
+            "level": 0
+          },
+          {
+            "name": "Cure Wounds",
+            "url": "/spells/70",
+            "level": 1
+          },
+          {
+            "name": "Guiding Bolt",
+            "url": "/spells/147",
+            "level": 1
+          },
+          {
+            "name": "Sanctuary",
+            "url": "/spells/251",
+            "level": 1
+          },
+          {
+            "name": "Lesser Restoration",
+            "url": "/spells/178",
+            "level": 2
+          },
+          {
+            "name": "Spiritual Weapon",
+            "url": "/spells/278",
+            "level": 2
+          },
+          {
+            "name": "Dispel Magic",
+            "url": "/spells/86",
+            "level": 3
+          },
+          {
+            "name": "Spirit Guardians",
+            "url": "/spells/277",
+            "level": 3
+          }
+        ]
+      }
+    }
+  ]
+}

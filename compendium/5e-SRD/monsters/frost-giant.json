@@ -1,0 +1,152 @@
+{
+  "type": "MONSTER",
+  "id": "frost-giant",
+  "name": "Frost Giant",
+  "url": "/monsters/frost-giant",
+  "source": "MM",
+  "description": "",
+  "challengeRating": 8,
+  "size": "HUGE",
+  "kind": "GIANT",
+  "subKind": null,
+  "alignment": "NEUTRAL_EVIL",
+  "maxHP": 138,
+  "hitDice": "12d12",
+  "armorClass": 15,
+  "proficiencyBonus": 3,
+  "speed": {
+    "walk": 40,
+    "swim": 0,
+    "fly": 0
+  },
+  "senses": {
+    "passivePerception": 13,
+    "passiveInsight": 10,
+    "darkvision": 0,
+    "blindsight": 0,
+    "truesight": 0,
+    "tremorsense": 0
+  },
+  "abilityScores": {
+    "strength": {
+      "score": 23,
+      "modifier": 6,
+      "savingThrow": 6
+    },
+    "dexterity": {
+      "score": 9,
+      "modifier": -1,
+      "savingThrow": -1
+    },
+    "constitution": {
+      "score": 21,
+      "modifier": 5,
+      "savingThrow": 13
+    },
+    "intelligence": {
+      "score": 9,
+      "modifier": -1,
+      "savingThrow": -1
+    },
+    "wisdom": {
+      "score": 10,
+      "modifier": 0,
+      "savingThrow": 3
+    },
+    "charisma": {
+      "score": 12,
+      "modifier": 1,
+      "savingThrow": 5
+    }
+  },
+  "proficiencies": [
+    {
+      "name": "Constitution",
+      "url": "/ability-scores/constitution",
+      "amount": 8
+    },
+    {
+      "name": "Wisdom",
+      "url": "/ability-scores/wisdom",
+      "amount": 3
+    },
+    {
+      "name": "Charisma",
+      "url": "/ability-scores/charisma",
+      "amount": 4
+    },
+    {
+      "name": "Athletics",
+      "url": "/skills/athletics",
+      "amount": 9
+    },
+    {
+      "name": "Perception",
+      "url": "/skills/perception",
+      "amount": 3
+    }
+  ],
+  "resistances": [],
+  "immunities": {
+    "damageTypes": [
+      {
+        "name": "Cold",
+        "url": "/damage-types/cold"
+      }
+    ],
+    "conditions": []
+  },
+  "vulnerabilities": [],
+  "languages": [
+    "Giant"
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "description": "The giant makes two greataxe attacks.",
+      "attackBonus": 0,
+      "damage": null,
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Greataxe",
+      "description": "Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 25 (3d12 + 6) slashing damage.",
+      "attackBonus": 9,
+      "damage": [
+        {
+          "type": {
+            "name": "Slashing",
+            "url": "/damage-types/slashing"
+          },
+          "amount": "3d12+6",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Rock",
+      "description": "Ranged Weapon Attack: +9 to hit, range 60/240 ft., one target. Hit: 28 (4d10 + 6) bludgeoning damage.",
+      "attackBonus": 9,
+      "damage": [
+        {
+          "type": {
+            "name": "Bludgeoning",
+            "url": "/damage-types/bludgeoning"
+          },
+          "amount": "4d10+6",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    }
+  ],
+  "legendaryActions": [],
+  "specialAbilities": []
+}

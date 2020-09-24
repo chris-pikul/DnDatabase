@@ -1,0 +1,199 @@
+{
+  "type": "MONSTER",
+  "id": "shadow",
+  "name": "Shadow",
+  "url": "/monsters/shadow",
+  "source": "MM",
+  "description": "",
+  "challengeRating": 0.5,
+  "size": "MEDIUM",
+  "kind": "UNDEAD",
+  "subKind": null,
+  "alignment": "CHAOTIC_EVIL",
+  "maxHP": 16,
+  "hitDice": "3d8",
+  "armorClass": 12,
+  "proficiencyBonus": 2,
+  "speed": {
+    "walk": 40,
+    "swim": 0,
+    "fly": 0
+  },
+  "senses": {
+    "passivePerception": 10,
+    "passiveInsight": 10,
+    "darkvision": 60,
+    "blindsight": 0,
+    "truesight": 0,
+    "tremorsense": 0
+  },
+  "abilityScores": {
+    "strength": {
+      "score": 6,
+      "modifier": -2,
+      "savingThrow": -2
+    },
+    "dexterity": {
+      "score": 14,
+      "modifier": 2,
+      "savingThrow": 2
+    },
+    "constitution": {
+      "score": 13,
+      "modifier": 1,
+      "savingThrow": 1
+    },
+    "intelligence": {
+      "score": 6,
+      "modifier": -2,
+      "savingThrow": -2
+    },
+    "wisdom": {
+      "score": 10,
+      "modifier": 0,
+      "savingThrow": 0
+    },
+    "charisma": {
+      "score": 8,
+      "modifier": -1,
+      "savingThrow": -1
+    }
+  },
+  "proficiencies": [
+    {
+      "name": "Stealth",
+      "url": "/skills/stealth",
+      "amount": 4
+    }
+  ],
+  "resistances": [
+    {
+      "name": "Acid",
+      "url": "/damage-types/acid"
+    },
+    {
+      "name": "Cold",
+      "url": "/damage-types/cold"
+    },
+    {
+      "name": "Fire",
+      "url": "/damage-types/fire"
+    },
+    {
+      "name": "Lightning",
+      "url": "/damage-types/lightning"
+    },
+    {
+      "name": "Thunder",
+      "url": "/damage-types/thunder"
+    },
+    {
+      "name": "Bludgeoning",
+      "url": "/damage-types/bludgeoning"
+    },
+    {
+      "name": "Piercing",
+      "url": "/damage-types/piercing"
+    },
+    {
+      "name": "Slashing",
+      "url": "/damage-types/slashing"
+    }
+  ],
+  "immunities": {
+    "damageTypes": [
+      {
+        "name": "Necrotic",
+        "url": "/damage-types/necrotic"
+      },
+      {
+        "name": "Poison",
+        "url": "/damage-types/poison"
+      }
+    ],
+    "conditions": [
+      {
+        "name": "Exhaustion",
+        "url": "/conditions/exhaustion"
+      },
+      {
+        "name": "Frightened",
+        "url": "/conditions/frightened"
+      },
+      {
+        "name": "Grappled",
+        "url": "/conditions/grappled"
+      },
+      {
+        "name": "Paralyzed",
+        "url": "/conditions/paralyzed"
+      },
+      {
+        "name": "Petrified",
+        "url": "/conditions/petrified"
+      },
+      {
+        "name": "Poisoned",
+        "url": "/conditions/poisoned"
+      },
+      {
+        "name": "Prone",
+        "url": "/conditions/prone"
+      },
+      {
+        "name": "Restrained",
+        "url": "/conditions/restrained"
+      }
+    ]
+  },
+  "vulnerabilities": [
+    {
+      "name": "Radiant",
+      "url": "/damage-types/radiant"
+    }
+  ],
+  "languages": [
+    ""
+  ],
+  "actions": [
+    {
+      "name": "Strength Drain",
+      "description": "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 9 (2d6 + 2) necrotic damage, and the target's Strength score is reduced by 1d4. The target dies if this reduces its Strength to 0. Otherwise, the reduction lasts until the target finishes a short or long rest.\nIf a non-evil humanoid dies from this attack, a new shadow rises from the corpse 1d4 hours later.",
+      "attackBonus": 4,
+      "damage": [
+        {
+          "type": {
+            "name": "Necrotic",
+            "url": "/damage-types/necrotic"
+          },
+          "amount": "2d6+2",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    }
+  ],
+  "legendaryActions": [],
+  "specialAbilities": [
+    {
+      "name": "Amorphous",
+      "description": "The shadow can move through a space as narrow as 1 inch wide without squeezing.",
+      "usage": null,
+      "spellcasting": null
+    },
+    {
+      "name": "Shadow Stealth",
+      "description": "While in dim light or darkness, the shadow can take the Hide action as a bonus action. Its stealth bonus is also improved to +6.",
+      "usage": null,
+      "spellcasting": null
+    },
+    {
+      "name": "Sunlight Weakness",
+      "description": "While in sunlight, the shadow has disadvantage on attack rolls, ability checks, and saving throws.",
+      "usage": null,
+      "spellcasting": null
+    }
+  ]
+}

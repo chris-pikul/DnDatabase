@@ -1,0 +1,307 @@
+{
+  "type": "MONSTER",
+  "id": "ancient-green-dragon",
+  "name": "Ancient Green Dragon",
+  "url": "/monsters/ancient-green-dragon",
+  "source": "MM",
+  "description": "",
+  "challengeRating": 22,
+  "size": "GARGANTUAN",
+  "kind": "DRAGON",
+  "subKind": null,
+  "alignment": "LAWFUL_EVIL",
+  "maxHP": 385,
+  "hitDice": "22d20",
+  "armorClass": 21,
+  "proficiencyBonus": 7,
+  "speed": {
+    "walk": 40,
+    "swim": 40,
+    "fly": 80
+  },
+  "senses": {
+    "passivePerception": 27,
+    "passiveInsight": 20,
+    "darkvision": 120,
+    "blindsight": 60,
+    "truesight": 0,
+    "tremorsense": 0
+  },
+  "abilityScores": {
+    "strength": {
+      "score": 27,
+      "modifier": 8,
+      "savingThrow": 8
+    },
+    "dexterity": {
+      "score": 12,
+      "modifier": 1,
+      "savingThrow": 9
+    },
+    "constitution": {
+      "score": 25,
+      "modifier": 7,
+      "savingThrow": 21
+    },
+    "intelligence": {
+      "score": 20,
+      "modifier": 5,
+      "savingThrow": 5
+    },
+    "wisdom": {
+      "score": 17,
+      "modifier": 3,
+      "savingThrow": 13
+    },
+    "charisma": {
+      "score": 19,
+      "modifier": 4,
+      "savingThrow": 15
+    }
+  },
+  "proficiencies": [
+    {
+      "name": "Dexterity",
+      "url": "/ability-scores/dexterity",
+      "amount": 8
+    },
+    {
+      "name": "Constitution",
+      "url": "/ability-scores/constitution",
+      "amount": 14
+    },
+    {
+      "name": "Wisdom",
+      "url": "/ability-scores/wisdom",
+      "amount": 10
+    },
+    {
+      "name": "Charisma",
+      "url": "/ability-scores/charisma",
+      "amount": 11
+    },
+    {
+      "name": "Deception",
+      "url": "/skills/deception",
+      "amount": 11
+    },
+    {
+      "name": "Insight",
+      "url": "/skills/insight",
+      "amount": 10
+    },
+    {
+      "name": "Perception",
+      "url": "/skills/perception",
+      "amount": 17
+    },
+    {
+      "name": "Persuasion",
+      "url": "/skills/persuasion",
+      "amount": 11
+    },
+    {
+      "name": "Stealth",
+      "url": "/skills/stealth",
+      "amount": 8
+    }
+  ],
+  "resistances": [],
+  "immunities": {
+    "damageTypes": [
+      {
+        "name": "Poison",
+        "url": "/damage-types/poison"
+      }
+    ],
+    "conditions": [
+      {
+        "name": "Poisoned",
+        "url": "/conditions/poisoned"
+      }
+    ]
+  },
+  "vulnerabilities": [],
+  "languages": [
+    "Common",
+    "Draconic"
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "description": "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.",
+      "attackBonus": 0,
+      "damage": null,
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Bite",
+      "description": "Melee Weapon Attack: +15 to hit, reach 15 ft., one target. Hit: 19 (2d10 + 8) piercing damage plus 10 (3d6) poison damage.",
+      "attackBonus": 15,
+      "damage": [
+        {
+          "type": {
+            "name": "Piercing",
+            "url": "/damage-types/piercing"
+          },
+          "amount": "2d10+8",
+          "options": null
+        },
+        {
+          "type": {
+            "name": "Poison",
+            "url": "/damage-types/poison"
+          },
+          "amount": "3d6",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Claw",
+      "description": "Melee Weapon Attack: +15 to hit, reach 10 ft., one target. Hit: 22 (4d6 + 8) slashing damage.",
+      "attackBonus": 15,
+      "damage": [
+        {
+          "type": {
+            "name": "Slashing",
+            "url": "/damage-types/slashing"
+          },
+          "amount": "4d6+8",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Tail",
+      "description": "Melee Weapon Attack: +15 to hit, reach 20 ft., one target. Hit: 17 (2d8 + 8) bludgeoning damage.",
+      "attackBonus": 15,
+      "damage": [
+        {
+          "type": {
+            "name": "Bludgeoning",
+            "url": "/damage-types/bludgeoning"
+          },
+          "amount": "2d8+8",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Frightful Presence",
+      "description": "Each creature of the dragon's choice that is within 120 feet of the dragon and aware of it must succeed on a DC 19 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours.",
+      "attackBonus": 0,
+      "damage": null,
+      "saveDC": {
+        "ability": {
+          "name": "Wisdom",
+          "url": "/ability-scores/wisdom"
+        },
+        "value": 19,
+        "onSuccess": "NONE"
+      },
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Poison Breath",
+      "description": "The dragon exhales poisonous gas in a 90-foot cone. Each creature in that area must make a DC 22 Constitution saving throw, taking 77 (22d6) poison damage on a failed save, or half as much damage on a successful one.",
+      "attackBonus": 0,
+      "damage": [
+        {
+          "type": {
+            "name": "Poison",
+            "url": "/damage-types/poison"
+          },
+          "amount": "22d6",
+          "options": null
+        }
+      ],
+      "saveDC": {
+        "ability": {
+          "name": "Constitution",
+          "url": "/ability-scores/constitution"
+        },
+        "value": 22,
+        "onSuccess": "HALF"
+      },
+      "usage": {
+        "type": "RECHARGE_ON_ROLL",
+        "amount": 0,
+        "dice": "1d6",
+        "minRoll": 5
+      },
+      "options": null
+    }
+  ],
+  "legendaryActions": {
+    "amount": 3,
+    "options": [
+      {
+        "name": "Detect",
+        "description": "The dragon makes a Wisdom (Perception) check.",
+        "cost": 1,
+        "damage": null,
+        "saveDC": null
+      },
+      {
+        "name": "Tail Attack",
+        "description": "The dragon makes a tail attack.",
+        "cost": 1,
+        "damage": null,
+        "saveDC": null
+      },
+      {
+        "name": "Wing Attack",
+        "description": "The dragon beats its wings. Each creature within 15 ft. of the dragon must succeed on a DC 23 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
+        "cost": 2,
+        "damage": [
+          {
+            "type": {
+              "name": "Bludgeoning",
+              "url": "/damage-types/bludgeoning"
+            },
+            "amount": "2d6+8",
+            "options": null
+          }
+        ],
+        "saveDC": {
+          "ability": {
+            "name": "Dexterity",
+            "url": "/ability-scores/dexterity"
+          },
+          "value": 23,
+          "onSuccess": "NONE"
+        }
+      }
+    ]
+  },
+  "specialAbilities": [
+    {
+      "name": "Amphibious",
+      "description": "The dragon can breathe air and water.",
+      "usage": null,
+      "spellcasting": null
+    },
+    {
+      "name": "Legendary Resistance",
+      "description": "If the dragon fails a saving throw, it can choose to succeed instead.",
+      "usage": {
+        "type": "PER_DAY",
+        "amount": 1
+      },
+      "spellcasting": null
+    }
+  ]
+}

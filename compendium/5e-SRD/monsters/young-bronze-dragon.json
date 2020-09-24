@@ -1,0 +1,220 @@
+{
+  "type": "MONSTER",
+  "id": "young-bronze-dragon",
+  "name": "Young Bronze Dragon",
+  "url": "/monsters/young-bronze-dragon",
+  "source": "MM",
+  "description": "",
+  "challengeRating": 8,
+  "size": "LARGE",
+  "kind": "DRAGON",
+  "subKind": null,
+  "alignment": "LAWFUL_GOOD",
+  "maxHP": 142,
+  "hitDice": "15d10",
+  "armorClass": 18,
+  "proficiencyBonus": 3,
+  "speed": {
+    "walk": 40,
+    "swim": 40,
+    "fly": 80
+  },
+  "senses": {
+    "passivePerception": 17,
+    "passiveInsight": 14,
+    "darkvision": 120,
+    "blindsight": 30,
+    "truesight": 0,
+    "tremorsense": 0
+  },
+  "abilityScores": {
+    "strength": {
+      "score": 21,
+      "modifier": 5,
+      "savingThrow": 5
+    },
+    "dexterity": {
+      "score": 10,
+      "modifier": 0,
+      "savingThrow": 3
+    },
+    "constitution": {
+      "score": 19,
+      "modifier": 4,
+      "savingThrow": 11
+    },
+    "intelligence": {
+      "score": 14,
+      "modifier": 2,
+      "savingThrow": 2
+    },
+    "wisdom": {
+      "score": 13,
+      "modifier": 1,
+      "savingThrow": 5
+    },
+    "charisma": {
+      "score": 17,
+      "modifier": 3,
+      "savingThrow": 9
+    }
+  },
+  "proficiencies": [
+    {
+      "name": "Dexterity",
+      "url": "/ability-scores/dexterity",
+      "amount": 3
+    },
+    {
+      "name": "Constitution",
+      "url": "/ability-scores/constitution",
+      "amount": 7
+    },
+    {
+      "name": "Wisdom",
+      "url": "/ability-scores/wisdom",
+      "amount": 4
+    },
+    {
+      "name": "Charisma",
+      "url": "/ability-scores/charisma",
+      "amount": 6
+    },
+    {
+      "name": "Insight",
+      "url": "/skills/insight",
+      "amount": 4
+    },
+    {
+      "name": "Perception",
+      "url": "/skills/perception",
+      "amount": 7
+    },
+    {
+      "name": "Stealth",
+      "url": "/skills/stealth",
+      "amount": 3
+    }
+  ],
+  "resistances": [],
+  "immunities": {
+    "damageTypes": [
+      {
+        "name": "Lightning",
+        "url": "/damage-types/lightning"
+      }
+    ],
+    "conditions": []
+  },
+  "vulnerabilities": [],
+  "languages": [
+    "Common",
+    "Draconic"
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "description": "The dragon makes three attacks: one with its bite and two with its claws.",
+      "attackBonus": 0,
+      "damage": null,
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Bite",
+      "description": "Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 16 (2d10 + 5) piercing damage.",
+      "attackBonus": 8,
+      "damage": [
+        {
+          "type": {
+            "name": "Piercing",
+            "url": "/damage-types/piercing"
+          },
+          "amount": "2d10+5",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Claw",
+      "description": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) slashing damage.",
+      "attackBonus": 8,
+      "damage": [
+        {
+          "type": {
+            "name": "Slashing",
+            "url": "/damage-types/slashing"
+          },
+          "amount": "2d6+5",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Breath Weapons",
+      "description": "The dragon uses one of the following breath weapons.\nLightning Breath. The dragon exhales lightning in a 60-foot line that is 5 feet wide. Each creature in that line must make a DC 15 Dexterity saving throw, taking 55 (10d10) lightning damage on a failed save, or half as much damage on a successful one.\nRepulsion Breath. The dragon exhales repulsion energy in a 30-foot cone. Each creature in that area must succeed on a DC 15 Strength saving throw. On a failed save, the creature is pushed 40 feet away from the dragon.",
+      "attackBonus": 0,
+      "damage": null,
+      "saveDC": null,
+      "usage": {
+        "type": "RECHARGE_ON_ROLL",
+        "amount": 0,
+        "dice": "1d6",
+        "minRoll": 5
+      },
+      "options": {
+        "amount": 1,
+        "choices": [
+          {
+            "name": "Lightning Breath",
+            "damage": [
+              {
+                "type": {
+                  "name": "Lightning",
+                  "url": "/damage-types/lightning"
+                },
+                "amount": "10d10"
+              }
+            ],
+            "saveDC": {
+              "ability": {
+                "name": "Dexterity",
+                "url": "/ability-scores/dexterity"
+              },
+              "value": 15,
+              "onSuccess": "HALF"
+            }
+          },
+          {
+            "name": "Repulsion Breath",
+            "damage": null,
+            "saveDC": {
+              "ability": {
+                "name": "Strength",
+                "url": "/ability-scores/strength"
+              },
+              "value": 15,
+              "onSuccess": "NONE"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "legendaryActions": [],
+  "specialAbilities": [
+    {
+      "name": "Amphibious",
+      "description": "The dragon can breathe air and water.",
+      "usage": null,
+      "spellcasting": null
+    }
+  ]
+}

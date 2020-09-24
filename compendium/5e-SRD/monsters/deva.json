@@ -1,0 +1,241 @@
+{
+  "type": "MONSTER",
+  "id": "deva",
+  "name": "Deva",
+  "url": "/monsters/deva",
+  "source": "MM",
+  "description": "",
+  "challengeRating": 10,
+  "size": "MEDIUM",
+  "kind": "CELESTIAL",
+  "subKind": null,
+  "alignment": "LAWFUL_GOOD",
+  "maxHP": 136,
+  "hitDice": "16d8",
+  "armorClass": 17,
+  "proficiencyBonus": 4,
+  "speed": {
+    "walk": 30,
+    "swim": 0,
+    "fly": 90
+  },
+  "senses": {
+    "passivePerception": 19,
+    "passiveInsight": 19,
+    "darkvision": 120,
+    "blindsight": 0,
+    "truesight": 0,
+    "tremorsense": 0
+  },
+  "abilityScores": {
+    "strength": {
+      "score": 18,
+      "modifier": 4,
+      "savingThrow": 4
+    },
+    "dexterity": {
+      "score": 18,
+      "modifier": 4,
+      "savingThrow": 4
+    },
+    "constitution": {
+      "score": 18,
+      "modifier": 4,
+      "savingThrow": 4
+    },
+    "intelligence": {
+      "score": 17,
+      "modifier": 3,
+      "savingThrow": 3
+    },
+    "wisdom": {
+      "score": 20,
+      "modifier": 5,
+      "savingThrow": 14
+    },
+    "charisma": {
+      "score": 20,
+      "modifier": 5,
+      "savingThrow": 14
+    }
+  },
+  "proficiencies": [
+    {
+      "name": "Wisdom",
+      "url": "/ability-scores/wisdom",
+      "amount": 9
+    },
+    {
+      "name": "Charisma",
+      "url": "/ability-scores/charisma",
+      "amount": 9
+    },
+    {
+      "name": "Insight",
+      "url": "/skills/insight",
+      "amount": 9
+    },
+    {
+      "name": "Perception",
+      "url": "/skills/perception",
+      "amount": 9
+    }
+  ],
+  "resistances": [
+    {
+      "name": "Radiant",
+      "url": "/damage-types/radiant"
+    },
+    {
+      "name": "Bludgeoning",
+      "url": "/damage-types/bludgeoning"
+    },
+    {
+      "name": "Piercing",
+      "url": "/damage-types/piercing"
+    },
+    {
+      "name": "Slashing",
+      "url": "/damage-types/slashing"
+    }
+  ],
+  "immunities": {
+    "damageTypes": [],
+    "conditions": [
+      {
+        "name": "Charmed",
+        "url": "/conditions/charmed"
+      },
+      {
+        "name": "Exhaustion",
+        "url": "/conditions/exhaustion"
+      },
+      {
+        "name": "Frightened",
+        "url": "/conditions/frightened"
+      }
+    ]
+  },
+  "vulnerabilities": [],
+  "languages": [
+    "All",
+    "Telepathy 120 Ft."
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "description": "The deva makes two melee attacks.",
+      "attackBonus": 0,
+      "damage": null,
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Mace",
+      "description": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) bludgeoning damage plus 18 (4d8) radiant damage.",
+      "attackBonus": 8,
+      "damage": [
+        {
+          "type": {
+            "name": "Bludgeoning",
+            "url": "/damage-types/bludgeoning"
+          },
+          "amount": "1d6+4",
+          "options": null
+        },
+        {
+          "type": {
+            "name": "Radiant",
+            "url": "/damage-types/radiant"
+          },
+          "amount": "4d8",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Healing Touch",
+      "description": "The deva touches another creature. The target magically regains 20 (4d8 + 2) hit points and is freed from any curse, disease, poison, blindness, or deafness.",
+      "attackBonus": 0,
+      "damage": null,
+      "saveDC": null,
+      "usage": {
+        "type": "PER_DAY",
+        "amount": 3,
+        "dice": null,
+        "minRoll": 0
+      },
+      "options": null
+    },
+    {
+      "name": "Change Shape",
+      "description": "The deva magically polymorphs into a humanoid or beast that has a challenge rating equal to or less than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the deva's choice).\nIn a new form, the deva retains its game statistics and ability to speak, but its AC, movement modes, Strength, Dexterity, and special senses are replaced by those of the new form, and it gains any statistics and capabilities (except class features, legendary actions, and lair actions) that the new form has but that it lacks.",
+      "attackBonus": 0,
+      "damage": null,
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    }
+  ],
+  "legendaryActions": [],
+  "specialAbilities": [
+    {
+      "name": "Angelic Weapons",
+      "description": "The deva's weapon attacks are magical. When the deva hits with any weapon, the weapon deals an extra 4d8 radiant damage (included in the attack).",
+      "usage": null,
+      "spellcasting": null
+    },
+    {
+      "name": "Innate Spellcasting",
+      "description": "The deva's spellcasting ability is Charisma (spell save DC 17). The deva can innately cast the following spells, requiring only verbal components:\nAt will: detect evil and good\n1/day each: commune, raise dead",
+      "usage": null,
+      "spellcasting": {
+        "level": 1,
+        "ability": {
+          "name": "Charisma",
+          "url": "/ability-scores/charisma"
+        },
+        "saveDC": 17,
+        "attackBonus": 0,
+        "slots": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "spells": [
+          {
+            "name": "Detect Evil And Good",
+            "url": "/spells/detect-evil-and-good",
+            "level": 0
+          },
+          {
+            "name": "Commune",
+            "url": "/spells/commune",
+            "level": 0
+          },
+          {
+            "name": "Raise Dead",
+            "url": "/spells/raise-dead",
+            "level": 0
+          }
+        ]
+      }
+    },
+    {
+      "name": "Magic Resistance",
+      "description": "The deva has advantage on saving throws against spells and other magical effects.",
+      "usage": null,
+      "spellcasting": null
+    }
+  ]
+}

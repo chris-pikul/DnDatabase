@@ -1,0 +1,232 @@
+{
+  "type": "MONSTER",
+  "id": "rakshasa",
+  "name": "Rakshasa",
+  "url": "/monsters/rakshasa",
+  "source": "MM",
+  "description": "",
+  "challengeRating": 13,
+  "size": "MEDIUM",
+  "kind": "FIEND",
+  "subKind": null,
+  "alignment": "LAWFUL_EVIL",
+  "maxHP": 110,
+  "hitDice": "13d8",
+  "armorClass": 16,
+  "proficiencyBonus": 5,
+  "speed": {
+    "walk": 40,
+    "swim": 0,
+    "fly": 0
+  },
+  "senses": {
+    "passivePerception": 13,
+    "passiveInsight": 18,
+    "darkvision": 60,
+    "blindsight": 0,
+    "truesight": 0,
+    "tremorsense": 0
+  },
+  "abilityScores": {
+    "strength": {
+      "score": 14,
+      "modifier": 2,
+      "savingThrow": 2
+    },
+    "dexterity": {
+      "score": 17,
+      "modifier": 3,
+      "savingThrow": 3
+    },
+    "constitution": {
+      "score": 18,
+      "modifier": 4,
+      "savingThrow": 4
+    },
+    "intelligence": {
+      "score": 13,
+      "modifier": 1,
+      "savingThrow": 1
+    },
+    "wisdom": {
+      "score": 16,
+      "modifier": 3,
+      "savingThrow": 3
+    },
+    "charisma": {
+      "score": 20,
+      "modifier": 5,
+      "savingThrow": 5
+    }
+  },
+  "proficiencies": [
+    {
+      "name": "Deception",
+      "url": "/skills/deception",
+      "amount": 10
+    },
+    {
+      "name": "Insight",
+      "url": "/skills/insight",
+      "amount": 8
+    }
+  ],
+  "resistances": [],
+  "immunities": {
+    "damageTypes": [
+      {
+        "name": "Bludgeoning",
+        "url": "/damage-types/bludgeoning"
+      },
+      {
+        "name": "Piercing",
+        "url": "/damage-types/piercing"
+      },
+      {
+        "name": "Slashing",
+        "url": "/damage-types/slashing"
+      }
+    ],
+    "conditions": []
+  },
+  "vulnerabilities": [
+    {
+      "name": "Piercing From Magic Weapons Wielded By Good Creatures",
+      "url": "/damage-types/piercing-from-magic-weapons-wielded-by-good-creatures"
+    }
+  ],
+  "languages": [
+    "Common",
+    "Infernal"
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "description": "The rakshasa makes two claw attacks",
+      "attackBonus": 0,
+      "damage": null,
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Claw",
+      "description": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 9 (2d6 + 2) slashing damage, and the target is cursed if it is a creature. The magical curse takes effect whenever the target takes a short or long rest, filling the target's thoughts with horrible images and dreams. The cursed target gains no benefit from finishing a short or long rest. The curse lasts until it is lifted by a remove curse spell or similar magic.",
+      "attackBonus": 7,
+      "damage": [
+        {
+          "type": {
+            "name": "Slashing",
+            "url": "/damage-types/slashing"
+          },
+          "amount": "2d6+2",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    }
+  ],
+  "legendaryActions": [],
+  "specialAbilities": [
+    {
+      "name": "Limited Magic Immunity",
+      "description": "The rakshasa can't be affected or detected by spells of 6th level or lower unless it wishes to be. It has advantage on saving throws against all other spells and magical effects.",
+      "usage": null,
+      "spellcasting": null
+    },
+    {
+      "name": "Innate Spellcasting",
+      "description": "The rakshasa's innate spellcasting ability is Charisma (spell save DC 18, +10 to hit with spell attacks). The rakshasa can innately cast the following spells, requiring no material components:\n\nAt will: detect thoughts, disguise self, mage hand, minor illusion\n3/day each: charm person, detect magic, invisibility, major image, suggestion\n1/day each: dominate person, fly, plane shift, true seeing",
+      "usage": null,
+      "spellcasting": {
+        "level": 1,
+        "ability": {
+          "name": "Charisma",
+          "url": "/ability-scores/charisma"
+        },
+        "saveDC": 18,
+        "attackBonus": 10,
+        "slots": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "spells": [
+          {
+            "name": "Detect Thoughts",
+            "url": "/spells/detect-thoughts",
+            "level": 0
+          },
+          {
+            "name": "Disguise Self",
+            "url": "/spells/disguise-self",
+            "level": 0
+          },
+          {
+            "name": "Mage Hand",
+            "url": "/spells/mage-hand",
+            "level": 0
+          },
+          {
+            "name": "Minor Illusion",
+            "url": "/spells/minor-illusion",
+            "level": 0
+          },
+          {
+            "name": "Charm Person",
+            "url": "/spells/charm-person",
+            "level": 0
+          },
+          {
+            "name": "Detect Magic",
+            "url": "/spells/detect-magic",
+            "level": 0
+          },
+          {
+            "name": "Invisibility",
+            "url": "/spells/invisibility",
+            "level": 0
+          },
+          {
+            "name": "Major Image",
+            "url": "/spells/major-image",
+            "level": 0
+          },
+          {
+            "name": "Suggestion",
+            "url": "/spells/mass-suggestion",
+            "level": 0
+          },
+          {
+            "name": "Dominate Person",
+            "url": "/spells/dominate-person",
+            "level": 0
+          },
+          {
+            "name": "Fly",
+            "url": "/spells/fly",
+            "level": 0
+          },
+          {
+            "name": "Plane Shift",
+            "url": "/spells/plane-shift",
+            "level": 0
+          },
+          {
+            "name": "True Seeing",
+            "url": "/spells/true-seeing",
+            "level": 0
+          }
+        ]
+      }
+    }
+  ]
+}

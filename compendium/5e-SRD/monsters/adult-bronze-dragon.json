@@ -1,0 +1,304 @@
+{
+  "type": "MONSTER",
+  "id": "adult-bronze-dragon",
+  "name": "Adult Bronze Dragon",
+  "url": "/monsters/adult-bronze-dragon",
+  "source": "MM",
+  "description": "",
+  "challengeRating": 15,
+  "size": "HUGE",
+  "kind": "DRAGON",
+  "subKind": null,
+  "alignment": "LAWFUL_GOOD",
+  "maxHP": 212,
+  "hitDice": "17d12",
+  "armorClass": 19,
+  "proficiencyBonus": 5,
+  "speed": {
+    "walk": 40,
+    "swim": 40,
+    "fly": 80
+  },
+  "senses": {
+    "passivePerception": 22,
+    "passiveInsight": 17,
+    "darkvision": 120,
+    "blindsight": 60,
+    "truesight": 0,
+    "tremorsense": 0
+  },
+  "abilityScores": {
+    "strength": {
+      "score": 25,
+      "modifier": 7,
+      "savingThrow": 7
+    },
+    "dexterity": {
+      "score": 10,
+      "modifier": 0,
+      "savingThrow": 5
+    },
+    "constitution": {
+      "score": 23,
+      "modifier": 6,
+      "savingThrow": 17
+    },
+    "intelligence": {
+      "score": 16,
+      "modifier": 3,
+      "savingThrow": 3
+    },
+    "wisdom": {
+      "score": 15,
+      "modifier": 2,
+      "savingThrow": 9
+    },
+    "charisma": {
+      "score": 19,
+      "modifier": 4,
+      "savingThrow": 13
+    }
+  },
+  "proficiencies": [
+    {
+      "name": "Dexterity",
+      "url": "/ability-scores/dexterity",
+      "amount": 5
+    },
+    {
+      "name": "Constitution",
+      "url": "/ability-scores/constitution",
+      "amount": 11
+    },
+    {
+      "name": "Wisdom",
+      "url": "/ability-scores/wisdom",
+      "amount": 7
+    },
+    {
+      "name": "Charisma",
+      "url": "/ability-scores/charisma",
+      "amount": 9
+    },
+    {
+      "name": "Insight",
+      "url": "/skills/insight",
+      "amount": 7
+    },
+    {
+      "name": "Perception",
+      "url": "/skills/perception",
+      "amount": 12
+    },
+    {
+      "name": "Stealth",
+      "url": "/skills/stealth",
+      "amount": 5
+    }
+  ],
+  "resistances": [],
+  "immunities": {
+    "damageTypes": [
+      {
+        "name": "Lightning",
+        "url": "/damage-types/lightning"
+      }
+    ],
+    "conditions": []
+  },
+  "vulnerabilities": [],
+  "languages": [
+    "Common",
+    "Draconic"
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "description": "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.",
+      "attackBonus": 0,
+      "damage": null,
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Bite",
+      "description": "Melee Weapon Attack: +12 to hit, reach 10 ft., one target. Hit: 18 (2d10 + 7) piercing damage.",
+      "attackBonus": 12,
+      "damage": [
+        {
+          "type": {
+            "name": "Piercing",
+            "url": "/damage-types/piercing"
+          },
+          "amount": "2d10+7",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Claw",
+      "description": "Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 14 (2d6 + 7) slashing damage.",
+      "attackBonus": 12,
+      "damage": [
+        {
+          "type": {
+            "name": "Slashing",
+            "url": "/damage-types/slashing"
+          },
+          "amount": "2d6+7",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Tail",
+      "description": "Melee Weapon Attack: +12 to hit, reach 15 ft., one target. Hit: 16 (2d8 + 7) bludgeoning damage.",
+      "attackBonus": 12,
+      "damage": [
+        {
+          "type": {
+            "name": "Bludgeoning",
+            "url": "/damage-types/bludgeoning"
+          },
+          "amount": "2d8+7",
+          "options": null
+        }
+      ],
+      "saveDC": null,
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Frightful Presence",
+      "description": "Each creature of the dragon's choice that is within 120 feet of the dragon and aware of it must succeed on a DC 17 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours.",
+      "attackBonus": 0,
+      "damage": null,
+      "saveDC": {
+        "ability": {
+          "name": "Wisdom",
+          "url": "/ability-scores/wisdom"
+        },
+        "value": 17,
+        "onSuccess": "NONE"
+      },
+      "usage": null,
+      "options": null
+    },
+    {
+      "name": "Breath Weapons",
+      "description": "The dragon uses one of the following breath weapons.\nLightning Breath. The dragon exhales lightning in a 90-foot line that is 5 feet wide. Each creature in that line must make a DC 19 Dexterity saving throw, taking 66 (12d10) lightning damage on a failed save, or half as much damage on a successful one.\nRepulsion Breath. The dragon exhales repulsion energy in a 30-foot cone. Each creature in that area must succeed on a DC 19 Strength saving throw. On a failed save, the creature is pushed 60 feet away from the dragon.",
+      "attackBonus": 0,
+      "damage": null,
+      "saveDC": null,
+      "usage": {
+        "type": "RECHARGE_ON_ROLL",
+        "amount": 0,
+        "dice": "1d6",
+        "minRoll": 5
+      },
+      "options": {
+        "amount": 1,
+        "choices": [
+          {
+            "name": "Lightning Breath",
+            "damage": [
+              {
+                "type": {
+                  "name": "Lightning",
+                  "url": "/damage-types/lightning"
+                },
+                "amount": "12d10"
+              }
+            ],
+            "saveDC": {
+              "ability": {
+                "name": "Dexterity",
+                "url": "/ability-scores/dexterity"
+              },
+              "value": 19,
+              "onSuccess": "HALF"
+            }
+          },
+          {
+            "name": "Repulsion Breath",
+            "damage": null,
+            "saveDC": {
+              "ability": {
+                "name": "Strength",
+                "url": "/ability-scores/strength"
+              },
+              "value": 19,
+              "onSuccess": "NONE"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "legendaryActions": {
+    "amount": 3,
+    "options": [
+      {
+        "name": "Detect",
+        "description": "The dragon makes a Wisdom (Perception) check.",
+        "cost": 1,
+        "damage": null,
+        "saveDC": null
+      },
+      {
+        "name": "Tail Attack",
+        "description": "The dragon makes a tail attack.",
+        "cost": 1,
+        "damage": null,
+        "saveDC": null
+      },
+      {
+        "name": "Wing Attack",
+        "description": "The dragon beats its wings. Each creature within 10 ft. of the dragon must succeed on a DC 20 Dexterity saving throw or take 14 (2d6 + 7) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
+        "cost": 2,
+        "damage": [
+          {
+            "type": {
+              "name": "Bludgeoning",
+              "url": "/damage-types/bludgeoning"
+            },
+            "amount": "2d6+7",
+            "options": null
+          }
+        ],
+        "saveDC": {
+          "ability": {
+            "name": "Dexterity",
+            "url": "/ability-scores/dexterity"
+          },
+          "value": 20,
+          "onSuccess": "NONE"
+        }
+      }
+    ]
+  },
+  "specialAbilities": [
+    {
+      "name": "Amphibious",
+      "description": "The dragon can breathe air and water.",
+      "usage": null,
+      "spellcasting": null
+    },
+    {
+      "name": "Legendary Resistance",
+      "description": "If the dragon fails a saving throw, it can choose to succeed instead.",
+      "usage": {
+        "type": "PER_DAY",
+        "amount": 1
+      },
+      "spellcasting": null
+    }
+  ]
+}

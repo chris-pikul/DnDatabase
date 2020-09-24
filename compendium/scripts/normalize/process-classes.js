@@ -1,7 +1,15 @@
 const FS = require('fs');
 const Path = require('path');
 
-const { MakeKabob, MakeEnum, MakeURL, MakeCamelCase } = require('./utils');
+const { 
+    MakeKabob, 
+    MakeEnum, 
+    MakeURL, 
+    MakeCamelCase, 
+    MakeTitleCase, 
+    ExtractIDFromURL,
+    MakeObj,
+ } = require('./utils');
 
 //Sample for detecting instruments
 const instruments = [
@@ -13,6 +21,24 @@ const instruments = [
     'Horn',
     'Viol'
 ];
+
+const TranslateAbility = opt => {
+    switch(opt.name) {
+        case 'STR':
+            return MakeObj('ability-scores', 'strength', 'Strength');
+        case 'DEX':
+            return MakeObj('ability-scores', 'dexterity', 'Dexterity');
+        case 'CON':
+            return MakeObj('ability-scores', 'constitution', 'Constitution');
+        case 'INT':
+            return MakeObj('ability-scores', 'intelligence', 'Intelligence');
+        case 'WIS':
+            return MakeObj('ability-scores', 'wisdom', 'Wisdom');
+        case 'CHA':
+            return MakeObj('ability-scores', 'charisma', 'Charisma');
+    }
+    return MakeObj('proficiencies', ExtractIDFromURL(opt.url), MakeTitleCase(opt.name))
+}
 
 module.exports = data => {
     console.log('Reading levels file for cross-reference');
@@ -41,7 +67,7 @@ module.exports = data => {
                 if(name.startsWith('Ability Score Improvement')) {
                     out.abilityScoreIncrease = true;
                 } else {
-                    out.features.push( MakeEnum(name) );
+                    out.features.push( MakeObj('features', ExtractIDFromURL(feat.url), MakeTitleCase(name)) );
                 }
             });
         }
@@ -51,7 +77,7 @@ module.exports = data => {
                 let name = feat.name;
                 if(name.startsWith('Choose: '))
                     name = name.substr(8);
-                out.featureChoices.push( MakeEnum(name) );
+                out.featureChoices.push( MakeObj('features', ExtractIDFromURL(feat.url), MakeTitleCase(name)) );
             });
         }
 
@@ -107,7 +133,7 @@ module.exports = data => {
     spell.forEach(spl => {
         const id = MakeKabob(spl.index);
         const out = {
-            ability: MakeEnum(spl.spellcasting_ability.name),
+            ability: TranslateAbility(spl.spellcasting_ability),
             unlockLevel: parseInt(spl.level || 0),
             features: spl.info.map(inf => ({
                 title: inf.name,
@@ -132,7 +158,7 @@ module.exports = data => {
 
         if(eqp.starting_equipment && Array.isArray(eqp.starting_equipment)) {
             out.starting = eqp.starting_equipment.map(opt => ({
-                item: MakeEnum(opt.equipment.name),
+                ...MakeObj('items', ExtractIDFromURL(opt.equipment.url), MakeTitleCase(opt.equipment.name)),
                 amount: parseInt(opt.quantity || 0),
             }));
         }
@@ -140,28 +166,44 @@ module.exports = data => {
         if(eqp.starting_equipment_options) {
             out.options = eqp.starting_equipment_options.map(opt => {
                 const outOpt = {
-                    choose: parseInt(opt.choose || 1),
-                    from: [],
+                    amount: parseInt(opt.choose || 1),
+                    choices: [],
                 };
 
                 if(opt.from && Array.isArray(opt.from)) {
                     opt.from.forEach(frmOpt => {
                         if(frmOpt.equipment) {
-                            outOpt.from.push({
-                                type: 'ITEM',
-                                item: MakeEnum(frmOpt.equipment.name),
-                                amount: parseInt(frmOpt.quantity || 1),
-                            });
+                            if(frmOpt.equipment.name.indexOf('Pack') !== -1) {
+                                outOpt.choices.push({
+                                    type: 'EQUIPMENT_PACK',
+                                    ...MakeObj('equipment-packs', ExtractIDFromURL(frmOpt.equipment.url), MakeTitleCase(frmOpt.equipment.name)),
+                                    amount: parseInt(frmOpt.quantity || 1),
+                                });
+                            } else if(instruments.includes(frmOpt.equipment.name)) {
+                                outOpt.choices.push({
+                                    type: 'ITEM',
+                                    ...MakeObj('items/instrument', ExtractIDFromURL(frmOpt.equipment.url), MakeTitleCase(frmOpt.equipment.name)),
+                                    amount: parseInt(frmOpt.quantity || 1),
+                                });
+                            } else {
+                                outOpt.choices.push({
+                                    type: 'ITEM',
+                                    ...MakeObj('items', ExtractIDFromURL(frmOpt.equipment.url), MakeTitleCase(frmOpt.equipment.name)),
+                                    amount: parseInt(frmOpt.quantity || 1),
+                                });
+                            }
                         } else if(frmOpt.equipment_option) {
                             if(frmOpt.equipment_option.from.equipment_category) {
-                                outOpt.from.push({
+                                outOpt.choices.push({
                                     type: 'CATEGORY',
-                                    item: MakeEnum(frmOpt.equipment_option.from.equipment_category.name),
+                                    ...MakeObj('equipment-categories', ExtractIDFromURL(frmOpt.equipment_option.from.equipment_category.url), frmOpt.equipment_option.from.equipment_category.name),
+                                    //item: MakeEnum(frmOpt.equipment_option.from.equipment_category.name),
                                     amount: parseInt(frmOpt.equipment_option.choose || 1),
                                 });
                             } else {
-                                outOpt.from.push({
+                                outOpt.choices.push({
                                     type: 'CATEGORY',
+                                    ...MakeObj('equipment-categories', ExtractIDFromURL(frmOpt.equipment_option.from.url), frmOpt.equipment_option.from.name),
                                     item: MakeEnum(frmOpt.equipment_option.from.name),
                                     amount: parseInt(frmOpt.equipment_option.choose || 1),
                                 });
@@ -177,6 +219,7 @@ module.exports = data => {
         equipDict[id] = out;
     });
 
+    /*
     console.log('Reading sub-classes file for cross-reference');
     const rawSubs = FS.readFileSync(Path.resolve('..', 'raw', '5e-SRD-Subclasses.json'));
     const subs = JSON.parse(rawSubs);
@@ -195,9 +238,10 @@ module.exports = data => {
             subDict[id] = [];
         subDict[id].push(out);
     });
+    */
     
     console.log('Building classes data...');
-    data.forEach(cls => {
+    return data.map(cls => {
         const out = {
             id: MakeKabob(cls.index),
             url: MakeURL('classes', cls.index),
@@ -210,13 +254,11 @@ module.exports = data => {
             proficiencies: {
                 savingThrows: [],
                 equipment: [],
-                choices: [],
+                options: [],
             },
 
             spellcasting: null,
             equipment: [],
-
-            subClasses: [],
         };
 
         //Levels
@@ -227,27 +269,33 @@ module.exports = data => {
         }
 
         //Saving throws
-        if(cls.saving_throws)
-            out.proficiencies.savingThrows = cls.saving_throws.map(opt => MakeEnum(opt.name));
-        
+        if(cls.saving_throws) {
+            out.proficiencies.savingThrows = cls.saving_throws.map(TranslateAbility);
+        }
+
         //Equipment Profs.
         if(cls.proficiencies) {
             out.proficiencies.equipment = cls.proficiencies.map(opt => {
                 if(opt.url === '/api/proficiencies/all-armor') {
-                    return ['LIGHT_ARMOR', 'MEDIUM_ARMOR', 'HEAVY_ARMOR'];
+                    return [
+                        MakeObj('proficiencies', 'light-armor', 'Light Armor'),
+                        MakeObj('proficiencies', 'medium-armor', 'Medium Armor'),
+                        MakeObj('proficiencies', 'heavy-armor', 'Heavy Armor'),
+                        MakeObj('proficiencies', 'shields', 'Shields'),
+                    ];
                 }
 
-                return MakeEnum(opt.name)
+                return MakeObj('proficiencies', ExtractIDFromURL(opt.url), MakeTitleCase(opt.name));
             }).flat();
         }
 
         //prof Choices
         if(cls.proficiency_choices && Array.isArray(cls.proficiency_choices)) {
-            out.proficiencies.choices = cls.proficiency_choices.map(choice => {
+            out.proficiencies.options = cls.proficiency_choices.map(choice => {
                 const prof = {
                     type: 'EQUIPMENT',
                     amount: parseInt(choice.choose || 0),
-                    options: [],
+                    choices: [],
                 };
 
                 if(choice.from && Array.isArray(choice.from) && choice.from.length > 0) {
@@ -255,22 +303,30 @@ module.exports = data => {
                     if(sample.startsWith('Skill:')) {
                         //Skill
                         prof.type = 'SKILL';
-
-                        prof.options = choice.from.map(opt => MakeEnum(opt.name.substr(7)));
+                        prof.choices = choice.from.map(opt => 
+                            MakeObj('skills', MakeKabob(opt.name.substr(7)), opt.name.substr(7))
+                        );
                         return prof;
                     } else if(sample.indexOf('tools') !== -1 || sample.indexOf('supplies') !== -1) {
                         prof.type = 'TOOLS';
                     } else if(instruments.includes(sample)) {
                         prof.type = 'INSTRUMENT';
+
+                        prof.choices = choice.from.map(opt =>
+                            MakeObj('items/instrument', MakeKabob(opt.name), MakeTitleCase(opt.name))   
+                        );
+                        return prof;
                     }
 
-                    prof.options = choice.from.map(opt => MakeEnum(opt.name));
+                    prof.choices = choice.from.map(opt => 
+                        MakeObj('proficiencies', ExtractIDFromURL(opt.url), MakeTitleCase(opt.name))
+                    );
                 }
 
                 return prof;
             });
 
-            out.proficiencies.choices.sort((a,b) => (a.type < b.type ? -1 : (a.type > b.type ? 1 : 0)) );
+            out.proficiencies.options.sort((a,b) => (a.type < b.type ? -1 : (a.type > b.type ? 1 : 0)) );
         }
 
         //Spellcasting
@@ -282,14 +338,12 @@ module.exports = data => {
             out.equipment = equipDict[ out.id ];
 
         //Subclasses
+        /*
         if(subDict[out.id])
             out.subClasses = subDict[out.id];
+            */
 
-        //Write the data out
-        const path = Path.resolve('..', `class-${out.id}.json`);
-        const json = JSON.stringify(out, null, 2);
-        FS.writeFileSync(path, json, 'utf8', 777);
-        console.log(`Wrote class ${out.name} to file "${path}"`);
+        return out;
     });
 
     return null;
