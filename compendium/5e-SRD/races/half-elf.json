@@ -16,6 +16,7 @@
     "type": "MEDIUM",
     "description": "Half-elves are about the same size as humans, ranging from 5 to 6 feet tall. Your size is Medium."
   },
+  "speed": 30,
   "abilityScores": {
     "starting": [
       {

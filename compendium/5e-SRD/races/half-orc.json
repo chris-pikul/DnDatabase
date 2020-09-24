@@ -16,6 +16,7 @@
     "type": "MEDIUM",
     "description": "Half-orcs are somewhat larger and bulkier than humans, and they range from 5 to well over 6 feet tall. Your size is Medium."
   },
+  "speed": 30,
   "abilityScores": {
     "starting": [
       {

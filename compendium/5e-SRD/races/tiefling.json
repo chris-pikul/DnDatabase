@@ -16,6 +16,7 @@
     "type": "MEDIUM",
     "description": "Tieflings are about the same size and build as humans. Your size is Medium."
   },
+  "speed": 30,
   "abilityScores": {
     "starting": [
       {

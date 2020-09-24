@@ -28,7 +28,7 @@ module.exports = data => data.map(race => {
         description: '',
 
         race: null,
-        
+
         alignment: (race.alignment || '').trim(),
 
         age: {
@@ -41,6 +41,8 @@ module.exports = data => data.map(race => {
             type: MakeEnum(race.size),
             description: (race.size_description || '').trim(),
         },
+
+        speed: parseInt(race.speed || 30),
 
         abilityScores: { 
             starting: [], 

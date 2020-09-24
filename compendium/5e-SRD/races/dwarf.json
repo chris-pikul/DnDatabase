@@ -16,6 +16,7 @@
     "type": "MEDIUM",
     "description": "Dwarves stand between 4 and 5 feet tall and average about 150 pounds. Your size is Medium."
   },
+  "speed": 25,
   "abilityScores": {
     "starting": [
       {
