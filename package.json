@@ -11,7 +11,8 @@
     "normalize:monsters": "cd compendium/scripts && node normalize monsters",
     "index": "cd compendium/scripts && node indexing all",
     "index:dict": "cd compendium/scripts && node indexing dictionary",
-    "index:urls": "cd compendium/scripts && node indexing urls"
+    "index:urls": "cd compendium/scripts && node indexing urls",
+    "index:index": "cd compendium/scripts && node indexing index"
   },
   "repository": {
     "type": "git",
@@ -35,6 +36,7 @@
   },
   "homepage": "https://github.com/chris-pikul/DnDatabase#readme",
   "dependencies": {
+    "js-levenshtein": "^1.1.6",
     "rimraf": "^3.0.2",
     "stemmer": "^1.0.5"
   }

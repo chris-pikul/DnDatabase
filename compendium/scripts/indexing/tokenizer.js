@@ -1,6 +1,7 @@
 const Stemmer = require('stemmer');
 
-const Tokenize = input => input.replace('\\n', ' ').split(/[^A-Za-z0-9]/g)
+const Tokenize = input => input.replace('\\n', ' ')
+  .split(/[^A-Za-z0-9]/g)
   .filter(tkn => (tkn && tkn.length > 1));
 
 const FilterLowercase = tkns => tkns.map(tkn => tkn.toLowerCase());
