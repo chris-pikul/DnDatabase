@@ -15,6 +15,7 @@ const summaries = JSON.parse( FS.readFileSync(summPath) );
 const Express = require('express');
 const Fuse = require('fuse.js');
 
+const fuseIndex = Fuse.createIndex(['name', 'tags', 'meta', 'description'], summaries);
 const fuse = new Fuse(summaries, {
     isCaseSensitive: false,
     keys: [
@@ -23,7 +24,7 @@ const fuse = new Fuse(summaries, {
         { name: 'meta', weight: 0.5 },
         { name: 'description', weight: 0.1 },
     ]
-});
+}, fuseIndex);
 
 //Start API Implementation
 const api = Express();
@@ -33,18 +34,72 @@ api.get('/', (req, res) => {
     res.send('Hello World!');
 });
 
+const operators = ['type', 'tag'];
+const opRegex = /(?:(\w+):([\w\d,]+)\b)/gi;
+
+const filterByOperations = (operations) => (obj) => {
+    //Filter out by operation
+    //note: each op is considered AND in this case.
+    //each result must match each op
+    return operations.reduce((acc, [op, param]) => {
+        switch(op) {
+            case 'type':
+                return acc && (obj.type.toLowerCase() == param);
+            case 'tag':
+                return acc && (
+                    (obj.tags.findIndex(el => el.toLowerCase() == param) !== -1) 
+                    ||
+                    (obj.meta.findIndex(el => el.toLowerCase() == param) !== -1)
+                );
+        }
+        return true;
+    }, true);
+};
+
 api.get('/search', (req, res) => {
-    const query = req.query.q || '';
+    const initQuery = req.query.q || '';
+    console.log(`Starting search with initial query "${initQuery}"`);
+
+    //Pull out operatives
+    let query = initQuery;
+    const operations = [];
+    let match = opRegex.exec(initQuery);
+    do {
+        if(match && match.length === 3) {
+            const [ full, op, param ] = match;
+            if(operators.includes(op.toLowerCase())) {
+                query = query.replace(full, '');
+                operations.push([op.toLowerCase(), param.toLowerCase()]);
+            }
+        }
+    } while((match = opRegex.exec(initQuery)) !== null);
+    if(operations.length > 0)
+        console.log('Found search operations: ', operations);
+    query = query.trim();
+
+    //Compute pagination
     const pageLength = Math.max(1, parseInt( req.query.length || 10));
     const pageNum = Math.max(1, parseInt( req.query.page || 1));
 
     const start = pageLength * (pageNum - 1);
-    const end = start + pageLength;
+    const end = (start + pageLength);
+    console.log(`Pagination: Len=${pageLength} Num=${pageNum}, Start=${start} End=${end}`);
 
-    console.log(`Searching query: "${query}"`);
-    const results = fuse.search(query)
-        .slice( start, end )
-        .map(obj => obj.item);
+    //Start the searching
+    console.log(`Remaining query: "${query}"`);
+    let results = [];
+    if(query.length > 1) {
+        results = fuse.search(query)
+            .map(obj => obj.item)
+            .filter( filterByOperations(operations) )
+            .slice( start, end );
+    } else {
+        //No query length means we want everything, with optional operations
+        results = summaries
+            .filter( filterByOperations(operations) )
+            .slice( start, end );
+    }
+    console.log(`Returning ${results.length} results`);
 
     res.send(results);
 });
