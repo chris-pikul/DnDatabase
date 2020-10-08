@@ -7,13 +7,13 @@
   "description": "You have proficiency with the battleaxe, handaxe, light hammer, and warhammer.",
   "races": [
     {
-      "name": "Dwarven Combat Training",
+      "name": "Dwarf",
       "url": "/races/dwarf"
     }
   ],
   "subRaces": [
     {
-      "name": "Dwarven Combat Training",
+      "name": "Hill Dwarf",
       "url": "/sub-races/hill-dwarf"
     }
   ]

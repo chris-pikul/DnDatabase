@@ -7,13 +7,13 @@
   "description": "You have proficiency with the longsword, shortsword, shortbow, and longbow.",
   "races": [
     {
-      "name": "Elf Weapon Training",
+      "name": "Elf",
       "url": "/races/elf"
     }
   ],
   "subRaces": [
     {
-      "name": "Elf Weapon Training",
+      "name": "High Elf",
       "url": "/sub-races/high-elf"
     }
   ]

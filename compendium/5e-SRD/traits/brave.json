@@ -7,13 +7,13 @@
   "description": "You have advantage on saving throw against being frightened.",
   "races": [
     {
-      "name": "Brave",
+      "name": "Halfling",
       "url": "/races/halfling"
     }
   ],
   "subRaces": [
     {
-      "name": "Brave",
+      "name": "Lightfoot Halfling",
       "url": "/sub-races/lightfoot-halfling"
     }
   ]

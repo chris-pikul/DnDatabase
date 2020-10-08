@@ -7,37 +7,37 @@
   "description": "You have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You cannot discern color in darkness, only shades of gray.",
   "races": [
     {
-      "name": "Darkvision",
+      "name": "Dwarf",
       "url": "/races/dwarf"
     },
     {
-      "name": "Darkvision",
+      "name": "Elf",
       "url": "/races/elf"
     },
     {
-      "name": "Darkvision",
+      "name": "Gnome",
       "url": "/races/gnome"
     },
     {
-      "name": "Darkvision",
+      "name": "Half-elf",
       "url": "/races/half-elf"
     },
     {
-      "name": "Darkvision",
+      "name": "Half-orc",
       "url": "/races/half-orc"
     }
   ],
   "subRaces": [
     {
-      "name": "Darkvision",
+      "name": "Hill Dwarf",
       "url": "/sub-races/hill-dwarf"
     },
     {
-      "name": "Darkvision",
+      "name": "High Elf",
       "url": "/sub-races/high-elf"
     },
     {
-      "name": "Darkvision",
+      "name": "Rock Gnome",
       "url": "/sub-races/rock-gnome"
     }
   ]

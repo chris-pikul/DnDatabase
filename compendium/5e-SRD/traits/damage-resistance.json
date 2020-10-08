@@ -7,7 +7,7 @@
   "description": "You have resistance to the damage type associated with your draconic ancestry.",
   "races": [
     {
-      "name": "Damage Resistance",
+      "name": "Dragonborn",
       "url": "/races/dragonborn"
     }
   ],

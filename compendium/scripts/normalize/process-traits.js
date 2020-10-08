@@ -20,10 +20,10 @@ module.exports = data => data.map(trt => {
     }
 
     if(trt.races)
-        out.races = trt.races.map(ent => MakeObj('races', ExtractIDFromURL(ent.url), MakeTitleCase(trt.name)));
+        out.races = trt.races.map(ent => MakeObj('races', ExtractIDFromURL(ent.url), MakeTitleCase(ent.name)));
 
     if(trt.subraces)
-        out.subRaces = trt.subraces.map(ent => MakeObj('sub-races', ExtractIDFromURL(ent.url), MakeTitleCase(trt.name)));
+        out.subRaces = trt.subraces.map(ent => MakeObj('sub-races', ExtractIDFromURL(ent.url), MakeTitleCase(ent.name)));
 
     return out;
 });

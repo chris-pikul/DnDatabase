@@ -7,17 +7,17 @@
   "description": "You have advantage on saving throws against being charmed, and magic cannot put you to sleep.",
   "races": [
     {
-      "name": "Fey Ancestry",
+      "name": "Elf",
       "url": "/races/elf"
     },
     {
-      "name": "Fey Ancestry",
+      "name": "Half-elf",
       "url": "/races/half-elf"
     }
   ],
   "subRaces": [
     {
-      "name": "Fey Ancestry",
+      "name": "High Elf",
       "url": "/sub-races/high-elf"
     }
   ]

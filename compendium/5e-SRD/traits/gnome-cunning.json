@@ -7,13 +7,13 @@
   "description": "You have advantage on all Intelligence, Wisdom, and Charisma saving throws against magic.",
   "races": [
     {
-      "name": "Gnome Cunning",
+      "name": "Gnome",
       "url": "/races/gnome"
     }
   ],
   "subRaces": [
     {
-      "name": "Gnome Cunning",
+      "name": "Rock Gnome",
       "url": "/sub-races/rock-gnome"
     }
   ]

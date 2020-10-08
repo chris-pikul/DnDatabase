@@ -7,13 +7,13 @@
   "description": "You have advantage on saving throws against poison, and you have resistance against poison damage.",
   "races": [
     {
-      "name": "Dwarven Resilience",
+      "name": "Dwarf",
       "url": "/races/dwarf"
     }
   ],
   "subRaces": [
     {
-      "name": "Dwarven Resilience",
+      "name": "Hill Dwarf",
       "url": "/sub-races/hill-dwarf"
     }
   ]

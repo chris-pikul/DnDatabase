@@ -2,8 +2,9 @@
   "name": "dndatabase",
   "version": "1.0.0",
   "description": "Dungeons and Dragons 5th Edition Compendium and tool set",
-  "main": "index.js",
+  "main": "api/index.js",
   "scripts": {
+    "start": "node ./api",
     "normalize": "cd compendium/scripts && node normalize all",
     "normalize:items": "cd compendium/scripts && node normalize items",
     "normalize:spells": "cd compendium/scripts && node normalize spells",
@@ -12,7 +13,8 @@
     "index": "cd compendium/scripts && node indexing all",
     "index:dict": "cd compendium/scripts && node indexing dictionary",
     "index:urls": "cd compendium/scripts && node indexing urls",
-    "index:index": "cd compendium/scripts && node indexing index"
+    "index:index": "cd compendium/scripts && node indexing index",
+    "index:summaries": "cd compendium/scripts && node indexing summaries"
   },
   "repository": {
     "type": "git",
@@ -36,6 +38,8 @@
   },
   "homepage": "https://github.com/chris-pikul/DnDatabase#readme",
   "dependencies": {
+    "express": "^4.17.1",
+    "fuse.js": "^6.4.1",
     "js-levenshtein": "^1.1.6",
     "rimraf": "^3.0.2",
     "stemmer": "^1.0.5"
