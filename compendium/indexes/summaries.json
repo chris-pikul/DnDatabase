@@ -4022,6 +4022,16 @@
     ]
   },
   {
+    "type": "ITEM",
+    "url": "/items/ingot-copper",
+    "name": "Copper Ingot (Bar)",
+    "description": "A 25lbs. casted bar of pure copper",
+    "tags": [
+      "General"
+    ],
+    "meta": []
+  },
+  {
     "type": "MONSTER",
     "url": "/monsters/couatl",
     "name": "Couatl",
@@ -7970,6 +7980,16 @@
     ]
   },
   {
+    "type": "ITEM",
+    "url": "/items/ingot-gold",
+    "name": "Gold Ingot (Bar)",
+    "description": "A 25lbs. casted bar of pure gold",
+    "tags": [
+      "General"
+    ],
+    "meta": []
+  },
+  {
     "type": "SPELL",
     "url": "/spells/goodberry",
     "name": "Goodberry",
@@ -9821,6 +9841,16 @@
       "Magic Resistance",
       "Magic Weapons"
     ]
+  },
+  {
+    "type": "ITEM",
+    "url": "/items/ingot-iron",
+    "name": "Iron Ingot (Bar)",
+    "description": "A 25lbs. casted bar of pure iron",
+    "tags": [
+      "General"
+    ],
+    "meta": []
   },
   {
     "type": "SPELL",
@@ -12726,6 +12756,16 @@
     "meta": []
   },
   {
+    "type": "ITEM",
+    "url": "/items/ingot-platinum",
+    "name": "Platinum Ingot (Bar)",
+    "description": "A 10lbs. casted bar of pure platinum",
+    "tags": [
+      "General"
+    ],
+    "meta": []
+  },
+  {
     "type": "PROFICIENCY",
     "url": "/proficiencies/playing-card-set",
     "name": "Playing Card Set",
@@ -13776,6 +13816,16 @@
       "1 action",
       "Instantaneous"
     ]
+  },
+  {
+    "type": "ITEM",
+    "url": "/items/ingot-residuum",
+    "name": "Residuum Ingot (Bar)",
+    "description": "A 5lbs. cold-casted bar of residuum. Appears as a semi-transparent purplish glass featuring a green-blue gleam on it's surface. Can be used to replace any gold valued component in spellcasting or enchanting by value.",
+    "tags": [
+      "General"
+    ],
+    "meta": []
   },
   {
     "type": "SPELL",
@@ -15093,6 +15143,16 @@
       "Bite",
       "Breath Weapons"
     ]
+  },
+  {
+    "type": "ITEM",
+    "url": "/items/ingot-silver",
+    "name": "Silver Ingot (Bar)",
+    "description": "A 25lbs. casted bar of pure silver",
+    "tags": [
+      "General"
+    ],
+    "meta": []
   },
   {
     "type": "PROFICIENCY",

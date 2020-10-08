@@ -174,14 +174,17 @@ async function processFile(file) {
 async function buildSummaries() {
     let files = [];
 
-    const dir = Path.resolve('..', '5e-SRD');
-    console.log(`Reading directory "${dir}"`);
-    for await(const file of walk(dir + Path.sep)) {
-        if(!file.endsWith('.json'))
-            continue;
+    const dirs = [ '5e-SRD', 'homebrew' ];
+    for(const fldr of dirs) {
+        const dir = Path.resolve('..', fldr);
+        console.log(`Reading directory "${dir}"`);
+        for await(const file of walk(dir + Path.sep)) {
+            if(!file.endsWith('.json'))
+                continue;
 
-        console.log(`Adding file "${file}"`);
-        files.push( processFile(file) );
+            console.log(`Adding file "${file}"`);
+            files.push( processFile(file) );
+        }
     }
 
     const summaries = (await Promise.all(files))
