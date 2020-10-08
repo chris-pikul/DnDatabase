@@ -30,8 +30,17 @@ const fuse = new Fuse(summaries, {
 const api = Express();
 const port = 8080;
 
-api.get('/', (req, res) => {
-    res.send('Hello World!');
+const staticPath = Path.resolve(__dirname, '..', 'gui');
+api.get('/', (_, res) => {
+    res.sendFile( Path.join(staticPath, 'index.html') );
+});
+
+//Dynamically serve up the static stuff in GUI folder
+FS.readdirSync(staticPath).forEach(file => {
+    const fullPath = Path.join(staticPath, file);
+    const httpPath = '/'+file.replace(Path.sep, '/');
+    console.log(`Registering path "${httpPath}" for static file "${fullPath}"`);
+    api.get(httpPath, (_, res) => res.sendFile(fullPath));
 });
 
 const operators = ['type', 'tag'];

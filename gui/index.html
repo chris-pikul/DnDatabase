@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8' />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>DnDatabase</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <style type='text/css'>
+        .type-class { border-color: rgba(0,128,128, 0.5); }
+        .type-class .card-header { background-color: rgba(0,128,128, 0.125); color: rgb(0,64,64); }
+        .type-class .card-footer { background-color: rgba(0,128,128, 0.125); }
+
+        .type-condition { border-color: rgba(64,128,0, 0.5); }
+        .type-condition .card-header { background-color: rgba(64,128,0, 0.125); color: rgb(32,64,0); }
+        .type-condition .card-footer { background-color: rgba(64,128,0, 0.125); }
+
+        .type-equipment_pack { border-color: rgba(64,0,64, 0.5); }
+        .type-equipment_pack .card-header { background-color: rgba(64,0,64, 0.125); color: rgb(32,0,32); }
+        .type-equipment_pack .card-footer { background-color: rgba(64,0,64, 0.125); }
+
+        .type-item { border-color: rgba(128,0,128, 0.5); }
+        .type-item .card-header { background-color: rgba(128,0,128, 0.125); color: rgb(64,0,64); }
+        .type-item .card-footer { background-color: rgba(128,0,128, 0.125); }
+
+        .type-magic_school { border-color: rgba(0,0,128, 0.5); }
+        .type-magic_school .card-header { background-color: rgba(0,0,128, 0.125); color: rgb(0,0,64); }
+        .type-magic_school .card-footer { background-color: rgba(0,0,128, 0.125); }
+
+        .type-monster { border-color: rgba(128,0,0, 0.5); }
+        .type-monster .card-header { background-color: rgba(128,0,0, 0.125); color: rgb(64,0,0); }
+        .type-monster .card-footer { background-color: rgba(128,0,0, 0.125); }
+
+        .type-race { border-color: rgba(128,128,0, 0.5); }
+        .type-race .card-header { background-color: rgba(128,128,0, 0.125); color: rgb(64,64,0); }
+        .type-race .card-footer { background-color: rgba(128,128,0, 0.125); }
+
+        .type-spell { border-color: rgba(0,0,128, 0.5); }
+        .type-spell .card-header { background-color: rgba(0,0,128, 0.125); color: rgb(0,0,64); }
+        .type-spell .card-footer { background-color: rgba(0,0,128, 0.125); }
+    </style>
+</head>
+<body>
+    <nav class='navbar navbar-expand-lg navbar-dark bg-dark'>
+        <a class='navbar-brand' href='/'>
+            <img src='/apple-touch-icon.png' class='img-fluid' width='32' height='32' loading='lazy' />
+            DnDatabase
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+            <a class="nav-link active" href="/">Search</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class='container bg-dark rounded my-3 p-5'>
+        <form id='searchForm'>
+            <div class='form-row'>
+                <div class='input-group'>
+                    <input id='searchInput' type='text' class='form-control form-control-lg' placeholder='Search terms...' aria-label='Search' aria-describedby='searchHelp' />
+                    <div class="input-group-append">
+                        <button id='searchBtn' type='submit' class='btn btn-primary btn-lg'>GO</button>
+                    </div>
+                </div>
+            </div>
+            <div class='form-row'>
+                <small id='searchHelp' class='form-text text-muted'>
+                    Seaching will automatically update. Use special "operators" such as <code>tag:fey</code> or <code>type:item</code> to limit results additionally.
+                </small>
+            </div>
+        </form>
+    </div>
+
+    <div class='container my-3'>
+        <div class='card-columns' id='searchResults'></div>
+    </div>
+
+    <template id='searchResultTempl'>
+        <a class='card'>
+            <div class='_type _typeBadge card-header'></div>
+            <div class='card-body'>
+                <h3 class='_title card-title'></h3>
+                <p class='_desc card-text'></p>
+            </div>
+            <div class='_tags card-footer'></div>
+        </a>
+    </template>
+
+    <!-- Bootstrap Dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <!-- Custom Scripts -->
+    <script src='/index.js'></script>
+</body>
+</html>
