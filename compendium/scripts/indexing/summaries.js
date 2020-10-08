@@ -82,14 +82,14 @@ async function processFile(file) {
                     if(data.subKind) out.tags.push( MakeTitleCase(data.subKind) );
                     out.tags.push( MakeTitleCase(data.alignment.replace('_', ' ')));
 
-                    if(data.challengRating < 1) {
-                        if(data.challengRating == 0)
+                    if(data.challengeRating < 1) {
+                        if(data.challengeRating == 0)
                             out.tags.push( 'CR0');
-                        else if(data.challengRating == 0.125)
+                        else if(data.challengeRating == 0.125)
                             out.tags.push( 'CR1/8');
-                        else if(data.challengRating == 0.25)
+                        else if(data.challengeRating == 0.25)
                             out.tags.push( 'CR1/4');
-                        else if(data.challengRating == 0.5)
+                        else if(data.challengeRating == 0.5)
                             out.tags.push( 'CR1/2' );
                     } else {
                         out.tags.push( `CR${data.challengeRating}`);

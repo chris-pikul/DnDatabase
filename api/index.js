@@ -1,31 +1,31 @@
 const Path = require('path');
 const FS = require('fs');
 
-//Levenshtein
-const Levenshtein = require('js-levenshtein');
+const rootPath = Path.resolve(__dirname, '..', 'compendium');
+const compendiums = [
+    Path.resolve( rootPath, '5e-SRD' ),
+    Path.resolve( rootPath, 'homebrew' ),
+];
 
-//Tokenizer
-const {
-    TokenizeAndFilter,
-    FilterLowercase,
-    FilterDedup,
-    FilterStopWords,
-    FilterWords,
-    FilterStemmer,
-} = require('../compendium/scripts/indexing/tokenizer');
+//Load the summaries index
+const summPath = Path.resolve(__dirname, '..', 'compendium', 'indexes', 'summaries.json');
+const summaries = JSON.parse( FS.readFileSync(summPath) );
 
-//Load the dictionary
-const dictPath = Path.resolve(__dirname, '..', 'compendium', 'indexes', 'dictionary.json');
-console.log('Reading dictionary index from: ', dictPath);
-const dictionary = JSON.parse( FS.readFileSync(dictPath) );
-
-const indexPath = Path.resolve(__dirname, '..', 'compendium', 'indexes', 'dict-urls.json');
-console.log('Reading indice from: ', indexPath);
-const index = JSON.parse( FS.readFileSync(indexPath) );
-
-//Express
+//Libraries
 const Express = require('express');
+const Fuse = require('fuse.js');
 
+const fuse = new Fuse(summaries, {
+    isCaseSensitive: false,
+    keys: [
+        { name: 'name', weight: 3 },
+        { name: 'tags', weight: 1 },
+        { name: 'meta', weight: 0.5 },
+        { name: 'description', weight: 0.1 },
+    ]
+});
+
+//Start API Implementation
 const api = Express();
 const port = 8080;
 
@@ -33,56 +33,37 @@ api.get('/', (req, res) => {
     res.send('Hello World!');
 });
 
-api.get('/autocomplete', (req, res) => {
-    const query = req.query.q || '';
-
-    const tokens = TokenizeAndFilter(query,
-        FilterLowercase,
-        FilterStopWords,
-        FilterWords,
-        FilterDedup,
-    );
-
-    const results = tokens.map(token => {
-        const out = {
-            token,
-            matches: [],
-        };
-
-        const matches = dictionary.map(word => ([ word, Levenshtein(token, word) ]) );
-        matches.sort( (a,b) => (a[1] > b[1] ? 1 : (a[1] < b[1] ? -1 : 0)) );
-        out.matches = matches.slice(0, 5);
-
-        return out;
-    });
-
-    res.send( results );
-});
-
 api.get('/search', (req, res) => {
     const query = req.query.q || '';
+    const pageLength = Math.max(1, parseInt( req.query.length || 10));
+    const pageNum = Math.max(1, parseInt( req.query.page || 1));
 
-    const tokens = TokenizeAndFilter(query,
-        FilterLowercase,
-        FilterStopWords,
-        FilterWords,
-        FilterStemmer,
-        FilterDedup,
-    );
+    const start = pageLength * (pageNum - 1);
+    const end = start + pageLength;
 
-    const matches = FilterDedup( tokens.map(token => {
-            if(index.hasOwnProperty(token))
-                return index[token];
-            return false;
-        }).filter(entry => !!entry)
-        .flat(2)
-    );
+    console.log(`Searching query: "${query}"`);
+    const results = fuse.search(query)
+        .slice( start, end )
+        .map(obj => obj.item);
 
-    res.send(matches);
+    res.send(results);
 });
 
 api.get('*', (req, res) => {
-    res.send('FALLBACK RESPONSE');
+    for(const fldr of compendiums) {
+        try {
+            const path = Path.join(fldr, req.path) + '.json';
+            console.log('Checking existance of: ', path);
+            if(FS.existsSync(path)) {
+                const data = JSON.parse( FS.readFileSync(path) );
+                return res.send(data);
+            }
+        } catch(err) {
+            console.warn('Error checking existance of: ', req.path);
+        }
+    }
+
+    res.sendStatus(404);
 });
 
 api.listen(port, () => {

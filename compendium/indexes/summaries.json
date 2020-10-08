@@ -121,7 +121,7 @@
       "Humanoid",
       "Any_race",
       "Any Alignment",
-      "CR0.25"
+      "CR1/4"
     ],
     "meta": [
       "Medicine",
@@ -1217,7 +1217,7 @@
       "Medium",
       "Beast",
       "Unaligned",
-      "CR0.5"
+      "CR1/2"
     ],
     "meta": [
       "Athletics",
@@ -1501,7 +1501,7 @@
       "Large",
       "Beast",
       "Unaligned",
-      "CR0.25"
+      "CR1/4"
     ],
     "meta": [
       "",
@@ -1645,7 +1645,7 @@
       "Humanoid",
       "Any_race",
       "Any Non_lawful_alignment",
-      "CR0.125"
+      "CR1/8"
     ],
     "meta": [
       "Any One Language (usually Common)",
@@ -2137,7 +2137,7 @@
       "Medium",
       "Beast",
       "Unaligned",
-      "CR0.5"
+      "CR1/2"
     ],
     "meta": [
       "",
@@ -2337,7 +2337,7 @@
       "Medium",
       "Fey",
       "Lawful Good",
-      "CR0.25"
+      "CR1/4"
     ],
     "meta": [
       "Perception",
@@ -2368,7 +2368,7 @@
       "Small",
       "Beast",
       "Unaligned",
-      "CR0.125",
+      "CR1/8",
       "Flying"
     ],
     "meta": [
@@ -2475,7 +2475,7 @@
       "Medium",
       "Beast",
       "Unaligned",
-      "CR0.25"
+      "CR1/4"
     ],
     "meta": [
       "",
@@ -2845,7 +2845,7 @@
       "Large",
       "Beast",
       "Unaligned",
-      "CR0.125"
+      "CR1/8"
     ],
     "meta": [
       "",
@@ -3519,7 +3519,7 @@
       "Small",
       "Monstrosity",
       "Unaligned",
-      "CR0.5",
+      "CR1/2",
       "Flying",
       "Darkvision"
     ],
@@ -3856,7 +3856,7 @@
       "Large",
       "Beast",
       "Unaligned",
-      "CR0.25",
+      "CR1/4",
       "Swimming",
       "Blindsight"
     ],
@@ -4167,7 +4167,7 @@
       "Large",
       "Beast",
       "Unaligned",
-      "CR0.5",
+      "CR1/2",
       "Swimming"
     ],
     "meta": [
@@ -4321,7 +4321,7 @@
       "Humanoid",
       "Any_race",
       "Any Non_good_alignment",
-      "CR0.125"
+      "CR1/8"
     ],
     "meta": [
       "Deception",
@@ -4420,7 +4420,7 @@
       "Small",
       "Monstrosity",
       "Unaligned",
-      "CR0.5",
+      "CR1/2",
       "Flying",
       "Blindsight"
     ],
@@ -4606,7 +4606,7 @@
       "Humanoid",
       "Gnome",
       "Neutral Good",
-      "CR0.5",
+      "CR1/2",
       "Darkvision"
     ],
     "meta": [
@@ -5185,7 +5185,7 @@
       "Large",
       "Beast",
       "Unaligned",
-      "CR0.25"
+      "CR1/4"
     ],
     "meta": [
       "",
@@ -5264,7 +5264,7 @@
       "Fiend",
       "Demon",
       "Chaotic Evil",
-      "CR0.25",
+      "CR1/4",
       "Darkvision"
     ],
     "meta": [
@@ -5314,7 +5314,7 @@
       "Humanoid",
       "Elf",
       "Neutral Evil",
-      "CR0.25",
+      "CR1/4",
       "Darkvision"
     ],
     "meta": [
@@ -5489,7 +5489,7 @@
       "Small",
       "Elemental",
       "Neutral Evil",
-      "CR0.5",
+      "CR1/2",
       "Flying",
       "Darkvision"
     ],
@@ -5737,7 +5737,7 @@
       "Large",
       "Beast",
       "Unaligned",
-      "CR0.25"
+      "CR1/4"
     ],
     "meta": [
       "",
@@ -6625,7 +6625,7 @@
       "Tiny",
       "Beast",
       "Unaligned",
-      "CR0.125",
+      "CR1/8",
       "Swimming",
       "Flying",
       "Blindsight"
@@ -6645,7 +6645,7 @@
       "Small",
       "Construct",
       "Unaligned",
-      "CR0.25",
+      "CR1/4",
       "Flying",
       "Blindsight"
     ],
@@ -7081,7 +7081,7 @@
       "Medium",
       "Beast",
       "Unaligned",
-      "CR0.25",
+      "CR1/4",
       "Darkvision"
     ],
     "meta": [
@@ -7101,7 +7101,7 @@
       "Large",
       "Beast",
       "Unaligned",
-      "CR0.25",
+      "CR1/4",
       "Flying",
       "Blindsight"
     ],
@@ -7139,7 +7139,7 @@
       "Small",
       "Beast",
       "Unaligned",
-      "CR0.25",
+      "CR1/4",
       "Blindsight"
     ],
     "meta": [
@@ -7176,7 +7176,7 @@
       "Medium",
       "Beast",
       "Unaligned",
-      "CR0.125",
+      "CR1/8",
       "Swimming",
       "Blindsight"
     ],
@@ -7279,7 +7279,7 @@
       "Medium",
       "Beast",
       "Unaligned",
-      "CR0.25",
+      "CR1/4",
       "Swimming",
       "Darkvision"
     ],
@@ -7302,7 +7302,7 @@
       "Large",
       "Beast",
       "Unaligned",
-      "CR0.5"
+      "CR1/2"
     ],
     "meta": [
       "",
@@ -7355,7 +7355,7 @@
       "Large",
       "Beast",
       "Unaligned",
-      "CR0.25",
+      "CR1/4",
       "Darkvision"
     ],
     "meta": [
@@ -7398,7 +7398,7 @@
       "Large",
       "Beast",
       "Neutral",
-      "CR0.25",
+      "CR1/4",
       "Flying",
       "Darkvision"
     ],
@@ -7423,7 +7423,7 @@
       "Medium",
       "Beast",
       "Unaligned",
-      "CR0.25",
+      "CR1/4",
       "Swimming",
       "Blindsight"
     ],
@@ -7442,7 +7442,7 @@
       "Small",
       "Beast",
       "Unaligned",
-      "CR0.125",
+      "CR1/8",
       "Darkvision"
     ],
     "meta": [
@@ -7461,7 +7461,7 @@
       "Small",
       "Beast",
       "Unaligned",
-      "CR0.125",
+      "CR1/8",
       "Darkvision"
     ],
     "meta": [
@@ -7497,7 +7497,7 @@
       "Large",
       "Beast",
       "Unaligned",
-      "CR0.5",
+      "CR1/2",
       "Swimming"
     ],
     "meta": [
@@ -7603,7 +7603,7 @@
       "Medium",
       "Beast",
       "Unaligned",
-      "CR0.5",
+      "CR1/2",
       "Swimming",
       "Flying"
     ],
@@ -7621,7 +7621,7 @@
       "Medium",
       "Beast",
       "Unaligned",
-      "CR0.125",
+      "CR1/8",
       "Darkvision"
     ],
     "meta": [
@@ -7641,7 +7641,7 @@
       "Medium",
       "Beast",
       "Unaligned",
-      "CR0.25",
+      "CR1/4",
       "Darkvision",
       "Blindsight"
     ],
@@ -7841,7 +7841,7 @@
       "Humanoid",
       "Gnoll",
       "Chaotic Evil",
-      "CR0.5",
+      "CR1/2",
       "Darkvision"
     ],
     "meta": [
@@ -7929,7 +7929,7 @@
       "Humanoid",
       "Goblinoid",
       "Neutral Evil",
-      "CR0.25",
+      "CR1/4",
       "Darkvision"
     ],
     "meta": [
@@ -8038,7 +8038,7 @@
       "Medium",
       "Ooze",
       "Unaligned",
-      "CR0.5",
+      "CR1/2",
       "Blindsight"
     ],
     "meta": [
@@ -8289,7 +8289,7 @@
       "Humanoid",
       "Grimlock",
       "Neutral Evil",
-      "CR0.25",
+      "CR1/4",
       "Blindsight"
     ],
     "meta": [
@@ -8313,7 +8313,7 @@
       "Humanoid",
       "Any_race",
       "Any Alignment",
-      "CR0.125"
+      "CR1/8"
     ],
     "meta": [
       "Perception",
@@ -9107,7 +9107,7 @@
       "Humanoid",
       "Goblinoid",
       "Lawful Evil",
-      "CR0.5",
+      "CR1/2",
       "Darkvision"
     ],
     "meta": [
@@ -9444,7 +9444,7 @@
       "Small",
       "Elemental",
       "Neutral Evil",
-      "CR0.5",
+      "CR1/2",
       "Flying",
       "Darkvision"
     ],
@@ -10026,7 +10026,7 @@
       "Humanoid",
       "Kobold",
       "Lawful Evil",
-      "CR0.125",
+      "CR1/8",
       "Darkvision"
     ],
     "meta": [
@@ -10474,7 +10474,7 @@
       "Humanoid",
       "Lizardfolk",
       "Neutral",
-      "CR0.5",
+      "CR1/2",
       "Swimming"
     ],
     "meta": [
@@ -10884,7 +10884,7 @@
       "Small",
       "Elemental",
       "Neutral Evil",
-      "CR0.5",
+      "CR1/2",
       "Flying",
       "Darkvision"
     ],
@@ -10909,7 +10909,7 @@
       "Small",
       "Elemental",
       "Chaotic Neutral",
-      "CR0.5",
+      "CR1/2",
       "Darkvision"
     ],
     "meta": [
@@ -11163,7 +11163,7 @@
       "Medium",
       "Beast",
       "Unaligned",
-      "CR0.125"
+      "CR1/8"
     ],
     "meta": [
       "Perception",
@@ -11328,7 +11328,7 @@
       "Humanoid",
       "Merfolk",
       "Neutral",
-      "CR0.125",
+      "CR1/8",
       "Swimming"
     ],
     "meta": [
@@ -11720,7 +11720,7 @@
       "Medium",
       "Beast",
       "Unaligned",
-      "CR0.125"
+      "CR1/8"
     ],
     "meta": [
       "",
@@ -11950,7 +11950,7 @@
       "Humanoid",
       "Any_race",
       "Any Alignment",
-      "CR0.125"
+      "CR1/8"
     ],
     "meta": [
       "Deception",
@@ -12132,7 +12132,7 @@
       "Humanoid",
       "Orc",
       "Chaotic Evil",
-      "CR0.5",
+      "CR1/2",
       "Darkvision"
     ],
     "meta": [
@@ -12303,7 +12303,7 @@
       "Medium",
       "Beast",
       "Unaligned",
-      "CR0.25"
+      "CR1/4"
     ],
     "meta": [
       "Perception",
@@ -12841,7 +12841,7 @@
       "Tiny",
       "Beast",
       "Unaligned",
-      "CR0.125",
+      "CR1/8",
       "Swimming",
       "Blindsight"
     ],
@@ -12910,7 +12910,7 @@
       "Medium",
       "Beast",
       "Unaligned",
-      "CR0.125"
+      "CR1/8"
     ],
     "meta": [
       "",
@@ -13275,7 +13275,7 @@
       "Tiny",
       "Dragon",
       "Neutral Good",
-      "CR0.25",
+      "CR1/4",
       "Flying",
       "Darkvision",
       "Blindsight"
@@ -13661,7 +13661,7 @@
       "Medium",
       "Beast",
       "Unaligned",
-      "CR0.5",
+      "CR1/2",
       "Swimming",
       "Blindsight"
     ],
@@ -13912,7 +13912,7 @@
       "Large",
       "Beast",
       "Unaligned",
-      "CR0.25"
+      "CR1/4"
     ],
     "meta": [
       "",
@@ -14112,7 +14112,7 @@
       "Medium",
       "Monstrosity",
       "Unaligned",
-      "CR0.5",
+      "CR1/2",
       "Darkvision"
     ],
     "meta": [
@@ -14213,7 +14213,7 @@
       "Humanoid",
       "Sahuagin",
       "Lawful Evil",
-      "CR0.5",
+      "CR1/2",
       "Swimming",
       "Darkvision"
     ],
@@ -14283,7 +14283,7 @@
       "Medium",
       "Fey",
       "Chaotic Neutral",
-      "CR0.5"
+      "CR1/2"
     ],
     "meta": [
       "Perception",
@@ -14502,7 +14502,7 @@
       "Humanoid",
       "Any_race",
       "Any Alignment",
-      "CR0.5"
+      "CR1/2"
     ],
     "meta": [
       "Nature",
@@ -14686,7 +14686,7 @@
       "Medium",
       "Undead",
       "Chaotic Evil",
-      "CR0.5",
+      "CR1/2",
       "Darkvision"
     ],
     "meta": [
@@ -15138,7 +15138,7 @@
       "Medium",
       "Undead",
       "Lawful Evil",
-      "CR0.25",
+      "CR1/4",
       "Darkvision"
     ],
     "meta": [
@@ -15660,7 +15660,7 @@
       "Tiny",
       "Fey",
       "Neutral Good",
-      "CR0.25",
+      "CR1/4",
       "Flying"
     ],
     "meta": [
@@ -15749,7 +15749,7 @@
       "Small",
       "Elemental",
       "Neutral Evil",
-      "CR0.25",
+      "CR1/4",
       "Flying",
       "Darkvision"
     ],
@@ -15793,7 +15793,7 @@
       "Tiny",
       "Beast",
       "Unaligned",
-      "CR0.125",
+      "CR1/8",
       "Flying",
       "Darkvision"
     ],
@@ -16104,7 +16104,7 @@
       "Medium",
       "Swarm_of_tiny_beasts",
       "Unaligned",
-      "CR0.25",
+      "CR1/4",
       "Flying",
       "Blindsight"
     ],
@@ -16125,7 +16125,7 @@
       "Medium",
       "Swarm_of_tiny_beasts",
       "Unaligned",
-      "CR0.5",
+      "CR1/2",
       "Blindsight"
     ],
     "meta": [
@@ -16143,7 +16143,7 @@
       "Medium",
       "Swarm_of_tiny_beasts",
       "Unaligned",
-      "CR0.5",
+      "CR1/2",
       "Blindsight"
     ],
     "meta": [
@@ -16161,7 +16161,7 @@
       "Medium",
       "Swarm_of_tiny_beasts",
       "Unaligned",
-      "CR0.5",
+      "CR1/2",
       "Blindsight"
     ],
     "meta": [
@@ -16219,7 +16219,7 @@
       "Medium",
       "Swarm_of_tiny_beasts",
       "Unaligned",
-      "CR0.25",
+      "CR1/4",
       "Darkvision"
     ],
     "meta": [
@@ -16238,7 +16238,7 @@
       "Medium",
       "Swarm_of_tiny_beasts",
       "Unaligned",
-      "CR0.25",
+      "CR1/4",
       "Flying"
     ],
     "meta": [
@@ -16256,7 +16256,7 @@
       "Medium",
       "Swarm_of_tiny_beasts",
       "Unaligned",
-      "CR0.5",
+      "CR1/2",
       "Blindsight"
     ],
     "meta": [
@@ -16277,7 +16277,7 @@
       "Medium",
       "Swarm_of_tiny_beasts",
       "Unaligned",
-      "CR0.5",
+      "CR1/2",
       "Flying",
       "Blindsight"
     ],
@@ -16478,7 +16478,7 @@
       "Humanoid",
       "Any_race",
       "Any Non_good_alignment",
-      "CR0.5"
+      "CR1/2"
     ],
     "meta": [
       "Intimidation",
@@ -16759,7 +16759,7 @@
       "Humanoid",
       "Any_race",
       "Any Alignment",
-      "CR0.125"
+      "CR1/8"
     ],
     "meta": [
       "Any One Language",
@@ -17172,7 +17172,7 @@
       "Medium",
       "Plant",
       "Unaligned",
-      "CR0.25",
+      "CR1/4",
       "Blindsight"
     ],
     "meta": [
@@ -17417,7 +17417,7 @@
       "Large",
       "Beast",
       "Unaligned",
-      "CR0.5"
+      "CR1/2"
     ],
     "meta": [
       "",
@@ -17442,7 +17442,7 @@
       "Large",
       "Undead",
       "Lawful Evil",
-      "CR0.5",
+      "CR1/2",
       "Darkvision"
     ],
     "meta": [
@@ -17985,7 +17985,7 @@
       "Medium",
       "Beast",
       "Unaligned",
-      "CR0.25"
+      "CR1/4"
     ],
     "meta": [
       "Perception",
@@ -18052,7 +18052,7 @@
       "Large",
       "Monstrosity",
       "Neutral Evil",
-      "CR0.5",
+      "CR1/2",
       "Darkvision"
     ],
     "meta": [
@@ -18458,7 +18458,7 @@
       "Medium",
       "Undead",
       "Neutral Evil",
-      "CR0.25",
+      "CR1/4",
       "Darkvision"
     ],
     "meta": [
