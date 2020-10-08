@@ -11,7 +11,10 @@ const FilterDedup = tkns => tkns.map((tkn, ind, arr) => {
   return tkn;
 }).filter(tkn => (tkn && tkn.length > 1));
 
-const _stopWords = ['a', 'an', 'and', 'as', 'be', 'but', 'for', 'from', 'have', 'i', 'in', 'is', 'of', 'that', 'the', 'to'];
+const _stopWords = ['a', 'an', 'and', 'as', 'at', 
+'be', 'but', 'by', 'do', 'for', 'from', 'go', 'have', 
+'i', 'if', 'in', 'is', 'it', 
+'of', 'on', 'or', 'so', 'that', 'the', 'to'];
 const FilterStopWords = tkns => tkns.filter(tkn => !_stopWords.includes(tkn));
 
 const FilterWords = tkns => tkns.filter(tkn => tkn.match(/^[A-Za-z]+$/));

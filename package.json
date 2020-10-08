@@ -9,7 +9,9 @@
     "normalize:spells": "cd compendium/scripts && node normalize spells",
     "normalize:race-class": "cd compendium/scripts && node normalize race-class",
     "normalize:monsters": "cd compendium/scripts && node normalize monsters",
-    "index": "cd compendium/scripts && node indexing all"
+    "index": "cd compendium/scripts && node indexing all",
+    "index:dict": "cd compendium/scripts && node indexing dictionary",
+    "index:urls": "cd compendium/scripts && node indexing urls"
   },
   "repository": {
     "type": "git",

@@ -1,4 +1,5 @@
 const buildDictionary = require('./dictionary');
+const buildURLs = require('./urls');
 
 const cliArgs = process.argv.slice(2);
 if(cliArgs.length === 0) {
@@ -9,6 +10,13 @@ if(cliArgs.length === 0) {
     switch(op) {
         case 'ALL':
             buildDictionary();
+            buildURLs();
+            break;
+        case 'DICTIONARY':
+            buildDictionary();
+            break;
+        case 'URLS':
+            buildURLs();
             break;
         default:
             console.error(`Unknown operation '${op}'`);
