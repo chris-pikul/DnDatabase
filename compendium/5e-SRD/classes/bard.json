@@ -3,6 +3,7 @@
   "id": "bard",
   "url": "/classes/bard",
   "name": "Bard",
+  "description": "",
   "source": "PHB",
   "hitDie": 8,
   "levels": [

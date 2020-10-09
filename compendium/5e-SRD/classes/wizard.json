@@ -3,6 +3,7 @@
   "id": "wizard",
   "url": "/classes/wizard",
   "name": "Wizard",
+  "description": "",
   "source": "PHB",
   "hitDie": 6,
   "levels": [

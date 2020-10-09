@@ -3,6 +3,7 @@
   "id": "druid",
   "url": "/classes/druid",
   "name": "Druid",
+  "description": "",
   "source": "PHB",
   "hitDie": 8,
   "levels": [

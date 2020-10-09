@@ -3,6 +3,7 @@
   "id": "paladin",
   "url": "/classes/paladin",
   "name": "Paladin",
+  "description": "",
   "source": "PHB",
   "hitDie": 10,
   "levels": [

@@ -3,6 +3,7 @@
   "id": "barbarian",
   "url": "/classes/barbarian",
   "name": "Barbarian",
+  "description": "",
   "source": "PHB",
   "hitDie": 12,
   "levels": [

@@ -3,6 +3,7 @@
   "id": "sorcerer",
   "url": "/classes/sorcerer",
   "name": "Sorcerer",
+  "description": "",
   "source": "PHB",
   "hitDie": 6,
   "levels": [

@@ -247,6 +247,7 @@ module.exports = data => {
             id: MakeKabob(cls.index),
             url: MakeURL('classes', cls.index),
             name: cls.name,
+            description: '',
             source: 'PHB',
             hitDie: parseInt(cls.hit_die),
             

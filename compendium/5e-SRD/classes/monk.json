@@ -3,6 +3,7 @@
   "id": "monk",
   "url": "/classes/monk",
   "name": "Monk",
+  "description": "",
   "source": "PHB",
   "hitDie": 8,
   "levels": [

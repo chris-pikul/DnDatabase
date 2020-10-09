@@ -3,6 +3,7 @@
   "id": "fighter",
   "url": "/classes/fighter",
   "name": "Fighter",
+  "description": "",
   "source": "PHB",
   "hitDie": 10,
   "levels": [

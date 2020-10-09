@@ -3,6 +3,7 @@
   "id": "cleric",
   "url": "/classes/cleric",
   "name": "Cleric",
+  "description": "",
   "source": "PHB",
   "hitDie": 8,
   "levels": [

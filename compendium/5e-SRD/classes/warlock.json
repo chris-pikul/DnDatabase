@@ -3,6 +3,7 @@
   "id": "warlock",
   "url": "/classes/warlock",
   "name": "Warlock",
+  "description": "",
   "source": "PHB",
   "hitDie": 8,
   "levels": [

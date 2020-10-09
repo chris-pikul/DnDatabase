@@ -3,6 +3,7 @@
   "id": "rogue",
   "url": "/classes/rogue",
   "name": "Rogue",
+  "description": "",
   "source": "PHB",
   "hitDie": 8,
   "levels": [

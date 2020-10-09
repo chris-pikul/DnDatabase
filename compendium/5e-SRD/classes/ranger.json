@@ -3,6 +3,7 @@
   "id": "ranger",
   "url": "/classes/ranger",
   "name": "Ranger",
+  "description": "",
   "source": "PHB",
   "hitDie": 10,
   "levels": [
