@@ -128,32 +128,32 @@
         "spells": [
           {
             "name": "Light",
-            "url": "/spells/180",
+            "url": "/spells/light",
             "level": 0
           },
           {
             "name": "Sacred Flame",
-            "url": "/spells/250",
+            "url": "/spells/sacred-flame",
             "level": 0
           },
           {
             "name": "Thaumaturgy",
-            "url": "/spells/291",
+            "url": "/spells/thaumaturgy",
             "level": 0
           },
           {
             "name": "Bless",
-            "url": "/spells/29",
+            "url": "/spells/bless",
             "level": 1
           },
           {
             "name": "Cure Wounds",
-            "url": "/spells/70",
+            "url": "/spells/cure-wounds",
             "level": 1
           },
           {
             "name": "Sanctuary",
-            "url": "/spells/251",
+            "url": "/spells/sanctuary",
             "level": 1
           }
         ]

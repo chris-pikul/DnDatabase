@@ -151,9 +151,9 @@ module.exports = data => {
                     url: MakeURL('equipment-packs', eqp.index),
                     cost: out.cost,
                     contents: eqp.contents.map(ent => ({
-                        id: ExtractIDFromURL(ent.item_url),
+                        id: ExtractIDFromURL(ent.item.url),
                         name: '',
-                        url: MakeURL('items', ExtractIDFromURL(ent.item_url)),
+                        url: MakeURL('items', ExtractIDFromURL(ent.item.url)),
                         quantity: parseInt(ent.quantity || 1),
                     })),
                 };
@@ -167,7 +167,7 @@ module.exports = data => {
                 };
                 out.url = MakeURL('items', out.id);
 
-                out.subCategory = MakeEnum(eqp.gear_category);
+                out.subCategory = MakeEnum(eqp.gear_category.index);
 
                 misc.push(out);
             }

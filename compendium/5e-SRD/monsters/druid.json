@@ -148,47 +148,47 @@
         "spells": [
           {
             "name": "Druidcraft",
-            "url": "/spells/94",
+            "url": "/spells/druidcraft",
             "level": 0
           },
           {
             "name": "Produce Flame",
-            "url": "/spells/231",
+            "url": "/spells/produce-flame",
             "level": 0
           },
           {
             "name": "Shillelagh",
-            "url": "/spells/263",
+            "url": "/spells/shillelagh",
             "level": 0
           },
           {
             "name": "Entangle",
-            "url": "/spells/99",
+            "url": "/spells/entangle",
             "level": 1
           },
           {
             "name": "Longstrider",
-            "url": "/spells/185",
+            "url": "/spells/longstrider",
             "level": 1
           },
           {
             "name": "Speak With Animals",
-            "url": "/spells/272",
+            "url": "/spells/speak-with-animals",
             "level": 1
           },
           {
             "name": "Thunderwave",
-            "url": "/spells/292",
+            "url": "/spells/thunderwave",
             "level": 1
           },
           {
             "name": "Animal Messenger",
-            "url": "/spells/7",
+            "url": "/spells/animal-messenger",
             "level": 2
           },
           {
             "name": "Barkskin",
-            "url": "/spells/24",
+            "url": "/spells/barkskin",
             "level": 2
           }
         ]

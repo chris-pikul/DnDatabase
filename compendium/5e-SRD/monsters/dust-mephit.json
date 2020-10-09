@@ -157,11 +157,34 @@
     {
       "name": "Innate Spellcasting",
       "description": "The mephit can innately cast sleep, requiring no material components. Its innate spellcasting ability is Charisma.",
-      "usage": {
-        "type": "PER_DAY",
-        "amount": 1
-      },
-      "spellcasting": null
+      "usage": null,
+      "spellcasting": {
+        "level": 1,
+        "ability": {
+          "name": "Charisma",
+          "url": "/ability-scores/charisma"
+        },
+        "saveDC": 10,
+        "attackBonus": 0,
+        "slots": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "spells": [
+          {
+            "name": "Sleep",
+            "url": "/spells/sleep",
+            "level": 1
+          }
+        ]
+      }
     }
   ]
 }

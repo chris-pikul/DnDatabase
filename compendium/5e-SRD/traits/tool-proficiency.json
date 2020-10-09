@@ -1,0 +1,15 @@
+{
+  "type": "TRAIT",
+  "id": "tool-proficiency",
+  "name": "Tool Proficiency",
+  "url": "/traits/tool-proficiency",
+  "source": "PHB",
+  "description": "You gain proficiency with the artisan’s tools of your choice: smith’s tools, brewer’s supplies, or mason’s tools.",
+  "races": [
+    {
+      "name": "Dwarf",
+      "url": "/races/dwarf"
+    }
+  ],
+  "subRaces": []
+}

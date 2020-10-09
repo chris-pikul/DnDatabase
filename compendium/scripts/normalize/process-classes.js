@@ -218,27 +218,6 @@ module.exports = data => {
 
         equipDict[id] = out;
     });
-
-    /*
-    console.log('Reading sub-classes file for cross-reference');
-    const rawSubs = FS.readFileSync(Path.resolve('..', 'raw', '5e-SRD-Subclasses.json'));
-    const subs = JSON.parse(rawSubs);
-
-    const subDict = {};
-    subs.forEach(sub => {
-        const out = {
-            id: MakeKabob(sub.index),
-            name: sub.name,
-            kind: sub.subclass_flavor,
-            description: sub.desc.join('\\n'),
-        };
-
-        const id = MakeKabob(sub.class.name);
-        if(!subDict.hasOwnProperty(id))
-            subDict[id] = [];
-        subDict[id].push(out);
-    });
-    */
     
     console.log('Building classes data...');
     return data.map(cls => {
@@ -347,6 +326,4 @@ module.exports = data => {
 
         return out;
     });
-
-    return null;
 }

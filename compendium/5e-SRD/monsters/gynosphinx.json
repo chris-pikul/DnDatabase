@@ -212,77 +212,77 @@
         "spells": [
           {
             "name": "Mage Hand",
-            "url": "/spells/187",
+            "url": "/spells/mage-hand",
             "level": 0
           },
           {
             "name": "Minor Illusion",
-            "url": "/spells/205",
+            "url": "/spells/minor-illusion",
             "level": 0
           },
           {
             "name": "Prestidigitation",
-            "url": "/spells/227",
+            "url": "/spells/prestidigitation",
             "level": 0
           },
           {
             "name": "Detect Magic",
-            "url": "/spells/79",
+            "url": "/spells/detect-magic",
             "level": 1
           },
           {
             "name": "Identify",
-            "url": "/spells/166",
+            "url": "/spells/identify",
             "level": 1
           },
           {
             "name": "Shield",
-            "url": "/spells/261",
+            "url": "/spells/shield",
             "level": 1
           },
           {
             "name": "Darkness",
-            "url": "/spells/72",
+            "url": "/spells/darkness",
             "level": 2
           },
           {
             "name": "Locate Object",
-            "url": "/spells/184",
+            "url": "/spells/locate-object",
             "level": 2
           },
           {
             "name": "Suggestion",
-            "url": "/spells/198",
+            "url": "/spells/suggestion",
             "level": 2
           },
           {
             "name": "Dispel Magic",
-            "url": "/spells/86",
+            "url": "/spells/dispel-magic",
             "level": 3
           },
           {
             "name": "Remove Curse",
-            "url": "/spells/243",
+            "url": "/spells/remove-curse",
             "level": 3
           },
           {
             "name": "Tongues",
-            "url": "/spells/295",
+            "url": "/spells/tongues",
             "level": 3
           },
           {
             "name": "Banishment",
-            "url": "/spells/23",
+            "url": "/spells/banishment",
             "level": 4
           },
           {
             "name": "Greater Invisibility",
-            "url": "/spells/142",
+            "url": "/spells/greater-invisibility",
             "level": 4
           },
           {
             "name": "Legend Lore",
-            "url": "/spells/177",
+            "url": "/spells/legend-lore",
             "level": 5
           }
         ]

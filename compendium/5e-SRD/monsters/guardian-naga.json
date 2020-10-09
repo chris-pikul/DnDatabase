@@ -173,77 +173,77 @@
         "spells": [
           {
             "name": "Mending",
-            "url": "/spells/201",
+            "url": "/spells/mending",
             "level": 0
           },
           {
             "name": "Sacred Flame",
-            "url": "/spells/250",
+            "url": "/spells/sacred-flame",
             "level": 0
           },
           {
             "name": "Thaumaturgy",
-            "url": "/spells/291",
+            "url": "/spells/thaumaturgy",
             "level": 0
           },
           {
             "name": "Command",
-            "url": "/spells/46",
+            "url": "/spells/command",
             "level": 1
           },
           {
             "name": "Cure Wounds",
-            "url": "/spells/70",
+            "url": "/spells/cure-wounds",
             "level": 1
           },
           {
             "name": "Shield Of Faith",
-            "url": "/spells/262",
+            "url": "/spells/shield-of-faith",
             "level": 1
           },
           {
             "name": "Calm Emotions",
-            "url": "/spells/37",
+            "url": "/spells/calm-emotions",
             "level": 2
           },
           {
             "name": "Hold Person",
-            "url": "/spells/161",
+            "url": "/spells/hold-person",
             "level": 2
           },
           {
             "name": "Bestow Curse",
-            "url": "/spells/26",
+            "url": "/spells/bestow-curse",
             "level": 3
           },
           {
             "name": "Clairvoyance",
-            "url": "/spells/42",
+            "url": "/spells/clairvoyance",
             "level": 3
           },
           {
             "name": "Banishment",
-            "url": "/spells/23",
+            "url": "/spells/banishment",
             "level": 4
           },
           {
             "name": "Freedom Of Movement",
-            "url": "/spells/130",
+            "url": "/spells/freedom-of-movement",
             "level": 4
           },
           {
             "name": "Flame Strike",
-            "url": "/spells/121",
+            "url": "/spells/flame-strike",
             "level": 5
           },
           {
             "name": "Geas",
-            "url": "/spells/134",
+            "url": "/spells/geas",
             "level": 5
           },
           {
             "name": "True Seeing",
-            "url": "/spells/300",
+            "url": "/spells/true-seeing",
             "level": 6
           }
         ]

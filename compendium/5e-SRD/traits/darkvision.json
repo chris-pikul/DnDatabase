@@ -25,20 +25,11 @@
     {
       "name": "Half-orc",
       "url": "/races/half-orc"
+    },
+    {
+      "name": "Tiefling",
+      "url": "/races/tiefling"
     }
   ],
-  "subRaces": [
-    {
-      "name": "Hill Dwarf",
-      "url": "/sub-races/hill-dwarf"
-    },
-    {
-      "name": "High Elf",
-      "url": "/sub-races/high-elf"
-    },
-    {
-      "name": "Rock Gnome",
-      "url": "/sub-races/rock-gnome"
-    }
-  ]
+  "subRaces": []
 }

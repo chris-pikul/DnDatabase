@@ -11,10 +11,5 @@
       "url": "/races/halfling"
     }
   ],
-  "subRaces": [
-    {
-      "name": "Lightfoot Halfling",
-      "url": "/sub-races/lightfoot-halfling"
-    }
-  ]
+  "subRaces": []
 }

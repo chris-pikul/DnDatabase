@@ -24,16 +24,7 @@
     "options": null
   },
   "languages": {
-    "starting": [
-      {
-        "name": "Common",
-        "url": "/languages/common"
-      },
-      {
-        "name": "Gnomish",
-        "url": "/languages/gnomish"
-      }
-    ],
+    "starting": [],
     "options": null,
     "description": ""
   },

@@ -613,49 +613,5 @@
     ]
   },
   "spellcasting": null,
-  "equipment": {
-    "starting": [
-      {
-        "name": "Dart",
-        "url": "/items/dart",
-        "amount": 10
-      }
-    ],
-    "options": [
-      {
-        "amount": 1,
-        "choices": [
-          {
-            "type": "ITEM",
-            "name": "Shortsword",
-            "url": "/items/shortsword",
-            "amount": 1
-          },
-          {
-            "type": "CATEGORY",
-            "name": "Simple Weapons",
-            "url": "/equipment-categories/simple-weapons",
-            "amount": 1
-          }
-        ]
-      },
-      {
-        "amount": 1,
-        "choices": [
-          {
-            "type": "EQUIPMENT_PACK",
-            "name": "Dungeoneer's Pack",
-            "url": "/equipment-packs/dungeoneers-pack",
-            "amount": 1
-          },
-          {
-            "type": "EQUIPMENT_PACK",
-            "name": "Explorer's Pack",
-            "url": "/equipment-packs/explorers-pack",
-            "amount": 1
-          }
-        ]
-      }
-    ]
-  }
+  "equipment": []
 }

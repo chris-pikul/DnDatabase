@@ -200,27 +200,27 @@
           {
             "name": "Detect Magic",
             "url": "/spells/detect-magic",
-            "level": 0
+            "level": 1
           },
           {
             "name": "Magic Missile",
             "url": "/spells/magic-missile",
-            "level": 0
+            "level": 1
           },
           {
             "name": "Plane Shift",
             "url": "/spells/plane-shift",
-            "level": 0
+            "level": 7
           },
           {
             "name": "Ray Of Enfeeblement",
             "url": "/spells/ray-of-enfeeblement",
-            "level": 0
+            "level": 2
           },
           {
             "name": "Sleep",
             "url": "/spells/sleep",
-            "level": 0
+            "level": 1
           }
         ]
       }

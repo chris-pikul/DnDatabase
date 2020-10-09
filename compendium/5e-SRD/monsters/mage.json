@@ -138,82 +138,82 @@
         "spells": [
           {
             "name": "Fire Bolt",
-            "url": "/spells/116",
+            "url": "/spells/fire-bolt",
             "level": 0
           },
           {
             "name": "Light",
-            "url": "/spells/180",
+            "url": "/spells/light",
             "level": 0
           },
           {
             "name": "Mage Hand",
-            "url": "/spells/187",
+            "url": "/spells/mage-hand",
             "level": 0
           },
           {
             "name": "Prestidigitation",
-            "url": "/spells/227",
+            "url": "/spells/prestidigitation",
             "level": 0
           },
           {
             "name": "Detect Magic",
-            "url": "/spells/79",
+            "url": "/spells/detect-magic",
             "level": 1
           },
           {
             "name": "Mage Armor",
-            "url": "/spells/186",
+            "url": "/spells/mage-armor",
             "level": 1
           },
           {
             "name": "Magic Missile",
-            "url": "/spells/190",
+            "url": "/spells/magic-missile",
             "level": 1
           },
           {
             "name": "Shield",
-            "url": "/spells/261",
+            "url": "/spells/shield",
             "level": 1
           },
           {
             "name": "Misty Step",
-            "url": "/spells/209",
+            "url": "/spells/misty-step",
             "level": 2
           },
           {
             "name": "Suggestion",
-            "url": "/spells/283",
+            "url": "/spells/suggestion",
             "level": 2
           },
           {
             "name": "Counterspell",
-            "url": "/spells/65",
+            "url": "/spells/counterspell",
             "level": 3
           },
           {
             "name": "Fireball",
-            "url": "/spells/119",
+            "url": "/spells/fireball",
             "level": 3
           },
           {
             "name": "Fly",
-            "url": "/spells/125",
+            "url": "/spells/fly",
             "level": 3
           },
           {
             "name": "Greater Invisibility",
-            "url": "/spells/142",
+            "url": "/spells/greater-invisibility",
             "level": 4
           },
           {
             "name": "Ice Storm",
-            "url": "/spells/165",
+            "url": "/spells/ice-storm",
             "level": 4
           },
           {
             "name": "Cone Of Cold",
-            "url": "/spells/51",
+            "url": "/spells/cone-of-cold",
             "level": 5
           }
         ]

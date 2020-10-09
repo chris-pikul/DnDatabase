@@ -240,77 +240,77 @@
         "spells": [
           {
             "name": "Sacred Flame",
-            "url": "/spells/250",
+            "url": "/spells/sacred-flame",
             "level": 0
           },
           {
             "name": "Spare The Dying",
-            "url": "/spells/271",
+            "url": "/spells/spare-the-dying",
             "level": 0
           },
           {
             "name": "Thaumaturgy",
-            "url": "/spells/291",
+            "url": "/spells/thaumaturgy",
             "level": 0
           },
           {
             "name": "Command",
-            "url": "/spells/46",
+            "url": "/spells/command",
             "level": 1
           },
           {
             "name": "Detect Evil And Good",
-            "url": "/spells/78",
+            "url": "/spells/detect-evil-and-good",
             "level": 1
           },
           {
             "name": "Detect Magic",
-            "url": "/spells/79",
+            "url": "/spells/detect-magic",
             "level": 1
           },
           {
             "name": "Lesser Restoration",
-            "url": "/spells/178",
+            "url": "/spells/lesser-restoration",
             "level": 2
           },
           {
             "name": "Zone Of Truth",
-            "url": "/spells/319",
+            "url": "/spells/zone-of-truth",
             "level": 2
           },
           {
             "name": "Dispel Magic",
-            "url": "/spells/86",
+            "url": "/spells/dispel-magic",
             "level": 3
           },
           {
             "name": "Tongues",
-            "url": "/spells/295",
+            "url": "/spells/tongues",
             "level": 3
           },
           {
             "name": "Banishment",
-            "url": "/spells/23",
+            "url": "/spells/banishment",
             "level": 4
           },
           {
             "name": "Freedom Of Movement",
-            "url": "/spells/130",
+            "url": "/spells/freedom-of-movement",
             "level": 4
           },
           {
             "name": "Flame Strike",
-            "url": "/spells/121",
+            "url": "/spells/flame-strike",
             "level": 5
           },
           {
             "name": "Greater Restoration",
-            "url": "/spells/143",
+            "url": "/spells/greater-restoration",
             "level": 5
           },
           {
             "name": "Heroes' Feast",
-            "url": "/spells/157",
+            "url": "/spells/heroes-feast",
             "level": 6
           }
         ]

@@ -144,9 +144,9 @@ module.exports = data => data.map(mon => {
 
     //Proficiencies
     out.proficiencies = mon.proficiencies.map(prof => {
-        if(prof.name.startsWith('Saving Throw: ')) {
+        if(prof.proficiency.name.startsWith('Saving Throw: ')) {
             const amnt = parseInt(prof.value || out.proficiencyBonus);
-            const name = prof.name.substr(14);
+            const name = prof.proficiency.name.substr(14);
 
             switch(name) {
                 case 'STR':
@@ -173,9 +173,9 @@ module.exports = data => data.map(mon => {
                 ...translateAbility(name),
                 amount: amnt,
             }
-        } else if(prof.name.startsWith('Skill: ')) {
+        } else if(prof.proficiency.name.startsWith('Skill: ')) {
             const amnt = parseInt(prof.value || out.proficiencyBonus);
-            const name = prof.name.substr(7);
+            const name = prof.proficiency.name.substr(7);
 
             return {
                 ...MakeObj('skills', MakeKabob(name), name),

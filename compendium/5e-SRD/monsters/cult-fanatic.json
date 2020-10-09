@@ -148,43 +148,43 @@
         "spells": [
           {
             "name": "Light",
-            "url": "/spells/180",
+            "url": "/spells/light",
             "level": 0
           },
           {
             "name": "Sacred Flame",
-            "url": "/spells/250",
+            "url": "/spells/sacred-flame",
             "level": 0
           },
           {
             "name": "Thaumaturgy",
-            "url": "/spells/291",
+            "url": "/spells/thaumaturgy",
             "level": 0
           },
           {
             "name": "Command",
-            "url": "/spells/46",
-            "level": 0
+            "url": "/spells/command",
+            "level": 1
           },
           {
             "name": "Inflict Wounds",
-            "url": "/spells/170",
-            "level": 0
+            "url": "/spells/inflict-wounds",
+            "level": 1
           },
           {
             "name": "Shield Of Faith",
-            "url": "/spells/262",
-            "level": 0
+            "url": "/spells/shield-of-faith",
+            "level": 1
           },
           {
             "name": "Hold Person",
-            "url": "/spells/161",
-            "level": 0
+            "url": "/spells/hold-person",
+            "level": 2
           },
           {
             "name": "Spiritual Weapon",
-            "url": "/spells/278",
-            "level": 0
+            "url": "/spells/spiritual-weapon",
+            "level": 2
           }
         ]
       }

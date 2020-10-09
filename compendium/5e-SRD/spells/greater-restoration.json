@@ -24,7 +24,7 @@
   "concentration": false,
   "damage": null,
   "save": null,
-  "healing": null,
+  "healing": {},
   "areaOfEffect": null,
   "school": {
     "name": "Abjuration",

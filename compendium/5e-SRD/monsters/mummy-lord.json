@@ -303,77 +303,77 @@
         "spells": [
           {
             "name": "Sacred Flame",
-            "url": "/spells/250",
+            "url": "/spells/sacred-flame",
             "level": 0
           },
           {
             "name": "Thaumaturgy",
-            "url": "/spells/291",
+            "url": "/spells/thaumaturgy",
             "level": 0
           },
           {
             "name": "Command",
-            "url": "/spells/46",
+            "url": "/spells/command",
             "level": 1
           },
           {
             "name": "Guiding Bolt",
-            "url": "/spells/147",
+            "url": "/spells/guiding-bolt",
             "level": 1
           },
           {
             "name": "Shield Of Faith",
-            "url": "/spells/262",
+            "url": "/spells/shield-of-faith",
             "level": 1
           },
           {
             "name": "Hold Person",
-            "url": "/spells/161",
+            "url": "/spells/hold-person",
             "level": 2
           },
           {
             "name": "Silence",
-            "url": "/spells/265",
+            "url": "/spells/silence",
             "level": 2
           },
           {
             "name": "Spiritual Weapon",
-            "url": "/spells/278",
+            "url": "/spells/spiritual-weapon",
             "level": 2
           },
           {
             "name": "Animate Dead",
-            "url": "/spells/9",
+            "url": "/spells/animate-dead",
             "level": 3
           },
           {
             "name": "Dispel Magic",
-            "url": "/spells/86",
+            "url": "/spells/dispel-magic",
             "level": 3
           },
           {
             "name": "Divination",
-            "url": "/spells/87",
+            "url": "/spells/divination",
             "level": 4
           },
           {
             "name": "Guardian Of Faith",
-            "url": "/spells/144",
+            "url": "/spells/guardian-of-faith",
             "level": 4
           },
           {
             "name": "Contagion",
-            "url": "/spells/180",
-            "level": 60
+            "url": "/spells/contagion",
+            "level": 5
           },
           {
             "name": "Insect Plague",
-            "url": "/spells/171",
+            "url": "/spells/insect-plague",
             "level": 5
           },
           {
             "name": "Harm",
-            "url": "/spells/151",
+            "url": "/spells/harm",
             "level": 6
           }
         ]

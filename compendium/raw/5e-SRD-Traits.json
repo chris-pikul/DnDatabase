@@ -3,40 +3,37 @@
     "index": "darkvision",
     "races": [
       {
+        "index": "dwarf",
         "name": "Dwarf",
         "url": "/api/races/dwarf"
       },
       {
+        "index": "elf",
         "name": "Elf",
         "url": "/api/races/elf"
       },
       {
+        "index": "gnome",
         "name": "Gnome",
         "url": "/api/races/gnome"
       },
       {
+        "index": "half-elf",
         "name": "Half-Elf",
         "url": "/api/races/half-elf"
       },
       {
+        "index": "half-orc",
         "name": "Half-Orc",
         "url": "/api/races/half-orc"
-      }
-    ],
-    "subraces": [
-      {
-        "name": "Hill Dwarf",
-        "url": "/api/subraces/hill-dwarf"
       },
       {
-        "name": "High Elf",
-        "url": "/api/subraces/high-elf"
-      },
-      {
-        "name": "Rock Gnome",
-        "url": "/api/subraces/rock-gnome"
+        "index": "tiefling",
+        "name": "Tiefling",
+        "url": "/api/races/tiefling"
       }
     ],
+    "subraces": [],
     "name": "Darkvision",
     "desc": [
       "You have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You cannot discern color in darkness, only shades of gray."
@@ -47,16 +44,12 @@
     "index": "dwarven-resilience",
     "races": [
       {
+        "index": "dwarf",
         "name": "Dwarf",
         "url": "/api/races/dwarf"
       }
     ],
-    "subraces": [
-      {
-        "name": "Hill Dwarf",
-        "url": "/api/subraces/hill-dwarf"
-      }
-    ],
+    "subraces": [],
     "name": "Dwarven Resilience",
     "desc": [
       "You have advantage on saving throws against poison, and you have resistance against poison damage."
@@ -67,16 +60,12 @@
     "index": "dwarven-combat-training",
     "races": [
       {
+        "index": "dwarf",
         "name": "Dwarf",
         "url": "/api/races/dwarf"
       }
     ],
-    "subraces": [
-      {
-        "name": "Hill Dwarf",
-        "url": "/api/subraces/hill-dwarf"
-      }
-    ],
+    "subraces": [],
     "name": "Dwarven Combat Training",
     "desc": [
       "You have proficiency with the battleaxe, handaxe, light hammer, and warhammer."
@@ -84,19 +73,31 @@
     "url": "/api/traits/dwarven-combat-training"
   },
   {
-    "index": "stonecunning",
+    "index": "tool-proficiency",
     "races": [
       {
+        "index": "dwarf",
         "name": "Dwarf",
         "url": "/api/races/dwarf"
       }
     ],
-    "subraces": [
+    "subraces": [],
+    "name": "Tool Proficiency",
+    "desc": [
+      "You gain proficiency with the artisan’s tools of your choice: smith’s tools, brewer’s supplies, or mason’s tools."
+    ],
+    "url": "/api/traits/tool-proficiency"
+  },
+  {
+    "index": "stonecunning",
+    "races": [
       {
-        "name": "Hill Dwarf",
-        "url": "/api/subraces/hill-dwarf"
+        "index": "dwarf",
+        "name": "Dwarf",
+        "url": "/api/races/dwarf"
       }
     ],
+    "subraces": [],
     "name": "Stonecunning",
     "desc": [
       "Whenever you make an Intelligence (History) check related to the origin of stonework, you are considered proficient in the History skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus."
@@ -108,6 +109,7 @@
     "races": [],
     "subraces": [
       {
+        "index": "hill-dwarf",
         "name": "Hill Dwarf",
         "url": "/api/subraces/hill-dwarf"
       }
@@ -122,38 +124,33 @@
     "index": "keen-senses",
     "races": [
       {
+        "index": "elf",
         "name": "Elf",
         "url": "/api/races/elf"
       }
     ],
-    "subraces": [
-      {
-        "name": "High Elf",
-        "url": "/api/subraces/high-elf"
-      }
-    ],
+    "subraces": [],
     "name": "Keen Senses",
-    "desc": ["You have proficiency in the Perception skill."],
+    "desc": [
+      "You have proficiency in the Perception skill."
+    ],
     "url": "/api/traits/keen-senses"
   },
   {
     "index": "fey-ancestry",
     "races": [
       {
+        "index": "elf",
         "name": "Elf",
         "url": "/api/races/elf"
       },
       {
+        "index": "half-elf",
         "name": "Half-Elf",
         "url": "/api/races/half-elf"
       }
     ],
-    "subraces": [
-      {
-        "name": "High Elf",
-        "url": "/api/subraces/high-elf"
-      }
-    ],
+    "subraces": [],
     "name": "Fey Ancestry",
     "desc": [
       "You have advantage on saving throws against being charmed, and magic cannot put you to sleep."
@@ -164,16 +161,12 @@
     "index": "trance",
     "races": [
       {
+        "index": "elf",
         "name": "Elf",
         "url": "/api/races/elf"
       }
     ],
-    "subraces": [
-      {
-        "name": "High Elf",
-        "url": "/api/subraces/high-elf"
-      }
-    ],
+    "subraces": [],
     "name": "Trance",
     "desc": [
       "Elves do not need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is \"trance.\") While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice. After resting this way, you gain the same benefit that a human does from 8 hours of sleep."
@@ -182,14 +175,10 @@
   },
   {
     "index": "elf-weapon-training",
-    "races": [
-      {
-        "name": "Elf",
-        "url": "/api/races/elf"
-      }
-    ],
+    "races": [],
     "subraces": [
       {
+        "index": "high-elf",
         "name": "High Elf",
         "url": "/api/subraces/high-elf"
       }
@@ -205,6 +194,7 @@
     "races": [],
     "subraces": [
       {
+        "index": "high-elf",
         "name": "High Elf",
         "url": "/api/subraces/high-elf"
       }
@@ -220,6 +210,7 @@
     "races": [],
     "subraces": [
       {
+        "index": "high-elf",
         "name": "High Elf",
         "url": "/api/subraces/high-elf"
       }
@@ -234,16 +225,12 @@
     "index": "lucky",
     "races": [
       {
+        "index": "halfling",
         "name": "Halfling",
         "url": "/api/races/halfling"
       }
     ],
-    "subraces": [
-      {
-        "name": "Lightfoot Halfling",
-        "url": "/api/subraces/lightfoot-halfling"
-      }
-    ],
+    "subraces": [],
     "name": "Lucky",
     "desc": [
       "When you roll a 1 on the d20 for an attack roll, ability check, or saving throw, you can reroll the die and must use the new roll."
@@ -254,34 +241,28 @@
     "index": "brave",
     "races": [
       {
+        "index": "halfling",
         "name": "Halfling",
         "url": "/api/races/halfling"
       }
     ],
-    "subraces": [
-      {
-        "name": "Lightfoot Halfling",
-        "url": "/api/subraces/lightfoot-halfling"
-      }
-    ],
+    "subraces": [],
     "name": "Brave",
-    "desc": ["You have advantage on saving throw against being frightened."],
+    "desc": [
+      "You have advantage on saving throw against being frightened."
+    ],
     "url": "/api/traits/brave"
   },
   {
     "index": "halfling-nimbleness",
     "races": [
       {
+        "index": "halfling",
         "name": "Halfling",
         "url": "/api/races/halfling"
       }
     ],
-    "subraces": [
-      {
-        "name": "Lightfoot Halfling",
-        "url": "/api/subraces/lightfoot-halfling"
-      }
-    ],
+    "subraces": [],
     "name": "Halfling Nimbleness",
     "desc": [
       "You can move through the space of any creature that is of a size larger than yours."
@@ -293,6 +274,7 @@
     "races": [],
     "subraces": [
       {
+        "index": "lightfoot-halfling",
         "name": "Lightfoot Halfling",
         "url": "/api/subraces/lightfoot-halfling"
       }
@@ -307,6 +289,7 @@
     "index": "draconic-ancestry",
     "races": [
       {
+        "index": "dragonborn",
         "name": "Dragonborn",
         "url": "/api/races/dragonborn"
       }
@@ -322,6 +305,7 @@
     "index": "breath-weapon",
     "races": [
       {
+        "index": "dragonborn",
         "name": "Dragonborn",
         "url": "/api/races/dragonborn"
       }
@@ -339,6 +323,7 @@
     "index": "damage-resistance",
     "races": [
       {
+        "index": "dragonborn",
         "name": "Dragonborn",
         "url": "/api/races/dragonborn"
       }
@@ -354,16 +339,12 @@
     "index": "gnome-cunning",
     "races": [
       {
+        "index": "gnome",
         "name": "Gnome",
         "url": "/api/races/gnome"
       }
     ],
-    "subraces": [
-      {
-        "name": "Rock Gnome",
-        "url": "/api/subraces/rock-gnome"
-      }
-    ],
+    "subraces": [],
     "name": "Gnome Cunning",
     "desc": [
       "You have advantage on all Intelligence, Wisdom, and Charisma saving throws against magic."
@@ -375,6 +356,7 @@
     "races": [],
     "subraces": [
       {
+        "index": "rock-gnome",
         "name": "Rock Gnome",
         "url": "/api/subraces/rock-gnome"
       }
@@ -390,6 +372,7 @@
     "races": [],
     "subraces": [
       {
+        "index": "rock-gnome",
         "name": "Rock Gnome",
         "url": "/api/subraces/rock-gnome"
       }
@@ -408,32 +391,39 @@
     "index": "skill-versatility",
     "races": [
       {
+        "index": "half-elf",
         "name": "Half-Elf",
         "url": "/api/races/half-elf"
       }
     ],
     "subraces": [],
     "name": "Skill Versatility",
-    "desc": ["You gain proficiency in two skills of your choice."],
+    "desc": [
+      "You gain proficiency in two skills of your choice."
+    ],
     "url": "/api/traits/skill-versatility"
   },
   {
     "index": "menacing",
     "races": [
       {
+        "index": "half-orc",
         "name": "Half-Orc",
         "url": "/api/races/half-orc"
       }
     ],
     "subraces": [],
     "name": "Menacing",
-    "desc": ["You gain proficiency in the Intimidation skill."],
+    "desc": [
+      "You gain proficiency in the Intimidation skill."
+    ],
     "url": "/api/traits/menacing"
   },
   {
     "index": "relentless-endurance",
     "races": [
       {
+        "index": "half-orc",
         "name": "Half-Orc",
         "url": "/api/races/half-orc"
       }
@@ -449,6 +439,7 @@
     "index": "savage-attacks",
     "races": [
       {
+        "index": "half-orc",
         "name": "Half-Orc",
         "url": "/api/races/half-orc"
       }
@@ -464,19 +455,23 @@
     "index": "hellish-resistance",
     "races": [
       {
+        "index": "tiefling",
         "name": "Tiefling",
         "url": "/api/races/tiefling"
       }
     ],
     "subraces": [],
     "name": "Hellish Resistance",
-    "desc": ["You have resistance to fire damage."],
+    "desc": [
+      "You have resistance to fire damage."
+    ],
     "url": "/api/traits/hellish-resistance"
   },
   {
     "index": "infernal-legacy",
     "races": [
       {
+        "index": "tiefling",
         "name": "Tiefling",
         "url": "/api/races/tiefling"
       }

@@ -153,137 +153,137 @@
         "spells": [
           {
             "name": "Disguise Self",
-            "url": "/spells/83",
-            "level": 0
+            "url": "/spells/disguise-self",
+            "level": 1
           },
           {
             "name": "Invisibility",
-            "url": "/spells/173",
-            "level": 0
+            "url": "/spells/invisibility",
+            "level": 2
           },
           {
             "name": "Fire Bolt",
-            "url": "/spells/116",
+            "url": "/spells/fire-bolt",
             "level": 0
           },
           {
             "name": "Light",
-            "url": "/spells/180",
+            "url": "/spells/light",
             "level": 0
           },
           {
             "name": "Mage Hand",
-            "url": "/spells/187",
+            "url": "/spells/mage-hand",
             "level": 0
           },
           {
             "name": "Prestidigitation",
-            "url": "/spells/227",
+            "url": "/spells/prestidigitation",
             "level": 0
           },
           {
             "name": "Shocking Grasp",
-            "url": "/spells/264",
+            "url": "/spells/shocking-grasp",
             "level": 0
           },
           {
             "name": "Detect Magic",
-            "url": "/spells/79",
+            "url": "/spells/detect-magic",
             "level": 1
           },
           {
             "name": "Identify",
-            "url": "/spells/166",
+            "url": "/spells/identify",
             "level": 1
           },
           {
             "name": "Mage Armor",
-            "url": "/spells/186",
+            "url": "/spells/mage-armor",
             "level": 1
           },
           {
             "name": "Magic Missile",
-            "url": "/spells/190",
+            "url": "/spells/magic-missile",
             "level": 1
           },
           {
             "name": "Detect Thoughts",
-            "url": "/spells/81",
+            "url": "/spells/detect-thoughts",
             "level": 2
           },
           {
             "name": "Mirror Image",
-            "url": "/spells/207",
+            "url": "/spells/mirror-image",
             "level": 2
           },
           {
             "name": "Misty Step",
-            "url": "/spells/209",
+            "url": "/spells/misty-step",
             "level": 2
           },
           {
             "name": "Counterspell",
-            "url": "/spells/65",
+            "url": "/spells/counterspell",
             "level": 3
           },
           {
             "name": "Fly",
-            "url": "/spells/125",
+            "url": "/spells/fly",
             "level": 3
           },
           {
             "name": "Lightning Bolt",
-            "url": "/spells/181",
+            "url": "/spells/lightning-bolt",
             "level": 3
           },
           {
             "name": "Banishment",
-            "url": "/spells/23",
+            "url": "/spells/banishment",
             "level": 4
           },
           {
             "name": "Fire Shield",
-            "url": "/spells/117",
+            "url": "/spells/fire-shield",
             "level": 4
           },
           {
             "name": "Stoneskin",
-            "url": "/spells/281",
+            "url": "/spells/stoneskin",
             "level": 4
           },
           {
             "name": "Cone Of Cold",
-            "url": "/spells/51",
+            "url": "/spells/cone-of-cold",
             "level": 5
           },
           {
             "name": "Scrying",
-            "url": "/spells/253",
+            "url": "/spells/scrying",
             "level": 5
           },
           {
             "name": "Wall Of Force",
-            "url": "/spells/306",
+            "url": "/spells/wall-of-force",
             "level": 5
           },
           {
             "name": "Globe Of Invulnerability",
-            "url": "/spells/138",
+            "url": "/spells/globe-of-invulnerability",
             "level": 6
           },
           {
             "name": "Teleport",
-            "url": "/spells/289",
+            "url": "/spells/teleport",
             "level": 7
           },
           {
             "name": "Mind Blank",
-            "url": "/spells/204",
+            "url": "/spells/mind-blank",
             "level": 8
           },
           {
             "name": "Time Stop",
-            "url": "/spells/293",
+            "url": "/spells/time-stop",
             "level": 9
           }
         ]

@@ -139,52 +139,52 @@
         "spells": [
           {
             "name": "Light",
-            "url": "/spells/180",
+            "url": "/spells/light",
             "level": 0
           },
           {
             "name": "Sacred Flame",
-            "url": "/spells/250",
+            "url": "/spells/sacred-flame",
             "level": 0
           },
           {
             "name": "Thaumaturgy",
-            "url": "/spells/291",
+            "url": "/spells/thaumaturgy",
             "level": 0
           },
           {
             "name": "Cure Wounds",
-            "url": "/spells/70",
+            "url": "/spells/cure-wounds",
             "level": 1
           },
           {
             "name": "Guiding Bolt",
-            "url": "/spells/147",
+            "url": "/spells/guiding-bolt",
             "level": 1
           },
           {
             "name": "Sanctuary",
-            "url": "/spells/251",
+            "url": "/spells/sanctuary",
             "level": 1
           },
           {
             "name": "Lesser Restoration",
-            "url": "/spells/178",
+            "url": "/spells/lesser-restoration",
             "level": 2
           },
           {
             "name": "Spiritual Weapon",
-            "url": "/spells/278",
+            "url": "/spells/spiritual-weapon",
             "level": 2
           },
           {
             "name": "Dispel Magic",
-            "url": "/spells/86",
+            "url": "/spells/dispel-magic",
             "level": 3
           },
           {
             "name": "Spirit Guardians",
-            "url": "/spells/277",
+            "url": "/spells/spirit-guardians",
             "level": 3
           }
         ]

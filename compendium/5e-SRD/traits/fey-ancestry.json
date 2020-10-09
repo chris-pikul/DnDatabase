@@ -15,10 +15,5 @@
       "url": "/races/half-elf"
     }
   ],
-  "subRaces": [
-    {
-      "name": "High Elf",
-      "url": "/sub-races/high-elf"
-    }
-  ]
+  "subRaces": []
 }

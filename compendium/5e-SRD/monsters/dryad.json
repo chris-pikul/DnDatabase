@@ -151,22 +151,22 @@
           {
             "name": "Entangle",
             "url": "/spells/entangle",
-            "level": 0
+            "level": 1
           },
           {
             "name": "Goodberry",
             "url": "/spells/goodberry",
-            "level": 0
+            "level": 1
           },
           {
             "name": "Barkskin",
             "url": "/spells/barkskin",
-            "level": 0
+            "level": 2
           },
           {
             "name": "Pass Without Trace",
             "url": "/spells/pass-without-trace",
-            "level": 0
+            "level": 2
           },
           {
             "name": "Shillelagh",

@@ -5,12 +5,7 @@
   "url": "/traits/elf-weapon-training",
   "source": "PHB",
   "description": "You have proficiency with the longsword, shortsword, shortbow, and longbow.",
-  "races": [
-    {
-      "name": "Elf",
-      "url": "/races/elf"
-    }
-  ],
+  "races": [],
   "subRaces": [
     {
       "name": "High Elf",

@@ -159,12 +159,12 @@
           {
             "name": "Darkness",
             "url": "/spells/entangle",
-            "level": 0
+            "level": 2
           },
           {
             "name": "Faerie Fire",
             "url": "/spells/faerie-fire",
-            "level": 0
+            "level": 1
           }
         ]
       }

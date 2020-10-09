@@ -11,10 +11,5 @@
       "url": "/races/dwarf"
     }
   ],
-  "subRaces": [
-    {
-      "name": "Hill Dwarf",
-      "url": "/sub-races/hill-dwarf"
-    }
-  ]
+  "subRaces": []
 }

@@ -178,12 +178,12 @@
           {
             "name": "Detect Magic",
             "url": "/spells/detect-magic",
-            "level": 0
+            "level": 1
           },
           {
             "name": "Fog Cloud",
             "url": "/spells/fog-cloud",
-            "level": 0
+            "level": 1
           },
           {
             "name": "Light",
@@ -193,32 +193,32 @@
           {
             "name": "Feather Fall",
             "url": "/spells/feather-fall",
-            "level": 0
+            "level": 1
           },
           {
             "name": "Fly",
             "url": "/spells/fly",
-            "level": 0
+            "level": 3
           },
           {
             "name": "Misty Step",
             "url": "/spells/misty-step",
-            "level": 0
+            "level": 2
           },
           {
             "name": "Telekinesis",
             "url": "/spells/telekinesis",
-            "level": 0
+            "level": 5
           },
           {
             "name": "Control Weather",
             "url": "/spells/control-weather",
-            "level": 0
+            "level": 8
           },
           {
             "name": "Gaseous Form",
             "url": "/spells/gaseous-form",
-            "level": 0
+            "level": 3
           }
         ]
       }

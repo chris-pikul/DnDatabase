@@ -11,10 +11,5 @@
       "url": "/races/gnome"
     }
   ],
-  "subRaces": [
-    {
-      "name": "Rock Gnome",
-      "url": "/sub-races/rock-gnome"
-    }
-  ]
+  "subRaces": []
 }

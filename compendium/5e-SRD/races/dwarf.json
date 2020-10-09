@@ -95,6 +95,10 @@
       {
         "name": "Dwarven Combat Training",
         "url": "/traits/dwarven-combat-training"
+      },
+      {
+        "name": "Tool Proficiency",
+        "url": "/traits/tool-proficiency"
       }
     ],
     "options": null

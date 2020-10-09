@@ -407,54 +407,5 @@
     ]
   },
   "spellcasting": null,
-  "equipment": {
-    "starting": [
-      {
-        "name": "Explorer's Pack",
-        "url": "/items/explorers-pack",
-        "amount": 1
-      },
-      {
-        "name": "Javelin",
-        "url": "/items/javelin",
-        "amount": 4
-      }
-    ],
-    "options": [
-      {
-        "amount": 1,
-        "choices": [
-          {
-            "type": "ITEM",
-            "name": "Greataxe",
-            "url": "/items/greataxe",
-            "amount": 1
-          },
-          {
-            "type": "CATEGORY",
-            "name": "Martial Melee Weapons",
-            "url": "/equipment-categories/martial-melee-weapons",
-            "amount": 1
-          }
-        ]
-      },
-      {
-        "amount": 1,
-        "choices": [
-          {
-            "type": "ITEM",
-            "name": "Handaxe",
-            "url": "/items/handaxe",
-            "amount": 2
-          },
-          {
-            "type": "CATEGORY",
-            "name": "Simple Weapons",
-            "url": "/equipment-categories/simple-weapons",
-            "amount": 1
-          }
-        ]
-      }
-    ]
-  }
+  "equipment": []
 }

@@ -317,37 +317,37 @@
           {
             "name": "Detect Evil And Good",
             "url": "/spells/detect-evil-and-good",
-            "level": 0
+            "level": 1
           },
           {
             "name": "Invisibility",
             "url": "/spells/invisibility",
-            "level": 0
+            "level": 2
           },
           {
             "name": "Blade Barrier",
             "url": "/spells/blade-barrier",
-            "level": 0
+            "level": 6
           },
           {
             "name": "Dispel Evil And Good",
             "url": "/spells/dispel-evil-and-good",
-            "level": 0
+            "level": 5
           },
           {
             "name": "Resurrection",
             "url": "/spells/resurrection",
-            "level": 0
+            "level": 7
           },
           {
             "name": "Commune",
             "url": "/spells/commune",
-            "level": 0
+            "level": 5
           },
           {
             "name": "Control Weather",
             "url": "/spells/control-weather",
-            "level": 0
+            "level": 8
           }
         ]
       }

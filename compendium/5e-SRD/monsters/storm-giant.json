@@ -237,17 +237,17 @@
           {
             "name": "Detect Magic",
             "url": "/spells/detect-magic",
-            "level": 0
+            "level": 1
           },
           {
             "name": "Feather Fall",
             "url": "/spells/feather-fall",
-            "level": 0
+            "level": 1
           },
           {
             "name": "Levitate",
             "url": "/spells/levitate",
-            "level": 0
+            "level": 2
           },
           {
             "name": "Light",
@@ -257,12 +257,12 @@
           {
             "name": "Control Weather",
             "url": "/spells/control-weather",
-            "level": 0
+            "level": 8
           },
           {
             "name": "Water Breathing",
             "url": "/spells/water-breathing",
-            "level": 0
+            "level": 3
           }
         ]
       }

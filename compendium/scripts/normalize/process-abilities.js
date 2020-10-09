@@ -12,18 +12,15 @@ module.exports = data => data.map(abl => {
         id: MakeKabob(fullName),
         name: fullName,
         url: MakeURL('ability-scores', fullName),
+        description: abl.desc.join('\\n'),
         source: 'PHB',
         abreviation: abl.name.toUpperCase().trim(),
+        skills: [],
     };
-
-    //Format description
-    out.description = abl.desc.join('\\n');
 
     //List sub-skills
     if(abl.skills && Array.isArray(abl.skills))
         out.skills = abl.skills.map(skl => MakeObj('skills', ExtractIDFromURL(skl.url), skl.name) );
-    else
-        out.skills = [];
 
     return out;
 });

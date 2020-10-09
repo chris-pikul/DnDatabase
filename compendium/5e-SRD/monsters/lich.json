@@ -274,132 +274,132 @@
         "spells": [
           {
             "name": "Mage Hand",
-            "url": "/spells/187",
+            "url": "/spells/mage-hand",
             "level": 0
           },
           {
             "name": "Prestidigitation",
-            "url": "/spells/227",
+            "url": "/spells/prestidigitation",
             "level": 0
           },
           {
             "name": "Ray Of Frost",
-            "url": "/spells/240",
+            "url": "/spells/ray-of-frost",
             "level": 0
           },
           {
             "name": "Detect Magic",
-            "url": "/spells/179",
+            "url": "/spells/detect-magic",
             "level": 1
           },
           {
             "name": "Magic Missile",
-            "url": "/spells/190",
+            "url": "/spells/magic-missile",
             "level": 1
           },
           {
             "name": "Shield",
-            "url": "/spells/261",
+            "url": "/spells/shield",
             "level": 1
           },
           {
             "name": "Thunderwave",
-            "url": "/spells/292",
+            "url": "/spells/thunderwave",
             "level": 1
           },
           {
             "name": "Acid Arrow",
-            "url": "/spells/1",
+            "url": "/spells/acid-arrow",
             "level": 2
           },
           {
             "name": "Detect Thoughts",
-            "url": "/spells/81",
+            "url": "/spells/detect-thoughts",
             "level": 2
           },
           {
             "name": "Invisibility",
-            "url": "/spells/172",
+            "url": "/spells/invisibility",
             "level": 2
           },
           {
             "name": "Mirror Image",
-            "url": "/spells/207",
+            "url": "/spells/mirror-image",
             "level": 2
           },
           {
             "name": "Animate Dead",
-            "url": "/spells/9",
+            "url": "/spells/animate-dead",
             "level": 3
           },
           {
             "name": "Counterspell",
-            "url": "/spells/65",
+            "url": "/spells/counterspell",
             "level": 3
           },
           {
             "name": "Dispel Magic",
-            "url": "/spells/86",
+            "url": "/spells/dispel-magic",
             "level": 3
           },
           {
             "name": "Fireball",
-            "url": "/spells/119",
+            "url": "/spells/fireball",
             "level": 3
           },
           {
             "name": "Blight",
-            "url": "/spells/30",
+            "url": "/spells/blight",
             "level": 4
           },
           {
             "name": "Dimension Door",
-            "url": "/spells/82",
+            "url": "/spells/dimension-door",
             "level": 4
           },
           {
             "name": "Cloudkill",
-            "url": "/spells/44",
+            "url": "/spells/cloudkill",
             "level": 5
           },
           {
             "name": "Scrying",
-            "url": "/spells/253",
+            "url": "/spells/scrying",
             "level": 5
           },
           {
             "name": "Disintegrate",
-            "url": "/spells/84",
+            "url": "/spells/disintegrate",
             "level": 6
           },
           {
             "name": "Globe Of Invulnerability",
-            "url": "/spells/138",
+            "url": "/spells/globe-of-invulnerability",
             "level": 6
           },
           {
             "name": "Finger Of Death",
-            "url": "/spells/115",
+            "url": "/spells/finger-of-death",
             "level": 7
           },
           {
             "name": "Plane Shift",
-            "url": "/spells/220",
+            "url": "/spells/plane-shift",
             "level": 7
           },
           {
             "name": "Dominate Monster",
-            "url": "/spells/91",
+            "url": "/spells/dominate-monster",
             "level": 8
           },
           {
             "name": "Power Word Stun",
-            "url": "/spells/225",
+            "url": "/spells/power-word-stun",
             "level": 8
           },
           {
             "name": "Power Word Kill",
-            "url": "/spells/224",
+            "url": "/spells/power-word-kill",
             "level": 9
           }
         ]
