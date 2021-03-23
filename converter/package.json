@@ -3,13 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "bin": {
-    "copysource": "bin/copysource.js",
-    "convert": "bin/convert.js",
-    "makeindex": "bin/makeindex.js"
-  },
   "scripts": {
-    "start": "copysource && convert && index"
+    "start": "npm run copy && npm run convert && npm run index",
+    "copy": "node ./copy.mjs",
+    "convert": "node ./convert/index.mjs",
+    "index": "node ./index/index.mjs"
   },
   "author": "",
   "license": "UNLICENSED",
