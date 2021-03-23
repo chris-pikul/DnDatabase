@@ -1,0 +1,6 @@
+# Copy Tool
+bin/copysource.js
+tools/copysource.mjs
+
+# Source files
+source/
