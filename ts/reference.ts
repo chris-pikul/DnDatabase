@@ -13,6 +13,10 @@ export interface IReference {
     name : string;
 }
 
+/**
+ * Holds a reference to another resource.
+ * Used to link between different objects.
+ */
 export default class Reference implements IReference, IValidatable {
     readonly type : ResourceType;
     readonly uri : string;
@@ -58,6 +62,12 @@ export default class Reference implements IReference, IValidatable {
         return this.validate().length === 0;
     }
 }
+
+export const NullReference:Reference = new Reference({
+    type: ResourceType.UNKNOWN,
+    uri: '/',
+    name: 'Unknown Reference'
+});
 
 export class ReferenceAbilityScore extends Reference {
     readonly type : ResourceType = ResourceType.ABILITY_SCORE;
