@@ -5,6 +5,7 @@
   "main": "api/index.js",
   "scripts": {
     "start": "node ./api",
+    "ts": "npx tsc",
     "normalize": "cd compendium/scripts && node normalize all",
     "normalize:items": "cd compendium/scripts && node normalize items",
     "normalize:spells": "cd compendium/scripts && node normalize spells",
@@ -42,6 +43,7 @@
     "fuse.js": "^6.4.1",
     "js-levenshtein": "^1.1.6",
     "rimraf": "^3.0.2",
-    "stemmer": "^1.0.5"
+    "stemmer": "^1.0.5",
+    "typescript": "^4.2.3"
   }
 }
