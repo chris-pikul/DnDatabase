@@ -9,13 +9,7 @@
             "type": "string",
             "minLength": 3
         },
-        "body": {
-            "type": "array",
-            "items": {
-                "type": "string"
-            },
-            "minItems": 1
-        }
+        "body": { "$ref": "/text-block.schema.json" }
     },
     "required": [ "title", "body" ]
 }

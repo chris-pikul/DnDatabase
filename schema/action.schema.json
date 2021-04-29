@@ -10,18 +10,7 @@
             "type": "boolean"
         },
         "variantSource": {
-            "type": "object",
-            "properties": {
-                "publication": {
-                    "type": "string",
-                    "minLength": 1
-                },
-                "title": {
-                    "type": "string",
-                    "minLength": 1
-                }
-            },
-            "required": [ "publication", "title" ]
+            "$ref": "/source.schema.json"
         },
         "timing": {
             "type": "array",

@@ -23,50 +23,11 @@
       "minLength": 1
     },
     "description": {
-      "type": "array",
       "description": "Displayable description text explaining the resource, markdown allowed",
-      "items": {
-        "type": "string"
-      }
+      "$ref": "/text-block.schema.json"
     },
     "source": {
-      "type": "object",
-      "description": "Identifiers for where the source material came from",
-      "properties": {
-        "publication": {
-          "type": "string",
-          "minLength": 1
-        },
-        "page": {
-          "type": "integer",
-          "minimum": 0
-        },
-        "isUA": {
-          "type": "boolean"
-        },
-        "isSRD": {
-          "type": "boolean"
-        },
-        "additional": {
-          "type": "array",
-          "items": {
-            "type": "object",
-            "properties": {
-              "publication": {
-                "type": "string",
-                "minLength": 1
-              },
-              "page": {
-                "type": "integer",
-                "minimum": 1
-              }
-            },
-            "required": [ "publication" ]
-          },
-          "uniqueItems": true
-        }
-      },
-      "required": [ "publication" ]
+      "$ref": "/source.schema.json"
     },
     "tags": {
       "type": "array",
