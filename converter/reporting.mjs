@@ -110,10 +110,12 @@ export function PrintExitReport() {
 export function BindToProcess() {
     process
         .on('unhandledRejection', (reason, promise) => {
-            console.error(reason, `Unhandled promise rejection!`, promise);
+            console.error( Chalk.bgRed.whiteBright(`Unhandled promise rejection!`) );
+            console.error( promise, reason );
         })
         .on('uncaughtException', (err) => {
-            console.err(err, `Unhandled exceptionc caught!`);
+            console.error( Chalk.bgRed.whiteBright(`Unhandled exception caught!`) );
+            console.error( err );
             process.exit(1);
         })
         .on('exit', () => {
