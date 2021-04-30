@@ -1,3 +1,5 @@
+import { EnumHas } from './utils/enums';
+
 /**
  * Enumeration for the type of resource an object is.
  * This is required within any resource object.
@@ -35,3 +37,5 @@ export enum ResourceType {
     VEHICLE = "VEHICLE",
     WEAPON_PROPERTY = "WEAPON_PROPERTY",
 };
+
+export const ResourceTypeHas = (key:string):boolean => EnumHas(ResourceType, key);

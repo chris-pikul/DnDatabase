@@ -1,3 +1,4 @@
+import { IsPlainObject, JSONObject } from './utils/json-object';
 import { StringArray } from './utils/string-array';
 
 /**
@@ -40,3 +41,35 @@ export const NullTextBlock:TextBlock = {
     markdown: [],
     html: [],
 };
+
+/**
+ * Factory function for creating a valid TextBlock from
+ * a given JSON object.
+ * @param props JSON Object
+ * @returns TextBlock object
+ */
+export function MakeTextBlock(props:JSONObject):TextBlock {
+    if(!IsPlainObject(props)) return NullTextBlock;
+
+    const obj:TextBlock = NullTextBlock;
+
+    if(props.hasOwnProperty('plainText') && Array.isArray(props.plainText)) {
+        //The filter should handle the case of ensuring strings,
+        //so I will explicitly cast the results
+        obj.plainText = props.plainText.filter(ent => (ent && typeof ent === 'string')) as StringArray;
+    }
+
+    if(props.hasOwnProperty('markdown') && Array.isArray(props.markdown)) {
+        //The filter should handle the case of ensuring strings,
+        //so I will explicitly cast the results
+        obj.markdown = props.markdown.filter(ent => (ent && typeof ent === 'string')) as StringArray;
+    }
+
+    if(props.hasOwnProperty('html') && Array.isArray(props.html)) {
+        //The filter should handle the case of ensuring strings,
+        //so I will explicitly cast the results
+        obj.html = props.html.filter(ent => (ent && typeof ent === 'string')) as StringArray;
+    }
+
+    return obj;
+}

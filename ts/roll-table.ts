@@ -1,5 +1,7 @@
-import { DieSize } from "./die-size";
-import TextBlock from "./text-block";
+import { DieSize, DieSizeHas } from "./die-size";
+import TextBlock, { MakeTextBlock, NullTextBlock } from "./text-block";
+import { IsPlainObject, JSONObject } from "./utils/json-object";
+import { TestIfPositiveInteger } from "./utils/validation";
 
 /**
  * An individual result from a roll-table.
@@ -16,6 +18,32 @@ export interface RollTableResult {
 
     body            : TextBlock;
 };
+
+export function MakeRollTableResult(input:JSONObject):(RollTableResult|null) {
+    if(!IsPlainObject(input)) return null;
+
+    const obj:RollTableResult = {
+        body: NullTextBlock,
+    };
+
+    if(input.hasOwnProperty('value') && TestIfPositiveInteger(input.value))
+        obj.value = input.value as number; //Already type checked
+    else { //The two types are mutually exclusive
+        if(input.hasOwnProperty('minimumValue') && TestIfPositiveInteger(input.minimumValue))
+            obj.minimumValue = input.minimumValue as number; //Already type checked
+        
+        if(input.hasOwnProperty('maximumValue') && TestIfPositiveInteger(input.maximumValue))
+            obj.maximumValue = input.maximumValue as number; //Already type checked
+    }
+
+    if(input.hasOwnProperty('title') && typeof input.title === 'string')
+        obj.title = input.title.trim();
+
+    if(input.hasOwnProperty('body') && input.body !== null && typeof input.body === 'object')
+        obj.body = MakeTextBlock(input.body as JSONObject);
+
+    return obj;
+}
 
 /**
  * A roll-table, in which a specified die
@@ -36,4 +64,19 @@ export default interface RollTable {
 export const NullRollTable:RollTable = {
     die: DieSize.UNKNOWN,
     results: [],
+}
+
+export function MakeRollTable(input:JSONObject):RollTable {
+    if(!IsPlainObject(input)) return NullRollTable;
+
+    const obj:RollTable = NullRollTable;
+
+    if(input.hasOwnProperty('die') && typeof input.die === 'string' && DieSizeHas(input.die))
+        obj.die = input.die as DieSize;
+
+    if(input.hasOwnProperty('results') && input.results !== null && Array.isArray(input.results)) {
+
+    }
+
+    return obj;
 }

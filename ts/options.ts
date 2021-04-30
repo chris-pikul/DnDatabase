@@ -1,3 +1,6 @@
+import { IsPlainObject, JSONObject } from "./utils/json-object";
+import { TestIfPositiveInteger } from "./utils/validation";
+
 /**
  * Provides an alotment of choices that may be
  * chosen from.
@@ -56,6 +59,33 @@ export const NullOptions:IOptions<any> = {
     amount: 0,
     choices: [],
     fromAny: false,
+}
+
+/**
+ * Factory function for creating an Options object
+ * from the given JSON object.
+ * 
+ * This does not ensure that the Types of the options
+ * conforms, it only insures they are valid objects.
+ * 
+ * @param input JSONObject
+ * @returns Options
+ */
+export function MakeOptions<Type>(input:JSONObject):IOptions<Type> {
+    if(!IsPlainObject(input)) return NullOptions;
+
+    const obj:IOptions<Type> = NullOptions;
+
+    if(input.hasOwnProperty('amount') && TestIfPositiveInteger(input.amount))
+        obj.amount = input.amount as number; //Already type checked
+
+    if(input.hasOwnProperty('choices') && input.choices !== null && Array.isArray(input.choices))
+        obj.choices = input.choices.filter(ent => (ent && IsPlainObject(ent))) as unknown as Array<Type>;
+    
+    if(input.hasOwnProperty('fromAny') && typeof input.fromAny === 'boolean')
+        obj.fromAny = !!input.fromAny;
+
+    return obj;
 }
 
 /**

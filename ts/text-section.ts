@@ -1,4 +1,5 @@
-import TextBlock, { NullTextBlock } from './text-block';
+import TextBlock, { MakeTextBlock, NullTextBlock } from './text-block';
+import { IsPlainObject, JSONObject } from './utils/json-object';
 
 /**
  * TextSection represents a titled section of text.
@@ -28,3 +29,25 @@ export const NullTextSection:TextSection = {
     title: "",
     body: NullTextBlock,
 };
+
+/**
+ * Factory function to create a valid TextSection from
+ * a given JSON Object.
+ * @param input JSON Object
+ * @returns TextSection
+ */
+export function MakeTextSection(input:JSONObject):TextSection {
+    if(!IsPlainObject(input)) return NullTextSection;
+
+    const obj:TextSection = NullTextSection;
+
+    if(input.hasOwnProperty('title') && typeof input.title === 'string')
+        obj.title = input.title;
+
+    if(input.hasOwnProperty('body') && IsPlainObject(input.body)) {
+        // The IsPlainObject() function satisfies checking for us
+        obj.body = MakeTextBlock(input.body as JSONObject);
+    }
+
+    return obj;
+}

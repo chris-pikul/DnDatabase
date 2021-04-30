@@ -1,3 +1,6 @@
+import { IsPlainObject, JSONObject, JSONValue } from "./utils/json-object";
+import { TestIfPositiveInteger } from "./utils/validation";
+
 /**
  * Maps a publication ID to it's named value
  */
@@ -136,6 +139,63 @@ export const NullSource:Source = {
     isSRD: false,
     additional: [],
 };
+
+/**
+ * Factory function for creating a valid Source from
+ * a given JSON object.
+ * @param input JSON Object
+ * @returns Source
+ */
+export function MakeSource(input:JSONObject):Source {
+    if(!IsPlainObject(input)) return NullSource;
+
+    const obj:Source = NullSource;
+
+    if(input.hasOwnProperty('publicationID') && typeof input.publicationID === 'string')
+        obj.publicationID = input.publicationID.trim().toUpperCase();
+
+    if(input.hasOwnProperty('title') && typeof input.title === 'string')
+        obj.title = input.title.trim();
+
+    if(input.hasOwnProperty('page') && TestIfPositiveInteger(input.page))
+        obj.page = input.page as number; //Already type checked
+
+    if(input.hasOwnProperty('isUA') && typeof input.isUA === 'boolean')
+        obj.isUA = !!input.isUA;
+
+    if(input.hasOwnProperty('isSRD') && typeof input.isSRD === 'boolean')
+        obj.isSRD = !!input.isSRD;
+
+    if(input.hasOwnProperty('additional') && Array.isArray(input.additional)) {
+        // The any, and null stuff, is fine since the filter at the end
+        // explicitly removes nulls. Which only leaves the valid AdditionalSource
+        // objects.
+        obj.additional = input.additional.map((ent:any):(AdditionalSource|null) => {
+                if(ent===null || !IsPlainObject(ent)) return null;
+
+                const sub:AdditionalSource = NullSource;
+
+                if(ent.hasOwnProperty('publicationID') && typeof ent.publicationID === 'string')
+                    sub.publicationID = ent.publicationID.trim().toUpperCase();
+
+                if(ent.hasOwnProperty('title') && typeof ent.title === 'string')
+                    sub.title = ent.title.trim();
+
+                if(ent.hasOwnProperty('page') && TestIfPositiveInteger(ent.page))
+                    sub.page = ent.page as number; //Already type checked
+
+                if(ent.hasOwnProperty('isUA') && typeof ent.isUA === 'boolean')
+                    sub.isUA = !!ent.isUA;
+
+                if(ent.hasOwnProperty('isSRD') && typeof ent.isSRD === 'boolean')
+                    sub.isSRD = !!ent.isSRD;
+
+                return sub;
+            }).filter(ent => (ent && ent !== null)) as unknown as Array<AdditionalSource>;
+    }
+
+    return obj;
+}
 
 export function ValidateSource(source:any):Array<string> {
     const errs = [];

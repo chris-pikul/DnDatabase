@@ -43,3 +43,21 @@ export const RegexpKabob = /^[a-z0-9\-]+$/g;
         return false;
     return RegexpURI.test(input);
 }
+
+/**
+ * Tests that the given input object is an integer number
+ * @param input any object
+ * @returns boolean true if the supplied value is an integer number
+ */
+export const TestIfInteger = (input:any):boolean => (
+    input !== null
+    && typeof input === 'number'
+    && Number.isInteger(input)
+);
+
+/**
+ * Tests that the given input object is a positive integer number
+ * @param input any object
+ * @returns boolean true if the supplied value is a positive integer number
+ */
+export const TestIfPositiveInteger = (input:any):boolean => (TestIfInteger(input) && input >= 0);

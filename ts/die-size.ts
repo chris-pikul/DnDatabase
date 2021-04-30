@@ -1,3 +1,5 @@
+import { EnumHas } from './utils/enums';
+
 /**
  * Holds enumerated values for die sizes.
  * 
@@ -5,14 +7,16 @@
  * not be treated as valid.
  */
 export enum DieSize {
-    UNKNOWN  = 0,
+    UNKNOWN  = 'UNKNOWN',
 
-    D2  = 2,
-    D4  = 4,
-    D6  = 6,
-    D8  = 8,
-    D10 = 10,
-    D12 = 12,
-    D20 = 20,
-    D100= 100,
+    D2  = 'D2',
+    D4  = 'D4',
+    D6  = 'D6',
+    D8  = 'D8',
+    D10 = 'D10',
+    D12 = 'D12',
+    D20 = 'D20',
+    D100= 'D100',
 };
+
+export const DieSizeHas = (key:string):boolean => EnumHas(DieSize, key);

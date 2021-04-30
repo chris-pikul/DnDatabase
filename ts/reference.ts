@@ -1,7 +1,8 @@
-import { ResourceType } from './resource-type';
+import { ResourceType, ResourceTypeHas } from './resource-type';
 import { IValidatable } from './validatable';
 
 import { TestURI, TestKabob } from './utils/validation';
+import { IsPlainObject, JSONObject } from './utils/json-object';
 
 /**
  * References are used to link resources between each other
@@ -16,34 +17,58 @@ export interface IReference {
 /**
  * Holds a reference to another resource.
  * Used to link between different objects.
+ * 
+ * @throws Error if the required values are not fullfilled
  */
 export default class Reference implements IReference, IValidatable {
     readonly type : ResourceType;
     readonly uri : string;
     name : string;
 
-    constructor(props:any, ignoreType:boolean=false) {
+    constructor(props:any = null, ignoreType:boolean=false) {
+        this.type = ResourceType.UNKNOWN;
+        this.uri = '/';
+        this.name = 'Unknown Reference';
+
         if(ignoreType)
             this.type = ResourceType.UNKNOWN;
-        else {
-            if(props.hasOwnProperty('type') && typeof props.type === 'string')
-                this.type = props.type;
-            else
-                throw new Error(`Expected a valid string 'type' property, none found.`);
+
+        if(props) {
+            if(typeof props === 'string') {
+                if(ResourceTypeHas(props))
+                    this.type = props as ResourceType;
+                else
+                    throw new Error(`Reference expected the string value for construction to be a valid ResourceType enum.`);
+            } else if(props.type === 'object') {
+                if(props.hasOwnProperty('type') && typeof props.type === 'string') {
+                    if(ResourceTypeHas(props.type))
+                        this.type = props.type as ResourceType;
+                    else
+                        throw new Error(`Reference needs a valid ResourceType enum supplied to the 'type' property, instead found "${props.type}".`);
+                } else if(!ignoreType)
+                    throw new Error(`Reference expected a valid string 'type' property, none found.`);
+            
+                if(props.hasOwnProperty('uri') && typeof props.uri === 'string' && props.uri.length > 0)
+                    this.uri = props.uri;
+                else
+                    throw new Error(`Expected a valid string 'uri' property, none found.`);
+    
+                if(props.hasOwnProperty('name') && typeof props.name === 'string' && props.name.length > 0)
+                    this.name = props.name;
+                else
+                    throw new Error(`Expected a valid string 'name' property, none found.`);
+            }
         }
-
-        if(props.hasOwnProperty('uri') && typeof props.uri === 'string')
-            this.uri = props.uri;
-        else
-            throw new Error(`Expected a valid string 'uri' property, none found.`);
-
-        if(props.hasOwnProperty('name') && typeof props.name === 'string')
-            this.name = props.name;
-        else
-            throw new Error(`Expected a valid string 'name' property, none found.`);
     }
 
-    validate(): string[] {
+    assign = (props:JSONObject):void => {
+        if(!IsPlainObject(props)) return;
+
+        if(props.hasOwnProperty('name') && typeof props.name === 'string' && props.name.length > 0)
+            this.name = props.name;
+    }
+
+    validate = ():string[] => {
         const errs:Array<string> = [];
         
         if(this.type === ResourceType.UNKNOWN)
@@ -58,19 +83,32 @@ export default class Reference implements IReference, IValidatable {
         return errs;
     }
 
-    isValid(): boolean {
-        return this.validate().length === 0;
-    }
+    isValid = ():boolean => (this.validate().length === 0);
 }
 
 /**
  * Easy to reference object for empty or "null" data.
  */
-export const NullReference:Reference = new Reference({
-    type: ResourceType.UNKNOWN,
-    uri: '/',
-    name: 'Unknown Reference'
-});
+export const NullReference:Reference = new Reference();
+
+/**
+ * Factory function to create new Reference objects from
+ * the supplied JSON Object.
+ * 
+ * This is a noexcept version of the default Reference constructor. 
+ * 
+ * @param input JSON Object
+ * @returns Reference
+ */
+export function MakeReference(input:JSONObject):Reference {
+    if(!IsPlainObject(input)) return NullReference;
+
+    try {
+        return new Reference(input);
+    } catch(err) {
+        return NullReference;
+    }
+}
 
 export class ReferenceAbilityScore extends Reference {
     readonly type : ResourceType = ResourceType.ABILITY_SCORE;
