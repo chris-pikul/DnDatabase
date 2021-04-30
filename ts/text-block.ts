@@ -31,3 +31,12 @@ export default interface TextBlock {
      */
     html?       : StringArray
 }
+
+/**
+ * Easy to reference object for empty or "null" data.
+ */
+export const NullTextBlock:TextBlock = {
+    plainText: [],
+    markdown: [],
+    html: [],
+};

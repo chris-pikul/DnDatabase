@@ -63,6 +63,9 @@ export default class Reference implements IReference, IValidatable {
     }
 }
 
+/**
+ * Easy to reference object for empty or "null" data.
+ */
 export const NullReference:Reference = new Reference({
     type: ResourceType.UNKNOWN,
     uri: '/',

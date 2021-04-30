@@ -125,6 +125,18 @@ export default interface Source {
     additional         ?: Array<AdditionalSource>;
 }
 
+/**
+ * Easy to reference object for empty or "null" data.
+ */
+export const NullSource:Source = {
+    publicationID: PublicationID.HB,
+    title: "Untitled",
+    page: 0,
+    isUA: false,
+    isSRD: false,
+    additional: [],
+};
+
 export function ValidateSource(source:any):Array<string> {
     const errs = [];
 

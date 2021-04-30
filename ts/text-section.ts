@@ -1,4 +1,4 @@
-import TextBlock from './text-block';
+import TextBlock, { NullTextBlock } from './text-block';
 
 /**
  * TextSection represents a titled section of text.
@@ -20,3 +20,11 @@ export default interface TextSection {
      */
     body    : TextBlock
 }
+
+/**
+ * Easy to reference object for empty or "null" data.
+ */
+export const NullTextSection:TextSection = {
+    title: "",
+    body: NullTextBlock,
+};

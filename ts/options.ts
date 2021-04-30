@@ -50,9 +50,23 @@
 }
 
 /**
+ * Easy to reference object for empty or "null" data.
+ */
+export const NullOptions:IOptions<any> = {
+    amount: 0,
+    choices: [],
+    fromAny: false,
+}
+
+/**
  * Type alias for an array of options. Usually when used
  * for equipment and character building there is a few
  * choices that combine to build the "loadout".
  * Ex. 2 weapons, 3 trinkets, 1 magic item, etc.
  */
 export type OptionsArray<Type> = Array<IOptions<Type>>
+
+/**
+ * Easy to reference object for empty or "null" data.
+ */
+export const NullOptionsArray:OptionsArray<any> = [];

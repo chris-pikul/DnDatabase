@@ -1,3 +1,4 @@
+import { DieSize } from "./die-size";
 import TextBlock from "./text-block";
 
 /**
@@ -24,7 +25,15 @@ export interface RollTableResult {
  * Schema: /roll-table.schema.json
  */
 export default interface RollTable {
-    die     : Number
+    die     : DieSize
 
     results : Array<RollTableResult>
 };
+
+/**
+ * Easy to reference object for empty or "null" data.
+ */
+export const NullRollTable:RollTable = {
+    die: DieSize.UNKNOWN,
+    results: [],
+}
