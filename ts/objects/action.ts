@@ -22,23 +22,27 @@ export interface IAction extends IResource {
 export default class Action extends Resource implements IAction {
     static readonly JSONSchemaFile = "action.schema.json";
 
-    isVariant : boolean = false;
-
-    variantSource ?: Source;
-
-    timing : CountedArray<ActionTiming> = [];
+    isVariant       : boolean;
+    variantSource  ?: Source;
+    timing          : CountedArray<ActionTiming>;
 
     constructor(props:any) {
         super(ResourceType.ACTION, props);
 
-        if(props.hasOwnProperty('isVariant') && typeof props.isVariant === 'boolean')
-            this.isVariant = props.isVariant;
+        this.isVariant = false;
+        this.timing = [];
 
-        if(props.hasOwnProperty('variantSource') && typeof props.variantSource === 'object' && props.variantSource.hasOwnProperty('publicationID'))
-            this.variantSource = props.variantSource;
+        //Only apply properties if there is a object parameter applied
+        if(props && typeof props === 'object') {
+            if(props.hasOwnProperty('isVariant') && typeof props.isVariant === 'boolean')
+                this.isVariant = props.isVariant;
 
-        if(props.hasOwnProperty('timing') && Array.isArray(props.timing))
-            this.timing = props.timing;
+            if(props.hasOwnProperty('variantSource') && typeof props.variantSource === 'object' && props.variantSource.hasOwnProperty('publicationID'))
+                this.variantSource = props.variantSource;
+
+            if(props.hasOwnProperty('timing') && Array.isArray(props.timing))
+                this.timing = props.timing;
+        }
     }
 
     /**

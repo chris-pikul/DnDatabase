@@ -26,16 +26,21 @@ export default class AbilityScore extends Resource implements IAbilityScore {
     constructor(props:any) {
         super(ResourceType.ABILITY_SCORE, props);
 
-        if(props.hasOwnProperty('abbreviation') && typeof props.abbreviation === 'string')
-            this.abbreviation = props.abbreviation;
-        else
-            throw new Error(`AbilityScore requires an abbreviation property, none found.`);
-    
-        if(props.hasOwnProperty('skills') && Array.isArray(props.skills))
-            this.skills = props.skills;
-        else
-            throw new Error(`AbilityScore requires a skills property, none found.`);
-    
+        this.abbreviation = "UNK";
+        this.skills = [];
+
+        //Only apply properties if there is a object parameter applied
+        if(props && typeof props === 'object') {
+            if(props.hasOwnProperty('abbreviation') && typeof props.abbreviation === 'string')
+                this.abbreviation = props.abbreviation;
+            else
+                throw new Error(`AbilityScore requires an abbreviation property, none found.`);
+        
+            if(props.hasOwnProperty('skills') && Array.isArray(props.skills))
+                this.skills = props.skills;
+            else
+                throw new Error(`AbilityScore requires a skills property, none found.`);
+        }
     }
 
     /**
