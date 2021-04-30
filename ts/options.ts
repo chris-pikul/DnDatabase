@@ -1,4 +1,4 @@
-import { IsPlainObject, JSONObject } from "./utils/json-object";
+import { IsPlainObject, JSONObject, JSONValue } from "./utils/json-object";
 import { TestIfPositiveInteger } from "./utils/validation";
 
 /**
@@ -100,3 +100,17 @@ export type OptionsArray<Type> = Array<IOptions<Type>>
  * Easy to reference object for empty or "null" data.
  */
 export const NullOptionsArray:OptionsArray<any> = [];
+
+/**
+ * Factory function for creating OptionsArrays of a given
+ * type using the provided JSONValue (array).
+ * @param input JSONValue (expected array)
+ * @returns OptionsArray of given types
+ */
+export function MakeOptionsArray<Type>(input:JSONValue):OptionsArray<Type> {
+    if(input === null || typeof input !== 'object' || !Array.isArray(input))
+        return NullOptionsArray;
+
+    return input.map((ent:any) => MakeOptions<Type>(ent))
+        .filter((ent:IOptions<Type>) => (ent && ent.amount !== 0));
+}

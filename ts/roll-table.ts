@@ -75,7 +75,8 @@ export function MakeRollTable(input:JSONObject):RollTable {
         obj.die = input.die as DieSize;
 
     if(input.hasOwnProperty('results') && input.results !== null && Array.isArray(input.results)) {
-
+        obj.results = input.results.map(ent => MakeRollTableResult(ent as JSONObject))
+            .filter(ent => (ent && ent !== null)) as Array<RollTableResult>;
     }
 
     return obj;
