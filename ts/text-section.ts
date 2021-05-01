@@ -43,6 +43,26 @@ export default class TextSection implements ITextSection, IAssignable, IValidata
     );
 
     /**
+     * Performs type checking and throws errors if the
+     * properties needed are not the right types.
+     * Does not fully validate the data within them,
+     * but will check for emptyness, or incorrect Enums
+     * @throws TypeErrors for invalid properties
+     * @param props Incoming properties object
+     */
+    public static StrictValidateProps = (props:any):void => {
+        if(!props)
+            throw new TypeError(`TextSection.StrictValidateProps requires a valid parameter to check, none was given.`);
+
+        if(props.title && typeof props.title !== 'string')
+            throw new TypeError(`TextSection "title" property must be a string, instead found "${typeof props.title}".`);
+
+        if(!props.body)
+            throw new TypeError(`Missing "body" property for TextSection.`);
+        TextBlock.StrictValidateProps(props.body);
+    }
+
+    /**
      * The title of the section.
      * Expected to be plain text for proper heading formatting.
      */
@@ -68,6 +88,7 @@ export default class TextSection implements ITextSection, IAssignable, IValidata
             } else if(IsPlainObject(props)) {
                 //If this is a JSON object (plain JS object),
                 // attempt to assign the properties.
+                TextSection.StrictValidateProps(props);
                 this.assign(props);
             } else {
                 console.warn(`Attempting to instantiate a TextSection object with an invalid parameter. Expected either a TextSection object, or a plain JSON Object of properties. Instead encountered a "${typeof props}"`);

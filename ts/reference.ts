@@ -61,7 +61,10 @@ export default class Reference implements IReference, IAssignable, IValidatable 
      * @throws TypeErrors for invalid properties
      * @param props Incoming properties object
      */
-     static StrictValidateProps = (props:any):void => {
+    public static StrictValidateProps = (props:any):void => {
+        if(!props)
+            throw new TypeError(`Reference.StrictValidateProps requires a valid parameter to check, none was given.`);
+
         if(!props.type)
             throw new TypeError(`Missing "type" property for Reference.`);
         else if(typeof props.type !== 'string')

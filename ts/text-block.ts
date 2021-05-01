@@ -54,6 +54,40 @@ export default class TextBlock implements ITextBlock, IAssignable, IValidatable 
     );
 
     /**
+     * Performs type checking and throws errors if the
+     * properties needed are not the right types.
+     * Does not fully validate the data within them,
+     * but will check for emptyness, or incorrect Enums
+     * @throws TypeErrors for invalid properties
+     * @param props Incoming properties object
+     */
+    public static StrictValidateProps = (props:any):void => {
+        if(!props)
+            throw new TypeError(`TextBlock.StrictValidateProps requires a valid parameter to check, none was given.`);
+
+        if(!props.plainText)
+            throw new TypeError(`Missing "plainText" property for TextBlock.`);
+        if(typeof props.plainText !== 'object' || !Array.isArray(props.plainText))
+            throw new TypeError(`TextBlock "plainText" property must be an array, instead found "${typeof props.plainText}"`);
+        if(props.plainText.findIndex((ent:any) => typeof ent !== 'string') !== -1)
+            throw new TypeError(`TextBlock "plainText" array contains non-string members.`);
+
+        if(props.markdown) {
+            if(typeof props.markdown !== 'object' || !Array.isArray(props.markdown))
+                throw new TypeError(`TextBlock "markdown" property must be an array, instead found "${typeof props.markdown}"`);
+            if(props.markdown.findIndex((ent:any) => typeof ent !== 'string') !== -1)
+                throw new TypeError(`TextBlock "markdown" array contains non-string members.`);
+        }
+
+        if(props.html) {
+            if(typeof props.html !== 'object' || !Array.isArray(props.html))
+                throw new TypeError(`TextBlock "html" property must be an array, instead found "${typeof props.html}"`);
+            if(props.html.findIndex((ent:any) => typeof ent !== 'string') !== -1)
+                throw new TypeError(`TextBlock "html" array contains non-string members.`);
+        }
+    };
+
+    /**
      * The plain text (no formatting markers) version
      * This is required
      */
@@ -87,6 +121,7 @@ export default class TextBlock implements ITextBlock, IAssignable, IValidatable 
             } else if(IsPlainObject(props)) {
                 //If this is a JSON object (plain JS object),
                 // attempt to assign the properties.
+                TextBlock.StrictValidateProps(props);
                 this.assign(props);
             } else {
                 console.warn(`Attempting to instantiate a TextBody object with an invalid parameter. Expected either a TextBody object, or a plain JSON Object of properties. Instead encountered a "${typeof props}"`);
