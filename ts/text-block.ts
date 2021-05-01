@@ -1,7 +1,7 @@
 import { IAssignable } from './assignable';
 import { IValidatable } from './validatable';
 import { IsPlainObject, JSONObject } from './utils/json-object';
-import { StringArray } from './utils/string-array';
+import { StringArray } from './utils/arrays';
 
 /**
  * Represents a block of text, with different
@@ -113,7 +113,7 @@ export default class TextBlock implements ITextBlock, IAssignable, IValidatable 
         //Check if props have been provided
         if(typeof props !== 'undefined' && props !== null) {
             if(props instanceof TextBlock) {
-                //If this is another TextSection,
+                //If this is another TextBlock,
                 // copy the properties in.
                 this.plainText = [...props.plainText];
                 this.markdown = [...props.markdown];

@@ -3,6 +3,7 @@ import { IValidatable } from './validatable';
 import { IsPlainObject, JSONObject } from './utils/json-object';
 
 import TextBlock from './text-block';
+import { InPlaceConcat } from './utils/arrays';
 
 /**
  * TextSection represents a titled section of text.
@@ -112,7 +113,7 @@ export default class TextSection implements ITextSection, IAssignable, IValidata
         if(!this.title || typeof this.title !== 'string')
             errs.push(`TextSection.title is expected to be a string, instead found "${typeof this.title}".`);
 
-        errs.push.apply(null, this.body.validate());
+        InPlaceConcat(errs, this.body.validate());
 
         return errs;
     }
