@@ -7,3 +7,8 @@
 export const EnumHas = (enumClass:any, key:string):boolean => (
     Object.keys(enumClass).findIndex(k => (k === key)) !== -1
 );
+
+/**
+ * A StringEnum is a object map of string keys, matching string values only.
+ */
+export type StringEnum = {[key:string]: string};

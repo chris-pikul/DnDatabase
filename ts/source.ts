@@ -1,31 +1,8 @@
-import { IsPlainObject, JSONObject, JSONValue } from "./utils/json-object";
+import { IAssignable } from "./assignable";
+import { IValidatable } from "./validatable";
+import { StringEnum, EnumHas } from './utils/enums';
+import { IsPlainObject, JSONObject } from "./utils/json-object";
 import { TestIfPositiveInteger } from "./utils/validation";
-
-/**
- * Maps a publication ID to it's named value
- */
-export const PublicationIDMap = {
-    "HB": "Homebrew",
-    "UA": "Unearthed Arcana",
-
-    "PHB": "Player's Handbook",
-    "MM": "Monter Manual",
-    "DMG": "Dungeon Master's Guide",
-    "SCAG": "Sword Coast Adventurer's Guide",
-    "AL": "Adventurer's League",
-    "VGM": "Volo's Guide to Monsters",
-    "XGE": "Xanthar's Guide to Everything",
-    "MTF": "Mordenkainen's Tome of Foes",
-    "GGR": "Guildmaster's Guide to Ravnica",
-    "SAC": "Sage Advice Compendium",
-    "AI": "Aquisitions Incorperated",
-    "ERLW": "Eberron: Rising from the Last War",
-    "RMR": "Dungeons & Dragons vs. Rick and Morty: Basic Rules",
-    "EGW": "Explorer's Guide to Wildemount",
-    "MOT": "Mythic Odysseys of Theros",
-    "IDRotF": "Icewind Dale: Rime of the Frostmaiden",
-    "TCE": "Tasha's Cauldron of Everything",
-};
 
 /**
  * Enumeration of the standard Publication IDs
@@ -53,38 +30,40 @@ export enum PublicationID {
     TCE = "TCE",
 };
 
+export const PublicationIDHas = (key:string):boolean => EnumHas(PublicationID, key);
+
 /**
  * Used to describe an additonal source (outside of the primary)
  * that this resource is also printed on.
  */
-export interface AdditionalSource {
+export interface IAdditionalSource {
     /**
      * A short abbreviated name of the publication.
      * used as an enum.
      * REQUIRED
      */
-     publicationID       : PublicationID | string;
+    readonly publicationID       : PublicationID | string;
 
-     /**
-      * The real publication name, as displayed to the user.
-      * REQUIRED
-      */
-     title              ?: string;
+    /**
+     * The real publication name, as displayed to the user.
+     * REQUIRED
+     */
+    readonly title               : string;
  
-     /**
-      * The page number that the resource is on
-      */
-     page               ?: number;
+    /**
+     * The page number that the resource is on
+     */
+    page               ?: number;
  
-     /**
-      * Is this resource part of the Unearthed Arcana (beta)?
-      */
-     isUA               ?: boolean;
+    /**
+     * Is this resource part of the Unearthed Arcana (beta)?
+     */
+    isUA               ?: boolean;
  
-     /**
-      * Is this part of the System Resource Document (open source)?
-      */
-     isSRD              ?: boolean;
+    /**
+     * Is this part of the System Resource Document (open source)?
+     */
+    isSRD              ?: boolean;
 }
 
 /**
@@ -93,19 +72,19 @@ export interface AdditionalSource {
  * 
  * Schema: /source.schema.json
  */
-export default interface Source {
+export interface ISource {
     /**
      * A short abbreviated name of the publication.
      * used as an enum.
      * REQUIRED
      */
-    publicationID       : PublicationID | string;
+    readonly publicationID       : PublicationID | string;
 
     /**
      * The real publication name, as displayed to the user.
      * REQUIRED
      */
-    title              ?: string;
+    readonly title               : string;
 
     /**
      * The page number that the resource is on
@@ -125,150 +104,268 @@ export default interface Source {
     /**
      * Any additional publications this is featured on
      */
-    additional         ?: Array<AdditionalSource>;
+    additional         ?: Array<IAdditionalSource>;
 }
 
-/**
- * Easy to reference object for empty or "null" data.
- */
-export const NullSource:Source = {
-    publicationID: PublicationID.HB,
-    title: "Untitled",
-    page: 0,
-    isUA: false,
-    isSRD: false,
-    additional: [],
-};
+export default class Source implements ISource, IAssignable, IValidatable {
+    /**
+     * A string-string map of publication ID enums to their respective human-readable titles.
+     */
+    public static readonly PublicationMap:StringEnum = {
+        "HB": "Homebrew",
+        "UA": "Unearthed Arcana",
+    
+        "PHB": "Player's Handbook",
+        "MM": "Monter Manual",
+        "DMG": "Dungeon Master's Guide",
+        "SCAG": "Sword Coast Adventurer's Guide",
+        "AL": "Adventurer's League",
+        "VGM": "Volo's Guide to Monsters",
+        "XGE": "Xanthar's Guide to Everything",
+        "MTF": "Mordenkainen's Tome of Foes",
+        "GGR": "Guildmaster's Guide to Ravnica",
+        "SAC": "Sage Advice Compendium",
+        "AI": "Aquisitions Incorperated",
+        "ERLW": "Eberron: Rising from the Last War",
+        "RMR": "Dungeons & Dragons vs. Rick and Morty: Basic Rules",
+        "EGW": "Explorer's Guide to Wildemount",
+        "MOT": "Mythic Odysseys of Theros",
+        "IDRotF": "Icewind Dale: Rime of the Frostmaiden",
+        "TCE": "Tasha's Cauldron of Everything",
+    };
 
-/**
- * Factory function for creating a valid Source from
- * a given JSON object.
- * @param input JSON Object
- * @returns Source
- */
-export function MakeSource(input:JSONObject):Source {
-    if(!IsPlainObject(input)) return NullSource;
+    /**
+     * Retrieves the full publication title from a given ID Enum.
+     * If the value is invalid "Unknown" is returned instead.
+     * @param publicationID Publication ID Enum
+     * @returns The full publication title string
+     */
+    public static GetPublicationTitle = (publicationID:PublicationID):string => (Source.PublicationMap[publicationID as string] || "Unknown");
 
-    const obj:Source = NullSource;
+    /**
+     * Holds the "Zero" value (empty, null) for easy reference
+     * and object instantiation.
+     */
+    public static readonly ZeroValue:Source = new Source();
 
-    if(input.hasOwnProperty('publicationID') && typeof input.publicationID === 'string')
-        obj.publicationID = input.publicationID.trim().toUpperCase();
+    /**
+     * Checks if the supplied object is at the class's zero value.
+     * @param obj TextBlock object to check
+     * @returns True if the object has the default values
+     */
+    public static IsZeroValue = (obj:Source):boolean => (
+           obj.publicationID === PublicationID.HB
+        && obj.title === 'Unknown Source'
+        && obj.page === 0
+        && obj.isUA === false
+        && obj.isSRD === false
+        && obj.additional.length === 0
+    );
 
-    if(input.hasOwnProperty('title') && typeof input.title === 'string')
-        obj.title = input.title.trim();
+    public static StrictValidateProps = (props:any):void => {
+        if(!props)
+            throw new TypeError(`Source.StrictValidateProps requires a valid parameter to check, none was given.`);
 
-    if(input.hasOwnProperty('page') && TestIfPositiveInteger(input.page))
-        obj.page = input.page as number; //Already type checked
+        if(!props.publicationID)
+            throw new TypeError(`Missing "publicationID" property for Source.`);
+        if(typeof props.publicationID !== 'string')
+            throw new TypeError(`Source "publicationID" property must be a string, instead found "${typeof props.publicationID}".`);
+        if(!PublicationIDHas(props.publicationID))
+            throw new TypeError(`Source "publicationID" property must be a valid PublicationID enum, "${props.publicationID}" is not one.`);
 
-    if(input.hasOwnProperty('isUA') && typeof input.isUA === 'boolean')
-        obj.isUA = !!input.isUA;
+        if(!props.title)
+            throw new TypeError(`Missing "title" property for Source.`);
+        if(typeof props.title !== 'string')
+            throw new TypeError(`Source "title" property must be a string, instead found "${typeof props.title}".`);
+        if(props.title.length === 0)
+            throw new TypeError(`Source "title" property must not be an empty string.`);
 
-    if(input.hasOwnProperty('isSRD') && typeof input.isSRD === 'boolean')
-        obj.isSRD = !!input.isSRD;
+        if(props.page) {
+            if(typeof props.page !== 'number')
+                throw new TypeError(`Source "page" property must be a number, instead found "${typeof props.page}".`);
+            if(!TestIfPositiveInteger(props.page))
+                throw new TypeError(`Source "page" property must be a positive (0 or above) integer number.`);
+        }
 
-    if(input.hasOwnProperty('additional') && Array.isArray(input.additional)) {
-        // The any, and null stuff, is fine since the filter at the end
-        // explicitly removes nulls. Which only leaves the valid AdditionalSource
-        // objects.
-        obj.additional = input.additional.map((ent:any):(AdditionalSource|null) => {
-                if(ent===null || !IsPlainObject(ent)) return null;
+        if(props.isUA && typeof props.isUA !== 'boolean')
+            throw new TypeError(`Source "isUA" property must be a boolean if provided.`);
 
-                const sub:AdditionalSource = NullSource;
+        if(props.isSRD && typeof props.isSRD !== 'boolean')
+            throw new TypeError(`Source "isSRD" property must be a boolean if provided.`);
 
-                if(ent.hasOwnProperty('publicationID') && typeof ent.publicationID === 'string')
-                    sub.publicationID = ent.publicationID.trim().toUpperCase();
+        if(props.additional) {
+            if(!Array.isArray(props.additional))
+                throw new TypeError(`Source "additional" property must be an array of strings, instead found "${typeof props.additional}".`);
+            
+            props.additional.forEach( Source.StrictValidatePropsAdditional );
+        }
+    };
 
-                if(ent.hasOwnProperty('title') && typeof ent.title === 'string')
-                    sub.title = ent.title.trim();
+    public static StrictValidatePropsAdditional = (props:any):void => {
+        if(!props)
+            throw new TypeError(`Source.StrictValidatePropsAdditional requires a valid parameter to check, none was given.`);
+        
+        if(!props.publicationID)
+            throw new TypeError(`Missing "publicationID" property for Source Additional.`);
+        if(typeof props.publicationID !== 'string')
+            throw new TypeError(`Source Additional "publicationID" property must be a string, instead found "${typeof props.publicationID}".`);
+        if(!PublicationIDHas(props.publicationID))
+            throw new TypeError(`Source Additional "publicationID" property must be a valid PublicationID enum, "${props.publicationID}" is not one.`);
 
-                if(ent.hasOwnProperty('page') && TestIfPositiveInteger(ent.page))
-                    sub.page = ent.page as number; //Already type checked
+        if(!props.title)
+            throw new TypeError(`Missing "title" property for Source Additional.`);
+        if(typeof props.title !== 'string')
+            throw new TypeError(`Source Additional "title" property must be a string, instead found "${typeof props.title}".`);
+        if(props.title.length === 0)
+            throw new TypeError(`Source Additional "title" property must not be an empty string.`);
 
-                if(ent.hasOwnProperty('isUA') && typeof ent.isUA === 'boolean')
-                    sub.isUA = !!ent.isUA;
+        if(props.page) {
+            if(typeof props.page !== 'number')
+                throw new TypeError(`Source Additional "page" property must be a number, instead found "${typeof props.page}".`);
+            if(!TestIfPositiveInteger(props.page))
+                throw new TypeError(`Source Additional "page" property must be a positive (0 or above) integer number.`);
+        }
 
-                if(ent.hasOwnProperty('isSRD') && typeof ent.isSRD === 'boolean')
-                    sub.isSRD = !!ent.isSRD;
+        if(props.isUA && typeof props.isUA !== 'boolean')
+            throw new TypeError(`Source Additional "isUA" property must be a boolean if provided.`);
 
-                return sub;
-            }).filter(ent => (ent && ent !== null)) as unknown as Array<AdditionalSource>;
+        if(props.isSRD && typeof props.isSRD !== 'boolean')
+            throw new TypeError(`Source Additional "isSRD" property must be a boolean if provided.`);
+        
     }
 
-    return obj;
-}
+    /**
+     * A short abbreviated name of the publication.
+     * used as an enum.
+     * REQUIRED
+     */
+    readonly publicationID       : PublicationID | string;
 
-export function ValidateSource(source:any):Array<string> {
-    const errs = [];
+    /**
+     * The real publication name, as displayed to the user.
+     * REQUIRED
+     */
+    readonly title               : string;
 
-    if(source.hasOwnProperty('publicationID')) {
-        if(typeof source.publicationID !== 'string' || source.publicationID.length < 1)
-            errs.push(`Source requires a valid (non-empty) publicationID string.`);
-    } else
-        errs.push(`Source requires a publicationID string, none found.`);
+    /**
+     * The page number that the resource is on
+     */
+    readonly page               : number;
 
-    if(source.hasOwnProperty('title')) {
-        if(typeof source.title !== 'string')
-            errs.push(`Source's title property should be a string, instead found a "${typeof source.title}".`);
-        else if(source.title.length === 0)
-            errs.push(`Source must have a non-empty title string.`);
-    } else
-        errs.push(`Source requires a title string, none found.`);
+    /**
+     * Is this resource part of the Unearthed Arcana (beta)?
+     */
+    readonly isUA               : boolean;
 
-    if(source.hasOwnProperty('page')) {
-        if(typeof source.page !== 'number' || !Number.isInteger(source.page))
-            errs.push(`Source page must be an integer number.`);
-        else if(source.page < 0)
-            errs.push(`Source page must be a positive integer.`);
-    }
+    /**
+     * Is this part of the System Resource Document (open source)?
+     */
+    readonly isSRD              : boolean;
 
-    if(source.hasOwnProperty('isUA')) {
-        if(typeof source.isUA !== 'boolean')
-            errs.push(`Source "isUA" property must be a boolean, instead found a "${typeof source.isUA}".`);
-    }
+    /**
+     * Any additional publications this is featured on
+     */
+    additional         : Array<IAdditionalSource>;
 
-    if(source.hasOwnProperty('isSRD')) {
-        if(typeof source.isUA !== 'boolean')
-            errs.push(`Source "isSRD" property must be a boolean, instead found a "${typeof source.isUA}".`);
-    }
+    constructor(props?:any) {
+        this.publicationID = PublicationID.HB;
+        this.title = 'Unknown Source';
+        this.page = 0;
+        this.isUA = false;
+        this.isSRD = false;
+        this.additional = [];
 
-    if(source.hasOwnProperty('additional')) {
-        if(typeof source.additonal !== 'object' || !Array.isArray(source.additional))
-            errs.push(`Source's additional property must be an array, instead found a "${typeof source.additional}".`);
-        else {
-            source.additional.forEach((add:any, i:number) => {
-                if(add.hasOwnProperty('publicationID')) {
-                    if(typeof add.publicationID !== 'string' || add.publicationID.length < 1)
-                        errs.push(`Source additional at index ${i} requires a valid (non-empty) publicationID string.`);
-                } else
-                    errs.push(`Source additional at index ${i} requires a publicationID string, none found.`);
-            
-                if(add.hasOwnProperty('title')) {
-                    if(typeof add.title !== 'string')
-                        errs.push(`Source additional at index ${i}'s title property should be a string, instead found a "${typeof source.title}".`);
-                    else if(add.title.length === 0)
-                        errs.push(`Source additional at index ${i} must have a non-empty title string.`);
-                } else
-                    errs.push(`Source additional at index ${i} requires a title string, none found.`);
-            
-                if(add.hasOwnProperty('page')) {
-                    if(typeof add.page !== 'number' || !Number.isInteger(add.page))
-                        errs.push(`Source additional at index ${i} page must be an integer number.`);
-                    else if(add.page < 0)
-                        errs.push(`Source additional at index ${i} page must be a positive integer.`);
-                }
-            
-                if(add.hasOwnProperty('isUA')) {
-                    if(typeof add.isUA !== 'boolean')
-                        errs.push(`Source additional at index ${i} "isUA" property must be a boolean, instead found a "${typeof source.isUA}".`);
-                }
-            
-                if(add.hasOwnProperty('isSRD')) {
-                    if(typeof add.isUA !== 'boolean')
-                        errs.push(`Source additional at index ${i} "isSRD" property must be a boolean, instead found a "${typeof source.isUA}".`);
-                }
-            });
+        //Check if props have been provided
+        if(typeof props !== 'undefined' && props !== null) {
+            if(props instanceof Source) {
+                //If this is another Source,
+                // copy the properties in.
+                Source.StrictValidateProps(props);
+                this.publicationID = props.publicationID;
+                this.title = props.title;
+                this.page = props.page;
+                this.isUA = !!props.isUA;
+                this.isSRD = !!props.isSRD;
+                this.additional = [...props.additional];
+            } else if(IsPlainObject(props)) {
+                //If this is a JSON object (plain JS object),
+                // attempt to assign the properties.
+                Source.StrictValidateProps(props);
+                this.assign(props);
+            } else {
+                console.warn(`Attempting to instantiate a TextSection object with an invalid parameter. Expected either a TextSection object, or a plain JSON Object of properties. Instead encountered a "${typeof props}"`);
+            }
         }
     }
 
-    return errs;
+    assign = (props:JSONObject):void => {
+        if(props.hasOwnProperty('additional') && props.additional && Array.isArray(props.additional)) {
+            this.additional = props.additional.map((ent:any) => {
+                if(!IsPlainObject(ent)) return null;
+
+                const obj = {
+                    publicationID: PublicationID.HB,
+                    title: 'Unknown Source',
+                    page: 0,
+                    isUA: false,
+                    isSRD: false,
+                };
+
+                if(props.hasOwnProperty('publicationID') && typeof props.publicationID === 'string' && PublicationIDHas(props.publicationID))
+                    obj.publicationID = props.publicationID as PublicationID;
+                else return null;
+
+                if(props.hasOwnProperty('title') && typeof props.title === 'string' && props.title.length > 0)
+                    obj.title = props.title;
+                else return null;
+
+                if(props.hasOwnProperty('page') && typeof props.page === 'number' && TestIfPositiveInteger(props.page))
+                    obj.page = props.page as number;
+                
+                if(props.hasOwnProperty('isUA') && typeof props.isUA === 'boolean')
+                    obj.isUA = !!props.isUA;
+
+                if(props.hasOwnProperty('isSRD') && typeof props.isSRD === 'boolean')
+                    obj.isSRD = !!props.isSRD;
+
+                return obj as IAdditionalSource;
+            }).filter((ent:IAdditionalSource|null) => (ent && ent !== null)) as Array<IAdditionalSource>;
+        }
+    }
+
+    validate = ():Array<string> => {
+        const errs:Array<string> = [];
+
+        if(!PublicationIDHas(this.publicationID))
+            errs.push(`Source publicationID is not a valid enum.`);
+        
+        if(this.title.length === 0)
+            errs.push(`Source title must be a non-empty string.`);
+
+        if(this.page < 0)
+            errs.push(`Source page must be a positive (0 and above) integer.`);
+        else if(Number.isInteger(this.page))
+            errs.push(`Source page cannot be a fraction, must be an integer.`);
+
+        this.additional.forEach((ent:IAdditionalSource, i:number) => {
+            if(!PublicationIDHas(ent.publicationID))
+                errs.push(`Source additional[${i}] publicationID is not a valid enum.`);
+            
+            if(ent.title.length === 0)
+                errs.push(`Source additional[${i}] title must be a non-empty string.`);
+
+            if(ent.page) {
+                if(ent.page < 0)
+                    errs.push(`Source additional[${i}] page must be a positive (0 and above) integer.`);
+                else if(Number.isInteger(ent.page))
+                    errs.push(`Source additional[${i}] page cannot be a fraction, must be an integer.`);
+            }
+        });
+
+        return errs;
+    }
+
+    isValid = ():boolean => (this.validate().length === 0);
+
+    isZeroValue = ():boolean => (Source.IsZeroValue(this));
 }
