@@ -1,10 +1,14 @@
+import { IAssignable } from './assignable';
 import { IValidatable } from './validatable';
-import { ResourceType } from './resource-type';
+
+import { ResourceType, ResourceTypeHas } from './resource-type';
+import TextBlock from './text-block';
+import Source, { ISource } from './source';
+import { StringArray, InPlaceConcat } from './utils/arrays';
 
 import { TestURI, TestKabob } from './utils/validation';
+import { IsPlainObject, JSONObject } from './utils/json-object';
 
-import TextBlock from './text-block';
-import Source, { ValidateSource } from './source';
 
 /**
  * Schema: /resource.schema.json
@@ -55,7 +59,7 @@ export interface IResource {
     /**
      * Declares the publication sources for this resource
      */
-    source          : Source;
+    source          : ISource;
 
     /**
      * An array(set) of tags for searchability.
@@ -72,189 +76,162 @@ export interface IResource {
  * 
  * Schema: /resource.schema.json
  */
-export default abstract class Resource implements IResource, IValidatable {
+export default abstract class Resource implements IResource, IAssignable, IValidatable {
+    /**
+     * Performs type checking and throws errors if the
+     * properties needed are not the right types.
+     * Does not fully validate the data within them,
+     * but will check for emptyness, or incorrect Enums
+     * @throws TypeErrors for invalid properties
+     * @param props Incoming properties object
+     */
+    public static StrictValidateProps = (props:any):void => {
+        if(!props)
+            throw new TypeError(`Resource.StrictValidateProps requires a valid parameter to check, none was given.`);
+
+        if(!props.type)
+            throw new TypeError(`Missing "type" property for Resource.`);
+        if(typeof props.type !== 'string')
+            throw new TypeError(`Resource "type" property must be a string, instead found "${typeof props.type}".`);
+        if(!ResourceTypeHas(props.type))
+            throw new TypeError(`Resource "type" property must be a valid ResourceType enum, "${props.type}" is not one.`);
+
+        if(!props.id)
+            throw new TypeError(`Missing "id" property for Resource.`);
+        if(typeof props.id !== 'string')
+            throw new TypeError(`Resource "id" property must be a string, instead found "${typeof props.id}".`);
+        if(props.id.length === 0)
+            throw new TypeError(`Resource "id" property must not be an empty string.`);
+
+        if(!props.name)
+            throw new TypeError(`Missing "name" property for Resource.`);
+        if(typeof props.name !== 'string')
+            throw new TypeError(`Resource "name" property must be a string, instead found "${typeof props.name}".`);
+        if(props.name.length === 0)
+            throw new TypeError(`Resource "name" property must not be an empty string.`);
+
+        if(!props.description)
+            throw new TypeError(`Missing "description" property for Resource.`);
+        TextBlock.StrictValidateProps(props.description);
+
+        if(!props.source)
+            throw new TypeError(`Missing "source" property for Resource.`);
+        //Source.StrictValidateProps(props.description);
+
+        if(!props.tags)
+            throw new TypeError(`Missing "tags" property for Resource.`);
+        if(typeof props.tags !== 'object' || !Array.isArray(props.tags))
+            throw new TypeError(`Resource "tags" property must be an array, instead found "${typeof props.tags}"`);
+        if(props.tags.findIndex((ent:any) => typeof ent !== 'string') !== -1)
+            throw new TypeError(`Resource "tags" array contains non-string members.`);
+    };
+
     readonly type   : ResourceType;
 
     readonly id     : string;
     readonly uri    : string;
     readonly name   : string;
 
-    description : TextBlock = {
-        plainText: [],
-    };
+    description     : TextBlock;
+    source          : Source;
+    tags            : StringArray;
 
-    source : Source = {
-        publicationID: 'HB',
-    };
+    constructor(props?:any) {
+        this.type = ResourceType.UNKNOWN;
+        this.id = 'unknown';
+        this.uri = '/';
+        this.name = 'Unknown Resource';
+        this.description = TextBlock.ZeroValue;
+        this.source = Source.ZeroValue;
+        this.tags = [];
 
-    tags : Array<string> = [];
+        //Check if props have been provided
+        if(typeof props !== 'undefined' && props !== null) {
+            if(props instanceof Resource) {
+                //If this is another Resource,
+                // copy the properties in.
+                Resource.StrictValidateProps(props);
+                this.type = props.type;
+                this.id = props.id;
+                this.uri = props.uri;
+                this.name = props.name;
+                this.description = new TextBlock(props.description);
+                this.source = props.source;
+                this.tags = [...props.tags];
+            } else if(IsPlainObject(props)) {
+                //If this is a JSON object (plain JS object),
+                // attempt to assign the properties.
+                Resource.StrictValidateProps(props);
 
-    constructor(args:ResourceType|object, props?:object) {
-        let obj:any = {};
-        if(typeof args === 'string') {
-            //First argument is the type value
-            this.type = args as ResourceType;
+                //Assign the private properties here
+                if(props.hasOwnProperty('type') && typeof props.type === 'string' && ResourceTypeHas(props.type))
+                    this.type = props.type as ResourceType;
+                
+                if(props.hasOwnProperty('id') && typeof props.id === 'string' && props.id.length > 0)
+                    this.id = props.id;
 
-            if(props && typeof props === 'object')
-                obj = props;
-        } else if(typeof args === 'object') {
-            //Using the first argument as the prop object
-            obj = args;
-        } else {
-            throw new TypeError(`Class "Resource" constructor expected first parameter to be either a string of the resource type, or a valid JSON object, instead received a "${typeof args}".`);
-        }
+                if(props.hasOwnProperty('uri') && typeof props.uri === 'string' && props.uri.length > 0)
+                    this.uri = props.uri;
 
-        if(obj.hasOwnProperty('type') && typeof obj.type === 'string')
-            this.type = obj.type as ResourceType;
-        else
-            throw new Error(`Cannot construct a Resource without a valid type`);
-        
-        if(obj.hasOwnProperty('id') && typeof obj.id === 'string')
-            this.id = obj.id;
-        else
-            throw new Error(`Cannot construct a Resource without a valid id`);
+                if(props.hasOwnProperty('name') && typeof props.name === 'string' && props.name.length > 0)
+                    this.name = props.name;
 
-        if(obj.hasOwnProperty('uri') && typeof obj.uri === 'string')
-            this.uri = obj.uri;
-        else
-            throw new Error(`Cannot construct a Resource without a valid uri`);
-
-        if(obj.hasOwnProperty('name') && typeof obj.name === 'string')
-            this.name = obj.name;  
-        else
-            throw new Error(`Cannot construct a Resource without a valid name`);
-
-        if(obj.hasOwnProperty('description')) {
-            //These could be different for version reasons
-            if(typeof obj.description === 'string') {
-                //Plain text
-                this.description = {
-                    plainText: obj.description.split('\n'),
-                };
-            } else if(Array.isArray(obj.description)) {
-                this.description = {
-                    plainText: obj.description,
-                };
-            } else if(typeof obj.description === 'object' && obj.description.hasOwnProperty('plainText')) {
-                this.description = obj.description;
-            } else {
-                throw new TypeError(`Invalid description property, expected string|array|object, instead found ${typeof obj.description}.`);
+                this.assign(props);
             }
-        } else
-            throw new Error(`Cannon construct a Resource without a valid description`);
-
-        if(obj.hasOwnProperty('source')) {
-            //These could be different for version reasons
-            if(typeof obj.source === 'string') {
-                //It's just the publication ID
-                this.source = {
-                    publicationID: obj.source,
-                };
-            } else if(typeof obj.source === 'object' && obj.source.hasOwnProperty('publicationID')) {
-                this.source = obj.source;
-            }
-        } else
-            throw new Error(`Cannon construct a Resource without a valid source`);
-
-        if(obj.hasOwnProperty('tags') && Array.isArray(obj.tags)) {
-            this.tags = obj.tags
-                .filter((tag:string) => (typeof tag === 'string' && tag.length > 1));
         }
     }
 
-    static Validate(obj:any):Array<string> {
-        const errs = [];
+    assign = (props:JSONObject):void => {
+        if(props.hasOwnProperty('description') && props.description)
+            this.description.assign(props.description as JSONObject);
+
+        if(props.hasOwnProperty('source') && props.source)
+            this.source.assign(props.source as JSONObject);
+
+        if(props.hasOwnProperty('tags') && props.tags && Array.isArray(props.tags))
+            this.tags = props.tags.filter((ent:any) => (typeof ent === 'string' && ent.length > 0)) as StringArray;
+    }
+
+    validate = ():Array<string> => {
+        const errs:Array<string> = [];
+
+        //Make sure there is a valid type
+        if(!ResourceTypeHas(this.type))
+            errs.push(`Resource requires a valid "type" ResourceType enum. "${this.type}" is not one of them.`);
+        else if(this.type === ResourceType.UNKNOWN)
+            errs.push(`Resource should have a valid ResourceType, it is currently "UNKNOWN".`);
 
         //Ensure the ID is filled
-        if(!obj.id || typeof obj.id !== 'string' || obj.id.length < 1)
-            errs.push(`Expected id to be a string of at least 1 character long.`);
+        if(this.id.length < 1)
+            errs.push(`Resource expected "id" to be a string of at least 1 character long.`);
 
         //URI's need to be valid and filled out, the starting
         //character should be a forward slash to help declare the type
-        if(!obj.uri || typeof obj.uri !== 'string' || obj.uri.length < 1)
+        if(this.uri.length < 1)
             errs.push(`Resource requires a valid (non-empty) URI string.`);
-        else if(!TestURI(obj.uri))
-            errs.push(`The format for the URI is invalid. Check that it starts with a forward slash, and is only alphanumeric path segments`);
+        else if(!TestURI(this.uri))
+            errs.push(`Resource URI format is invalid. Check that it starts with a forward slash, and is only alphanumeric path segments`);
 
         //Check that the name is at least filled out
-        if(!obj.name || typeof obj.name !== 'string' || obj.name.length < 1)
-            errs.push(`Resource requires a valid (non-empty) name string`);
+        if(this.name.length < 1)
+            errs.push(`Resource requires a valid (non-empty) "name" string`);
 
-        //Make sure there's at least something in the description
-        if(obj.description && typeof obj.description === 'object') {
-            if(obj.description.hasOwnProperty('plainText')) {
-                if(Array.isArray(obj.description.plainText)) {
-                    obj.description.plainText.forEach((txt:string, i:number) => {
-                        if(typeof txt !== 'string')
-                            errs.push(`Entry #${i} of plaintext description is expected to be a string, instead found a ${typeof txt}.`);
-                        else if(txt.length < 1)
-                            errs.push(`Entry #${i} of plaintext description is empty, each entry is expected to be a paragraph and therefor filled.`);
-                    });
-                } else
-                    errs.push(`Resource's plaintext description expected to be an array, instead found a ${typeof obj.description.plainText}`);
-            } else
-                errs.push(`Resource's description requires a plainText property, none found.`);
-        
-            if(obj.description.hasOwnProperty('markdown')) {
-                if(Array.isArray(obj.description.markdown)) {
-                    obj.description.markdown.forEach((txt:string, i:number) => {
-                        if(typeof txt !== 'string')
-                            errs.push(`Entry #${i} of markdown description is expected to be a string, instead found a ${typeof txt}.`);
-                        else if(txt.length < 1)
-                            errs.push(`Entry #${i} of markdown description is empty, each entry is expected to be a paragraph and therefor filled.`);
-                    });
-                } else
-                    errs.push(`Resource's markdown description expected to be an array, instead found a ${typeof obj.description.markdown}`);
-            }
+        //Pass on validation of description
+        InPlaceConcat(errs, this.description.validate());
 
-            if(obj.description.hasOwnProperty('html')) {
-                if(Array.isArray(obj.description.html)) {
-                    obj.description.html.forEach((txt:string, i:number) => {
-                        if(typeof txt !== 'string')
-                            errs.push(`Entry #${i} of html description is expected to be a string, instead found a ${typeof txt}.`);
-                        else if(txt.length < 1)
-                            errs.push(`Entry #${i} of html description is empty, each entry is expected to be a paragraph and therefor filled.`);
-                    });
-                } else
-                    errs.push(`Resource's html description expected to be an array, instead found a ${typeof obj.description.html}`);
-            }
-        } else
-            errs.push(`Resource requires a description object, none found.`);
-
-        //Validate the source
-        if(obj.source && typeof obj.source === 'object') {
-            errs.push.apply(null, ValidateSource(obj.source));
-        } else
-            errs.push(`Resource requires a source object, none found.`);
+        //Pass on validation of source
+        //InPlaceConcat(errs, this.source.validate());
 
         //Check the tag formats
-        if(!obj.tags || !Array.isArray(obj.tags)) 
-            errs.push(`Resource requires an array of tags, none found.`);
-        else {
-            obj.tags.forEach((tag:string,i:number) => {
-                if(typeof tag !== 'string' || tag.length === 0)
-                    errs.push(`Tag entry #${i} should be a non-empty string.`);
-                else if(!TestKabob(tag))
-                    errs.push(`Tag entry #${i} should be a kabob-case string.`);
-            })
-        }
+        this.tags.forEach((tag:string,i:number) => {
+            if(typeof tag !== 'string' || tag.length === 0)
+                errs.push(`Resource tag[${i}] should be a non-empty string.`);
+            else if(!TestKabob(tag))
+                errs.push(`Resource tag[${i}] should be a kabob-case string.`);
+        });
 
         return errs;
     }
 
-    /**
-     * Checks the object properties and validates them against the given schema
-     * @returns Array of strings denoting the validation errors found, or empty if none
-     */
-    validate = ():Array<string> => {
-        return Resource.Validate(this);
-    };
-
-    /**
-     * Checks the object properties and validates them against the given schema
-     * @returns True if there are no validation errors
-     */
-    isValid = ():boolean => {
-        return this.validate().length == 0;
-    };
+    isValid = ():boolean => (this.validate().length === 0);
 }
