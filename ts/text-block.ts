@@ -1,7 +1,7 @@
 import { IAssignable } from './assignable';
+import { IValidatable } from './validatable';
 import { IsPlainObject, JSONObject } from './utils/json-object';
 import { StringArray } from './utils/string-array';
-import { IValidatable } from './validatable';
 
 /**
  * Represents a block of text, with different
@@ -53,8 +53,22 @@ export default class TextBlock implements ITextBlock, IAssignable, IValidatable 
         && obj.html.length === 0
     );
 
+    /**
+     * The plain text (no formatting markers) version
+     * This is required
+     */
     plainText   : StringArray;
+
+    /**
+     * A markdown (commonmark) formatted version.
+     */
     markdown    : StringArray;
+
+    /**
+     * An HTML version. The text should be escapped
+     * properly for JSON. And should only contain
+     * formatting elements such as B, I, U, Em, etc.
+     */
     html        : StringArray;
 
     constructor(props?:any) {
@@ -102,6 +116,24 @@ export default class TextBlock implements ITextBlock, IAssignable, IValidatable 
 
     validate = ():Array<string> => {
         const errs:Array<string> = [];
+
+        if(this.plainText.length === 0)
+            errs.push(`TextBlock.plainText requires at least one entry, none found.`);
+
+        this.plainText.forEach((ent:string, i:number) => {
+            if(!ent || typeof ent !== 'string')
+                errs.push(`TextBlock.plainText[${i}] is a "${typeof ent}", expected a string.`);
+        });
+
+        this.markdown.forEach((ent:string, i:number) => {
+            if(!ent || typeof ent !== 'string')
+                errs.push(`TextBlock.markdown[${i}] is a "${typeof ent}", expected a string.`);
+        });
+
+        this.html.forEach((ent:string, i:number) => {
+            if(!ent || typeof ent !== 'string')
+                errs.push(`TextBlock.html[${i}] is a "${typeof ent}", expected a string.`);
+        });
 
         return errs;
     }

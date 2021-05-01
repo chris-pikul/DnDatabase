@@ -1,5 +1,8 @@
-import TextBlock, { MakeTextBlock, NullTextBlock } from './text-block';
+import { IAssignable } from './assignable';
+import { IValidatable } from './validatable';
 import { IsPlainObject, JSONObject } from './utils/json-object';
+
+import TextBlock from './text-block';
 
 /**
  * TextSection represents a titled section of text.
@@ -8,7 +11,7 @@ import { IsPlainObject, JSONObject } from './utils/json-object';
  * 
  * Schema: /text-section.schema.json
  */
-export default interface TextSection {
+export interface ITextSection {
     /**
      * The title of the section.
      * Expected to be plain text for proper heading formatting.
@@ -22,32 +25,82 @@ export default interface TextSection {
     body    : TextBlock
 }
 
-/**
- * Easy to reference object for empty or "null" data.
- */
-export const NullTextSection:TextSection = {
-    title: "",
-    body: NullTextBlock,
-};
+export default class TextSection implements ITextSection, IAssignable, IValidatable {
+    /**
+     * Holds the "Zero" value (empty, null) for easy reference
+     * and object instantiation.
+     */
+    public static readonly ZeroValue:TextSection = new TextSection();
 
-/**
- * Factory function to create a valid TextSection from
- * a given JSON Object.
- * @param input JSON Object
- * @returns TextSection
- */
-export function MakeTextSection(input:JSONObject):TextSection {
-    if(!IsPlainObject(input)) return NullTextSection;
+    /**
+     * Checks if the supplied object is at the class's zero value.
+     * @param obj TextSection object to check
+     * @returns True if the object has the default values
+     */
+    public static IsZeroValue = (obj:TextSection):boolean => !!(
+           obj.title.length === 0
+        && obj.body.isZeroValue()
+    );
 
-    const obj:TextSection = NullTextSection;
+    /**
+     * The title of the section.
+     * Expected to be plain text for proper heading formatting.
+     */
+    title   : string;
 
-    if(input.hasOwnProperty('title') && typeof input.title === 'string')
-        obj.title = input.title;
+    /**
+     * The body of the text, represented as a TextBlock
+     * for multi-format options.
+     */
+    body    : TextBlock;
 
-    if(input.hasOwnProperty('body') && IsPlainObject(input.body)) {
-        // The IsPlainObject() function satisfies checking for us
-        obj.body = MakeTextBlock(input.body as JSONObject);
+    constructor(props?:any) {
+        this.title = "";
+        this.body = new TextBlock();
+
+        //Check if props have been provided
+        if(typeof props !== 'undefined' && props !== null) {
+            if(props instanceof TextSection) {
+                //If this is another TextSection,
+                // copy the properties in.
+                this.title = props.title;
+                this.body = props.body;
+            } else if(IsPlainObject(props)) {
+                //If this is a JSON object (plain JS object),
+                // attempt to assign the properties.
+                this.assign(props);
+            } else {
+                console.warn(`Attempting to instantiate a TextSection object with an invalid parameter. Expected either a TextSection object, or a plain JSON Object of properties. Instead encountered a "${typeof props}"`);
+            }
+        }
     }
 
-    return obj;
+    assign = (props:JSONObject):void => {
+        if(props.hasOwnProperty('title') && typeof props.title === 'string')
+            this.title = props.title;
+
+        if(props.hasOwnProperty('body') && IsPlainObject(props.body)) {
+            // The IsPlainObject() function satisfies type checking for us
+            this.body.assign(props.body as JSONObject);
+        }
+    }
+
+    validate = ():Array<string> => {
+        const errs:Array<string> = [];
+
+        if(!this.title || typeof this.title !== 'string')
+            errs.push(`TextSection.title is expected to be a string, instead found "${typeof this.title}".`);
+
+        errs.push.apply(null, this.body.validate());
+
+        return errs;
+    }
+
+    isValid = ():boolean => (this.validate().length === 0);
+
+    /**
+     * Checks if this object is at the class's zero value.
+     * @returns True if the this has the default values
+     */
+     isZeroValue = ():boolean => (TextSection.IsZeroValue(this));
 }
