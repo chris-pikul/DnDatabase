@@ -81,6 +81,22 @@
                 }
             },
             "required": [ "die", "results" ]
+        },
+        "starterOptions": {
+            "type": "object",
+            "properties": {
+                "starting": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "reference.schema.json"
+                    },
+                    "uniqueItems": true
+                },
+                "options": {
+                    "$ref": "#/definitions/options"
+                }
+            },
+            "required": [ "starting", "options" ]
         }
     },
     "properties": {
@@ -88,64 +104,34 @@
             "type": "object",
             "properties": {
                 "skills": {
-                    "type": "object",
-                    "properties": {
-                        "starting": {
-                            "type": "array",
-                            "items": {
-                                "$ref": "reference.schema.json"
-                            },
-                            "uniqueItems": true
-                        },
-                        "options": {
-                            "$ref": "#/definitions/options"
-                        }
-                    }
+                    "$ref": "#/definitions/starterOptions"
                 },
                 "tools": {
-                    "type": "object",
-                    "properties": {
-                        "starting": {
-                            "type": "array",
-                            "items": {
-                                "$ref": "reference.schema.json"
-                            },
-                            "uniqueItems": true
-                        },
-                        "options": {
-                            "$ref": "#/definitions/options"
-                        }
-                    }
+                    "$ref": "#/definitions/starterOptions"
                 },
                 "languages": {
-                    "type": "object",
-                    "properties": {
-                        "starting": {
-                            "type": "array",
-                            "items": {
-                                "$ref": "reference.schema.json"
-                            },
-                            "uniqueItems": true
-                        },
-                        "options": {
-                            "$ref": "#/definitions/options"
-                        },
-                        "wildcard": {
-                            "type": "object",
+                    "allOf": [
+                        { "$ref": "#/definitions/starterOptions" },
+                        {
                             "properties": {
-                                "amount": {
-                                    "type": "integer",
-                                    "minimum": 0
-                                },
-                                "standard": {
-                                    "type": "boolean"
-                                },
-                                "exotic": {
-                                    "type": "boolean"
+                                "wildcard": {
+                                    "type": "object",
+                                    "properties": {
+                                        "amount": {
+                                            "type": "integer",
+                                            "minimum": 0
+                                        },
+                                        "standard": {
+                                            "type": "boolean"
+                                        },
+                                        "exotic": {
+                                            "type": "boolean"
+                                        }
+                                    }
                                 }
                             }
                         }
-                    }
+                    ]
                 }
             }
         },
@@ -160,23 +146,7 @@
                     "$ref": "reference.schema.json"
                 },
                 "items": {
-                    "type": "object",
-                    "properties": {
-                        "starting": {
-                            "type": "array",
-                            "items": {
-                                "anyOf": [
-                                    { "$ref": "reference.schema.json" },
-                                    { "type": "object" }
-                                ]
-                            },
-                            "uniqueItems": true
-                        },
-                        "options": {
-                            "$ref": "#/definitions/options"
-                        }
-                    },
-                    "required": [ "starting", "options" ]
+                    "$ref": "#/definitions/starterOptions"
                 }
             }
         },
