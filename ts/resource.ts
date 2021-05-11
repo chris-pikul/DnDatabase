@@ -177,6 +177,8 @@ export default abstract class Resource implements IResource, IAssignable, IValid
                     this.name = props.name;
 
                 this.assign(props);
+            } else {
+                console.warn(`Attempting to instantiate a Resource object with an invalid parameter. Expected either a Resource object, or a plain JSON Object of properties. Instead encountered a "${typeof props}"`);
             }
         }
     }
