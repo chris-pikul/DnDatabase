@@ -220,7 +220,7 @@ export default abstract class Resource implements IResource, IAssignable, IValid
         InPlaceConcat(errs, this.description.validate());
 
         //Pass on validation of source
-        //InPlaceConcat(errs, this.source.validate());
+        InPlaceConcat(errs, this.source.validate());
 
         //Check the tag formats
         this.tags.forEach((tag:string,i:number) => {
