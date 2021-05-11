@@ -291,6 +291,22 @@ export default class Source implements ISource, IAssignable, IValidatable {
                 //If this is a JSON object (plain JS object),
                 // attempt to assign the properties.
                 Source.StrictValidateProps(props);
+
+                if(props.publicationID && typeof props.publicationID === 'string' && PublicationIDHas(props.publicationID))
+                    this.publicationID = props.publicationID as PublicationID;
+
+                if(props.title && typeof props.title === 'string' && props.title.length > 0)
+                    this.title = props.title;
+
+                if(props.page && typeof props.page === 'number' && TestIfPositiveInteger(props.page))
+                    this.page = props.page;
+
+                if(props.isUA && typeof props.isUA === 'boolean')
+                    this.isUA = !!props.isUA;
+
+                if(props.isSRD && typeof props.isSRD === 'boolean')
+                    this.isSRD = !!props.isSRD;
+
                 this.assign(props);
             } else {
                 console.warn(`Attempting to instantiate a TextSection object with an invalid parameter. Expected either a TextSection object, or a plain JSON Object of properties. Instead encountered a "${typeof props}"`);
