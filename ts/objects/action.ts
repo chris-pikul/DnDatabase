@@ -1,7 +1,7 @@
 import Resource, { IResource } from '../resource';
 import { ResourceType } from '../resource-type';
 import Source from '../source';
-import { CountedArray, CountedArrayElem } from '../misc-types';
+import { CountedArray, CountedArrayElem } from '../utils/arrays';
 
 export enum ActionTiming {
     ACTION = 'ACTION',
@@ -27,7 +27,10 @@ export default class Action extends Resource implements IAction {
     timing          : CountedArray<ActionTiming>;
 
     constructor(props:any) {
-        super(ResourceType.ACTION, props);
+        super({
+            ...(props || {}),
+            type: ResourceType.ACTION,
+        });
 
         this.isVariant = false;
         this.timing = [];
@@ -50,7 +53,7 @@ export default class Action extends Resource implements IAction {
      * @returns Array of strings denoting the validation errors found, or empty if none
      */
      validate = ():Array<string> => {
-        const errs = Resource.Validate(this);
+        const errs = super.validate();
 
         if(this.timing && Array.isArray(this.timing)) {
             if(this.timing.length == 0)

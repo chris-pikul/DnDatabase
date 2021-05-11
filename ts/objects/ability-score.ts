@@ -23,7 +23,7 @@ export default class AbilityScore extends Resource implements IAbilityScore {
 
     constructor(props:any) {
         super({
-            ...props,
+            ...(props || {}),
             type: ResourceType.ABILITY_SCORE,
         });
 
