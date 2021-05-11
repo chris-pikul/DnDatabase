@@ -164,157 +164,235 @@ export default class Reference implements IReference, IAssignable, IValidatable 
 }
 
 export class ReferenceAbilityScore extends Reference {
-    readonly type : ResourceType = ResourceType.ABILITY_SCORE;
-
-    constructor(props?:any) { super(props); this.type = ResourceType.ABILITY_SCORE; }
+    constructor(props?:any) { 
+        super({
+            ...(props || {}),
+            type: ResourceType.ABILITY_SCORE,
+        });
+    }
 }
 
 export class ReferenceAction extends Reference {
-    readonly type : ResourceType = ResourceType.ACTION;
-    
-    constructor(props?:any) { super(props); this.type = ResourceType.ACTION; }
+    constructor(props?:any) { 
+        super({
+            ...(props || {}),
+            type: ResourceType.ACTION,
+        });
+    }
 }
 
 export class ReferenceBackground extends Reference {
-    readonly type : ResourceType = ResourceType.BACKGROUND;
-    
-    constructor(props?:any) { super(props); this.type = ResourceType.BACKGROUND; }
+    constructor(props?:any) { 
+        super({
+            ...(props || {}),
+            type: ResourceType.BACKGROUND,
+        });
+    }
 }
 
 export class ReferenceClass extends Reference {
-    readonly type : ResourceType = ResourceType.CLASS;
-    
-    constructor(props?:any) { super(props); this.type = ResourceType.CLASS; }
+    constructor(props?:any) { 
+        super({
+            ...(props || {}),
+            type: ResourceType.CLASS,
+        });
+    }
 }
 
 export class ReferenceClassFeature extends Reference {
-    readonly type : ResourceType = ResourceType.CLASS_FEATURE;
-    
-    constructor(props?:any) { super(props); this.type = ResourceType.CLASS_FEATURE; }
+    constructor(props?:any) { 
+        super({
+            ...(props || {}),
+            type: ResourceType.CLASS_FEATURE,
+        });
+    }
 }
 
 export class ReferenceCondition extends Reference {
-    readonly type : ResourceType = ResourceType.CONDITION;
-    
-    constructor(props?:any) { super(props); this.type = ResourceType.CONDITION; }
+    constructor(props?:any) { 
+        super({
+            ...(props || {}),
+            type: ResourceType.CONDITION,
+        });
+    }
 }
 
 export class ReferenceDamageType extends Reference {
-    readonly type : ResourceType = ResourceType.DAMAGE_TYPE;
-    
-    constructor(props?:any) { super(props); this.type = ResourceType.DAMAGE_TYPE; }
+    constructor(props?:any) { 
+        super({
+            ...(props || {}),
+            type: ResourceType.DAMAGE_TYPE,
+        });
+    }
 }
 
 export class ReferenceDeity extends Reference {
-    readonly type : ResourceType = ResourceType.DEITY;
-    
-    constructor(props?:any) { super(props); this.type = ResourceType.DEITY; }
+    constructor(props?:any) { 
+        super({
+            ...(props || {}),
+            type: ResourceType.DEITY,
+        });
+    }
 }
 
 export class ReferenceDisease extends Reference {
-    readonly type : ResourceType = ResourceType.DISEASE;
-    
-    constructor(props?:any) { super(props); this.type = ResourceType.DISEASE; }
+    constructor(props?:any) { 
+        super({
+            ...(props || {}),
+            type: ResourceType.DISEASE,
+        });
+    }
 }
 
 export class ReferenceEquipmentPack extends Reference {
-    readonly type : ResourceType = ResourceType.EQUIPMENT_PACK;
-    
-    constructor(props?:any) { super(props); this.type = ResourceType.EQUIPMENT_PACK; }
+    constructor(props?:any) { 
+        super({
+            ...(props || {}),
+            type: ResourceType.EQUIPMENT_PACK,
+        });
+    }
 }
 
 export class ReferenceFeat extends Reference {
-    readonly type : ResourceType = ResourceType.FEAT;
-    
-    constructor(props?:any) { super(props); this.type = ResourceType.FEAT; }
+    constructor(props?:any) { 
+        super({
+            ...(props || {}),
+            type: ResourceType.FEAT,
+        });
+    }
 }
 
 export class ReferenceHazard extends Reference {
-    readonly type : ResourceType = ResourceType.HAZARD;
-    
-    constructor(props?:any) { super(props); this.type = ResourceType.HAZARD; }
+    constructor(props?:any) { 
+        super({
+            ...(props || {}),
+            type: ResourceType.HAZARD,
+        });
+    }
 }
 
 export class ReferenceItem extends Reference {
-    readonly type : ResourceType = ResourceType.ITEM;
-    
-    constructor(props?:any) { super(props); this.type = ResourceType.ITEM; }
+    constructor(props?:any) { 
+        super({
+            ...(props || {}),
+            type: ResourceType.ITEM,
+        });
+    }
 }
 
 export class ReferenceItemCategory extends Reference {
-    readonly type : ResourceType = ResourceType.ITEM_CATEGORY;
-    
-    constructor(props?:any) { super(props); this.type = ResourceType.ITEM_CATEGORY; }
+    constructor(props?:any) { 
+        super({
+            ...(props || {}),
+            type: ResourceType.ITEM_CATEGORY,
+        });
+    }
 }
 
 export class ReferenceLanguage extends Reference {
-    readonly type : ResourceType = ResourceType.LANGUAGE;
-    
-    constructor(props?:any) { super(props); this.type = ResourceType.LANGUAGE; }
+    constructor(props?:any) { 
+        super({
+            ...(props || {}),
+            type: ResourceType.LANGUAGE,
+        });
+    }
 }
 
 export class ReferenceMagicSchool extends Reference {
-    readonly type : ResourceType = ResourceType.MAGIC_SCHOOL;
-    
-    constructor(props?:any) { super(props); this.type = ResourceType.MAGIC_SCHOOL; }
+    constructor(props?:any) { 
+        super({
+            ...(props || {}),
+            type: ResourceType.MAGIC_SCHOOL,
+        });
+    }
 }
 
 export class ReferenceMonster extends Reference {
-    readonly type : ResourceType = ResourceType.MONSTER;
-    
-    constructor(props?:any) { super(props); this.type = ResourceType.MONSTER; }
+    constructor(props?:any) { 
+        super({
+            ...(props || {}),
+            type: ResourceType.MONSTER,
+        });
+    }
 }
 
 export class ReferenceProficiency extends Reference {
-    readonly type : ResourceType = ResourceType.PROFICIENCY;
-    
-    constructor(props?:any) { super(props); this.type = ResourceType.PROFICIENCY; }
+    constructor(props?:any) { 
+        super({
+            ...(props || {}),
+            type: ResourceType.PROFICIENCY,
+        });
+    }
 }
 
 export class ReferenceRace extends Reference {
-    readonly type : ResourceType = ResourceType.RACE;
-    
-    constructor(props?:any) { super(props); this.type = ResourceType.RACE; }
+    constructor(props?:any) { 
+        super({
+            ...(props || {}),
+            type: ResourceType.RACE,
+        });
+    }
 }
 
 export class ReferenceSkill extends Reference {
-    readonly type : ResourceType = ResourceType.SKILL;
-    
-    constructor(props?:any) { super(props); this.type = ResourceType.SKILL; }
+    constructor(props?:any) { 
+        super({
+            ...(props || {}),
+            type: ResourceType.SKILL,
+        });
+    }
 }
 
 export class ReferenceSpell extends Reference {
-    readonly type : ResourceType = ResourceType.SPELL;
-    
-    constructor(props?:any) { super(props); this.type = ResourceType.SPELL; }
+    constructor(props?:any) { 
+        super({
+            ...(props || {}),
+            type: ResourceType.SPELL,
+        });
+    }
 }
 
 export class ReferenceSubRace extends Reference {
-    readonly type : ResourceType = ResourceType.SUB_RACE;
-    
-    constructor(props?:any) { super(props); this.type = ResourceType.SUB_RACE; }
+    constructor(props?:any) { 
+        super({
+            ...(props || {}),
+            type: ResourceType.SUB_RACE,
+        });
+    }
 }
 
 export class ReferenceTrait extends Reference {
-    readonly type : ResourceType = ResourceType.TRAIT;
-    
-    constructor(props?:any) { super(props); this.type = ResourceType.TRAIT; }
+    constructor(props?:any) { 
+        super({
+            ...(props || {}),
+            type: ResourceType.TRAIT,
+        });
+    }
 }
 
 export class ReferenceTrap extends Reference {
-    readonly type : ResourceType = ResourceType.TRAP;
-    
-    constructor(props?:any) { super(props); this.type = ResourceType.TRAP; }
+    constructor(props?:any) { 
+        super({
+            ...(props || {}),
+            type: ResourceType.TRAP,
+        });
+    }
 }
 
 export class ReferenceVehicle extends Reference {
-    readonly type : ResourceType = ResourceType.VEHICLE;
-    
-    constructor(props?:any) { super(props); this.type = ResourceType.VEHICLE; }
+    constructor(props?:any) { 
+        super({
+            ...(props || {}),
+            type: ResourceType.VEHICLE,
+        });
+    }
 }
 
 export class ReferenceWeaponProperty extends Reference {
-    readonly type : ResourceType = ResourceType.WEAPON_PROPERTY;
-    
-    constructor(props?:any) { super(props); this.type = ResourceType.WEAPON_PROPERTY; }
+    constructor(props?:any) { 
+        super({
+            ...(props || {}),
+            type: ResourceType.WEAPON_PROPERTY,
+        });
+    }
 }
