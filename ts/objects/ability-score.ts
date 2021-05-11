@@ -18,13 +18,14 @@ export interface IAbilityScore extends IResource {
 export default class AbilityScore extends Resource implements IAbilityScore {
     static readonly JSONSchemaFile = "ability-score.schema.json";
 
-    readonly type : ResourceType = ResourceType.ABILITY_SCORE;
-
     abbreviation : string;
     skills : Array<ReferenceSkill>;
 
     constructor(props:any) {
-        super(ResourceType.ABILITY_SCORE, props);
+        super({
+            ...props,
+            type: ResourceType.ABILITY_SCORE,
+        });
 
         this.abbreviation = "UNK";
         this.skills = [];
@@ -48,7 +49,7 @@ export default class AbilityScore extends Resource implements IAbilityScore {
      * @returns Array of strings denoting the validation errors found, or empty if none
      */
      validate = ():Array<string> => {
-        const errs = Resource.Validate(this);
+        const errs = super.validate();
 
         if(!this.abbreviation || typeof this.abbreviation !== 'string' || this.abbreviation.length !== 3)
             errs.push(`Ability scores require a 3-letter abbreviation`);
