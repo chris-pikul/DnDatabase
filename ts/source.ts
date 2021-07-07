@@ -156,7 +156,7 @@ export default class Source implements ISource, IAssignable, IValidatable {
 
     /**
      * Checks if the supplied object is at the class's zero value.
-     * @param obj TextBlock object to check
+     * @param obj Source object to check
      * @returns True if the object has the default values
      */
     public static IsZeroValue = (obj:Source):boolean => (
@@ -168,6 +168,14 @@ export default class Source implements ISource, IAssignable, IValidatable {
         && obj.additional.length === 0
     );
 
+    /**
+     * Performs type checking and throws errors if the
+     * properties needed are not the right types.
+     * Does not fully validate the data within them,
+     * but will check for emptyness, or incorrect Enums
+     * @throws TypeErrors for invalid properties
+     * @param props Incoming properties object
+     */
     public static StrictValidateProps = (props:any):void => {
         if(!props)
             throw new TypeError(`Source.StrictValidateProps requires a valid parameter to check, none was given.`);
@@ -315,7 +323,7 @@ export default class Source implements ISource, IAssignable, IValidatable {
 
                 this.assign(props);
             } else {
-                console.warn(`Attempting to instantiate a TextSection object with an invalid parameter. Expected either a TextSection object, or a plain JSON Object of properties. Instead encountered a "${typeof props}"`);
+                console.warn(`Attempting to instantiate a TextSection object with an invalid parameter. Expected either a Source object, or a plain JSON Object of properties. Instead encountered a "${typeof props}"`);
             }
         }
     }
