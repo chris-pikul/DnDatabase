@@ -129,7 +129,10 @@ export default class AbilityScore extends Resource implements IAbilityScore {
     skills : Array<ReferenceSkill>;
 
     constructor(props?:any) {
-        super(props);
+        super(props, {
+            type: ResourceType.ABILITY_SCORE,
+            uriBase: AbilityScore.URIBase,
+        });
 
         // Set defaults
         this.abbreviation = "UNK";

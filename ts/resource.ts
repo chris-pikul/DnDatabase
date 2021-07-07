@@ -26,7 +26,7 @@ export interface IResource {
      * 
      * ex: "some-object"
      */
-    readonly id     : string;
+    id     : string;
 
     /**
      * The unique URI for this resource.
@@ -37,14 +37,14 @@ export interface IResource {
      * 
      * ex: "/example/some-object"
      */
-    readonly uri    : string;
+    uri    : string;
 
     /**
      * The name of this object, in human readable format.
      * 
      * ex: "Some Object"
      */
-    readonly name   : string;
+    name   : string;
 
     /**
      * A decription of the resource, as would be displayed
@@ -126,17 +126,63 @@ export default abstract class Resource implements IResource, IAssignable, IValid
             throw new TypeError(`Resource "tags" array contains non-string members.`);
     };
 
-    readonly type   : ResourceType;
+    /**
+     * The enumerated type string that this resource represents
+     */
+     readonly type   : ResourceType;
 
-    readonly id     : string;
-    readonly uri    : string;
-    readonly name   : string;
+    /**
+     * A unique ID (within the scope of the resource's type)
+     * representing this resource.
+     * Should be formatted as a lowercase kabob string.
+     * 
+     * ex: "some-object"
+     */
+    id     : string;
 
+    /**
+     * The unique URI for this resource.
+     * This path should be relative to the root and include
+     * the folder of the resource type.
+     * Additionally, it is expected to start with the forward
+     * slash.
+     * 
+     * ex: "/example/some-object"
+     */
+    uri    : string;
+
+    /**
+     * The name of this object, in human readable format.
+     * 
+     * ex: "Some Object"
+     */
+    name   : string;
+
+    /**
+     * A decription of the resource, as would be displayed
+     * to the user.
+     * 
+     * This is a TextBlock type, meaning it's an object
+     * with keys for plainText, markdown, and html to help
+     * formatting.
+     */
     description     : TextBlock;
-    source          : Source;
-    tags            : StringArray;
 
-    constructor(props?:any) {
+    /**
+     * Declares the publication sources for this resource
+     */
+    source          : Source;
+
+    /**
+     * An array(set) of tags for searchability.
+     * 
+     * Each tag should be lowercase kabob format,
+     * and no duplicates should be included.
+     * The id does not need to be supplied as a tag.
+     */
+    tags            : Array<string>;
+
+    constructor(props?:any, classProps?:JSONObject) {
         this.type = ResourceType.UNKNOWN;
         this.id = 'unknown';
         this.uri = '/';
@@ -166,24 +212,37 @@ export default abstract class Resource implements IResource, IAssignable, IValid
                 //Assign the private properties here
                 if(props.hasOwnProperty('type') && typeof props.type === 'string' && ResourceTypeHas(props.type))
                     this.type = props.type as ResourceType;
-                
-                if(props.hasOwnProperty('id') && typeof props.id === 'string' && props.id.length > 0)
-                    this.id = props.id;
-
-                if(props.hasOwnProperty('uri') && typeof props.uri === 'string' && props.uri.length > 0)
-                    this.uri = props.uri;
-
-                if(props.hasOwnProperty('name') && typeof props.name === 'string' && props.name.length > 0)
-                    this.name = props.name;
 
                 this.assign(props);
             } else {
                 console.warn(`Attempting to instantiate a Resource object with an invalid parameter. Expected either a Resource object, or a plain JSON Object of properties. Instead encountered a "${typeof props}"`);
             }
         }
+
+        if(classProps && typeof classProps === 'object') {
+            //Assign the class provided properties here
+            if(classProps.hasOwnProperty('type') && typeof classProps.type === 'string' && ResourceTypeHas(classProps.type))
+                this.type = classProps.type as ResourceType;
+
+            // Try to generate a URI using the classes base.
+            // only if one was not already provided.
+            if(classProps.hasOwnProperty('uriBase') && typeof classProps.uriBase === 'string') {
+                if(props && !props.uri && props.id)
+                    this.uri = `${classProps.uriBase}/${props.id}`;
+            }
+        }
     }
 
     assign = (props:JSONObject):void => {
+        if(props.hasOwnProperty('id') && typeof props.id === 'string' && props.id.length > 0)
+            this.id = props.id;
+
+        if(props.hasOwnProperty('uri') && typeof props.uri === 'string' && props.uri.length > 0)
+            this.uri = props.uri;
+
+        if(props.hasOwnProperty('name') && typeof props.name === 'string' && props.name.length > 0)
+            this.name = props.name;
+            
         if(props.hasOwnProperty('description') && props.description)
             this.description.assign(props.description as JSONObject);
 

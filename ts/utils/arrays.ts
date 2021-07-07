@@ -29,6 +29,21 @@ export type CountedArrayElem<Type> = {
     count : number;
 };
 
+export function StrictValidateCountedArrayElem(props:any, elemType?:string):void {
+    if(!props || typeof props !=='object')
+        throw new TypeError(`StrictValidateCountedArrayElem requires a valid object parameter.`);
+
+    if(!props.type)
+        throw new TypeError(`Missing "type" property for CountedArrayElem.`);
+    if(elemType && typeof props.type !== elemType)
+        throw new TypeError(`CountedArrayElem "type" property must be a "${elemType}", instead found "${typeof props.type}".`);
+
+    if(!props.count)
+        throw new TypeError(`Missing "count" property for CountedArrayElem.`);
+    if(typeof props.count !== 'number')
+        throw new TypeError(`CountedArrayElem "count" property must be a number, instead found "${typeof props.count}".`);
+}
+
 /**
  * Contains an array of objects. Each object
  * has a "type" property of type provided,
@@ -36,3 +51,10 @@ export type CountedArrayElem<Type> = {
  * is expected to be an enum.
  */
 export type CountedArray<Type> = Array<CountedArrayElem<Type>>;
+
+export function StrictValidateCountedArray(props:any, elemType?:string):void {
+    if(!props || typeof props !=='object' || Array.isArray(props) === false)
+        throw new TypeError(`StrictValidateCountedArray requires a valid array object parameter.`);
+    
+    props.forEach((ent:any) => StrictValidateCountedArrayElem(ent, elemType));
+}
