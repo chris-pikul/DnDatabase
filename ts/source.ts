@@ -107,6 +107,12 @@ export interface ISource {
     additional         ?: Array<IAdditionalSource>;
 }
 
+/**
+ * Describes the written work, or source body that the resource
+ * originates from.
+ * 
+ * Schema: /source.schema.json
+ */
 export default class Source implements ISource, IAssignable, IValidatable {
     /**
      * A string-string map of publication ID enums to their respective human-readable titles.

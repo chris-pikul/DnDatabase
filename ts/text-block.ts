@@ -35,6 +35,18 @@ export interface ITextBlock {
     html?       : StringArray
 }
 
+/**
+ * Represents a block of text, with different
+ * formatting options available.
+ * 
+ * Each format should effectively contain the same
+ * text, but the formatting specifiers can be
+ * different.
+ * 
+ * At bare minimum, the plain text version is required
+ * 
+ * Schema: /text-block.schema.json
+ */
 export default class TextBlock implements ITextBlock, IAssignable, IValidatable {
     /**
      * Holds the "Zero" value (empty, null) for easy reference

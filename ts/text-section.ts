@@ -26,6 +26,13 @@ export interface ITextSection {
     body    : TextBlock
 }
 
+/**
+ * TextSection represents a titled section of text.
+ * Essentially, it is a title string, followed by
+ * a body text (in the form of a TextBlock object).
+ * 
+ * Schema: /text-section.schema.json
+ */
 export default class TextSection implements ITextSection, IAssignable, IValidatable {
     /**
      * Holds the "Zero" value (empty, null) for easy reference
