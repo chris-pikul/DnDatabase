@@ -1,4 +1,4 @@
-import { IAssignable } from './assignable';
+import { IAssignable } from './utils/assignable';
 import { IValidatable } from './validatable';
 import { IsPlainObject, JSONObject } from './utils/json-object';
 import { StringArray } from './utils/arrays';

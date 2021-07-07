@@ -1,5 +1,5 @@
 import { IValidatable } from './validatable';
-import { IAssignable } from './assignable';
+import { IAssignable } from './utils/assignable';
 import { IsPlainObject, JSONObject } from './utils/json-object';
 
 import { ResourceType, ResourceTypeHas } from './resource-type';

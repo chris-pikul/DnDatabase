@@ -1,4 +1,4 @@
-import { IAssignable } from './assignable';
+import { IAssignable } from './utils/assignable';
 import { IValidatable } from './validatable';
 
 import { ResourceType, ResourceTypeHas } from './resource-type';

@@ -1,4 +1,4 @@
-import { IAssignable } from "./assignable";
+import { IAssignable } from "./utils/assignable";
 import { DieSize, DieSizeHas } from "./die-size";
 import TextBlock from "./text-block";
 import { InPlaceConcat } from "./utils/arrays";
