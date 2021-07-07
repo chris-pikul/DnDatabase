@@ -22,6 +22,12 @@ export interface IRollTableEntry {
     body            : TextBlock;
 };
 
+/**
+ * An individual entry into a Roll-Table.
+ * 
+ * Uses either a set value, or a range value (inclusive), to determine if a
+ * given die roll matches this entry.
+ */
 export class RollTableEntry implements IRollTableEntry, IAssignable, IValidatable {
     /**
      * Holds the "Zero" value (empty, null) for easy reference
@@ -76,12 +82,36 @@ export class RollTableEntry implements IRollTableEntry, IAssignable, IValidatabl
         }
     }
 
+    /**
+     * A specific value to match against during checking.
+     * This is the prefered method if provided.
+     */
     value           ?: Number;
+
+    /**
+     * The minimumm value (inclusive) for a die roll to check against.
+     * A given value must be equal to or above this value.
+     * In order to use the ranged check feature both minimumValue and
+     * maximumValue must be supplied.
+     */
     minimumValue    ?: Number;
+
+    /**
+     * The maximum value (inclusive) for a die roll to check against.
+     * A given value must be equal to or below this value.
+     * In order to use the ranged check feature both minimumValue and
+     * maximumValue must be supplied.
+     */
     maximumValue    ?: Number;
 
+    /**
+     * An optional title for this entry.
+     */
     title           ?: String;
 
+    /**
+     * A TextBlock representing the contents of this entry.
+     */
     body            : TextBlock;
 
     constructor(props?:any) {
@@ -205,6 +235,13 @@ export class RollTableEntry implements IRollTableEntry, IAssignable, IValidatabl
     results : Array<IRollTableEntry>
 };
 
+/**
+ * A Roll-Table, in which a specified die
+ * size should be rolled to produce a
+ * random result.
+ * 
+ * Schema: /roll-table.schema.json
+ */
 export class RollTable implements IRollTable, IAssignable, IValidatable {
     /**
      * Holds the "Zero" value (empty, null) for easy reference
@@ -248,8 +285,15 @@ export class RollTable implements IRollTable, IAssignable, IValidatable {
         props.results.forEach( RollTableEntry.StrictValidateProps );
     }
  
+    /**
+     * The size of the die that should be used to roll on this table.
+     */
     readonly die : DieSize;
 
+    /**
+     * An array of RollTableEntry objects, used to map the results.
+     * Any checks will be done from index 0 onwards.
+     */
     results : Array<RollTableEntry>;
 
     constructor(props?:any) {
